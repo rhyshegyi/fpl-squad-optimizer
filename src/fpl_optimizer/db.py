@@ -56,6 +56,42 @@ CREATE TABLE IF NOT EXISTS gameweeks (
     finished     INTEGER NOT NULL,
     deadline_time TEXT
 );
+
+-- Per-player per-gameweek training rows sourced from vaastav historical CSVs
+-- and the live element-summary endpoint for the current season.
+CREATE TABLE IF NOT EXISTS historical_player_gw (
+    season                    TEXT NOT NULL,   -- e.g. '2024-25'
+    element                   INTEGER NOT NULL,-- player id within that season
+    gw                        INTEGER NOT NULL,
+    name                      TEXT,
+    position                  TEXT,            -- GK/DEF/MID/FWD
+    team                      TEXT,            -- short name (may be missing for older seasons)
+    opponent_team             INTEGER,
+    was_home                  INTEGER,
+    kickoff_time              TEXT,
+    minutes                   INTEGER,
+    total_points              INTEGER,
+    goals_scored              INTEGER,
+    assists                   INTEGER,
+    clean_sheets              INTEGER,
+    goals_conceded            INTEGER,
+    bonus                     INTEGER,
+    bps                       INTEGER,
+    influence                 REAL,
+    creativity                REAL,
+    threat                    REAL,
+    ict_index                 REAL,
+    expected_goals            REAL,
+    expected_assists          REAL,
+    expected_goal_involvements REAL,
+    expected_goals_conceded    REAL,
+    starts                    INTEGER,
+    value                     INTEGER,         -- price at time of GW (tenths)
+    PRIMARY KEY (season, element, gw)
+);
+
+CREATE INDEX IF NOT EXISTS idx_hpg_season_gw
+    ON historical_player_gw (season, gw);
 """
 
 
