@@ -2,20 +2,41 @@ import argparse
 import sys
 
 from .ingest import ingest
-from .optimizer import Squad, optimize
+from .optimizer import Pick, Squad, SQUAD_SHAPE, optimize
 from .projections import project
 from .staging import stage
 
 
+def _fmt_pick(pick: Pick) -> str:
+    p = pick.player
+    tag = " (C)" if pick.is_captain else " (V)" if pick.is_vice else ""
+    return (f"  {p.web_name + tag:<22} {p.team_short:<4} "
+            f"£{p.now_cost / 10:>4.1f}m   {p.projected_points:>5.2f} pts")
+
+
 def _print_squad(squad: Squad) -> None:
-    print(f"\nTotal cost:   £{squad.total_cost / 10:.1f}m")
-    print(f"Projected pts: {squad.total_points}\n")
-    for pos, players in squad.by_position().items():
-        print(f"{pos}")
-        for p in players:
-            print(f"  {p.web_name:<18} {p.team_short:<4} "
-                  f"£{p.now_cost / 10:>4.1f}m   {p.projected_points:>5.2f} pts")
-        print()
+    print(f"\nTotal cost:      £{squad.total_cost / 10:.1f}m")
+    print(f"Formation:       {squad.formation()}")
+    print(f"Projected pts:   {squad.projected_points}  (starters + captain bonus)\n")
+
+    starters_by_pos: dict[str, list[Pick]] = {pos: [] for pos in SQUAD_SHAPE}
+    for pick in squad.starters():
+        starters_by_pos[pick.player.position].append(pick)
+    for picks in starters_by_pos.values():
+        picks.sort(key=lambda x: -x.player.projected_points)
+
+    print("Starting XI")
+    for pos in SQUAD_SHAPE:
+        for pick in starters_by_pos[pos]:
+            print(_fmt_pick(pick))
+    print()
+
+    print("Bench")
+    bench = sorted(squad.bench(), key=lambda x: (x.player.position != "GK",
+                                                 -x.player.projected_points))
+    for pick in bench:
+        print(_fmt_pick(pick))
+    print()
 
 
 def cmd_ingest(_: argparse.Namespace) -> None:
