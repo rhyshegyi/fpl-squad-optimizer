@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+.env
+
+# uv
+.uv/
+
+# Data
+data/
+
+# IDE
+.vscode/
+.idea/
