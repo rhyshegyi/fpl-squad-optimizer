@@ -28,13 +28,14 @@ def _current_season(conn) -> str:
     return f"{year}-{str(year + 1)[2:]}"
 
 
-def _players_and_positions(conn) -> list[tuple[int, str, str, str]]:
-    """Returns (player_id, web_name, position, team_short) for every player."""
+def _players_and_positions(conn) -> list[tuple[int, str, str, str, int]]:
+    """Returns (player_id, web_name, position, team_short, team_id) for every player."""
     rows = conn.execute(
-        "SELECT p.id, p.web_name, p.position, t.short_name AS team_short "
+        "SELECT p.id, p.web_name, p.position, t.short_name AS team_short, p.team_id "
         "FROM players p JOIN teams t ON t.id = p.team_id"
     ).fetchall()
-    return [(r["id"], r["web_name"], r["position"], r["team_short"]) for r in rows]
+    return [(r["id"], r["web_name"], r["position"], r["team_short"], r["team_id"])
+            for r in rows]
 
 
 def _fetch_history(pid: int) -> list[dict]:
@@ -49,6 +50,7 @@ def _coerce_history_row(
     web_name: str,
     position: str,
     team_short: str,
+    team_id: int,
     entry: dict,
 ) -> tuple:
     gw = entry.get("round")
@@ -62,6 +64,8 @@ def _coerce_history_row(
             values.append(POSITION_NORMALIZE.get(position, position))
         elif col == "team":
             values.append(team_short)
+        elif col == "team_id":
+            values.append(team_id)
         else:
             raw = entry.get(col)
             if raw is None or raw == "":
@@ -84,10 +88,10 @@ def ingest_live_history() -> dict[str, object]:
         all_rows: list[tuple] = []
         failed: list[int] = []
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
-            futures = {pool.submit(_fetch_history, pid): (pid, name, pos, team)
-                       for pid, name, pos, team in players}
+            futures = {pool.submit(_fetch_history, pid): (pid, name, pos, team, team_id)
+                       for pid, name, pos, team, team_id in players}
             for fut in as_completed(futures):
-                pid, name, pos, team = futures[fut]
+                pid, name, pos, team, team_id = futures[fut]
                 try:
                     history = fut.result()
                 except Exception:
@@ -95,7 +99,7 @@ def ingest_live_history() -> dict[str, object]:
                     continue
                 for entry in history:
                     all_rows.append(
-                        _coerce_history_row(season, pid, name, pos, team, entry)
+                        _coerce_history_row(season, pid, name, pos, team, team_id, entry)
                     )
 
         conn.execute("DELETE FROM historical_player_gw WHERE season = ?", (season,))

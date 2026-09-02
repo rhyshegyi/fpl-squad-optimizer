@@ -39,7 +39,11 @@ def project_ml() -> list[PlayerProjection]:
 
     out: list[PlayerProjection] = []
     for _, r in df.iterrows():
-        proj = float(r["projected_points"]) if r["status"] == "a" and r.get("opponent_team") else 0.0
+        raw = float(r["projected_points"])
+        if not r.get("opponent_team"):  # no fixture this GW (blank)
+            proj = 0.0
+        else:
+            proj = raw * _availability_multiplier(r.get("status"), r.get("chance_next_round"))
         out.append(PlayerProjection(
             player_id=int(r["element"]),
             web_name=str(r["name"]),
@@ -50,3 +54,19 @@ def project_ml() -> list[PlayerProjection]:
             projected_points=round(max(proj, 0.0), 3),
         ))
     return out
+
+
+def _availability_multiplier(status: str | None, chance: float | None) -> float:
+    """Damp the model's raw prediction by expected availability.
+
+    FPL status codes: a=available, d=doubt, i=injured, s=suspended, u=unavailable.
+    chance_next_round is 0..100 when the API expresses uncertainty, else NULL.
+    """
+    if status in ("i", "s", "u"):
+        return 0.0
+    if chance is not None:
+        try:
+            return max(0.0, min(1.0, float(chance) / 100.0))
+        except (TypeError, ValueError):
+            pass
+    return 1.0 if status == "a" else 0.0

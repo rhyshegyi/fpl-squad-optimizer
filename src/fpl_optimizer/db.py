@@ -65,7 +65,8 @@ CREATE TABLE IF NOT EXISTS historical_player_gw (
     gw                        INTEGER NOT NULL,
     name                      TEXT,
     position                  TEXT,            -- GK/DEF/MID/FWD
-    team                      TEXT,            -- short name (may be missing for older seasons)
+    team                      TEXT,            -- full or short name (varies by source)
+    team_id                   INTEGER,         -- per-season team id (joins to season_teams)
     opponent_team             INTEGER,
     was_home                  INTEGER,
     kickoff_time              TEXT,
@@ -92,7 +93,30 @@ CREATE TABLE IF NOT EXISTS historical_player_gw (
 
 CREATE INDEX IF NOT EXISTS idx_hpg_season_gw
     ON historical_player_gw (season, gw);
+
+CREATE TABLE IF NOT EXISTS season_teams (
+    season                 TEXT NOT NULL,
+    id                     INTEGER NOT NULL,
+    name                   TEXT NOT NULL,
+    short_name             TEXT NOT NULL,
+    strength                INTEGER,
+    strength_overall_home  INTEGER,
+    strength_overall_away  INTEGER,
+    strength_attack_home   INTEGER,
+    strength_attack_away   INTEGER,
+    strength_defence_home  INTEGER,
+    strength_defence_away  INTEGER,
+    PRIMARY KEY (season, id)
+);
 """
+
+
+def ensure_column(conn, table: str, column: str, decl: str) -> None:
+    """Idempotently add a column to an existing table (SQLite CREATE IF NOT
+    EXISTS doesn't add new columns to pre-existing tables)."""
+    cols = {r["name"] for r in conn.execute(f"PRAGMA table_info({table})")}
+    if column not in cols:
+        conn.execute(f"ALTER TABLE {table} ADD COLUMN {column} {decl}")
 
 
 def connect() -> sqlite3.Connection:
@@ -100,4 +124,5 @@ def connect() -> sqlite3.Connection:
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     conn.executescript(SCHEMA)
+    ensure_column(conn, "historical_player_gw", "team_id", "INTEGER")
     return conn

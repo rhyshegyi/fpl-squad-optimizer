@@ -29,6 +29,12 @@ WINDOWS = (3, 5)
 # categorical LightGBM feature; season and gw are for splits only.
 POSITION_CATEGORIES = ["GK", "DEF", "MID", "FWD"]
 
+TEAM_STRENGTH_COLS = [
+    "strength_overall_home", "strength_overall_away",
+    "strength_attack_home", "strength_attack_away",
+    "strength_defence_home", "strength_defence_away",
+]
+
 
 def _load_history(seasons: list[str] | None = None) -> pd.DataFrame:
     with connect() as conn:
@@ -40,6 +46,52 @@ def _load_history(seasons: list[str] | None = None) -> pd.DataFrame:
             q = f"SELECT * FROM historical_player_gw WHERE season IN ({placeholders})"
             df = pd.read_sql_query(q, conn, params=seasons)
     return df.sort_values(["season", "element", "gw"]).reset_index(drop=True)
+
+
+def _load_season_teams() -> pd.DataFrame:
+    with connect() as conn:
+        return pd.read_sql_query(
+            f"SELECT season, id, {', '.join(TEAM_STRENGTH_COLS)} FROM season_teams",
+            conn,
+        )
+
+
+def _add_team_strengths(df: pd.DataFrame) -> pd.DataFrame:
+    """Join own + opponent team strength, and compute is_home-aware effective values.
+
+    Effective features exposed to the model:
+      own_strength_overall, own_strength_attack, own_strength_defence
+      opp_strength_overall, opp_strength_attack, opp_strength_defence
+    Each is the home-side value when was_home=1, else the away-side value.
+    """
+    teams = _load_season_teams()
+    if teams.empty:
+        for c in ("own_strength_overall", "own_strength_attack", "own_strength_defence",
+                  "opp_strength_overall", "opp_strength_attack", "opp_strength_defence"):
+            df[c] = pd.NA
+        return df
+
+    own = teams.rename(columns={"id": "team_id", **{c: f"own_{c}" for c in TEAM_STRENGTH_COLS}})
+    opp = teams.rename(columns={"id": "opponent_team", **{c: f"opp_{c}" for c in TEAM_STRENGTH_COLS}})
+
+    df = df.merge(own, on=["season", "team_id"], how="left")
+    df = df.merge(opp, on=["season", "opponent_team"], how="left")
+
+    is_home = df["was_home"].fillna(0).astype(int).eq(1)
+    for role in ("own", "opp"):
+        for kind in ("overall", "attack", "defence"):
+            home_col = f"{role}_strength_{kind}_home"
+            away_col = f"{role}_strength_{kind}_away"
+            # For opp strength, "home" means opp is playing at home, which is when we're away.
+            if role == "own":
+                df[f"{role}_strength_{kind}"] = pd.Series(
+                    pd.NA, index=df.index, dtype="Float64"
+                ).where(~is_home, df[home_col]).where(is_home, df[away_col])
+            else:
+                df[f"{role}_strength_{kind}"] = pd.Series(
+                    pd.NA, index=df.index, dtype="Float64"
+                ).where(is_home, df[home_col]).where(~is_home, df[away_col])
+    return df
 
 
 def _add_rolling(df: pd.DataFrame) -> pd.DataFrame:
@@ -78,16 +130,22 @@ def build_training_frame(seasons: list[str] | None = None) -> pd.DataFrame:
     df = _load_history(seasons)
     df = _add_rolling(df)
     df = _fixture_context_train(df)
+    df = _add_team_strengths(df)
     df = df[df["gw_played"] >= 1].copy()
     df["position"] = pd.Categorical(df["position"], categories=POSITION_CATEGORIES)
+    df["value"] = pd.to_numeric(df["value"], errors="coerce")
     return df
 
 
 def feature_columns() -> list[str]:
-    cols: list[str] = ["is_home", "gw_played", "position"]
+    cols: list[str] = ["is_home", "gw_played", "position", "value"]
     for w in WINDOWS:
         cols.extend(f"{c}_r{w}" for c in ROLLING_COLS)
     cols.extend(f"{c}_cum" for c in ROLLING_COLS)
+    cols.extend([
+        "own_strength_overall", "own_strength_attack", "own_strength_defence",
+        "opp_strength_overall", "opp_strength_attack", "opp_strength_defence",
+    ])
     return cols
 
 
@@ -104,7 +162,8 @@ def build_predict_frame(current_season: str, target_gw: int) -> pd.DataFrame:
         )
         players = pd.read_sql_query(
             "SELECT p.id AS element, p.web_name AS name, p.position, p.team_id, "
-            "       p.now_cost AS value, p.status, t.short_name AS team "
+            "       p.now_cost AS value, p.status, p.chance_next_round, "
+            "       t.short_name AS team "
             "FROM players p JOIN teams t ON t.id = p.team_id",
             conn,
         )
@@ -140,6 +199,7 @@ def build_predict_frame(current_season: str, target_gw: int) -> pd.DataFrame:
             "name": p["name"],
             "position": p["position"],
             "team": p["team"],
+            "team_id": int(p["team_id"]),
             "opponent_team": opp,
             "was_home": was_home,
             "value": int(p["value"]),
@@ -151,13 +211,15 @@ def build_predict_frame(current_season: str, target_gw: int) -> pd.DataFrame:
     combined = combined.sort_values(["season", "element", "gw"]).reset_index(drop=True)
     combined = _add_rolling(combined)
     combined["is_home"] = combined["was_home"].fillna(0).astype(int)
+    combined = _add_team_strengths(combined)
 
     predict = combined[(combined["gw"] == target_gw) & (combined["season"] == current_season)].copy()
-    # Attach live status/team/now_cost for downstream use.
+    # Attach live status/chance/team/now_cost for downstream use.
     predict = predict.merge(
-        players[["element", "status", "team_id", "value"]].rename(
-            columns={"value": "now_cost"}),
+        players[["element", "status", "chance_next_round", "team_id", "value"]].rename(
+            columns={"value": "now_cost", "team_id": "team_id_live"}),
         on="element", how="left", suffixes=("", "_live"),
     )
     predict["position"] = pd.Categorical(predict["position"], categories=POSITION_CATEGORIES)
+    predict["value"] = pd.to_numeric(predict["value"], errors="coerce")
     return predict

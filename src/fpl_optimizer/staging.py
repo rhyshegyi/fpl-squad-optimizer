@@ -5,6 +5,15 @@ from .db import connect
 POSITION_MAP = {1: "GK", 2: "DEF", 3: "MID", 4: "FWD"}
 
 
+def _current_season_code(bootstrap: dict) -> str:
+    events = bootstrap.get("events") or []
+    deadlines = [e.get("deadline_time") for e in events if e.get("deadline_time")]
+    if not deadlines:
+        raise RuntimeError("no deadlines in bootstrap events — cannot infer season")
+    year = int(min(deadlines)[:4])
+    return f"{year}-{str(year + 1)[2:]}"
+
+
 def stage() -> dict[str, int]:
     """Normalize the latest raw payloads into typed tables. Returns row counts."""
     with connect() as conn:
@@ -32,6 +41,27 @@ def stage() -> dict[str, int]:
             [
                 (t["id"], t["name"], t["short_name"],
                  t["strength_overall_home"], t["strength_overall_away"])
+                for t in bootstrap["teams"]
+            ],
+        )
+
+        # Mirror into season_teams so features can query one table uniformly
+        # across historical and current seasons.
+        season = _current_season_code(bootstrap)
+        conn.execute("DELETE FROM season_teams WHERE season = ?", (season,))
+        conn.executemany(
+            "INSERT INTO season_teams (season, id, name, short_name, strength, "
+            " strength_overall_home, strength_overall_away, "
+            " strength_attack_home, strength_attack_away, "
+            " strength_defence_home, strength_defence_away) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            [
+                (
+                    season, t["id"], t["name"], t["short_name"], t.get("strength"),
+                    t.get("strength_overall_home"), t.get("strength_overall_away"),
+                    t.get("strength_attack_home"), t.get("strength_attack_away"),
+                    t.get("strength_defence_home"), t.get("strength_defence_away"),
+                )
                 for t in bootstrap["teams"]
             ],
         )
