@@ -8,7 +8,7 @@ Recommends an optimal Fantasy Premier League squad using linear programming, wit
 
 ## Pipeline
 
-```
+```text
 FPL API + vaastav historical CSVs
     → SQLite (raw + typed + historical_player_gw + season_teams)
     → feature engineering (rolling means, own/opp team strength, price)
