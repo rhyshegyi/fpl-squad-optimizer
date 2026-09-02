@@ -21,7 +21,7 @@ ARTIFACTS_DIR = Path("data") / "artifacts"
 
 def _squad_to_dict(squad: Squad) -> dict:
     return {
-        "total_cost_tenths": squad.total_cost,
+        "total_cost": squad.total_cost,
         "projected_points": squad.projected_points,
         "formation": squad.formation(),
         "picks": [
@@ -31,7 +31,7 @@ def _squad_to_dict(squad: Squad) -> dict:
                 "team_id": pick.player.team_id,
                 "team_short": pick.player.team_short,
                 "position": pick.player.position,
-                "now_cost_tenths": pick.player.now_cost,
+                "now_cost": pick.player.now_cost,
                 "projected_points": pick.player.projected_points,
                 "is_starter": pick.is_starter,
                 "is_captain": pick.is_captain,

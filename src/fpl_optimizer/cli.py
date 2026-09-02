@@ -163,6 +163,12 @@ def cmd_export(args: argparse.Namespace) -> None:
         print(f"{name}: {path}")
 
 
+def cmd_serve(args: argparse.Namespace) -> None:
+    import uvicorn
+    uvicorn.run("fpl_optimizer.api:app", host=args.host, port=args.port,
+                reload=args.reload)
+
+
 def cmd_train(args: argparse.Namespace) -> None:
     r = train(val_season=args.val_season)
     print(f"train n={r.n_train}, valid n={r.n_valid} (season={r.val_seasons})")
@@ -201,6 +207,12 @@ def main() -> None:
     ex = sub.add_parser("export", help="write latest squad + projections to data/artifacts/")
     ex.add_argument("--projector", choices=("naive", "ml"), default="ml")
     ex.set_defaults(func=cmd_export)
+
+    sv = sub.add_parser("serve", help="run the FastAPI backend")
+    sv.add_argument("--host", default="127.0.0.1")
+    sv.add_argument("--port", type=int, default=8000)
+    sv.add_argument("--reload", action="store_true", help="dev auto-reload")
+    sv.set_defaults(func=cmd_serve)
 
     tx = sub.add_parser("transfers", help="recommend transfers for an existing squad")
     tx.add_argument("--entry", type=int, help="FPL manager entry ID (auto-pulls picks + bank)")
