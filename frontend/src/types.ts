@@ -8,6 +8,24 @@ export interface Player {
   position: Position;
   now_cost: number;         // tenths of £m
   projected_points: number;
+
+  // Scouting stats (optional — present when the row was enriched via scouting.py)
+  form?: number;
+  season_ppg?: number;
+  season_points?: number;
+  season_minutes?: number;
+  selected_by?: number;      // %
+  status?: "a" | "d" | "i" | "s" | "u" | string;
+  chance_next_round?: number | null;
+  gws_played?: number;
+  minutes_avg?: number | null;
+  points_avg?: number | null;
+  xg_recent?: number | null;
+  xa_recent?: number | null;
+  bonus_recent?: number;
+  opp_short?: string | null;
+  is_home?: boolean | null;
+  fdr?: number | null;       // 1 (easy) .. 5 (hard)
 }
 
 export interface Pick extends Player {

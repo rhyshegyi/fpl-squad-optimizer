@@ -8,13 +8,13 @@ history is browsable in the repo.
 from __future__ import annotations
 
 import json
-from dataclasses import asdict
 from datetime import datetime, timezone
 from pathlib import Path
 
 from .db import connect
 from .optimizer import Squad
 from .projections import PlayerProjection
+from .scouting import enrich_projections
 
 ARTIFACTS_DIR = Path("data") / "artifacts"
 
@@ -43,7 +43,7 @@ def _squad_to_dict(squad: Squad) -> dict:
 
 
 def _projections_to_list(projections: list[PlayerProjection]) -> list[dict]:
-    return [asdict(p) for p in projections]
+    return enrich_projections(projections)
 
 
 def _pipeline_state() -> dict:
