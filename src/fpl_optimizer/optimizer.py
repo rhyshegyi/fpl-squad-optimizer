@@ -46,7 +46,10 @@ class Squad:
         return f"{counts['DEF']}-{counts['MID']}-{counts['FWD']}"
 
 
-def optimize(projections: list[PlayerProjection]) -> Squad:
+def optimize(
+    projections: list[PlayerProjection],
+    budget: int = BUDGET,
+) -> Squad:
     prob = pulp.LpProblem("fpl_squad", pulp.LpMaximize)
 
     ids = [p.player_id for p in projections]
@@ -68,7 +71,7 @@ def optimize(projections: list[PlayerProjection]) -> Squad:
 
     # 15-man squad, budget, positional shape, per-club cap
     prob += pulp.lpSum(squad.values()) == sum(SQUAD_SHAPE.values())
-    prob += pulp.lpSum(by_id[i].now_cost * squad[i] for i in ids) <= BUDGET
+    prob += pulp.lpSum(by_id[i].now_cost * squad[i] for i in ids) <= budget
     for pos, n in SQUAD_SHAPE.items():
         prob += pulp.lpSum(squad[i] for i in ids if by_id[i].position == pos) == n
     for team_id in {p.team_id for p in projections}:

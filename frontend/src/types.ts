@@ -36,6 +36,12 @@ export interface SquadResponse {
   squad: Squad;
 }
 
+export interface OptimizedSquadResponse {
+  projector: "naive" | "ml";
+  budget_tenths: number;
+  squad: Squad;
+}
+
 export interface ProjectionsResponse {
   generated_at: string;
   projector: "naive" | "ml";

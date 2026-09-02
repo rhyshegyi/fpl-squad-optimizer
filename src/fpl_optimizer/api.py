@@ -20,6 +20,7 @@ from pydantic import BaseModel, Field
 
 from .entry import fetch_manager_squad
 from .export import ARTIFACTS_DIR
+from .optimizer import optimize
 from .projections import project
 from .projections_ml import project_ml
 from .transfer import optimize_transfers
@@ -70,6 +71,42 @@ def get_status() -> dict:
 @app.get("/api/squad/latest")
 def get_squad() -> dict:
     return _load_json(SQUAD_JSON)
+
+
+@app.get("/api/squad/optimize")
+def get_squad_optimize(
+    budget_tenths: int = Query(default=1000, ge=400, le=1500),
+    projector: Literal["naive", "ml"] = "ml",
+) -> dict:
+    """Live LP solve for an arbitrary budget. Player values shift over the
+    season (rising to £15.5m stars, falling on out-of-form assets), so this
+    lets the UI ask 'given £X available, what should I pick?'."""
+    projections = project_ml() if projector == "ml" else project()
+    squad = optimize(projections, budget=budget_tenths)
+    return {
+        "projector": projector,
+        "budget_tenths": budget_tenths,
+        "squad": {
+            "total_cost": squad.total_cost,
+            "projected_points": squad.projected_points,
+            "formation": squad.formation(),
+            "picks": [
+                {
+                    "player_id": pick.player.player_id,
+                    "web_name": pick.player.web_name,
+                    "team_id": pick.player.team_id,
+                    "team_short": pick.player.team_short,
+                    "position": pick.player.position,
+                    "now_cost": pick.player.now_cost,
+                    "projected_points": pick.player.projected_points,
+                    "is_starter": pick.is_starter,
+                    "is_captain": pick.is_captain,
+                    "is_vice": pick.is_vice,
+                }
+                for pick in squad.picks
+            ],
+        },
+    }
 
 
 @app.get("/api/projections/latest")

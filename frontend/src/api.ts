@@ -1,5 +1,6 @@
 import type {
   EntrySquadResponse,
+  OptimizedSquadResponse,
   Position,
   ProjectionsResponse,
   SquadResponse,
@@ -26,6 +27,10 @@ async function json<T>(path: string, init?: RequestInit): Promise<T> {
 export const api = {
   status: () => json<StatusResponse>("/api/status"),
   squad: () => json<SquadResponse>("/api/squad/latest"),
+  squadOptimize: (budgetTenths: number, projector: "naive" | "ml" = "ml") =>
+    json<OptimizedSquadResponse>(
+      `/api/squad/optimize?budget_tenths=${budgetTenths}&projector=${projector}`
+    ),
   projections: (opts: {
     position?: Position;
     maxCostTenths?: number;
