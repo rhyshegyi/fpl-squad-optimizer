@@ -2,6 +2,7 @@ import argparse
 import sys
 
 from .entry import fetch_manager_squad
+from .export import export_artifacts
 from .historical import DEFAULT_SEASONS, ingest_historical
 from .ingest import ingest
 from .live_history import ingest_live_history
@@ -153,6 +154,15 @@ def cmd_transfers(args: argparse.Namespace) -> None:
     _print_transfer_plan(plan)
 
 
+def cmd_export(args: argparse.Namespace) -> None:
+    projector = _pick_projector(args.projector)
+    projections = projector()
+    squad = optimize(projections)
+    paths = export_artifacts(squad, projections, args.projector)
+    for name, path in paths.items():
+        print(f"{name}: {path}")
+
+
 def cmd_train(args: argparse.Namespace) -> None:
     r = train(val_season=args.val_season)
     print(f"train n={r.n_train}, valid n={r.n_valid} (season={r.val_seasons})")
@@ -187,6 +197,10 @@ def main() -> None:
     tr = sub.add_parser("train", help="train the ML predictor")
     tr.add_argument("--val-season", help="e.g. 2024-25")
     tr.set_defaults(func=cmd_train)
+
+    ex = sub.add_parser("export", help="write latest squad + projections to data/artifacts/")
+    ex.add_argument("--projector", choices=("naive", "ml"), default="ml")
+    ex.set_defaults(func=cmd_export)
 
     tx = sub.add_parser("transfers", help="recommend transfers for an existing squad")
     tx.add_argument("--entry", type=int, help="FPL manager entry ID (auto-pulls picks + bank)")

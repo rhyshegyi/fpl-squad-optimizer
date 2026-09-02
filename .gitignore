@@ -9,8 +9,9 @@ __pycache__/
 # uv
 .uv/
 
-# Data
-data/
+# Data — everything except the artifacts we publish for the backend
+data/*
+!data/artifacts/
 
 # IDE
 .vscode/

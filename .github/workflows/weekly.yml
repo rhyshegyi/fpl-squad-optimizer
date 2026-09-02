@@ -1,0 +1,60 @@
+name: weekly-fpl-pipeline
+
+# Runs after each gameweek settles. FPL matches finish Sunday-Monday; the API
+# stops churning by Tuesday morning UTC, so 06:00 Tuesday is a safe slot.
+on:
+  schedule:
+    - cron: "0 6 * * 2"
+  workflow_dispatch: {}
+
+concurrency:
+  group: weekly-fpl-pipeline
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to push the artifact commit back
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Install Python
+        run: uv python install
+
+      - name: Sync dependencies
+        run: uv sync --frozen
+
+      - name: Ingest historical seasons (vaastav CSVs)
+        run: uv run fpl ingest-history
+
+      - name: Ingest current-season data
+        run: |
+          uv run fpl ingest
+          uv run fpl stage
+          uv run fpl ingest-live-history
+
+      - name: Train ML predictor
+        run: uv run fpl train
+
+      - name: Export latest squad + projections
+        run: uv run fpl export --projector ml
+
+      - name: Commit artifacts if they changed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/artifacts
+          if git diff --staged --quiet; then
+            echo "No artifact changes — nothing to commit."
+          else
+            git commit -m "weekly: refresh projections + squad for $(date -u +%Y-%m-%d)"
+            git push
+          fi
