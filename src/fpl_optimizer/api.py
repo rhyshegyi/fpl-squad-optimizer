@@ -18,11 +18,13 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
+
 from .entry import fetch_manager_squad
 from .export import ARTIFACTS_DIR
 from .optimizer import optimize
-from .projections import PlayerProjection, project
-from .projections_ml import project_ml
+from .projections import PlayerProjection
 from .transfer import HIT_COST, optimize_transfers
 
 SQUAD_JSON = ARTIFACTS_DIR / "latest_squad.json"
@@ -37,6 +39,25 @@ def _load_json(path: Path) -> dict:
                    f"(or wait for the weekly workflow)",
         )
     return json.loads(path.read_text())
+
+
+def _projections_from_artifact() -> list[PlayerProjection]:
+    """Rebuild PlayerProjection list from the cached JSON — the deployed
+    API never touches SQLite or LightGBM at runtime; the LP just runs off
+    what the weekly export produced."""
+    data = _load_json(PROJECTIONS_JSON)
+    return [
+        PlayerProjection(
+            player_id=r["player_id"],
+            web_name=r["web_name"],
+            team_id=r["team_id"],
+            team_short=r["team_short"],
+            position=r["position"],
+            now_cost=r["now_cost"],
+            projected_points=r["projected_points"],
+        )
+        for r in data["projections"]
+    ]
 
 
 app = FastAPI(
@@ -76,15 +97,16 @@ def get_squad() -> dict:
 @app.get("/api/squad/optimize")
 def get_squad_optimize(
     budget_tenths: int = Query(default=1000, ge=400, le=1500),
-    projector: Literal["naive", "ml"] = "ml",
 ) -> dict:
     """Live LP solve for an arbitrary budget. Player values shift over the
     season (rising to £15.5m stars, falling on out-of-form assets), so this
-    lets the UI ask 'given £X available, what should I pick?'."""
-    projections = project_ml() if projector == "ml" else project()
+    lets the UI ask 'given £X available, what should I pick?'. Uses the
+    cached projections — the numbers match the weekly artifact, but the
+    squad shape adapts to the new budget."""
+    projections = _projections_from_artifact()
     squad = optimize(projections, budget=budget_tenths)
     return {
-        "projector": projector,
+        "projector": "ml",
         "budget_tenths": budget_tenths,
         "squad": {
             "total_cost": squad.total_cost,
@@ -158,7 +180,6 @@ class TransferRequest(BaseModel):
     bank_tenths: int = Field(..., ge=0, description="Money in bank, tenths of £m")
     free_transfers: int = Field(1, ge=0, le=5)
     max_transfers: int | None = Field(None, ge=0, le=15)
-    projector: Literal["naive", "ml"] = "ml"
     ignore_hit_cost: bool = Field(
         False,
         description=(
@@ -169,33 +190,9 @@ class TransferRequest(BaseModel):
     )
 
 
-def _projections_from_artifact() -> list[PlayerProjection]:
-    """Rebuild PlayerProjection list from the cached JSON — avoids the
-    ~2-3s cost of re-running the ML pipeline on every transfer request."""
-    data = _load_json(PROJECTIONS_JSON)
-    return [
-        PlayerProjection(
-            player_id=r["player_id"],
-            web_name=r["web_name"],
-            team_id=r["team_id"],
-            team_short=r["team_short"],
-            position=r["position"],
-            now_cost=r["now_cost"],
-            projected_points=r["projected_points"],
-        )
-        for r in data["projections"]
-    ]
-
-
 @app.post("/api/transfers")
 def post_transfers(req: TransferRequest) -> dict:
-    # For the default ml projector, read the cached artifact — the numbers
-    # are identical to a fresh project_ml() call but the LP-only pass is
-    # ~5× faster since we skip DB reads + LightGBM inference.
-    if req.projector == "ml":
-        projections = _projections_from_artifact()
-    else:
-        projections = project()
+    projections = _projections_from_artifact()
     try:
         plan = optimize_transfers(
             projections=projections,
@@ -240,3 +237,27 @@ def post_transfers(req: TransferRequest) -> dict:
             ],
         },
     }
+
+# Static frontend
+# ---------------
+# When the built React SPA lives at frontend/dist (populated during the Docker
+# build), FastAPI serves its assets alongside the API on the same origin.
+# In dev this directory doesn't exist, so we skip the mount and let the vite
+# dev server handle the frontend at :5173 instead.
+_FRONTEND_DIST = Path("frontend") / "dist"
+if _FRONTEND_DIST.exists():
+    app.mount(
+        "/assets",
+        StaticFiles(directory=_FRONTEND_DIST / "assets"),
+        name="frontend-assets",
+    )
+
+    @app.get("/favicon.svg", include_in_schema=False)
+    async def _favicon() -> FileResponse:
+        return FileResponse(_FRONTEND_DIST / "favicon.svg")
+
+    @app.get("/{full_path:path}", include_in_schema=False)
+    async def _spa_fallback(full_path: str) -> FileResponse:
+        # React Router owns everything that isn't an /api route — hand back
+        # index.html so client-side routing picks it up.
+        return FileResponse(_FRONTEND_DIST / "index.html")

@@ -44,7 +44,7 @@ export function SquadPage() {
       setLoading(true);
       setErr(null);
       try {
-        const r = await api.squadOptimize(budget, "ml");
+        const r = await api.squadOptimize(budget);
         setSquad(r.squad);
         setMeta({ generatedAt: new Date().toISOString(), source: "live" });
       } catch (e) {

@@ -90,7 +90,6 @@ export interface TransferRequestBody {
   bank_tenths: number;
   free_transfers: number;
   max_transfers?: number | null;
-  projector?: "naive" | "ml";
   ignore_hit_cost?: boolean;
 }
 

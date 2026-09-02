@@ -7,7 +7,6 @@ import type {
 } from "../types";
 
 type Source = "entry" | "manual";
-type Projector = "ml" | "naive";
 
 // Persist just the form + loaded-entry across navigation so users don't
 // have to re-enter their FPL entry ID every time they switch pages. The
@@ -22,7 +21,6 @@ interface PersistedState {
   bankMillions: string;
   freeTransfers: number;
   maxTransfersInput: string;
-  projector: Projector;
   ignoreHits: boolean;
   loadedEntry: EntrySquadResponse | null;
 }
@@ -34,7 +32,6 @@ const DEFAULT_STATE: PersistedState = {
   bankMillions: "0.0",
   freeTransfers: 1,
   maxTransfersInput: "",
-  projector: "ml",
   ignoreHits: false,
   loadedEntry: null,
 };
@@ -57,7 +54,6 @@ export function TransfersPage() {
   const [bankMillions, setBankMillions] = useState(initial.bankMillions);
   const [freeTransfers, setFreeTransfers] = useState(initial.freeTransfers);
   const [maxTransfersInput, setMaxTransfersInput] = useState(initial.maxTransfersInput);
-  const [projector, setProjector] = useState<Projector>(initial.projector);
   const [ignoreHits, setIgnoreHits] = useState<boolean>(initial.ignoreHits);
 
   const [loadedEntry, setLoadedEntry] = useState<EntrySquadResponse | null>(initial.loadedEntry);
@@ -68,13 +64,13 @@ export function TransfersPage() {
   useEffect(() => {
     const state: PersistedState = {
       source, entryIdInput, manualIds, bankMillions, freeTransfers,
-      maxTransfersInput, projector, ignoreHits, loadedEntry,
+      maxTransfersInput, ignoreHits, loadedEntry,
     };
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
     } catch { /* localStorage full or disabled — silently drop persistence */ }
   }, [source, entryIdInput, manualIds, bankMillions, freeTransfers,
-      maxTransfersInput, projector, ignoreHits, loadedEntry]);
+      maxTransfersInput, ignoreHits, loadedEntry]);
 
   async function loadEntry() {
     setErr(null);
@@ -119,7 +115,6 @@ export function TransfersPage() {
         bank_tenths: bankTenths,
         free_transfers: freeTransfers,
         max_transfers: max ?? undefined,
-        projector,
         ignore_hit_cost: ignoreHits,
       });
       setPlan(result);
@@ -267,19 +262,6 @@ export function TransfersPage() {
                 onChange={(e) => setMaxTransfersInput(e.target.value)}
                 className="mt-1 w-full bg-slate-950 border border-white/10 rounded-lg px-3 py-2 text-sm"
               />
-            </label>
-            <label className="block">
-              <span className="text-xs uppercase tracking-wider text-slate-400">
-                Projector
-              </span>
-              <select
-                value={projector}
-                onChange={(e) => setProjector(e.target.value as Projector)}
-                className="mt-1 w-full bg-slate-950 border border-white/10 rounded-lg px-3 py-2 text-sm"
-              >
-                <option value="ml">ml (LightGBM)</option>
-                <option value="naive">naive (form × FDR)</option>
-              </select>
             </label>
           </div>
 

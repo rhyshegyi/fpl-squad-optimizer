@@ -1,0 +1,30 @@
+# Exclude everything the runtime image doesn't need. The API only reads from
+# data/artifacts/*.json, so we keep SQLite and the trained model out of the
+# image — those live in the training pipeline (GH Actions), not the server.
+.git/
+.github/
+.venv/
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Data — keep only the JSON artifacts the API serves
+data/*.db
+data/model.txt
+data/model_features.json
+data/raw/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Local scratch
+*.log

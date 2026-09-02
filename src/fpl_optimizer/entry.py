@@ -12,10 +12,9 @@ from dataclasses import dataclass
 
 import requests
 
-from .db import connect
-
 ENTRY_URL = "https://fantasy.premierleague.com/api/entry/{eid}/"
 PICKS_URL = "https://fantasy.premierleague.com/api/entry/{eid}/event/{gw}/picks/"
+BOOTSTRAP_URL = "https://fantasy.premierleague.com/api/bootstrap-static/"
 
 
 @dataclass
@@ -37,20 +36,18 @@ def _fetch_json(url: str) -> dict:
     return r.json()
 
 
-def _latest_finished_gw(conn) -> int | None:
-    row = conn.execute(
-        "SELECT MAX(id) AS id FROM gameweeks WHERE finished = 1"
-    ).fetchone()
-    return row["id"] if row and row["id"] is not None else None
+def _latest_finished_gw_live() -> int | None:
+    """Ask FPL bootstrap-static for the latest finished GW. Avoids a DB read
+    so the API server can run without a local SQLite copy."""
+    events = _fetch_json(BOOTSTRAP_URL).get("events") or []
+    finished = [e["id"] for e in events if e.get("finished")]
+    return max(finished) if finished else None
 
 
 def fetch_manager_squad(entry_id: int, gw: int | None = None) -> ManagerSquad:
     entry = _fetch_json(ENTRY_URL.format(eid=entry_id))
 
-    with connect() as conn:
-        latest_finished = _latest_finished_gw(conn)
-
-    source_gw = gw or latest_finished
+    source_gw = gw or _latest_finished_gw_live()
     if source_gw is None:
         raise RuntimeError(
             "no finished gameweek available yet — pass --gw explicitly "

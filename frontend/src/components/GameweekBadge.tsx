@@ -21,26 +21,27 @@ export function GameweekBadge() {
   }, []);
 
   if (!state) return null;
-  const target = state.next_gw ?? state.current_gw;
+  const next = state.next_gw;
+  const target = next ?? state.current_gw;
   if (!target) return null;
 
   return (
     <div className="hidden sm:flex items-center gap-3 rounded-lg border border-emerald-500/20 bg-emerald-500/5 px-3 py-1.5 text-xs">
       <div>
         <div className="uppercase tracking-widest text-emerald-300/80 text-[10px]">
-          {state.next_gw ? "Planning" : "Current"}
+          {next ? "Planning" : "Current"}
         </div>
         <div className="font-semibold text-emerald-300">
           {target.name}
         </div>
       </div>
-      {"deadline_time" in target && target.deadline_time && (
+      {next?.deadline_time && (
         <div className="border-l border-emerald-500/20 pl-3">
           <div className="uppercase tracking-widest text-emerald-300/80 text-[10px]">
             Deadline
           </div>
           <div className="text-emerald-100">
-            {fmtDeadline(target.deadline_time)}
+            {fmtDeadline(next.deadline_time)}
           </div>
         </div>
       )}
