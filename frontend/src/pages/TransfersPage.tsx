@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { api } from "../api";
 import { Pitch } from "../components/Pitch";
 import type {
@@ -9,20 +9,72 @@ import type {
 type Source = "entry" | "manual";
 type Projector = "ml" | "naive";
 
-export function TransfersPage() {
-  const [source, setSource] = useState<Source>("entry");
-  const [entryIdInput, setEntryIdInput] = useState("");
-  const [manualIds, setManualIds] = useState("");
-  const [bankMillions, setBankMillions] = useState("0.0");
-  const [freeTransfers, setFreeTransfers] = useState(1);
-  const [maxTransfersInput, setMaxTransfersInput] = useState("");
-  const [projector, setProjector] = useState<Projector>("ml");
-  const [ignoreHits, setIgnoreHits] = useState<boolean>(false);
+// Persist just the form + loaded-entry across navigation so users don't
+// have to re-enter their FPL entry ID every time they switch pages. The
+// plan itself is deliberately NOT stored because data goes stale — user
+// clicks Recommend again to refresh, which is now ~250ms.
+const STORAGE_KEY = "fpl-transfers-state.v1";
 
-  const [loadedEntry, setLoadedEntry] = useState<EntrySquadResponse | null>(null);
+interface PersistedState {
+  source: Source;
+  entryIdInput: string;
+  manualIds: string;
+  bankMillions: string;
+  freeTransfers: number;
+  maxTransfersInput: string;
+  projector: Projector;
+  ignoreHits: boolean;
+  loadedEntry: EntrySquadResponse | null;
+}
+
+const DEFAULT_STATE: PersistedState = {
+  source: "entry",
+  entryIdInput: "",
+  manualIds: "",
+  bankMillions: "0.0",
+  freeTransfers: 1,
+  maxTransfersInput: "",
+  projector: "ml",
+  ignoreHits: false,
+  loadedEntry: null,
+};
+
+function readPersistedState(): PersistedState {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return DEFAULT_STATE;
+    return { ...DEFAULT_STATE, ...(JSON.parse(raw) as Partial<PersistedState>) };
+  } catch {
+    return DEFAULT_STATE;
+  }
+}
+
+export function TransfersPage() {
+  const initial = readPersistedState();
+  const [source, setSource] = useState<Source>(initial.source);
+  const [entryIdInput, setEntryIdInput] = useState(initial.entryIdInput);
+  const [manualIds, setManualIds] = useState(initial.manualIds);
+  const [bankMillions, setBankMillions] = useState(initial.bankMillions);
+  const [freeTransfers, setFreeTransfers] = useState(initial.freeTransfers);
+  const [maxTransfersInput, setMaxTransfersInput] = useState(initial.maxTransfersInput);
+  const [projector, setProjector] = useState<Projector>(initial.projector);
+  const [ignoreHits, setIgnoreHits] = useState<boolean>(initial.ignoreHits);
+
+  const [loadedEntry, setLoadedEntry] = useState<EntrySquadResponse | null>(initial.loadedEntry);
   const [plan, setPlan] = useState<TransferPlanResponse | null>(null);
   const [err, setErr] = useState<string | null>(null);
   const [busy, setBusy] = useState<"load" | "submit" | null>(null);
+
+  useEffect(() => {
+    const state: PersistedState = {
+      source, entryIdInput, manualIds, bankMillions, freeTransfers,
+      maxTransfersInput, projector, ignoreHits, loadedEntry,
+    };
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    } catch { /* localStorage full or disabled — silently drop persistence */ }
+  }, [source, entryIdInput, manualIds, bankMillions, freeTransfers,
+      maxTransfersInput, projector, ignoreHits, loadedEntry]);
 
   async function loadEntry() {
     setErr(null);
