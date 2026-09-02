@@ -28,6 +28,14 @@ export function StatusBar({ generatedAt, projector, pipelineState }: Props) {
           {relTime(generatedAt)}
         </span>
       </span>
+      {pipelineState.current_gw && (
+        <span>
+          <span className="text-slate-500">current</span>{" "}
+          <span className="font-medium text-slate-200">
+            {pipelineState.current_gw.name}
+          </span>
+        </span>
+      )}
       {pipelineState.next_gw && (
         <span>
           <span className="text-slate-500">next</span>{" "}
