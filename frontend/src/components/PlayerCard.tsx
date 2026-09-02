@@ -25,10 +25,10 @@ export function PlayerCard({ player, compact = false }: Props) {
     <div
       className={
         "relative flex flex-col items-center rounded-lg bg-slate-900/85 " +
-        "backdrop-blur border border-white/10 shadow-md overflow-hidden " +
-        (compact ? "px-2 py-1.5 pt-2 min-w-[92px]" : "px-2.5 py-2 pt-2.5 min-w-[104px]")
+        "backdrop-blur border border-white/10 border-t-[3px] shadow-md " +
+        (compact ? "px-2 py-1.5 min-w-[92px]" : "px-2.5 py-2 min-w-[104px]")
       }
-      style={{ boxShadow: `inset 0 3px 0 0 ${color}` }}
+      style={{ borderTopColor: color }}
     >
       {badge && (
         <span
