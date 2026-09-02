@@ -1,6 +1,7 @@
 import argparse
 import sys
 
+from .entry import fetch_manager_squad
 from .historical import DEFAULT_SEASONS, ingest_historical
 from .ingest import ingest
 from .live_history import ingest_live_history
@@ -9,6 +10,7 @@ from .optimizer import Pick, Squad, SQUAD_SHAPE, optimize
 from .projections import project
 from .projections_ml import project_ml
 from .staging import stage
+from .transfer import TransferPlan, optimize_transfers
 
 
 def _pick_projector(name: str):
@@ -93,6 +95,64 @@ def cmd_ingest_live_history(_: argparse.Namespace) -> None:
     print(ingest_live_history())
 
 
+def _print_transfer_plan(plan: TransferPlan) -> None:
+    print(f"\nBank before:   £{plan.bank_before / 10:.1f}m")
+    print(f"Bank after:    £{plan.bank_after / 10:.1f}m")
+    print(f"Free transfers: {plan.free_transfers}")
+    print(f"Transfers made: {plan.transfers_made}"
+          f"  (paid hits: {plan.paid_hits}, cost: -{plan.hit_cost} pts)")
+    print(f"Net projected:  {plan.projected_points}  (starters + captain - hits)\n")
+
+    if not plan.transfers_in:
+        print("No transfers recommended — current squad is already optimal under constraints.")
+        return
+
+    print("Suggested transfers")
+    outs = sorted(plan.transfers_out, key=lambda p: -p.projected_points)
+    ins = sorted(plan.transfers_in, key=lambda p: -p.projected_points)
+    for out_p, in_p in zip(outs, ins):
+        delta = in_p.projected_points - out_p.projected_points
+        cost_delta = (in_p.now_cost - out_p.now_cost) / 10
+        sign = "+" if delta >= 0 else ""
+        cost_sign = "+" if cost_delta >= 0 else ""
+        print(f"  OUT {out_p.web_name:<18} {out_p.team_short:<4} "
+              f"£{out_p.now_cost / 10:>4.1f}m   {out_p.projected_points:>5.2f} pts")
+        print(f"  IN  {in_p.web_name:<18} {in_p.team_short:<4} "
+              f"£{in_p.now_cost / 10:>4.1f}m   {in_p.projected_points:>5.2f} pts    "
+              f"({sign}{delta:.2f} pts, {cost_sign}£{cost_delta:.1f}m)")
+        print()
+
+    print("New squad")
+    _print_squad(plan.new_squad)
+
+
+def cmd_transfers(args: argparse.Namespace) -> None:
+    projector = _pick_projector(args.projector)
+    projections = projector()
+
+    if args.entry:
+        squad = fetch_manager_squad(args.entry, gw=args.gw)
+        print(f"manager: {squad.manager_name} — team: {squad.team_name}")
+        print(f"picks from GW{squad.source_gw}, bank £{squad.bank / 10:.1f}m, "
+              f"squad value £{squad.squad_value / 10:.1f}m")
+        existing_ids = squad.player_ids
+        bank = squad.bank
+    else:
+        if not args.players or not args.bank_tenths:
+            raise RuntimeError("must pass --entry OR (--players and --bank-tenths)")
+        existing_ids = [int(x) for x in args.players.split(",")]
+        bank = args.bank_tenths
+
+    plan = optimize_transfers(
+        projections=projections,
+        existing_ids=existing_ids,
+        bank=bank,
+        free_transfers=args.free,
+        max_transfers=args.max_transfers,
+    )
+    _print_transfer_plan(plan)
+
+
 def cmd_train(args: argparse.Namespace) -> None:
     r = train(val_season=args.val_season)
     print(f"train n={r.n_train}, valid n={r.n_valid} (season={r.val_seasons})")
@@ -127,6 +187,16 @@ def main() -> None:
     tr = sub.add_parser("train", help="train the ML predictor")
     tr.add_argument("--val-season", help="e.g. 2024-25")
     tr.set_defaults(func=cmd_train)
+
+    tx = sub.add_parser("transfers", help="recommend transfers for an existing squad")
+    tx.add_argument("--entry", type=int, help="FPL manager entry ID (auto-pulls picks + bank)")
+    tx.add_argument("--gw", type=int, help="which finished GW's picks to use (default: latest finished)")
+    tx.add_argument("--players", help="comma-separated 15 player IDs (used when --entry is not given)")
+    tx.add_argument("--bank-tenths", type=int, help="bank in tenths of a million (used with --players)")
+    tx.add_argument("--free", type=int, default=1, help="free transfers available (default 1)")
+    tx.add_argument("--max-transfers", type=int, help="cap on total transfers made")
+    tx.add_argument("--projector", choices=("naive", "ml"), default="naive")
+    tx.set_defaults(func=cmd_transfers)
 
     args = parser.parse_args()
     try:
