@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { api } from "../api";
 import { FdrChip } from "../components/FdrChip";
+import { teamColor } from "../teamColors";
 import type { Player, Position, ProjectionsResponse } from "../types";
 
 const POSITIONS: (Position | "ALL")[] = ["ALL", "GK", "DEF", "MID", "FWD"];
@@ -211,6 +212,11 @@ export function ProjectionsPage() {
                   >
                     <td className="px-2 py-2">
                       <div className="flex items-center gap-2">
+                        <span
+                          className="inline-block w-2.5 h-2.5 rounded-full flex-shrink-0"
+                          style={{ backgroundColor: teamColor(p.team_short) }}
+                          title={p.team_short}
+                        />
                         <span className="font-medium">{p.web_name}</span>
                         <span className="text-[10px] uppercase tracking-widest text-slate-500">
                           {p.team_short}
