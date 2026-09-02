@@ -49,7 +49,7 @@ uv run fpl serve                # FastAPI on http://127.0.0.1:8000
 cd frontend && npm install && npm run dev   # Vite dev server on 5173
 ```
 
-Open http://localhost:5173.
+Open [http://localhost:5173](http://localhost:5173).
 
 Transfer recommendations from the CLI:
 
@@ -58,21 +58,9 @@ uv run fpl transfers --entry 12345 --free 1
 uv run fpl transfers --players 86,88,... --bank-tenths 5 --free 2 --max-transfers 3
 ```
 
-## Deploy
-
-Single-container deploy to [Fly.io](https://fly.io). The multi-stage Dockerfile builds the React SPA, then serves it alongside the API from `python:3.13-slim` on port 8080. Runtime is slim — the deployed API only reads the cached JSON artifacts (no SQLite, no LightGBM inference).
-
-```bash
-flyctl auth login
-flyctl launch --no-deploy       # accepts existing Dockerfile + fly.toml
-flyctl deploy                   # ~2-3 min: builds + rolls out
-```
-
-Auto-deploy on push (optional): add a `FLY_API_TOKEN` GitHub secret (generate via `flyctl tokens create deploy`), then a `.github/workflows/deploy.yml` that runs `flyctl deploy --remote-only` on pushes to `main`. Every weekly artifact commit then rolls to prod automatically.
-
 ## Layout
 
-```
+```text
 src/fpl_optimizer/
 ├── cli.py            # fpl ingest | stage | train | optimize | transfers | export | serve | run
 ├── db.py             # SQLite schema + connect helper (training + local dev)
