@@ -18,6 +18,7 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
+from .entry import fetch_manager_squad
 from .export import ARTIFACTS_DIR
 from .projections import project
 from .projections_ml import project_ml
@@ -91,6 +92,26 @@ def get_projections(
         "projector": data["projector"],
         "count": len(rows),
         "projections": rows,
+    }
+
+
+@app.get("/api/entry/{entry_id}/squad")
+def get_entry_squad(entry_id: int, gw: int | None = None) -> dict:
+    """Pull a manager's 15 picks + bank from the public FPL entry endpoints."""
+    try:
+        squad = fetch_manager_squad(entry_id, gw=gw)
+    except Exception as e:
+        raise HTTPException(status_code=502, detail=f"could not fetch entry: {e}")
+    return {
+        "entry_id": squad.entry_id,
+        "manager_name": squad.manager_name,
+        "team_name": squad.team_name,
+        "source_gw": squad.source_gw,
+        "bank": squad.bank,
+        "squad_value": squad.squad_value,
+        "player_ids": squad.player_ids,
+        "captain_id": squad.captain_id,
+        "vice_id": squad.vice_id,
     }
 
 

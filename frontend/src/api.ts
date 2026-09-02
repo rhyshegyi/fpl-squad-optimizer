@@ -1,14 +1,24 @@
 import type {
+  EntrySquadResponse,
   Position,
   ProjectionsResponse,
   SquadResponse,
   StatusResponse,
+  TransferPlanResponse,
+  TransferRequestBody,
 } from "./types";
 
-async function json<T>(path: string): Promise<T> {
-  const r = await fetch(path);
+async function json<T>(path: string, init?: RequestInit): Promise<T> {
+  const r = await fetch(path, init);
   if (!r.ok) {
-    throw new Error(`${r.status} ${r.statusText} — ${path}`);
+    let detail = "";
+    try {
+      const body = await r.json();
+      detail = typeof body?.detail === "string" ? body.detail : JSON.stringify(body?.detail ?? body);
+    } catch {
+      /* body not JSON, ignore */
+    }
+    throw new Error(`${r.status} ${r.statusText}${detail ? " — " + detail : ""}`);
   }
   return (await r.json()) as T;
 }
@@ -30,4 +40,12 @@ export const api = {
     const qs = q.toString();
     return json<ProjectionsResponse>(`/api/projections/latest${qs ? "?" + qs : ""}`);
   },
+  entrySquad: (entryId: number) =>
+    json<EntrySquadResponse>(`/api/entry/${entryId}/squad`),
+  transfers: (body: TransferRequestBody) =>
+    json<TransferPlanResponse>("/api/transfers", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    }),
 };

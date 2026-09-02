@@ -48,3 +48,37 @@ export interface StatusResponse {
   projector: "naive" | "ml";
   pipeline_state: PipelineState;
 }
+
+export interface EntrySquadResponse {
+  entry_id: number;
+  manager_name: string;
+  team_name: string;
+  source_gw: number;
+  bank: number;         // tenths
+  squad_value: number;  // tenths
+  player_ids: number[]; // 15 entries
+  captain_id: number | null;
+  vice_id: number | null;
+}
+
+export interface TransferRequestBody {
+  existing_ids: number[];
+  bank_tenths: number;
+  free_transfers: number;
+  max_transfers?: number | null;
+  projector?: "naive" | "ml";
+}
+
+export interface TransferPlanResponse {
+  old_squad_ids: number[];
+  transfers_made: number;
+  free_transfers: number;
+  paid_hits: number;
+  hit_cost: number;
+  projected_points: number;
+  bank_before: number;
+  bank_after: number;
+  transfers_in: Player[];
+  transfers_out: Player[];
+  new_squad: Squad;
+}

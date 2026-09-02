@@ -1,6 +1,7 @@
 import { Link, NavLink, Route, BrowserRouter, Routes } from "react-router-dom";
 import { ProjectionsPage } from "./pages/ProjectionsPage";
 import { SquadPage } from "./pages/SquadPage";
+import { TransfersPage } from "./pages/TransfersPage";
 
 function NavItem({ to, label }: { to: string; label: string }) {
   return (
@@ -33,6 +34,7 @@ export default function App() {
             </Link>
             <nav className="flex gap-1">
               <NavItem to="/" label="Squad" />
+              <NavItem to="/transfers" label="Transfers" />
               <NavItem to="/projections" label="Projections" />
             </nav>
           </div>
@@ -41,6 +43,7 @@ export default function App() {
           <div className="max-w-6xl mx-auto px-6 py-8">
             <Routes>
               <Route path="/" element={<SquadPage />} />
+              <Route path="/transfers" element={<TransfersPage />} />
               <Route path="/projections" element={<ProjectionsPage />} />
             </Routes>
           </div>
