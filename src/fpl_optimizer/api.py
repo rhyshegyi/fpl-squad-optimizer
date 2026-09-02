@@ -21,9 +21,9 @@ from pydantic import BaseModel, Field
 from .entry import fetch_manager_squad
 from .export import ARTIFACTS_DIR
 from .optimizer import optimize
-from .projections import project
+from .projections import PlayerProjection, project
 from .projections_ml import project_ml
-from .transfer import optimize_transfers
+from .transfer import HIT_COST, optimize_transfers
 
 SQUAD_JSON = ARTIFACTS_DIR / "latest_squad.json"
 PROJECTIONS_JSON = ARTIFACTS_DIR / "latest_projections.json"
@@ -159,11 +159,43 @@ class TransferRequest(BaseModel):
     free_transfers: int = Field(1, ge=0, le=5)
     max_transfers: int | None = Field(None, ge=0, le=15)
     projector: Literal["naive", "ml"] = "ml"
+    ignore_hit_cost: bool = Field(
+        False,
+        description=(
+            "If true, treat hits as free (0 pts penalty). Lets the LP pick "
+            "the top-of-the-market squad regardless of transfer count — "
+            "useful for planning multi-week moves."
+        ),
+    )
+
+
+def _projections_from_artifact() -> list[PlayerProjection]:
+    """Rebuild PlayerProjection list from the cached JSON — avoids the
+    ~2-3s cost of re-running the ML pipeline on every transfer request."""
+    data = _load_json(PROJECTIONS_JSON)
+    return [
+        PlayerProjection(
+            player_id=r["player_id"],
+            web_name=r["web_name"],
+            team_id=r["team_id"],
+            team_short=r["team_short"],
+            position=r["position"],
+            now_cost=r["now_cost"],
+            projected_points=r["projected_points"],
+        )
+        for r in data["projections"]
+    ]
 
 
 @app.post("/api/transfers")
 def post_transfers(req: TransferRequest) -> dict:
-    projections = project_ml() if req.projector == "ml" else project()
+    # For the default ml projector, read the cached artifact — the numbers
+    # are identical to a fresh project_ml() call but the LP-only pass is
+    # ~5× faster since we skip DB reads + LightGBM inference.
+    if req.projector == "ml":
+        projections = _projections_from_artifact()
+    else:
+        projections = project()
     try:
         plan = optimize_transfers(
             projections=projections,
@@ -171,6 +203,7 @@ def post_transfers(req: TransferRequest) -> dict:
             bank=req.bank_tenths,
             free_transfers=req.free_transfers,
             max_transfers=req.max_transfers,
+            hit_cost=0 if req.ignore_hit_cost else HIT_COST,
         )
     except (RuntimeError, ValueError) as e:
         raise HTTPException(status_code=400, detail=str(e))

@@ -42,6 +42,7 @@ def optimize_transfers(
     bank: int,
     free_transfers: int = 1,
     max_transfers: int | None = None,
+    hit_cost: int = HIT_COST,
 ) -> TransferPlan:
     if len(existing_ids) != sum(SQUAD_SHAPE.values()):
         raise ValueError(f"existing squad must have {sum(SQUAD_SHAPE.values())} players, got {len(existing_ids)}")
@@ -69,7 +70,7 @@ def optimize_transfers(
     prob += (
         pulp.lpSum(proj(i) * start[i] + proj(i) * capt[i]
                    + BENCH_WEIGHT * proj(i) * (squad[i] - start[i]) for i in ids)
-        - HIT_COST * hits
+        - hit_cost * hits
     )
 
     # 15-man squad, cash budget (bank + squad value at current prices)
@@ -128,7 +129,7 @@ def optimize_transfers(
     captain_bonus = proj(captain_id)
     # Match Squad.projected_points semantics: starters + captain double,
     # bench excluded. Hit cost is applied on top.
-    projected = starter_pts + captain_bonus - HIT_COST * paid_hits
+    projected = starter_pts + captain_bonus - hit_cost * paid_hits
 
     new_squad = Squad(
         picks=picks,
@@ -144,7 +145,7 @@ def optimize_transfers(
         transfers_made=transfers_made,
         free_transfers=free_transfers,
         paid_hits=paid_hits,
-        hit_cost=paid_hits * HIT_COST,
+        hit_cost=paid_hits * hit_cost,
         projected_points=round(projected, 2),
         bank_before=bank,
         bank_after=total_budget - total_new_cost,

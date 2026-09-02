@@ -17,6 +17,7 @@ export function TransfersPage() {
   const [freeTransfers, setFreeTransfers] = useState(1);
   const [maxTransfersInput, setMaxTransfersInput] = useState("");
   const [projector, setProjector] = useState<Projector>("ml");
+  const [ignoreHits, setIgnoreHits] = useState<boolean>(false);
 
   const [loadedEntry, setLoadedEntry] = useState<EntrySquadResponse | null>(null);
   const [plan, setPlan] = useState<TransferPlanResponse | null>(null);
@@ -67,6 +68,7 @@ export function TransfersPage() {
         free_transfers: freeTransfers,
         max_transfers: max ?? undefined,
         projector,
+        ignore_hit_cost: ignoreHits,
       });
       setPlan(result);
     } catch (e) {
@@ -86,7 +88,10 @@ export function TransfersPage() {
         <p className="text-slate-400 mt-2 max-w-2xl">
           Load your squad by FPL entry ID or paste the 15 player IDs directly.
           The optimizer respects your free transfers and factors in the -4 hit
-          penalty for anything over the allowance.
+          penalty for anything over the allowance — so a second transfer is
+          only recommended when the projected gain from that swap exceeds
+          4 points. Flip the "ignore hit penalty" toggle if you want to
+          plan multiple moves without that trade-off.
         </p>
       </div>
 
@@ -225,6 +230,21 @@ export function TransfersPage() {
               </select>
             </label>
           </div>
+
+          <label className="flex items-start gap-2 text-xs text-slate-300 pt-1">
+            <input
+              type="checkbox"
+              checked={ignoreHits}
+              onChange={(e) => setIgnoreHits(e.target.checked)}
+              className="accent-emerald-500 mt-0.5"
+            />
+            <span>
+              <span className="font-medium text-slate-200">Ignore hit penalty.</span>{" "}
+              Treat extra transfers as free — the LP picks the best possible squad
+              regardless of how many swaps it takes. Use with{" "}
+              <span className="text-slate-100">max transfers</span> to cap.
+            </span>
+          </label>
 
           <button
             onClick={submit}
