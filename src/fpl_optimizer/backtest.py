@@ -754,3 +754,76 @@ class HorizonProjector(Projector):
                 projected_points=round(max(float(p), 0.0), 3),
             ))
         return out
+
+
+class BlendProjector(Projector):
+    """Season-long quality blended with near-term fixtures.
+
+    Powers the "target squad" view: the squad you're aiming at over the next
+    month, not the one you'd field if you could rebuild for Saturday. Those
+    are different questions and were previously answered by the same number.
+
+    Two components, both on a points-per-gameweek scale:
+
+    * quality  - season-to-date points per game, shrunk toward the positional
+      average so a player with two good games doesn't outrank a proven one.
+      This is what keeps the target stable enough to actually aim at.
+    * horizon  - the multi-fixture projection, so a good run of fixtures still
+      pulls a player in.
+
+    `weight` is the share given to quality. It's a genuine tuning knob and
+    three seasons isn't enough to fit it, so it defaults to an even split and
+    is documented as a judgement call rather than an optimised value.
+    """
+
+    # Games of positional-average evidence mixed in before a player's own
+    # record is trusted. Five is roughly where FPL managers stop calling a
+    # start "a small sample".
+    SHRINKAGE_GAMES = 5
+
+    def __init__(
+        self,
+        booster: lgb.Booster,
+        feat: list[str],
+        horizon: int = 6,
+        weight: float = 0.7,
+    ):
+        self.horizon_projector = HorizonProjector(booster, feat, horizon=horizon)
+        self.weight = weight
+        self.name = f"blend(h={horizon},w={weight:g})"
+
+    def __call__(self, frame, gw):
+        horizon = {p.player_id: p for p in self.horizon_projector(frame, gw)}
+        if not horizon:
+            return []
+
+        # Season to date means strictly before this gameweek — no lookahead.
+        past = frame[frame["gw"] < gw]
+        if past.empty:
+            return list(horizon.values())
+
+        played = past[past["minutes"] >= START_MINUTES]
+        by_pos_avg = played.groupby("position", observed=True)["total_points"].mean()
+        overall_avg = float(played["total_points"].mean()) if len(played) else 2.0
+
+        agg = played.groupby("element").agg(
+            pts=("total_points", "sum"), games=("total_points", "size")
+        )
+
+        out: list[PlayerProjection] = []
+        for pid, p in horizon.items():
+            row = agg.loc[pid] if pid in agg.index else None
+            prior = float(by_pos_avg.get(p.position, overall_avg))
+            if row is None:
+                quality = prior
+            else:
+                k = self.SHRINKAGE_GAMES
+                quality = (float(row.pts) + prior * k) / (float(row.games) + k)
+
+            blended = self.weight * quality + (1 - self.weight) * p.projected_points
+            out.append(PlayerProjection(
+                player_id=p.player_id, web_name=p.web_name, team_id=p.team_id,
+                team_short=p.team_short, position=p.position, now_cost=p.now_cost,
+                projected_points=round(max(blended, 0.0), 3),
+            ))
+        return out
