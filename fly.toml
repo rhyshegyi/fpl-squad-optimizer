@@ -1,25 +1,27 @@
-# Fly.io app config. `fly launch` will fill in the app name; leave the rest.
+# fly.toml app configuration file generated for fpl-squad-optimizer on 2026-09-02T19:43:44+10:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
 
-primary_region = "lhr"     # London — closest to the FPL API and most users
+app = 'fpl-squad-optimizer'
+primary_region = 'lhr'
 
 [build]
-
 [http_service]
   internal_port = 8080
   force_https = true
-  # Free-tier friendly: machines stop when idle, wake on first request.
-  # Cold starts are ~1s for this app.
-  auto_stop_machines = "stop"
+  auto_stop_machines = 'stop'
   auto_start_machines = true
   min_machines_running = 0
-  processes = ["app"]
+  processes = ['app']
 
   [http_service.concurrency]
-    type = "requests"
+    type = 'requests'
     hard_limit = 250
     soft_limit = 200
 
 [[vm]]
-  memory = "512mb"
-  cpu_kind = "shared"
+  memory = '512mb'
+  cpu_kind = 'shared'
   cpus = 1
+  memory_mb = 512
