@@ -29,6 +29,7 @@ from .transfer import HIT_COST, optimize_transfers
 
 SQUAD_JSON = ARTIFACTS_DIR / "latest_squad.json"
 PROJECTIONS_JSON = ARTIFACTS_DIR / "latest_projections.json"
+TARGET_JSON = ARTIFACTS_DIR / "latest_target.json"
 
 
 def _load_json(path: Path) -> dict:
@@ -126,6 +127,72 @@ def get_squad_optimize(
                     "is_vice": pick.is_vice,
                 }
                 for pick in squad.picks
+            ],
+        },
+    }
+
+
+def _projections_from(payload: dict) -> list[PlayerProjection]:
+    return [
+        PlayerProjection(
+            player_id=r["player_id"], web_name=r["web_name"], team_id=r["team_id"],
+            team_short=r["team_short"], position=r["position"],
+            now_cost=r["now_cost"], projected_points=r["projected_points"],
+        )
+        for r in payload["projections"]
+    ]
+
+
+@app.get("/api/squad/target")
+def get_target_squad(
+    budget_tenths: int | None = Query(default=None, ge=400, le=1500),
+) -> dict:
+    """The squad worth aiming at over the next several gameweeks.
+
+    Distinct from /api/squad/latest, which optimises purely for the next
+    fixture — a squad you cannot reach on one free transfer and which is
+    stale a week later. This one blends season-to-date quality with a
+    multi-fixture horizon so it stays stable enough to actually aim at.
+
+    Passing `budget_tenths` re-solves the LP; omitting it returns the
+    precomputed £100m squad.
+    """
+    data = _load_json(TARGET_JSON)
+    if budget_tenths is None:
+        return {
+            "generated_at": data["generated_at"],
+            "horizon": data["horizon"],
+            "quality_weight": data["quality_weight"],
+            "pipeline_state": data["pipeline_state"],
+            "budget_tenths": 1000,
+            "squad": data["squad"],
+        }
+
+    squad = optimize(_projections_from(data), budget=budget_tenths)
+    return {
+        "generated_at": data["generated_at"],
+        "horizon": data["horizon"],
+        "quality_weight": data["quality_weight"],
+        "pipeline_state": data["pipeline_state"],
+        "budget_tenths": budget_tenths,
+        "squad": {
+            "total_cost": squad.total_cost,
+            "projected_points": squad.projected_points,
+            "formation": squad.formation(),
+            "picks": [
+                {
+                    "player_id": pk.player.player_id,
+                    "web_name": pk.player.web_name,
+                    "team_id": pk.player.team_id,
+                    "team_short": pk.player.team_short,
+                    "position": pk.player.position,
+                    "now_cost": pk.player.now_cost,
+                    "projected_points": pk.player.projected_points,
+                    "is_starter": pk.is_starter,
+                    "is_captain": pk.is_captain,
+                    "is_vice": pk.is_vice,
+                }
+                for pk in squad.picks
             ],
         },
     }

@@ -8,6 +8,7 @@ history is browsable in the repo.
 from __future__ import annotations
 
 import json
+from dataclasses import asdict
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -95,4 +96,39 @@ def export_artifacts(
     squad_path.write_text(json.dumps(squad_data, indent=2))
     proj_path.write_text(json.dumps(proj_data, indent=2))
 
-    return {"squad": squad_path, "projections": proj_path}
+    written = {"squad": squad_path, "projections": proj_path}
+
+    # The target squad needs SQLite and LightGBM, which the deployed image
+    # deliberately lacks, so it's computed here and served from cache like
+    # everything else. Player-level projections go in alongside the squad so
+    # the API can still re-solve for an arbitrary budget without them.
+    target_path = _export_target()
+    if target_path is not None:
+        written["target"] = target_path
+    return written
+
+
+def _export_target() -> Path | None:
+    """Write latest_target.json: the multi-week squad worth aiming at."""
+    try:
+        from .optimizer import optimize
+        from .target import (
+            DEFAULT_HORIZON, DEFAULT_QUALITY_WEIGHT, project_target,
+        )
+
+        projections = project_target()
+        squad = optimize(projections, budget=1000)
+    except Exception as e:  # noqa: BLE001 - a missing target must not break the run
+        print(f"  warning: target squad export skipped ({e})")
+        return None
+
+    path = ARTIFACTS_DIR / "latest_target.json"
+    path.write_text(json.dumps({
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "horizon": DEFAULT_HORIZON,
+        "quality_weight": DEFAULT_QUALITY_WEIGHT,
+        "pipeline_state": _pipeline_state(),
+        "squad": _squad_to_dict(squad),
+        "projections": [asdict(p) for p in projections],
+    }, indent=2))
+    return path
