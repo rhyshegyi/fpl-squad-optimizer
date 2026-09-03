@@ -26,8 +26,11 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      # Pinned to an exact patch on purpose: astral-sh/setup-uv publishes
+      # v10.0.0 / v10.0.1 but no floating `v10` major tag, so `@v10` fails
+      # to resolve at workflow setup. Bump this explicitly when upgrading.
       - name: Install uv
-        uses: astral-sh/setup-uv@v10
+        uses: astral-sh/setup-uv@v10.0.1
         with:
           enable-cache: true
 
