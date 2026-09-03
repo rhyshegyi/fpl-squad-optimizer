@@ -5,6 +5,7 @@ import type {
   ProjectionsResponse,
   SquadResponse,
   StatusResponse,
+  TargetSquadResponse,
   TransferPlanResponse,
   TransferRequestBody,
 } from "./types";
@@ -27,6 +28,10 @@ async function json<T>(path: string, init?: RequestInit): Promise<T> {
 export const api = {
   status: () => json<StatusResponse>("/api/status"),
   squad: () => json<SquadResponse>("/api/squad/latest"),
+  squadTarget: (budgetTenths?: number) =>
+    json<TargetSquadResponse>(
+      "/api/squad/target" + (budgetTenths != null ? `?budget_tenths=${budgetTenths}` : "")
+    ),
   squadOptimize: (budgetTenths: number) =>
     json<OptimizedSquadResponse>(
       `/api/squad/optimize?budget_tenths=${budgetTenths}`

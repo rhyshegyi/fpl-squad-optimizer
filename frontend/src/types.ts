@@ -54,6 +54,15 @@ export interface SquadResponse {
   squad: Squad;
 }
 
+export interface TargetSquadResponse {
+  generated_at: string;
+  horizon: number;
+  quality_weight: number;
+  pipeline_state: PipelineState;
+  budget_tenths: number;
+  squad: Squad;
+}
+
 export interface OptimizedSquadResponse {
   projector: "naive" | "ml";
   budget_tenths: number;
