@@ -375,15 +375,23 @@ def run_with_transfers(
     budget: int = 1000,
     hit_cost: int = 4,
     projector: "Projector | None" = None,
+    opening_projector: "Projector | None" = None,
 ) -> tuple[BacktestResult, list[TransferLog]]:
     """Replay a season taking the transfer the model recommends each week.
 
     Hits are subtracted from the gameweek they're taken in, matching how FPL
     reports them, so the total is directly comparable to a real season score.
+
+    `opening_projector` picks the initial fifteen and defaults to `projector`.
+    They're separable because the benchmark showed the two jobs have different
+    winners: the naive rule assembles a far better opening squad, while the ML
+    model makes better weekly transfers.
     """
     frame = load_season_frame(season)
     if projector is None:
         projector = MLProjector(*train_excluding_season(season))
+    if opening_projector is None:
+        opening_projector = projector
     actuals = load_actuals(frame)
     prices = _price_index(frame)
     max_banked = MAX_BANKED_FREE_TRANSFERS.get(season, DEFAULT_MAX_BANKED)
@@ -391,7 +399,7 @@ def run_with_transfers(
     from .optimizer import optimize
     from .transfer import optimize_transfers, sell_price
 
-    opening = projector(frame, start_gw)
+    opening = opening_projector(frame, start_gw)
     if not opening:
         raise RuntimeError(f"no projections available for {season} GW{start_gw}")
     initial = optimize(opening, budget=budget)
@@ -474,7 +482,8 @@ def run_with_transfers(
 
     return BacktestResult(
         season=season,
-        strategy=f"transfers[{projector.name}]",
+        strategy=(f"transfers[{projector.name}]" if opening_projector is projector
+                  else f"transfers[open:{opening_projector.name}+wk:{projector.name}]"),
         start_gw=start_gw,
         end_gw=end_gw,
         total_points=sum(s.points for s in scores),
