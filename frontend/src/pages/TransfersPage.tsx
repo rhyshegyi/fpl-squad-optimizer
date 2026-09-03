@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import { api } from "../api";
 import { Pitch } from "../components/Pitch";
+import { teamColor } from "../teamColors";
 import type {
   EntrySquadResponse,
+  Pick as SquadPick,
+  Player,
   TransferPlanResponse,
 } from "../types";
 
@@ -60,6 +63,15 @@ export function TransfersPage() {
   const [plan, setPlan] = useState<TransferPlanResponse | null>(null);
   const [err, setErr] = useState<string | null>(null);
   const [busy, setBusy] = useState<"load" | "submit" | null>(null);
+  const [targetPicks, setTargetPicks] = useState<SquadPick[]>([]);
+
+  // The Squad page's target is the thing this page helps you move towards,
+  // so show how far off you currently are.
+  useEffect(() => {
+    api.squadTarget()
+      .then((t) => setTargetPicks(t.squad.picks))
+      .catch(() => setTargetPicks([]));
+  }, []);
 
   useEffect(() => {
     const state: PersistedState = {
@@ -71,6 +83,13 @@ export function TransfersPage() {
     } catch { /* localStorage full or disabled — silently drop persistence */ }
   }, [source, entryIdInput, manualIds, bankMillions, freeTransfers,
       maxTransfersInput, ignoreHits, loadedEntry]);
+
+  const squadIds = manualIds
+    .split(/[\s,]+/)
+    .filter(Boolean)
+    .map(Number)
+    .filter((n) => Number.isFinite(n));
+  const targetIds = new Set(targetPicks.map((p) => p.player_id));
 
   async function loadEntry() {
     setErr(null);
@@ -131,16 +150,23 @@ export function TransfersPage() {
         <div className="text-xs uppercase tracking-widest text-slate-500">
           Transfer recommendations
         </div>
-        <h1 className="text-3xl font-bold mt-1">Optimize your existing squad</h1>
+        <h1 className="text-3xl font-bold mt-1">What can you do this week?</h1>
         <p className="text-slate-400 mt-2 max-w-2xl">
           Load your squad by FPL entry ID or paste the 15 player IDs directly.
-          The optimizer respects your free transfers and factors in the -4 hit
-          penalty for anything over the allowance — so a second transfer is
-          only recommended when the projected gain from that swap exceeds
-          4 points. Flip the "ignore hit penalty" toggle if you want to
-          plan multiple moves without that trade-off.
+          <span className="text-slate-300"> This week</span> respects your free
+          transfers and the -4 hit penalty, so an extra transfer is only
+          recommended when the projected gain beats 4 points.{" "}
+          <span className="text-slate-300">Wildcard / Free Hit</span> ignores
+          both, showing the best squad you could build if transfers were free.
         </p>
       </div>
+
+      {targetIds.size > 0 && squadIds.length === 15 && (
+        <TargetDistance
+          squadIds={squadIds}
+          targetPicks={targetPicks}
+        />
+      )}
 
       <section className="grid gap-6 md:grid-cols-2">
         <div className="rounded-xl border border-white/10 bg-slate-900/60 p-5 space-y-4">
@@ -265,20 +291,32 @@ export function TransfersPage() {
             </label>
           </div>
 
-          <label className="flex items-start gap-2 text-xs text-slate-300 pt-1">
-            <input
-              type="checkbox"
-              checked={ignoreHits}
-              onChange={(e) => setIgnoreHits(e.target.checked)}
-              className="accent-emerald-500 mt-0.5"
-            />
-            <span>
-              <span className="font-medium text-slate-200">Ignore hit penalty.</span>{" "}
-              Treat extra transfers as free — the LP picks the best possible squad
-              regardless of how many swaps it takes. Use with{" "}
-              <span className="text-slate-100">max transfers</span> to cap.
+          <div>
+            <span className="text-xs uppercase tracking-wider text-slate-400">
+              Mode
             </span>
-          </label>
+            <div className="mt-1 flex gap-1 rounded-lg bg-slate-950 border border-white/10 p-1">
+              {([false, true] as const).map((unlimited) => (
+                <button
+                  key={String(unlimited)}
+                  onClick={() => setIgnoreHits(unlimited)}
+                  className={
+                    "flex-1 px-3 py-1.5 text-sm rounded-md transition " +
+                    (ignoreHits === unlimited
+                      ? "bg-emerald-500 text-slate-950 font-semibold"
+                      : "text-slate-300 hover:text-white")
+                  }
+                >
+                  {unlimited ? "Wildcard / Free Hit" : "This week"}
+                </button>
+              ))}
+            </div>
+            <p className="mt-2 text-xs text-slate-400">
+              {ignoreHits
+                ? "Transfers are free and unlimited, so this is the squad a wildcard or free hit could get you. Cap it with max transfers to see a smaller rebuild."
+                : "Constrained to your free transfers, with -4 per extra. This is what you can actually do before the deadline."}
+            </p>
+          </div>
 
           <button
             onClick={submit}
@@ -296,12 +334,18 @@ export function TransfersPage() {
         </div>
       )}
 
-      {plan && <TransferPlanView plan={plan} />}
+      {plan && <TransferPlanView plan={plan} unlimited={ignoreHits} />}
     </div>
   );
 }
 
-function TransferPlanView({ plan }: { plan: TransferPlanResponse }) {
+function TransferPlanView({
+  plan,
+  unlimited,
+}: {
+  plan: TransferPlanResponse;
+  unlimited: boolean;
+}) {
   const outs = [...plan.transfers_out].sort(
     (a, b) => a.projected_points - b.projected_points
   );
@@ -309,16 +353,30 @@ function TransferPlanView({ plan }: { plan: TransferPlanResponse }) {
     (a, b) => b.projected_points - a.projected_points
   );
   const rows = outs.map((out, i) => ({ out, in_: ins[i] }));
+  const isSingle = outs.length === 1 && ins.length === 1;
+  const totalDelta =
+    ins.reduce((t, p) => t + p.projected_points, 0) -
+    outs.reduce((t, p) => t + p.projected_points, 0);
 
   return (
     <div className="space-y-6">
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <Stat label="Transfers made" value={String(plan.transfers_made)} sub={`${plan.free_transfers} free`} />
+        <Stat
+          label="Transfers made"
+          value={String(plan.transfers_made)}
+          sub={unlimited ? "unlimited" : `${plan.free_transfers} free`}
+        />
         <Stat
           label="Hits"
-          value={plan.paid_hits === 0 ? "None" : `${plan.paid_hits}`}
-          sub={plan.hit_cost > 0 ? `-${plan.hit_cost} pts` : "no penalty"}
-          tone={plan.paid_hits > 0 ? "warn" : "ok"}
+          value={plan.hit_cost > 0 ? `${plan.paid_hits}` : "None"}
+          sub={
+            plan.hit_cost > 0
+              ? `-${plan.hit_cost} pts`
+              : unlimited
+              ? "free on a wildcard"
+              : "within your free transfers"
+          }
+          tone={plan.hit_cost > 0 ? "warn" : "ok"}
         />
         <Stat
           label="Net projected"
@@ -335,46 +393,64 @@ function TransferPlanView({ plan }: { plan: TransferPlanResponse }) {
 
       {rows.length > 0 ? (
         <div className="rounded-xl border border-white/10 bg-slate-900/60 p-5">
-          <div className="text-xs uppercase tracking-widest text-slate-400 mb-3">
-            Suggested swaps
+          <div className="flex flex-wrap items-baseline justify-between gap-2 mb-3">
+            <div className="text-xs uppercase tracking-widest text-slate-400">
+              {isSingle ? "Suggested swap" : "Players in and out"}
+            </div>
+            <div className="text-xs text-emerald-400">
+              {totalDelta >= 0 ? "+" : ""}
+              {totalDelta.toFixed(2)} pts across the squad
+            </div>
           </div>
-          <ul className="space-y-3">
-            {rows.map(({ out, in_ }, i) => {
-              const delta = in_.projected_points - out.projected_points;
-              const costDelta = (in_.now_cost - out.now_cost) / 10;
-              return (
-                <li
-                  key={i}
-                  className="grid grid-cols-[1fr,auto,1fr,auto] items-center gap-3 text-sm"
-                >
-                  <div className="text-right text-slate-400">
-                    <div className="font-medium text-slate-200">{out.web_name}</div>
-                    <div className="text-xs">
-                      {out.team_short} · £{(out.now_cost / 10).toFixed(1)}m ·{" "}
-                      {out.projected_points.toFixed(2)} pts
-                    </div>
+
+          {isSingle ? (
+            <SwapRow out={outs[0]} in_={ins[0]} />
+          ) : (
+            <>
+              {/* The LP picks the whole squad at once, so there is no
+                  meaningful one-to-one mapping between a player going out
+                  and a specific player coming in. Pairing them would imply
+                  swaps that were never recommended. */}
+              <div className="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <div className="text-[10px] uppercase tracking-widest text-red-300/80 mb-2">
+                    Out ({outs.length})
                   </div>
-                  <div className="text-emerald-400">→</div>
-                  <div className="text-slate-200">
-                    <div className="font-medium">{in_.web_name}</div>
-                    <div className="text-xs text-slate-400">
-                      {in_.team_short} · £{(in_.now_cost / 10).toFixed(1)}m ·{" "}
-                      {in_.projected_points.toFixed(2)} pts
-                    </div>
+                  <ul className="space-y-1.5">
+                    {outs.map((p) => (
+                      <li key={p.player_id} className="flex justify-between text-sm">
+                        <span className="text-slate-300">{p.web_name}</span>
+                        <span className="text-xs text-slate-500">
+                          {p.team_short} · £{(p.now_cost / 10).toFixed(1)}m ·{" "}
+                          {p.projected_points.toFixed(2)}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <div className="text-[10px] uppercase tracking-widest text-emerald-300/80 mb-2">
+                    In ({ins.length})
                   </div>
-                  <div className="text-right text-xs">
-                    <div className={delta >= 0 ? "text-emerald-400" : "text-red-400"}>
-                      {delta >= 0 ? "+" : ""}
-                      {delta.toFixed(2)} pts
-                    </div>
-                    <div className="text-slate-500">
-                      {costDelta >= 0 ? "+" : ""}£{costDelta.toFixed(1)}m
-                    </div>
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
+                  <ul className="space-y-1.5">
+                    {ins.map((p) => (
+                      <li key={p.player_id} className="flex justify-between text-sm">
+                        <span className="text-slate-100 font-medium">{p.web_name}</span>
+                        <span className="text-xs text-slate-500">
+                          {p.team_short} · £{(p.now_cost / 10).toFixed(1)}m ·{" "}
+                          {p.projected_points.toFixed(2)}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <p className="mt-4 text-xs text-slate-500">
+                These are chosen together as one squad, so they don't pair up
+                one-for-one — read them as a set rather than as individual swaps.
+              </p>
+            </>
+          )}
         </div>
       ) : (
         <div className="rounded-xl border border-white/10 bg-slate-900/60 p-5 text-slate-300">
@@ -418,6 +494,109 @@ function Stat({
       </div>
       <div className={"text-2xl font-bold mt-1 " + valueCls}>{value}</div>
       {sub && <div className="text-xs text-slate-400 mt-0.5">{sub}</div>}
+    </div>
+  );
+}
+
+
+function TargetDistance({
+  squadIds,
+  targetPicks,
+}: {
+  squadIds: number[];
+  targetPicks: SquadPick[];
+}) {
+  const owned = new Set(squadIds);
+  const have = targetPicks.filter((p) => owned.has(p.player_id));
+  const missing = [...targetPicks]
+    .filter((p) => !owned.has(p.player_id))
+    .sort((a, b) => b.projected_points - a.projected_points);
+
+  const pct = Math.round((have.length / targetPicks.length) * 100);
+
+  return (
+    <section className="rounded-xl border border-white/10 bg-slate-900/60 p-5">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <div className="text-xs uppercase tracking-widest text-slate-400">
+          Distance from target squad
+        </div>
+        <div className="text-sm text-slate-400">
+          <span className="text-2xl font-bold text-emerald-400">
+            {have.length}
+          </span>
+          <span className="text-slate-500"> / {targetPicks.length} owned</span>
+        </div>
+      </div>
+
+      <div className="h-2 rounded-full bg-slate-800 overflow-hidden mt-3">
+        <div
+          className="h-full bg-emerald-500 transition-all"
+          style={{ width: `${pct}%` }}
+        />
+      </div>
+
+      {missing.length > 0 ? (
+        <>
+          <div className="mt-4 text-xs text-slate-400">
+            Still to bring in, best first — these are the gaps between your
+            squad and the multi-week target.
+          </div>
+          <ul className="mt-2 flex flex-wrap gap-2">
+            {missing.map((p) => (
+              <li
+                key={p.player_id}
+                className="flex items-center gap-2 rounded-lg border border-white/10 bg-slate-950 px-2.5 py-1.5 text-xs"
+                style={{ borderTopColor: teamColor(p.team_short), borderTopWidth: 2 }}
+              >
+                <span className="font-medium text-slate-100">{p.web_name}</span>
+                <span className="text-slate-500">{p.team_short}</span>
+                <span className="text-slate-400">£{(p.now_cost / 10).toFixed(1)}m</span>
+                <span className="text-emerald-400">
+                  {p.projected_points.toFixed(1)}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </>
+      ) : (
+        <div className="mt-4 text-sm text-emerald-300">
+          You already own the entire target squad.
+        </div>
+      )}
+    </section>
+  );
+}
+
+
+function SwapRow({ out, in_ }: { out: Player; in_: Player }) {
+  const delta = in_.projected_points - out.projected_points;
+  const costDelta = (in_.now_cost - out.now_cost) / 10;
+  return (
+    <div className="grid grid-cols-[1fr,auto,1fr,auto] items-center gap-3 text-sm">
+      <div className="text-right text-slate-400">
+        <div className="font-medium text-slate-200">{out.web_name}</div>
+        <div className="text-xs">
+          {out.team_short} · £{(out.now_cost / 10).toFixed(1)}m ·{" "}
+          {out.projected_points.toFixed(2)} pts
+        </div>
+      </div>
+      <div className="text-emerald-400">→</div>
+      <div className="text-slate-200">
+        <div className="font-medium">{in_.web_name}</div>
+        <div className="text-xs text-slate-400">
+          {in_.team_short} · £{(in_.now_cost / 10).toFixed(1)}m ·{" "}
+          {in_.projected_points.toFixed(2)} pts
+        </div>
+      </div>
+      <div className="text-right text-xs">
+        <div className={delta >= 0 ? "text-emerald-400" : "text-red-400"}>
+          {delta >= 0 ? "+" : ""}
+          {delta.toFixed(2)} pts
+        </div>
+        <div className="text-slate-500">
+          {costDelta >= 0 ? "+" : ""}£{costDelta.toFixed(1)}m
+        </div>
+      </div>
     </div>
   );
 }
