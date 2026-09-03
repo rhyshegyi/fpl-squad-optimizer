@@ -544,3 +544,98 @@ class NaiveProjector(Projector):
                 projected_points=round(max(form * mult, 0.0), 3),
             ))
         return out
+
+
+# --------------------------------------------------------------------------
+# Two-stage model
+# --------------------------------------------------------------------------
+
+# Splitting availability from performance. 59% of training rows are players
+# who didn't feature, so a single regressor spends its capacity learning
+# "will he play?" — the easy question — and barely learns "how well will he
+# do?", the one that actually differentiates the players you'd consider.
+# Conditioning the second stage on rows where the player started lets it
+# learn from performance alone.
+#
+# Cameos (1-59 minutes) are folded into the availability term as misses. That
+# slightly understates bit-part players, who aren't realistic picks anyway.
+START_MINUTES = 60
+
+CLASSIFIER_PARAMS = {
+    "objective": "binary",
+    "metric": "binary_logloss",
+    "learning_rate": 0.05,
+    "num_leaves": 63,
+    "feature_fraction": 0.9,
+    "bagging_fraction": 0.9,
+    "bagging_freq": 5,
+    "min_data_in_leaf": 40,
+    "verbose": -1,
+}
+
+
+def train_two_stage_excluding_season(
+    exclude: str,
+) -> tuple[lgb.Booster, lgb.Booster, list[str]]:
+    """Fit P(starts) and E[points | started], holding out one season."""
+    df = build_training_frame()
+    max_gw = df.groupby("season")["gw"].max()
+    complete = sorted(max_gw[max_gw >= 35].index)
+    train_seasons = [s for s in complete if s != exclude]
+    if not train_seasons:
+        raise RuntimeError(f"no complete seasons left after excluding {exclude}")
+
+    feat = feature_columns()
+    train_df = df[df["season"].isin(train_seasons)]
+
+    starts = (train_df["minutes"] >= START_MINUTES).astype(int)
+    clf = lgb.train(
+        CLASSIFIER_PARAMS,
+        lgb.Dataset(train_df[feat], label=starts, categorical_feature=["position"]),
+        num_boost_round=400,
+    )
+
+    started = train_df[train_df["minutes"] >= START_MINUTES]
+    reg = lgb.train(
+        LGB_PARAMS,
+        lgb.Dataset(
+            started[feat],
+            label=started["total_points"].astype(float),
+            categorical_feature=["position"],
+        ),
+        num_boost_round=400,
+    )
+    return clf, reg, feat
+
+
+class TwoStageProjector(Projector):
+    """P(starts) x E[points | started]."""
+    name = "two-stage"
+
+    def __init__(self, clf: lgb.Booster, reg: lgb.Booster, feat: list[str]):
+        self.clf, self.reg, self.feat = clf, reg, feat
+
+    def __call__(self, frame, gw):
+        rows = frame[frame["gw"] == gw]
+        if rows.empty:
+            return []
+        rows = rows.copy()
+        rows["position"] = pd.Categorical(rows["position"], categories=POSITION_CATEGORIES)
+
+        p_start = self.clf.predict(rows[self.feat])
+        pts_if_start = self.reg.predict(rows[self.feat])
+
+        out: list[PlayerProjection] = []
+        for (_, r), p, e in zip(rows.iterrows(), p_start, pts_if_start):
+            if pd.isna(r.get("value")) or pd.isna(r.get("position")):
+                continue
+            out.append(PlayerProjection(
+                player_id=int(r["element"]),
+                web_name=str(r.get("name") or r["element"]),
+                team_id=int(r["team_id"]) if not pd.isna(r.get("team_id")) else 0,
+                team_short=str(r.get("team") or ""),
+                position=str(r["position"]),
+                now_cost=int(r["value"]),
+                projected_points=round(max(float(p) * float(e), 0.0), 3),
+            ))
+        return out
