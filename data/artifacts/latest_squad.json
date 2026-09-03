@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-02T08:24:29.400600+00:00",
+  "generated_at": "2026-09-03T06:55:20.597245+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-08-31T07:19:44.115556+00:00",
+    "last_fetch": "2026-09-03T06:53:47.147263+00:00",
     "current_gw": {
       "id": 2,
       "name": "Gameweek 2"
@@ -91,18 +91,6 @@
         "is_vice": false
       },
       {
-        "player_id": 295,
-        "web_name": "McBurnie",
-        "team_id": 11,
-        "team_short": "HUL",
-        "position": "FWD",
-        "now_cost": 55,
-        "projected_points": 4.087,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
         "player_id": 305,
         "web_name": "Davis",
         "team_id": 12,
@@ -175,25 +163,37 @@
         "is_vice": false
       },
       {
+        "player_id": 464,
+        "web_name": "Wissa",
+        "team_id": 17,
+        "team_short": "NEW",
+        "position": "FWD",
+        "now_cost": 61,
+        "projected_points": 4.887,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
         "player_id": 491,
         "web_name": "Igor Jesus",
         "team_id": 18,
         "team_short": "NFO",
         "position": "FWD",
-        "now_cost": 60,
+        "now_cost": 59,
         "projected_points": 4.965,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
       },
       {
-        "player_id": 534,
-        "web_name": "Hume",
-        "team_id": 20,
-        "team_short": "SUN",
+        "player_id": 586,
+        "web_name": "Mendy",
+        "team_id": 11,
+        "team_short": "HUL",
         "position": "DEF",
-        "now_cost": 45,
-        "projected_points": 3.574,
+        "now_cost": 40,
+        "projected_points": 2.952,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
