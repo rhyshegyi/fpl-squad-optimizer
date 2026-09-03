@@ -34,7 +34,10 @@ COPY pyproject.toml uv.lock ./
 RUN --mount=type=cache,target=/root/.cache/uv \
     uv sync --frozen --no-install-project --no-dev
 
-# Copy the app + built frontend + committed artifacts
+# Copy the app + built frontend + committed artifacts.
+# README.md is required: pyproject.toml declares `readme = "README.md"`, and
+# the uv_build backend reads it while building the package below.
+COPY README.md ./
 COPY src/ ./src/
 COPY data/artifacts/ ./data/artifacts/
 COPY --from=frontend /app/frontend/dist ./frontend/dist
