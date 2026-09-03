@@ -1,14 +1,21 @@
-name: weekly-fpl-pipeline
+name: fpl-refresh-pipeline
 
-# Runs after each gameweek settles. FPL matches finish Sunday-Monday; the API
-# stops churning by Tuesday morning UTC, so 06:00 Tuesday is a safe slot.
+# Runs daily at 06:00 UTC. A weekly (Tuesday) schedule left data up to three
+# days stale by the time a Friday/Saturday deadline came round — prices move
+# daily and injury news lands in Thursday/Friday press conferences. FPL
+# deadlines also shift between Fri, Sat and the occasional midweek round, so a
+# fixed weekday can't track them.
+#
+# Cost of the extra runs is low: the deploy step below is gated on artifacts
+# actually changing, so quiet days finish at the commit step without touching
+# the running machine.
 on:
   schedule:
-    - cron: "0 6 * * 2"
+    - cron: "0 6 * * *"
   workflow_dispatch: {}
 
 concurrency:
-  group: weekly-fpl-pipeline
+  group: fpl-refresh-pipeline
   cancel-in-progress: false
 
 jobs:

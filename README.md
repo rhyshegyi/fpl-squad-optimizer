@@ -30,7 +30,7 @@ uv run fpl ingest-history       # pull 3 seasons of per-GW rows from vaastav
 uv run fpl train                # fit LightGBM with time-based split
 ```
 
-Weekly refresh (also runs automatically via GitHub Actions):
+Data refresh (also runs automatically every day at 06:00 UTC via GitHub Actions):
 
 ```bash
 uv run fpl ingest               # bootstrap-static + fixtures
@@ -86,7 +86,8 @@ frontend/             # Vite + React + TypeScript + Tailwind
     └── pages/        # SquadPage, ProjectionsPage, TransfersPage
 
 .github/workflows/
-└── weekly.yml        # Tuesday 06:00 UTC cron: full pipeline → commit artifacts
+├── refresh.yml       # daily 06:00 UTC cron: full pipeline → commit artifacts → deploy
+└── fly-deploy.yml    # deploys on every push to main
 
 Dockerfile            # multi-stage: node builds SPA, python:3.13-slim serves it
 fly.toml              # Fly.io app config
@@ -95,7 +96,7 @@ fly.toml              # Fly.io app config
 ## Configuration decisions
 
 - **Data source** — public FPL API + `vaastav/Fantasy-Premier-League` for historical seasons
-- **Update cadence** — scheduled (Tuesday 06:00 UTC), not live/on-demand
+- **Update cadence** — scheduled daily (06:00 UTC), not live/on-demand. Daily rather than weekly because prices move every day and FPL deadlines shift between Fri/Sat/midweek
 - **Scheduler** — GitHub Actions cron, artifacts committed back to the repo
 - **Build order** — LP optimizer first (with naive projections), then swap in the ML predictor
 - **Frontend** — Vite + React + Tailwind (not Streamlit) served by the same FastAPI process in prod
