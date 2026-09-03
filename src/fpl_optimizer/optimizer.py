@@ -49,7 +49,23 @@ class Squad:
 def optimize(
     projections: list[PlayerProjection],
     budget: int = BUDGET,
+    formation: tuple[int, int, int] | None = None,
 ) -> Squad:
+    """Pick the squad, starting XI and captain in one solve.
+
+    `formation` pins the starting XI to an exact (DEF, MID, FWD) shape. Left
+    as None the LP chooses freely within FPL's legal bounds, which is what you
+    normally want — pinning it is for comparing what a given shape costs you.
+    """
+    if formation is not None:
+        defenders, midfielders, forwards = formation
+        if 1 + defenders + midfielders + forwards != STARTING_XI:
+            raise ValueError(f"formation {formation} plus a keeper isn't {STARTING_XI} players")
+        for pos, count in (("DEF", defenders), ("MID", midfielders), ("FWD", forwards)):
+            lo, hi = STARTER_LIMITS[pos]
+            if not (lo <= count <= hi):
+                raise ValueError(f"{count} at {pos} is outside FPL's {lo}-{hi}")
+
     prob = pulp.LpProblem("fpl_squad", pulp.LpMaximize)
 
     ids = [p.player_id for p in projections]
@@ -81,10 +97,17 @@ def optimize(
     for i in ids:
         prob += start[i] <= squad[i]
     prob += pulp.lpSum(start.values()) == STARTING_XI
+    pinned = (
+        None if formation is None
+        else {"DEF": formation[0], "MID": formation[1], "FWD": formation[2], "GK": 1}
+    )
     for pos, (lo, hi) in STARTER_LIMITS.items():
         starters_pos = pulp.lpSum(start[i] for i in ids if by_id[i].position == pos)
-        prob += starters_pos >= lo
-        prob += starters_pos <= hi
+        if pinned is not None:
+            prob += starters_pos == pinned[pos]
+        else:
+            prob += starters_pos >= lo
+            prob += starters_pos <= hi
 
     # Captain: exactly one, must be a starter
     prob += pulp.lpSum(capt.values()) == 1
