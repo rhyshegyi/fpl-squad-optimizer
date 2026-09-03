@@ -1,16 +1,109 @@
 # See https://fly.io/docs/app-guides/continuous-deployment-with-github-actions/
+#
+# The smoke-test job builds the real runtime image and boots it before the
+# deploy job is allowed to run. This exists because a Linux-only import
+# failure (LightGBM needing libgomp, absent from python:3.13-slim) once
+# reached production: it passed every local check on Windows, then
+# crash-looped on Fly until the proxy had no machine to route to.
+# Nothing else in CI actually starts the server image.
 
 name: Fly Deploy
+
 on:
   push:
     branches:
       - main
       - master
+  pull_request:
+    branches:
+      - main
+
 jobs:
+  smoke-test:
+    name: Build image and boot it
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: docker/setup-buildx-action@v3
+
+      - name: Build runtime image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          load: true
+          tags: fpl-optimizer:ci
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Start container
+        run: docker run -d --name fpl-ci -p 8080:8080 fpl-optimizer:ci
+
+      - name: Wait for the app to answer
+        run: |
+          for i in $(seq 1 45); do
+            if curl -fsS http://127.0.0.1:8080/api/status >/dev/null 2>&1; then
+              echo "Responding after ${i}s"
+              exit 0
+            fi
+            # Fail fast if the process died rather than burning the full timeout
+            if [ -z "$(docker ps -q --filter name=fpl-ci --filter status=running)" ]; then
+              echo "::error::Container exited before serving a request"
+              exit 1
+            fi
+            sleep 1
+          done
+          echo "::error::Timed out waiting for /api/status"
+          exit 1
+
+      - name: Smoke-test routes
+        run: |
+          set -euo pipefail
+          base=http://127.0.0.1:8080
+
+          check() {
+            code=$(curl -s -o /dev/null -w '%{http_code}' "$base$1")
+            printf '%-46s %s\n' "$2" "$code"
+            [ "$code" = "200" ]
+          }
+
+          # SPA routes — proves the built frontend was copied in and the
+          # React Router fallback works
+          check "/"                                  "GET /            (SPA index)"
+          check "/transfers"                         "GET /transfers   (SPA fallback)"
+          check "/projections"                       "GET /projections (SPA fallback)"
+
+          # Read paths — proves data/artifacts made it into the image
+          check "/api/status"                        "GET /api/status"
+          check "/api/squad/latest"                  "GET /api/squad/latest"
+          check "/api/projections/latest?limit=3"    "GET /api/projections/latest"
+
+          # LP paths — proves PuLP and its CBC solver binary work in-image
+          check "/api/squad/optimize?budget_tenths=900" "GET /api/squad/optimize"
+
+          # Build the transfer payload from the shipped squad rather than
+          # hardcoding ids, which change every season.
+          ids=$(curl -fsS "$base/api/squad/latest" | jq -c '[.squad.picks[].player_id]')
+          curl -fsS -X POST "$base/api/transfers" \
+            -H 'Content-Type: application/json' \
+            -d "{\"existing_ids\":$ids,\"bank_tenths\":0,\"free_transfers\":1}" \
+            | jq -e '.new_squad.picks | length == 15' >/dev/null
+          printf '%-46s %s\n' "POST /api/transfers" "200"
+
+      - name: Container logs (on failure)
+        if: failure()
+        run: docker logs fpl-ci || true
+
+      - name: Tear down
+        if: always()
+        run: docker rm -f fpl-ci || true
+
   deploy:
     name: Deploy app
+    needs: smoke-test          # a non-booting image never reaches production
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
-    concurrency: deploy-group    # optional: ensure only one action runs at a time
+    concurrency: deploy-group  # optional: ensure only one action runs at a time
     steps:
       - uses: actions/checkout@v4
       - uses: superfly/flyctl-actions/setup-flyctl@master
