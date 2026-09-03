@@ -36,6 +36,18 @@ class TransferPlan:
     bank_after: int
 
 
+def sell_price(buy: int, current: int) -> int:
+    """What FPL pays you for a player, in tenths of £m.
+
+    You keep only half of any rise, rounded down to the nearest £0.1m; falls
+    are absorbed in full. Approximating this with the current price quietly
+    hands you money on every sale, which compounds badly over a season.
+    """
+    if current <= buy:
+        return current
+    return buy + (current - buy) // 2
+
+
 def optimize_transfers(
     projections: list[PlayerProjection],
     existing_ids: list[int],
@@ -43,6 +55,7 @@ def optimize_transfers(
     free_transfers: int = 1,
     max_transfers: int | None = None,
     hit_cost: int = HIT_COST,
+    sell_prices: dict[int, int] | None = None,
 ) -> TransferPlan:
     if len(existing_ids) != sum(SQUAD_SHAPE.values()):
         raise ValueError(f"existing squad must have {sum(SQUAD_SHAPE.values())} players, got {len(existing_ids)}")
@@ -53,8 +66,23 @@ def optimize_transfers(
         raise RuntimeError(f"existing squad has {len(missing)} players not in projections: {missing[:5]}...")
 
     existing_set = set(existing_ids)
-    squad_current_value = sum(by_id[pid].now_cost for pid in existing_ids)
-    total_budget = squad_current_value + bank
+
+    # Budget maths. Selling raises `sell_prices[i]`, buying costs the market
+    # price. Charging a *kept* player his own sell price is a no-op (you'd
+    # sell and rebuy at the same number), which lets one constraint cover
+    # both cases:
+    #     sum(effective_cost * selected) <= bank + sum(sell price of squad)
+    # Callers that don't track buy prices fall back to current price, which
+    # is the old behaviour.
+    sells = {
+        pid: (sell_prices or {}).get(pid, by_id[pid].now_cost)
+        for pid in existing_ids
+    }
+
+    def effective_cost(i: int) -> int:
+        return sells[i] if i in existing_set else by_id[i].now_cost
+
+    total_budget = sum(sells.values()) + bank
 
     prob = pulp.LpProblem("fpl_transfer", pulp.LpMaximize)
     ids = [p.player_id for p in projections]
@@ -75,7 +103,7 @@ def optimize_transfers(
 
     # 15-man squad, cash budget (bank + squad value at current prices)
     prob += pulp.lpSum(squad.values()) == sum(SQUAD_SHAPE.values())
-    prob += pulp.lpSum(by_id[i].now_cost * squad[i] for i in ids) <= total_budget
+    prob += pulp.lpSum(effective_cost(i) * squad[i] for i in ids) <= total_budget
     for pos, n in SQUAD_SHAPE.items():
         prob += pulp.lpSum(squad[i] for i in ids if by_id[i].position == pos) == n
     for team_id in {p.team_id for p in projections}:
@@ -123,7 +151,10 @@ def optimize_transfers(
     transfers_out = [by_id[i] for i in existing_ids if i not in new_ids_set]
     transfers_made = len(transfers_in)
     paid_hits = max(0, transfers_made - free_transfers)
-    total_new_cost = sum(by_id[i].now_cost for i in chosen_ids)
+    # Outlay is measured in the same currency as total_budget: kept players
+    # carry their sell price, new signings their market price.
+    total_new_cost = sum(effective_cost(i) for i in chosen_ids)
+    squad_market_value = sum(by_id[i].now_cost for i in chosen_ids)
 
     starter_pts = sum(proj(i) for i in starter_ids)
     captain_bonus = proj(captain_id)
@@ -133,7 +164,7 @@ def optimize_transfers(
 
     new_squad = Squad(
         picks=picks,
-        total_cost=total_new_cost,
+        total_cost=squad_market_value,
         projected_points=round(starter_pts + captain_bonus, 2),
     )
 

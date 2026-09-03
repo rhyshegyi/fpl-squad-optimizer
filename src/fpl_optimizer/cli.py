@@ -163,6 +163,58 @@ def cmd_export(args: argparse.Namespace) -> None:
         print(f"{name}: {path}")
 
 
+def cmd_backtest(args: argparse.Namespace) -> None:
+    from .backtest import (
+        MLProjector, NaiveProjector, run_set_and_forget, run_with_transfers,
+        train_excluding_season,
+    )
+
+    projector = (
+        NaiveProjector() if args.projector == "naive"
+        else MLProjector(*train_excluding_season(args.season))
+    )
+
+    print(f"replaying {args.season} GW{args.start_gw}-{args.end_gw} "
+          f"with the {args.projector} projector...")
+
+    transfers_made = hits = 0
+    if args.strategy == "set-and-forget":
+        result = run_set_and_forget(
+            args.season, start_gw=args.start_gw, end_gw=args.end_gw,
+            projector=projector,
+        )
+    else:
+        result, log = run_with_transfers(
+            args.season, start_gw=args.start_gw, end_gw=args.end_gw,
+            projector=projector,
+        )
+        transfers_made = sum(len(t.in_ids) for t in log)
+        hits = sum(t.hits for t in log)
+
+    bench = sum(g.points_left_on_bench for g in result.gameweeks)
+    subs = sum(len(g.autosubs) for g in result.gameweeks)
+
+    print()
+    print(f"strategy          {result.strategy}")
+    print(f"total points      {result.total_points}")
+    print(f"points per GW     {result.points_per_gw():.1f}")
+    print(f"transfers made    {transfers_made}")
+    print(f"lost to hits      {hits}")
+    print(f"auto-subs         {subs}")
+    print(f"left on bench     {bench}")
+    print(f"captain survived  {result.captain_hit_rate()*100:.0f}% of gameweeks")
+    print()
+    print("For reference, a typical FPL manager scores ~2200 over a full "
+          "38-gameweek season (~58/GW).")
+
+    if args.by_gameweek:
+        print("\ngameweek breakdown:")
+        for g in result.gameweeks:
+            print(f"  GW{g.gw:<3}{g.points:>4} pts   starters {g.starter_points:>3}"
+                  f"   capt +{g.captain_points:<3} subs {len(g.autosubs)}"
+                  f"   bench {g.points_left_on_bench}")
+
+
 def cmd_serve(args: argparse.Namespace) -> None:
     import uvicorn
     uvicorn.run("fpl_optimizer.api:app", host=args.host, port=args.port,
@@ -207,6 +259,17 @@ def main() -> None:
     ex = sub.add_parser("export", help="write latest squad + projections to data/artifacts/")
     ex.add_argument("--projector", choices=("naive", "ml"), default="ml")
     ex.set_defaults(func=cmd_export)
+
+    bt = sub.add_parser("backtest", help="replay a past season and score the advice")
+    bt.add_argument("--season", default="2024-25", help="season to replay, e.g. 2024-25")
+    bt.add_argument("--strategy", choices=("transfers", "set-and-forget"),
+                    default="transfers")
+    bt.add_argument("--projector", choices=("ml", "naive"), default="ml")
+    bt.add_argument("--start-gw", type=int, default=2,
+                    help="GW1 has no prior form to project from, so start at 2")
+    bt.add_argument("--end-gw", type=int, default=38)
+    bt.add_argument("--by-gameweek", action="store_true", help="print every gameweek")
+    bt.set_defaults(func=cmd_backtest)
 
     sv = sub.add_parser("serve", help="run the FastAPI backend")
     sv.add_argument("--host", default="127.0.0.1")

@@ -283,6 +283,7 @@ def run_set_and_forget(
     start_gw: int = 2,
     end_gw: int = 38,
     budget: int = 1000,
+    projector: "Projector | None" = None,
 ) -> BacktestResult:
     """Pick a squad once, then never transfer — only set the XI each week.
 
@@ -291,10 +292,11 @@ def run_set_and_forget(
     makes it the right thing to validate the engine against first.
     """
     frame = load_season_frame(season)
-    booster, feat = train_excluding_season(season)
+    if projector is None:
+        projector = MLProjector(*train_excluding_season(season))
     actuals = load_actuals(frame)
 
-    opening = project_gameweek(frame, booster, feat, start_gw)
+    opening = projector(frame, start_gw)
     if not opening:
         raise RuntimeError(f"no projections available for {season} GW{start_gw}")
 
@@ -306,7 +308,7 @@ def run_set_and_forget(
 
     scores: list[GameweekScore] = []
     for gw in range(start_gw, end_gw + 1):
-        gw_proj = {p.player_id: p for p in project_gameweek(frame, booster, feat, gw)}
+        gw_proj = {p.player_id: p for p in projector(frame, gw)}
         # A squad member with no row this gameweek (missing data, or out of the
         # league) still has to be selectable, so fall back to a zero projection.
         pool = [
@@ -328,9 +330,217 @@ def run_set_and_forget(
 
     return BacktestResult(
         season=season,
-        strategy="set-and-forget",
+        strategy=f"set-and-forget[{projector.name}]",
         start_gw=start_gw,
         end_gw=end_gw,
         total_points=sum(s.points for s in scores),
         gameweeks=scores,
     )
+
+
+# --------------------------------------------------------------------------
+# Transfer replay
+# --------------------------------------------------------------------------
+
+# FPL let you bank only one spare transfer (so two available) until 2024-25,
+# when the cap rose to five. Getting this wrong changes how freely the model
+# is allowed to churn the squad.
+MAX_BANKED_FREE_TRANSFERS = {"2022-23": 2, "2023-24": 2}
+DEFAULT_MAX_BANKED = 5
+
+
+@dataclass
+class TransferLog:
+    gw: int
+    out_ids: list[int]
+    in_ids: list[int]
+    hits: int
+    bank_after: int
+    free_transfers_after: int
+
+
+def _price_index(frame: pd.DataFrame) -> dict[tuple[int, int], int]:
+    """{(element, gw): market price in tenths} — prices drift all season."""
+    out: dict[tuple[int, int], int] = {}
+    for r in frame.itertuples():
+        if not pd.isna(r.value):
+            out[(int(r.element), int(r.gw))] = int(r.value)
+    return out
+
+
+def run_with_transfers(
+    season: str,
+    start_gw: int = 2,
+    end_gw: int = 38,
+    budget: int = 1000,
+    hit_cost: int = 4,
+    projector: "Projector | None" = None,
+) -> tuple[BacktestResult, list[TransferLog]]:
+    """Replay a season taking the transfer the model recommends each week.
+
+    Hits are subtracted from the gameweek they're taken in, matching how FPL
+    reports them, so the total is directly comparable to a real season score.
+    """
+    frame = load_season_frame(season)
+    if projector is None:
+        projector = MLProjector(*train_excluding_season(season))
+    actuals = load_actuals(frame)
+    prices = _price_index(frame)
+    max_banked = MAX_BANKED_FREE_TRANSFERS.get(season, DEFAULT_MAX_BANKED)
+
+    from .optimizer import optimize
+    from .transfer import optimize_transfers, sell_price
+
+    opening = projector(frame, start_gw)
+    if not opening:
+        raise RuntimeError(f"no projections available for {season} GW{start_gw}")
+    initial = optimize(opening, budget=budget)
+
+    squad_ids = [pk.player.player_id for pk in initial.picks]
+    meta = {pk.player.player_id: pk.player for pk in initial.picks}
+    position_of = {pid: pl.position for pid, pl in meta.items()}
+    buy_price = {pid: meta[pid].now_cost for pid in squad_ids}
+    bank = budget - sum(buy_price.values())
+    free_transfers = 1
+
+    scores: list[GameweekScore] = []
+    transfers: list[TransferLog] = []
+
+    for gw in range(start_gw, end_gw + 1):
+        gw_proj = {p.player_id: p for p in projector(frame, gw)}
+
+        def as_projection(pid: int) -> PlayerProjection:
+            """Squad members with no row this gameweek (blank, or gone from the
+            league) still have to be representable, so fall back to their last
+            known price and a zero projection."""
+            hit = gw_proj.get(pid)
+            if hit is not None:
+                return hit
+            known = meta[pid]
+            return PlayerProjection(
+                player_id=pid, web_name=known.web_name, team_id=known.team_id,
+                team_short=known.team_short, position=known.position,
+                now_cost=prices.get((pid, gw), buy_price.get(pid, known.now_cost)),
+                projected_points=0.0,
+            )
+
+        gw_hits = 0
+        if gw > start_gw:
+            pool = list(gw_proj.values())
+            pool_ids = {p.player_id for p in pool}
+            pool += [as_projection(pid) for pid in squad_ids if pid not in pool_ids]
+
+            sells = {
+                pid: sell_price(buy_price[pid], prices.get((pid, gw), buy_price[pid]))
+                for pid in squad_ids
+            }
+            plan = optimize_transfers(
+                projections=pool,
+                existing_ids=squad_ids,
+                bank=bank,
+                free_transfers=free_transfers,
+                hit_cost=hit_cost,
+                sell_prices=sells,
+            )
+
+            if plan.transfers_made:
+                for p in plan.transfers_in:
+                    meta[p.player_id] = p
+                    position_of[p.player_id] = p.position
+                    buy_price[p.player_id] = p.now_cost
+                for p in plan.transfers_out:
+                    buy_price.pop(p.player_id, None)
+                squad_ids = [pk.player.player_id for pk in plan.new_squad.picks]
+
+            bank = plan.bank_after
+            gw_hits = plan.hit_cost
+            free_transfers = min(
+                max_banked,
+                max(0, free_transfers - plan.transfers_made) + 1,
+            )
+            transfers.append(TransferLog(
+                gw=gw,
+                out_ids=[p.player_id for p in plan.transfers_out],
+                in_ids=[p.player_id for p in plan.transfers_in],
+                hits=plan.hit_cost,
+                bank_after=bank,
+                free_transfers_after=free_transfers,
+            ))
+
+        xi, bench, cap, vice = _pick_xi_and_captain([as_projection(p) for p in squad_ids])
+        score = score_gameweek(gw, xi, bench, cap, vice, position_of, actuals)
+        score.points -= gw_hits          # hits land in the week they're taken
+        scores.append(score)
+
+    return BacktestResult(
+        season=season,
+        strategy=f"transfers[{projector.name}]",
+        start_gw=start_gw,
+        end_gw=end_gw,
+        total_points=sum(s.points for s in scores),
+        gameweeks=scores,
+    ), transfers
+
+
+# --------------------------------------------------------------------------
+# Projectors — swappable so strategies can be compared on equal footing
+# --------------------------------------------------------------------------
+
+class Projector:
+    """Turns one gameweek's feature rows into projections."""
+    name = "base"
+
+    def __call__(self, frame: pd.DataFrame, gw: int) -> list[PlayerProjection]:
+        raise NotImplementedError
+
+
+class MLProjector(Projector):
+    name = "ml"
+
+    def __init__(self, booster: lgb.Booster, feat: list[str]):
+        self.booster, self.feat = booster, feat
+
+    def __call__(self, frame, gw):
+        return project_gameweek(frame, self.booster, self.feat, gw)
+
+
+class NaiveProjector(Projector):
+    """Recent form scaled by fixture difficulty — the rule the ML model has
+    to justify itself against.
+
+    Historical rows carry no FDR, so difficulty is reconstructed by ranking
+    opponent overall strength into five buckets, mirroring how FPL assigns
+    it. Falls back to a neutral multiplier where strength is missing.
+    """
+    name = "naive"
+
+    FDR_MULTIPLIER = {1: 1.30, 2: 1.15, 3: 1.00, 4: 0.85, 5: 0.70}
+
+    def __call__(self, frame, gw):
+        rows = frame[frame["gw"] == gw].copy()
+        if rows.empty:
+            return []
+
+        strength = rows["opp_strength_overall"]
+        if strength.notna().any():
+            # Five equal-width buckets over the season's range of opponents
+            buckets = pd.cut(strength, bins=5, labels=[1, 2, 3, 4, 5])
+        else:
+            buckets = pd.Series(3, index=rows.index)
+
+        out: list[PlayerProjection] = []
+        for (_, r), b in zip(rows.iterrows(), buckets):
+            if pd.isna(r.get("value")) or pd.isna(r.get("position")):
+                continue
+            form = 0.0 if pd.isna(r.get("total_points_r5")) else float(r["total_points_r5"])
+            mult = self.FDR_MULTIPLIER.get(int(b), 1.0) if not pd.isna(b) else 1.0
+            out.append(PlayerProjection(
+                player_id=int(r["element"]),
+                web_name=str(r.get("name") or r["element"]),
+                team_id=int(r["team_id"]) if not pd.isna(r.get("team_id")) else 0,
+                team_short=str(r.get("team") or ""),
+                position=str(r["position"]),
+                now_cost=int(r["value"]),
+                projected_points=round(max(form * mult, 0.0), 3),
+            ))
+        return out
