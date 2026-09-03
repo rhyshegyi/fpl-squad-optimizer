@@ -18,8 +18,8 @@ dependencies = [
 ]
 
 [project.scripts]
-fpl = "fpl_optimizer:main"
-fpl-optimizer = "fpl_optimizer:main"
+fpl = "fpl_optimizer.cli:main"
+fpl-optimizer = "fpl_optimizer.cli:main"
 
 [build-system]
 requires = ["uv_build>=0.11.1,<0.12.0"]

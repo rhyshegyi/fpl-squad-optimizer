@@ -27,6 +27,15 @@ ENV UV_LINK_MODE=copy \
     UV_PYTHON_DOWNLOADS=never \
     PYTHONUNBUFFERED=1
 
+# LightGBM links against the GNU OpenMP runtime, which python:3.13-slim
+# doesn't ship. The API deliberately never imports LightGBM, so this isn't
+# needed for the server to boot — but without it, any accidental import of
+# the training stack kills the process at startup rather than failing
+# somewhere recoverable. Cheap insurance against a repeat.
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends libgomp1 \
+    && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /app
 
 # Install deps first for better layer caching
