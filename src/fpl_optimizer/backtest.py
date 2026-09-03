@@ -781,6 +781,11 @@ class BlendProjector(Projector):
     # start "a small sample".
     SHRINKAGE_GAMES = 5
 
+    # Shrinking the value isn't enough on its own — the *weight* has to earn
+    # itself too. At GW3 "season quality" is two games, and leaning on that at
+    # 70% is leaning on noise. Mirrors target.effective_quality_weight.
+    WEIGHT_RAMP_GAMES = 6
+
     def __init__(
         self,
         booster: lgb.Booster,
@@ -820,7 +825,9 @@ class BlendProjector(Projector):
                 k = self.SHRINKAGE_GAMES
                 quality = (float(row.pts) + prior * k) / (float(row.games) + k)
 
-            blended = self.weight * quality + (1 - self.weight) * p.projected_points
+            games = float(row.games) if row is not None else 0.0
+            w = self.weight * games / (games + self.WEIGHT_RAMP_GAMES) if games > 0 else 0.0
+            blended = w * quality + (1 - w) * p.projected_points
             out.append(PlayerProjection(
                 player_id=p.player_id, web_name=p.web_name, team_id=p.team_id,
                 team_short=p.team_short, position=p.position, now_cost=p.now_cost,

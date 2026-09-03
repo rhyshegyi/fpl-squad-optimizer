@@ -34,6 +34,27 @@ DECAY = 0.75
 START_MINUTES = 60
 SHRINKAGE_GAMES = 5
 
+# How much football it takes before season-to-date scoring is trusted at its
+# full weight. The 0.7 weight was swept over GW8-30, where "season quality"
+# means seven or more games; at GW3 it means two, and leaning on two games at
+# 70% is leaning on noise. Among players who started, form correlates with
+# next-gameweek points at only +0.128, so this term deserves its weight only
+# once there's real evidence behind it.
+WEIGHT_RAMP_GAMES = 6
+
+
+def effective_quality_weight(games: int, base: float = DEFAULT_QUALITY_WEIGHT) -> float:
+    """Scale the season-quality weight by how many games back it.
+
+    Approaches `base` asymptotically rather than reaching it, which is honest:
+    you never have unlimited evidence. Early season this hands the decision to
+    the fixture horizon, which is the better-founded signal when almost nothing
+    has been played.
+    """
+    if games <= 0:
+        return 0.0
+    return base * games / (games + WEIGHT_RAMP_GAMES)
+
 # The only columns that legitimately differ between this gameweek and a future
 # one at decision time.
 FIXTURE_COLUMNS = [
@@ -190,7 +211,8 @@ def project_target(
         pts, games = quality.get(pid, (0.0, 0))
         q = (pts + prior * SHRINKAGE_GAMES) / (games + SHRINKAGE_GAMES)
 
-        blended = quality_weight * q + (1 - quality_weight) * float(h)
+        w = effective_quality_weight(games, quality_weight)
+        blended = w * q + (1 - w) * float(h)
         blended *= _availability_multiplier(r.get("status"), r.get("chance_next_round"))
 
         out.append(PlayerProjection(
