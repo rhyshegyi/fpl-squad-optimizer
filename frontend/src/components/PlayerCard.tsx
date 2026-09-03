@@ -4,13 +4,17 @@ import type { Pick, Player } from "../types";
 interface Props {
   player: Player | Pick;
   compact?: boolean;
+  /** What the points number means here. The Squad page ranks on a 6-gameweek
+   *  target while Transfers ranks on the next gameweek, and the two disagree
+   *  often enough that an unlabelled number reads as a bug. */
+  metric?: "next GW" | "6 GW";
 }
 
 function isPick(p: Player | Pick): p is Pick {
   return "is_starter" in p;
 }
 
-export function PlayerCard({ player, compact = false }: Props) {
+export function PlayerCard({ player, compact = false, metric }: Props) {
   const captain = isPick(player) && player.is_captain;
   const vice = isPick(player) && player.is_vice;
 
@@ -52,8 +56,12 @@ export function PlayerCard({ player, compact = false }: Props) {
       </div>
       <div className="mt-0.5 flex gap-2 text-[11px] text-slate-300">
         <span>£{(player.now_cost / 10).toFixed(1)}</span>
-        <span className="text-emerald-400 font-medium">
-          {player.projected_points.toFixed(1)} pts
+        <span
+          className="text-emerald-400 font-medium"
+          title={metric ? `Projected points, ${metric}` : undefined}
+        >
+          {player.projected_points.toFixed(1)}
+          {metric === "6 GW" ? " /gw" : " pts"}
         </span>
       </div>
     </div>

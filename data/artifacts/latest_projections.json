@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T09:42:02.489887+00:00",
+  "generated_at": "2026-09-03T09:56:26.674433+00:00",
   "projector": "ml",
   "pipeline_state": {
     "last_fetch": "2026-08-31T07:19:44.115556+00:00",
@@ -37,7 +37,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 3.804
     },
     {
       "player_id": 2,
@@ -62,7 +63,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.123
     },
     {
       "player_id": 3,
@@ -87,7 +89,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.123
     },
     {
       "player_id": 4,
@@ -112,7 +115,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 3.808
     },
     {
       "player_id": 5,
@@ -137,7 +141,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.0
     },
     {
       "player_id": 6,
@@ -162,7 +167,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.0
     },
     {
       "player_id": 7,
@@ -187,7 +193,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 3.797
     },
     {
       "player_id": 8,
@@ -212,7 +219,8 @@
       "bonus_recent": 2,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 3.846
     },
     {
       "player_id": 9,
@@ -237,7 +245,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.805
     },
     {
       "player_id": 10,
@@ -262,7 +271,8 @@
       "bonus_recent": 3,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 4.525
     },
     {
       "player_id": 11,
@@ -287,7 +297,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 3.679
     },
     {
       "player_id": 12,
@@ -312,7 +323,8 @@
       "bonus_recent": 4,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 6.071
     },
     {
       "player_id": 13,
@@ -337,7 +349,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 3.592
     },
     {
       "player_id": 14,
@@ -362,7 +375,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 2.337
     },
     {
       "player_id": 15,
@@ -387,7 +401,8 @@
       "bonus_recent": 3,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 4.523
     },
     {
       "player_id": 16,
@@ -412,7 +427,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 2.058
     },
     {
       "player_id": 17,
@@ -437,7 +453,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 1.662
     },
     {
       "player_id": 18,
@@ -462,7 +479,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.241
     },
     {
       "player_id": 19,
@@ -487,7 +505,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 1.35
     },
     {
       "player_id": 20,
@@ -512,7 +531,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.17
     },
     {
       "player_id": 21,
@@ -537,7 +557,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.0
     },
     {
       "player_id": 22,
@@ -562,7 +583,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.17
     },
     {
       "player_id": 23,
@@ -587,7 +609,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.17
     },
     {
       "player_id": 24,
@@ -612,7 +635,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.0
     },
     {
       "player_id": 25,
@@ -637,7 +661,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.17
     },
     {
       "player_id": 26,
@@ -662,7 +687,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 4.917
     },
     {
       "player_id": 27,
@@ -687,7 +713,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.17
     },
     {
       "player_id": 28,
@@ -712,7 +739,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 2.178
     },
     {
       "player_id": 29,
@@ -737,7 +765,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 1.561
     },
     {
       "player_id": 30,
@@ -762,7 +791,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 31,
@@ -787,7 +817,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.63
     },
     {
       "player_id": 32,
@@ -812,7 +843,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 2.288
     },
     {
       "player_id": 33,
@@ -837,7 +869,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.751
     },
     {
       "player_id": 34,
@@ -862,7 +895,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 2.558
     },
     {
       "player_id": 35,
@@ -887,7 +921,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.905
     },
     {
       "player_id": 36,
@@ -912,7 +947,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 2.288
     },
     {
       "player_id": 37,
@@ -937,7 +973,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 2.52
     },
     {
       "player_id": 38,
@@ -962,7 +999,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 39,
@@ -987,7 +1025,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 40,
@@ -1012,7 +1051,8 @@
       "bonus_recent": 1,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 5.538
     },
     {
       "player_id": 41,
@@ -1037,7 +1077,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.829
     },
     {
       "player_id": 42,
@@ -1062,7 +1103,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.735
     },
     {
       "player_id": 43,
@@ -1087,7 +1129,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 4.334
     },
     {
       "player_id": 44,
@@ -1112,7 +1155,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.17
     },
     {
       "player_id": 45,
@@ -1137,7 +1181,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.716
     },
     {
       "player_id": 46,
@@ -1162,7 +1207,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 2.764
     },
     {
       "player_id": 47,
@@ -1187,7 +1233,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 2.769
     },
     {
       "player_id": 48,
@@ -1212,7 +1259,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 49,
@@ -1237,7 +1285,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 50,
@@ -1262,7 +1311,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 51,
@@ -1287,7 +1337,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 2.62
     },
     {
       "player_id": 52,
@@ -1312,7 +1363,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.946
     },
     {
       "player_id": 53,
@@ -1337,7 +1389,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 54,
@@ -1362,7 +1415,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 55,
@@ -1387,7 +1441,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.17
     },
     {
       "player_id": 56,
@@ -1412,7 +1467,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.537
     },
     {
       "player_id": 57,
@@ -1437,7 +1493,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.167
     },
     {
       "player_id": 58,
@@ -1462,7 +1519,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 59,
@@ -1487,7 +1545,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 60,
@@ -1512,7 +1571,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.953
     },
     {
       "player_id": 61,
@@ -1537,7 +1597,8 @@
       "bonus_recent": 2,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.831
     },
     {
       "player_id": 62,
@@ -1562,7 +1623,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.123
     },
     {
       "player_id": 63,
@@ -1587,7 +1649,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 64,
@@ -1612,7 +1675,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.654
     },
     {
       "player_id": 65,
@@ -1637,7 +1701,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 66,
@@ -1662,7 +1727,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 67,
@@ -1687,7 +1753,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.879
     },
     {
       "player_id": 68,
@@ -1712,7 +1779,8 @@
       "bonus_recent": 3,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 4.403
     },
     {
       "player_id": 69,
@@ -1737,7 +1805,8 @@
       "bonus_recent": 3,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 4.596
     },
     {
       "player_id": 70,
@@ -1762,7 +1831,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 4.778
     },
     {
       "player_id": 71,
@@ -1787,7 +1857,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.328
     },
     {
       "player_id": 72,
@@ -1812,7 +1883,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.576
     },
     {
       "player_id": 73,
@@ -1837,7 +1909,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.24
     },
     {
       "player_id": 74,
@@ -1862,7 +1935,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.737
     },
     {
       "player_id": 75,
@@ -1887,7 +1961,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.576
     },
     {
       "player_id": 76,
@@ -1912,7 +1987,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.906
     },
     {
       "player_id": 77,
@@ -1937,7 +2013,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 78,
@@ -1962,7 +2039,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 79,
@@ -1987,7 +2065,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.502
     },
     {
       "player_id": 80,
@@ -2012,7 +2091,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 81,
@@ -2037,7 +2117,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.932
     },
     {
       "player_id": 82,
@@ -2062,7 +2143,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 2.965
     },
     {
       "player_id": 83,
@@ -2087,7 +2169,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 84,
@@ -2112,7 +2195,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 4.084
     },
     {
       "player_id": 85,
@@ -2137,7 +2221,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 86,
@@ -2162,7 +2247,8 @@
       "bonus_recent": 3,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 4.792
     },
     {
       "player_id": 87,
@@ -2187,7 +2273,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.453
     },
     {
       "player_id": 88,
@@ -2212,7 +2299,8 @@
       "bonus_recent": 1,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.595
     },
     {
       "player_id": 89,
@@ -2237,7 +2325,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.268
     },
     {
       "player_id": 90,
@@ -2262,7 +2351,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.945
     },
     {
       "player_id": 91,
@@ -2287,7 +2377,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.71
     },
     {
       "player_id": 92,
@@ -2312,7 +2403,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 93,
@@ -2337,7 +2429,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 94,
@@ -2362,7 +2455,8 @@
       "bonus_recent": 3,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 4.849
     },
     {
       "player_id": 95,
@@ -2387,7 +2481,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.049
     },
     {
       "player_id": 96,
@@ -2412,7 +2507,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.402
     },
     {
       "player_id": 97,
@@ -2437,7 +2533,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 1.757
     },
     {
       "player_id": 98,
@@ -2462,7 +2559,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.726
     },
     {
       "player_id": 99,
@@ -2487,7 +2585,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 100,
@@ -2512,7 +2611,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.123
     },
     {
       "player_id": 101,
@@ -2537,7 +2637,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.093
     },
     {
       "player_id": 102,
@@ -2562,7 +2663,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 1.196
     },
     {
       "player_id": 103,
@@ -2587,7 +2689,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.123
     },
     {
       "player_id": 104,
@@ -2612,7 +2715,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 1.876
     },
     {
       "player_id": 105,
@@ -2637,7 +2741,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 2.747
     },
     {
       "player_id": 106,
@@ -2662,7 +2767,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.559
     },
     {
       "player_id": 107,
@@ -2687,7 +2793,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 108,
@@ -2712,7 +2819,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 1.22
     },
     {
       "player_id": 109,
@@ -2737,7 +2845,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.133
     },
     {
       "player_id": 110,
@@ -2762,7 +2871,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 2.848
     },
     {
       "player_id": 111,
@@ -2787,7 +2897,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 112,
@@ -2812,7 +2923,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.333
     },
     {
       "player_id": 113,
@@ -2837,7 +2949,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 1.525
     },
     {
       "player_id": 114,
@@ -2862,7 +2975,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.051
     },
     {
       "player_id": 115,
@@ -2887,7 +3001,8 @@
       "bonus_recent": 2,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.959
     },
     {
       "player_id": 116,
@@ -2912,7 +3027,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 2.735
     },
     {
       "player_id": 117,
@@ -2937,7 +3053,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 118,
@@ -2962,7 +3079,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 119,
@@ -2987,7 +3105,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.956
     },
     {
       "player_id": 120,
@@ -3012,7 +3131,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.123
     },
     {
       "player_id": 121,
@@ -3037,7 +3157,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 122,
@@ -3062,7 +3183,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 123,
@@ -3087,7 +3209,8 @@
       "bonus_recent": 3,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 1.444
     },
     {
       "player_id": 124,
@@ -3112,7 +3235,8 @@
       "bonus_recent": 3,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 4.944
     },
     {
       "player_id": 125,
@@ -3137,7 +3261,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 1.93
     },
     {
       "player_id": 126,
@@ -3162,7 +3287,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.17
     },
     {
       "player_id": 127,
@@ -3187,7 +3313,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.956
     },
     {
       "player_id": 128,
@@ -3212,7 +3339,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 129,
@@ -3237,7 +3365,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 1.283
     },
     {
       "player_id": 130,
@@ -3262,7 +3391,8 @@
       "bonus_recent": 1,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 2.962
     },
     {
       "player_id": 131,
@@ -3287,7 +3417,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 132,
@@ -3312,7 +3443,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 133,
@@ -3337,7 +3469,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 134,
@@ -3362,7 +3495,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 135,
@@ -3387,7 +3521,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.866
     },
     {
       "player_id": 136,
@@ -3412,7 +3547,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.17
     },
     {
       "player_id": 137,
@@ -3437,7 +3573,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 138,
@@ -3462,7 +3599,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 2.726
     },
     {
       "player_id": 139,
@@ -3487,7 +3625,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 140,
@@ -3512,7 +3651,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 1.907
     },
     {
       "player_id": 141,
@@ -3537,7 +3677,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.0
     },
     {
       "player_id": 142,
@@ -3562,7 +3703,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 2.583
     },
     {
       "player_id": 143,
@@ -3587,7 +3729,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.0
     },
     {
       "player_id": 144,
@@ -3612,7 +3755,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 2.597
     },
     {
       "player_id": 145,
@@ -3637,7 +3781,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 1.424
     },
     {
       "player_id": 146,
@@ -3662,7 +3807,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.0
     },
     {
       "player_id": 147,
@@ -3687,7 +3833,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.07
     },
     {
       "player_id": 148,
@@ -3712,7 +3859,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 2.707
     },
     {
       "player_id": 149,
@@ -3737,7 +3885,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 2.218
     },
     {
       "player_id": 150,
@@ -3762,7 +3911,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.0
     },
     {
       "player_id": 151,
@@ -3787,7 +3937,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 2.014
     },
     {
       "player_id": 152,
@@ -3812,7 +3963,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.128
     },
     {
       "player_id": 153,
@@ -3837,7 +3989,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.652
     },
     {
       "player_id": 154,
@@ -3862,7 +4015,8 @@
       "bonus_recent": 3,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 5.238
     },
     {
       "player_id": 155,
@@ -3887,7 +4041,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 1.674
     },
     {
       "player_id": 156,
@@ -3912,7 +4067,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 3.424
     },
     {
       "player_id": 157,
@@ -3937,7 +4093,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 1.273
     },
     {
       "player_id": 158,
@@ -3962,7 +4119,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.17
     },
     {
       "player_id": 159,
@@ -3987,7 +4145,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.54
     },
     {
       "player_id": 160,
@@ -4012,7 +4171,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 1.43
     },
     {
       "player_id": 161,
@@ -4037,7 +4197,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 3.887
     },
     {
       "player_id": 162,
@@ -4062,7 +4223,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.939
     },
     {
       "player_id": 163,
@@ -4087,7 +4249,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.07
     },
     {
       "player_id": 164,
@@ -4112,7 +4275,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.85
     },
     {
       "player_id": 165,
@@ -4137,7 +4301,8 @@
       "bonus_recent": 4,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 4.928
     },
     {
       "player_id": 166,
@@ -4162,7 +4327,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 2.352
     },
     {
       "player_id": 167,
@@ -4187,7 +4353,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.185
     },
     {
       "player_id": 168,
@@ -4212,7 +4379,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.123
     },
     {
       "player_id": 169,
@@ -4237,7 +4405,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.07
     },
     {
       "player_id": 170,
@@ -4262,7 +4431,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.123
     },
     {
       "player_id": 171,
@@ -4287,7 +4457,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.07
     },
     {
       "player_id": 172,
@@ -4312,7 +4483,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.07
     },
     {
       "player_id": 173,
@@ -4337,7 +4509,8 @@
       "bonus_recent": 2,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 3.026
     },
     {
       "player_id": 174,
@@ -4362,7 +4535,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.07
     },
     {
       "player_id": 175,
@@ -4387,7 +4561,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 2.769
     },
     {
       "player_id": 176,
@@ -4412,7 +4587,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 2.737
     },
     {
       "player_id": 177,
@@ -4437,7 +4613,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.0
     },
     {
       "player_id": 178,
@@ -4462,7 +4639,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.07
     },
     {
       "player_id": 179,
@@ -4487,7 +4665,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.07
     },
     {
       "player_id": 180,
@@ -4512,7 +4691,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.0
     },
     {
       "player_id": 181,
@@ -4537,7 +4717,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.0
     },
     {
       "player_id": 182,
@@ -4562,7 +4743,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 2.471
     },
     {
       "player_id": 183,
@@ -4587,7 +4769,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 2.499
     },
     {
       "player_id": 184,
@@ -4612,7 +4795,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 2.957
     },
     {
       "player_id": 185,
@@ -4637,7 +4821,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 1.075
     },
     {
       "player_id": 186,
@@ -4662,7 +4847,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 1.353
     },
     {
       "player_id": 187,
@@ -4687,7 +4873,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.123
     },
     {
       "player_id": 188,
@@ -4712,7 +4899,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 1.717
     },
     {
       "player_id": 189,
@@ -4737,7 +4925,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.07
     },
     {
       "player_id": 190,
@@ -4762,7 +4951,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 2.827
     },
     {
       "player_id": 191,
@@ -4787,7 +4977,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.07
     },
     {
       "player_id": 192,
@@ -4812,7 +5003,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.0
     },
     {
       "player_id": 193,
@@ -4837,7 +5029,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.0
     },
     {
       "player_id": 194,
@@ -4862,7 +5055,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 1.934
     },
     {
       "player_id": 195,
@@ -4887,7 +5081,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 1.474
     },
     {
       "player_id": 196,
@@ -4912,7 +5107,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.0
     },
     {
       "player_id": 197,
@@ -4937,7 +5133,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.0
     },
     {
       "player_id": 198,
@@ -4962,7 +5159,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.197
     },
     {
       "player_id": 199,
@@ -4987,7 +5185,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 200,
@@ -5012,7 +5211,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 4.04
     },
     {
       "player_id": 201,
@@ -5037,7 +5237,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.185
     },
     {
       "player_id": 202,
@@ -5062,7 +5263,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.965
     },
     {
       "player_id": 203,
@@ -5087,7 +5289,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.503
     },
     {
       "player_id": 204,
@@ -5112,7 +5315,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.86
     },
     {
       "player_id": 205,
@@ -5137,7 +5341,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 206,
@@ -5162,7 +5367,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 207,
@@ -5187,7 +5393,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.751
     },
     {
       "player_id": 208,
@@ -5212,7 +5419,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 209,
@@ -5237,7 +5445,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 1.674
     },
     {
       "player_id": 210,
@@ -5262,7 +5471,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 4.307
     },
     {
       "player_id": 211,
@@ -5287,7 +5497,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.749
     },
     {
       "player_id": 212,
@@ -5312,7 +5523,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 213,
@@ -5337,7 +5549,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.123
     },
     {
       "player_id": 214,
@@ -5362,7 +5575,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.431
     },
     {
       "player_id": 215,
@@ -5387,7 +5601,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.123
     },
     {
       "player_id": 216,
@@ -5412,7 +5627,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.123
     },
     {
       "player_id": 217,
@@ -5437,7 +5653,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.123
     },
     {
       "player_id": 218,
@@ -5462,7 +5679,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.123
     },
     {
       "player_id": 219,
@@ -5487,7 +5705,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.123
     },
     {
       "player_id": 220,
@@ -5512,7 +5731,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 221,
@@ -5537,7 +5757,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 222,
@@ -5562,7 +5783,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.56
     },
     {
       "player_id": 223,
@@ -5587,7 +5809,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 224,
@@ -5612,7 +5835,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.924
     },
     {
       "player_id": 225,
@@ -5637,7 +5861,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 226,
@@ -5662,7 +5887,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 3.764
     },
     {
       "player_id": 227,
@@ -5687,7 +5913,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.123
     },
     {
       "player_id": 228,
@@ -5712,7 +5939,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.07
     },
     {
       "player_id": 229,
@@ -5737,7 +5965,8 @@
       "bonus_recent": 2,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 4.318
     },
     {
       "player_id": 230,
@@ -5762,7 +5991,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 3.955
     },
     {
       "player_id": 231,
@@ -5787,7 +6017,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.123
     },
     {
       "player_id": 232,
@@ -5812,7 +6043,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.123
     },
     {
       "player_id": 233,
@@ -5837,7 +6069,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 2.947
     },
     {
       "player_id": 234,
@@ -5862,7 +6095,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.07
     },
     {
       "player_id": 235,
@@ -5887,7 +6121,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.07
     },
     {
       "player_id": 236,
@@ -5912,7 +6147,8 @@
       "bonus_recent": 3,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 5.606
     },
     {
       "player_id": 237,
@@ -5937,7 +6173,8 @@
       "bonus_recent": 1,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 4.539
     },
     {
       "player_id": 238,
@@ -5962,7 +6199,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 1.408
     },
     {
       "player_id": 239,
@@ -5987,7 +6225,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 2.017
     },
     {
       "player_id": 240,
@@ -6012,7 +6251,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.353
     },
     {
       "player_id": 241,
@@ -6037,7 +6277,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.381
     },
     {
       "player_id": 242,
@@ -6062,7 +6303,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 3.447
     },
     {
       "player_id": 243,
@@ -6087,7 +6329,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.612
     },
     {
       "player_id": 244,
@@ -6112,7 +6355,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 2.961
     },
     {
       "player_id": 245,
@@ -6137,7 +6381,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.17
     },
     {
       "player_id": 246,
@@ -6162,7 +6407,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 2.796
     },
     {
       "player_id": 247,
@@ -6187,7 +6433,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 2.515
     },
     {
       "player_id": 248,
@@ -6212,7 +6459,8 @@
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 1.344
     },
     {
       "player_id": 249,
@@ -6237,7 +6485,8 @@
       "bonus_recent": 2,
       "opp_short": "MUN",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 4.06
     },
     {
       "player_id": 250,
@@ -6262,7 +6511,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.144
     },
     {
       "player_id": 251,
@@ -6287,7 +6537,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 252,
@@ -6312,7 +6563,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 253,
@@ -6337,7 +6589,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.749
     },
     {
       "player_id": 254,
@@ -6362,7 +6615,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.923
     },
     {
       "player_id": 255,
@@ -6387,7 +6641,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.066
     },
     {
       "player_id": 256,
@@ -6412,7 +6667,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 257,
@@ -6437,7 +6693,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.632
     },
     {
       "player_id": 258,
@@ -6462,7 +6719,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.031
     },
     {
       "player_id": 259,
@@ -6487,7 +6745,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 2.699
     },
     {
       "player_id": 260,
@@ -6512,7 +6771,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.819
     },
     {
       "player_id": 261,
@@ -6537,7 +6797,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.849
     },
     {
       "player_id": 262,
@@ -6562,7 +6823,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.199
     },
     {
       "player_id": 263,
@@ -6587,7 +6849,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.34
     },
     {
       "player_id": 264,
@@ -6612,7 +6875,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.993
     },
     {
       "player_id": 265,
@@ -6637,7 +6901,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.799
     },
     {
       "player_id": 266,
@@ -6662,7 +6927,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 267,
@@ -6687,7 +6953,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 3.049
     },
     {
       "player_id": 268,
@@ -6712,7 +6979,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 4.353
     },
     {
       "player_id": 269,
@@ -6737,7 +7005,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.362
     },
     {
       "player_id": 270,
@@ -6762,7 +7031,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 271,
@@ -6787,7 +7057,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.021
     },
     {
       "player_id": 272,
@@ -6812,7 +7083,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 273,
@@ -6837,7 +7109,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 274,
@@ -6862,7 +7135,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 275,
@@ -6887,7 +7161,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 276,
@@ -6912,7 +7187,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 277,
@@ -6937,7 +7213,8 @@
       "bonus_recent": 1,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.633
     },
     {
       "player_id": 278,
@@ -6962,7 +7239,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 279,
@@ -6987,7 +7265,8 @@
       "bonus_recent": 2,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.85
     },
     {
       "player_id": 280,
@@ -7012,7 +7291,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.586
     },
     {
       "player_id": 281,
@@ -7037,7 +7317,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.308
     },
     {
       "player_id": 282,
@@ -7062,7 +7343,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.921
     },
     {
       "player_id": 283,
@@ -7087,7 +7369,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 284,
@@ -7112,7 +7395,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 285,
@@ -7137,7 +7421,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.765
     },
     {
       "player_id": 286,
@@ -7162,7 +7447,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.8
     },
     {
       "player_id": 287,
@@ -7187,7 +7473,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.758
     },
     {
       "player_id": 288,
@@ -7212,7 +7499,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 289,
@@ -7237,7 +7525,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.352
     },
     {
       "player_id": 290,
@@ -7262,7 +7551,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.849
     },
     {
       "player_id": 291,
@@ -7287,7 +7577,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 292,
@@ -7312,7 +7603,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.123
     },
     {
       "player_id": 293,
@@ -7337,7 +7629,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 294,
@@ -7362,7 +7655,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 295,
@@ -7387,7 +7681,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.999
     },
     {
       "player_id": 296,
@@ -7412,7 +7707,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.123
     },
     {
       "player_id": 297,
@@ -7437,7 +7733,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 298,
@@ -7462,7 +7759,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 299,
@@ -7487,7 +7785,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 300,
@@ -7512,7 +7811,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.07
     },
     {
       "player_id": 301,
@@ -7537,7 +7837,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.07
     },
     {
       "player_id": 302,
@@ -7562,7 +7863,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.07
     },
     {
       "player_id": 303,
@@ -7587,7 +7889,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.07
     },
     {
       "player_id": 304,
@@ -7612,7 +7915,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 2.852
     },
     {
       "player_id": 305,
@@ -7637,7 +7941,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 3.538
     },
     {
       "player_id": 306,
@@ -7662,7 +7967,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 2.262
     },
     {
       "player_id": 307,
@@ -7687,7 +7993,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.07
     },
     {
       "player_id": 308,
@@ -7712,7 +8019,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.75
     },
     {
       "player_id": 309,
@@ -7737,7 +8045,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 2.754
     },
     {
       "player_id": 310,
@@ -7762,7 +8071,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.0
     },
     {
       "player_id": 311,
@@ -7787,7 +8097,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.0
     },
     {
       "player_id": 312,
@@ -7812,7 +8123,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.0
     },
     {
       "player_id": 313,
@@ -7837,7 +8149,8 @@
       "bonus_recent": 1,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 1.472
     },
     {
       "player_id": 314,
@@ -7862,7 +8175,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.123
     },
     {
       "player_id": 315,
@@ -7887,7 +8201,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 4.309
     },
     {
       "player_id": 316,
@@ -7912,7 +8227,8 @@
       "bonus_recent": 3,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 4.02
     },
     {
       "player_id": 317,
@@ -7937,7 +8253,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.0
     },
     {
       "player_id": 318,
@@ -7962,7 +8279,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.0
     },
     {
       "player_id": 319,
@@ -7987,7 +8305,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.0
     },
     {
       "player_id": 320,
@@ -8012,7 +8331,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 2.285
     },
     {
       "player_id": 321,
@@ -8037,7 +8357,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.512
     },
     {
       "player_id": 322,
@@ -8062,7 +8383,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.0
     },
     {
       "player_id": 323,
@@ -8087,7 +8409,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 1.092
     },
     {
       "player_id": 324,
@@ -8112,7 +8435,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.123
     },
     {
       "player_id": 325,
@@ -8137,7 +8461,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 326,
@@ -8162,7 +8487,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 327,
@@ -8187,7 +8513,8 @@
       "bonus_recent": 2,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.783
     },
     {
       "player_id": 328,
@@ -8212,7 +8539,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.123
     },
     {
       "player_id": 329,
@@ -8237,7 +8565,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.144
     },
     {
       "player_id": 330,
@@ -8262,7 +8591,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.596
     },
     {
       "player_id": 331,
@@ -8287,7 +8617,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 332,
@@ -8312,7 +8643,8 @@
       "bonus_recent": 2,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.055
     },
     {
       "player_id": 333,
@@ -8337,7 +8669,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 334,
@@ -8362,7 +8695,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.012
     },
     {
       "player_id": 335,
@@ -8387,7 +8721,8 @@
       "bonus_recent": 3,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 4.366
     },
     {
       "player_id": 336,
@@ -8412,7 +8747,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.459
     },
     {
       "player_id": 337,
@@ -8437,7 +8773,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.538
     },
     {
       "player_id": 338,
@@ -8462,7 +8799,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.97
     },
     {
       "player_id": 339,
@@ -8487,7 +8825,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.562
     },
     {
       "player_id": 340,
@@ -8512,7 +8851,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 341,
@@ -8537,7 +8877,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.123
     },
     {
       "player_id": 342,
@@ -8562,7 +8903,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 343,
@@ -8587,7 +8929,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.952
     },
     {
       "player_id": 344,
@@ -8612,7 +8955,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.031
     },
     {
       "player_id": 345,
@@ -8637,7 +8981,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.11
     },
     {
       "player_id": 346,
@@ -8662,7 +9007,8 @@
       "bonus_recent": 2,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 4.266
     },
     {
       "player_id": 347,
@@ -8687,7 +9033,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.45
     },
     {
       "player_id": 348,
@@ -8712,7 +9059,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 349,
@@ -8737,7 +9085,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 350,
@@ -8762,7 +9111,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.815
     },
     {
       "player_id": 351,
@@ -8787,7 +9137,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.123
     },
     {
       "player_id": 352,
@@ -8812,7 +9163,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 353,
@@ -8837,7 +9189,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 354,
@@ -8862,7 +9215,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 355,
@@ -8887,7 +9241,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 356,
@@ -8912,7 +9267,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.996
     },
     {
       "player_id": 357,
@@ -8937,7 +9293,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.462
     },
     {
       "player_id": 358,
@@ -8962,7 +9319,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.378
     },
     {
       "player_id": 359,
@@ -8987,7 +9345,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 360,
@@ -9012,7 +9371,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 361,
@@ -9037,7 +9397,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 362,
@@ -9062,7 +9423,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 2.376
     },
     {
       "player_id": 363,
@@ -9087,7 +9449,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 364,
@@ -9112,7 +9475,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.936
     },
     {
       "player_id": 365,
@@ -9137,7 +9501,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 366,
@@ -9162,7 +9527,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 4.725
     },
     {
       "player_id": 367,
@@ -9187,7 +9553,8 @@
       "bonus_recent": 3,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 5.199
     },
     {
       "player_id": 368,
@@ -9212,7 +9579,8 @@
       "bonus_recent": 1,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 5.925
     },
     {
       "player_id": 369,
@@ -9237,7 +9605,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 2.257
     },
     {
       "player_id": 370,
@@ -9262,7 +9631,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 371,
@@ -9287,7 +9657,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 2.601
     },
     {
       "player_id": 372,
@@ -9312,7 +9683,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 2.644
     },
     {
       "player_id": 373,
@@ -9337,7 +9709,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 374,
@@ -9362,7 +9735,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.123
     },
     {
       "player_id": 375,
@@ -9387,7 +9761,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.893
     },
     {
       "player_id": 376,
@@ -9412,7 +9787,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 377,
@@ -9437,7 +9813,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.936
     },
     {
       "player_id": 378,
@@ -9462,7 +9839,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 379,
@@ -9487,7 +9865,8 @@
       "bonus_recent": 2,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 4.834
     },
     {
       "player_id": 380,
@@ -9512,7 +9891,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 381,
@@ -9537,7 +9917,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.844
     },
     {
       "player_id": 382,
@@ -9562,7 +9943,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 383,
@@ -9587,7 +9969,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.17
     },
     {
       "player_id": 384,
@@ -9612,7 +9995,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.789
     },
     {
       "player_id": 385,
@@ -9637,7 +10021,8 @@
       "bonus_recent": 2,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.978
     },
     {
       "player_id": 386,
@@ -9662,7 +10047,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 387,
@@ -9687,7 +10073,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.114
     },
     {
       "player_id": 388,
@@ -9712,7 +10099,8 @@
       "bonus_recent": 2,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 4.902
     },
     {
       "player_id": 389,
@@ -9737,7 +10125,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 1.178
     },
     {
       "player_id": 390,
@@ -9762,7 +10151,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.98
     },
     {
       "player_id": 391,
@@ -9787,7 +10177,8 @@
       "bonus_recent": 1,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 4.409
     },
     {
       "player_id": 392,
@@ -9812,7 +10203,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.17
     },
     {
       "player_id": 393,
@@ -9837,7 +10229,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.745
     },
     {
       "player_id": 394,
@@ -9862,7 +10255,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 395,
@@ -9887,7 +10281,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 1.09
     },
     {
       "player_id": 396,
@@ -9912,7 +10307,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.476
     },
     {
       "player_id": 397,
@@ -9937,7 +10333,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 5.297
     },
     {
       "player_id": 398,
@@ -9962,7 +10359,8 @@
       "bonus_recent": 1,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 6.23
     },
     {
       "player_id": 399,
@@ -9987,7 +10385,8 @@
       "bonus_recent": 4,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 4.513
     },
     {
       "player_id": 400,
@@ -10012,7 +10411,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 401,
@@ -10037,7 +10437,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.901
     },
     {
       "player_id": 402,
@@ -10062,7 +10463,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 403,
@@ -10087,7 +10489,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.128
     },
     {
       "player_id": 404,
@@ -10112,7 +10515,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 405,
@@ -10137,7 +10541,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.304
     },
     {
       "player_id": 406,
@@ -10162,7 +10567,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 1.531
     },
     {
       "player_id": 407,
@@ -10187,7 +10593,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.123
     },
     {
       "player_id": 408,
@@ -10212,7 +10619,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 409,
@@ -10237,7 +10645,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 410,
@@ -10262,7 +10671,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.123
     },
     {
       "player_id": 411,
@@ -10287,7 +10697,8 @@
       "bonus_recent": 3,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 7.065
     },
     {
       "player_id": 412,
@@ -10312,7 +10723,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.246
     },
     {
       "player_id": 413,
@@ -10337,7 +10749,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 414,
@@ -10362,7 +10775,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 415,
@@ -10387,7 +10801,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.044
     },
     {
       "player_id": 416,
@@ -10412,7 +10827,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 417,
@@ -10437,7 +10853,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.578
     },
     {
       "player_id": 418,
@@ -10462,7 +10879,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.379
     },
     {
       "player_id": 419,
@@ -10487,7 +10905,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.645
     },
     {
       "player_id": 420,
@@ -10512,7 +10931,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.944
     },
     {
       "player_id": 421,
@@ -10537,7 +10957,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.58
     },
     {
       "player_id": 422,
@@ -10562,7 +10983,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.232
     },
     {
       "player_id": 423,
@@ -10587,7 +11009,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.259
     },
     {
       "player_id": 424,
@@ -10612,7 +11035,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 425,
@@ -10637,7 +11061,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 426,
@@ -10662,7 +11087,8 @@
       "bonus_recent": 3,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 5.624
     },
     {
       "player_id": 427,
@@ -10687,7 +11113,8 @@
       "bonus_recent": 2,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 5.575
     },
     {
       "player_id": 428,
@@ -10712,7 +11139,8 @@
       "bonus_recent": 1,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 5.182
     },
     {
       "player_id": 429,
@@ -10737,7 +11165,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 4.452
     },
     {
       "player_id": 430,
@@ -10762,7 +11191,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.128
     },
     {
       "player_id": 431,
@@ -10787,7 +11217,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 432,
@@ -10812,7 +11243,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.674
     },
     {
       "player_id": 433,
@@ -10837,7 +11269,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 434,
@@ -10862,7 +11295,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.123
     },
     {
       "player_id": 435,
@@ -10887,7 +11321,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.715
     },
     {
       "player_id": 436,
@@ -10912,7 +11347,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.123
     },
     {
       "player_id": 437,
@@ -10937,7 +11373,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 438,
@@ -10962,7 +11399,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 439,
@@ -10987,7 +11425,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.094
     },
     {
       "player_id": 440,
@@ -11012,7 +11451,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.17
     },
     {
       "player_id": 441,
@@ -11037,7 +11477,8 @@
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 442,
@@ -11062,7 +11503,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.123
     },
     {
       "player_id": 443,
@@ -11087,7 +11529,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 444,
@@ -11112,7 +11555,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 445,
@@ -11137,7 +11581,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.868
     },
     {
       "player_id": 446,
@@ -11162,7 +11607,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.353
     },
     {
       "player_id": 447,
@@ -11187,7 +11633,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.834
     },
     {
       "player_id": 448,
@@ -11212,7 +11659,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 449,
@@ -11237,7 +11685,8 @@
       "bonus_recent": 3,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.645
     },
     {
       "player_id": 450,
@@ -11262,7 +11711,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 451,
@@ -11287,7 +11737,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 452,
@@ -11312,7 +11763,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 1.16
     },
     {
       "player_id": 453,
@@ -11337,7 +11789,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.868
     },
     {
       "player_id": 454,
@@ -11362,7 +11815,8 @@
       "bonus_recent": 2,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 4.124
     },
     {
       "player_id": 455,
@@ -11387,7 +11841,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.768
     },
     {
       "player_id": 456,
@@ -11412,7 +11867,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.16
     },
     {
       "player_id": 457,
@@ -11437,7 +11893,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.385
     },
     {
       "player_id": 458,
@@ -11462,7 +11919,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 459,
@@ -11487,7 +11945,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.88
     },
     {
       "player_id": 460,
@@ -11512,7 +11971,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.403
     },
     {
       "player_id": 461,
@@ -11537,7 +11997,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.462
     },
     {
       "player_id": 462,
@@ -11562,7 +12023,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.556
     },
     {
       "player_id": 463,
@@ -11587,7 +12049,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.718
     },
     {
       "player_id": 464,
@@ -11612,7 +12075,8 @@
       "bonus_recent": 2,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 4.679
     },
     {
       "player_id": 465,
@@ -11637,7 +12101,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 466,
@@ -11662,7 +12127,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 467,
@@ -11687,7 +12153,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.122
     },
     {
       "player_id": 468,
@@ -11712,7 +12179,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 469,
@@ -11737,7 +12205,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.38
     },
     {
       "player_id": 470,
@@ -11762,7 +12231,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.123
     },
     {
       "player_id": 471,
@@ -11787,7 +12257,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.95
     },
     {
       "player_id": 472,
@@ -11812,7 +12283,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.858
     },
     {
       "player_id": 473,
@@ -11837,7 +12309,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.13
     },
     {
       "player_id": 474,
@@ -11862,7 +12335,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.676
     },
     {
       "player_id": 475,
@@ -11887,7 +12361,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 476,
@@ -11912,7 +12387,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 477,
@@ -11937,7 +12413,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 478,
@@ -11962,7 +12439,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.923
     },
     {
       "player_id": 479,
@@ -11987,7 +12465,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 480,
@@ -12012,7 +12491,8 @@
       "bonus_recent": 3,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 5.181
     },
     {
       "player_id": 481,
@@ -12037,7 +12517,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.481
     },
     {
       "player_id": 482,
@@ -12062,7 +12543,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.522
     },
     {
       "player_id": 483,
@@ -12087,7 +12569,8 @@
       "bonus_recent": 2,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.738
     },
     {
       "player_id": 484,
@@ -12112,7 +12595,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.17
     },
     {
       "player_id": 485,
@@ -12137,7 +12621,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 486,
@@ -12162,7 +12647,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.795
     },
     {
       "player_id": 487,
@@ -12187,7 +12673,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.353
     },
     {
       "player_id": 488,
@@ -12212,7 +12699,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 489,
@@ -12237,7 +12725,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 490,
@@ -12262,7 +12751,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.438
     },
     {
       "player_id": 491,
@@ -12287,7 +12777,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 4.588
     },
     {
       "player_id": 492,
@@ -12312,7 +12803,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 3.459
     },
     {
       "player_id": 493,
@@ -12337,7 +12829,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.4
     },
     {
       "player_id": 494,
@@ -12362,7 +12855,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 495,
@@ -12387,7 +12881,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 496,
@@ -12412,7 +12907,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.037
     },
     {
       "player_id": 497,
@@ -12437,7 +12933,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 498,
@@ -12462,7 +12959,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.597
     },
     {
       "player_id": 499,
@@ -12487,7 +12985,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.427
     },
     {
       "player_id": 500,
@@ -12512,7 +13011,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 501,
@@ -12537,7 +13037,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.123
     },
     {
       "player_id": 502,
@@ -12562,7 +13063,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.288
     },
     {
       "player_id": 503,
@@ -12587,7 +13089,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.721
     },
     {
       "player_id": 504,
@@ -12612,7 +13115,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.052
     },
     {
       "player_id": 505,
@@ -12637,7 +13141,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 506,
@@ -12662,7 +13167,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.058
     },
     {
       "player_id": 507,
@@ -12687,7 +13193,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 508,
@@ -12712,7 +13219,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 509,
@@ -12737,7 +13245,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 510,
@@ -12762,7 +13271,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 511,
@@ -12787,7 +13297,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 512,
@@ -12812,7 +13323,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.71
     },
     {
       "player_id": 513,
@@ -12837,7 +13349,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 514,
@@ -12862,7 +13375,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.802
     },
     {
       "player_id": 515,
@@ -12887,7 +13401,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.297
     },
     {
       "player_id": 516,
@@ -12912,7 +13427,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.914
     },
     {
       "player_id": 517,
@@ -12937,7 +13453,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 518,
@@ -12962,7 +13479,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.123
     },
     {
       "player_id": 519,
@@ -12987,7 +13505,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.851
     },
     {
       "player_id": 520,
@@ -13012,7 +13531,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.729
     },
     {
       "player_id": 521,
@@ -13037,7 +13557,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 522,
@@ -13062,7 +13583,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.317
     },
     {
       "player_id": 523,
@@ -13087,7 +13609,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.723
     },
     {
       "player_id": 524,
@@ -13112,7 +13635,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 525,
@@ -13137,7 +13661,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.537
     },
     {
       "player_id": 526,
@@ -13162,7 +13687,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.718
     },
     {
       "player_id": 527,
@@ -13187,7 +13713,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.197
     },
     {
       "player_id": 528,
@@ -13212,7 +13739,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 529,
@@ -13237,7 +13765,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.036
     },
     {
       "player_id": 530,
@@ -13262,7 +13791,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 531,
@@ -13287,7 +13817,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 532,
@@ -13312,7 +13843,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.841
     },
     {
       "player_id": 533,
@@ -13337,7 +13869,8 @@
       "bonus_recent": 1,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.651
     },
     {
       "player_id": 534,
@@ -13362,7 +13895,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.598
     },
     {
       "player_id": 535,
@@ -13387,7 +13921,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.719
     },
     {
       "player_id": 536,
@@ -13412,7 +13947,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.017
     },
     {
       "player_id": 537,
@@ -13437,7 +13973,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 538,
@@ -13462,7 +13999,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 539,
@@ -13487,7 +14025,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.187
     },
     {
       "player_id": 540,
@@ -13512,7 +14051,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 541,
@@ -13537,7 +14077,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.95
     },
     {
       "player_id": 542,
@@ -13562,7 +14103,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.82
     },
     {
       "player_id": 543,
@@ -13587,7 +14129,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.176
     },
     {
       "player_id": 544,
@@ -13612,7 +14155,8 @@
       "bonus_recent": 5,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 4.691
     },
     {
       "player_id": 545,
@@ -13637,7 +14181,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.574
     },
     {
       "player_id": 546,
@@ -13662,7 +14207,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.0
     },
     {
       "player_id": 547,
@@ -13687,7 +14233,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.719
     },
     {
       "player_id": 548,
@@ -13712,7 +14259,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.938
     },
     {
       "player_id": 549,
@@ -13737,7 +14285,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.913
     },
     {
       "player_id": 550,
@@ -13762,7 +14311,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.123
     },
     {
       "player_id": 551,
@@ -13787,7 +14337,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.763
     },
     {
       "player_id": 552,
@@ -13812,7 +14363,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.466
     },
     {
       "player_id": 553,
@@ -13837,7 +14389,8 @@
       "bonus_recent": 3,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.99
     },
     {
       "player_id": 554,
@@ -13862,7 +14415,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.0
     },
     {
       "player_id": 555,
@@ -13887,7 +14441,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 556,
@@ -13912,7 +14467,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.266
     },
     {
       "player_id": 557,
@@ -13937,7 +14493,8 @@
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 4.213
     },
     {
       "player_id": 558,
@@ -13962,7 +14519,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.264
     },
     {
       "player_id": 559,
@@ -13987,7 +14545,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.98
     },
     {
       "player_id": 560,
@@ -14012,7 +14571,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.07
     },
     {
       "player_id": 561,
@@ -14037,7 +14597,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.07
     },
     {
       "player_id": 562,
@@ -14062,7 +14623,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 3.18
     },
     {
       "player_id": 563,
@@ -14087,7 +14649,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.808
     },
     {
       "player_id": 564,
@@ -14112,7 +14675,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 2.934
     },
     {
       "player_id": 565,
@@ -14137,7 +14701,8 @@
       "bonus_recent": 3,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 4.568
     },
     {
       "player_id": 566,
@@ -14162,7 +14727,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.088
     },
     {
       "player_id": 567,
@@ -14187,7 +14753,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.2
     },
     {
       "player_id": 568,
@@ -14212,7 +14779,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.972
     },
     {
       "player_id": 569,
@@ -14237,7 +14805,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 4.609
     },
     {
       "player_id": 570,
@@ -14262,7 +14831,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.898
     },
     {
       "player_id": 571,
@@ -14287,7 +14857,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.093
     },
     {
       "player_id": 572,
@@ -14312,7 +14883,8 @@
       "bonus_recent": 6,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.871
     },
     {
       "player_id": 573,
@@ -14337,7 +14909,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 574,
@@ -14362,7 +14935,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.123
     },
     {
       "player_id": 575,
@@ -14387,7 +14961,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 2.131
     },
     {
       "player_id": 576,
@@ -14412,7 +14987,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.976
     },
     {
       "player_id": 577,
@@ -14437,7 +15013,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.736
     },
     {
       "player_id": 578,
@@ -14462,7 +15039,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.17
     },
     {
       "player_id": 579,
@@ -14487,7 +15065,8 @@
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 1.384
     },
     {
       "player_id": 580,
@@ -14512,7 +15091,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.214
     },
     {
       "player_id": 581,
@@ -14537,7 +15117,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.17
     },
     {
       "player_id": 582,
@@ -14562,7 +15143,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.0
     },
     {
       "player_id": 583,
@@ -14587,7 +15169,8 @@
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 1.288
     },
     {
       "player_id": 584,
@@ -14612,7 +15195,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 1.475
     },
     {
       "player_id": 585,
@@ -14637,7 +15221,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.142
     },
     {
       "player_id": 586,
@@ -14662,7 +15247,8 @@
       "bonus_recent": 1,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.433
     },
     {
       "player_id": 587,
@@ -14687,7 +15273,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.123
     },
     {
       "player_id": 588,
@@ -14712,7 +15299,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 2.472
     },
     {
       "player_id": 589,
@@ -14737,7 +15325,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.117
     },
     {
       "player_id": 590,
@@ -14762,7 +15351,8 @@
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 591,
@@ -14787,7 +15377,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 4.495
     },
     {
       "player_id": 592,
@@ -14812,7 +15403,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.957
     },
     {
       "player_id": 593,
@@ -14837,7 +15429,8 @@
       "bonus_recent": 2,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 3.426
     },
     {
       "player_id": 594,
@@ -14862,7 +15455,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 1.21
     },
     {
       "player_id": 595,
@@ -14887,7 +15481,8 @@
       "bonus_recent": 0,
       "opp_short": "FUL",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.926
     },
     {
       "player_id": 596,
@@ -14912,7 +15507,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.609
     },
     {
       "player_id": 597,
@@ -14937,7 +15533,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 1.855
     },
     {
       "player_id": 598,
@@ -14962,7 +15559,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.078
     },
     {
       "player_id": 599,
@@ -14987,7 +15585,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.123
     },
     {
       "player_id": 600,
@@ -15012,7 +15611,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 1.267
     },
     {
       "player_id": 601,
@@ -15037,7 +15637,8 @@
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 602,
@@ -15062,7 +15663,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 0.07
     },
     {
       "player_id": 603,
@@ -15087,7 +15689,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 604,
@@ -15112,7 +15715,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 605,
@@ -15137,7 +15741,8 @@
       "bonus_recent": 1,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 3.193
     },
     {
       "player_id": 606,
@@ -15162,7 +15767,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 607,
@@ -15187,7 +15793,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 608,
@@ -15212,7 +15819,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.86
     },
     {
       "player_id": 609,
@@ -15237,7 +15845,8 @@
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 610,
@@ -15262,7 +15871,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.052
     },
     {
       "player_id": 611,
@@ -15287,7 +15897,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.986
     },
     {
       "player_id": 612,
@@ -15312,7 +15923,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 613,
@@ -15337,7 +15949,8 @@
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 614,
@@ -15362,7 +15975,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 615,
@@ -15387,7 +16001,8 @@
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 616,
@@ -15412,7 +16027,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 1.371
     },
     {
       "player_id": 617,
@@ -15437,7 +16053,8 @@
       "bonus_recent": 0,
       "opp_short": "AVL",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 1.044
     },
     {
       "player_id": 618,
@@ -15462,7 +16079,8 @@
       "bonus_recent": 0,
       "opp_short": "HUL",
       "is_home": false,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.17
     },
     {
       "player_id": 619,
@@ -15487,7 +16105,8 @@
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
-      "fdr": 4
+      "fdr": 4,
+      "target_points": 1.601
     },
     {
       "player_id": 620,
@@ -15512,7 +16131,8 @@
       "bonus_recent": 0,
       "opp_short": "SUN",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.07
     },
     {
       "player_id": 621,
@@ -15537,7 +16157,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.971
     },
     {
       "player_id": 622,
@@ -15562,7 +16183,8 @@
       "bonus_recent": 0,
       "opp_short": "COV",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.591
     },
     {
       "player_id": 623,
@@ -15587,7 +16209,8 @@
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": false,
-      "fdr": 5
+      "fdr": 5,
+      "target_points": 0.07
     },
     {
       "player_id": 624,
@@ -15612,7 +16235,8 @@
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": true,
-      "fdr": 2
+      "fdr": 2,
+      "target_points": 0.123
     },
     {
       "player_id": 625,
@@ -15637,7 +16261,8 @@
       "bonus_recent": 0,
       "opp_short": "BHA",
       "is_home": false,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     },
     {
       "player_id": 626,
@@ -15662,7 +16287,8 @@
       "bonus_recent": 0,
       "opp_short": "CRY",
       "is_home": true,
-      "fdr": 3
+      "fdr": 3,
+      "target_points": 0.07
     }
   ]
 }

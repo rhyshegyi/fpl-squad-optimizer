@@ -465,7 +465,7 @@ function TransferPlanView({
         <div className="text-xs uppercase tracking-widest text-slate-500 mb-2">
           New squad
         </div>
-        <Pitch picks={plan.new_squad.picks} />
+        <Pitch picks={plan.new_squad.picks} metric="next GW" />
       </div>
     </div>
   );

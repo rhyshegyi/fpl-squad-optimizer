@@ -74,7 +74,7 @@ export function SquadPage() {
           <h1 className="text-3xl font-bold mt-1">
             {squad.formation}{" "}
             <span className="text-slate-500 font-normal text-2xl">
-              · {squad.projected_points.toFixed(1)} pts/GW
+              · {squad.projected_points.toFixed(1)} pts/GW over {meta.horizon} GWs
             </span>
           </h1>
           <p className="text-slate-400 text-sm mt-2">
@@ -143,7 +143,7 @@ export function SquadPage() {
         shows why each player is rated where they are.
       </div>
 
-      <Pitch picks={squad.picks} />
+      <Pitch picks={squad.picks} metric="6 GW" />
     </div>
   );
 }

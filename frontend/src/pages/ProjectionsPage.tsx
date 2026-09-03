@@ -7,6 +7,7 @@ import type { Player, Position, ProjectionsResponse } from "../types";
 const POSITIONS: (Position | "ALL")[] = ["ALL", "GK", "DEF", "MID", "FWD"];
 
 type SortKey =
+  | "target_points"
   | "projected_points"
   | "now_cost"
   | "web_name"
@@ -83,6 +84,15 @@ export function ProjectionsPage() {
           the next fixture (colored by difficulty). Availability flags surface
           doubts and suspensions.
         </p>
+        <p className="text-slate-400 mt-2 max-w-2xl text-sm">
+          Two projections are shown because they answer different questions.{" "}
+          <span className="text-emerald-400 font-medium">Next GW</span> is this
+          weekend only — what the Transfers page ranks on.{" "}
+          <span className="text-sky-300 font-medium">6 GW</span> blends season
+          form with the fixture run ahead — what the Squad page ranks on. They
+          often disagree, and not by a constant amount: a player can lead on one
+          and trail on the other.
+        </p>
       </div>
 
       <div className="flex flex-wrap gap-4 items-end">
@@ -129,7 +139,8 @@ export function ProjectionsPage() {
             onChange={(e) => setSort(e.target.value as SortKey)}
             className="bg-slate-900 border border-white/10 rounded-lg px-3 py-1.5 text-sm"
           >
-            <option value="projected_points">Projected points</option>
+            <option value="projected_points">Projected — next GW</option>
+            <option value="target_points">Projected — 6 GW</option>
             <option value="form">Form</option>
             <option value="selected_by">Ownership</option>
             <option value="now_cost">Price</option>
@@ -175,8 +186,11 @@ export function ProjectionsPage() {
                 <th className="px-2 py-2 text-left">Player</th>
                 <th className="px-2 py-2 text-left">Pos</th>
                 <th className="px-2 py-2 text-right">£m</th>
-                <th className="px-2 py-2 text-right" title="Model projected points for the next GW">
-                  Proj
+                <th className="px-2 py-2 text-right" title="Model projected points for the next gameweek only — what the Transfers page ranks on">
+                  Next GW
+                </th>
+                <th className="px-2 py-2 text-right" title="Value over the next 6 gameweeks, blending season form with fixtures — what the Squad page ranks on">
+                  6 GW
                 </th>
                 <th className="px-2 py-2 text-right" title="FPL form: average points over the last 30 days">
                   Form
@@ -236,6 +250,9 @@ export function ProjectionsPage() {
                     </td>
                     <td className="px-2 py-2 text-right text-emerald-400 font-semibold">
                       {p.projected_points.toFixed(2)}
+                    </td>
+                    <td className="px-2 py-2 text-right text-sky-300">
+                      {p.target_points != null ? p.target_points.toFixed(2) : "—"}
                     </td>
                     <td className="px-2 py-2 text-right text-slate-200">
                       {p.form?.toFixed(1) ?? "—"}

@@ -5,9 +5,10 @@ const ROW_ORDER: Position[] = ["GK", "DEF", "MID", "FWD"];
 
 interface Props {
   picks: Pick[];
+  metric?: "next GW" | "6 GW";
 }
 
-export function Pitch({ picks }: Props) {
+export function Pitch({ picks, metric }: Props) {
   const starters = picks.filter((p) => p.is_starter);
   const bench = picks.filter((p) => !p.is_starter);
 
@@ -40,7 +41,7 @@ export function Pitch({ picks }: Props) {
               className="flex justify-center gap-3 flex-wrap"
             >
               {byRow[row].map((p) => (
-                <PlayerCard key={p.player_id} player={p} />
+                <PlayerCard key={p.player_id} player={p} metric={metric} />
               ))}
             </div>
           ))}
@@ -53,7 +54,7 @@ export function Pitch({ picks }: Props) {
         </div>
         <div className="flex gap-3 flex-wrap rounded-xl bg-slate-900/60 border border-white/10 px-4 py-3">
           {bench.map((p) => (
-            <PlayerCard key={p.player_id} player={p} compact />
+            <PlayerCard key={p.player_id} player={p} compact metric={metric} />
           ))}
         </div>
       </div>

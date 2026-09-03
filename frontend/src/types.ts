@@ -9,6 +9,10 @@ export interface Player {
   now_cost: number;         // tenths of £m
   projected_points: number;
 
+  /** 6-gameweek target value — what the Squad page ranks on. Differs from
+   *  projected_points (next gameweek) and can reorder players entirely. */
+  target_points?: number | null;
+
   // Scouting stats (optional — present when the row was enriched via scouting.py)
   form?: number;
   season_ppg?: number;

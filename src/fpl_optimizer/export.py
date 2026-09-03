@@ -44,7 +44,24 @@ def _squad_to_dict(squad: Squad) -> dict:
 
 
 def _projections_to_list(projections: list[PlayerProjection]) -> list[dict]:
-    return enrich_projections(projections)
+    """Enriched next-gameweek rows, plus each player's 6-gameweek target value.
+
+    Both numbers live on the same row so the Scouting page can show them side
+    by side. They routinely disagree — and not by a constant offset, they
+    genuinely reorder players — so showing only one invites the reasonable
+    conclusion that the other page is wrong.
+    """
+    rows = enrich_projections(projections)
+    try:
+        from .target import project_target
+        target = {p.player_id: p.projected_points for p in project_target()}
+    except Exception as e:  # noqa: BLE001 - the next-GW rows must still ship
+        print(f"  warning: target values omitted from projections ({e})")
+        target = {}
+
+    for r in rows:
+        r["target_points"] = target.get(r["player_id"])
+    return rows
 
 
 def _pipeline_state() -> dict:
