@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-03T06:55:20.597245+00:00",
+  "generated_at": "2026-09-03T07:27:18.498846+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-09-03T06:53:47.147263+00:00",
+    "last_fetch": "2026-09-03T07:25:44.299415+00:00",
     "current_gw": {
       "id": 2,
       "name": "Gameweek 2"
@@ -11601,7 +11601,7 @@
       "season_ppg": 6.0,
       "season_points": 12,
       "season_minutes": 171,
-      "selected_by": 11.7,
+      "selected_by": 11.8,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 2,
@@ -15676,7 +15676,7 @@
       "season_ppg": 0.0,
       "season_points": 0,
       "season_minutes": 0,
-      "selected_by": 0.8,
+      "selected_by": 0.9,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 0,
@@ -16276,7 +16276,7 @@
       "season_ppg": 0.0,
       "season_points": 0,
       "season_minutes": 0,
-      "selected_by": 0.0,
+      "selected_by": 0.1,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 0,
