@@ -24,6 +24,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 
 import lightgbm as lgb
+import numpy as np
 import pandas as pd
 
 from .features import POSITION_CATEGORIES, build_training_frame, feature_columns
@@ -646,5 +647,110 @@ class TwoStageProjector(Projector):
                 position=str(r["position"]),
                 now_cost=int(r["value"]),
                 projected_points=round(max(float(p) * float(e), 0.0), 3),
+            ))
+        return out
+
+
+# --------------------------------------------------------------------------
+# Multi-gameweek horizon
+# --------------------------------------------------------------------------
+
+# Fixture context is the only thing that legitimately varies across a horizon
+# at decision time: you know who a team plays in three weeks, you do not know
+# what form anyone will be in. So future gameweeks reuse the player's current
+# form features and swap only these columns.
+FIXTURE_COLUMNS = [
+    "is_home",
+    "own_strength_overall", "own_strength_attack", "own_strength_defence",
+    "opp_strength_overall", "opp_strength_attack", "opp_strength_defence",
+]
+
+
+class HorizonProjector(Projector):
+    """Value a player over the next N fixtures rather than just the next one.
+
+    The weekly LP was myopic: it transferred for next Saturday and ignored
+    that a player might face three of the top six after it. This sums decayed
+    projections across a fixture window, which is what actually distinguishes
+    a good transfer from a good one-week punt.
+
+    Crucially this introduces no lookahead. Form features are frozen at what
+    was known on the decision gameweek; only the fixture columns advance,
+    because the fixture list is public in advance.
+    """
+
+    def __init__(
+        self,
+        booster: lgb.Booster,
+        feat: list[str],
+        horizon: int = 4,
+        decay: float = 0.75,
+    ):
+        self.booster, self.feat = booster, feat
+        self.horizon, self.decay = horizon, decay
+        self.name = f"horizon{horizon}"
+
+    def __call__(self, frame, gw):
+        base = frame[frame["gw"] == gw]
+        if base.empty:
+            return []
+        base = base.copy()
+        base["position"] = pd.Categorical(base["position"], categories=POSITION_CATEGORIES)
+
+        # Fixture context for every future gameweek, keyed by (team, gw)
+        future = frame[(frame["gw"] > gw) & (frame["gw"] < gw + self.horizon)]
+        fixtures: dict[tuple[int, int], dict] = {}
+        for r in future.itertuples():
+            if pd.isna(r.team_id):
+                continue
+            key = (int(r.team_id), int(r.gw))
+            if key not in fixtures:
+                fixtures[key] = {
+                    c: getattr(r, c, None) for c in FIXTURE_COLUMNS
+                }
+
+        total = self.booster.predict(base[self.feat]).astype(float)
+        weight_sum = 1.0
+
+        for step in range(1, self.horizon):
+            target_gw = gw + step
+            shifted = base.copy()
+            # Advance only the fixture columns; form stays as known today
+            for col in FIXTURE_COLUMNS:
+                if col not in shifted.columns:
+                    continue
+                shifted[col] = [
+                    fixtures.get((int(t), target_gw), {}).get(col)
+                    if not pd.isna(t) else None
+                    for t in base["team_id"]
+                ]
+                shifted[col] = pd.to_numeric(shifted[col], errors="coerce")
+
+            has_fixture = shifted["opp_strength_overall"].notna().to_numpy()
+            preds = self.booster.predict(shifted[self.feat]).astype(float)
+            # A blank gameweek contributes nothing, which is the point of
+            # looking ahead in the first place
+            preds = np.where(has_fixture, preds, 0.0)
+
+            w = self.decay ** step
+            total = total + w * preds
+            weight_sum += w
+
+        # Rescale so the number stays on a single-gameweek scale, keeping it
+        # comparable with other projectors and with the -4 hit cost.
+        total = total / weight_sum
+
+        out: list[PlayerProjection] = []
+        for (_, r), p in zip(base.iterrows(), total):
+            if pd.isna(r.get("value")) or pd.isna(r.get("position")):
+                continue
+            out.append(PlayerProjection(
+                player_id=int(r["element"]),
+                web_name=str(r.get("name") or r["element"]),
+                team_id=int(r["team_id"]) if not pd.isna(r.get("team_id")) else 0,
+                team_short=str(r.get("team") or ""),
+                position=str(r["position"]),
+                now_cost=int(r["value"]),
+                projected_points=round(max(float(p), 0.0), 3),
             ))
         return out
