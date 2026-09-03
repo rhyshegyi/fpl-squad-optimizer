@@ -46,6 +46,7 @@ jobs:
         run: uv run fpl export --projector ml
 
       - name: Commit artifacts if they changed
+        id: commit
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -54,7 +55,22 @@ jobs:
           git add data/artifacts
           if git diff --staged --quiet; then
             echo "No artifact changes — nothing to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "weekly: refresh projections + squad for $(date -u +%Y-%m-%d)"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      # GitHub deliberately does not trigger workflows from commits authored by
+      # the default GITHUB_TOKEN, so the push above will NOT fire fly-deploy.yml.
+      # Without this step the live site keeps serving last week's projections.
+      - name: Install flyctl
+        if: steps.commit.outputs.changed == 'true'
+        uses: superfly/flyctl-actions/setup-flyctl@master
+
+      - name: Deploy refreshed artifacts
+        if: steps.commit.outputs.changed == 'true'
+        run: flyctl deploy --remote-only
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
