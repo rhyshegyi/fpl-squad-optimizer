@@ -4,6 +4,7 @@ import { Pitch } from "../components/Pitch";
 import { teamColor } from "../teamColors";
 import type {
   EntrySquadResponse,
+  ChipAdvice,
   Pick as SquadPick,
   Player,
   TransferPlanResponse,
@@ -334,6 +335,8 @@ export function TransfersPage() {
         </div>
       )}
 
+      {plan?.chips && plan.chips.length > 0 && <Chips advice={plan.chips} />}
+
       {plan && <TransferPlanView plan={plan} unlimited={ignoreHits} />}
     </div>
   );
@@ -598,5 +601,77 @@ function SwapRow({ out, in_ }: { out: Player; in_: Player }) {
         </div>
       </div>
     </div>
+  );
+}
+
+
+function Chips({ advice }: { advice: ChipAdvice[] }) {
+  return (
+    <section>
+      <div className="flex flex-wrap items-baseline justify-between gap-2 mb-3">
+        <div className="text-xs uppercase tracking-widest text-slate-400">
+          Chips this week
+        </div>
+        <div className="text-xs text-slate-500">
+          Heuristics based on your squad and this week's fixtures — not
+          optimised season-long timing
+        </div>
+      </div>
+
+      <div className="grid gap-4 sm:grid-cols-2">
+        {advice.map((c) => (
+          <div
+            key={c.chip}
+            className={
+              "rounded-xl border p-4 " +
+              (c.recommended
+                ? "border-emerald-500/40 bg-emerald-500/5"
+                : "border-white/10 bg-slate-900/60")
+            }
+          >
+            <div className="flex items-center justify-between gap-3">
+              <span className="font-semibold text-slate-100">{c.label}</span>
+              <span
+                className={
+                  "text-[10px] uppercase tracking-widest px-2 py-0.5 rounded border font-semibold " +
+                  (c.recommended
+                    ? "bg-emerald-500/20 text-emerald-300 border-emerald-500/40"
+                    : "bg-slate-500/15 text-slate-400 border-slate-500/30")
+                }
+              >
+                {c.recommended ? "Play" : "Hold"}
+              </span>
+            </div>
+
+            <div
+              className={
+                "mt-2 text-sm font-medium " +
+                (c.recommended ? "text-emerald-300" : "text-slate-300")
+              }
+            >
+              {c.headline}
+            </div>
+            <p className="mt-1 text-xs text-slate-400 leading-relaxed">{c.detail}</p>
+
+            {c.benchmark > 0 && (
+              <div className="mt-3">
+                <div className="h-1.5 rounded-full bg-slate-800 overflow-hidden">
+                  <div
+                    className={c.recommended ? "h-full bg-emerald-500" : "h-full bg-slate-600"}
+                    style={{
+                      width: `${Math.min(100, (c.value / c.benchmark) * 100)}%`,
+                    }}
+                  />
+                </div>
+                <div className="mt-1 flex justify-between text-[10px] text-slate-500">
+                  <span>{c.value.toFixed(1)} projected</span>
+                  <span>{c.benchmark.toFixed(1)} to justify playing it</span>
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }

@@ -102,7 +102,18 @@ export interface TransferRequestBody {
   ignore_hit_cost?: boolean;
 }
 
+export interface ChipAdvice {
+  chip: "triple_captain" | "bench_boost";
+  label: string;
+  recommended: boolean;
+  headline: string;
+  detail: string;
+  value: number;
+  benchmark: number;
+}
+
 export interface TransferPlanResponse {
+  chips?: ChipAdvice[];
   old_squad_ids: number[];
   transfers_made: number;
   free_transfers: number;

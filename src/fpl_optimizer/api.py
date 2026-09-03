@@ -21,6 +21,7 @@ from pydantic import BaseModel, Field
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
+from .chips import chip_advice
 from .entry import fetch_manager_squad
 from .export import ARTIFACTS_DIR
 from .optimizer import optimize
@@ -40,6 +41,20 @@ def _load_json(path: Path) -> dict:
                    f"(or wait for the weekly workflow)",
         )
     return json.loads(path.read_text())
+
+
+def _players_without_fixture() -> set[int]:
+    """Ids with no fixture in the upcoming gameweek.
+
+    The enriched projections carry the next opponent, so a null there means a
+    blank — which matters for Bench Boost, where a single blank wastes part of
+    the chip regardless of how good the rest of the bench looks.
+    """
+    data = _load_json(PROJECTIONS_JSON)
+    return {
+        r["player_id"] for r in data["projections"]
+        if not r.get("opp_short")
+    }
 
 
 def _projections_from_artifact() -> list[PlayerProjection]:
@@ -272,7 +287,19 @@ def post_transfers(req: TransferRequest) -> dict:
     except (RuntimeError, ValueError) as e:
         raise HTTPException(status_code=400, detail=str(e))
 
+    picks = [
+        {
+            "player_id": pk.player.player_id,
+            "web_name": pk.player.web_name,
+            "projected_points": pk.player.projected_points,
+            "is_starter": pk.is_starter,
+            "is_captain": pk.is_captain,
+        }
+        for pk in plan.new_squad.picks
+    ]
+
     return {
+        "chips": chip_advice(picks, _players_without_fixture()),
         "old_squad_ids": plan.old_squad_ids,
         "transfers_made": plan.transfers_made,
         "free_transfers": plan.free_transfers,
