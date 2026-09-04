@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T22:29:04.912750+00:00",
+  "generated_at": "2026-09-04T22:58:33.771358+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "pipeline_state": {
@@ -24,7 +24,8 @@
         "matches_played": 1,
         "matches_started": 1,
         "matches_total": 10
-      }
+      },
+      "bonus_pending": null
     }
   },
   "squad": {

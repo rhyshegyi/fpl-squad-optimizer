@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T22:28:34.281055+00:00",
+  "generated_at": "2026-09-04T22:58:03.514979+00:00",
   "projector": "ml",
   "pipeline_state": {
     "last_fetch": "2026-09-04T22:09:47.405557+00:00",
@@ -23,7 +23,8 @@
         "matches_played": 1,
         "matches_started": 1,
         "matches_total": 10
-      }
+      },
+      "bonus_pending": null
     }
   },
   "squad": {

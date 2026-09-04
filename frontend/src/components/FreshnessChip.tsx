@@ -20,21 +20,26 @@ export function FreshnessChip({ state }: { state: PipelineState | null }) {
 
   const health = state.data_health;
   const live = health?.gameweek_in_progress ?? null;
+  const bonus = health?.bonus_pending ?? null;
   const missing = health?.players_disagreeing ?? 0;
 
-  let tone: "live" | "stale" | "ok" = "ok";
+  // Ordered by how much doubt each casts on the numbers on screen.
+  let tone: "live" | "stale" | "bonus" | "ok" = "ok";
   if (live) tone = "live";
   else if (missing > 0) tone = "stale";
+  else if (bonus) tone = "bonus";
 
   const cls = {
     live: "border-amber-500/40 bg-amber-500/10 text-amber-200",
     stale: "border-amber-500/40 bg-amber-500/10 text-amber-200",
+    bonus: "border-white/10 bg-white/5 text-slate-300",
     ok: "border-white/10 bg-white/5 text-slate-300",
   }[tone];
 
   const dot = {
     live: "bg-amber-400 animate-pulse",
     stale: "bg-amber-400",
+    bonus: "bg-sky-400",
     ok: "bg-emerald-400",
   }[tone];
 
@@ -42,7 +47,9 @@ export function FreshnessChip({ state }: { state: PipelineState | null }) {
     ? `${live.name.replace("Gameweek", "GW")} in progress`
     : tone === "stale"
       ? `${missing} players stale`
-      : "Current";
+      : tone === "bonus"
+        ? "Bonus pending"
+        : "Current";
 
   const detail = live
     ? `${live.matches_played}/${live.matches_total} played`
@@ -58,7 +65,11 @@ export function FreshnessChip({ state }: { state: PipelineState | null }) {
       ? `${missing} of ${health?.players_tracked ?? "?"} players have season ` +
         `totals that disagree with their per-gameweek rows, so at least one ` +
         `result is missing from this snapshot.`
-      : `Every match played so far is on file and both data sources agree.`;
+      : tone === "bonus"
+        ? `${bonus?.name} is over and every result is on file, but FPL has ` +
+          `not confirmed bonus points yet — a few players can still move by ` +
+          `a point or two.`
+        : `Every match played so far is on file and both data sources agree.`;
 
   return (
     <div

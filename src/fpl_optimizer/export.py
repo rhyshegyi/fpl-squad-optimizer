@@ -111,6 +111,49 @@ def _data_health(conn, season: str) -> dict:
         "latest_result": (_parse(latest["ts"]).isoformat()
                           if latest and _parse(latest["ts"]) else None),
         "gameweek_in_progress": _gameweek_in_progress(conn),
+        "bonus_pending": _bonus_pending(conn),
+    }
+
+
+# How long after a round's last scheduled kickoff an unplayed fixture stops
+# meaning "still being played" and starts meaning "called off". Without this a
+# single postponed match would leave the site claiming a round was in progress
+# for weeks. Generous enough to absorb a Monday-night finish plus FPL taking
+# its time flipping flags.
+POSTPONEMENT_GRACE = timedelta(hours=36)
+
+
+def _current_round(conn) -> dict | None:
+    """The round whose deadline has most recently passed, with its fixture counts.
+
+    Anchoring on "latest deadline passed" rather than "any round with unplayed
+    fixtures" is what stops an older postponed match from being mistaken for
+    live football once the next round has started.
+    """
+    now = datetime.now(timezone.utc).isoformat()
+    gw = conn.execute(
+        "SELECT id, name, data_checked FROM gameweeks "
+        "WHERE deadline_time <= ? ORDER BY deadline_time DESC LIMIT 1",
+        (now,),
+    ).fetchone()
+    if gw is None:
+        return None
+    counts = conn.execute(
+        "SELECT COUNT(*) AS total, "
+        "       SUM(COALESCE(finished, 0) = 1 "
+        "           OR COALESCE(finished_provisional, 0) = 1) AS played, "
+        "       SUM(COALESCE(started, 0) = 1) AS started, "
+        "       MAX(kickoff_time) AS last_kickoff "
+        "FROM fixtures WHERE event = ?", (gw["id"],),
+    ).fetchone()
+    return {
+        "id": gw["id"],
+        "name": gw["name"],
+        "data_checked": bool(gw["data_checked"]),
+        "total": counts["total"] or 0,
+        "played": counts["played"] or 0,
+        "started": counts["started"] or 0,
+        "last_kickoff": counts["last_kickoff"],
     }
 
 
@@ -123,27 +166,37 @@ def _gameweek_in_progress(conn) -> dict | None:
     they are real but provisional — every result that lands this weekend
     moves them. Saying so is more honest than a green tick.
     """
-    row = conn.execute(
-        "SELECT g.id, g.name, "
-        "       COUNT(f.id) AS total, "
-        "       SUM(COALESCE(f.finished, 0) = 1 "
-        "           OR COALESCE(f.finished_provisional, 0) = 1) AS played, "
-        "       SUM(COALESCE(f.started, 0) = 1) AS started "
-        "FROM gameweeks g JOIN fixtures f ON f.event = g.id "
-        "WHERE g.deadline_time <= ? "
-        "GROUP BY g.id HAVING played < total "
-        "ORDER BY g.id DESC LIMIT 1",
-        (datetime.now(timezone.utc).isoformat(),),
-    ).fetchone()
-    if row is None:
+    cur = _current_round(conn)
+    if cur is None or not cur["total"] or cur["played"] >= cur["total"]:
         return None
+
+    last = _parse(cur["last_kickoff"])
+    if last and datetime.now(timezone.utc) - last > POSTPONEMENT_GRACE:
+        return None  # whatever is left was called off, not kicked off
+
     return {
-        "id": row["id"],
-        "name": row["name"],
-        "matches_played": row["played"] or 0,
-        "matches_started": row["started"] or 0,
-        "matches_total": row["total"] or 0,
+        "id": cur["id"],
+        "name": cur["name"],
+        "matches_played": cur["played"],
+        "matches_started": cur["started"],
+        "matches_total": cur["total"],
     }
+
+
+def _bonus_pending(conn) -> dict | None:
+    """Every match played, but FPL has not confirmed bonus points yet.
+
+    A narrower caveat than a round in progress and worth keeping separate: the
+    football is over and the projections are built on all of it, but a handful
+    of players can still move by a point or two when bonus settles. Matters
+    most to the track record, which scores against these numbers.
+    """
+    cur = _current_round(conn)
+    if cur is None or not cur["total"]:
+        return None
+    if cur["played"] < cur["total"] or cur["data_checked"]:
+        return None
+    return {"id": cur["id"], "name": cur["name"]}
 
 
 def _pipeline_state() -> dict:

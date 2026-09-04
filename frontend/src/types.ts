@@ -57,6 +57,9 @@ export interface DataHealth {
   /** Present only while a round is being played: squads are locked and
    *  results are partial, so every projection on the site will still move. */
   gameweek_in_progress?: GameweekProgress | null;
+  /** Football over, bonus points not yet confirmed by FPL. A handful of
+   *  scores can still move by a point or two. */
+  bonus_pending?: { id: number; name: string } | null;
 }
 
 export interface GameweekProgress {

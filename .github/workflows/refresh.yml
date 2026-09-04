@@ -1,30 +1,33 @@
 name: fpl-refresh-pipeline
 
-# Runs daily at 06:00 UTC. A weekly (Tuesday) schedule left data up to three
-# days stale by the time a Friday/Saturday deadline came round — prices move
-# daily and injury news lands in Thursday/Friday press conferences. FPL
-# deadlines also shift between Fri, Sat and the occasional midweek round, so a
-# fixed weekday can't track them.
+# How this schedule got here, so the next change is not a guess:
 #
-# Cost of the extra runs is low: the deploy step below is gated on artifacts
-# actually changing, so quiet days finish at the commit step without touching
-# the running machine.
+# Weekly (Tuesday) left data three days stale by a Friday deadline — prices
+# move nightly and injury news lands in Thursday/Friday press conferences.
+# Daily at 06:00 then produced *zero* scheduled runs: GitHub's cron is
+# best-effort and queues hardest on the hour, so runs are delayed by hours or
+# dropped. Every minute here is deliberately odd. Twice daily followed,
+# because a morning fetch is eleven hours old by a 17:30 deadline.
 #
-# Twice daily, and deliberately not on the hour. GitHub's scheduler is
-# best-effort and queues hardest at :00, where runs are delayed by up to a
-# couple of hours or dropped outright — the first `0 6 * * *` slot after this
-# workflow landed produced no run at all. An odd minute sits outside that
-# crush.
+# The Sunday evening run closes the last gap: a round finishing ~17:20 Sunday
+# sat behind an "in progress" banner until Monday morning.
 #
-# Two runs because one is not enough to be current at a deadline: the morning
-# run can be eleven hours stale by a 17:30 kickoff, and Friday press
-# conferences move prices and availability inside that window. Neither run is
-# a guarantee, so the site states its own data age rather than implying
-# freshness it cannot promise.
+# None of this is a guarantee, which is why the site states its own data age
+# and round status rather than implying a freshness cron cannot promise.
+#
+# Cost of extra runs is low: the deploy step is gated on artifacts actually
+# changing, so a quiet run stops at the commit step.
 on:
   schedule:
     - cron: "23 6 * * *"
     - cron: "23 15 * * *"
+    # Sunday evening, after a typical round's last whistle. Without it a round
+    # ending ~17:20 Sunday sat behind an "in progress" banner until Monday
+    # 06:23, because the 15:23 run lands before the last kickoff. Rounds that
+    # end on a Monday night still wait for the Tuesday morning run — cron
+    # cannot see the fixture list, so this closes the common case, not all of
+    # them.
+    - cron: "23 19 * * 0"
   workflow_dispatch: {}
 
 concurrency:
