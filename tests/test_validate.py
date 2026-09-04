@@ -8,9 +8,12 @@ live range moved predictions by exactly 0.000000.
 
 The first test below is that bug, in miniature.
 """
+from datetime import datetime, timedelta, timezone
+
 import pandas as pd
 import pytest
 
+from fpl_optimizer import export
 from fpl_optimizer.features import TEAM_STRENGTH_COLS, season_team_strength_ranks
 from fpl_optimizer.validate import compare_distributions
 
@@ -101,3 +104,41 @@ class TestStrengthRanks:
             spread = group["strength_overall_home_rank"].max() - \
                 group["strength_overall_home_rank"].min()
             assert spread > 0.5, f"{season} ranks are degenerate"
+
+
+class TestPublishGuard:
+    """`fpl export` must refuse to serialise a database nobody refreshed.
+
+    A four-day-old local snapshot was exported by hand and committed over the
+    pipeline's fresh artifacts, which shipped it to the live site. Nothing in
+    the act of exporting knew how old its inputs were.
+    """
+
+    def test_a_recent_fetch_publishes(self, monkeypatch):
+        now = datetime.now(timezone.utc)
+        monkeypatch.setattr(
+            export, "_last_fetch", lambda: now - timedelta(minutes=3))
+        export.assert_publishable()
+
+    def test_a_stale_fetch_is_refused(self, monkeypatch):
+        now = datetime.now(timezone.utc)
+        monkeypatch.setattr(
+            export, "_last_fetch", lambda: now - timedelta(days=4))
+        with pytest.raises(export.StaleSnapshot, match="96h ago"):
+            export.assert_publishable()
+
+    def test_an_empty_database_is_refused(self, monkeypatch):
+        monkeypatch.setattr(export, "_last_fetch", lambda: None)
+        with pytest.raises(export.StaleSnapshot, match="has ever been fetched"):
+            export.assert_publishable()
+
+    def test_the_boundary_is_the_configured_age(self, monkeypatch):
+        """CI fetches seconds before exporting, so the limit only binds locally."""
+        now = datetime.now(timezone.utc)
+        monkeypatch.setattr(
+            export, "_last_fetch", lambda: now - timedelta(hours=5, minutes=50))
+        export.assert_publishable()
+        monkeypatch.setattr(
+            export, "_last_fetch", lambda: now - timedelta(hours=6, minutes=10))
+        with pytest.raises(export.StaleSnapshot):
+            export.assert_publishable()

@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import json
 from dataclasses import asdict
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from .db import connect
@@ -141,6 +141,52 @@ def _pipeline_state() -> dict:
         } if nxt else None,
         "data_health": health,
     }
+
+
+# A fetch older than this is stale for FPL purposes: prices move nightly and
+# injury news lands continuously through the week.
+MAX_SNAPSHOT_AGE = timedelta(hours=6)
+
+
+class StaleSnapshot(RuntimeError):
+    """Raised when the database is too old to publish from."""
+
+
+def _last_fetch() -> datetime | None:
+    with connect() as conn:
+        row = conn.execute(
+            "SELECT MAX(fetched_at) AS ts FROM raw_bootstrap"
+        ).fetchone()
+    return _parse(row["ts"] if row else None)
+
+
+def assert_publishable(max_age: timedelta = MAX_SNAPSHOT_AGE) -> None:
+    """Refuse to build artifacts from a database nobody has refreshed.
+
+    The artifacts are a build output, and the pipeline that owns them fetches
+    seconds before writing them — so in CI this never fires. It exists for the
+    laptop, where `fpl export` will happily serialise a database last filled
+    days ago. That is how a four-day-old snapshot got committed over CI's
+    fresh output and shipped to production: nothing in the act of exporting
+    knew, or could say, how old its inputs were.
+    """
+    fetched = _last_fetch()
+    if fetched is None:
+        raise StaleSnapshot(
+            "no data has ever been fetched — run `fpl ingest` first"
+        )
+
+    age = datetime.now(timezone.utc) - fetched
+    if age > max_age:
+        hours = age.total_seconds() / 3600
+        raise StaleSnapshot(
+            f"the last fetch was {hours:.0f}h ago ({fetched.isoformat()}), "
+            f"older than the {max_age.total_seconds() / 3600:.0f}h limit.\n"
+            f"Run `fpl ingest && fpl stage && fpl ingest-live-history` first, "
+            f"or pass --allow-stale if you are deliberately rebuilding old "
+            f"artifacts. Committing stale artifacts overwrites the pipeline's "
+            f"fresh ones and ships them to the live site."
+        )
 
 
 def export_artifacts(

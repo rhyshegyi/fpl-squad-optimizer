@@ -155,6 +155,14 @@ def cmd_transfers(args: argparse.Namespace) -> None:
 
 
 def cmd_export(args: argparse.Namespace) -> None:
+    from .export import StaleSnapshot, assert_publishable
+
+    if not args.allow_stale:
+        try:
+            assert_publishable()
+        except StaleSnapshot as e:
+            raise SystemExit(f"refusing to export: {e}") from e
+
     projector = _pick_projector(args.projector)
     projections = projector()
     squad = optimize(projections)
@@ -277,6 +285,11 @@ def main() -> None:
 
     ex = sub.add_parser("export", help="write latest squad + projections to data/artifacts/")
     ex.add_argument("--projector", choices=("naive", "ml"), default="ml")
+    ex.add_argument(
+        "--allow-stale", action="store_true",
+        help="export even though the database has not been refreshed recently; "
+             "the resulting artifacts must not be committed",
+    )
     ex.set_defaults(func=cmd_export)
 
     bt = sub.add_parser("backtest", help="replay a past season and score the advice")
