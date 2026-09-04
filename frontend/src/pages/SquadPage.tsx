@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { api } from "../api";
+import { GameweekInProgress } from "../components/GameweekInProgress";
 import { Pitch } from "../components/Pitch";
 import { StatusBar } from "../components/StatusBar";
 import type { PipelineState, Squad, TargetSquadResponse } from "../types";
@@ -63,6 +64,7 @@ export function SquadPage() {
   const cost = squad.total_cost / 10;
   const budgetPct = Math.min(100, (squad.total_cost / budget) * 100);
   const budgetM = (budget / 10).toFixed(1);
+  const liveGw = pipeline?.data_health?.gameweek_in_progress ?? null;
 
   return (
     <div className="space-y-6">
@@ -121,6 +123,17 @@ export function SquadPage() {
           </div>
         </div>
       </div>
+
+      {liveGw && (
+        <GameweekInProgress gw={liveGw}>
+          This target is built on results up to the last completed match, so it
+          will keep shifting until the round ends — early in a season one
+          fixture can change several of the fifteen, because the positional
+          averages every projection is shrunk toward move with each result.
+          Nothing to act on yet: the next deadline is after this round
+          finishes.
+        </GameweekInProgress>
+      )}
 
       {pipeline && meta.generatedAt && (
         <StatusBar
