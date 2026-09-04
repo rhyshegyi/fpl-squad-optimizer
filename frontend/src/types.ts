@@ -45,8 +45,20 @@ export interface Squad {
   picks: Pick[];
 }
 
+/** Whether the snapshot behind these numbers is internally consistent.
+ *  The bootstrap and the per-gameweek history are fetched separately, so a
+ *  snapshot taken mid-round has them describing a different number of
+ *  matches. `players_disagreeing > 0` means results are missing. */
+export interface DataHealth {
+  players_tracked: number;
+  players_disagreeing: number;
+  latest_gw_on_file: number | null;
+  latest_result: string | null;
+}
+
 export interface PipelineState {
   last_fetch: string | null;
+  data_health?: DataHealth;
   current_gw: { id: number; name: string } | null;
   next_gw: { id: number; name: string; deadline_time: string } | null;
 }

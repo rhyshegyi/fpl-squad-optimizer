@@ -41,15 +41,25 @@ def _load_scouting_map() -> dict[int, dict]:
         season = _current_season_code(conn)
         next_gw = _next_gameweek(conn)
 
+        # Only the fields that genuinely live on the bootstrap and cannot be
+        # derived: live price, ownership, and availability.
         base_rows = conn.execute(
-            "SELECT id, web_name, team_id, form, points_per_game, total_points, "
-            "       minutes, selected_by_percent, status, chance_next_round "
+            "SELECT id, web_name, team_id, selected_by_percent, status, "
+            "       chance_next_round "
             "FROM players"
         ).fetchall()
 
+        # Season totals come from the per-gameweek table, not from the
+        # bootstrap's own `total_points` / `minutes` / `form`. The two are
+        # fetched separately, so a snapshot taken between two fixtures has
+        # them describing a different number of matches — which put
+        # "gws_played 2" next to a one-game points total on the same row and
+        # made the model look like it was ignoring a player's latest score.
         recent_rows = conn.execute(
             "SELECT element, "
             "       COUNT(*) AS gws_played, "
+            "       SUM(total_points) AS season_points, "
+            "       SUM(minutes) AS season_minutes, "
             "       AVG(minutes) AS minutes_avg, "
             "       AVG(total_points) AS points_avg, "
             "       SUM(COALESCE(expected_goals, 0)) AS xg_recent, "
@@ -61,6 +71,21 @@ def _load_scouting_map() -> dict[int, dict]:
             (season,),
         ).fetchall()
         recent_map = {r["element"]: dict(r) for r in recent_rows}
+
+        # FPL's own `form` is mean points over the last 30 days, so rebuild it
+        # from kickoff times rather than carrying the stale bootstrap value.
+        form_map = {
+            r["element"]: r["form"]
+            for r in conn.execute(
+                "SELECT element, AVG(total_points) AS form "
+                "FROM historical_player_gw "
+                "WHERE season = ? AND kickoff_time >= ("
+                "  SELECT DATETIME(MAX(kickoff_time), '-30 days') "
+                "  FROM historical_player_gw WHERE season = ?"
+                ") GROUP BY element",
+                (season, season),
+            )
+        }
 
         team_short = {
             r["id"]: r["short_name"]
@@ -93,11 +118,13 @@ def _load_scouting_map() -> dict[int, dict]:
         pid = r["id"]
         recent = recent_map.get(pid, {})
         fixture = next_fixture.get(r["team_id"], {})
+        games = recent.get("gws_played") or 0
+        season_points = recent.get("season_points") or 0
         scouting[pid] = {
-            "form": float(r["form"] or 0),
-            "season_ppg": float(r["points_per_game"] or 0),
-            "season_points": r["total_points"],
-            "season_minutes": r["minutes"],
+            "form": _round(form_map.get(pid) or 0, 1),
+            "season_ppg": _round(season_points / games if games else 0, 2),
+            "season_points": season_points,
+            "season_minutes": recent.get("season_minutes") or 0,
             "selected_by": float(r["selected_by_percent"] or 0),
             "status": r["status"],
             "chance_next_round": r["chance_next_round"],

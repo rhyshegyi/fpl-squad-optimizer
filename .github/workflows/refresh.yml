@@ -52,6 +52,15 @@ jobs:
       - name: Train ML predictor
         run: uv run fpl train
 
+      # Deliberately placed before export and allowed to fail the job. A
+      # feature whose live values fall outside its training range is dead
+      # weight the model cannot report on its own -- that is exactly how the
+      # fixture-difficulty features stayed inert for a month while every run
+      # went green. Failing here leaves the previously deployed artifacts
+      # serving, which is the safer of the two wrong answers.
+      - name: Validate live features against training ranges
+        run: uv run fpl validate
+
       - name: Export latest squad + projections
         run: uv run fpl export --projector ml
 

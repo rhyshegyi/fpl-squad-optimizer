@@ -64,6 +64,54 @@ def _projections_to_list(projections: list[PlayerProjection]) -> list[dict]:
     return rows
 
 
+def _parse(ts: str | None) -> datetime | None:
+    if not ts:
+        return None
+    try:
+        parsed = datetime.fromisoformat(ts.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return parsed if parsed.tzinfo else parsed.replace(tzinfo=timezone.utc)
+
+
+def _data_health(conn, season: str) -> dict:
+    """Is this snapshot internally consistent, and does it cover every result?
+
+    "How old is the data" is the wrong question. An hour-old fetch taken
+    between two Saturday fixtures is worse than a day-old one taken after the
+    round finished, and a stale snapshot cannot tell you it is stale by
+    looking at itself — its own `fixtures.finished` flags are stale too.
+
+    So the check compares two sources that are fetched independently: the
+    bootstrap's season totals, and the per-gameweek history. When a snapshot
+    lands mid-round they disagree, and the count of players they disagree
+    about is the number the answer turns on.
+    """
+    disagreeing = conn.execute(
+        "SELECT COUNT(*) AS n FROM ("
+        "  SELECT p.id FROM players p"
+        "  JOIN historical_player_gw h ON h.element = p.id"
+        "  WHERE h.season = ?"
+        "  GROUP BY p.id HAVING p.total_points != SUM(h.total_points)"
+        ")", (season,),
+    ).fetchone()["n"]
+    covered = conn.execute(
+        "SELECT COUNT(DISTINCT element) AS n, MAX(gw) AS gw "
+        "FROM historical_player_gw WHERE season = ?", (season,),
+    ).fetchone()
+    latest = conn.execute(
+        "SELECT MAX(kickoff_time) AS ts FROM fixtures WHERE finished = 1"
+    ).fetchone()
+
+    return {
+        "players_tracked": covered["n"] or 0,
+        "players_disagreeing": disagreeing,
+        "latest_gw_on_file": covered["gw"],
+        "latest_result": (_parse(latest["ts"]).isoformat()
+                          if latest and _parse(latest["ts"]) else None),
+    }
+
+
 def _pipeline_state() -> dict:
     """Snapshot of what the run saw: last data fetch, current + next GW."""
     with connect() as conn:
@@ -76,12 +124,22 @@ def _pipeline_state() -> dict:
         nxt = conn.execute(
             "SELECT id, name, deadline_time FROM gameweeks WHERE is_next = 1"
         ).fetchone()
+        ts = last_fetch["ts"] if last_fetch else None
+        first = conn.execute(
+            "SELECT MIN(deadline_time) AS d FROM gameweeks"
+        ).fetchone()
+        year = int(first["d"][:4]) if first and first["d"] else None
+        health = (
+            _data_health(conn, f"{year}-{str(year + 1)[2:]}")
+            if year else {}
+        )
     return {
-        "last_fetch": last_fetch["ts"] if last_fetch else None,
+        "last_fetch": ts,
         "current_gw": {"id": current["id"], "name": current["name"]} if current else None,
         "next_gw": {
             "id": nxt["id"], "name": nxt["name"], "deadline_time": nxt["deadline_time"],
         } if nxt else None,
+        "data_health": health,
     }
 
 

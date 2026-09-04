@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { api } from "../api";
+import { FreshnessChip } from "./FreshnessChip";
 import type { PipelineState } from "../types";
 
 function fmtDeadline(iso: string): string {
@@ -26,6 +27,8 @@ export function GameweekBadge() {
   if (!target) return null;
 
   return (
+    <div className="flex items-center gap-3">
+    <FreshnessChip state={state} />
     <div className="hidden sm:flex items-center gap-3 rounded-lg border border-emerald-500/20 bg-emerald-500/5 px-3 py-1.5 text-xs">
       <div>
         <div className="uppercase tracking-widest text-emerald-300/80 text-[10px]">
@@ -45,6 +48,7 @@ export function GameweekBadge() {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 }

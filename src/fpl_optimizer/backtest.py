@@ -27,7 +27,9 @@ import lightgbm as lgb
 import numpy as np
 import pandas as pd
 
-from .features import POSITION_CATEGORIES, build_training_frame, feature_columns
+from .features import (
+    POSITION_CATEGORIES, STRENGTH_FEATURES, build_training_frame, feature_columns,
+)
 from .optimizer import SQUAD_SHAPE, STARTER_LIMITS, STARTING_XI
 from .projections import PlayerProjection
 
@@ -518,9 +520,10 @@ class NaiveProjector(Projector):
     """Recent form scaled by fixture difficulty — the rule the ML model has
     to justify itself against.
 
-    Historical rows carry no FDR, so difficulty is reconstructed by ranking
-    opponent overall strength into five buckets, mirroring how FPL assigns
-    it. Falls back to a neutral multiplier where strength is missing.
+    Historical rows carry no FDR, so difficulty is reconstructed by cutting
+    the opponent's within-season strength rank into five buckets, mirroring
+    how FPL assigns it. Falls back to a neutral multiplier where strength is
+    missing.
     """
     name = "naive"
 
@@ -531,7 +534,7 @@ class NaiveProjector(Projector):
         if rows.empty:
             return []
 
-        strength = rows["opp_strength_overall"]
+        strength = rows["opp_strength_overall_rank"]
         if strength.notna().any():
             # Five equal-width buckets over the season's range of opponents
             buckets = pd.cut(strength, bins=5, labels=[1, 2, 3, 4, 5])
@@ -659,11 +662,7 @@ class TwoStageProjector(Projector):
 # at decision time: you know who a team plays in three weeks, you do not know
 # what form anyone will be in. So future gameweeks reuse the player's current
 # form features and swap only these columns.
-FIXTURE_COLUMNS = [
-    "is_home",
-    "own_strength_overall", "own_strength_attack", "own_strength_defence",
-    "opp_strength_overall", "opp_strength_attack", "opp_strength_defence",
-]
+FIXTURE_COLUMNS = ["is_home", *STRENGTH_FEATURES]
 
 
 class HorizonProjector(Projector):
@@ -726,7 +725,7 @@ class HorizonProjector(Projector):
                 ]
                 shifted[col] = pd.to_numeric(shifted[col], errors="coerce")
 
-            has_fixture = shifted["opp_strength_overall"].notna().to_numpy()
+            has_fixture = shifted["opp_strength_overall_rank"].notna().to_numpy()
             preds = self.booster.predict(shifted[self.feat]).astype(float)
             # A blank gameweek contributes nothing, which is the point of
             # looking ahead in the first place

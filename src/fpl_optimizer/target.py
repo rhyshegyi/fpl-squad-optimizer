@@ -23,7 +23,10 @@ from __future__ import annotations
 import pandas as pd
 
 from .db import connect
-from .features import POSITION_CATEGORIES, build_predict_frame
+from .features import (
+    POSITION_CATEGORIES, STRENGTH_FEATURES, STRENGTH_KINDS, build_predict_frame,
+    season_team_strength_ranks,
+)
 from .model import load_model
 from .projections import PlayerProjection
 from .projections_ml import _availability_multiplier, _next_gameweek
@@ -57,13 +60,7 @@ def effective_quality_weight(games: int, base: float = DEFAULT_QUALITY_WEIGHT) -
 
 # The only columns that legitimately differ between this gameweek and a future
 # one at decision time.
-FIXTURE_COLUMNS = [
-    "is_home",
-    "own_strength_overall", "own_strength_attack", "own_strength_defence",
-    "opp_strength_overall", "opp_strength_attack", "opp_strength_defence",
-]
-
-_STRENGTH_KINDS = ("overall", "attack", "defence")
+FIXTURE_COLUMNS = ["is_home", *STRENGTH_FEATURES]
 
 
 def _current_season(conn) -> str:
@@ -74,25 +71,32 @@ def _current_season(conn) -> str:
     return f"{year}-{str(year + 1)[2:]}"
 
 
-def _team_strengths(conn, season: str) -> dict[int, dict]:
-    rows = conn.execute(
-        "SELECT id, strength_overall_home, strength_overall_away, "
-        "       strength_attack_home, strength_attack_away, "
-        "       strength_defence_home, strength_defence_away "
-        "FROM season_teams WHERE season = ?",
-        (season,),
-    ).fetchall()
-    return {r["id"]: dict(r) for r in rows}
+def _team_strengths(season: str) -> dict[int, dict]:
+    """{team_id: {"<kind>_<side>": rank}} for one season.
+
+    Shares `season_team_strength_ranks` with the training path on purpose: the
+    horizon must advance fixtures on exactly the scale the model learned on.
+    """
+    ranks = season_team_strength_ranks()
+    ranks = ranks[ranks["season"] == season]
+    return {
+        int(r["id"]): {
+            f"{kind}_{side}": r[f"strength_{kind}_{side}_rank"]
+            for kind in STRENGTH_KINDS
+            for side in ("home", "away")
+        }
+        for _, r in ranks.iterrows()
+    }
 
 
 def _fixture_context(conn, season: str, gws: list[int]) -> dict[tuple[int, int], dict]:
-    """{(team_id, gw): resolved strength + is_home}.
+    """{(team_id, gw): resolved strength ranks + is_home}.
 
     Mirrors how `features._add_team_strengths` resolves home/away: your own
-    side uses its home figures when at home, and the opponent uses its *away*
-    figures in the same fixture.
+    side uses its home figure when at home, and the opponent uses its *away*
+    figure in the same fixture.
     """
-    strengths = _team_strengths(conn, season)
+    strengths = _team_strengths(season)
     if not gws:
         return {}
 
@@ -109,17 +113,16 @@ def _fixture_context(conn, season: str, gws: list[int]) -> dict[tuple[int, int],
             own_s, opp_s = strengths.get(team), strengths.get(opp)
             if own_s is None or opp_s is None:
                 continue
-            ctx: dict[str, float | int | None] = {"is_home": int(at_home)}
-            for kind in _STRENGTH_KINDS:
-                ctx[f"own_strength_{kind}"] = own_s[
-                    f"strength_{kind}_{'home' if at_home else 'away'}"
-                ]
-                ctx[f"opp_strength_{kind}"] = opp_s[
-                    f"strength_{kind}_{'away' if at_home else 'home'}"
-                ]
             # A double gameweek would overwrite here; the first fixture is
             # kept, which understates DGW players. Flagged, not yet handled.
-            out.setdefault((team, gw), ctx)
+            side, opp_side = ("home", "away") if at_home else ("away", "home")
+            out.setdefault((team, gw), {
+                "is_home": int(at_home),
+                **{f"own_strength_{k}_rank": own_s[f"{k}_{side}"]
+                   for k in STRENGTH_KINDS},
+                **{f"opp_strength_{k}_rank": opp_s[f"{k}_{opp_side}"]
+                   for k in STRENGTH_KINDS},
+            })
     return out
 
 
@@ -189,7 +192,7 @@ def project_target(
             shifted[col] = pd.to_numeric(shifted[col], errors="coerce")
 
         # Blank gameweek contributes nothing — the reason to look ahead at all
-        has_fixture = shifted["opp_strength_overall"].notna().to_numpy()
+        has_fixture = shifted["opp_strength_overall_rank"].notna().to_numpy()
         preds = booster.predict(shifted[feat_cols]).astype(float)
         preds = [p if ok else 0.0 for p, ok in zip(preds, has_fixture)]
 

@@ -215,6 +215,25 @@ def cmd_backtest(args: argparse.Namespace) -> None:
                   f"   bench {g.points_left_on_bench}")
 
 
+def cmd_validate(_: argparse.Namespace) -> None:
+    from .validate import run_checks
+
+    findings = run_checks()
+    if not findings:
+        print("all feature checks passed")
+        return
+    for f in findings:
+        print(f)
+    errors = [f for f in findings if f.level == "error"]
+    if errors:
+        print()
+        raise SystemExit(
+            f"{len(errors)} feature(s) are dead at predict time. Refusing to "
+            "publish projections built on them — the previously deployed "
+            "artifacts stay live, which is the safer failure."
+        )
+
+
 def cmd_serve(args: argparse.Namespace) -> None:
     import uvicorn
     uvicorn.run("fpl_optimizer.api:app", host=args.host, port=args.port,
@@ -270,6 +289,11 @@ def main() -> None:
     bt.add_argument("--end-gw", type=int, default=38)
     bt.add_argument("--by-gameweek", action="store_true", help="print every gameweek")
     bt.set_defaults(func=cmd_backtest)
+
+    sub.add_parser(
+        "validate",
+        help="check live features against their training ranges",
+    ).set_defaults(func=cmd_validate)
 
     sv = sub.add_parser("serve", help="run the FastAPI backend")
     sv.add_argument("--host", default="127.0.0.1")

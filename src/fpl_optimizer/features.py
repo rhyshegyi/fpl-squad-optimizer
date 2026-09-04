@@ -35,6 +35,15 @@ TEAM_STRENGTH_COLS = [
     "strength_defence_home", "strength_defence_away",
 ]
 
+STRENGTH_KINDS = ("overall", "attack", "defence")
+
+# Effective fixture features exposed to the model, after home/away resolution.
+STRENGTH_FEATURES = [
+    f"{role}_strength_{kind}_rank"
+    for role in ("own", "opp")
+    for kind in STRENGTH_KINDS
+]
+
 
 def _load_history(seasons: list[str] | None = None) -> pd.DataFrame:
     with connect() as conn:
@@ -48,50 +57,85 @@ def _load_history(seasons: list[str] | None = None) -> pd.DataFrame:
     return df.sort_values(["season", "element", "gw"]).reset_index(drop=True)
 
 
-def _load_season_teams() -> pd.DataFrame:
+def season_team_strength_ranks() -> pd.DataFrame:
+    """Team strength as a within-season percentile rank (0..1).
+
+    The raw figures are not comparable across seasons. FPL served roughly
+    975-1370 for 2022-23 through 2024-25, then switched to a coarse 1-5
+    rating and began returning 0 for attack and defence. A model trained on
+    the old scale reads the new one as "weaker than any team I have ever
+    seen" and sorts every fixture into one leaf, which is exactly what
+    happened: sweeping opponent strength across its entire live range moved
+    predictions by 0.000000.
+
+    Ranking within season is invariant to that. Where a column has gone flat
+    upstream -- attack and defence are identically 0 this season -- its rank
+    would be a meaningless constant, so it falls back to the overall rank
+    rather than being dropped. Dropping them cost ~70 points a season in
+    backtest, because they carry real signal in the seasons that do have
+    them; a strong side is usually strong at both ends, so overall is a
+    defensible stand-in when the detail is unavailable.
+    """
     with connect() as conn:
-        return pd.read_sql_query(
+        teams = pd.read_sql_query(
             f"SELECT season, id, {', '.join(TEAM_STRENGTH_COLS)} FROM season_teams",
             conn,
         )
+    if teams.empty:
+        return teams.assign(**{f"{c}_rank": pd.Series(dtype="float64")
+                               for c in TEAM_STRENGTH_COLS})
+
+    for col in TEAM_STRENGTH_COLS:
+        values = pd.to_numeric(teams[col], errors="coerce")
+        ranked = values.groupby(teams["season"]).rank(pct=True, method="average")
+        # A column with no spread inside a season carries nothing; rank() maps
+        # it to a single value for every team.
+        spread = ranked.groupby(teams["season"]).transform(
+            lambda s: s.max() - s.min()
+        )
+        teams[f"{col}_rank"] = ranked.where(spread > 0)
+
+    for side in ("home", "away"):
+        fallback = teams[f"strength_overall_{side}_rank"]
+        for kind in ("attack", "defence"):
+            col = f"strength_{kind}_{side}_rank"
+            teams[col] = teams[col].fillna(fallback)
+
+    return teams[["season", "id"] + [f"{c}_rank" for c in TEAM_STRENGTH_COLS]]
 
 
 def _add_team_strengths(df: pd.DataFrame) -> pd.DataFrame:
-    """Join own + opponent team strength, and compute is_home-aware effective values.
+    """Join own + opponent strength ranks, resolved for home/away.
 
-    Effective features exposed to the model:
-      own_strength_overall, own_strength_attack, own_strength_defence
-      opp_strength_overall, opp_strength_attack, opp_strength_defence
-    Each is the home-side value when was_home=1, else the away-side value.
+    Both stay NaN where the team has no fixture, which is how a blank
+    gameweek is detected downstream.
     """
-    teams = _load_season_teams()
+    teams = season_team_strength_ranks()
     if teams.empty:
-        for c in ("own_strength_overall", "own_strength_attack", "own_strength_defence",
-                  "opp_strength_overall", "opp_strength_attack", "opp_strength_defence"):
+        for c in STRENGTH_FEATURES:
             df[c] = pd.NA
         return df
 
-    own = teams.rename(columns={"id": "team_id", **{c: f"own_{c}" for c in TEAM_STRENGTH_COLS}})
-    opp = teams.rename(columns={"id": "opponent_team", **{c: f"opp_{c}" for c in TEAM_STRENGTH_COLS}})
+    own = teams.rename(columns={
+        "id": "team_id",
+        **{f"{c}_rank": f"own__{c}" for c in TEAM_STRENGTH_COLS}})
+    opp = teams.rename(columns={
+        "id": "opponent_team",
+        **{f"{c}_rank": f"opp__{c}" for c in TEAM_STRENGTH_COLS}})
 
     df = df.merge(own, on=["season", "team_id"], how="left")
     df = df.merge(opp, on=["season", "opponent_team"], how="left")
 
     is_home = df["was_home"].fillna(0).astype(int).eq(1)
-    for role in ("own", "opp"):
-        for kind in ("overall", "attack", "defence"):
-            home_col = f"{role}_strength_{kind}_home"
-            away_col = f"{role}_strength_{kind}_away"
-            # For opp strength, "home" means opp is playing at home, which is when we're away.
-            if role == "own":
-                df[f"{role}_strength_{kind}"] = pd.Series(
-                    pd.NA, index=df.index, dtype="Float64"
-                ).where(~is_home, df[home_col]).where(is_home, df[away_col])
-            else:
-                df[f"{role}_strength_{kind}"] = pd.Series(
-                    pd.NA, index=df.index, dtype="Float64"
-                ).where(is_home, df[home_col]).where(~is_home, df[away_col])
-    return df
+    for kind in STRENGTH_KINDS:
+        # Your own side uses its home figure at home; the opponent in that
+        # same fixture is away, so it uses its away figure.
+        df[f"own_strength_{kind}_rank"] = df[f"own__strength_{kind}_home"].where(
+            is_home, df[f"own__strength_{kind}_away"])
+        df[f"opp_strength_{kind}_rank"] = df[f"opp__strength_{kind}_away"].where(
+            is_home, df[f"opp__strength_{kind}_home"])
+
+    return df.drop(columns=[c for c in df.columns if c.startswith(("own__", "opp__"))])
 
 
 def _add_rolling(df: pd.DataFrame) -> pd.DataFrame:
@@ -142,10 +186,7 @@ def feature_columns() -> list[str]:
     for w in WINDOWS:
         cols.extend(f"{c}_r{w}" for c in ROLLING_COLS)
     cols.extend(f"{c}_cum" for c in ROLLING_COLS)
-    cols.extend([
-        "own_strength_overall", "own_strength_attack", "own_strength_defence",
-        "opp_strength_overall", "opp_strength_attack", "opp_strength_defence",
-    ])
+    cols.extend(STRENGTH_FEATURES)
     return cols
 
 
