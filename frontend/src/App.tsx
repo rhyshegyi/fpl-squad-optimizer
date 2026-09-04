@@ -2,6 +2,7 @@ import { Link, NavLink, Route, BrowserRouter, Routes } from "react-router-dom";
 import { GameweekBadge } from "./components/GameweekBadge";
 import { ProjectionsPage } from "./pages/ProjectionsPage";
 import { SquadPage } from "./pages/SquadPage";
+import { TrackRecordPage } from "./pages/TrackRecordPage";
 import { TransfersPage } from "./pages/TransfersPage";
 
 function NavItem({ to, label }: { to: string; label: string }) {
@@ -39,6 +40,7 @@ export default function App() {
                 <NavItem to="/" label="Squad" />
                 <NavItem to="/transfers" label="Transfers" />
                 <NavItem to="/projections" label="Projections" />
+                <NavItem to="/record" label="Record" />
               </nav>
             </div>
           </div>
@@ -49,6 +51,7 @@ export default function App() {
               <Route path="/" element={<SquadPage />} />
               <Route path="/transfers" element={<TransfersPage />} />
               <Route path="/projections" element={<ProjectionsPage />} />
+              <Route path="/record" element={<TrackRecordPage />} />
             </Routes>
           </div>
         </main>

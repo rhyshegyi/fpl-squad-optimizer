@@ -260,6 +260,22 @@ def export_artifacts(
     target_path = _export_target()
     if target_path is not None:
         written["target"] = target_path
+
+    # Freezing has to happen on every run, because we cannot know which run is
+    # the last one before a deadline. Wrapped because a tracking failure must
+    # never cost the site its projections.
+    try:
+        from .tracking import update_tracking
+
+        result = update_tracking(squad_data["squad"], proj_data["projections"])
+        if result["frozen"]:
+            written["frozen"] = Path(str(result["frozen"]))
+        if result["scored"]:
+            print(f"  scored gameweeks: {result['scored']}")
+        written["accuracy"] = Path(str(result["summary"]))
+    except Exception as e:  # noqa: BLE001 - projections matter more than tracking
+        print(f"  warning: tracking update skipped ({e})")
+
     return written
 
 

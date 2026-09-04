@@ -113,8 +113,9 @@ def stage() -> dict[str, int]:
         )
 
         conn.executemany(
-            "INSERT INTO gameweeks (id, name, is_current, is_next, finished, deadline_time) "
-            "VALUES (?, ?, ?, ?, ?, ?)",
+            "INSERT INTO gameweeks (id, name, is_current, is_next, finished, "
+            " deadline_time, average_entry_score, highest_score, data_checked) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
             [
                 (
                     e["id"],
@@ -123,6 +124,9 @@ def stage() -> dict[str, int]:
                     int(e["is_next"]),
                     int(e["finished"]),
                     e["deadline_time"],
+                    e.get("average_entry_score"),
+                    e.get("highest_score"),
+                    int(bool(e.get("data_checked"))),
                 )
                 for e in bootstrap["events"]
             ],

@@ -31,6 +31,7 @@ from .transfer import HIT_COST, optimize_transfers
 SQUAD_JSON = ARTIFACTS_DIR / "latest_squad.json"
 PROJECTIONS_JSON = ARTIFACTS_DIR / "latest_projections.json"
 TARGET_JSON = ARTIFACTS_DIR / "latest_target.json"
+ACCURACY_JSON = ARTIFACTS_DIR / "accuracy.json"
 
 
 def _load_json(path: Path) -> dict:
@@ -108,6 +109,23 @@ def get_status() -> dict:
 @app.get("/api/squad/latest")
 def get_squad() -> dict:
     return _load_json(SQUAD_JSON)
+
+
+@app.get("/api/accuracy")
+def get_accuracy() -> dict:
+    """The track record: what was recommended before each deadline, scored.
+
+    Served empty rather than 503 when nothing has been scored yet — an empty
+    track record is a true answer, not a missing artifact.
+    """
+    if not ACCURACY_JSON.exists():
+        return {
+            "generated_at": None,
+            "totals": {"gameweeks_scored": 0},
+            "gameweeks": [],
+            "pending": [],
+        }
+    return _load_json(ACCURACY_JSON)
 
 
 @app.get("/api/squad/optimize")

@@ -59,7 +59,13 @@ CREATE TABLE IF NOT EXISTS gameweeks (
     is_current   INTEGER NOT NULL,
     is_next      INTEGER NOT NULL,
     finished     INTEGER NOT NULL,
-    deadline_time TEXT
+    deadline_time TEXT,
+    -- The benchmark the whole project is measured against, straight from FPL
+    -- rather than assumed. `data_checked` is the last flag to flip: bonus
+    -- confirmed, scores final.
+    average_entry_score INTEGER,
+    highest_score       INTEGER,
+    data_checked        INTEGER
 );
 
 -- Per-player per-gameweek training rows sourced from vaastav historical CSVs
@@ -132,4 +138,6 @@ def connect() -> sqlite3.Connection:
     ensure_column(conn, "historical_player_gw", "team_id", "INTEGER")
     ensure_column(conn, "fixtures", "started", "INTEGER")
     ensure_column(conn, "fixtures", "finished_provisional", "INTEGER")
+    for col in ("average_entry_score", "highest_score", "data_checked"):
+        ensure_column(conn, "gameweeks", col, "INTEGER")
     return conn

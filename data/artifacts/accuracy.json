@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-09-04T22:29:04.956221+00:00",
+  "totals": {
+    "gameweeks_scored": 0,
+    "total_points": null,
+    "mean_points": null,
+    "mean_fpl_average": null,
+    "weeks_beating_average": 0,
+    "weeks_rated": 0,
+    "mean_mae": null,
+    "mean_spearman": null
+  },
+  "gameweeks": [],
+  "pending": [
+    {
+      "gw": 4,
+      "name": "Gameweek 4",
+      "deadline": "2026-09-12T12:30:00Z"
+    }
+  ]
+}

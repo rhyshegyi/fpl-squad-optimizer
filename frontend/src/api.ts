@@ -1,4 +1,5 @@
 import type {
+  AccuracyResponse,
   EntrySquadResponse,
   OptimizedSquadResponse,
   Position,
@@ -27,6 +28,7 @@ async function json<T>(path: string, init?: RequestInit): Promise<T> {
 
 export const api = {
   status: () => json<StatusResponse>("/api/status"),
+  accuracy: () => json<AccuracyResponse>("/api/accuracy"),
   squad: () => json<SquadResponse>("/api/squad/latest"),
   squadTarget: (budgetTenths?: number) =>
     json<TargetSquadResponse>(

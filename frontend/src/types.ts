@@ -153,3 +153,49 @@ export interface TransferPlanResponse {
   transfers_out: Player[];
   new_squad: Squad;
 }
+
+/** One scored gameweek: what was recommended before the deadline, and what
+ *  actually happened. Written before kickoff, so it cannot be fitted after. */
+export interface TrackedGameweek {
+  gw: number;
+  name: string | null;
+  deadline: string | null;
+  frozen_at: string | null;
+  points: number;
+  fpl_average: number | null;
+  beat_average: number | null;
+  captain_points: number;
+  captain_blanked: boolean;
+  points_left_on_bench: number;
+  scores_final: boolean;
+  mae: number | null;
+  spearman: number | null;
+  players_appeared: number;
+  hits: PlayerOutcome[];
+  misses: PlayerOutcome[];
+}
+
+export interface PlayerOutcome {
+  web_name: string;
+  team_short: string;
+  position: Position;
+  projected: number;
+  actual: number;
+  minutes: number;
+}
+
+export interface AccuracyResponse {
+  generated_at: string | null;
+  totals: {
+    gameweeks_scored: number;
+    total_points?: number | null;
+    mean_points?: number | null;
+    mean_fpl_average?: number | null;
+    weeks_beating_average?: number;
+    weeks_rated?: number;
+    mean_mae?: number | null;
+    mean_spearman?: number | null;
+  };
+  gameweeks: TrackedGameweek[];
+  pending: { gw: number; name: string | null; deadline: string | null }[];
+}
