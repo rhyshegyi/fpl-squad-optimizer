@@ -100,7 +100,8 @@ def _data_health(conn, season: str) -> dict:
         "FROM historical_player_gw WHERE season = ?", (season,),
     ).fetchone()
     latest = conn.execute(
-        "SELECT MAX(kickoff_time) AS ts FROM fixtures WHERE finished = 1"
+        "SELECT MAX(kickoff_time) AS ts FROM fixtures "
+        "WHERE finished = 1 OR finished_provisional = 1"
     ).fetchone()
 
     return {
@@ -109,6 +110,39 @@ def _data_health(conn, season: str) -> dict:
         "latest_gw_on_file": covered["gw"],
         "latest_result": (_parse(latest["ts"]).isoformat()
                           if latest and _parse(latest["ts"]) else None),
+        "gameweek_in_progress": _gameweek_in_progress(conn),
+    }
+
+
+def _gameweek_in_progress(conn) -> dict | None:
+    """The gameweek being played right now, if there is one.
+
+    Between a deadline and the last whistle of that round, squads are locked
+    and results are partial. Recommendations on the site are for the *next*
+    gameweek and are built on everything up to the last completed match, so
+    they are real but provisional — every result that lands this weekend
+    moves them. Saying so is more honest than a green tick.
+    """
+    row = conn.execute(
+        "SELECT g.id, g.name, "
+        "       COUNT(f.id) AS total, "
+        "       SUM(COALESCE(f.finished, 0) = 1 "
+        "           OR COALESCE(f.finished_provisional, 0) = 1) AS played, "
+        "       SUM(COALESCE(f.started, 0) = 1) AS started "
+        "FROM gameweeks g JOIN fixtures f ON f.event = g.id "
+        "WHERE g.deadline_time <= ? "
+        "GROUP BY g.id HAVING played < total "
+        "ORDER BY g.id DESC LIMIT 1",
+        (datetime.now(timezone.utc).isoformat(),),
+    ).fetchone()
+    if row is None:
+        return None
+    return {
+        "id": row["id"],
+        "name": row["name"],
+        "matches_played": row["played"] or 0,
+        "matches_started": row["started"] or 0,
+        "matches_total": row["total"] or 0,
     }
 
 

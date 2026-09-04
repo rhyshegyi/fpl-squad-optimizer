@@ -92,8 +92,9 @@ def stage() -> dict[str, int]:
 
         conn.executemany(
             "INSERT INTO fixtures "
-            "(id, event, team_h, team_a, team_h_difficulty, team_a_difficulty, kickoff_time, finished) "
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+            "(id, event, team_h, team_a, team_h_difficulty, team_a_difficulty, "
+            " kickoff_time, started, finished_provisional, finished) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             [
                 (
                     f["id"],
@@ -103,6 +104,8 @@ def stage() -> dict[str, int]:
                     f["team_h_difficulty"],
                     f["team_a_difficulty"],
                     f["kickoff_time"],
+                    int(bool(f.get("started"))),
+                    int(bool(f.get("finished_provisional"))),
                     int(f["finished"]),
                 )
                 for f in fixtures

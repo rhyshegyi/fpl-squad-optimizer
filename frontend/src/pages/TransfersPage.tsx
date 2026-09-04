@@ -5,6 +5,7 @@ import { teamColor } from "../teamColors";
 import type {
   EntrySquadResponse,
   ChipAdvice,
+  GameweekProgress,
   Pick as SquadPick,
   Player,
   TransferPlanResponse,
@@ -68,6 +69,7 @@ export function TransfersPage() {
   const [err, setErr] = useState<string | null>(null);
   const [busy, setBusy] = useState<"load" | "submit" | null>(null);
   const [targetPicks, setTargetPicks] = useState<SquadPick[]>([]);
+  const [liveGw, setLiveGw] = useState<GameweekProgress | null>(null);
 
   // The Squad page's target is the thing this page helps you move towards,
   // so show how far off you currently are.
@@ -75,6 +77,13 @@ export function TransfersPage() {
     api.squadTarget()
       .then((t) => setTargetPicks(t.squad.picks))
       .catch(() => setTargetPicks([]));
+  }, []);
+
+  // This is the page a locked squad makes least useful, so it says so.
+  useEffect(() => {
+    api.status()
+      .then((s) => setLiveGw(s.pipeline_state.data_health?.gameweek_in_progress ?? null))
+      .catch(() => setLiveGw(null));
   }, []);
 
   useEffect(() => {
@@ -170,6 +179,23 @@ export function TransfersPage() {
           both, showing the best squad you could build if transfers were free.
         </p>
       </div>
+
+      {liveGw && (
+        <div className="rounded-xl border border-amber-500/30 bg-amber-500/5 px-5 py-4">
+          <div className="flex items-center gap-2 text-amber-200 font-medium text-sm">
+            <span className="inline-block w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+            {liveGw.name} is being played — {liveGw.matches_played} of{" "}
+            {liveGw.matches_total} matches finished
+          </div>
+          <p className="text-slate-400 text-sm mt-2 max-w-3xl">
+            Your squad is locked until the round ends, so nothing here changes
+            this week's score. These recommendations are for{" "}
+            <span className="text-slate-300">the gameweek after</span>, built on
+            results up to the last completed match — every result still to come
+            will move them. Worth a look once the round finishes.
+          </p>
+        </div>
+      )}
 
       {targetIds.size > 0 && squadIds.length === 15 && (
         <TargetDistance

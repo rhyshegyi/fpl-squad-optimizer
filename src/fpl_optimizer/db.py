@@ -45,6 +45,11 @@ CREATE TABLE IF NOT EXISTS fixtures (
     team_h_difficulty  INTEGER NOT NULL,
     team_a_difficulty  INTEGER NOT NULL,
     kickoff_time       TEXT,
+    -- FPL flips these in sequence: started at kickoff, finished_provisional at
+    -- the whistle, finished only once bonus is confirmed hours later. Only
+    -- finished_provisional reliably means "this match has been played".
+    started            INTEGER,
+    finished_provisional INTEGER,
     finished           INTEGER NOT NULL
 );
 
@@ -125,4 +130,6 @@ def connect() -> sqlite3.Connection:
     conn.row_factory = sqlite3.Row
     conn.executescript(SCHEMA)
     ensure_column(conn, "historical_player_gw", "team_id", "INTEGER")
+    ensure_column(conn, "fixtures", "started", "INTEGER")
+    ensure_column(conn, "fixtures", "finished_provisional", "INTEGER")
     return conn

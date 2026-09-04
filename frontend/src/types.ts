@@ -54,6 +54,17 @@ export interface DataHealth {
   players_disagreeing: number;
   latest_gw_on_file: number | null;
   latest_result: string | null;
+  /** Present only while a round is being played: squads are locked and
+   *  results are partial, so every projection on the site will still move. */
+  gameweek_in_progress?: GameweekProgress | null;
+}
+
+export interface GameweekProgress {
+  id: number;
+  name: string;
+  matches_played: number;
+  matches_started: number;
+  matches_total: number;
 }
 
 export interface PipelineState {
