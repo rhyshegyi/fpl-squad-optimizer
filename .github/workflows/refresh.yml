@@ -9,9 +9,22 @@ name: fpl-refresh-pipeline
 # Cost of the extra runs is low: the deploy step below is gated on artifacts
 # actually changing, so quiet days finish at the commit step without touching
 # the running machine.
+#
+# Twice daily, and deliberately not on the hour. GitHub's scheduler is
+# best-effort and queues hardest at :00, where runs are delayed by up to a
+# couple of hours or dropped outright — the first `0 6 * * *` slot after this
+# workflow landed produced no run at all. An odd minute sits outside that
+# crush.
+#
+# Two runs because one is not enough to be current at a deadline: the morning
+# run can be eleven hours stale by a 17:30 kickoff, and Friday press
+# conferences move prices and availability inside that window. Neither run is
+# a guarantee, so the site states its own data age rather than implying
+# freshness it cannot promise.
 on:
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "23 6 * * *"
+    - cron: "23 15 * * *"
   workflow_dispatch: {}
 
 concurrency:
