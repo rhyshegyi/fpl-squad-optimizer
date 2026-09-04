@@ -12,13 +12,22 @@ import type {
 
 type Source = "entry" | "manual";
 
-// Persist just the form + loaded-entry across navigation so users don't
-// have to re-enter their FPL entry ID every time they switch pages. The
-// plan itself is deliberately NOT stored because data goes stale — user
-// clicks Recommend again to refresh, which is now ~250ms.
-const STORAGE_KEY = "fpl-transfers-state.v1";
-
-interface PersistedState {
+/** Work in progress, held for as long as the page stays open.
+ *
+ *  Deliberately a plain module variable rather than localStorage. The page
+ *  should keep your squad and its recommendations while you tab over to
+ *  Squad or Scouting and come back — that is one continuous piece of work.
+ *  It should NOT still be sitting there for whoever opens the site next: a
+ *  stranger's team ID pre-filled on a public page is somebody else's data on
+ *  someone else's screen. A module variable gives exactly that boundary,
+ *  because a reload or a new tab re-evaluates the module and starts blank.
+ *
+ *  The plan is kept here too. It used to be dropped on navigation over a
+ *  staleness worry, but the artifacts only move twice a day and this store
+ *  dies with the tab, so the window where it could go stale is far smaller
+ *  than the annoyance of losing a result by clicking away.
+ */
+interface SessionState {
   source: Source;
   entryIdInput: string;
   manualIds: string;
@@ -27,9 +36,10 @@ interface PersistedState {
   maxTransfersInput: string;
   ignoreHits: boolean;
   loadedEntry: EntrySquadResponse | null;
+  plan: TransferPlanResponse | null;
 }
 
-const DEFAULT_STATE: PersistedState = {
+const BLANK: SessionState = {
   source: "entry",
   entryIdInput: "",
   manualIds: "",
@@ -38,20 +48,13 @@ const DEFAULT_STATE: PersistedState = {
   maxTransfersInput: "",
   ignoreHits: false,
   loadedEntry: null,
+  plan: null,
 };
 
-function readPersistedState(): PersistedState {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return DEFAULT_STATE;
-    return { ...DEFAULT_STATE, ...(JSON.parse(raw) as Partial<PersistedState>) };
-  } catch {
-    return DEFAULT_STATE;
-  }
-}
+let sessionState: SessionState = { ...BLANK };
 
 export function TransfersPage() {
-  const initial = readPersistedState();
+  const initial = sessionState;
   const [source, setSource] = useState<Source>(initial.source);
   const [entryIdInput, setEntryIdInput] = useState(initial.entryIdInput);
   const [manualIds, setManualIds] = useState(initial.manualIds);
@@ -61,7 +64,7 @@ export function TransfersPage() {
   const [ignoreHits, setIgnoreHits] = useState<boolean>(initial.ignoreHits);
 
   const [loadedEntry, setLoadedEntry] = useState<EntrySquadResponse | null>(initial.loadedEntry);
-  const [plan, setPlan] = useState<TransferPlanResponse | null>(null);
+  const [plan, setPlan] = useState<TransferPlanResponse | null>(initial.plan);
   const [err, setErr] = useState<string | null>(null);
   const [busy, setBusy] = useState<"load" | "submit" | null>(null);
   const [targetPicks, setTargetPicks] = useState<SquadPick[]>([]);
@@ -75,15 +78,12 @@ export function TransfersPage() {
   }, []);
 
   useEffect(() => {
-    const state: PersistedState = {
+    sessionState = {
       source, entryIdInput, manualIds, bankMillions, freeTransfers,
-      maxTransfersInput, ignoreHits, loadedEntry,
+      maxTransfersInput, ignoreHits, loadedEntry, plan,
     };
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-    } catch { /* localStorage full or disabled — silently drop persistence */ }
   }, [source, entryIdInput, manualIds, bankMillions, freeTransfers,
-      maxTransfersInput, ignoreHits, loadedEntry]);
+      maxTransfersInput, ignoreHits, loadedEntry, plan]);
 
   const squadIds = manualIds
     .split(/[\s,]+/)
@@ -108,6 +108,15 @@ export function TransfersPage() {
     } finally {
       setBusy(null);
     }
+  }
+
+  function clearSquad() {
+    setLoadedEntry(null);
+    setEntryIdInput("");
+    setManualIds("");
+    setBankMillions(BLANK.bankMillions);
+    setPlan(null);
+    setErr(null);
   }
 
   async function submit() {
@@ -216,11 +225,22 @@ export function TransfersPage() {
               </label>
               {loadedEntry && (
                 <div className="rounded-lg bg-slate-950 border border-white/5 px-3 py-2 text-sm">
-                  <div className="font-medium">
-                    {loadedEntry.manager_name}{" "}
-                    <span className="text-slate-500">
-                      · {loadedEntry.team_name}
-                    </span>
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="font-medium">
+                      {loadedEntry.manager_name}{" "}
+                      <span className="text-slate-500">
+                        · {loadedEntry.team_name}
+                      </span>
+                    </div>
+                    {/* Everything here is dropped on reload anyway, but on a
+                        shared machine "reload the page" is a poor answer. */}
+                    <button
+                      onClick={clearSquad}
+                      className="text-xs text-slate-500 hover:text-slate-200 shrink-0"
+                      title="Forget this squad"
+                    >
+                      Clear
+                    </button>
                   </div>
                   <div className="text-slate-400 text-xs mt-1">
                     Picks from GW{loadedEntry.source_gw} · bank £
