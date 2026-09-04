@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 import { api } from "../api";
 import { teamColor } from "../teamColors";
-import type { AccuracyResponse, PlayerOutcome, TrackedGameweek } from "../types";
+import type {
+  AccuracyResponse,
+  PlayerOutcome,
+  SeasonLeader,
+  TrackedGameweek,
+} from "../types";
 
 function fmtDate(iso: string | null): string {
   if (!iso) return "—";
@@ -122,6 +127,119 @@ function GameweekCard({ w }: { w: TrackedGameweek }) {
   );
 }
 
+function SeasonLeaders({
+  leaders,
+  inTop10,
+}: {
+  leaders: SeasonLeader[];
+  inTop10: number;
+}) {
+  // Mid-round some clubs have played a game more than others, which flatters
+  // them on totals. Games played is shown so that is visible rather than
+  // hidden, and points per game is there to read past it.
+  const spread = new Set(leaders.map((l) => l.games));
+  return (
+    <div className="space-y-3">
+      <div>
+        <h2 className="text-xl font-semibold">Season so far</h2>
+        <p className="text-slate-400 text-sm mt-1 max-w-2xl">
+          Who has actually scored the most, from played matches only.{" "}
+          <span className="text-slate-300">{inTop10} of the top 10</span> are in
+          the current target squad — a number worth reading carefully, because
+          this table is backward-looking and the squad is not trying to
+          reproduce it. Two hauls against weak defences can top this list and
+          still be a poor bet for the next six gameweeks.
+          {spread.size > 1 && (
+            <> Clubs that have played an extra match this round sit higher on
+            total points; the GP and PPG columns show that.</>
+          )}
+        </p>
+      </div>
+
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm">
+          <thead className="text-xs uppercase tracking-wider text-slate-400">
+            <tr className="border-b border-white/10">
+              <th className="px-2 py-2 text-right w-8">#</th>
+              <th className="px-2 py-2 text-left">Player</th>
+              <th className="px-2 py-2 text-left">Pos</th>
+              <th className="px-2 py-2 text-right">£m</th>
+              <th className="px-2 py-2 text-right">Pts</th>
+              <th className="px-2 py-2 text-right" title="Games played">GP</th>
+              <th className="px-2 py-2 text-right" title="Points per game">PPG</th>
+              <th className="px-2 py-2 text-right" title="Goals / assists">G/A</th>
+              <th className="px-2 py-2 text-right" title="Bonus points">Bns</th>
+              <th className="px-2 py-2 text-right" title="Points per £m">Value</th>
+              <th className="px-2 py-2 text-right" title="% of managers who own them">Own%</th>
+            </tr>
+          </thead>
+          <tbody>
+            {leaders.map((l) => (
+              <tr
+                key={l.player_id}
+                className={
+                  "border-b border-white/5 hover:bg-white/5 " +
+                  (l.in_target_squad ? "bg-emerald-500/5" : "")
+                }
+              >
+                <td className="px-2 py-2 text-right text-slate-500 tabular-nums">
+                  {l.rank}
+                </td>
+                <td className="px-2 py-2">
+                  <div className="flex items-center gap-2">
+                    <span
+                      className="inline-block w-2.5 h-2.5 rounded-full flex-shrink-0"
+                      style={{ backgroundColor: teamColor(l.team_short) }}
+                      title={l.team_short}
+                    />
+                    <span className="font-medium">{l.web_name}</span>
+                    <span className="text-[10px] uppercase tracking-widest text-slate-500">
+                      {l.team_short}
+                    </span>
+                    {l.in_target_squad && (
+                      <span
+                        className="text-[10px] px-1.5 py-0.5 rounded border font-semibold border-emerald-500/40 bg-emerald-500/15 text-emerald-300"
+                        title="In the current target squad"
+                      >
+                        TARGET
+                      </span>
+                    )}
+                  </div>
+                </td>
+                <td className="px-2 py-2 text-slate-400">{l.position}</td>
+                <td className="px-2 py-2 text-right tabular-nums">
+                  {(l.now_cost / 10).toFixed(1)}
+                </td>
+                <td className="px-2 py-2 text-right font-semibold tabular-nums">
+                  {l.points}
+                </td>
+                <td className="px-2 py-2 text-right text-slate-400 tabular-nums">
+                  {l.games}
+                </td>
+                <td className="px-2 py-2 text-right text-slate-200 tabular-nums">
+                  {l.ppg.toFixed(1)}
+                </td>
+                <td className="px-2 py-2 text-right text-slate-300 tabular-nums">
+                  {l.goals}/{l.assists}
+                </td>
+                <td className="px-2 py-2 text-right text-slate-400 tabular-nums">
+                  {l.bonus}
+                </td>
+                <td className="px-2 py-2 text-right text-slate-300 tabular-nums">
+                  {l.value?.toFixed(2) ?? "—"}
+                </td>
+                <td className="px-2 py-2 text-right text-slate-400 tabular-nums">
+                  {l.selected_by.toFixed(1)}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
 export function TrackRecordPage() {
   const [data, setData] = useState<AccuracyResponse | null>(null);
   const [err, setErr] = useState<string | null>(null);
@@ -221,6 +339,13 @@ export function TrackRecordPage() {
             ))}
           </div>
         </>
+      )}
+
+      {data && (data.leaders?.length ?? 0) > 0 && (
+        <SeasonLeaders
+          leaders={data.leaders!}
+          inTop10={data.leaders_in_target_top10 ?? 0}
+        />
       )}
 
       {data && data.pending.length > 0 && scored > 0 && (

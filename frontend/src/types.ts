@@ -187,6 +187,27 @@ export interface PlayerOutcome {
   minutes: number;
 }
 
+/** Season-to-date scoring, straight from played matches. Backward-looking:
+ *  it is not what the model is trying to reproduce. */
+export interface SeasonLeader {
+  rank: number;
+  player_id: number;
+  web_name: string;
+  team_short: string;
+  position: Position;
+  now_cost: number;
+  points: number;
+  games: number;
+  minutes: number;
+  goals: number;
+  assists: number;
+  bonus: number;
+  ppg: number;
+  value: number | null;
+  selected_by: number;
+  in_target_squad?: boolean;
+}
+
 export interface AccuracyResponse {
   generated_at: string | null;
   totals: {
@@ -201,4 +222,6 @@ export interface AccuracyResponse {
   };
   gameweeks: TrackedGameweek[];
   pending: { gw: number; name: string | null; deadline: string | null }[];
+  leaders?: SeasonLeader[];
+  leaders_in_target_top10?: number;
 }

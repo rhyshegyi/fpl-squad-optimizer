@@ -262,6 +262,78 @@ def _trim(row: dict) -> dict:
 # Roll-up
 # --------------------------------------------------------------------------
 
+LEADERBOARD_SIZE = 30
+
+
+def season_leaders(limit: int = LEADERBOARD_SIZE) -> list[dict]:
+    """Who has actually scored the most this season, and at what price.
+
+    Straight from the per-gameweek rows, so it counts only matches that have
+    been played — no phantom rows for fixtures still to come. Points come from
+    the history table while price and ownership come from the live bootstrap,
+    because a player's cost today is what matters for acting on this.
+
+    Backward-looking on purpose. It is not a shopping list and the projections
+    are not trying to reproduce it: a player can top this table on two
+    hauls against weak defences and still be a poor bet for the next six
+    gameweeks. It is here so the model's output can be read against what has
+    actually happened.
+    """
+    with connect() as conn:
+        season = _current_season(conn)
+        rows = conn.execute(
+            "SELECT h.element, p.web_name, t.short_name AS team_short, "
+            "       h.position, p.now_cost, p.selected_by_percent, "
+            "       SUM(h.total_points) AS points, "
+            "       SUM(h.minutes) AS minutes, "
+            "       SUM(h.goals_scored) AS goals, "
+            "       SUM(h.assists) AS assists, "
+            "       SUM(h.bonus) AS bonus, "
+            "       COUNT(*) AS games "
+            "FROM historical_player_gw h "
+            "JOIN players p ON p.id = h.element "
+            "JOIN teams t ON t.id = p.team_id "
+            "WHERE h.season = ? "
+            "GROUP BY h.element "
+            "ORDER BY points DESC, minutes ASC "
+            "LIMIT ?",
+            (season, limit),
+        ).fetchall()
+
+    out = []
+    for rank, r in enumerate(rows, start=1):
+        points = int(r["points"] or 0)
+        cost = int(r["now_cost"] or 0)
+        games = int(r["games"] or 0)
+        out.append({
+            "rank": rank,
+            "player_id": r["element"],
+            "web_name": r["web_name"],
+            "team_short": r["team_short"],
+            "position": r["position"],
+            "now_cost": cost,
+            "points": points,
+            "games": games,
+            "minutes": int(r["minutes"] or 0),
+            "goals": int(r["goals"] or 0),
+            "assists": int(r["assists"] or 0),
+            "bonus": int(r["bonus"] or 0),
+            "ppg": round(points / games, 2) if games else 0.0,
+            "value": round(points / (cost / 10), 2) if cost else None,
+            "selected_by": float(r["selected_by_percent"] or 0),
+        })
+    return out
+
+
+def _target_squad_ids() -> set[int]:
+    path = ARTIFACTS_DIR / "latest_target.json"
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError, KeyError):
+        return set()
+    return {p["player_id"] for p in data.get("squad", {}).get("picks", [])}
+
+
 def build_summary() -> dict:
     """The rolled-up track record the site reads."""
     snaps = [s for s in load_snapshots() if s.scored]
@@ -313,11 +385,24 @@ def build_summary() -> dict:
         {"gw": s.gw, "name": s.data.get("name"), "deadline": s.data.get("deadline")}
         for s in load_snapshots() if not s.scored
     ]
+
+    try:
+        leaders = season_leaders()
+        owned = _target_squad_ids()
+        for row in leaders:
+            row["in_target_squad"] = row["player_id"] in owned
+        top10 = sum(1 for row in leaders[:10] if row["in_target_squad"])
+    except Exception as e:  # noqa: BLE001 - the track record matters more
+        print(f"  warning: season leaders omitted ({e})")
+        leaders, top10 = [], 0
+
     return {
         "generated_at": _now().isoformat(),
         "totals": totals,
         "gameweeks": weeks,
         "pending": pending,
+        "leaders": leaders,
+        "leaders_in_target_top10": top10,
     }
 
 
