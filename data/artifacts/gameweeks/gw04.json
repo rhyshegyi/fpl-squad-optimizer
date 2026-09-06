@@ -2,7 +2,7 @@
   "gw": 4,
   "name": "Gameweek 4",
   "deadline": "2026-09-12T12:30:00Z",
-  "frozen_at": "2026-09-06T17:41:12.001209+00:00",
+  "frozen_at": "2026-09-06T21:30:00.055673+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 997,
@@ -2102,7 +2102,7 @@
       "team_short": "EVE",
       "position": "MID",
       "now_cost": 60,
-      "projected": 1.638
+      "projected": 1.229
     },
     {
       "player_id": 240,
@@ -5412,6 +5412,14 @@
       "player_id": 653,
       "web_name": "Samba",
       "team_short": "MCI",
+      "position": "MID",
+      "now_cost": 45,
+      "projected": 0.15
+    },
+    {
+      "player_id": 654,
+      "web_name": "Graham",
+      "team_short": "EVE",
       "position": "MID",
       "now_cost": 45,
       "projected": 0.15

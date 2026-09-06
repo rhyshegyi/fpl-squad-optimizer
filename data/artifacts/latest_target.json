@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-06T17:41:11.984813+00:00",
+  "generated_at": "2026-09-06T21:30:00.041002+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "pipeline_state": {
-    "last_fetch": "2026-09-06T17:37:40.485613+00:00",
+    "last_fetch": "2026-09-06T21:27:50.723363+00:00",
     "current_gw": {
       "id": 3,
       "name": "Gameweek 3"
@@ -14,7 +14,7 @@
       "deadline_time": "2026-09-12T12:30:00Z"
     },
     "data_health": {
-      "players_tracked": 653,
+      "players_tracked": 654,
       "players_disagreeing": 0,
       "latest_gw_on_file": 3,
       "latest_result": "2026-09-06T15:30:00+00:00",
@@ -2362,7 +2362,7 @@
       "team_short": "EVE",
       "position": "MID",
       "now_cost": 60,
-      "projected_points": 2.107
+      "projected_points": 1.58
     },
     {
       "player_id": 240,
@@ -4045,7 +4045,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 120,
-      "projected_points": 5.092
+      "projected_points": 5.097
     },
     {
       "player_id": 427,
@@ -6086,6 +6086,15 @@
       "web_name": "Samba",
       "team_id": 15,
       "team_short": "MCI",
+      "position": "MID",
+      "now_cost": 45,
+      "projected_points": 0.15
+    },
+    {
+      "player_id": 654,
+      "web_name": "Graham",
+      "team_id": 9,
+      "team_short": "EVE",
       "position": "MID",
       "now_cost": 45,
       "projected_points": 0.15

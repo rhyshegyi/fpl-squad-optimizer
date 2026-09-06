@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-06T17:40:42.350091+00:00",
+  "generated_at": "2026-09-06T21:29:43.226240+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-09-06T17:37:40.485613+00:00",
+    "last_fetch": "2026-09-06T21:27:50.723363+00:00",
     "current_gw": {
       "id": 3,
       "name": "Gameweek 3"
@@ -13,7 +13,7 @@
       "deadline_time": "2026-09-12T12:30:00Z"
     },
     "data_health": {
-      "players_tracked": 653,
+      "players_tracked": 654,
       "players_disagreeing": 0,
       "latest_gw_on_file": 3,
       "latest_result": "2026-09-06T15:30:00+00:00",
