@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-05T17:27:55.754517+00:00",
+  "generated_at": "2026-09-06T11:10:40.746341+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "pipeline_state": {
-    "last_fetch": "2026-09-05T17:24:24.561123+00:00",
+    "last_fetch": "2026-09-06T11:06:56.960933+00:00",
     "current_gw": {
       "id": 3,
       "name": "Gameweek 3"
@@ -14,14 +14,14 @@
       "deadline_time": "2026-09-12T12:30:00Z"
     },
     "data_health": {
-      "players_tracked": 644,
-      "players_disagreeing": 21,
+      "players_tracked": 652,
+      "players_disagreeing": 0,
       "latest_gw_on_file": 3,
-      "latest_result": "2026-09-05T14:00:00+00:00",
+      "latest_result": "2026-09-05T16:30:00+00:00",
       "gameweek_in_progress": {
         "id": 3,
         "name": "Gameweek 3",
-        "matches_played": 7,
+        "matches_played": 8,
         "matches_started": 8,
         "matches_total": 10
       },
@@ -29,8 +29,8 @@
     }
   },
   "squad": {
-    "total_cost": 1000,
-    "projected_points": 54.0,
+    "total_cost": 998,
+    "projected_points": 54.02,
     "formation": "3-5-2",
     "picks": [
       {
@@ -40,7 +40,7 @@
         "team_short": "ARS",
         "position": "DEF",
         "now_cost": 57,
-        "projected_points": 3.663,
+        "projected_points": 3.678,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -52,7 +52,7 @@
         "team_short": "ARS",
         "position": "DEF",
         "now_cost": 55,
-        "projected_points": 3.445,
+        "projected_points": 3.461,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -64,7 +64,7 @@
         "team_short": "ARS",
         "position": "MID",
         "now_cost": 95,
-        "projected_points": 5.282,
+        "projected_points": 5.277,
         "is_starter": true,
         "is_captain": false,
         "is_vice": true
@@ -76,7 +76,7 @@
         "team_short": "CHE",
         "position": "MID",
         "now_cost": 75,
-        "projected_points": 4.845,
+        "projected_points": 4.841,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -88,7 +88,7 @@
         "team_short": "BHA",
         "position": "DEF",
         "now_cost": 47,
-        "projected_points": 3.234,
+        "projected_points": 3.252,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -100,20 +100,8 @@
         "team_short": "CHE",
         "position": "FWD",
         "now_cost": 77,
-        "projected_points": 4.601,
+        "projected_points": 4.592,
         "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 204,
-        "web_name": "Mitchell",
-        "team_id": 8,
-        "team_short": "CRY",
-        "position": "DEF",
-        "now_cost": 45,
-        "projected_points": 3.129,
-        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
@@ -123,8 +111,32 @@
         "team_id": 9,
         "team_short": "EVE",
         "position": "FWD",
-        "now_cost": 55,
-        "projected_points": 3.298,
+        "now_cost": 56,
+        "projected_points": 3.289,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 277,
+        "web_name": "Egan",
+        "team_id": 11,
+        "team_short": "HUL",
+        "position": "DEF",
+        "now_cost": 40,
+        "projected_points": 2.735,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 279,
+        "web_name": "Ajayi",
+        "team_id": 11,
+        "team_short": "HUL",
+        "position": "DEF",
+        "now_cost": 41,
+        "projected_points": 2.925,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -136,7 +148,7 @@
         "team_short": "LIV",
         "position": "MID",
         "now_cost": 70,
-        "projected_points": 4.489,
+        "projected_points": 4.484,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -148,7 +160,7 @@
         "team_short": "LIV",
         "position": "FWD",
         "now_cost": 90,
-        "projected_points": 5.272,
+        "projected_points": 5.261,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -160,7 +172,7 @@
         "team_short": "MUN",
         "position": "GK",
         "now_cost": 50,
-        "projected_points": 3.392,
+        "projected_points": 3.414,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -172,7 +184,7 @@
         "team_short": "MUN",
         "position": "MID",
         "now_cost": 120,
-        "projected_points": 5.509,
+        "projected_points": 5.505,
         "is_starter": true,
         "is_captain": true,
         "is_vice": false
@@ -184,31 +196,19 @@
         "team_short": "MUN",
         "position": "MID",
         "now_cost": 79,
-        "projected_points": 4.758,
+        "projected_points": 4.754,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
       },
       {
-        "player_id": 496,
-        "web_name": "Kinsky",
-        "team_id": 19,
-        "team_short": "TOT",
-        "position": "GK",
-        "now_cost": 45,
-        "projected_points": 2.892,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 586,
-        "web_name": "Mendy",
+        "player_id": 572,
+        "web_name": "Tzolakis",
         "team_id": 11,
         "team_short": "HUL",
-        "position": "DEF",
-        "now_cost": 40,
-        "projected_points": 2.607,
+        "position": "GK",
+        "now_cost": 46,
+        "projected_points": 3.043,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -223,7 +223,7 @@
       "team_short": "ARS",
       "position": "GK",
       "now_cost": 60,
-      "projected_points": 3.446
+      "projected_points": 3.468
     },
     {
       "player_id": 2,
@@ -250,7 +250,7 @@
       "team_short": "ARS",
       "position": "DEF",
       "now_cost": 80,
-      "projected_points": 3.672
+      "projected_points": 3.688
     },
     {
       "player_id": 5,
@@ -277,7 +277,7 @@
       "team_short": "ARS",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.929
+      "projected_points": 2.925
     },
     {
       "player_id": 8,
@@ -286,7 +286,7 @@
       "team_short": "ARS",
       "position": "DEF",
       "now_cost": 57,
-      "projected_points": 3.663
+      "projected_points": 3.678
     },
     {
       "player_id": 9,
@@ -304,7 +304,7 @@
       "team_short": "ARS",
       "position": "DEF",
       "now_cost": 55,
-      "projected_points": 3.445
+      "projected_points": 3.461
     },
     {
       "player_id": 11,
@@ -313,7 +313,7 @@
       "team_short": "ARS",
       "position": "DEF",
       "now_cost": 55,
-      "projected_points": 2.458
+      "projected_points": 2.47
     },
     {
       "player_id": 12,
@@ -322,7 +322,7 @@
       "team_short": "ARS",
       "position": "MID",
       "now_cost": 95,
-      "projected_points": 5.282
+      "projected_points": 5.277
     },
     {
       "player_id": 13,
@@ -330,8 +330,8 @@
       "team_id": 1,
       "team_short": "ARS",
       "position": "MID",
-      "now_cost": 75,
-      "projected_points": 3.326
+      "now_cost": 74,
+      "projected_points": 3.322
     },
     {
       "player_id": 14,
@@ -349,7 +349,7 @@
       "team_short": "ARS",
       "position": "MID",
       "now_cost": 66,
-      "projected_points": 3.805
+      "projected_points": 3.801
     },
     {
       "player_id": 16,
@@ -448,7 +448,7 @@
       "team_short": "ARS",
       "position": "FWD",
       "now_cost": 75,
-      "projected_points": 3.897
+      "projected_points": 3.889
     },
     {
       "player_id": 27,
@@ -466,7 +466,7 @@
       "team_short": "CHE",
       "position": "GK",
       "now_cost": 50,
-      "projected_points": 1.921
+      "projected_points": 1.935
     },
     {
       "player_id": 29,
@@ -475,7 +475,7 @@
       "team_short": "AVL",
       "position": "GK",
       "now_cost": 45,
-      "projected_points": 1.577
+      "projected_points": 1.177
     },
     {
       "player_id": 30,
@@ -502,7 +502,7 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.402
+      "projected_points": 2.718
     },
     {
       "player_id": 33,
@@ -511,7 +511,7 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 0.821
+      "projected_points": 1.719
     },
     {
       "player_id": 34,
@@ -520,7 +520,7 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.628
+      "projected_points": 1.63
     },
     {
       "player_id": 35,
@@ -529,7 +529,7 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 0.905
+      "projected_points": 0.811
     },
     {
       "player_id": 36,
@@ -538,7 +538,7 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.424
+      "projected_points": 2.769
     },
     {
       "player_id": 37,
@@ -547,7 +547,7 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.761
+      "projected_points": 3.005
     },
     {
       "player_id": 38,
@@ -574,7 +574,7 @@
       "team_short": "CHE",
       "position": "MID",
       "now_cost": 75,
-      "projected_points": 4.845
+      "projected_points": 4.841
     },
     {
       "player_id": 41,
@@ -583,7 +583,7 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 60,
-      "projected_points": 2.953
+      "projected_points": 2.86
     },
     {
       "player_id": 42,
@@ -601,7 +601,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 59,
-      "projected_points": 3.151
+      "projected_points": 3.147
     },
     {
       "player_id": 44,
@@ -619,7 +619,7 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 54,
-      "projected_points": 2.776
+      "projected_points": 2.689
     },
     {
       "player_id": 46,
@@ -628,7 +628,7 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 2.501
+      "projected_points": 2.529
     },
     {
       "player_id": 47,
@@ -637,7 +637,7 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 2.918
+      "projected_points": 2.885
     },
     {
       "player_id": 48,
@@ -673,7 +673,7 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 45,
-      "projected_points": 2.556
+      "projected_points": 2.522
     },
     {
       "player_id": 52,
@@ -718,7 +718,7 @@
       "team_short": "AVL",
       "position": "FWD",
       "now_cost": 55,
-      "projected_points": 0.994
+      "projected_points": 0.899
     },
     {
       "player_id": 57,
@@ -727,7 +727,7 @@
       "team_short": "BOU",
       "position": "GK",
       "now_cost": 45,
-      "projected_points": 2.715
+      "projected_points": 2.74
     },
     {
       "player_id": 58,
@@ -754,7 +754,7 @@
       "team_short": "BOU",
       "position": "DEF",
       "now_cost": 55,
-      "projected_points": 2.57
+      "projected_points": 2.589
     },
     {
       "player_id": 61,
@@ -763,7 +763,7 @@
       "team_short": "BOU",
       "position": "DEF",
       "now_cost": 55,
-      "projected_points": 2.632
+      "projected_points": 2.65
     },
     {
       "player_id": 62,
@@ -790,7 +790,7 @@
       "team_short": "BOU",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.271
+      "projected_points": 2.289
     },
     {
       "player_id": 65,
@@ -817,7 +817,7 @@
       "team_short": "BOU",
       "position": "MID",
       "now_cost": 65,
-      "projected_points": 2.76
+      "projected_points": 2.756
     },
     {
       "player_id": 68,
@@ -826,7 +826,7 @@
       "team_short": "BOU",
       "position": "MID",
       "now_cost": 60,
-      "projected_points": 3.504
+      "projected_points": 3.499
     },
     {
       "player_id": 69,
@@ -835,7 +835,7 @@
       "team_short": "BOU",
       "position": "MID",
       "now_cost": 60,
-      "projected_points": 3.201
+      "projected_points": 3.196
     },
     {
       "player_id": 70,
@@ -844,7 +844,7 @@
       "team_short": "BOU",
       "position": "MID",
       "now_cost": 60,
-      "projected_points": 2.62
+      "projected_points": 2.615
     },
     {
       "player_id": 71,
@@ -853,7 +853,7 @@
       "team_short": "BOU",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 1.858
+      "projected_points": 1.854
     },
     {
       "player_id": 72,
@@ -871,7 +871,7 @@
       "team_short": "BOU",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 1.884
+      "projected_points": 1.881
     },
     {
       "player_id": 74,
@@ -925,7 +925,7 @@
       "team_short": "BOU",
       "position": "FWD",
       "now_cost": 60,
-      "projected_points": 2.666
+      "projected_points": 2.656
     },
     {
       "player_id": 80,
@@ -952,7 +952,7 @@
       "team_short": "BRE",
       "position": "GK",
       "now_cost": 50,
-      "projected_points": 3.032
+      "projected_points": 3.057
     },
     {
       "player_id": 83,
@@ -970,7 +970,7 @@
       "team_short": "BRE",
       "position": "DEF",
       "now_cost": 55,
-      "projected_points": 2.414
+      "projected_points": 0.607
     },
     {
       "player_id": 85,
@@ -988,7 +988,7 @@
       "team_short": "BRE",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 3.457
+      "projected_points": 3.431
     },
     {
       "player_id": 87,
@@ -997,7 +997,7 @@
       "team_short": "BRE",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.647
+      "projected_points": 2.666
     },
     {
       "player_id": 88,
@@ -1006,7 +1006,7 @@
       "team_short": "BRE",
       "position": "DEF",
       "now_cost": 46,
-      "projected_points": 2.645
+      "projected_points": 2.661
     },
     {
       "player_id": 89,
@@ -1033,7 +1033,7 @@
       "team_short": "COV",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 1.689
+      "projected_points": 1.699
     },
     {
       "player_id": 92,
@@ -1051,7 +1051,7 @@
       "team_short": "BRE",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 0.935
+      "projected_points": 1.209
     },
     {
       "player_id": 94,
@@ -1060,7 +1060,7 @@
       "team_short": "BRE",
       "position": "MID",
       "now_cost": 60,
-      "projected_points": 3.674
+      "projected_points": 3.66
     },
     {
       "player_id": 95,
@@ -1069,7 +1069,7 @@
       "team_short": "BRE",
       "position": "MID",
       "now_cost": 64,
-      "projected_points": 2.056
+      "projected_points": 2.053
     },
     {
       "player_id": 96,
@@ -1078,7 +1078,7 @@
       "team_short": "BRE",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.57
+      "projected_points": 2.591
     },
     {
       "player_id": 97,
@@ -1096,7 +1096,7 @@
       "team_short": "BRE",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 3.135
+      "projected_points": 3.169
     },
     {
       "player_id": 99,
@@ -1150,7 +1150,7 @@
       "team_short": "COV",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 1.884
+      "projected_points": 1.88
     },
     {
       "player_id": 105,
@@ -1159,7 +1159,7 @@
       "team_short": "BRE",
       "position": "MID",
       "now_cost": 60,
-      "projected_points": 2.113
+      "projected_points": 2.089
     },
     {
       "player_id": 106,
@@ -1168,7 +1168,7 @@
       "team_short": "BRE",
       "position": "FWD",
       "now_cost": 80,
-      "projected_points": 2.548
+      "projected_points": 2.538
     },
     {
       "player_id": 107,
@@ -1195,7 +1195,7 @@
       "team_short": "BHA",
       "position": "GK",
       "now_cost": 45,
-      "projected_points": 2.747
+      "projected_points": 2.772
     },
     {
       "player_id": 110,
@@ -1204,7 +1204,7 @@
       "team_short": "COV",
       "position": "GK",
       "now_cost": 45,
-      "projected_points": 2.574
+      "projected_points": 2.599
     },
     {
       "player_id": 111,
@@ -1222,7 +1222,7 @@
       "team_short": "TOT",
       "position": "DEF",
       "now_cost": 49,
-      "projected_points": 2.543
+      "projected_points": 2.561
     },
     {
       "player_id": 113,
@@ -1231,7 +1231,7 @@
       "team_short": "BHA",
       "position": "DEF",
       "now_cost": 44,
-      "projected_points": 1.54
+      "projected_points": 1.556
     },
     {
       "player_id": 114,
@@ -1240,7 +1240,7 @@
       "team_short": "BHA",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.207
+      "projected_points": 2.225
     },
     {
       "player_id": 115,
@@ -1249,7 +1249,7 @@
       "team_short": "BHA",
       "position": "DEF",
       "now_cost": 47,
-      "projected_points": 3.234
+      "projected_points": 3.252
     },
     {
       "player_id": 116,
@@ -1258,7 +1258,7 @@
       "team_short": "BHA",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.491
+      "projected_points": 2.509
     },
     {
       "player_id": 117,
@@ -1321,7 +1321,7 @@
       "team_short": "BHA",
       "position": "MID",
       "now_cost": 60,
-      "projected_points": 1.043
+      "projected_points": 1.042
     },
     {
       "player_id": 124,
@@ -1330,7 +1330,7 @@
       "team_short": "BHA",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 3.271
+      "projected_points": 3.266
     },
     {
       "player_id": 125,
@@ -1339,7 +1339,7 @@
       "team_short": "BHA",
       "position": "FWD",
       "now_cost": 55,
-      "projected_points": 1.363
+      "projected_points": 1.359
     },
     {
       "player_id": 126,
@@ -1357,7 +1357,7 @@
       "team_short": "BHA",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 3.167
+      "projected_points": 3.162
     },
     {
       "player_id": 128,
@@ -1375,7 +1375,7 @@
       "team_short": "BHA",
       "position": "MID",
       "now_cost": 54,
-      "projected_points": 2.004
+      "projected_points": 2.0
     },
     {
       "player_id": 130,
@@ -1456,7 +1456,7 @@
       "team_short": "BHA",
       "position": "FWD",
       "now_cost": 55,
-      "projected_points": 2.373
+      "projected_points": 2.364
     },
     {
       "player_id": 139,
@@ -1491,8 +1491,8 @@
       "team_id": 6,
       "team_short": "CHE",
       "position": "DEF",
-      "now_cost": 55,
-      "projected_points": 2.174
+      "now_cost": 54,
+      "projected_points": 2.079
     },
     {
       "player_id": 143,
@@ -1510,7 +1510,7 @@
       "team_short": "CHE",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 2.85
+      "projected_points": 2.866
     },
     {
       "player_id": 145,
@@ -1519,7 +1519,7 @@
       "team_short": "CHE",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 1.456
+      "projected_points": 1.466
     },
     {
       "player_id": 146,
@@ -1536,7 +1536,7 @@
       "team_id": 19,
       "team_short": "TOT",
       "position": "DEF",
-      "now_cost": 45,
+      "now_cost": 44,
       "projected_points": 0.15
     },
     {
@@ -1546,7 +1546,7 @@
       "team_short": "CHE",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.428
+      "projected_points": 2.444
     },
     {
       "player_id": 149,
@@ -1555,7 +1555,7 @@
       "team_short": "CHE",
       "position": "DEF",
       "now_cost": 49,
-      "projected_points": 2.373
+      "projected_points": 2.389
     },
     {
       "player_id": 150,
@@ -1573,7 +1573,7 @@
       "team_short": "CHE",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 1.905
+      "projected_points": 1.915
     },
     {
       "player_id": 152,
@@ -1591,7 +1591,7 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 1.631
+      "projected_points": 1.642
     },
     {
       "player_id": 154,
@@ -1600,7 +1600,7 @@
       "team_short": "CHE",
       "position": "MID",
       "now_cost": 96,
-      "projected_points": 5.132
+      "projected_points": 5.128
     },
     {
       "player_id": 155,
@@ -1609,7 +1609,7 @@
       "team_short": "MCI",
       "position": "MID",
       "now_cost": 69,
-      "projected_points": 2.358
+      "projected_points": 2.356
     },
     {
       "player_id": 156,
@@ -1618,7 +1618,7 @@
       "team_short": "CHE",
       "position": "MID",
       "now_cost": 65,
-      "projected_points": 2.917
+      "projected_points": 2.914
     },
     {
       "player_id": 157,
@@ -1654,7 +1654,7 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 59,
-      "projected_points": 1.384
+      "projected_points": 1.313
     },
     {
       "player_id": 161,
@@ -1663,7 +1663,7 @@
       "team_short": "CHE",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 3.148
+      "projected_points": 3.144
     },
     {
       "player_id": 162,
@@ -1672,7 +1672,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 49,
-      "projected_points": 1.912
+      "projected_points": 1.909
     },
     {
       "player_id": 163,
@@ -1699,7 +1699,7 @@
       "team_short": "CHE",
       "position": "FWD",
       "now_cost": 77,
-      "projected_points": 4.601
+      "projected_points": 4.592
     },
     {
       "player_id": 166,
@@ -1708,7 +1708,7 @@
       "team_short": "AVL",
       "position": "FWD",
       "now_cost": 65,
-      "projected_points": 1.923
+      "projected_points": 2.337
     },
     {
       "player_id": 167,
@@ -1717,7 +1717,7 @@
       "team_short": "NFO",
       "position": "FWD",
       "now_cost": 55,
-      "projected_points": 1.887
+      "projected_points": 1.897
     },
     {
       "player_id": 168,
@@ -1771,7 +1771,7 @@
       "team_short": "COV",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 2.477
+      "projected_points": 2.496
     },
     {
       "player_id": 174,
@@ -1789,7 +1789,7 @@
       "team_short": "COV",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 2.112
+      "projected_points": 2.13
     },
     {
       "player_id": 176,
@@ -1798,7 +1798,7 @@
       "team_short": "COV",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 2.076
+      "projected_points": 2.094
     },
     {
       "player_id": 177,
@@ -1852,7 +1852,7 @@
       "team_short": "COV",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 2.091
+      "projected_points": 2.109
     },
     {
       "player_id": 183,
@@ -1861,7 +1861,7 @@
       "team_short": "COV",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 1.986
+      "projected_points": 1.981
     },
     {
       "player_id": 184,
@@ -1870,7 +1870,7 @@
       "team_short": "COV",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 2.344
+      "projected_points": 2.339
     },
     {
       "player_id": 185,
@@ -1888,7 +1888,7 @@
       "team_short": "COV",
       "position": "MID",
       "now_cost": 54,
-      "projected_points": 1.875
+      "projected_points": 1.872
     },
     {
       "player_id": 187,
@@ -1924,7 +1924,7 @@
       "team_short": "COV",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 1.927
+      "projected_points": 1.924
     },
     {
       "player_id": 191,
@@ -1960,7 +1960,7 @@
       "team_short": "COV",
       "position": "FWD",
       "now_cost": 50,
-      "projected_points": 1.816
+      "projected_points": 1.811
     },
     {
       "player_id": 195,
@@ -1969,7 +1969,7 @@
       "team_short": "COV",
       "position": "FWD",
       "now_cost": 50,
-      "projected_points": 1.499
+      "projected_points": 1.493
     },
     {
       "player_id": 196,
@@ -1996,7 +1996,7 @@
       "team_short": "CRY",
       "position": "GK",
       "now_cost": 50,
-      "projected_points": 3.297
+      "projected_points": 3.322
     },
     {
       "player_id": 199,
@@ -2014,7 +2014,7 @@
       "team_short": "CHE",
       "position": "DEF",
       "now_cost": 60,
-      "projected_points": 3.465
+      "projected_points": 3.481
     },
     {
       "player_id": 201,
@@ -2032,7 +2032,7 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 3.176
+      "projected_points": 3.194
     },
     {
       "player_id": 203,
@@ -2041,7 +2041,7 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 49,
-      "projected_points": 2.763
+      "projected_points": 2.461
     },
     {
       "player_id": 204,
@@ -2050,7 +2050,7 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 3.129
+      "projected_points": 3.147
     },
     {
       "player_id": 205,
@@ -2104,7 +2104,7 @@
       "team_short": "CRY",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 3.408
+      "projected_points": 3.403
     },
     {
       "player_id": 211,
@@ -2113,7 +2113,7 @@
       "team_short": "CRY",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.979
+      "projected_points": 2.922
     },
     {
       "player_id": 212,
@@ -2140,7 +2140,7 @@
       "team_short": "CRY",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 3.144
+      "projected_points": 3.14
     },
     {
       "player_id": 215,
@@ -2212,7 +2212,7 @@
       "team_short": "CRY",
       "position": "FWD",
       "now_cost": 60,
-      "projected_points": 2.132
+      "projected_points": 2.126
     },
     {
       "player_id": 223,
@@ -2230,7 +2230,7 @@
       "team_short": "CRY",
       "position": "FWD",
       "now_cost": 55,
-      "projected_points": 2.41
+      "projected_points": 2.404
     },
     {
       "player_id": 225,
@@ -2248,7 +2248,7 @@
       "team_short": "EVE",
       "position": "GK",
       "now_cost": 55,
-      "projected_points": 3.015
+      "projected_points": 3.037
     },
     {
       "player_id": 227,
@@ -2275,7 +2275,7 @@
       "team_short": "EVE",
       "position": "DEF",
       "now_cost": 60,
-      "projected_points": 3.214
+      "projected_points": 3.23
     },
     {
       "player_id": 230,
@@ -2284,7 +2284,7 @@
       "team_short": "EVE",
       "position": "DEF",
       "now_cost": 55,
-      "projected_points": 3.047
+      "projected_points": 3.062
     },
     {
       "player_id": 231,
@@ -2311,7 +2311,7 @@
       "team_short": "EVE",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.717
+      "projected_points": 2.733
     },
     {
       "player_id": 234,
@@ -2338,7 +2338,7 @@
       "team_short": "EVE",
       "position": "MID",
       "now_cost": 65,
-      "projected_points": 4.123
+      "projected_points": 4.119
     },
     {
       "player_id": 237,
@@ -2347,7 +2347,7 @@
       "team_short": "MCI",
       "position": "MID",
       "now_cost": 59,
-      "projected_points": 3.686
+      "projected_points": 3.682
     },
     {
       "player_id": 238,
@@ -2365,7 +2365,7 @@
       "team_short": "EVE",
       "position": "MID",
       "now_cost": 60,
-      "projected_points": 1.822
+      "projected_points": 1.82
     },
     {
       "player_id": 240,
@@ -2382,8 +2382,8 @@
       "team_id": 8,
       "team_short": "CRY",
       "position": "MID",
-      "now_cost": 55,
-      "projected_points": 1.802
+      "now_cost": 54,
+      "projected_points": 1.659
     },
     {
       "player_id": 242,
@@ -2392,7 +2392,7 @@
       "team_short": "EVE",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.645
+      "projected_points": 2.641
     },
     {
       "player_id": 243,
@@ -2410,7 +2410,7 @@
       "team_short": "EVE",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 2.969
+      "projected_points": 2.965
     },
     {
       "player_id": 245,
@@ -2428,7 +2428,7 @@
       "team_short": "EVE",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 2.603
+      "projected_points": 2.599
     },
     {
       "player_id": 247,
@@ -2437,7 +2437,7 @@
       "team_short": "EVE",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.299
+      "projected_points": 2.297
     },
     {
       "player_id": 248,
@@ -2454,8 +2454,8 @@
       "team_id": 9,
       "team_short": "EVE",
       "position": "FWD",
-      "now_cost": 55,
-      "projected_points": 3.298
+      "now_cost": 56,
+      "projected_points": 3.289
     },
     {
       "player_id": 250,
@@ -2464,7 +2464,7 @@
       "team_short": "FUL",
       "position": "GK",
       "now_cost": 45,
-      "projected_points": 2.663
+      "projected_points": 2.688
     },
     {
       "player_id": 251,
@@ -2491,7 +2491,7 @@
       "team_short": "FUL",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 1.699
+      "projected_points": 1.715
     },
     {
       "player_id": 254,
@@ -2500,7 +2500,7 @@
       "team_short": "FUL",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.176
+      "projected_points": 2.194
     },
     {
       "player_id": 255,
@@ -2509,7 +2509,7 @@
       "team_short": "FUL",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 1.464
+      "projected_points": 1.474
     },
     {
       "player_id": 256,
@@ -2527,7 +2527,7 @@
       "team_short": "FUL",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.213
+      "projected_points": 2.232
     },
     {
       "player_id": 258,
@@ -2536,7 +2536,7 @@
       "team_short": "FUL",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.622
+      "projected_points": 2.64
     },
     {
       "player_id": 259,
@@ -2545,7 +2545,7 @@
       "team_short": "IPS",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 2.203
+      "projected_points": 2.221
     },
     {
       "player_id": 260,
@@ -2554,7 +2554,7 @@
       "team_short": "LEE",
       "position": "MID",
       "now_cost": 64,
-      "projected_points": 2.269
+      "projected_points": 2.266
     },
     {
       "player_id": 261,
@@ -2563,7 +2563,7 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.87
+      "projected_points": 2.872
     },
     {
       "player_id": 262,
@@ -2590,7 +2590,7 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.416
+      "projected_points": 2.419
     },
     {
       "player_id": 265,
@@ -2599,7 +2599,7 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 2.149
+      "projected_points": 2.145
     },
     {
       "player_id": 266,
@@ -2617,7 +2617,7 @@
       "team_short": "IPS",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 2.315
+      "projected_points": 2.31
     },
     {
       "player_id": 268,
@@ -2626,7 +2626,7 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 3.072
+      "projected_points": 3.202
     },
     {
       "player_id": 269,
@@ -2635,7 +2635,7 @@
       "team_short": "FUL",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 1.237
+      "projected_points": 1.244
     },
     {
       "player_id": 270,
@@ -2707,7 +2707,7 @@
       "team_short": "HUL",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 2.464
+      "projected_points": 2.735
     },
     {
       "player_id": 278,
@@ -2725,7 +2725,7 @@
       "team_short": "HUL",
       "position": "DEF",
       "now_cost": 41,
-      "projected_points": 2.72
+      "projected_points": 2.925
     },
     {
       "player_id": 280,
@@ -2734,7 +2734,7 @@
       "team_short": "HUL",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 1.255
+      "projected_points": 1.897
     },
     {
       "player_id": 281,
@@ -2752,7 +2752,7 @@
       "team_short": "HUL",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 2.314
+      "projected_points": 2.508
     },
     {
       "player_id": 283,
@@ -2779,7 +2779,7 @@
       "team_short": "HUL",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 0.78
+      "projected_points": 0.758
     },
     {
       "player_id": 286,
@@ -2788,7 +2788,7 @@
       "team_short": "HUL",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 2.44
+      "projected_points": 2.566
     },
     {
       "player_id": 287,
@@ -2815,7 +2815,7 @@
       "team_short": "HUL",
       "position": "MID",
       "now_cost": 45,
-      "projected_points": 1.267
+      "projected_points": 0.929
     },
     {
       "player_id": 290,
@@ -2824,7 +2824,7 @@
       "team_short": "HUL",
       "position": "MID",
       "now_cost": 45,
-      "projected_points": 2.4
+      "projected_points": 2.49
     },
     {
       "player_id": 291,
@@ -2869,7 +2869,7 @@
       "team_short": "HUL",
       "position": "FWD",
       "now_cost": 55,
-      "projected_points": 3.133
+      "projected_points": 2.765
     },
     {
       "player_id": 296,
@@ -2950,7 +2950,7 @@
       "team_short": "IPS",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 2.01
+      "projected_points": 2.029
     },
     {
       "player_id": 305,
@@ -2959,7 +2959,7 @@
       "team_short": "IPS",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 2.225
+      "projected_points": 2.243
     },
     {
       "player_id": 306,
@@ -2968,7 +2968,7 @@
       "team_short": "IPS",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 1.833
+      "projected_points": 1.851
     },
     {
       "player_id": 307,
@@ -2995,7 +2995,7 @@
       "team_short": "IPS",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 1.866
+      "projected_points": 1.862
     },
     {
       "player_id": 310,
@@ -3049,7 +3049,7 @@
       "team_short": "IPS",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.717
+      "projected_points": 2.712
     },
     {
       "player_id": 316,
@@ -3058,7 +3058,7 @@
       "team_short": "IPS",
       "position": "FWD",
       "now_cost": 55,
-      "projected_points": 2.518
+      "projected_points": 2.509
     },
     {
       "player_id": 317,
@@ -3157,7 +3157,7 @@
       "team_short": "LEE",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 2.162
+      "projected_points": 2.173
     },
     {
       "player_id": 328,
@@ -3174,7 +3174,7 @@
       "team_id": 13,
       "team_short": "LEE",
       "position": "DEF",
-      "now_cost": 45,
+      "now_cost": 44,
       "projected_points": 0.0
     },
     {
@@ -3184,7 +3184,7 @@
       "team_short": "LEE",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.838
+      "projected_points": 2.857
     },
     {
       "player_id": 331,
@@ -3193,7 +3193,7 @@
       "team_short": "LEE",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 0.998
+      "projected_points": 1.008
     },
     {
       "player_id": 332,
@@ -3202,7 +3202,7 @@
       "team_short": "LEE",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.605
+      "projected_points": 2.624
     },
     {
       "player_id": 333,
@@ -3220,7 +3220,7 @@
       "team_short": "LEE",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 2.584
+      "projected_points": 2.602
     },
     {
       "player_id": 335,
@@ -3229,7 +3229,7 @@
       "team_short": "LEE",
       "position": "MID",
       "now_cost": 60,
-      "projected_points": 3.137
+      "projected_points": 3.132
     },
     {
       "player_id": 336,
@@ -3238,7 +3238,7 @@
       "team_short": "LEE",
       "position": "MID",
       "now_cost": 59,
-      "projected_points": 2.129
+      "projected_points": 2.125
     },
     {
       "player_id": 337,
@@ -3247,7 +3247,7 @@
       "team_short": "LEE",
       "position": "MID",
       "now_cost": 54,
-      "projected_points": 1.969
+      "projected_points": 1.966
     },
     {
       "player_id": 338,
@@ -3256,7 +3256,7 @@
       "team_short": "LEE",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.819
+      "projected_points": 2.82
     },
     {
       "player_id": 339,
@@ -3319,7 +3319,7 @@
       "team_short": "LEE",
       "position": "MID",
       "now_cost": 49,
-      "projected_points": 2.029
+      "projected_points": 2.026
     },
     {
       "player_id": 346,
@@ -3328,7 +3328,7 @@
       "team_short": "LEE",
       "position": "FWD",
       "now_cost": 60,
-      "projected_points": 2.914
+      "projected_points": 2.86
     },
     {
       "player_id": 347,
@@ -3364,7 +3364,7 @@
       "team_short": "LIV",
       "position": "GK",
       "now_cost": 55,
-      "projected_points": 3.281
+      "projected_points": 3.306
     },
     {
       "player_id": 351,
@@ -3418,7 +3418,7 @@
       "team_short": "LIV",
       "position": "DEF",
       "now_cost": 65,
-      "projected_points": 3.306
+      "projected_points": 3.325
     },
     {
       "player_id": 357,
@@ -3426,8 +3426,8 @@
       "team_id": 14,
       "team_short": "LIV",
       "position": "DEF",
-      "now_cost": 55,
-      "projected_points": 2.008
+      "now_cost": 54,
+      "projected_points": 1.938
     },
     {
       "player_id": 358,
@@ -3436,7 +3436,7 @@
       "team_short": "LIV",
       "position": "DEF",
       "now_cost": 55,
-      "projected_points": 2.846
+      "projected_points": 2.865
     },
     {
       "player_id": 359,
@@ -3472,7 +3472,7 @@
       "team_short": "LIV",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 2.537
+      "projected_points": 2.555
     },
     {
       "player_id": 363,
@@ -3508,7 +3508,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 74,
-      "projected_points": 3.048
+      "projected_points": 3.043
     },
     {
       "player_id": 367,
@@ -3517,7 +3517,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 71,
-      "projected_points": 4.106
+      "projected_points": 4.101
     },
     {
       "player_id": 368,
@@ -3526,7 +3526,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 70,
-      "projected_points": 4.489
+      "projected_points": 4.484
     },
     {
       "player_id": 369,
@@ -3535,7 +3535,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 59,
-      "projected_points": 1.726
+      "projected_points": 1.724
     },
     {
       "player_id": 370,
@@ -3552,8 +3552,8 @@
       "team_id": 14,
       "team_short": "LIV",
       "position": "MID",
-      "now_cost": 60,
-      "projected_points": 2.115
+      "now_cost": 59,
+      "projected_points": 2.112
     },
     {
       "player_id": 372,
@@ -3562,7 +3562,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.254
+      "projected_points": 2.25
     },
     {
       "player_id": 373,
@@ -3607,7 +3607,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 65,
-      "projected_points": 2.629
+      "projected_points": 2.625
     },
     {
       "player_id": 378,
@@ -3625,7 +3625,7 @@
       "team_short": "LIV",
       "position": "FWD",
       "now_cost": 90,
-      "projected_points": 5.272
+      "projected_points": 5.261
     },
     {
       "player_id": 380,
@@ -3670,7 +3670,7 @@
       "team_short": "MCI",
       "position": "GK",
       "now_cost": 55,
-      "projected_points": 2.992
+      "projected_points": 3.017
     },
     {
       "player_id": 385,
@@ -3679,7 +3679,7 @@
       "team_short": "LEE",
       "position": "GK",
       "now_cost": 50,
-      "projected_points": 2.93
+      "projected_points": 2.955
     },
     {
       "player_id": 386,
@@ -3697,7 +3697,7 @@
       "team_short": "MCI",
       "position": "DEF",
       "now_cost": 65,
-      "projected_points": 2.334
+      "projected_points": 1.762
     },
     {
       "player_id": 388,
@@ -3706,7 +3706,7 @@
       "team_short": "MCI",
       "position": "DEF",
       "now_cost": 60,
-      "projected_points": 3.241
+      "projected_points": 3.204
     },
     {
       "player_id": 389,
@@ -3724,7 +3724,7 @@
       "team_short": "MCI",
       "position": "DEF",
       "now_cost": 55,
-      "projected_points": 2.836
+      "projected_points": 2.855
     },
     {
       "player_id": 391,
@@ -3733,7 +3733,7 @@
       "team_short": "MCI",
       "position": "DEF",
       "now_cost": 56,
-      "projected_points": 3.298
+      "projected_points": 3.316
     },
     {
       "player_id": 392,
@@ -3751,7 +3751,7 @@
       "team_short": "MCI",
       "position": "DEF",
       "now_cost": 55,
-      "projected_points": 2.82
+      "projected_points": 2.839
     },
     {
       "player_id": 394,
@@ -3786,8 +3786,8 @@
       "team_id": 15,
       "team_short": "MCI",
       "position": "MID",
-      "now_cost": 85,
-      "projected_points": 4.046
+      "now_cost": 84,
+      "projected_points": 4.013
     },
     {
       "player_id": 398,
@@ -3796,7 +3796,7 @@
       "team_short": "MCI",
       "position": "MID",
       "now_cost": 70,
-      "projected_points": 3.345
+      "projected_points": 3.341
     },
     {
       "player_id": 399,
@@ -3805,7 +3805,7 @@
       "team_short": "MCI",
       "position": "MID",
       "now_cost": 78,
-      "projected_points": 3.023
+      "projected_points": 3.019
     },
     {
       "player_id": 400,
@@ -3823,7 +3823,7 @@
       "team_short": "TOT",
       "position": "FWD",
       "now_cost": 70,
-      "projected_points": 2.236
+      "projected_points": 2.237
     },
     {
       "player_id": 402,
@@ -3841,7 +3841,7 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 65,
-      "projected_points": 1.735
+      "projected_points": 1.733
     },
     {
       "player_id": 404,
@@ -3859,7 +3859,7 @@
       "team_short": "NEW",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.018
+      "projected_points": 2.014
     },
     {
       "player_id": 406,
@@ -3913,7 +3913,7 @@
       "team_short": "MCI",
       "position": "FWD",
       "now_cost": 155,
-      "projected_points": 5.881
+      "projected_points": 5.947
     },
     {
       "player_id": 412,
@@ -3922,7 +3922,7 @@
       "team_short": "MUN",
       "position": "GK",
       "now_cost": 50,
-      "projected_points": 3.392
+      "projected_points": 3.414
     },
     {
       "player_id": 413,
@@ -3966,8 +3966,8 @@
       "team_id": 16,
       "team_short": "MUN",
       "position": "DEF",
-      "now_cost": 50,
-      "projected_points": 2.303
+      "now_cost": 49,
+      "projected_points": 2.313
     },
     {
       "player_id": 418,
@@ -3976,7 +3976,7 @@
       "team_short": "MUN",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 2.801
+      "projected_points": 2.817
     },
     {
       "player_id": 419,
@@ -3985,7 +3985,7 @@
       "team_short": "MUN",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 1.627
+      "projected_points": 1.638
     },
     {
       "player_id": 420,
@@ -4003,7 +4003,7 @@
       "team_short": "MUN",
       "position": "DEF",
       "now_cost": 44,
-      "projected_points": 1.533
+      "projected_points": 1.543
     },
     {
       "player_id": 422,
@@ -4012,7 +4012,7 @@
       "team_short": "MUN",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 1.912
+      "projected_points": 1.922
     },
     {
       "player_id": 423,
@@ -4021,7 +4021,7 @@
       "team_short": "MUN",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.532
+      "projected_points": 2.548
     },
     {
       "player_id": 424,
@@ -4048,7 +4048,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 120,
-      "projected_points": 5.509
+      "projected_points": 5.505
     },
     {
       "player_id": 427,
@@ -4057,7 +4057,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 79,
-      "projected_points": 4.758
+      "projected_points": 4.754
     },
     {
       "player_id": 428,
@@ -4066,7 +4066,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 79,
-      "projected_points": 3.804
+      "projected_points": 3.8
     },
     {
       "player_id": 429,
@@ -4075,7 +4075,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 70,
-      "projected_points": 3.6
+      "projected_points": 3.597
     },
     {
       "player_id": 430,
@@ -4102,7 +4102,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.452
+      "projected_points": 2.45
     },
     {
       "player_id": 433,
@@ -4219,7 +4219,7 @@
       "team_short": "NEW",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 2.726
+      "projected_points": 2.744
     },
     {
       "player_id": 446,
@@ -4237,7 +4237,7 @@
       "team_short": "NEW",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 2.744
+      "projected_points": 2.763
     },
     {
       "player_id": 448,
@@ -4255,7 +4255,7 @@
       "team_short": "NEW",
       "position": "DEF",
       "now_cost": 51,
-      "projected_points": 3.03
+      "projected_points": 3.048
     },
     {
       "player_id": 450,
@@ -4291,7 +4291,7 @@
       "team_short": "NEW",
       "position": "MID",
       "now_cost": 60,
-      "projected_points": 3.328
+      "projected_points": 3.323
     },
     {
       "player_id": 454,
@@ -4300,7 +4300,7 @@
       "team_short": "NEW",
       "position": "MID",
       "now_cost": 61,
-      "projected_points": 3.323
+      "projected_points": 3.318
     },
     {
       "player_id": 455,
@@ -4309,7 +4309,7 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 54,
-      "projected_points": 2.834
+      "projected_points": 2.83
     },
     {
       "player_id": 456,
@@ -4345,7 +4345,7 @@
       "team_short": "NEW",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.586
+      "projected_points": 2.582
     },
     {
       "player_id": 460,
@@ -4354,7 +4354,7 @@
       "team_short": "NEW",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 2.261
+      "projected_points": 2.257
     },
     {
       "player_id": 461,
@@ -4371,7 +4371,7 @@
       "team_id": 17,
       "team_short": "NEW",
       "position": "MID",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected_points": 1.343
     },
     {
@@ -4389,8 +4389,8 @@
       "team_id": 17,
       "team_short": "NEW",
       "position": "FWD",
-      "now_cost": 61,
-      "projected_points": 3.535
+      "now_cost": 62,
+      "projected_points": 3.525
     },
     {
       "player_id": 465,
@@ -4417,7 +4417,7 @@
       "team_short": "NFO",
       "position": "GK",
       "now_cost": 50,
-      "projected_points": 3.035
+      "projected_points": 3.06
     },
     {
       "player_id": 468,
@@ -4435,7 +4435,7 @@
       "team_short": "NFO",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 2.798
+      "projected_points": 2.846
     },
     {
       "player_id": 470,
@@ -4453,7 +4453,7 @@
       "team_short": "NFO",
       "position": "DEF",
       "now_cost": 55,
-      "projected_points": 3.047
+      "projected_points": 3.065
     },
     {
       "player_id": 472,
@@ -4462,7 +4462,7 @@
       "team_short": "NFO",
       "position": "DEF",
       "now_cost": 55,
-      "projected_points": 2.855
+      "projected_points": 2.932
     },
     {
       "player_id": 473,
@@ -4471,7 +4471,7 @@
       "team_short": "NFO",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.366
+      "projected_points": 2.381
     },
     {
       "player_id": 474,
@@ -4480,7 +4480,7 @@
       "team_short": "NFO",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.697
+      "projected_points": 2.73
     },
     {
       "player_id": 475,
@@ -4534,7 +4534,7 @@
       "team_short": "NFO",
       "position": "MID",
       "now_cost": 79,
-      "projected_points": 3.44
+      "projected_points": 3.435
     },
     {
       "player_id": 481,
@@ -4543,7 +4543,7 @@
       "team_short": "MCI",
       "position": "MID",
       "now_cost": 64,
-      "projected_points": 2.787
+      "projected_points": 2.783
     },
     {
       "player_id": 482,
@@ -4561,7 +4561,7 @@
       "team_short": "NFO",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.529
+      "projected_points": 2.525
     },
     {
       "player_id": 484,
@@ -4588,7 +4588,7 @@
       "team_short": "NFO",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 3.196
+      "projected_points": 3.192
     },
     {
       "player_id": 487,
@@ -4596,7 +4596,7 @@
       "team_id": 18,
       "team_short": "NFO",
       "position": "MID",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected_points": 0.353
     },
     {
@@ -4606,7 +4606,7 @@
       "team_short": "NFO",
       "position": "MID",
       "now_cost": 49,
-      "projected_points": 1.442
+      "projected_points": 1.439
     },
     {
       "player_id": 489,
@@ -4633,7 +4633,7 @@
       "team_short": "NFO",
       "position": "FWD",
       "now_cost": 59,
-      "projected_points": 2.309
+      "projected_points": 2.3
     },
     {
       "player_id": 492,
@@ -4642,7 +4642,7 @@
       "team_short": "COV",
       "position": "FWD",
       "now_cost": 55,
-      "projected_points": 2.181
+      "projected_points": 2.215
     },
     {
       "player_id": 493,
@@ -4678,7 +4678,7 @@
       "team_short": "TOT",
       "position": "GK",
       "now_cost": 45,
-      "projected_points": 2.892
+      "projected_points": 2.917
     },
     {
       "player_id": 497,
@@ -4696,7 +4696,7 @@
       "team_short": "TOT",
       "position": "DEF",
       "now_cost": 59,
-      "projected_points": 1.774
+      "projected_points": 1.784
     },
     {
       "player_id": 499,
@@ -4705,7 +4705,7 @@
       "team_short": "TOT",
       "position": "DEF",
       "now_cost": 55,
-      "projected_points": 2.19
+      "projected_points": 2.155
     },
     {
       "player_id": 500,
@@ -4723,7 +4723,7 @@
       "team_short": "SUN",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 1.175
+      "projected_points": 1.185
     },
     {
       "player_id": 502,
@@ -4732,7 +4732,7 @@
       "team_short": "TOT",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 1.931
+      "projected_points": 1.946
     },
     {
       "player_id": 503,
@@ -4741,7 +4741,7 @@
       "team_short": "TOT",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 2.014
+      "projected_points": 2.157
     },
     {
       "player_id": 504,
@@ -4750,7 +4750,7 @@
       "team_short": "BHA",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 2.596
+      "projected_points": 2.612
     },
     {
       "player_id": 505,
@@ -4768,7 +4768,7 @@
       "team_short": "TOT",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 1.435
+      "projected_points": 1.445
     },
     {
       "player_id": 507,
@@ -4840,7 +4840,7 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 59,
-      "projected_points": 2.403
+      "projected_points": 2.398
     },
     {
       "player_id": 515,
@@ -4858,7 +4858,7 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.503
+      "projected_points": 2.504
     },
     {
       "player_id": 517,
@@ -4885,7 +4885,7 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 54,
-      "projected_points": 1.79
+      "projected_points": 1.787
     },
     {
       "player_id": 520,
@@ -4912,7 +4912,7 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 1.803
+      "projected_points": 1.799
     },
     {
       "player_id": 523,
@@ -4939,7 +4939,7 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 59,
-      "projected_points": 2.072
+      "projected_points": 2.069
     },
     {
       "player_id": 526,
@@ -4975,7 +4975,7 @@
       "team_short": "SUN",
       "position": "GK",
       "now_cost": 50,
-      "projected_points": 2.491
+      "projected_points": 2.516
     },
     {
       "player_id": 530,
@@ -5002,7 +5002,7 @@
       "team_short": "SUN",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 2.256
+      "projected_points": 2.275
     },
     {
       "player_id": 533,
@@ -5011,7 +5011,7 @@
       "team_short": "SUN",
       "position": "DEF",
       "now_cost": 55,
-      "projected_points": 2.35
+      "projected_points": 2.366
     },
     {
       "player_id": 534,
@@ -5020,7 +5020,7 @@
       "team_short": "SUN",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.102
+      "projected_points": 2.118
     },
     {
       "player_id": 535,
@@ -5038,7 +5038,7 @@
       "team_short": "SUN",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.212
+      "projected_points": 2.231
     },
     {
       "player_id": 537,
@@ -5065,7 +5065,7 @@
       "team_short": "SUN",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 1.068
+      "projected_points": 1.079
     },
     {
       "player_id": 540,
@@ -5083,7 +5083,7 @@
       "team_short": "SUN",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.202
+      "projected_points": 2.221
     },
     {
       "player_id": 542,
@@ -5092,7 +5092,7 @@
       "team_short": "SUN",
       "position": "MID",
       "now_cost": 59,
-      "projected_points": 2.757
+      "projected_points": 2.752
     },
     {
       "player_id": 543,
@@ -5110,7 +5110,7 @@
       "team_short": "SUN",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 3.156
+      "projected_points": 3.151
     },
     {
       "player_id": 545,
@@ -5173,7 +5173,7 @@
       "team_short": "SUN",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 2.229
+      "projected_points": 2.225
     },
     {
       "player_id": 552,
@@ -5182,7 +5182,7 @@
       "team_short": "SUN",
       "position": "FWD",
       "now_cost": 59,
-      "projected_points": 2.237
+      "projected_points": 2.227
     },
     {
       "player_id": 553,
@@ -5227,7 +5227,7 @@
       "team_short": "ARS",
       "position": "MID",
       "now_cost": 65,
-      "projected_points": 3.758
+      "projected_points": 3.756
     },
     {
       "player_id": 558,
@@ -5236,7 +5236,7 @@
       "team_short": "NFO",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 2.186
+      "projected_points": 2.182
     },
     {
       "player_id": 559,
@@ -5244,7 +5244,7 @@
       "team_id": 17,
       "team_short": "NEW",
       "position": "MID",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected_points": 0.797
     },
     {
@@ -5272,7 +5272,7 @@
       "team_short": "IPS",
       "position": "MID",
       "now_cost": 54,
-      "projected_points": 2.371
+      "projected_points": 2.366
     },
     {
       "player_id": 563,
@@ -5281,7 +5281,7 @@
       "team_short": "HUL",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 0.876
+      "projected_points": 0.967
     },
     {
       "player_id": 564,
@@ -5290,7 +5290,7 @@
       "team_short": "IPS",
       "position": "GK",
       "now_cost": 45,
-      "projected_points": 2.465
+      "projected_points": 2.49
     },
     {
       "player_id": 565,
@@ -5299,7 +5299,7 @@
       "team_short": "BRE",
       "position": "MID",
       "now_cost": 57,
-      "projected_points": 3.054
+      "projected_points": 3.05
     },
     {
       "player_id": 566,
@@ -5308,7 +5308,7 @@
       "team_short": "BOU",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 2.453
+      "projected_points": 2.472
     },
     {
       "player_id": 567,
@@ -5317,7 +5317,7 @@
       "team_short": "NEW",
       "position": "GK",
       "now_cost": 50,
-      "projected_points": 2.942
+      "projected_points": 2.967
     },
     {
       "player_id": 568,
@@ -5335,7 +5335,7 @@
       "team_short": "FUL",
       "position": "FWD",
       "now_cost": 60,
-      "projected_points": 2.916
+      "projected_points": 2.906
     },
     {
       "player_id": 570,
@@ -5344,7 +5344,7 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.406
+      "projected_points": 2.401
     },
     {
       "player_id": 571,
@@ -5362,7 +5362,7 @@
       "team_short": "HUL",
       "position": "GK",
       "now_cost": 46,
-      "projected_points": 2.86
+      "projected_points": 3.043
     },
     {
       "player_id": 573,
@@ -5380,7 +5380,7 @@
       "team_short": "HUL",
       "position": "MID",
       "now_cost": 49,
-      "projected_points": 0.152
+      "projected_points": 0.379
     },
     {
       "player_id": 575,
@@ -5389,7 +5389,7 @@
       "team_short": "COV",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 1.826
+      "projected_points": 1.822
     },
     {
       "player_id": 576,
@@ -5398,7 +5398,7 @@
       "team_short": "HUL",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 1.833
+      "projected_points": 1.935
     },
     {
       "player_id": 577,
@@ -5407,7 +5407,7 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 1.328
+      "projected_points": 1.338
     },
     {
       "player_id": 578,
@@ -5425,7 +5425,7 @@
       "team_short": "LIV",
       "position": "DEF",
       "now_cost": 54,
-      "projected_points": 2.045
+      "projected_points": 2.055
     },
     {
       "player_id": 580,
@@ -5434,7 +5434,7 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 1.841
+      "projected_points": 1.795
     },
     {
       "player_id": 581,
@@ -5479,7 +5479,7 @@
       "team_short": "HUL",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 1.056
+      "projected_points": 1.065
     },
     {
       "player_id": 586,
@@ -5488,7 +5488,7 @@
       "team_short": "HUL",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 2.607
+      "projected_points": 2.484
     },
     {
       "player_id": 587,
@@ -5506,7 +5506,7 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 2.396
+      "projected_points": 2.412
     },
     {
       "player_id": 589,
@@ -5515,7 +5515,7 @@
       "team_short": "HUL",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 0.966
+      "projected_points": 1.843
     },
     {
       "player_id": 590,
@@ -5533,7 +5533,7 @@
       "team_short": "IPS",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.983
+      "projected_points": 2.979
     },
     {
       "player_id": 592,
@@ -5551,7 +5551,7 @@
       "team_short": "NEW",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.729
+      "projected_points": 2.747
     },
     {
       "player_id": 594,
@@ -5578,7 +5578,7 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 0.726
+      "projected_points": 0.821
     },
     {
       "player_id": 597,
@@ -5587,7 +5587,7 @@
       "team_short": "AVL",
       "position": "GK",
       "now_cost": 50,
-      "projected_points": 1.855
+      "projected_points": 2.397
     },
     {
       "player_id": 598,
@@ -5596,7 +5596,7 @@
       "team_short": "LEE",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 1.752
+      "projected_points": 1.763
     },
     {
       "player_id": 599,
@@ -5659,7 +5659,7 @@
       "team_short": "BHA",
       "position": "MID",
       "now_cost": 45,
-      "projected_points": 2.685
+      "projected_points": 2.681
     },
     {
       "player_id": 606,
@@ -5713,7 +5713,7 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 1.048
+      "projected_points": 1.005
     },
     {
       "player_id": 612,
@@ -5767,7 +5767,7 @@
       "team_short": "HUL",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 1.04
+      "projected_points": 1.042
     },
     {
       "player_id": 618,
@@ -5785,7 +5785,7 @@
       "team_short": "IPS",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 1.942
+      "projected_points": 1.939
     },
     {
       "player_id": 620,
@@ -5929,7 +5929,7 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 1.05
+      "projected_points": 1.021
     },
     {
       "player_id": 636,
@@ -5956,7 +5956,7 @@
       "team_short": "HUL",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 0.15
+      "projected_points": 0.936
     },
     {
       "player_id": 639,
@@ -5992,7 +5992,7 @@
       "team_short": "HUL",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 0.152
+      "projected_points": 1.381
     },
     {
       "player_id": 643,
@@ -6010,7 +6010,7 @@
       "team_short": "CRY",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 2.319
+      "projected_points": 2.316
     },
     {
       "player_id": 645,
@@ -6028,7 +6028,7 @@
       "team_short": "SUN",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 1.127
+      "projected_points": 1.116
     },
     {
       "player_id": 647,
@@ -6083,6 +6083,15 @@
       "position": "MID",
       "now_cost": 55,
       "projected_points": 0.0
+    },
+    {
+      "player_id": 653,
+      "web_name": "Samba",
+      "team_id": 15,
+      "team_short": "MCI",
+      "position": "MID",
+      "now_cost": 45,
+      "projected_points": 0.15
     }
   ]
 }

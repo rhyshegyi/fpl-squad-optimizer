@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-05T17:27:26.207946+00:00",
+  "generated_at": "2026-09-06T11:10:10.035768+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-09-05T17:24:24.561123+00:00",
+    "last_fetch": "2026-09-06T11:06:56.960933+00:00",
     "current_gw": {
       "id": 3,
       "name": "Gameweek 3"
@@ -13,14 +13,14 @@
       "deadline_time": "2026-09-12T12:30:00Z"
     },
     "data_health": {
-      "players_tracked": 644,
-      "players_disagreeing": 21,
+      "players_tracked": 652,
+      "players_disagreeing": 0,
       "latest_gw_on_file": 3,
-      "latest_result": "2026-09-05T14:00:00+00:00",
+      "latest_result": "2026-09-05T16:30:00+00:00",
       "gameweek_in_progress": {
         "id": 3,
         "name": "Gameweek 3",
-        "matches_played": 7,
+        "matches_played": 8,
         "matches_started": 8,
         "matches_total": 10
       },
