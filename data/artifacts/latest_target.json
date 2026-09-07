@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-07T12:49:44.247060+00:00",
+  "generated_at": "2026-09-07T19:17:33.326133+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "pipeline_state": {
-    "last_fetch": "2026-09-07T12:47:01.631425+00:00",
+    "last_fetch": "2026-09-07T19:15:03.746411+00:00",
     "current_gw": {
       "id": 3,
       "name": "Gameweek 3"
@@ -19,10 +19,7 @@
       "latest_gw_on_file": 3,
       "latest_result": "2026-09-06T15:30:00+00:00",
       "gameweek_in_progress": null,
-      "bonus_pending": {
-        "id": 3,
-        "name": "Gameweek 3"
-      }
+      "bonus_pending": null
     }
   },
   "squad": {
