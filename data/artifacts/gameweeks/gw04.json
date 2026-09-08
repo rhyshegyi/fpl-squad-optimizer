@@ -2,10 +2,10 @@
   "gw": 4,
   "name": "Gameweek 4",
   "deadline": "2026-09-12T12:30:00Z",
-  "frozen_at": "2026-09-07T19:17:33.342858+00:00",
+  "frozen_at": "2026-09-08T11:31:51.445581+00:00",
   "scored_at": null,
   "squad": {
-    "total_cost": 998,
+    "total_cost": 1000,
     "projected_points": 55.93,
     "formation": "3-4-3",
     "picks": [
@@ -63,7 +63,7 @@
         "team_id": 5,
         "team_short": "BHA",
         "position": "DEF",
-        "now_cost": 47,
+        "now_cost": 48,
         "projected_points": 3.147,
         "is_starter": true,
         "is_captain": false,
@@ -159,7 +159,7 @@
         "team_id": 14,
         "team_short": "LIV",
         "position": "FWD",
-        "now_cost": 90,
+        "now_cost": 91,
         "projected_points": 5.25,
         "is_starter": true,
         "is_captain": false,
@@ -517,7 +517,7 @@
       "web_name": "Buend\u00eda",
       "team_short": "AVL",
       "position": "MID",
-      "now_cost": 60,
+      "now_cost": 59,
       "projected": 2.672
     },
     {
@@ -1109,7 +1109,7 @@
       "web_name": "De Cuyper",
       "team_short": "BHA",
       "position": "DEF",
-      "now_cost": 47,
+      "now_cost": 48,
       "projected": 3.147
     },
     {
@@ -2669,7 +2669,7 @@
       "web_name": "Matusiwa",
       "team_short": "IPS",
       "position": "MID",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected": 0.0
     },
     {
@@ -3221,7 +3221,7 @@
       "web_name": "Isak",
       "team_short": "LIV",
       "position": "FWD",
-      "now_cost": 90,
+      "now_cost": 91,
       "projected": 5.25
     },
     {
@@ -3325,7 +3325,7 @@
       "web_name": "A\u00eft-Nouri",
       "team_short": "MCI",
       "position": "DEF",
-      "now_cost": 54,
+      "now_cost": 53,
       "projected": 0.152
     },
     {
@@ -3509,7 +3509,7 @@
       "web_name": "Dorgu",
       "team_short": "MUN",
       "position": "MID",
-      "now_cost": 59,
+      "now_cost": 58,
       "projected": 1.374
     },
     {
@@ -3533,7 +3533,7 @@
       "web_name": "Maguire",
       "team_short": "MUN",
       "position": "DEF",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected": 2.157
     },
     {
@@ -3669,7 +3669,7 @@
       "web_name": "Lacey",
       "team_short": "MUN",
       "position": "MID",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected": 0.495
     },
     {
@@ -4645,8 +4645,8 @@
       "web_name": "Tzolis",
       "team_short": "ARS",
       "position": "MID",
-      "now_cost": 65,
-      "projected": 4.017
+      "now_cost": 64,
+      "projected": 3.81
     },
     {
       "player_id": 558,

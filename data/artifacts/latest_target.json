@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-07T19:17:33.326133+00:00",
+  "generated_at": "2026-09-08T11:31:51.428305+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "pipeline_state": {
-    "last_fetch": "2026-09-07T19:15:03.746411+00:00",
+    "last_fetch": "2026-09-08T11:29:20.145479+00:00",
     "current_gw": {
       "id": 3,
       "name": "Gameweek 3"
@@ -23,8 +23,8 @@
     }
   },
   "squad": {
-    "total_cost": 999,
-    "projected_points": 53.94,
+    "total_cost": 1000,
+    "projected_points": 53.97,
     "formation": "3-4-3",
     "picks": [
       {
@@ -81,7 +81,7 @@
         "team_id": 5,
         "team_short": "BHA",
         "position": "DEF",
-        "now_cost": 47,
+        "now_cost": 48,
         "projected_points": 3.208,
         "is_starter": true,
         "is_captain": false,
@@ -136,18 +136,6 @@
         "is_vice": false
       },
       {
-        "player_id": 279,
-        "web_name": "Ajayi",
-        "team_id": 11,
-        "team_short": "HUL",
-        "position": "DEF",
-        "now_cost": 41,
-        "projected_points": 2.826,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
         "player_id": 368,
         "web_name": "Szoboszlai",
         "team_id": 14,
@@ -165,8 +153,8 @@
         "team_id": 14,
         "team_short": "LIV",
         "position": "FWD",
-        "now_cost": 90,
-        "projected_points": 4.988,
+        "now_cost": 91,
+        "projected_points": 5.016,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -191,6 +179,18 @@
         "position": "GK",
         "now_cost": 46,
         "projected_points": 3.033,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 586,
+        "web_name": "Mendy",
+        "team_id": 11,
+        "team_short": "HUL",
+        "position": "DEF",
+        "now_cost": 40,
+        "projected_points": 2.717,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -576,7 +576,7 @@
       "team_id": 2,
       "team_short": "AVL",
       "position": "MID",
-      "now_cost": 60,
+      "now_cost": 59,
       "projected_points": 2.827
     },
     {
@@ -1242,7 +1242,7 @@
       "team_id": 5,
       "team_short": "BHA",
       "position": "DEF",
-      "now_cost": 47,
+      "now_cost": 48,
       "projected_points": 3.208
     },
     {
@@ -2997,7 +2997,7 @@
       "team_id": 12,
       "team_short": "IPS",
       "position": "MID",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected_points": 0.0
     },
     {
@@ -3618,8 +3618,8 @@
       "team_id": 14,
       "team_short": "LIV",
       "position": "FWD",
-      "now_cost": 90,
-      "projected_points": 4.988
+      "now_cost": 91,
+      "projected_points": 5.016
     },
     {
       "player_id": 380,
@@ -3735,7 +3735,7 @@
       "team_id": 15,
       "team_short": "MCI",
       "position": "DEF",
-      "now_cost": 54,
+      "now_cost": 53,
       "projected_points": 0.152
     },
     {
@@ -3942,7 +3942,7 @@
       "team_id": 16,
       "team_short": "MUN",
       "position": "MID",
-      "now_cost": 59,
+      "now_cost": 58,
       "projected_points": 1.418
     },
     {
@@ -3969,7 +3969,7 @@
       "team_id": 16,
       "team_short": "MUN",
       "position": "DEF",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected_points": 2.727
     },
     {
@@ -4122,7 +4122,7 @@
       "team_id": 16,
       "team_short": "MUN",
       "position": "MID",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected_points": 0.497
     },
     {
@@ -5220,8 +5220,8 @@
       "team_id": 1,
       "team_short": "ARS",
       "position": "MID",
-      "now_cost": 65,
-      "projected_points": 3.988
+      "now_cost": 64,
+      "projected_points": 3.852
     },
     {
       "player_id": 558,
