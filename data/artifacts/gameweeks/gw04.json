@@ -2,7 +2,7 @@
   "gw": 4,
   "name": "Gameweek 4",
   "deadline": "2026-09-12T12:30:00Z",
-  "frozen_at": "2026-09-08T18:50:47.780520+00:00",
+  "frozen_at": "2026-09-09T11:38:35.965908+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -237,7 +237,7 @@
       "web_name": "Saliba",
       "team_short": "ARS",
       "position": "DEF",
-      "now_cost": 60,
+      "now_cost": 59,
       "projected": 0.0
     },
     {
@@ -997,7 +997,7 @@
       "web_name": "Henderson",
       "team_short": "CHE",
       "position": "MID",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected": 0.114
     },
     {
@@ -2237,7 +2237,7 @@
       "web_name": "Tete",
       "team_short": "FUL",
       "position": "DEF",
-      "now_cost": 45,
+      "now_cost": 44,
       "projected": 0.15
     },
     {
@@ -2269,7 +2269,7 @@
       "web_name": "Wilson",
       "team_short": "LEE",
       "position": "MID",
-      "now_cost": 64,
+      "now_cost": 63,
       "projected": 2.29
     },
     {
@@ -2502,7 +2502,7 @@
       "team_short": "HUL",
       "position": "MID",
       "now_cost": 45,
-      "projected": 0.677
+      "projected": 0.902
     },
     {
       "player_id": 290,
@@ -2542,7 +2542,7 @@
       "team_short": "HUL",
       "position": "MID",
       "now_cost": 45,
-      "projected": 0.0
+      "projected": 0.15
     },
     {
       "player_id": 295,
@@ -4301,7 +4301,7 @@
       "web_name": "Tel",
       "team_short": "TOT",
       "position": "MID",
-      "now_cost": 59,
+      "now_cost": 58,
       "projected": 2.471
     },
     {
@@ -4309,7 +4309,7 @@
       "web_name": "Maddison",
       "team_short": "TOT",
       "position": "MID",
-      "now_cost": 64,
+      "now_cost": 63,
       "projected": 1.059
     },
     {
@@ -5134,7 +5134,7 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 60,
-      "projected": 0.152
+      "projected": 0.0
     },
     {
       "player_id": 619,
@@ -5246,7 +5246,7 @@
       "team_short": "HUL",
       "position": "FWD",
       "now_cost": 50,
-      "projected": 0.152
+      "projected": 0.0
     },
     {
       "player_id": 633,
