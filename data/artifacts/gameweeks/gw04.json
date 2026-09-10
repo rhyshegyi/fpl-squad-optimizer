@@ -2,7 +2,7 @@
   "gw": 4,
   "name": "Gameweek 4",
   "deadline": "2026-09-12T12:30:00Z",
-  "frozen_at": "2026-09-09T18:46:12.092782+00:00",
+  "frozen_at": "2026-09-10T11:35:22.899220+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -1181,7 +1181,7 @@
       "web_name": "Gro\u00df",
       "team_short": "BHA",
       "position": "MID",
-      "now_cost": 55,
+      "now_cost": 56,
       "projected": 3.503
     },
     {
@@ -1941,8 +1941,8 @@
       "web_name": "J.Rak-Sakyi",
       "team_short": "CRY",
       "position": "MID",
-      "now_cost": 50,
-      "projected": 0.152
+      "now_cost": 49,
+      "projected": 0.0
     },
     {
       "player_id": 220,
@@ -3565,8 +3565,8 @@
       "web_name": "Mazraoui",
       "team_short": "MUN",
       "position": "DEF",
-      "now_cost": 45,
-      "projected": 1.308
+      "now_cost": 44,
+      "projected": 1.254
     },
     {
       "player_id": 423,
@@ -3661,7 +3661,7 @@
       "web_name": "J.Fletcher",
       "team_short": "MUN",
       "position": "MID",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected": 0.152
     },
     {
@@ -3877,7 +3877,7 @@
       "web_name": "Tour\u00e9",
       "team_short": "NEW",
       "position": "MID",
-      "now_cost": 59,
+      "now_cost": 58,
       "projected": 0.407
     },
     {
@@ -4389,7 +4389,7 @@
       "web_name": "Fernandes",
       "team_short": "TOT",
       "position": "MID",
-      "now_cost": 59,
+      "now_cost": 58,
       "projected": 2.148
     },
     {
@@ -4549,7 +4549,7 @@
       "web_name": "Sadiki",
       "team_short": "SUN",
       "position": "MID",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected": 1.818
     },
     {
@@ -5406,7 +5406,7 @@
       "team_short": "BHA",
       "position": "MID",
       "now_cost": 55,
-      "projected": 0.0
+      "projected": 0.076
     },
     {
       "player_id": 653,

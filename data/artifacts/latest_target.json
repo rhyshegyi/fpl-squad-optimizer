@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-09T18:46:12.076752+00:00",
+  "generated_at": "2026-09-10T11:35:22.882120+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "pipeline_state": {
-    "last_fetch": "2026-09-09T18:42:46.921649+00:00",
+    "last_fetch": "2026-09-10T11:31:47.515275+00:00",
     "current_gw": {
       "id": 3,
       "name": "Gameweek 3"
@@ -1323,7 +1323,7 @@
       "team_id": 5,
       "team_short": "BHA",
       "position": "MID",
-      "now_cost": 55,
+      "now_cost": 56,
       "projected_points": 3.434
     },
     {
@@ -2178,8 +2178,8 @@
       "team_id": 8,
       "team_short": "CRY",
       "position": "MID",
-      "now_cost": 50,
-      "projected_points": 0.152
+      "now_cost": 49,
+      "projected_points": 0.0
     },
     {
       "player_id": 220,
@@ -4005,8 +4005,8 @@
       "team_id": 16,
       "team_short": "MUN",
       "position": "DEF",
-      "now_cost": 45,
-      "projected_points": 1.672
+      "now_cost": 44,
+      "projected_points": 1.636
     },
     {
       "player_id": 423,
@@ -4113,7 +4113,7 @@
       "team_id": 16,
       "team_short": "MUN",
       "position": "MID",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected_points": 0.152
     },
     {
@@ -4356,7 +4356,7 @@
       "team_id": 17,
       "team_short": "NEW",
       "position": "MID",
-      "now_cost": 59,
+      "now_cost": 58,
       "projected_points": 0.406
     },
     {
@@ -4932,7 +4932,7 @@
       "team_id": 19,
       "team_short": "TOT",
       "position": "MID",
-      "now_cost": 59,
+      "now_cost": 58,
       "projected_points": 2.171
     },
     {
@@ -5112,8 +5112,8 @@
       "team_id": 20,
       "team_short": "SUN",
       "position": "MID",
-      "now_cost": 50,
-      "projected_points": 2.485
+      "now_cost": 49,
+      "projected_points": 2.473
     },
     {
       "player_id": 546,
@@ -6076,7 +6076,7 @@
       "team_short": "BHA",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 0.0
+      "projected_points": 0.076
     },
     {
       "player_id": 653,
