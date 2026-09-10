@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-10T11:35:22.882120+00:00",
+  "generated_at": "2026-09-10T18:37:30.973557+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "pipeline_state": {
-    "last_fetch": "2026-09-10T11:31:47.515275+00:00",
+    "last_fetch": "2026-09-10T18:33:50.923518+00:00",
     "current_gw": {
       "id": 3,
       "name": "Gameweek 3"
@@ -1423,7 +1423,7 @@
       "team_short": "BHA",
       "position": "MID",
       "now_cost": 49,
-      "projected_points": 0.687
+      "projected_points": 0.0
     },
     {
       "player_id": 136,
@@ -1891,7 +1891,7 @@
       "team_short": "COV",
       "position": "MID",
       "now_cost": 49,
-      "projected_points": 0.152
+      "projected_points": 0.0
     },
     {
       "player_id": 188,
@@ -2773,7 +2773,7 @@
       "team_short": "HUL",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 0.568
+      "projected_points": 0.758
     },
     {
       "player_id": 286,
@@ -4204,7 +4204,7 @@
       "team_short": "NEW",
       "position": "GK",
       "now_cost": 45,
-      "projected_points": 0.15
+      "projected_points": 0.075
     },
     {
       "player_id": 445,
@@ -6095,6 +6095,15 @@
       "position": "MID",
       "now_cost": 45,
       "projected_points": 0.15
+    },
+    {
+      "player_id": 655,
+      "web_name": "Gboho",
+      "team_id": 7,
+      "team_short": "COV",
+      "position": "MID",
+      "now_cost": 55,
+      "projected_points": 0.152
     }
   ]
 }

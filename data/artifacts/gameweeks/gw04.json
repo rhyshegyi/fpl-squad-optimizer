@@ -2,7 +2,7 @@
   "gw": 4,
   "name": "Gameweek 4",
   "deadline": "2026-09-12T12:30:00Z",
-  "frozen_at": "2026-09-10T11:35:22.899220+00:00",
+  "frozen_at": "2026-09-10T18:37:30.990312+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -1270,7 +1270,7 @@
       "team_short": "BHA",
       "position": "MID",
       "now_cost": 49,
-      "projected": 0.694
+      "projected": 0.0
     },
     {
       "player_id": 136,
@@ -1686,7 +1686,7 @@
       "team_short": "COV",
       "position": "MID",
       "now_cost": 49,
-      "projected": 0.152
+      "projected": 0.0
     },
     {
       "player_id": 188,
@@ -2470,7 +2470,7 @@
       "team_short": "HUL",
       "position": "DEF",
       "now_cost": 40,
-      "projected": 0.552
+      "projected": 0.736
     },
     {
       "player_id": 286,
@@ -3742,7 +3742,7 @@
       "team_short": "NEW",
       "position": "GK",
       "now_cost": 45,
-      "projected": 0.15
+      "projected": 0.075
     },
     {
       "player_id": 445,
@@ -5423,6 +5423,14 @@
       "position": "MID",
       "now_cost": 45,
       "projected": 0.15
+    },
+    {
+      "player_id": 655,
+      "web_name": "Gboho",
+      "team_short": "COV",
+      "position": "MID",
+      "now_cost": 55,
+      "projected": 0.152
     }
   ]
 }
