@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T18:37:30.997998+00:00",
+  "generated_at": "2026-09-11T11:35:49.444772+00:00",
   "totals": {
     "gameweeks_scored": 0,
     "total_points": null,
@@ -34,7 +34,7 @@
       "bonus": 5,
       "ppg": 9.33,
       "value": 3.89,
-      "selected_by": 14.0,
+      "selected_by": 13.6,
       "in_target_squad": false
     },
     {
@@ -52,7 +52,7 @@
       "bonus": 3,
       "ppg": 9.0,
       "value": 2.25,
-      "selected_by": 45.2,
+      "selected_by": 44.6,
       "in_target_squad": false
     },
     {
@@ -70,7 +70,7 @@
       "bonus": 6,
       "ppg": 8.67,
       "value": 5.65,
-      "selected_by": 9.5,
+      "selected_by": 9.6,
       "in_target_squad": true
     },
     {
@@ -88,7 +88,7 @@
       "bonus": 4,
       "ppg": 8.33,
       "value": 3.21,
-      "selected_by": 30.0,
+      "selected_by": 29.8,
       "in_target_squad": false
     },
     {
@@ -106,7 +106,7 @@
       "bonus": 2,
       "ppg": 8.33,
       "value": 6.1,
-      "selected_by": 11.5,
+      "selected_by": 11.8,
       "in_target_squad": false
     },
     {
@@ -115,7 +115,7 @@
       "web_name": "Mendy",
       "team_short": "HUL",
       "position": "DEF",
-      "now_cost": 40,
+      "now_cost": 41,
       "points": 24,
       "games": 3,
       "minutes": 191,
@@ -123,9 +123,9 @@
       "assists": 0,
       "bonus": 1,
       "ppg": 8.0,
-      "value": 6.0,
-      "selected_by": 7.7,
-      "in_target_squad": true
+      "value": 5.85,
+      "selected_by": 7.9,
+      "in_target_squad": false
     },
     {
       "rank": 7,
@@ -133,7 +133,7 @@
       "web_name": "\u00d8degaard",
       "team_short": "ARS",
       "position": "MID",
-      "now_cost": 66,
+      "now_cost": 67,
       "points": 24,
       "games": 3,
       "minutes": 221,
@@ -141,8 +141,8 @@
       "assists": 0,
       "bonus": 6,
       "ppg": 8.0,
-      "value": 3.64,
-      "selected_by": 15.1,
+      "value": 3.58,
+      "selected_by": 16.0,
       "in_target_squad": true
     },
     {
@@ -151,7 +151,7 @@
       "web_name": "Scott",
       "team_short": "BOU",
       "position": "MID",
-      "now_cost": 60,
+      "now_cost": 61,
       "points": 24,
       "games": 3,
       "minutes": 266,
@@ -159,8 +159,8 @@
       "assists": 2,
       "bonus": 5,
       "ppg": 8.0,
-      "value": 4.0,
-      "selected_by": 4.9,
+      "value": 3.93,
+      "selected_by": 5.1,
       "in_target_squad": false
     },
     {
@@ -196,7 +196,7 @@
       "bonus": 5,
       "ppg": 7.67,
       "value": 2.53,
-      "selected_by": 21.4,
+      "selected_by": 22.0,
       "in_target_squad": true
     },
     {
@@ -215,7 +215,7 @@
       "ppg": 7.67,
       "value": 5.61,
       "selected_by": 6.3,
-      "in_target_squad": true
+      "in_target_squad": false
     },
     {
       "rank": 12,
@@ -232,7 +232,7 @@
       "bonus": 3,
       "ppg": 7.33,
       "value": 4.89,
-      "selected_by": 1.6,
+      "selected_by": 1.7,
       "in_target_squad": false
     },
     {
@@ -241,7 +241,7 @@
       "web_name": "Calafiori",
       "team_short": "ARS",
       "position": "DEF",
-      "now_cost": 57,
+      "now_cost": 58,
       "points": 22,
       "games": 3,
       "minutes": 236,
@@ -249,8 +249,8 @@
       "assists": 2,
       "bonus": 2,
       "ppg": 7.33,
-      "value": 3.86,
-      "selected_by": 48.1,
+      "value": 3.79,
+      "selected_by": 48.4,
       "in_target_squad": false
     },
     {
@@ -286,7 +286,7 @@
       "bonus": 3,
       "ppg": 7.33,
       "value": 3.93,
-      "selected_by": 19.9,
+      "selected_by": 20.0,
       "in_target_squad": false
     },
     {
@@ -304,7 +304,7 @@
       "bonus": 2,
       "ppg": 7.0,
       "value": 4.38,
-      "selected_by": 20.4,
+      "selected_by": 20.9,
       "in_target_squad": true
     },
     {
@@ -313,7 +313,7 @@
       "web_name": "Palmer",
       "team_short": "CHE",
       "position": "MID",
-      "now_cost": 96,
+      "now_cost": 97,
       "points": 21,
       "games": 3,
       "minutes": 262,
@@ -321,8 +321,8 @@
       "assists": 1,
       "bonus": 3,
       "ppg": 7.0,
-      "value": 2.19,
-      "selected_by": 23.6,
+      "value": 2.16,
+      "selected_by": 24.6,
       "in_target_squad": false
     },
     {
@@ -340,7 +340,7 @@
       "bonus": 6,
       "ppg": 7.0,
       "value": 3.5,
-      "selected_by": 3.3,
+      "selected_by": 3.4,
       "in_target_squad": false
     },
     {
@@ -358,7 +358,7 @@
       "bonus": 3,
       "ppg": 7.0,
       "value": 4.2,
-      "selected_by": 1.8,
+      "selected_by": 1.9,
       "in_target_squad": false
     },
     {
@@ -376,7 +376,7 @@
       "bonus": 4,
       "ppg": 7.0,
       "value": 2.73,
-      "selected_by": 72.7,
+      "selected_by": 72.9,
       "in_target_squad": true
     },
     {
@@ -394,7 +394,7 @@
       "bonus": 2,
       "ppg": 7.0,
       "value": 3.5,
-      "selected_by": 11.3,
+      "selected_by": 11.4,
       "in_target_squad": false
     },
     {
@@ -412,7 +412,7 @@
       "bonus": 3,
       "ppg": 7.0,
       "value": 2.66,
-      "selected_by": 25.0,
+      "selected_by": 24.7,
       "in_target_squad": false
     },
     {
@@ -431,7 +431,7 @@
       "ppg": 6.67,
       "value": 5.0,
       "selected_by": 1.4,
-      "in_target_squad": false
+      "in_target_squad": true
     },
     {
       "rank": 24,
@@ -466,7 +466,7 @@
       "bonus": 4,
       "ppg": 6.67,
       "value": 3.33,
-      "selected_by": 18.6,
+      "selected_by": 18.5,
       "in_target_squad": false
     },
     {
@@ -484,7 +484,7 @@
       "bonus": 1,
       "ppg": 6.33,
       "value": 2.5,
-      "selected_by": 30.0,
+      "selected_by": 31.1,
       "in_target_squad": true
     },
     {
@@ -538,7 +538,7 @@
       "bonus": 3,
       "ppg": 6.0,
       "value": 3.16,
-      "selected_by": 13.7,
+      "selected_by": 13.5,
       "in_target_squad": false
     },
     {
@@ -556,9 +556,9 @@
       "bonus": 2,
       "ppg": 6.0,
       "value": 2.95,
-      "selected_by": 11.0,
+      "selected_by": 11.1,
       "in_target_squad": false
     }
   ],
-  "leaders_in_target_top10": 5
+  "leaders_in_target_top10": 4
 }

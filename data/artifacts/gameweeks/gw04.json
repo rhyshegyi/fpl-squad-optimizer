@@ -2,25 +2,13 @@
   "gw": 4,
   "name": "Gameweek 4",
   "deadline": "2026-09-12T12:30:00Z",
-  "frozen_at": "2026-09-10T18:37:30.990312+00:00",
+  "frozen_at": "2026-09-11T11:35:49.437093+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
-    "projected_points": 55.93,
-    "formation": "3-4-3",
+    "projected_points": 56.16,
+    "formation": "3-5-2",
     "picks": [
-      {
-        "player_id": 26,
-        "web_name": "Havertz",
-        "team_id": 1,
-        "team_short": "ARS",
-        "position": "FWD",
-        "now_cost": 75,
-        "projected_points": 4.531,
-        "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
       {
         "player_id": 40,
         "web_name": "Rogers",
@@ -75,7 +63,7 @@
         "team_id": 6,
         "team_short": "CHE",
         "position": "MID",
-        "now_cost": 96,
+        "now_cost": 97,
         "projected_points": 5.583,
         "is_starter": true,
         "is_captain": false,
@@ -142,6 +130,30 @@
         "is_vice": false
       },
       {
+        "player_id": 321,
+        "web_name": "Walle Egeli",
+        "team_id": 12,
+        "team_short": "IPS",
+        "position": "FWD",
+        "now_cost": 45,
+        "projected_points": 0.4,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 366,
+        "web_name": "Wirtz",
+        "team_id": 14,
+        "team_short": "LIV",
+        "position": "MID",
+        "now_cost": 74,
+        "projected_points": 4.76,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
         "player_id": 368,
         "web_name": "Szoboszlai",
         "team_id": 14,
@@ -175,18 +187,6 @@
         "projected_points": 6.076,
         "is_starter": true,
         "is_captain": true,
-        "is_vice": false
-      },
-      {
-        "player_id": 605,
-        "web_name": "Yalcouy\u00e9",
-        "team_id": 5,
-        "team_short": "BHA",
-        "position": "MID",
-        "now_cost": 45,
-        "projected_points": 3.227,
-        "is_starter": false,
-        "is_captain": false,
         "is_vice": false
       }
     ]
@@ -253,7 +253,7 @@
       "web_name": "Calafiori",
       "team_short": "ARS",
       "position": "DEF",
-      "now_cost": 57,
+      "now_cost": 58,
       "projected": 3.069
     },
     {
@@ -278,7 +278,7 @@
       "team_short": "ARS",
       "position": "DEF",
       "now_cost": 54,
-      "projected": 1.747
+      "projected": 1.165
     },
     {
       "player_id": 12,
@@ -309,7 +309,7 @@
       "web_name": "\u00d8degaard",
       "team_short": "ARS",
       "position": "MID",
-      "now_cost": 66,
+      "now_cost": 67,
       "projected": 3.911
     },
     {
@@ -389,7 +389,7 @@
       "web_name": "Gy\u00f6keres",
       "team_short": "ARS",
       "position": "FWD",
-      "now_cost": 73,
+      "now_cost": 72,
       "projected": 0.958
     },
     {
@@ -741,7 +741,7 @@
       "web_name": "Scott",
       "team_short": "BOU",
       "position": "MID",
-      "now_cost": 60,
+      "now_cost": 61,
       "projected": 3.316
     },
     {
@@ -1421,7 +1421,7 @@
       "web_name": "Palmer",
       "team_short": "CHE",
       "position": "MID",
-      "now_cost": 96,
+      "now_cost": 97,
       "projected": 5.583
     },
     {
@@ -1709,8 +1709,8 @@
       "web_name": "Tchaouna",
       "team_short": "COV",
       "position": "MID",
-      "now_cost": 55,
-      "projected": 2.075
+      "now_cost": 54,
+      "projected": 1.999
     },
     {
       "player_id": 191,
@@ -2277,8 +2277,8 @@
       "web_name": "Iwobi",
       "team_short": "FUL",
       "position": "MID",
-      "now_cost": 55,
-      "projected": 2.269
+      "now_cost": 54,
+      "projected": 2.213
     },
     {
       "player_id": 262,
@@ -3285,8 +3285,8 @@
       "web_name": "O'Reilly",
       "team_short": "MCI",
       "position": "DEF",
-      "now_cost": 65,
-      "projected": 1.304
+      "now_cost": 64,
+      "projected": 1.738
     },
     {
       "player_id": 388,
@@ -4461,8 +4461,8 @@
       "web_name": "Hume",
       "team_short": "SUN",
       "position": "DEF",
-      "now_cost": 45,
-      "projected": 1.536
+      "now_cost": 44,
+      "projected": 1.512
     },
     {
       "player_id": 535,
@@ -4877,8 +4877,8 @@
       "web_name": "Mendy",
       "team_short": "HUL",
       "position": "DEF",
-      "now_cost": 40,
-      "projected": 1.303
+      "now_cost": 41,
+      "projected": 1.438
     },
     {
       "player_id": 587,

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-10T18:37:30.973557+00:00",
+  "generated_at": "2026-09-11T11:35:49.419640+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "pipeline_state": {
-    "last_fetch": "2026-09-10T18:33:50.923518+00:00",
+    "last_fetch": "2026-09-11T11:33:15.407763+00:00",
     "current_gw": {
       "id": 3,
       "name": "Gameweek 3"
@@ -57,7 +57,7 @@
         "team_id": 1,
         "team_short": "ARS",
         "position": "MID",
-        "now_cost": 66,
+        "now_cost": 67,
         "projected_points": 4.077,
         "is_starter": true,
         "is_captain": false,
@@ -124,13 +124,25 @@
         "is_vice": false
       },
       {
-        "player_id": 277,
-        "web_name": "Egan",
+        "player_id": 282,
+        "web_name": "Giles",
         "team_id": 11,
         "team_short": "HUL",
         "position": "DEF",
-        "now_cost": 41,
-        "projected_points": 2.83,
+        "now_cost": 40,
+        "projected_points": 2.578,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 305,
+        "web_name": "Davis",
+        "team_id": 12,
+        "team_short": "IPS",
+        "position": "DEF",
+        "now_cost": 40,
+        "projected_points": 2.545,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -179,18 +191,6 @@
         "position": "GK",
         "now_cost": 46,
         "projected_points": 3.033,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 586,
-        "web_name": "Mendy",
-        "team_id": 11,
-        "team_short": "HUL",
-        "position": "DEF",
-        "now_cost": 40,
-        "projected_points": 2.717,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -279,7 +279,7 @@
       "team_id": 1,
       "team_short": "ARS",
       "position": "DEF",
-      "now_cost": 57,
+      "now_cost": 58,
       "projected_points": 3.367
     },
     {
@@ -307,7 +307,7 @@
       "team_short": "ARS",
       "position": "DEF",
       "now_cost": 54,
-      "projected_points": 1.907
+      "projected_points": 1.272
     },
     {
       "player_id": 12,
@@ -342,7 +342,7 @@
       "team_id": 1,
       "team_short": "ARS",
       "position": "MID",
-      "now_cost": 66,
+      "now_cost": 67,
       "projected_points": 4.077
     },
     {
@@ -432,7 +432,7 @@
       "team_id": 1,
       "team_short": "ARS",
       "position": "FWD",
-      "now_cost": 73,
+      "now_cost": 72,
       "projected_points": 0.946
     },
     {
@@ -828,7 +828,7 @@
       "team_id": 3,
       "team_short": "BOU",
       "position": "MID",
-      "now_cost": 60,
+      "now_cost": 61,
       "projected_points": 3.534
     },
     {
@@ -1593,7 +1593,7 @@
       "team_id": 6,
       "team_short": "CHE",
       "position": "MID",
-      "now_cost": 96,
+      "now_cost": 97,
       "projected_points": 4.882
     },
     {
@@ -1917,8 +1917,8 @@
       "team_id": 7,
       "team_short": "COV",
       "position": "MID",
-      "now_cost": 55,
-      "projected_points": 2.166
+      "now_cost": 54,
+      "projected_points": 2.105
     },
     {
       "player_id": 191,
@@ -2556,8 +2556,8 @@
       "team_id": 10,
       "team_short": "FUL",
       "position": "MID",
-      "now_cost": 55,
-      "projected_points": 2.835
+      "now_cost": 54,
+      "projected_points": 2.858
     },
     {
       "player_id": 262,
@@ -3690,8 +3690,8 @@
       "team_id": 15,
       "team_short": "MCI",
       "position": "DEF",
-      "now_cost": 65,
-      "projected_points": 1.754
+      "now_cost": 64,
+      "projected_points": 2.339
     },
     {
       "player_id": 388,
@@ -5013,8 +5013,8 @@
       "team_id": 20,
       "team_short": "SUN",
       "position": "DEF",
-      "now_cost": 45,
-      "projected_points": 2.099
+      "now_cost": 44,
+      "projected_points": 2.089
     },
     {
       "player_id": 535,
@@ -5481,8 +5481,8 @@
       "team_id": 11,
       "team_short": "HUL",
       "position": "DEF",
-      "now_cost": 40,
-      "projected_points": 2.717
+      "now_cost": 41,
+      "projected_points": 2.808
     },
     {
       "player_id": 587,
