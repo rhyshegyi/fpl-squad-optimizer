@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-11T11:35:49.419640+00:00",
+  "generated_at": "2026-09-11T18:42:53.534358+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "pipeline_state": {
-    "last_fetch": "2026-09-11T11:33:15.407763+00:00",
+    "last_fetch": "2026-09-11T18:39:22.687761+00:00",
     "current_gw": {
       "id": 3,
       "name": "Gameweek 3"
@@ -685,7 +685,7 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 59,
-      "projected_points": 0.0
+      "projected_points": 0.076
     },
     {
       "player_id": 54,
@@ -964,7 +964,7 @@
       "team_short": "BRE",
       "position": "DEF",
       "now_cost": 55,
-      "projected_points": 0.605
+      "projected_points": 0.0
     },
     {
       "player_id": 85,
@@ -1117,7 +1117,7 @@
       "team_short": "CHE",
       "position": "MID",
       "now_cost": 49,
-      "projected_points": 0.114
+      "projected_points": 0.0
     },
     {
       "player_id": 102,
@@ -1576,7 +1576,7 @@
       "team_short": "CHE",
       "position": "DEF",
       "now_cost": 54,
-      "projected_points": 0.114
+      "projected_points": 0.0
     },
     {
       "player_id": 153,
@@ -1639,7 +1639,7 @@
       "team_short": "CHE",
       "position": "MID",
       "now_cost": 54,
-      "projected_points": 0.431
+      "projected_points": 0.0
     },
     {
       "player_id": 160,
@@ -1738,7 +1738,7 @@
       "team_short": "CHE",
       "position": "FWD",
       "now_cost": 50,
-      "projected_points": 0.114
+      "projected_points": 0.0
     },
     {
       "player_id": 171,
@@ -2161,7 +2161,7 @@
       "team_short": "CRY",
       "position": "MID",
       "now_cost": 49,
-      "projected_points": 0.152
+      "projected_points": 0.0
     },
     {
       "player_id": 218,
@@ -2872,7 +2872,7 @@
       "team_short": "HUL",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 0.152
+      "projected_points": 0.0
     },
     {
       "player_id": 297,
@@ -2998,7 +2998,7 @@
       "team_short": "IPS",
       "position": "MID",
       "now_cost": 49,
-      "projected_points": 0.0
+      "projected_points": 0.152
     },
     {
       "player_id": 311,
@@ -3070,7 +3070,7 @@
       "team_short": "IPS",
       "position": "MID",
       "now_cost": 54,
-      "projected_points": 0.0
+      "projected_points": 0.152
     },
     {
       "player_id": 319,
@@ -4015,7 +4015,7 @@
       "team_short": "MUN",
       "position": "DEF",
       "now_cost": 44,
-      "projected_points": 2.662
+      "projected_points": 1.997
     },
     {
       "player_id": 424,
@@ -4699,7 +4699,7 @@
       "team_short": "TOT",
       "position": "DEF",
       "now_cost": 55,
-      "projected_points": 2.305
+      "projected_points": 1.728
     },
     {
       "player_id": 500,
@@ -4762,7 +4762,7 @@
       "team_short": "TOT",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 1.485
+      "projected_points": 1.114
     },
     {
       "player_id": 507,
@@ -4843,7 +4843,7 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 63,
-      "projected_points": 1.062
+      "projected_points": 1.417
     },
     {
       "player_id": 516,
@@ -5410,7 +5410,7 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 54,
-      "projected_points": 0.676
+      "projected_points": 0.0
     },
     {
       "player_id": 579,
@@ -5689,7 +5689,7 @@
       "team_short": "NEW",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 0.15
+      "projected_points": 0.0
     },
     {
       "player_id": 610,
@@ -5698,7 +5698,7 @@
       "team_short": "FUL",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 0.112
+      "projected_points": 0.0
     },
     {
       "player_id": 611,
@@ -6104,6 +6104,15 @@
       "position": "MID",
       "now_cost": 55,
       "projected_points": 0.152
+    },
+    {
+      "player_id": 656,
+      "web_name": "Mfuni",
+      "team_id": 7,
+      "team_short": "COV",
+      "position": "DEF",
+      "now_cost": 40,
+      "projected_points": 0.15
     }
   ]
 }
