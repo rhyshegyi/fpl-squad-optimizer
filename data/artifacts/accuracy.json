@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T18:42:53.558339+00:00",
+  "generated_at": "2026-09-12T10:59:26.158362+00:00",
   "totals": {
     "gameweeks_scored": 0,
     "total_points": null,
@@ -34,7 +34,7 @@
       "bonus": 5,
       "ppg": 9.33,
       "value": 3.89,
-      "selected_by": 13.3,
+      "selected_by": 12.6,
       "in_target_squad": false
     },
     {
@@ -52,7 +52,7 @@
       "bonus": 3,
       "ppg": 9.0,
       "value": 2.25,
-      "selected_by": 43.9,
+      "selected_by": 42.3,
       "in_target_squad": false
     },
     {
@@ -70,7 +70,7 @@
       "bonus": 6,
       "ppg": 8.67,
       "value": 5.65,
-      "selected_by": 9.7,
+      "selected_by": 10.0,
       "in_target_squad": true
     },
     {
@@ -88,7 +88,7 @@
       "bonus": 4,
       "ppg": 8.33,
       "value": 3.21,
-      "selected_by": 29.6,
+      "selected_by": 28.9,
       "in_target_squad": false
     },
     {
@@ -97,7 +97,7 @@
       "web_name": "Ajayi",
       "team_short": "HUL",
       "position": "DEF",
-      "now_cost": 41,
+      "now_cost": 42,
       "points": 25,
       "games": 3,
       "minutes": 243,
@@ -105,8 +105,8 @@
       "assists": 0,
       "bonus": 2,
       "ppg": 8.33,
-      "value": 6.1,
-      "selected_by": 12.0,
+      "value": 5.95,
+      "selected_by": 12.5,
       "in_target_squad": false
     },
     {
@@ -124,7 +124,7 @@
       "bonus": 1,
       "ppg": 8.0,
       "value": 5.85,
-      "selected_by": 8.0,
+      "selected_by": 8.3,
       "in_target_squad": false
     },
     {
@@ -142,7 +142,7 @@
       "bonus": 6,
       "ppg": 8.0,
       "value": 3.58,
-      "selected_by": 16.8,
+      "selected_by": 18.5,
       "in_target_squad": true
     },
     {
@@ -160,7 +160,7 @@
       "bonus": 5,
       "ppg": 8.0,
       "value": 3.93,
-      "selected_by": 5.4,
+      "selected_by": 6.0,
       "in_target_squad": false
     },
     {
@@ -178,7 +178,7 @@
       "bonus": 6,
       "ppg": 8.0,
       "value": 1.55,
-      "selected_by": 71.2,
+      "selected_by": 71.1,
       "in_target_squad": true
     },
     {
@@ -196,7 +196,7 @@
       "bonus": 5,
       "ppg": 7.67,
       "value": 2.53,
-      "selected_by": 22.6,
+      "selected_by": 24.0,
       "in_target_squad": true
     },
     {
@@ -214,7 +214,7 @@
       "bonus": 1,
       "ppg": 7.67,
       "value": 5.61,
-      "selected_by": 6.3,
+      "selected_by": 6.4,
       "in_target_squad": false
     },
     {
@@ -232,7 +232,7 @@
       "bonus": 3,
       "ppg": 7.33,
       "value": 4.89,
-      "selected_by": 1.9,
+      "selected_by": 2.1,
       "in_target_squad": false
     },
     {
@@ -250,7 +250,7 @@
       "bonus": 2,
       "ppg": 7.33,
       "value": 3.79,
-      "selected_by": 48.7,
+      "selected_by": 49.3,
       "in_target_squad": false
     },
     {
@@ -268,7 +268,7 @@
       "bonus": 4,
       "ppg": 7.33,
       "value": 2.32,
-      "selected_by": 11.5,
+      "selected_by": 11.7,
       "in_target_squad": true
     },
     {
@@ -304,7 +304,7 @@
       "bonus": 2,
       "ppg": 7.0,
       "value": 4.38,
-      "selected_by": 21.4,
+      "selected_by": 22.8,
       "in_target_squad": true
     },
     {
@@ -322,7 +322,7 @@
       "bonus": 3,
       "ppg": 7.0,
       "value": 2.16,
-      "selected_by": 25.6,
+      "selected_by": 27.9,
       "in_target_squad": false
     },
     {
@@ -340,7 +340,7 @@
       "bonus": 6,
       "ppg": 7.0,
       "value": 3.5,
-      "selected_by": 3.5,
+      "selected_by": 3.8,
       "in_target_squad": false
     },
     {
@@ -358,7 +358,7 @@
       "bonus": 3,
       "ppg": 7.0,
       "value": 4.2,
-      "selected_by": 2.1,
+      "selected_by": 2.4,
       "in_target_squad": false
     },
     {
@@ -376,7 +376,7 @@
       "bonus": 4,
       "ppg": 7.0,
       "value": 2.73,
-      "selected_by": 73.2,
+      "selected_by": 73.9,
       "in_target_squad": true
     },
     {
@@ -394,7 +394,7 @@
       "bonus": 2,
       "ppg": 7.0,
       "value": 3.5,
-      "selected_by": 11.4,
+      "selected_by": 11.5,
       "in_target_squad": false
     },
     {
@@ -412,7 +412,7 @@
       "bonus": 3,
       "ppg": 7.0,
       "value": 2.66,
-      "selected_by": 24.3,
+      "selected_by": 23.3,
       "in_target_squad": false
     },
     {
@@ -430,7 +430,7 @@
       "bonus": 2,
       "ppg": 6.67,
       "value": 5.0,
-      "selected_by": 1.5,
+      "selected_by": 1.7,
       "in_target_squad": true
     },
     {
@@ -466,7 +466,7 @@
       "bonus": 4,
       "ppg": 6.67,
       "value": 3.33,
-      "selected_by": 18.5,
+      "selected_by": 18.3,
       "in_target_squad": false
     },
     {
@@ -484,7 +484,7 @@
       "bonus": 1,
       "ppg": 6.33,
       "value": 2.5,
-      "selected_by": 32.2,
+      "selected_by": 34.9,
       "in_target_squad": true
     },
     {
@@ -520,7 +520,7 @@
       "bonus": 3,
       "ppg": 6.33,
       "value": 3.17,
-      "selected_by": 2.8,
+      "selected_by": 2.7,
       "in_target_squad": false
     },
     {
@@ -538,7 +538,7 @@
       "bonus": 3,
       "ppg": 6.0,
       "value": 3.16,
-      "selected_by": 13.3,
+      "selected_by": 12.8,
       "in_target_squad": false
     },
     {
@@ -547,7 +547,7 @@
       "web_name": "Elanga",
       "team_short": "NEW",
       "position": "MID",
-      "now_cost": 61,
+      "now_cost": 62,
       "points": 18,
       "games": 3,
       "minutes": 232,
@@ -555,8 +555,8 @@
       "assists": 0,
       "bonus": 2,
       "ppg": 6.0,
-      "value": 2.95,
-      "selected_by": 11.2,
+      "value": 2.9,
+      "selected_by": 11.3,
       "in_target_squad": false
     }
   ],
