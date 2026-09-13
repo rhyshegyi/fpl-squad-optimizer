@@ -2,11 +2,11 @@
   "gw": 5,
   "name": "Gameweek 5",
   "deadline": "2026-09-18T17:30:00Z",
-  "frozen_at": "2026-09-13T18:18:24.911630+00:00",
+  "frozen_at": "2026-09-13T21:32:17.690342+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
-    "projected_points": 57.73,
+    "projected_points": 57.8,
     "formation": "3-4-3",
     "picks": [
       {
@@ -148,7 +148,7 @@
         "team_short": "MCI",
         "position": "FWD",
         "now_cost": 155,
-        "projected_points": 7.87,
+        "projected_points": 7.902,
         "is_starter": true,
         "is_captain": true,
         "is_vice": false
@@ -3478,7 +3478,7 @@
       "team_short": "MCI",
       "position": "FWD",
       "now_cost": 155,
-      "projected": 7.87
+      "projected": 7.902
     },
     {
       "player_id": 412,
@@ -3598,7 +3598,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 120,
-      "projected": 4.48
+      "projected": 4.641
     },
     {
       "player_id": 427,

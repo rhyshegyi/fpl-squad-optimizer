@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-13T18:17:55.322924+00:00",
+  "generated_at": "2026-09-13T21:31:57.894420+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-09-13T18:14:46.227980+00:00",
+    "last_fetch": "2026-09-13T21:29:33.962063+00:00",
     "current_gw": {
       "id": 4,
       "name": "Gameweek 4"
@@ -29,7 +29,7 @@
   },
   "squad": {
     "total_cost": 1000,
-    "projected_points": 57.73,
+    "projected_points": 57.8,
     "formation": "3-4-3",
     "picks": [
       {
@@ -171,7 +171,7 @@
         "team_short": "MCI",
         "position": "FWD",
         "now_cost": 155,
-        "projected_points": 7.87,
+        "projected_points": 7.902,
         "is_starter": true,
         "is_captain": true,
         "is_vice": false
