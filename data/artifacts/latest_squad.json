@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-13T12:07:55.819081+00:00",
+  "generated_at": "2026-09-13T18:17:55.322924+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-09-13T12:04:53.884222+00:00",
+    "last_fetch": "2026-09-13T18:14:46.227980+00:00",
     "current_gw": {
       "id": 4,
       "name": "Gameweek 4"
@@ -13,22 +13,22 @@
       "deadline_time": "2026-09-18T17:30:00Z"
     },
     "data_health": {
-      "players_tracked": 655,
+      "players_tracked": 658,
       "players_disagreeing": 0,
       "latest_gw_on_file": 4,
-      "latest_result": "2026-09-12T19:00:00+00:00",
+      "latest_result": "2026-09-13T15:30:00+00:00",
       "gameweek_in_progress": {
         "id": 4,
         "name": "Gameweek 4",
-        "matches_played": 7,
-        "matches_started": 7,
+        "matches_played": 9,
+        "matches_started": 9,
         "matches_total": 10
       },
       "bonus_pending": null
     }
   },
   "squad": {
-    "total_cost": 997,
+    "total_cost": 1000,
     "projected_points": 57.73,
     "formation": "3-4-3",
     "picks": [
@@ -43,18 +43,6 @@
         "is_starter": true,
         "is_captain": false,
         "is_vice": true
-      },
-      {
-        "player_id": 26,
-        "web_name": "Havertz",
-        "team_id": 1,
-        "team_short": "ARS",
-        "position": "FWD",
-        "now_cost": 76,
-        "projected_points": 3.966,
-        "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
       },
       {
         "player_id": 57,
@@ -105,6 +93,18 @@
         "is_vice": false
       },
       {
+        "player_id": 249,
+        "web_name": "Barry",
+        "team_id": 9,
+        "team_short": "EVE",
+        "position": "FWD",
+        "now_cost": 56,
+        "projected_points": 3.636,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
         "player_id": 277,
         "web_name": "Egan",
         "team_id": 11,
@@ -141,25 +141,25 @@
         "is_vice": false
       },
       {
-        "player_id": 390,
-        "web_name": "R\u00faben",
-        "team_id": 15,
-        "team_short": "MCI",
-        "position": "DEF",
-        "now_cost": 55,
-        "projected_points": 3.667,
-        "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
         "player_id": 391,
         "web_name": "Gvardiol",
         "team_id": 15,
         "team_short": "MCI",
         "position": "DEF",
         "now_cost": 56,
-        "projected_points": 3.842,
+        "projected_points": 3.343,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 397,
+        "web_name": "Semenyo",
+        "team_id": 15,
+        "team_short": "MCI",
+        "position": "MID",
+        "now_cost": 84,
+        "projected_points": 4.925,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -171,7 +171,7 @@
         "team_short": "MCI",
         "position": "FWD",
         "now_cost": 155,
-        "projected_points": 7.657,
+        "projected_points": 7.87,
         "is_starter": true,
         "is_captain": true,
         "is_vice": false
@@ -189,25 +189,25 @@
         "is_vice": false
       },
       {
+        "player_id": 418,
+        "web_name": "Maguire",
+        "team_id": 16,
+        "team_short": "MUN",
+        "position": "DEF",
+        "now_cost": 49,
+        "projected_points": 3.274,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
         "player_id": 427,
         "web_name": "Mbeumo",
         "team_id": 16,
         "team_short": "MUN",
         "position": "MID",
         "now_cost": 79,
-        "projected_points": 5.22,
-        "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 486,
-        "web_name": "McAtee",
-        "team_id": 18,
-        "team_short": "NFO",
-        "position": "MID",
-        "now_cost": 55,
-        "projected_points": 3.646,
+        "projected_points": 4.74,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
