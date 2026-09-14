@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-14T13:05:44.184764+00:00",
+  "generated_at": "2026-09-14T19:55:12.971788+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-09-14T13:02:40.253690+00:00",
+    "last_fetch": "2026-09-14T19:52:13.697217+00:00",
     "current_gw": {
       "id": 4,
       "name": "Gameweek 4"
@@ -14,14 +14,14 @@
     },
     "data_health": {
       "players_tracked": 658,
-      "players_disagreeing": 0,
+      "players_disagreeing": 20,
       "latest_gw_on_file": 4,
       "latest_result": "2026-09-13T15:30:00+00:00",
       "gameweek_in_progress": {
         "id": 4,
         "name": "Gameweek 4",
         "matches_played": 9,
-        "matches_started": 9,
+        "matches_started": 10,
         "matches_total": 10
       },
       "bonus_pending": null

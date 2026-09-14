@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-14T13:06:14.348697+00:00",
+  "generated_at": "2026-09-14T19:55:42.554254+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "pipeline_state": {
-    "last_fetch": "2026-09-14T13:02:40.253690+00:00",
+    "last_fetch": "2026-09-14T19:52:13.697217+00:00",
     "current_gw": {
       "id": 4,
       "name": "Gameweek 4"
@@ -15,14 +15,14 @@
     },
     "data_health": {
       "players_tracked": 658,
-      "players_disagreeing": 0,
+      "players_disagreeing": 20,
       "latest_gw_on_file": 4,
       "latest_result": "2026-09-13T15:30:00+00:00",
       "gameweek_in_progress": {
         "id": 4,
         "name": "Gameweek 4",
         "matches_played": 9,
-        "matches_started": 9,
+        "matches_started": 10,
         "matches_total": 10
       },
       "bonus_pending": null
@@ -1177,7 +1177,7 @@
       "team_short": "BRE",
       "position": "FWD",
       "now_cost": 45,
-      "projected_points": 0.15
+      "projected_points": 0.0
     },
     {
       "player_id": 108,
@@ -3445,7 +3445,7 @@
       "team_short": "LIV",
       "position": "DEF",
       "now_cost": 49,
-      "projected_points": 0.0
+      "projected_points": 0.114
     },
     {
       "player_id": 360,
@@ -4183,7 +4183,7 @@
       "team_short": "MUN",
       "position": "FWD",
       "now_cost": 45,
-      "projected_points": 0.15
+      "projected_points": 0.0
     },
     {
       "player_id": 442,
@@ -4309,7 +4309,7 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 54,
-      "projected_points": 2.844
+      "projected_points": 2.133
     },
     {
       "player_id": 456,
@@ -4768,7 +4768,7 @@
       "team_short": "TOT",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 1.081
+      "projected_points": 1.441
     },
     {
       "player_id": 507,
@@ -5551,7 +5551,7 @@
       "team_short": "NEW",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.043
+      "projected_points": 2.723
     },
     {
       "player_id": 594,

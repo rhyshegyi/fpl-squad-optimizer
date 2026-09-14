@@ -2,7 +2,7 @@
   "gw": 5,
   "name": "Gameweek 5",
   "deadline": "2026-09-18T17:30:00Z",
-  "frozen_at": "2026-09-14T13:06:14.365129+00:00",
+  "frozen_at": "2026-09-14T19:55:42.570998+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 999,
@@ -1046,7 +1046,7 @@
       "team_short": "BRE",
       "position": "FWD",
       "now_cost": 45,
-      "projected": 0.15
+      "projected": 0.0
     },
     {
       "player_id": 108,
@@ -3062,7 +3062,7 @@
       "team_short": "LIV",
       "position": "DEF",
       "now_cost": 49,
-      "projected": 0.0
+      "projected": 0.114
     },
     {
       "player_id": 360,
@@ -3718,7 +3718,7 @@
       "team_short": "MUN",
       "position": "FWD",
       "now_cost": 45,
-      "projected": 0.15
+      "projected": 0.0
     },
     {
       "player_id": 442,
@@ -3830,7 +3830,7 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 54,
-      "projected": 2.531
+      "projected": 1.898
     },
     {
       "player_id": 456,
@@ -4238,7 +4238,7 @@
       "team_short": "TOT",
       "position": "DEF",
       "now_cost": 45,
-      "projected": 0.861
+      "projected": 1.147
     },
     {
       "player_id": 507,
@@ -4934,7 +4934,7 @@
       "team_short": "NEW",
       "position": "DEF",
       "now_cost": 45,
-      "projected": 1.714
+      "projected": 2.285
     },
     {
       "player_id": 594,
