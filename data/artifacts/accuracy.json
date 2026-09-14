@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T21:32:17.698031+00:00",
+  "generated_at": "2026-09-14T13:06:14.375100+00:00",
   "totals": {
     "gameweeks_scored": 0,
     "total_points": null,
@@ -30,7 +30,7 @@
       "web_name": "Gvardiol",
       "team_short": "MCI",
       "position": "DEF",
-      "now_cost": 56,
+      "now_cost": 57,
       "points": 33,
       "games": 4,
       "minutes": 344,
@@ -38,8 +38,8 @@
       "assists": 2,
       "bonus": 6,
       "ppg": 8.25,
-      "value": 5.89,
-      "selected_by": 21.3,
+      "value": 5.79,
+      "selected_by": 21.8,
       "in_target_squad": true
     },
     {
@@ -57,7 +57,7 @@
       "bonus": 6,
       "ppg": 8.25,
       "value": 5.89,
-      "selected_by": 16.9,
+      "selected_by": 17.4,
       "in_target_squad": true
     },
     {
@@ -75,7 +75,7 @@
       "bonus": 7,
       "ppg": 8.25,
       "value": 4.23,
-      "selected_by": 74.6,
+      "selected_by": 74.8,
       "in_target_squad": true
     },
     {
@@ -93,7 +93,7 @@
       "bonus": 9,
       "ppg": 8.25,
       "value": 2.13,
-      "selected_by": 71.9,
+      "selected_by": 72.0,
       "in_target_squad": true
     },
     {
@@ -111,7 +111,7 @@
       "bonus": 4,
       "ppg": 8.0,
       "value": 6.67,
-      "selected_by": 22.6,
+      "selected_by": 23.0,
       "in_target_squad": false
     },
     {
@@ -129,7 +129,7 @@
       "bonus": 4,
       "ppg": 7.5,
       "value": 3.16,
-      "selected_by": 11.7,
+      "selected_by": 11.9,
       "in_target_squad": true
     },
     {
@@ -147,7 +147,7 @@
       "bonus": 6,
       "ppg": 7.5,
       "value": 5.0,
-      "selected_by": 4.8,
+      "selected_by": 5.1,
       "in_target_squad": false
     },
     {
@@ -174,7 +174,7 @@
       "web_name": "Tavernier",
       "team_short": "BOU",
       "position": "MID",
-      "now_cost": 60,
+      "now_cost": 61,
       "points": 29,
       "games": 4,
       "minutes": 350,
@@ -182,8 +182,8 @@
       "assists": 0,
       "bonus": 8,
       "ppg": 7.25,
-      "value": 4.83,
-      "selected_by": 4.5,
+      "value": 4.75,
+      "selected_by": 4.7,
       "in_target_squad": false
     },
     {
@@ -201,7 +201,7 @@
       "bonus": 3,
       "ppg": 7.25,
       "value": 4.83,
-      "selected_by": 39.8,
+      "selected_by": 40.0,
       "in_target_squad": false
     },
     {
@@ -210,7 +210,7 @@
       "web_name": "Tarkowski",
       "team_short": "EVE",
       "position": "DEF",
-      "now_cost": 60,
+      "now_cost": 61,
       "points": 29,
       "games": 4,
       "minutes": 360,
@@ -218,8 +218,8 @@
       "assists": 0,
       "bonus": 4,
       "ppg": 7.25,
-      "value": 4.83,
-      "selected_by": 12.5,
+      "value": 4.75,
+      "selected_by": 12.7,
       "in_target_squad": false
     },
     {
@@ -237,7 +237,7 @@
       "bonus": 3,
       "ppg": 7.25,
       "value": 2.42,
-      "selected_by": 42.5,
+      "selected_by": 42.2,
       "in_target_squad": false
     },
     {
@@ -255,7 +255,7 @@
       "bonus": 2,
       "ppg": 7.0,
       "value": 4.83,
-      "selected_by": 49.8,
+      "selected_by": 49.9,
       "in_target_squad": true
     },
     {
@@ -291,7 +291,7 @@
       "bonus": 6,
       "ppg": 7.0,
       "value": 6.09,
-      "selected_by": 10.5,
+      "selected_by": 10.6,
       "in_target_squad": true
     },
     {
@@ -309,7 +309,7 @@
       "bonus": 6,
       "ppg": 6.75,
       "value": 4.03,
-      "selected_by": 18.9,
+      "selected_by": 19.0,
       "in_target_squad": false
     },
     {
@@ -327,7 +327,7 @@
       "bonus": 2,
       "ppg": 6.75,
       "value": 5.4,
-      "selected_by": 2.2,
+      "selected_by": 2.4,
       "in_target_squad": false
     },
     {
@@ -345,7 +345,7 @@
       "bonus": 2,
       "ppg": 6.75,
       "value": 3.51,
-      "selected_by": 36.2,
+      "selected_by": 36.6,
       "in_target_squad": false
     },
     {
@@ -363,7 +363,7 @@
       "bonus": 4,
       "ppg": 6.5,
       "value": 3.33,
-      "selected_by": 29.0,
+      "selected_by": 28.8,
       "in_target_squad": false
     },
     {
@@ -381,7 +381,7 @@
       "bonus": 2,
       "ppg": 6.5,
       "value": 6.19,
-      "selected_by": 13.3,
+      "selected_by": 13.4,
       "in_target_squad": false
     },
     {
@@ -435,7 +435,7 @@
       "bonus": 6,
       "ppg": 6.5,
       "value": 3.29,
-      "selected_by": 10.3,
+      "selected_by": 10.7,
       "in_target_squad": false
     },
     {
@@ -453,7 +453,7 @@
       "bonus": 1,
       "ppg": 6.25,
       "value": 6.1,
-      "selected_by": 7.7,
+      "selected_by": 7.6,
       "in_target_squad": false
     },
     {
@@ -471,7 +471,7 @@
       "bonus": 5,
       "ppg": 6.25,
       "value": 2.75,
-      "selected_by": 22.5,
+      "selected_by": 22.4,
       "in_target_squad": true
     },
     {
@@ -507,7 +507,7 @@
       "bonus": 1,
       "ppg": 6.25,
       "value": 6.1,
-      "selected_by": 6.6,
+      "selected_by": 6.7,
       "in_target_squad": true
     },
     {
@@ -525,7 +525,7 @@
       "bonus": 6,
       "ppg": 6.0,
       "value": 4.36,
-      "selected_by": 2.2,
+      "selected_by": 2.3,
       "in_target_squad": false
     },
     {
@@ -561,7 +561,7 @@
       "bonus": 2,
       "ppg": 6.0,
       "value": 6.0,
-      "selected_by": 2.1,
+      "selected_by": 2.2,
       "in_target_squad": true
     }
   ],

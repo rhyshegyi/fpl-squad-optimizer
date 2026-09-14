@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-13T21:31:57.894420+00:00",
+  "generated_at": "2026-09-14T13:05:44.184764+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-09-13T21:29:33.962063+00:00",
+    "last_fetch": "2026-09-14T13:02:40.253690+00:00",
     "current_gw": {
       "id": 4,
       "name": "Gameweek 4"
@@ -28,9 +28,9 @@
     }
   },
   "squad": {
-    "total_cost": 1000,
-    "projected_points": 57.8,
-    "formation": "3-4-3",
+    "total_cost": 999,
+    "projected_points": 57.65,
+    "formation": "3-5-2",
     "picks": [
       {
         "player_id": 12,
@@ -45,13 +45,13 @@
         "is_vice": true
       },
       {
-        "player_id": 57,
-        "web_name": "Petrovi\u0107",
-        "team_id": 3,
-        "team_short": "BOU",
+        "player_id": 28,
+        "web_name": "Martinez",
+        "team_id": 6,
+        "team_short": "CHE",
         "position": "GK",
-        "now_cost": 45,
-        "projected_points": 2.713,
+        "now_cost": 50,
+        "projected_points": 3.485,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -64,7 +64,7 @@
         "position": "DEF",
         "now_cost": 45,
         "projected_points": 3.187,
-        "is_starter": false,
+        "is_starter": true,
         "is_captain": false,
         "is_vice": false
       },
@@ -100,7 +100,7 @@
         "position": "FWD",
         "now_cost": 56,
         "projected_points": 3.636,
-        "is_starter": true,
+        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
@@ -117,13 +117,13 @@
         "is_vice": false
       },
       {
-        "player_id": 290,
-        "web_name": "Slater",
+        "player_id": 282,
+        "web_name": "Giles",
         "team_id": 11,
         "team_short": "HUL",
-        "position": "MID",
-        "now_cost": 45,
-        "projected_points": 2.238,
+        "position": "DEF",
+        "now_cost": 40,
+        "projected_points": 2.198,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -136,18 +136,6 @@
         "position": "FWD",
         "now_cost": 91,
         "projected_points": 4.331,
-        "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 391,
-        "web_name": "Gvardiol",
-        "team_id": 15,
-        "team_short": "MCI",
-        "position": "DEF",
-        "now_cost": 56,
-        "projected_points": 3.343,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -208,6 +196,18 @@
         "position": "MID",
         "now_cost": 79,
         "projected_points": 4.74,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 486,
+        "web_name": "McAtee",
+        "team_id": 18,
+        "team_short": "NFO",
+        "position": "MID",
+        "now_cost": 55,
+        "projected_points": 3.646,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
