@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-15T11:57:22.589844+00:00",
+  "generated_at": "2026-09-15T19:07:37.199336+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "pipeline_state": {
-    "last_fetch": "2026-09-15T11:53:53.872411+00:00",
+    "last_fetch": "2026-09-15T19:05:15.403454+00:00",
     "current_gw": {
       "id": 4,
       "name": "Gameweek 4"
@@ -19,10 +19,7 @@
       "latest_gw_on_file": 4,
       "latest_result": "2026-09-14T19:00:00+00:00",
       "gameweek_in_progress": null,
-      "bonus_pending": {
-        "id": 4,
-        "name": "Gameweek 4"
-      }
+      "bonus_pending": null
     }
   },
   "squad": {
@@ -1336,7 +1333,7 @@
       "team_short": "BHA",
       "position": "FWD",
       "now_cost": 54,
-      "projected_points": 0.617
+      "projected_points": 0.823
     },
     {
       "player_id": 126,

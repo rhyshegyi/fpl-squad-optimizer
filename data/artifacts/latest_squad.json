@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-15T11:56:53.058818+00:00",
+  "generated_at": "2026-09-15T19:07:18.226032+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-09-15T11:53:53.872411+00:00",
+    "last_fetch": "2026-09-15T19:05:15.403454+00:00",
     "current_gw": {
       "id": 4,
       "name": "Gameweek 4"
@@ -18,10 +18,7 @@
       "latest_gw_on_file": 4,
       "latest_result": "2026-09-14T19:00:00+00:00",
       "gameweek_in_progress": null,
-      "bonus_pending": {
-        "id": 4,
-        "name": "Gameweek 4"
-      }
+      "bonus_pending": null
     }
   },
   "squad": {
