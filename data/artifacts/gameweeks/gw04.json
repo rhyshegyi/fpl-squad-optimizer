@@ -3,7 +3,7 @@
   "name": "Gameweek 4",
   "deadline": "2026-09-12T12:30:00Z",
   "frozen_at": "2026-09-12T10:59:26.152434+00:00",
-  "scored_at": null,
+  "scored_at": "2026-09-15T11:36:16.584775+00:00",
   "squad": {
     "total_cost": 1000,
     "projected_points": 56.16,
@@ -5439,6 +5439,162 @@
       "position": "DEF",
       "now_cost": 40,
       "projected": 0.15
+    }
+  ],
+  "result": {
+    "points": 63,
+    "starter_points": 54,
+    "captain_id": 411,
+    "captain_points": 9,
+    "captain_blanked": false,
+    "autosubs": [
+      [
+        198,
+        109
+      ]
+    ],
+    "points_left_on_bench": 14,
+    "fpl_average": 69,
+    "fpl_highest": 151,
+    "scores_final": false
+  },
+  "accuracy": {
+    "players_appeared": 307,
+    "mae": 2.094,
+    "rmse": 3.19,
+    "bias": 0.964,
+    "spearman": 0.3706
+  },
+  "misses": [
+    {
+      "web_name": "Disasi",
+      "team_short": "CRY",
+      "position": "DEF",
+      "projected": 1.718,
+      "actual": -3,
+      "minutes": 33
+    },
+    {
+      "web_name": "Foden",
+      "team_short": "MCI",
+      "position": "MID",
+      "projected": 2.506,
+      "actual": -2,
+      "minutes": 22
+    },
+    {
+      "web_name": "Awoniyi",
+      "team_short": "COV",
+      "position": "FWD",
+      "projected": 2.136,
+      "actual": -2,
+      "minutes": 52
+    },
+    {
+      "web_name": "Reinildo",
+      "team_short": "SUN",
+      "position": "DEF",
+      "projected": 1.575,
+      "actual": -2,
+      "minutes": 90
+    },
+    {
+      "web_name": "Havertz",
+      "team_short": "ARS",
+      "position": "FWD",
+      "projected": 4.531,
+      "actual": 1,
+      "minutes": 90
+    },
+    {
+      "web_name": "Isak",
+      "team_short": "LIV",
+      "position": "FWD",
+      "projected": 5.25,
+      "actual": 2,
+      "minutes": 90
+    },
+    {
+      "web_name": "B.Fernandes",
+      "team_short": "MUN",
+      "position": "MID",
+      "projected": 5.16,
+      "actual": 2,
+      "minutes": 90
+    },
+    {
+      "web_name": "Lacroix",
+      "team_short": "CHE",
+      "position": "DEF",
+      "projected": 3.935,
+      "actual": 1,
+      "minutes": 4
+    }
+  ],
+  "hits": [
+    {
+      "web_name": "Gro\u00df",
+      "team_short": "BHA",
+      "position": "MID",
+      "projected": 3.503,
+      "actual": 17,
+      "minutes": 90
+    },
+    {
+      "web_name": "Bogle",
+      "team_short": "LEE",
+      "position": "DEF",
+      "projected": 2.469,
+      "actual": 15,
+      "minutes": 82
+    },
+    {
+      "web_name": "Davis",
+      "team_short": "IPS",
+      "position": "DEF",
+      "projected": 2.126,
+      "actual": 14,
+      "minutes": 90
+    },
+    {
+      "web_name": "Schade",
+      "team_short": "BRE",
+      "position": "MID",
+      "projected": 3.302,
+      "actual": 15,
+      "minutes": 90
+    },
+    {
+      "web_name": "Belloumi",
+      "team_short": "HUL",
+      "position": "MID",
+      "projected": 1.802,
+      "actual": 13,
+      "minutes": 59
+    },
+    {
+      "web_name": "Raya",
+      "team_short": "ARS",
+      "position": "GK",
+      "projected": 3.441,
+      "actual": 14,
+      "minutes": 90
+    },
+    {
+      "web_name": "Emersonn",
+      "team_short": "IPS",
+      "position": "FWD",
+      "projected": 2.127,
+      "actual": 12,
+      "minutes": 62
+    },
+    {
+      "web_name": "Dunk",
+      "team_short": "BHA",
+      "position": "DEF",
+      "projected": 2.578,
+      "actual": 12,
+      "minutes": 90
     }
   ]
 }
