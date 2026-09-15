@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-15T11:36:16.569038+00:00",
+  "generated_at": "2026-09-15T11:57:22.589844+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "pipeline_state": {
-    "last_fetch": "2026-09-15T11:34:46.324018+00:00",
+    "last_fetch": "2026-09-15T11:53:53.872411+00:00",
     "current_gw": {
       "id": 4,
       "name": "Gameweek 4"
