@@ -2,7 +2,7 @@
   "gw": 5,
   "name": "Gameweek 5",
   "deadline": "2026-09-18T17:30:00Z",
-  "frozen_at": "2026-09-16T11:52:58.067657+00:00",
+  "frozen_at": "2026-09-16T18:58:40.756918+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -446,7 +446,7 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 44,
-      "projected": 1.119
+      "projected": 1.492
     },
     {
       "player_id": 33,
@@ -1022,7 +1022,7 @@
       "team_short": "COV",
       "position": "MID",
       "now_cost": 49,
-      "projected": 0.617
+      "projected": 1.234
     },
     {
       "player_id": 105,
@@ -1854,7 +1854,7 @@
       "team_short": "CRY",
       "position": "MID",
       "now_cost": 62,
-      "projected": 0.0
+      "projected": 0.076
     },
     {
       "player_id": 209,
@@ -2158,7 +2158,7 @@
       "team_short": "EVE",
       "position": "MID",
       "now_cost": 49,
-      "projected": 1.674
+      "projected": 1.255
     },
     {
       "player_id": 247,
@@ -3062,7 +3062,7 @@
       "team_short": "LIV",
       "position": "DEF",
       "now_cost": 49,
-      "projected": 0.114
+      "projected": 0.152
     },
     {
       "player_id": 360,

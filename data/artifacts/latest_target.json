@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-16T11:52:58.050409+00:00",
+  "generated_at": "2026-09-16T18:58:40.742793+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "pipeline_state": {
-    "last_fetch": "2026-09-16T11:49:19.764060+00:00",
+    "last_fetch": "2026-09-16T18:56:27.374770+00:00",
     "current_gw": {
       "id": 4,
       "name": "Gameweek 4"
@@ -496,7 +496,7 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 44,
-      "projected_points": 1.419
+      "projected_points": 1.892
     },
     {
       "player_id": 33,
@@ -1144,7 +1144,7 @@
       "team_short": "COV",
       "position": "MID",
       "now_cost": 49,
-      "projected_points": 0.91
+      "projected_points": 1.819
     },
     {
       "player_id": 105,
@@ -2080,7 +2080,7 @@
       "team_short": "CRY",
       "position": "MID",
       "now_cost": 62,
-      "projected_points": 0.0
+      "projected_points": 0.076
     },
     {
       "player_id": 209,
@@ -2422,7 +2422,7 @@
       "team_short": "EVE",
       "position": "MID",
       "now_cost": 49,
-      "projected_points": 1.98
+      "projected_points": 1.485
     },
     {
       "player_id": 247,
@@ -3439,7 +3439,7 @@
       "team_short": "LIV",
       "position": "DEF",
       "now_cost": 49,
-      "projected_points": 0.114
+      "projected_points": 0.152
     },
     {
       "player_id": 360,
