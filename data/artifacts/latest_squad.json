@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-15T19:07:18.226032+00:00",
+  "generated_at": "2026-09-16T11:52:28.423697+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-09-15T19:05:15.403454+00:00",
+    "last_fetch": "2026-09-16T11:49:19.764060+00:00",
     "current_gw": {
       "id": 4,
       "name": "Gameweek 4"
@@ -23,7 +23,7 @@
   },
   "squad": {
     "total_cost": 1000,
-    "projected_points": 59.36,
+    "projected_points": 59.42,
     "formation": "3-5-2",
     "picks": [
       {
@@ -47,6 +47,18 @@
         "now_cost": 74,
         "projected_points": 4.855,
         "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 111,
+        "web_name": "Steele",
+        "team_id": 5,
+        "team_short": "BHA",
+        "position": "GK",
+        "now_cost": 40,
+        "projected_points": 0.15,
+        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
@@ -87,13 +99,13 @@
         "is_vice": false
       },
       {
-        "player_id": 277,
-        "web_name": "Egan",
+        "player_id": 282,
+        "web_name": "Giles",
         "team_id": 11,
         "team_short": "HUL",
         "position": "DEF",
-        "now_cost": 41,
-        "projected_points": 2.475,
+        "now_cost": 40,
+        "projected_points": 2.239,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -188,21 +200,9 @@
         "team_id": 18,
         "team_short": "NFO",
         "position": "MID",
-        "now_cost": 79,
-        "projected_points": 5.141,
+        "now_cost": 80,
+        "projected_points": 5.195,
         "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 625,
-        "web_name": "Cairns",
-        "team_id": 13,
-        "team_short": "LEE",
-        "position": "GK",
-        "now_cost": 40,
-        "projected_points": 0.15,
-        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       }
