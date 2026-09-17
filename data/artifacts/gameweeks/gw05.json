@@ -2,7 +2,7 @@
   "gw": 5,
   "name": "Gameweek 5",
   "deadline": "2026-09-18T17:30:00Z",
-  "frozen_at": "2026-09-16T18:58:40.756918+00:00",
+  "frozen_at": "2026-09-17T11:56:24.527908+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -422,7 +422,7 @@
       "team_short": "AVL",
       "position": "GK",
       "now_cost": 45,
-      "projected": 0.358
+      "projected": 0.269
     },
     {
       "player_id": 30,
@@ -622,7 +622,7 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 55,
-      "projected": 0.38
+      "projected": 0.285
     },
     {
       "player_id": 55,
@@ -797,7 +797,7 @@
       "web_name": "T\u00f3th.A",
       "team_short": "BOU",
       "position": "MID",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected": 0.343
     },
     {
@@ -1109,7 +1109,7 @@
       "web_name": "De Cuyper",
       "team_short": "BHA",
       "position": "DEF",
-      "now_cost": 48,
+      "now_cost": 49,
       "projected": 1.72
     },
     {
@@ -1510,7 +1510,7 @@
       "team_short": "CHE",
       "position": "FWD",
       "now_cost": 78,
-      "projected": 3.654
+      "projected": 2.741
     },
     {
       "player_id": 166,
@@ -1646,7 +1646,7 @@
       "team_short": "COV",
       "position": "DEF",
       "now_cost": 40,
-      "projected": 1.52
+      "projected": 0.38
     },
     {
       "player_id": 183,
@@ -2142,7 +2142,7 @@
       "team_short": "EVE",
       "position": "MID",
       "now_cost": 50,
-      "projected": 2.594
+      "projected": 1.945
     },
     {
       "player_id": 245,
