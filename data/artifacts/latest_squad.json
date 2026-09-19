@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-19T11:13:25.792573+00:00",
+  "generated_at": "2026-09-19T18:09:08.377861+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-09-19T11:12:10.824404+00:00",
+    "last_fetch": "2026-09-19T18:06:53.189562+00:00",
     "current_gw": {
       "id": 5,
       "name": "Gameweek 5"
@@ -14,23 +14,23 @@
     },
     "data_health": {
       "players_tracked": 662,
-      "players_disagreeing": 0,
+      "players_disagreeing": 26,
       "latest_gw_on_file": 5,
-      "latest_result": "2026-09-18T19:00:00+00:00",
+      "latest_result": "2026-09-19T14:00:00+00:00",
       "gameweek_in_progress": {
         "id": 5,
         "name": "Gameweek 5",
-        "matches_played": 1,
-        "matches_started": 1,
+        "matches_played": 5,
+        "matches_started": 6,
         "matches_total": 10
       },
       "bonus_pending": null
     }
   },
   "squad": {
-    "total_cost": 997,
-    "projected_points": 57.79,
-    "formation": "3-5-2",
+    "total_cost": 999,
+    "projected_points": 56.87,
+    "formation": "3-4-3",
     "picks": [
       {
         "player_id": 12,
@@ -39,19 +39,19 @@
         "team_short": "ARS",
         "position": "MID",
         "now_cost": 95,
-        "projected_points": 6.824,
+        "projected_points": 6.845,
         "is_starter": true,
         "is_captain": true,
         "is_vice": false
       },
       {
-        "player_id": 13,
-        "web_name": "Rice",
+        "player_id": 26,
+        "web_name": "Havertz",
         "team_id": 1,
         "team_short": "ARS",
-        "position": "MID",
-        "now_cost": 74,
-        "projected_points": 5.541,
+        "position": "FWD",
+        "now_cost": 76,
+        "projected_points": 4.652,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -75,20 +75,8 @@
         "team_short": "BHA",
         "position": "GK",
         "now_cost": 45,
-        "projected_points": 3.24,
+        "projected_points": 3.326,
         "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 114,
-        "web_name": "Boscagli",
-        "team_id": 5,
-        "team_short": "BHA",
-        "position": "DEF",
-        "now_cost": 45,
-        "projected_points": 2.983,
-        "is_starter": true,
         "is_captain": false,
         "is_vice": false
       },
@@ -99,19 +87,7 @@
         "team_short": "BHA",
         "position": "DEF",
         "now_cost": 49,
-        "projected_points": 3.418,
-        "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 233,
-        "web_name": "Mykolenko",
-        "team_id": 9,
-        "team_short": "EVE",
-        "position": "DEF",
-        "now_cost": 46,
-        "projected_points": 3.087,
+        "projected_points": 3.208,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -123,8 +99,20 @@
         "team_short": "EVE",
         "position": "MID",
         "now_cost": 66,
-        "projected_points": 4.704,
+        "projected_points": 4.432,
         "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 277,
+        "web_name": "Egan",
+        "team_id": 11,
+        "team_short": "HUL",
+        "position": "DEF",
+        "now_cost": 41,
+        "projected_points": 2.613,
+        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
@@ -135,7 +123,7 @@
         "team_short": "HUL",
         "position": "DEF",
         "now_cost": 40,
-        "projected_points": 2.45,
+        "projected_points": 2.642,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -147,20 +135,8 @@
         "team_short": "IPS",
         "position": "DEF",
         "now_cost": 40,
-        "projected_points": 2.639,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 321,
-        "web_name": "Walle Egeli",
-        "team_id": 12,
-        "team_short": "IPS",
-        "position": "FWD",
-        "now_cost": 45,
-        "projected_points": 0.262,
-        "is_starter": false,
+        "projected_points": 3.329,
+        "is_starter": true,
         "is_captain": false,
         "is_vice": false
       },
@@ -209,6 +185,30 @@
         "now_cost": 79,
         "projected_points": 4.726,
         "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 447,
+        "web_name": "Botman",
+        "team_id": 17,
+        "team_short": "NEW",
+        "position": "DEF",
+        "now_cost": 50,
+        "projected_points": 3.156,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 605,
+        "web_name": "Yalcouy\u00e9",
+        "team_id": 5,
+        "team_short": "BHA",
+        "position": "MID",
+        "now_cost": 45,
+        "projected_points": 2.754,
+        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       }
