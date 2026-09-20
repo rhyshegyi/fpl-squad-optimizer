@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-19T18:09:08.377861+00:00",
+  "generated_at": "2026-09-20T11:39:46.463450+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-09-19T18:06:53.189562+00:00",
+    "last_fetch": "2026-09-20T11:36:45.420881+00:00",
     "current_gw": {
       "id": 5,
       "name": "Gameweek 5"
@@ -13,14 +13,14 @@
       "deadline_time": "2026-10-10T10:00:00Z"
     },
     "data_health": {
-      "players_tracked": 662,
-      "players_disagreeing": 26,
+      "players_tracked": 667,
+      "players_disagreeing": 0,
       "latest_gw_on_file": 5,
-      "latest_result": "2026-09-19T14:00:00+00:00",
+      "latest_result": "2026-09-19T16:30:00+00:00",
       "gameweek_in_progress": {
         "id": 5,
         "name": "Gameweek 5",
-        "matches_played": 5,
+        "matches_played": 6,
         "matches_started": 6,
         "matches_total": 10
       },
@@ -28,8 +28,8 @@
     }
   },
   "squad": {
-    "total_cost": 999,
-    "projected_points": 56.87,
+    "total_cost": 998,
+    "projected_points": 57.24,
     "formation": "3-4-3",
     "picks": [
       {
@@ -39,7 +39,7 @@
         "team_short": "ARS",
         "position": "MID",
         "now_cost": 95,
-        "projected_points": 6.845,
+        "projected_points": 7.005,
         "is_starter": true,
         "is_captain": true,
         "is_vice": false
@@ -87,8 +87,20 @@
         "team_short": "BHA",
         "position": "DEF",
         "now_cost": 49,
-        "projected_points": 3.208,
+        "projected_points": 3.255,
         "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 176,
+        "web_name": "Dasilva",
+        "team_id": 7,
+        "team_short": "COV",
+        "position": "DEF",
+        "now_cost": 40,
+        "projected_points": 2.716,
+        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
@@ -101,18 +113,6 @@
         "now_cost": 66,
         "projected_points": 4.432,
         "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 277,
-        "web_name": "Egan",
-        "team_id": 11,
-        "team_short": "HUL",
-        "position": "DEF",
-        "now_cost": 41,
-        "projected_points": 2.613,
-        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
@@ -207,7 +207,7 @@
         "team_short": "BHA",
         "position": "MID",
         "now_cost": 45,
-        "projected_points": 2.754,
+        "projected_points": 2.794,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
