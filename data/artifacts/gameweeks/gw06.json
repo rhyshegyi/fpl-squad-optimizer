@@ -2,7 +2,7 @@
   "gw": 6,
   "name": "Gameweek 6",
   "deadline": "2026-10-10T10:00:00Z",
-  "frozen_at": "2026-09-20T18:17:04.712885+00:00",
+  "frozen_at": "2026-09-20T21:43:00.591571+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 997,
@@ -270,7 +270,7 @@
       "team_short": "ARS",
       "position": "DEF",
       "now_cost": 55,
-      "projected": 1.818
+      "projected": 1.364
     },
     {
       "player_id": 11,
@@ -1238,7 +1238,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 49,
-      "projected": 0.076
+      "projected": 0.152
     },
     {
       "player_id": 132,
@@ -2238,7 +2238,7 @@
       "team_short": "FUL",
       "position": "DEF",
       "now_cost": 44,
-      "projected": 0.0
+      "projected": 0.807
     },
     {
       "player_id": 257,
@@ -3598,7 +3598,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 120,
-      "projected": 5.241
+      "projected": 5.098
     },
     {
       "player_id": 427,
@@ -3702,7 +3702,7 @@
       "team_short": "MUN",
       "position": "FWD",
       "now_cost": 70,
-      "projected": 2.008
+      "projected": 1.506
     },
     {
       "player_id": 440,
@@ -4446,7 +4446,7 @@
       "team_short": "SUN",
       "position": "DEF",
       "now_cost": 49,
-      "projected": 2.177
+      "projected": 2.2
     },
     {
       "player_id": 533,
@@ -4606,7 +4606,7 @@
       "team_short": "SUN",
       "position": "FWD",
       "now_cost": 57,
-      "projected": 3.044
+      "projected": 3.011
     },
     {
       "player_id": 553,
@@ -4742,7 +4742,7 @@
       "team_short": "FUL",
       "position": "FWD",
       "now_cost": 60,
-      "projected": 2.784
+      "projected": 2.733
     },
     {
       "player_id": 570,
