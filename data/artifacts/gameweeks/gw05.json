@@ -3,7 +3,7 @@
   "name": "Gameweek 5",
   "deadline": "2026-09-18T17:30:00Z",
   "frozen_at": "2026-09-18T11:31:03.264885+00:00",
-  "scored_at": null,
+  "scored_at": "2026-09-20T18:17:04.718537+00:00",
   "squad": {
     "total_cost": 999,
     "projected_points": 58.77,
@@ -5463,6 +5463,157 @@
       "position": "MID",
       "now_cost": 45,
       "projected": 0.15
+    }
+  ],
+  "result": {
+    "points": 51,
+    "starter_points": 45,
+    "captain_id": 411,
+    "captain_points": 6,
+    "captain_blanked": false,
+    "autosubs": [],
+    "points_left_on_bench": 11,
+    "fpl_average": 18,
+    "fpl_highest": 108,
+    "scores_final": false
+  },
+  "accuracy": {
+    "players_appeared": 301,
+    "mae": 2.072,
+    "rmse": 3.233,
+    "bias": 1.15,
+    "spearman": 0.3864
+  },
+  "misses": [
+    {
+      "web_name": "Rice",
+      "team_short": "ARS",
+      "position": "MID",
+      "projected": 4.855,
+      "actual": 1,
+      "minutes": 90
+    },
+    {
+      "web_name": "Saka",
+      "team_short": "ARS",
+      "position": "MID",
+      "projected": 5.51,
+      "actual": 2,
+      "minutes": 80
+    },
+    {
+      "web_name": "Mbeumo",
+      "team_short": "MUN",
+      "position": "MID",
+      "projected": 5.328,
+      "actual": 2,
+      "minutes": 90
+    },
+    {
+      "web_name": "Fatawu",
+      "team_short": "IPS",
+      "position": "MID",
+      "projected": 2.316,
+      "actual": -1,
+      "minutes": 66
+    },
+    {
+      "web_name": "Wissa",
+      "team_short": "NEW",
+      "position": "FWD",
+      "projected": 3.273,
+      "actual": 0,
+      "minutes": 90
+    },
+    {
+      "web_name": "Gibbs-White",
+      "team_short": "NFO",
+      "position": "MID",
+      "projected": 5.195,
+      "actual": 2,
+      "minutes": 90
+    },
+    {
+      "web_name": "Martinez",
+      "team_short": "MUN",
+      "position": "DEF",
+      "projected": 3.094,
+      "actual": 0,
+      "minutes": 90
+    },
+    {
+      "web_name": "Gabriel",
+      "team_short": "ARS",
+      "position": "DEF",
+      "projected": 3.857,
+      "actual": 1,
+      "minutes": 90
+    }
+  ],
+  "hits": [
+    {
+      "web_name": "Brobbey",
+      "team_short": "SUN",
+      "position": "FWD",
+      "projected": 1.671,
+      "actual": 17,
+      "minutes": 90
+    },
+    {
+      "web_name": "Dasilva",
+      "team_short": "COV",
+      "position": "DEF",
+      "projected": 1.547,
+      "actual": 15,
+      "minutes": 90
+    },
+    {
+      "web_name": "Schuster",
+      "team_short": "BRE",
+      "position": "DEF",
+      "projected": 1.621,
+      "actual": 14,
+      "minutes": 90
+    },
+    {
+      "web_name": "Semenyo",
+      "team_short": "MCI",
+      "position": "MID",
+      "projected": 4.978,
+      "actual": 17,
+      "minutes": 90
+    },
+    {
+      "web_name": "Manzambi",
+      "team_short": "AVL",
+      "position": "MID",
+      "projected": 1.211,
+      "actual": 13,
+      "minutes": 71
+    },
+    {
+      "web_name": "Gro\u00df",
+      "team_short": "BHA",
+      "position": "MID",
+      "projected": 2.994,
+      "actual": 14,
+      "minutes": 90
+    },
+    {
+      "web_name": "Tarkowski",
+      "team_short": "EVE",
+      "position": "DEF",
+      "projected": 3.421,
+      "actual": 14,
+      "minutes": 90
+    },
+    {
+      "web_name": "Hall",
+      "team_short": "NEW",
+      "position": "DEF",
+      "projected": 2.673,
+      "actual": 13,
+      "minutes": 90
     }
   ]
 }
