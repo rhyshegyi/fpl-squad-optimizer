@@ -46,10 +46,12 @@ SQUAD = {
 }
 
 
-def write_snapshot(snapdir, gw=4, scored_at=None, projections=None):
-    snapdir.mkdir(parents=True, exist_ok=True)
-    path = snapdir / f"gw{gw:02d}.json"
+def write_snapshot(snapdir, gw=4, scored_at=None, projections=None,
+                   season="2026-27"):
+    (snapdir / season).mkdir(parents=True, exist_ok=True)
+    path = snapdir / season / f"gw{gw:02d}.json"
     data = {
+        "season": season,
         "gw": gw,
         "name": f"Gameweek {gw}",
         "deadline": iso(datetime.now(timezone.utc) - timedelta(days=1)),
@@ -63,7 +65,7 @@ def write_snapshot(snapdir, gw=4, scored_at=None, projections=None):
         ],
     }
     path.write_text(json.dumps(data), encoding="utf-8")
-    return tracking.Snapshot(gw=gw, path=path, data=data)
+    return tracking.Snapshot(season=season, gw=gw, path=path, data=data)
 
 
 class TestFreezeBoundary:
@@ -153,6 +155,78 @@ class TestScoring:
         assert snap.data["accuracy"]["spearman"] is None
 
 
+class TestSeasonRollover:
+    """Next season must not collide with this one on disk."""
+
+    NEXT_SEASON = "2027-08-13T17:30:00Z"
+
+    def test_next_seasons_gw4_freezes_despite_this_seasons_scored_gw4(
+        self, snapdir, monkeypatch
+    ):
+        """The bug: a bare gw04.json, scored, blocked next season's GW4 forever."""
+        write_snapshot(snapdir, gw=4, season="2026-27",
+                       scored_at=iso(datetime.now(timezone.utc)))
+        future = datetime.now(timezone.utc) + timedelta(hours=2)
+        monkeypatch.setattr(tracking, "connect", _fake_connect(
+            4, iso(future), season_start=self.NEXT_SEASON))
+
+        path = tracking.freeze_gameweek(SQUAD, _projection_rows())
+        assert path is not None
+        assert path.parent.name == "2027-28"
+        assert json.loads(path.read_text(encoding="utf-8"))["season"] == "2027-28"
+        # and last season's record is untouched
+        old = json.loads((snapdir / "2026-27" / "gw04.json").read_text(encoding="utf-8"))
+        assert old["scored_at"] is not None
+
+    def test_a_past_seasons_snapshot_is_not_scored_against_new_fixtures(
+        self, snapdir, monkeypatch
+    ):
+        """Last May's GW38 must not be graded on this August's GW38 fixtures."""
+        snap = write_snapshot(snapdir, gw=38, season="2026-27")
+        monkeypatch.setattr(tracking, "connect", _fake_connect(
+            1, None, played=10, total=10,
+            actuals={i: (2, 90) for i in range(1, 16)}, average=50,
+            season_start=self.NEXT_SEASON))
+        assert tracking.score_snapshot(snap) is False
+        assert snap.data["scored_at"] is None
+
+
+class TestLegacyMigration:
+    def _legacy(self, snapdir, gw=4, deadline="2026-09-12T12:30:00Z", **extra):
+        snapdir.mkdir(parents=True, exist_ok=True)
+        path = snapdir / f"gw{gw:02d}.json"
+        path.write_text(json.dumps({"gw": gw, "deadline": deadline, **extra}),
+                        encoding="utf-8")
+        return path
+
+    def test_a_bare_snapshot_moves_under_its_season(self, snapdir):
+        legacy = self._legacy(snapdir)
+        moved = tracking.migrate_legacy_snapshots()
+        dest = snapdir / "2026-27" / "gw04.json"
+        assert moved == [dest] and dest.exists() and not legacy.exists()
+        assert json.loads(dest.read_text(encoding="utf-8"))["season"] == "2026-27"
+
+    def test_season_comes_from_the_deadline_across_new_year(self, snapdir):
+        """A January deadline belongs to the season that started the July before."""
+        self._legacy(snapdir, gw=21, deadline="2027-01-18T11:00:00Z")
+        tracking.migrate_legacy_snapshots()
+        assert (snapdir / "2026-27" / "gw21.json").exists()
+
+    def test_migration_never_overwrites_a_file_already_in_place(self, snapdir):
+        write_snapshot(snapdir, gw=4, season="2026-27",
+                       scored_at="2026-09-15T00:00:00Z")
+        self._legacy(snapdir, marker="stale copy")
+        tracking.migrate_legacy_snapshots()
+        kept = json.loads((snapdir / "2026-27" / "gw04.json").read_text(encoding="utf-8"))
+        assert kept["scored_at"] == "2026-09-15T00:00:00Z"
+        assert "marker" not in kept
+
+    def test_migration_is_idempotent(self, snapdir):
+        self._legacy(snapdir)
+        tracking.migrate_legacy_snapshots()
+        assert tracking.migrate_legacy_snapshots() == []
+
+
 class TestSummary:
     def test_only_scored_weeks_reach_the_summary(self, snapdir, monkeypatch):
         actuals = {i: (2, 90) for i in range(1, 16)}
@@ -162,12 +236,29 @@ class TestSummary:
         tracking.score_snapshot(snap)
         write_snapshot(snapdir, gw=5)      # frozen, not played
 
-        s = tracking.build_summary()
+        s = tracking.build_summary("2026-27")
         assert s["totals"]["gameweeks_scored"] == 1
         assert [w["gw"] for w in s["gameweeks"]] == [4]
         assert [p["gw"] for p in s["pending"]] == [5]
 
-    def test_empty_is_a_valid_answer(self, snapdir):
+    def test_totals_never_mix_seasons(self, snapdir, monkeypatch):
+        """A retrained model is a different model; its record starts fresh."""
+        actuals = {i: (2, 90) for i in range(1, 16)}
+        monkeypatch.setattr(tracking, "connect", _fake_connect(
+            4, None, played=10, total=10, actuals=actuals, average=50))
+        tracking.score_snapshot(write_snapshot(snapdir, gw=4, season="2026-27"))
+        write_snapshot(snapdir, gw=4, season="2027-28")    # frozen, unplayed
+
+        s = tracking.build_summary("2027-28")
+        assert s["season"] == "2027-28"
+        assert s["totals"]["gameweeks_scored"] == 0
+        assert [p["gw"] for p in s["pending"]] == [4]
+        by_code = {x["season"]: x for x in s["seasons"]}
+        assert by_code["2026-27"]["gameweeks_scored"] == 1
+        assert by_code["2027-28"]["current"] is True
+
+    def test_empty_is_a_valid_answer(self, snapdir, monkeypatch):
+        monkeypatch.setattr(tracking, "connect", _fake_connect(None, None))
         s = tracking.build_summary()
         assert s["totals"]["gameweeks_scored"] == 0
         assert s["gameweeks"] == [] and s["pending"] == []
@@ -183,7 +274,8 @@ def _projection_rows():
     ]
 
 
-def _fake_connect(next_gw, deadline, played=0, total=10, actuals=None, average=None):
+def _fake_connect(next_gw, deadline, played=0, total=10, actuals=None, average=None,
+                  season_start="2026-08-21T17:30:00Z"):
     """Minimal stand-in for the SQLite rows tracking.py reads."""
     class Cur:
         def __init__(self, rows):
@@ -202,7 +294,7 @@ def _fake_connect(next_gw, deadline, played=0, total=10, actuals=None, average=N
                            [{"id": next_gw, "name": f"Gameweek {next_gw}",
                              "deadline_time": deadline}])
             if "MIN(deadline_time)" in sql:
-                return Cur([{"d": "2026-08-21T17:30:00Z"}])
+                return Cur([{"d": season_start}])
             if "FROM fixtures WHERE event" in sql:
                 return Cur([{"total": total, "played": played}])
             if "historical_player_gw" in sql:

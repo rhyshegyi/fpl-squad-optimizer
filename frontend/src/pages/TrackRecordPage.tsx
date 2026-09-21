@@ -256,7 +256,7 @@ export function TrackRecordPage() {
     <div className="space-y-6">
       <div>
         <div className="text-xs uppercase tracking-widest text-slate-500">
-          Track record
+          Track record{data?.season && <> · {data.season}</>}
         </div>
         <h1 className="text-3xl font-bold mt-1">Was the model right?</h1>
         <p className="text-slate-400 mt-2 max-w-2xl text-sm">

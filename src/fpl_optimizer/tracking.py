@@ -40,6 +40,7 @@ MIN_MINUTES_FOR_ACCURACY = 1
 
 @dataclass
 class Snapshot:
+    season: str
     gw: int
     path: Path
     data: dict
@@ -63,21 +64,71 @@ def _parse(ts: str | None) -> datetime | None:
     return parsed if parsed.tzinfo else parsed.replace(tzinfo=timezone.utc)
 
 
-def _snapshot_path(gw: int) -> Path:
-    return SNAPSHOT_DIR / f"gw{gw:02d}.json"
+def _season_from_deadline(deadline: str | None) -> str | None:
+    """The FPL season a deadline belongs to; the year turns over in July."""
+    d = _parse(deadline)
+    if d is None:
+        return None
+    start = d.year if d.month >= 7 else d.year - 1
+    return f"{start}-{str(start + 1)[2:]}"
 
 
-def load_snapshots() -> list[Snapshot]:
+def _snapshot_path(season: str, gw: int) -> Path:
+    """`gameweeks/<season>/gwNN.json`.
+
+    The season is in the path, not just the payload, because the never-rewrite
+    rule keys off whether the file exists. With bare `gwNN.json`, next season's
+    GW4 would find this season's scored `gw04.json`, correctly refuse to
+    overwrite it, and never be frozen at all — nothing after GW38 would ever be
+    recorded again.
+    """
+    return SNAPSHOT_DIR / season / f"gw{gw:02d}.json"
+
+
+def migrate_legacy_snapshots() -> list[Path]:
+    """Move pre-season-namespacing `gameweeks/gwNN.json` files into place.
+
+    Idempotent: a file already at its destination is left alone, never
+    overwritten, for the same reason a scored snapshot is never rewritten.
+    """
     if not SNAPSHOT_DIR.exists():
         return []
-    out: list[Snapshot] = []
+    moved: list[Path] = []
     for path in sorted(SNAPSHOT_DIR.glob("gw*.json")):
         try:
             data = json.loads(path.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
             continue
-        out.append(Snapshot(gw=int(data["gw"]), path=path, data=data))
-    return out
+        season = data.get("season") or _season_from_deadline(data.get("deadline"))
+        if season is None:
+            continue
+        data["season"] = season
+        dest = _snapshot_path(season, int(data["gw"]))
+        if dest.exists():
+            continue
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(json.dumps(data, indent=2), encoding="utf-8")
+        path.unlink()
+        moved.append(dest)
+    return moved
+
+
+def load_snapshots(season: str | None = None) -> list[Snapshot]:
+    """Every snapshot, or one season's, oldest first."""
+    if not SNAPSHOT_DIR.exists():
+        return []
+    pattern = f"{season}/gw*.json" if season else "*/gw*.json"
+    out: list[Snapshot] = []
+    for path in sorted(SNAPSHOT_DIR.glob(pattern)):
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        out.append(Snapshot(
+            season=data.get("season") or path.parent.name,
+            gw=int(data["gw"]), path=path, data=data,
+        ))
+    return sorted(out, key=lambda x: (x.season, x.gw))
 
 
 # --------------------------------------------------------------------------
@@ -96,6 +147,7 @@ def freeze_gameweek(squad: dict, projections: list[dict]) -> Path | None:
         row = conn.execute(
             "SELECT id, name, deadline_time FROM gameweeks WHERE is_next = 1"
         ).fetchone()
+        season = _current_season(conn) if row is not None else None
     if row is None:
         return None
 
@@ -103,15 +155,22 @@ def freeze_gameweek(squad: dict, projections: list[dict]) -> Path | None:
     if deadline is None or _now() >= deadline:
         return None  # locked; whatever we stored before the deadline stands
 
-    path = _snapshot_path(row["id"])
+    path = _snapshot_path(season, row["id"])
     if path.exists():
         existing = json.loads(path.read_text(encoding="utf-8"))
         if existing.get("scored_at"):
             return None  # already settled, never rewrite history
 
-    SNAPSHOT_DIR.mkdir(parents=True, exist_ok=True)
+    # Which model made these projections. The record spans retrains — adding
+    # 2025-26 to training changed every projection from GW6 on — and a season
+    # overview has to be able to say which weeks came from which model.
+    from .historical import historical_seasons
+
+    path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps({
+        "season": season,
         "gw": row["id"],
+        "model": {"trained_on": historical_seasons(season)},
         "name": row["name"],
         "deadline": row["deadline_time"],
         "frozen_at": _now().isoformat(),
@@ -179,10 +238,15 @@ def score_snapshot(snap: Snapshot) -> bool:
         return False
 
     with connect() as conn:
+        # The fixtures and gameweeks tables hold only the live season. Scoring
+        # a past season's snapshot against them would grade last May's GW38
+        # against this August's GW38 fixtures, so an unscored snapshot from a
+        # finished season is left as it is rather than scored wrongly.
+        if snap.season != _current_season(conn):
+            return False
         if not _round_is_complete(conn, snap.gw):
             return False
-        season = _current_season(conn)
-        actuals = _actuals(conn, season, snap.gw)
+        actuals = _actuals(conn, snap.season, snap.gw)
         bench = conn.execute(
             "SELECT average_entry_score, highest_score, data_checked "
             "FROM gameweeks WHERE id = ?", (snap.gw,),
@@ -334,36 +398,37 @@ def _target_squad_ids() -> set[int]:
     return {p["player_id"] for p in data.get("squad", {}).get("picks", [])}
 
 
-def build_summary() -> dict:
-    """The rolled-up track record the site reads."""
-    snaps = [s for s in load_snapshots() if s.scored]
-    weeks = []
-    for s in snaps:
-        r, a = s.data["result"], s.data["accuracy"]
-        weeks.append({
-            "gw": s.gw,
-            "name": s.data.get("name"),
-            "deadline": s.data.get("deadline"),
-            "frozen_at": s.data.get("frozen_at"),
-            "points": r["points"],
-            "fpl_average": r.get("fpl_average"),
-            "beat_average": (
-                None if r.get("fpl_average") in (None, 0)
-                else r["points"] - r["fpl_average"]
-            ),
-            "captain_points": r["captain_points"],
-            "captain_blanked": r["captain_blanked"],
-            "points_left_on_bench": r["points_left_on_bench"],
-            "scores_final": r.get("scores_final", False),
-            "mae": a["mae"],
-            "spearman": a["spearman"],
-            "players_appeared": a["players_appeared"],
-            "hits": s.data.get("hits", []),
-            "misses": s.data.get("misses", []),
-        })
+def _week_row(s: Snapshot) -> dict:
+    r, a = s.data["result"], s.data["accuracy"]
+    return {
+        "season": s.season,
+        "gw": s.gw,
+        "name": s.data.get("name"),
+        "deadline": s.data.get("deadline"),
+        "frozen_at": s.data.get("frozen_at"),
+        "points": r["points"],
+        "fpl_average": r.get("fpl_average"),
+        "beat_average": (
+            None if r.get("fpl_average") in (None, 0)
+            else r["points"] - r["fpl_average"]
+        ),
+        "captain_points": r["captain_points"],
+        "captain_blanked": r["captain_blanked"],
+        "points_left_on_bench": r["points_left_on_bench"],
+        "scores_final": r.get("scores_final", False),
+        "mae": a["mae"],
+        "spearman": a["spearman"],
+        "players_appeared": a["players_appeared"],
+        "hits": s.data.get("hits", []),
+        "misses": s.data.get("misses", []),
+    }
 
+
+def _totals(weeks: list[dict]) -> dict:
     rated = [w for w in weeks if w["beat_average"] is not None]
-    totals = {
+    maes = [w["mae"] for w in weeks if w["mae"] is not None]
+    rhos = [w["spearman"] for w in weeks if w["spearman"] is not None]
+    return {
         "gameweeks_scored": len(weeks),
         "total_points": sum(w["points"] for w in weeks) or None,
         "mean_points": (
@@ -375,16 +440,36 @@ def build_summary() -> dict:
         ),
         "weeks_beating_average": sum(1 for w in rated if w["beat_average"] > 0),
         "weeks_rated": len(rated),
+        "mean_mae": round(sum(maes) / len(maes), 3) if maes else None,
+        "mean_spearman": round(sum(rhos) / len(rhos), 4) if rhos else None,
     }
-    maes = [w["mae"] for w in weeks if w["mae"] is not None]
-    rhos = [w["spearman"] for w in weeks if w["spearman"] is not None]
-    totals["mean_mae"] = round(sum(maes) / len(maes), 3) if maes else None
-    totals["mean_spearman"] = round(sum(rhos) / len(rhos), 4) if rhos else None
 
+
+def build_summary(season: str | None = None) -> dict:
+    """The rolled-up track record the site reads, for one season.
+
+    Totals never mix seasons: a model retrained over the summer is a different
+    model, and averaging its first weeks into last season's record would blur
+    the one comparison the record exists to make. `seasons` indexes every
+    season on file so a season overview or selector can read past ones
+    without another artifact.
+    """
+    if season is None:
+        with connect() as conn:
+            season = _current_season(conn)
+
+    snaps = load_snapshots()
+    this_season = [s for s in snaps if s.season == season]
+    weeks = [_week_row(s) for s in this_season if s.scored]
     pending = [
         {"gw": s.gw, "name": s.data.get("name"), "deadline": s.data.get("deadline")}
-        for s in load_snapshots() if not s.scored
+        for s in this_season if not s.scored
     ]
+
+    seasons = []
+    for code in sorted({s.season for s in snaps} | {season}):
+        scored = [_week_row(s) for s in snaps if s.season == code and s.scored]
+        seasons.append({"season": code, "current": code == season, **_totals(scored)})
 
     try:
         leaders = season_leaders()
@@ -398,9 +483,11 @@ def build_summary() -> dict:
 
     return {
         "generated_at": _now().isoformat(),
-        "totals": totals,
+        "season": season,
+        "totals": _totals(weeks),
         "gameweeks": weeks,
         "pending": pending,
+        "seasons": seasons,
         "leaders": leaders,
         "leaders_in_target_top10": top10,
     }
@@ -408,12 +495,14 @@ def build_summary() -> dict:
 
 def update_tracking(squad: dict, projections: list[dict]) -> dict[str, object]:
     """Freeze the open gameweek, score any finished ones, rewrite the summary."""
+    migrated = migrate_legacy_snapshots()
     frozen = freeze_gameweek(squad, projections)
-    scored = [s.gw for s in load_snapshots() if score_snapshot(s)]
+    scored = [f"{s.season} GW{s.gw}" for s in load_snapshots() if score_snapshot(s)]
 
     ACCURACY_PATH.parent.mkdir(parents=True, exist_ok=True)
     ACCURACY_PATH.write_text(json.dumps(build_summary(), indent=2), encoding="utf-8")
     return {
+        "migrated": [str(m) for m in migrated],
         "frozen": str(frozen) if frozen else None,
         "scored": scored,
         "summary": str(ACCURACY_PATH),

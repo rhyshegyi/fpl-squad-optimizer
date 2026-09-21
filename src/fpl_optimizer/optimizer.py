@@ -50,12 +50,20 @@ def optimize(
     projections: list[PlayerProjection],
     budget: int = BUDGET,
     formation: tuple[int, int, int] | None = None,
+    max_per_club: int | None = MAX_PER_CLUB,
 ) -> Squad:
     """Pick the squad, starting XI and captain in one solve.
 
     `formation` pins the starting XI to an exact (DEF, MID, FWD) shape. Left
     as None the LP chooses freely within FPL's legal bounds, which is what you
     normally want — pinning it is for comparing what a given shape costs you.
+
+    `max_per_club=None` drops the three-per-club cap. That cap governs which
+    squads you may *build*, not which XI you may field from players you already
+    own: when a held player moves club mid-season — Semenyo, Bournemouth to Man
+    City in January 2025-26 — FPL lets you keep him even if it leaves four from
+    one club. Selecting an XI from a held squad must pass None, or it becomes
+    infeasible the week the move lands.
     """
     if formation is not None:
         defenders, midfielders, forwards = formation
@@ -90,8 +98,11 @@ def optimize(
     prob += pulp.lpSum(by_id[i].now_cost * squad[i] for i in ids) <= budget
     for pos, n in SQUAD_SHAPE.items():
         prob += pulp.lpSum(squad[i] for i in ids if by_id[i].position == pos) == n
-    for team_id in {p.team_id for p in projections}:
-        prob += pulp.lpSum(squad[i] for i in ids if by_id[i].team_id == team_id) <= MAX_PER_CLUB
+    if max_per_club is not None:
+        for team_id in {p.team_id for p in projections}:
+            prob += pulp.lpSum(
+                squad[i] for i in ids if by_id[i].team_id == team_id
+            ) <= max_per_club
 
     # Starting XI: 11 players, must be in squad, formation limits per position
     for i in ids:

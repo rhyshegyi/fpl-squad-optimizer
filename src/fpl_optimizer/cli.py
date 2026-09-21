@@ -3,7 +3,7 @@ import sys
 
 from .entry import fetch_manager_squad
 from .export import export_artifacts
-from .historical import DEFAULT_SEASONS, ingest_historical
+from .historical import historical_seasons, ingest_historical
 from .ingest import ingest
 from .live_history import ingest_live_history
 from .model import train
@@ -85,7 +85,7 @@ def cmd_run(args: argparse.Namespace) -> None:
 
 
 def cmd_ingest_history(args: argparse.Namespace) -> None:
-    seasons = args.seasons or DEFAULT_SEASONS
+    seasons = args.seasons or historical_seasons()
     print(f"ingesting historical seasons: {seasons}")
     counts = ingest_historical(seasons)
     print(counts)

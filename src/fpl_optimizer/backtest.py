@@ -268,7 +268,8 @@ def _pick_xi_and_captain(
     from .optimizer import optimize
 
     budget = sum(p.now_cost for p in squad)
-    result = optimize(squad, budget=budget)
+    # A held squad, so no club cap: see `optimize` for the January-transfer case.
+    result = optimize(squad, budget=budget, max_per_club=None)
 
     starters = [pk.player.player_id for pk in result.picks if pk.is_starter]
     bench_picks = [pk for pk in result.picks if not pk.is_starter]

@@ -170,3 +170,42 @@ class TestGameweekScoring:
     def test_missing_data_scores_zero_rather_than_raising(self):
         s = score_gameweek(1, STARTERS, BENCH, 10, 11, POSITIONS, {})
         assert s.points == 0
+
+
+class TestHeldSquadAcrossAClubMove:
+    """A held player moving club must not make the XI unpickable.
+
+    Semenyo moved Bournemouth -> Man City in January 2025-26. A squad already
+    holding three City players then held four, and `_pick_xi_and_captain`
+    raised "solver returned Infeasible" — the three-per-club cap limits which
+    squads you may build, not which XI you may field from players you own.
+    """
+
+    def _squad(self):
+        from fpl_optimizer.projections import PlayerProjection
+
+        shape = ["GK", "GK"] + ["DEF"] * 5 + ["MID"] * 5 + ["FWD"] * 3
+        out = []
+        for i, pos in enumerate(shape, start=1):
+            # Four from club 1 (three owned + the one who moved in), rest spread out
+            team = 1 if i in (3, 8, 9, 13) else 100 + i
+            out.append(PlayerProjection(
+                player_id=i, web_name=f"P{i}", team_id=team, team_short=f"T{team}",
+                position=pos, now_cost=50, projected_points=float(i % 7),
+            ))
+        return out
+
+    def test_four_from_one_club_still_yields_an_xi(self):
+        from fpl_optimizer.backtest import _pick_xi_and_captain
+
+        xi, bench, captain, vice = _pick_xi_and_captain(self._squad())
+        assert len(xi) == 11 and len(bench) == 4
+        assert captain in xi
+
+    def test_building_a_squad_still_enforces_the_cap(self):
+        """The cap only relaxes for a held squad; new squads keep it."""
+        import pytest
+        from fpl_optimizer.optimizer import optimize
+
+        with pytest.raises(RuntimeError, match="Infeasible"):
+            optimize(self._squad(), budget=750)

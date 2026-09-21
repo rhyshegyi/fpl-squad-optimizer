@@ -208,8 +208,26 @@ export interface SeasonLeader {
   in_target_squad?: boolean;
 }
 
+/** One season's roll-up. Every season on file is indexed so a season
+ *  overview can read past ones without another artifact. */
+export interface SeasonRecord {
+  season: string;
+  current: boolean;
+  gameweeks_scored: number;
+  total_points: number | null;
+  mean_points: number | null;
+  mean_fpl_average: number | null;
+  weeks_beating_average: number;
+  weeks_rated: number;
+  mean_mae: number | null;
+  mean_spearman: number | null;
+}
+
 export interface AccuracyResponse {
   generated_at: string | null;
+  /** The season the totals and gameweeks belong to. Totals never mix seasons. */
+  season?: string;
+  seasons?: SeasonRecord[];
   totals: {
     gameweeks_scored: number;
     total_points?: number | null;

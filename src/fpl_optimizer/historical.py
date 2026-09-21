@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import csv
 import io
+from datetime import datetime, timezone
 
 import requests
 
@@ -41,7 +42,51 @@ TEAMS_INSERT_SQL = (
     f"VALUES ({', '.join(['?'] * len(TEAMS_INSERT_COLS))})"
 )
 
-DEFAULT_SEASONS = ["2022-23", "2023-24", "2024-25"]
+# The first season FPL published expected goals / assists. The xG and xA
+# rolling features are meaningless before it, so history starts here rather
+# than at the oldest season vaastav has.
+EARLIEST_SEASON = "2022-23"
+
+
+def season_code(start_year: int) -> str:
+    return f"{start_year}-{str(start_year + 1)[2:]}"
+
+
+def detect_current_season() -> str:
+    """The season being played, from staged gameweeks if there are any.
+
+    Falls back to the calendar when the database is empty (a fresh CI runner
+    before `fpl stage`): the FPL year turns over in July, when the new game is
+    published.
+    """
+    try:
+        with connect() as conn:
+            row = conn.execute("SELECT MIN(deadline_time) AS d FROM gameweeks").fetchone()
+        if row and row["d"]:
+            return season_code(int(row["d"][:4]))
+    except Exception:  # noqa: BLE001 - an unreadable DB is the fallback case
+        pass
+    today = datetime.now(timezone.utc)
+    return season_code(today.year if today.month >= 7 else today.year - 1)
+
+
+def historical_seasons(current: str | None = None) -> list[str]:
+    """Every complete season from EARLIEST_SEASON up to, not including, the current one.
+
+    Derived rather than hardcoded. The hardcoded list stopped at 2024-25 and
+    quietly stayed there: by September 2026 the model was training on data
+    two seasons old, missing 2025-26 entirely — the first season scored with
+    defensive-contribution points, and so the only one scored under the rules
+    being played now. It would also have dropped the current season out of
+    training at rollover, because CI rebuilds its database every run and the
+    live season is only ever ingested as live data.
+    """
+    current = current or detect_current_season()
+    return [
+        season_code(y)
+        for y in range(int(EARLIEST_SEASON[:4]), int(current[:4]))
+    ]
+
 
 POSITION_NORMALIZE = {
     "GK": "GK", "GKP": "GK",
@@ -165,12 +210,22 @@ def _fetch_season(season: str, team_name_to_id: dict[str, int]) -> list[tuple]:
 
 
 def ingest_historical(seasons: list[str] | None = None) -> dict[str, dict[str, int]]:
-    """Pull merged_gw.csv + teams.csv for each season."""
-    seasons = seasons or DEFAULT_SEASONS
+    """Pull merged_gw.csv + teams.csv for each season.
+
+    A season vaastav has not published is skipped with a note rather than
+    failing the pipeline — but the count of seasons actually loaded is in the
+    result, and training refuses to run on fewer than two.
+    """
+    seasons = seasons or historical_seasons()
     counts: dict[str, dict[str, int]] = {}
     with connect() as conn:
         for season in seasons:
-            team_rows = _fetch_teams(season)
+            try:
+                team_rows = _fetch_teams(season)
+            except requests.HTTPError as e:
+                print(f"  skipping {season}: not available upstream ({e})")
+                counts[season] = {"teams": 0, "player_gws": 0, "missing": 1}
+                continue
             conn.execute("DELETE FROM season_teams WHERE season = ?", (season,))
             conn.executemany(TEAMS_INSERT_SQL, team_rows)
 

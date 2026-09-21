@@ -56,14 +56,20 @@ jobs:
       - name: Sync dependencies
         run: uv sync --frozen
 
-      - name: Ingest historical seasons (vaastav CSVs)
-        run: uv run fpl ingest-history
-
+      # Stage the live game first so `ingest-history` can read which season is
+      # current from real data. It derives the historical seasons from that
+      # (every complete one since 2022-23), so rollover needs no edit here --
+      # and on a fresh runner the calendar fallback is only a fallback.
       - name: Ingest current-season data
         run: |
           uv run fpl ingest
           uv run fpl stage
-          uv run fpl ingest-live-history
+
+      - name: Ingest historical seasons (vaastav CSVs)
+        run: uv run fpl ingest-history
+
+      - name: Ingest current-season per-player history
+        run: uv run fpl ingest-live-history
 
       - name: Train ML predictor
         run: uv run fpl train
