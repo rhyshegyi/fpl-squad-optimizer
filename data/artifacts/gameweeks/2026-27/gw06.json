@@ -11,7 +11,7 @@
   },
   "name": "Gameweek 6",
   "deadline": "2026-10-10T10:00:00Z",
-  "frozen_at": "2026-09-21T13:04:36.580239+00:00",
+  "frozen_at": "2026-09-21T20:05:37.074604+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 998,
@@ -2799,7 +2799,7 @@
       "team_short": "MUN",
       "position": "GK",
       "now_cost": 45,
-      "projected": 0.068
+      "projected": 0.051
     },
     {
       "player_id": 326,
@@ -4815,7 +4815,7 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 44,
-      "projected": 0.949
+      "projected": 0.711
     },
     {
       "player_id": 578,

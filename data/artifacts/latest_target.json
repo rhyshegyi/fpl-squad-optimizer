@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-21T13:04:36.561274+00:00",
+  "generated_at": "2026-09-21T20:05:37.055678+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "pipeline_state": {
-    "last_fetch": "2026-09-21T13:01:26.666898+00:00",
+    "last_fetch": "2026-09-21T20:01:22.182428+00:00",
     "current_gw": {
       "id": 5,
       "name": "Gameweek 5"
@@ -19,10 +19,7 @@
       "latest_gw_on_file": 5,
       "latest_result": "2026-09-20T15:30:00+00:00",
       "gameweek_in_progress": null,
-      "bonus_pending": {
-        "id": 5,
-        "name": "Gameweek 5"
-      }
+      "bonus_pending": null
     }
   },
   "squad": {
@@ -3136,7 +3133,7 @@
       "team_short": "MUN",
       "position": "GK",
       "now_cost": 45,
-      "projected_points": 0.068
+      "projected_points": 0.051
     },
     {
       "player_id": 326,
@@ -5404,7 +5401,7 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 44,
-      "projected_points": 1.202
+      "projected_points": 0.902
     },
     {
       "player_id": 578,

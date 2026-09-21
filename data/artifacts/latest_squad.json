@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-21T13:04:14.428163+00:00",
+  "generated_at": "2026-09-21T20:05:07.512836+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-09-21T13:01:26.666898+00:00",
+    "last_fetch": "2026-09-21T20:01:22.182428+00:00",
     "current_gw": {
       "id": 5,
       "name": "Gameweek 5"
@@ -18,10 +18,7 @@
       "latest_gw_on_file": 5,
       "latest_result": "2026-09-20T15:30:00+00:00",
       "gameweek_in_progress": null,
-      "bonus_pending": {
-        "id": 5,
-        "name": "Gameweek 5"
-      }
+      "bonus_pending": null
     }
   },
   "squad": {
