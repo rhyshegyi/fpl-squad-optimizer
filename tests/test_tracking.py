@@ -105,9 +105,62 @@ class TestScoring:
         assert tracking.score_snapshot(snap) is False
         assert snap.data.get("scored_at") is None
 
-    def test_a_scored_snapshot_is_not_rescored(self, snapdir):
+    def test_a_settled_snapshot_is_not_rescored(self, snapdir):
         snap = write_snapshot(snapdir, scored_at=iso(datetime.now(timezone.utc)))
+        snap.data["result"] = {"scores_final": True}
         assert tracking.score_snapshot(snap) is False
+
+
+class TestProvisionalOutcome:
+    """The prediction freezes at the deadline; the outcome settles later.
+
+    GW5 was first scored with an FPL average of 18 that later read 44, turning
+    a 51-point week into an apparent +33.
+    """
+
+    def _score(self, snapdir, monkeypatch, snap, average, checked):
+        monkeypatch.setattr(tracking, "connect", _fake_connect(
+            5, None, played=10, total=10,
+            actuals={i: (2, 90) for i in range(1, 16)},
+            average=average, data_checked=checked))
+        return tracking.score_snapshot(snap)
+
+    def test_a_provisional_score_is_revised_as_fpl_revises(self, snapdir, monkeypatch):
+        snap = write_snapshot(snapdir, gw=5)
+        assert self._score(snapdir, monkeypatch, snap, average=18, checked=0)
+        assert snap.data["result"]["fpl_average"] == 18
+        assert snap.data["result"]["scores_final"] is False
+
+        assert self._score(snapdir, monkeypatch, snap, average=44, checked=0)
+        assert snap.data["result"]["fpl_average"] == 44
+
+    def test_confirmation_settles_it_for_good(self, snapdir, monkeypatch):
+        snap = write_snapshot(snapdir, gw=5)
+        self._score(snapdir, monkeypatch, snap, average=18, checked=0)
+        assert self._score(snapdir, monkeypatch, snap, average=46, checked=1)
+        assert snap.settled and snap.data.get("settled_at")
+        # FPL moving the number again afterwards changes nothing
+        assert self._score(snapdir, monkeypatch, snap, average=99, checked=1) is False
+        assert snap.data["result"]["fpl_average"] == 46
+
+    def test_rescoring_never_touches_the_prediction(self, snapdir, monkeypatch):
+        """The whole record rests on this."""
+        snap = write_snapshot(snapdir, gw=5)
+        frozen = {k: json.dumps(snap.data[k], sort_keys=True)
+                  for k in ("squad", "projections", "frozen_at", "deadline")}
+        for avg, checked in ((18, 0), (44, 0), (46, 1)):
+            self._score(snapdir, monkeypatch, snap, average=avg, checked=checked)
+        on_disk = json.loads(snap.path.read_text(encoding="utf-8"))
+        for k, v in frozen.items():
+            assert json.dumps(on_disk[k], sort_keys=True) == v, f"{k} changed"
+
+    def test_unconfirmed_weeks_are_shown_but_not_rated(self, snapdir, monkeypatch):
+        snap = write_snapshot(snapdir, gw=5)
+        self._score(snapdir, monkeypatch, snap, average=18, checked=0)
+        s = tracking.build_summary("2026-27")
+        assert s["totals"]["gameweeks_scored"] == 1
+        assert s["totals"]["weeks_rated"] == 0
+        assert s["gameweeks"][0]["scores_final"] is False
 
     def test_a_complete_round_scores(self, snapdir, monkeypatch):
         actuals = {i: (2, 90) for i in range(1, 16)}
@@ -275,7 +328,7 @@ def _projection_rows():
 
 
 def _fake_connect(next_gw, deadline, played=0, total=10, actuals=None, average=None,
-                  season_start="2026-08-21T17:30:00Z"):
+                  season_start="2026-08-21T17:30:00Z", data_checked=1):
     """Minimal stand-in for the SQLite rows tracking.py reads."""
     class Cur:
         def __init__(self, rows):
@@ -302,7 +355,7 @@ def _fake_connect(next_gw, deadline, played=0, total=10, actuals=None, average=N
                             for k, v in (actuals or {}).items()])
             if "average_entry_score" in sql:
                 return Cur([{"average_entry_score": average,
-                             "highest_score": 120, "data_checked": 1}])
+                             "highest_score": 120, "data_checked": data_checked}])
             return Cur([])
 
         def __enter__(self):

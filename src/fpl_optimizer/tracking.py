@@ -49,6 +49,11 @@ class Snapshot:
     def scored(self) -> bool:
         return self.data.get("scored_at") is not None
 
+    @property
+    def settled(self) -> bool:
+        """Scored against numbers FPL has confirmed. Only then is it locked."""
+        return self.scored and bool((self.data.get("result") or {}).get("scores_final"))
+
 
 def _now() -> datetime:
     return datetime.now(timezone.utc)
@@ -233,8 +238,17 @@ def _spearman(pairs: list[tuple[float, float]]) -> float | None:
 
 
 def score_snapshot(snap: Snapshot) -> bool:
-    """Fill in what actually happened. Returns True if it scored."""
-    if snap.scored:
+    """Fill in what actually happened. Returns True if it (re)scored.
+
+    Two halves of a snapshot, locked at different moments. The *prediction* —
+    squad and projections — is frozen at the deadline and never touched here.
+    The *outcome* is not final at the last whistle: FPL keeps revising bonus
+    points and its `average_entry_score` until `data_checked`. GW5 was first
+    scored with an FPL average of 18 that later read 44, which made a 51-point
+    week look like +33. So the outcome is re-scored on every run until FPL
+    confirms the round, and only then settles.
+    """
+    if snap.settled:
         return False
 
     with connect() as conn:
@@ -282,6 +296,8 @@ def score_snapshot(snap: Snapshot) -> bool:
     n = len(errors)
 
     snap.data["scored_at"] = _now().isoformat()
+    if bench and bench["data_checked"]:
+        snap.data["settled_at"] = snap.data["scored_at"]
     snap.data["result"] = {
         "points": result.points,
         "starter_points": result.starter_points,
@@ -425,7 +441,10 @@ def _week_row(s: Snapshot) -> dict:
 
 
 def _totals(weeks: list[dict]) -> dict:
-    rated = [w for w in weeks if w["beat_average"] is not None]
+    # Only confirmed weeks are rated against FPL's average, because until
+    # `data_checked` that average is still being revised — sometimes by more
+    # than half.
+    rated = [w for w in weeks if w["beat_average"] is not None and w["scores_final"]]
     maes = [w["mae"] for w in weeks if w["mae"] is not None]
     rhos = [w["spearman"] for w in weeks if w["spearman"] is not None]
     return {

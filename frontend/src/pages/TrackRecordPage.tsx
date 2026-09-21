@@ -75,8 +75,11 @@ function GameweekCard({ w }: { w: TrackedGameweek }) {
             frozen {fmtDate(w.frozen_at)}
           </span>
           {!w.scores_final && (
-            <span className="ml-2 text-[10px] uppercase tracking-wider text-amber-300/80">
-              bonus provisional
+            <span
+              className="ml-2 text-[10px] uppercase tracking-wider text-amber-300/80"
+              title="FPL keeps revising bonus points and its average score until it confirms the round. This card is re-scored on every refresh until then, and does not count toward the season's record yet."
+            >
+              provisional · FPL still confirming
             </span>
           )}
         </div>
@@ -86,10 +89,15 @@ function GameweekCard({ w }: { w: TrackedGameweek }) {
             <span
               className={
                 "text-sm font-medium " +
-                (beat > 0 ? "text-emerald-400" : beat < 0 ? "text-red-400" : "text-slate-400")
+                // An unconfirmed average can be off by more than half, so the
+                // verdict is shown muted rather than as a win or a loss.
+                (!w.scores_final
+                  ? "text-slate-500"
+                  : beat > 0 ? "text-emerald-400" : beat < 0 ? "text-red-400" : "text-slate-400")
               }
             >
               {beat > 0 ? "+" : ""}{beat} vs avg {w.fpl_average}
+              {!w.scores_final && " so far"}
             </span>
           )}
         </div>
