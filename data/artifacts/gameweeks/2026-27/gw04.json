@@ -3,7 +3,7 @@
   "name": "Gameweek 4",
   "deadline": "2026-09-12T12:30:00Z",
   "frozen_at": "2026-09-12T10:59:26.152434+00:00",
-  "scored_at": "2026-09-15T11:36:16.584775+00:00",
+  "scored_at": "2026-09-21T13:04:36.586145+00:00",
   "squad": {
     "total_cost": 1000,
     "projected_points": 56.16,
@@ -5456,7 +5456,7 @@
     "points_left_on_bench": 14,
     "fpl_average": 69,
     "fpl_highest": 151,
-    "scores_final": false
+    "scores_final": true
   },
   "accuracy": {
     "players_appeared": 307,
@@ -5597,5 +5597,6 @@
       "minutes": 90
     }
   ],
-  "season": "2026-27"
+  "season": "2026-27",
+  "settled_at": "2026-09-21T13:04:36.586145+00:00"
 }

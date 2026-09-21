@@ -3,7 +3,7 @@
   "name": "Gameweek 5",
   "deadline": "2026-09-18T17:30:00Z",
   "frozen_at": "2026-09-18T11:31:03.264885+00:00",
-  "scored_at": "2026-09-20T18:17:04.718537+00:00",
+  "scored_at": "2026-09-21T13:04:37.799135+00:00",
   "squad": {
     "total_cost": 999,
     "projected_points": 58.77,
@@ -5473,16 +5473,16 @@
     "captain_blanked": false,
     "autosubs": [],
     "points_left_on_bench": 11,
-    "fpl_average": 18,
-    "fpl_highest": 108,
+    "fpl_average": 48,
+    "fpl_highest": 126,
     "scores_final": false
   },
   "accuracy": {
     "players_appeared": 301,
-    "mae": 2.072,
-    "rmse": 3.233,
-    "bias": 1.15,
-    "spearman": 0.3864
+    "mae": 2.07,
+    "rmse": 3.232,
+    "bias": 1.143,
+    "spearman": 0.3889
   },
   "misses": [
     {
