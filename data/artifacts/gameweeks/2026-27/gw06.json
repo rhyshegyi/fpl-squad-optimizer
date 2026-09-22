@@ -11,10 +11,10 @@
   },
   "name": "Gameweek 6",
   "deadline": "2026-10-10T10:00:00Z",
-  "frozen_at": "2026-09-21T20:05:37.074604+00:00",
+  "frozen_at": "2026-09-22T11:55:33.634202+00:00",
   "scored_at": null,
   "squad": {
-    "total_cost": 998,
+    "total_cost": 997,
     "projected_points": 59.84,
     "formation": "3-4-3",
     "picks": [
@@ -180,7 +180,7 @@
         "team_id": 16,
         "team_short": "MUN",
         "position": "MID",
-        "now_cost": 120,
+        "now_cost": 119,
         "projected_points": 6.01,
         "is_starter": true,
         "is_captain": false,
@@ -478,7 +478,7 @@
       "web_name": "Bogarde",
       "team_short": "AVL",
       "position": "MID",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected": 0.229
     },
     {
@@ -686,8 +686,8 @@
       "web_name": "Truffert",
       "team_short": "BOU",
       "position": "DEF",
-      "now_cost": 55,
-      "projected": 2.012
+      "now_cost": 54,
+      "projected": 1.798
     },
     {
       "player_id": 62,
@@ -950,7 +950,7 @@
       "web_name": "Schade",
       "team_short": "BRE",
       "position": "MID",
-      "now_cost": 61,
+      "now_cost": 62,
       "projected": 3.182
     },
     {
@@ -1127,7 +1127,7 @@
       "team_short": "BHA",
       "position": "DEF",
       "now_cost": 45,
-      "projected": 2.789
+      "projected": 2.091
     },
     {
       "player_id": 117,
@@ -1350,7 +1350,7 @@
       "web_name": "Gusto",
       "team_short": "CHE",
       "position": "DEF",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected": 1.343
     },
     {
@@ -1518,7 +1518,7 @@
       "web_name": "Jo\u00e3o Pedro",
       "team_short": "CHE",
       "position": "FWD",
-      "now_cost": 78,
+      "now_cost": 77,
       "projected": 3.306
     },
     {
@@ -1686,8 +1686,8 @@
       "web_name": "Mason-Clark",
       "team_short": "COV",
       "position": "MID",
-      "now_cost": 54,
-      "projected": 2.165
+      "now_cost": 53,
+      "projected": 2.014
     },
     {
       "player_id": 187,
@@ -1758,7 +1758,7 @@
       "web_name": "Simms",
       "team_short": "COV",
       "position": "FWD",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected": 0.987
     },
     {
@@ -1902,8 +1902,8 @@
       "web_name": "Lerma",
       "team_short": "CRY",
       "position": "MID",
-      "now_cost": 49,
-      "projected": 1.087
+      "now_cost": 48,
+      "projected": 1.042
     },
     {
       "player_id": 214,
@@ -1942,7 +1942,7 @@
       "web_name": "Doucour\u00e9",
       "team_short": "CRY",
       "position": "MID",
-      "now_cost": 49,
+      "now_cost": 48,
       "projected": 0.085
     },
     {
@@ -2782,7 +2782,7 @@
       "web_name": "McAteer",
       "team_short": "IPS",
       "position": "MID",
-      "now_cost": 45,
+      "now_cost": 44,
       "projected": 0.612
     },
     {
@@ -2823,7 +2823,7 @@
       "team_short": "BHA",
       "position": "DEF",
       "now_cost": 49,
-      "projected": 1.702
+      "projected": 1.277
     },
     {
       "player_id": 329,
@@ -3294,8 +3294,8 @@
       "web_name": "O'Reilly",
       "team_short": "MCI",
       "position": "DEF",
-      "now_cost": 64,
-      "projected": 1.129
+      "now_cost": 63,
+      "projected": 1.119
     },
     {
       "player_id": 388,
@@ -3606,7 +3606,7 @@
       "web_name": "B.Fernandes",
       "team_short": "MUN",
       "position": "MID",
-      "now_cost": 120,
+      "now_cost": 119,
       "projected": 6.01
     },
     {
@@ -3790,8 +3790,8 @@
       "web_name": "Hall",
       "team_short": "NEW",
       "position": "DEF",
-      "now_cost": 52,
-      "projected": 3.422
+      "now_cost": 53,
+      "projected": 3.358
     },
     {
       "player_id": 450,
@@ -3982,8 +3982,8 @@
       "web_name": "Aina",
       "team_short": "NFO",
       "position": "DEF",
-      "now_cost": 45,
-      "projected": 1.289
+      "now_cost": 44,
+      "projected": 1.275
     },
     {
       "player_id": 474,
@@ -4358,8 +4358,8 @@
       "web_name": "Bergvall",
       "team_short": "TOT",
       "position": "MID",
-      "now_cost": 54,
-      "projected": 1.058
+      "now_cost": 53,
+      "projected": 1.049
     },
     {
       "player_id": 521,

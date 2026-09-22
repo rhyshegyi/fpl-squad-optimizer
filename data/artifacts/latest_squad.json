@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-21T20:05:07.512836+00:00",
+  "generated_at": "2026-09-22T11:55:03.226938+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-09-21T20:01:22.182428+00:00",
+    "last_fetch": "2026-09-22T11:51:14.649295+00:00",
     "current_gw": {
       "id": 5,
       "name": "Gameweek 5"
@@ -22,7 +22,7 @@
     }
   },
   "squad": {
-    "total_cost": 998,
+    "total_cost": 997,
     "projected_points": 59.84,
     "formation": "3-4-3",
     "picks": [
@@ -188,7 +188,7 @@
         "team_id": 16,
         "team_short": "MUN",
         "position": "MID",
-        "now_cost": 120,
+        "now_cost": 119,
         "projected_points": 6.01,
         "is_starter": true,
         "is_captain": false,
