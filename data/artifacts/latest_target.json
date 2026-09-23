@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-22T19:03:32.800188+00:00",
+  "generated_at": "2026-09-23T11:55:20.683833+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "pipeline_state": {
-    "last_fetch": "2026-09-22T18:59:15.196123+00:00",
+    "last_fetch": "2026-09-23T11:51:00.594403+00:00",
     "current_gw": {
       "id": 5,
       "name": "Gameweek 5"
@@ -531,7 +531,7 @@
       "team_id": 2,
       "team_short": "AVL",
       "position": "DEF",
-      "now_cost": 45,
+      "now_cost": 44,
       "projected_points": 0.0
     },
     {
@@ -2097,8 +2097,8 @@
       "team_id": 8,
       "team_short": "CRY",
       "position": "MID",
-      "now_cost": 55,
-      "projected_points": 2.995
+      "now_cost": 54,
+      "projected_points": 2.913
     },
     {
       "player_id": 211,
@@ -2880,7 +2880,7 @@
       "team_id": 11,
       "team_short": "HUL",
       "position": "MID",
-      "now_cost": 45,
+      "now_cost": 44,
       "projected_points": 0.0
     },
     {
@@ -3969,8 +3969,8 @@
       "team_id": 16,
       "team_short": "MUN",
       "position": "DEF",
-      "now_cost": 49,
-      "projected_points": 2.783
+      "now_cost": 48,
+      "projected_points": 2.784
     },
     {
       "player_id": 419,
@@ -4140,7 +4140,7 @@
       "team_id": 16,
       "team_short": "MUN",
       "position": "MID",
-      "now_cost": 45,
+      "now_cost": 44,
       "projected_points": 0.068
     },
     {
