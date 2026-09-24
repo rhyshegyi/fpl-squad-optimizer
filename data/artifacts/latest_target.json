@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-23T19:10:05.086104+00:00",
+  "generated_at": "2026-09-24T12:00:40.506249+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "pipeline_state": {
-    "last_fetch": "2026-09-23T19:06:48.665466+00:00",
+    "last_fetch": "2026-09-24T11:58:14.025930+00:00",
     "current_gw": {
       "id": 5,
       "name": "Gameweek 5"
@@ -2673,7 +2673,7 @@
       "team_id": 11,
       "team_short": "HUL",
       "position": "GK",
-      "now_cost": 45,
+      "now_cost": 44,
       "projected_points": 0.0
     },
     {
