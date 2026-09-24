@@ -11,7 +11,7 @@
   },
   "name": "Gameweek 6",
   "deadline": "2026-10-10T10:00:00Z",
-  "frozen_at": "2026-09-24T12:00:40.521518+00:00",
+  "frozen_at": "2026-09-24T19:22:35.657430+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 997,
@@ -3375,7 +3375,7 @@
       "team_short": "MCI",
       "position": "MID",
       "now_cost": 84,
-      "projected": 3.028
+      "projected": 2.271
     },
     {
       "player_id": 398,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T12:00:40.530059+00:00",
+  "generated_at": "2026-09-24T19:22:35.668379+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 2,
@@ -348,7 +348,7 @@
       "bonus": 9,
       "ppg": 9.4,
       "value": 8.1,
-      "selected_by": 28.1,
+      "selected_by": 28.2,
       "in_target_squad": true
     },
     {
@@ -366,7 +366,7 @@
       "bonus": 7,
       "ppg": 8.6,
       "value": 7.05,
-      "selected_by": 16.0,
+      "selected_by": 16.1,
       "in_target_squad": true
     },
     {
@@ -384,8 +384,8 @@
       "bonus": 6,
       "ppg": 8.4,
       "value": 9.13,
-      "selected_by": 6.9,
-      "in_target_squad": false
+      "selected_by": 7.0,
+      "in_target_squad": true
     },
     {
       "rank": 4,
@@ -457,7 +457,7 @@
       "ppg": 7.4,
       "value": 6.49,
       "selected_by": 26.7,
-      "in_target_squad": true
+      "in_target_squad": false
     },
     {
       "rank": 8,
@@ -492,8 +492,8 @@
       "bonus": 6,
       "ppg": 6.8,
       "value": 7.39,
-      "selected_by": 12.5,
-      "in_target_squad": true
+      "selected_by": 12.6,
+      "in_target_squad": false
     },
     {
       "rank": 10,
@@ -510,7 +510,7 @@
       "bonus": 7,
       "ppg": 6.6,
       "value": 4.29,
-      "selected_by": 65.6,
+      "selected_by": 65.5,
       "in_target_squad": false
     },
     {
@@ -546,8 +546,8 @@
       "bonus": 2,
       "ppg": 6.6,
       "value": 3.93,
-      "selected_by": 15.6,
-      "in_target_squad": true
+      "selected_by": 15.5,
+      "in_target_squad": false
     },
     {
       "rank": 13,
@@ -709,7 +709,7 @@
       "ppg": 6.0,
       "value": 4.92,
       "selected_by": 42.2,
-      "in_target_squad": false
+      "in_target_squad": true
     },
     {
       "rank": 22,
@@ -762,7 +762,7 @@
       "bonus": 2,
       "ppg": 5.8,
       "value": 5.0,
-      "selected_by": 50.6,
+      "selected_by": 50.5,
       "in_target_squad": false
     },
     {
@@ -835,7 +835,7 @@
       "ppg": 5.6,
       "value": 5.6,
       "selected_by": 2.5,
-      "in_target_squad": false
+      "in_target_squad": true
     },
     {
       "rank": 29,
@@ -874,5 +874,5 @@
       "in_target_squad": false
     }
   ],
-  "leaders_in_target_top10": 6
+  "leaders_in_target_top10": 5
 }
