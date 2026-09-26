@@ -16,7 +16,18 @@ from .projections import FDR_MULTIPLIER
 # there: identical by luck rather than by construction, so changing one would
 # have left the harness quietly validating a model we do not ship.
 LGB_PARAMS = {
-    "objective": "regression",
+    # Poisson, not squared error. FPL points are count-like and 62% zero, and
+    # a log link ranks them measurably better: +0.0179 mean per-gameweek
+    # Spearman over 147 gameweeks, t=+11.75, better in 81% of them, and better
+    # on RMSE too despite that metric favouring the loss it replaced.
+    #
+    # Not for the reason it was proposed. The pitch was that the model
+    # compresses reality -- actual points among players who feature have
+    # sd 2.95 against our sd 0.96 -- and that this would widen it. It does
+    # not: Poisson's spread is slightly narrower. A conditional mean *should*
+    # have less spread than the outcome; that was a normal property of the
+    # estimator being read as a defect.
+    "objective": "poisson",
     "metric": "rmse",
     "learning_rate": 0.05,
     "num_leaves": 63,
@@ -34,7 +45,9 @@ LGB_PARAMS = {
 NON_NEGATIVE_OBJECTIVES = {"poisson", "tweedie", "gamma"}
 
 
-def params_for(objective: str = "regression", **overrides) -> dict:
+def params_for(objective: str | None = None, **overrides) -> dict:
+    """Training parameters. `objective=None` means whatever we ship."""
+    objective = objective or LGB_PARAMS["objective"]
     params = {**LGB_PARAMS, "objective": objective}
     if objective == "tweedie":
         params.setdefault("tweedie_variance_power", 1.3)
@@ -42,8 +55,9 @@ def params_for(objective: str = "regression", **overrides) -> dict:
     return params
 
 
-def prepare_target(y, objective: str = "regression"):
+def prepare_target(y, objective: str | None = None):
     """Clip the target where the objective cannot represent negative points."""
+    objective = objective or LGB_PARAMS["objective"]
     return y.clip(lower=0) if objective in NON_NEGATIVE_OBJECTIVES else y
 
 
@@ -80,7 +94,7 @@ def _mae(y: np.ndarray, yhat: np.ndarray) -> float:
     return float(np.mean(np.abs(y - yhat)))
 
 
-def train(val_season: str | None = None, objective: str = "regression",
+def train(val_season: str | None = None, objective: str | None = None,
           **param_overrides) -> TrainResult:
     df = build_training_frame()
     # Only seasons with a full slate (>= 35 GWs) are eligible for validation —

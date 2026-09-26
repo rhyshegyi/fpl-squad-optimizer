@@ -82,7 +82,7 @@ def load_season_frame(season: str) -> pd.DataFrame:
     return df[df["season"] == season].copy()
 
 
-def train_excluding_season(exclude: str, objective: str = "regression",
+def train_excluding_season(exclude: str, objective: str | None = None,
                            **param_overrides) -> tuple[lgb.Booster, list[str]]:
     """Fit a model on every complete season except `exclude`.
 

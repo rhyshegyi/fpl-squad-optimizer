@@ -170,12 +170,16 @@ def freeze_gameweek(squad: dict, projections: list[dict]) -> Path | None:
     # 2025-26 to training changed every projection from GW6 on — and a season
     # overview has to be able to say which weeks came from which model.
     from .historical import historical_seasons
+    from .model import LGB_PARAMS
 
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps({
         "season": season,
         "gw": row["id"],
-        "model": {"trained_on": historical_seasons(season)},
+        "model": {
+            "trained_on": historical_seasons(season),
+            "objective": LGB_PARAMS["objective"],
+        },
         "name": row["name"],
         "deadline": row["deadline_time"],
         "frozen_at": _now().isoformat(),
