@@ -12,6 +12,41 @@ import pandas as pd
 from .features import build_training_frame, feature_columns
 from .projections import FDR_MULTIPLIER
 
+# One definition, imported by the backtest too. These used to be duplicated
+# there: identical by luck rather than by construction, so changing one would
+# have left the harness quietly validating a model we do not ship.
+LGB_PARAMS = {
+    "objective": "regression",
+    "metric": "rmse",
+    "learning_rate": 0.05,
+    "num_leaves": 63,
+    "feature_fraction": 0.9,
+    "bagging_fraction": 0.9,
+    "bagging_freq": 5,
+    "min_data_in_leaf": 40,
+    "verbose": -1,
+}
+
+# Objectives that model a non-negative, count-like target. FPL points can be
+# negative (red cards, own goals), which these cannot represent, so the target
+# is clipped for them -- 485 of 113,582 training rows, 0.43%, and not
+# something the model could predict anyway.
+NON_NEGATIVE_OBJECTIVES = {"poisson", "tweedie", "gamma"}
+
+
+def params_for(objective: str = "regression", **overrides) -> dict:
+    params = {**LGB_PARAMS, "objective": objective}
+    if objective == "tweedie":
+        params.setdefault("tweedie_variance_power", 1.3)
+    params.update(overrides)
+    return params
+
+
+def prepare_target(y, objective: str = "regression"):
+    """Clip the target where the objective cannot represent negative points."""
+    return y.clip(lower=0) if objective in NON_NEGATIVE_OBJECTIVES else y
+
+
 MODEL_PATH = Path("data") / "model.txt"
 FEATURES_PATH = Path("data") / "model_features.json"
 
@@ -45,7 +80,8 @@ def _mae(y: np.ndarray, yhat: np.ndarray) -> float:
     return float(np.mean(np.abs(y - yhat)))
 
 
-def train(val_season: str | None = None) -> TrainResult:
+def train(val_season: str | None = None, objective: str = "regression",
+          **param_overrides) -> TrainResult:
     df = build_training_frame()
     # Only seasons with a full slate (>= 35 GWs) are eligible for validation —
     # excludes the mid-flight current season which would otherwise get picked
@@ -61,24 +97,14 @@ def train(val_season: str | None = None) -> TrainResult:
 
     feat_cols = feature_columns()
     X_train = train_df[feat_cols]
-    y_train = train_df[TARGET].astype(float)
+    y_train = prepare_target(train_df[TARGET].astype(float), objective)
     X_val = val_df[feat_cols]
-    y_val = val_df[TARGET].astype(float)
+    y_val = prepare_target(val_df[TARGET].astype(float), objective)
 
     train_ds = lgb.Dataset(X_train, label=y_train, categorical_feature=["position"])
     val_ds = lgb.Dataset(X_val, label=y_val, categorical_feature=["position"], reference=train_ds)
 
-    params = {
-        "objective": "regression",
-        "metric": "rmse",
-        "learning_rate": 0.05,
-        "num_leaves": 63,
-        "feature_fraction": 0.9,
-        "bagging_fraction": 0.9,
-        "bagging_freq": 5,
-        "min_data_in_leaf": 40,
-        "verbose": -1,
-    }
+    params = params_for(objective, **param_overrides)
 
     booster = lgb.train(
         params,

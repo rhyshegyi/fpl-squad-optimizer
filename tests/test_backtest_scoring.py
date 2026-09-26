@@ -209,3 +209,69 @@ class TestHeldSquadAcrossAClubMove:
 
         with pytest.raises(RuntimeError, match="Infeasible"):
             optimize(self._squad(), budget=750)
+
+
+class TestDoubleGameweeks:
+    """A gameweek is not always one match.
+
+    The key on `historical_player_gw` was (season, element, gw), so the second
+    fixture of every double overwrote the first — 374 rows lost in 2024-25,
+    419 in 2025-26, exactly the count of duplicated pairs at source. Adding
+    `fixture` to the key recovered 3,314 rows across four seasons and broke two
+    downstream assumptions that these tests now pin.
+    """
+
+    def test_actual_points_are_summed_across_both_fixtures(self):
+        import pandas as pd
+        from fpl_optimizer.backtest import load_actuals
+
+        frame = pd.DataFrame([
+            {"element": 1, "gw": 30, "total_points": 6, "minutes": 90},
+            {"element": 1, "gw": 30, "total_points": 9, "minutes": 85},
+            {"element": 2, "gw": 30, "total_points": 2, "minutes": 90},
+        ])
+        assert load_actuals(frame)[(1, 30)] == (15, 175)
+        assert load_actuals(frame)[(2, 30)] == (2, 90)
+
+    def test_minutes_are_summed_so_one_blank_leg_is_not_an_autosub(self):
+        """Playing only the second leg is not the same as not playing."""
+        import pandas as pd
+        from fpl_optimizer.backtest import load_actuals
+
+        frame = pd.DataFrame([
+            {"element": 1, "gw": 30, "total_points": 0, "minutes": 0},
+            {"element": 1, "gw": 30, "total_points": 8, "minutes": 90},
+        ])
+        assert load_actuals(frame)[(1, 30)] == (8, 90)
+
+    def test_a_double_becomes_one_projection_worth_both_matches(self):
+        from fpl_optimizer.backtest import combine_doubles
+        from fpl_optimizer.projections import PlayerProjection
+
+        def mk(pid, pts):
+            return PlayerProjection(player_id=pid, web_name=f"P{pid}", team_id=1,
+                                    team_short="T", position="MID", now_cost=50,
+                                    projected_points=pts)
+
+        out = combine_doubles([mk(1, 3.0), mk(2, 4.0), mk(1, 2.5)])
+        assert {p.player_id: p.projected_points for p in out} == {1: 5.5, 2: 4.0}
+
+    def test_no_player_appears_twice(self):
+        """Two entries for one player would be two signings to the optimizer."""
+        from fpl_optimizer.backtest import combine_doubles
+        from fpl_optimizer.projections import PlayerProjection
+
+        rows = [PlayerProjection(player_id=7, web_name="P", team_id=1,
+                                 team_short="T", position="MID", now_cost=50,
+                                 projected_points=1.0) for _ in range(3)]
+        out = combine_doubles(rows)
+        assert len(out) == 1 and out[0].projected_points == 3.0
+
+    def test_single_fixtures_are_untouched(self):
+        from fpl_optimizer.backtest import combine_doubles
+        from fpl_optimizer.projections import PlayerProjection
+
+        rows = [PlayerProjection(player_id=i, web_name=f"P{i}", team_id=1,
+                                 team_short="T", position="MID", now_cost=50,
+                                 projected_points=float(i)) for i in (1, 2, 3)]
+        assert combine_doubles(rows) == rows

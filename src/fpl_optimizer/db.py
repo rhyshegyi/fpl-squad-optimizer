@@ -74,6 +74,12 @@ CREATE TABLE IF NOT EXISTS historical_player_gw (
     season                    TEXT NOT NULL,   -- e.g. '2024-25'
     element                   INTEGER NOT NULL,-- player id within that season
     gw                        INTEGER NOT NULL,
+    -- Part of the key, because a team can play twice in one gameweek. Keying
+    -- on (season, element, gw) alone silently overwrote the first fixture of
+    -- every double with the second: 374 rows lost in 2024-25, 419 in 2025-26,
+    -- exactly the number of duplicated (element, gw) pairs at source. Doubles
+    -- are the highest-scoring weeks in the game, so the loss was systematic.
+    fixture                   INTEGER,
     name                      TEXT,
     position                  TEXT,            -- GK/DEF/MID/FWD
     team                      TEXT,            -- full or short name (varies by source)
@@ -99,7 +105,7 @@ CREATE TABLE IF NOT EXISTS historical_player_gw (
     expected_goals_conceded    REAL,
     starts                    INTEGER,
     value                     INTEGER,         -- price at time of GW (tenths)
-    PRIMARY KEY (season, element, gw)
+    PRIMARY KEY (season, element, gw, fixture)
 );
 
 CREATE INDEX IF NOT EXISTS idx_hpg_season_gw
@@ -130,10 +136,25 @@ def ensure_column(conn, table: str, column: str, decl: str) -> None:
         conn.execute(f"ALTER TABLE {table} ADD COLUMN {column} {decl}")
 
 
+def _rebuild_if_schema_is_stale(conn) -> None:
+    """Drop `historical_player_gw` when its key predates double-gameweek support.
+
+    Safe to drop rather than migrate: every row is derived, from data/history/
+    or vaastav or the FPL API, and is re-ingested on the next pipeline run.
+    SQLite cannot alter a primary key in place, and a table that silently
+    discards a fixture is not worth preserving.
+    """
+    cols = {r["name"] for r in conn.execute("PRAGMA table_info(historical_player_gw)")}
+    if cols and "fixture" not in cols:
+        conn.execute("DROP TABLE historical_player_gw")
+        conn.commit()
+
+
 def connect() -> sqlite3.Connection:
     DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
+    _rebuild_if_schema_is_stale(conn)
     conn.executescript(SCHEMA)
     ensure_column(conn, "historical_player_gw", "team_id", "INTEGER")
     ensure_column(conn, "fixtures", "started", "INTEGER")

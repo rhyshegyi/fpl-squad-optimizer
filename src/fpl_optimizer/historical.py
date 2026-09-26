@@ -100,6 +100,7 @@ POSITION_NORMALIZE = {
 # name → id map from the same season's teams.csv; live_history sets it from
 # the staged players table.
 COLUMNS = [
+    ("fixture", int),          # disambiguates the two halves of a double gameweek
     ("element", int),
     ("name", str),
     ("position", str),

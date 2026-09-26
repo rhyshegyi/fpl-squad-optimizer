@@ -15,6 +15,7 @@ import csv
 import pytest
 
 from fpl_optimizer import archive
+from fpl_optimizer.historical import INSERT_COLS, TEAMS_INSERT_COLS
 
 
 @pytest.fixture
@@ -58,10 +59,30 @@ def fake_connect(confirmed=(1, 2), rows_by_gw=None, teams=None):
     return lambda: Conn()
 
 
-PLAYER_ROW = ("2026-27", 1, 411, "Haaland", "FWD", "MCI", 15, 3, 1,
-              "2026-08-23T13:00:00Z", 90, 2, 0, 0, 0, 1, 0, 12,
-              10.4, 5.2, 30.0, 4.6, 0.52, 0.11, 0.63, 1.2, 1, 155)
-TEAM_ROW = ("2026-27", 1, "Arsenal", "ARS", 4, 4, 5, 0, 0, 0, 0)
+# Built from the column definitions rather than hand-ordered, so adding a
+# column (as `fixture` was, for double gameweeks) cannot silently shift every
+# value one place to the right and still typecheck.
+def _row(cols, values, default=0):
+    return tuple(values.get(c, default) for c in cols)
+
+
+PLAYER_VALUES = {
+    "season": "2026-27", "gw": 1, "fixture": 8, "element": 411,
+    "name": "Haaland", "position": "FWD", "team": "MCI", "team_id": 15,
+    "opponent_team": 3, "was_home": 1, "kickoff_time": "2026-08-23T13:00:00Z",
+    "minutes": 90, "total_points": 2, "bps": 12, "influence": 10.4,
+    "creativity": 5.2, "threat": 30.0, "ict_index": 4.6,
+    "expected_goals": 0.52, "expected_assists": 0.11,
+    "expected_goal_involvements": 0.63, "expected_goals_conceded": 1.2,
+    "starts": 1, "value": 155,
+}
+TEAM_VALUES = {
+    "season": "2026-27", "id": 1, "name": "Arsenal", "short_name": "ARS",
+    "strength": 4, "strength_overall_home": 4, "strength_overall_away": 5,
+}
+
+PLAYER_ROW = _row(INSERT_COLS, PLAYER_VALUES)
+TEAM_ROW = _row(TEAMS_INSERT_COLS, TEAM_VALUES)
 
 
 class TestConfirmationGate:
@@ -173,14 +194,14 @@ class TestRoundTrip:
         """A missing xG must read back as NULL, not 0 or "" — it would
         otherwise become a real value in a rolling mean."""
         row = list(PLAYER_ROW)
-        row[22] = None          # expected_goals
+        row[INSERT_COLS.index("expected_goals")] = None
         monkeypatch.setattr(archive, "connect", fake_connect(
             confirmed=(1,), rows_by_gw={1: [tuple(row)]}, teams=[TEAM_ROW]))
         archive.archive_season("2026-27")
 
         from fpl_optimizer.historical import _rows_from_archive
         _, players = _rows_from_archive("2026-27")
-        assert players[0][22] is None
+        assert players[0][INSERT_COLS.index("expected_goals")] is None
 
 
 class TestDiscovery:

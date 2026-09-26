@@ -21,7 +21,7 @@ Correctness notes that matter more than they look:
 """
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 
 import lightgbm as lgb
 import numpy as np
@@ -30,22 +30,13 @@ import pandas as pd
 from .features import (
     POSITION_CATEGORIES, STRENGTH_FEATURES, build_training_frame, feature_columns,
 )
+from .model import params_for, prepare_target
 from .optimizer import SQUAD_SHAPE, STARTER_LIMITS, STARTING_XI
 from .projections import PlayerProjection
 
 # LightGBM params kept in step with model.train() so backtest numbers reflect
 # the shipped model rather than a differently-tuned one.
-LGB_PARAMS = {
-    "objective": "regression",
-    "metric": "rmse",
-    "learning_rate": 0.05,
-    "num_leaves": 63,
-    "feature_fraction": 0.9,
-    "bagging_fraction": 0.9,
-    "bagging_freq": 5,
-    "min_data_in_leaf": 40,
-    "verbose": -1,
-}
+# (parameters live in model.py so the harness tests what we ship)
 
 
 @dataclass
@@ -91,7 +82,8 @@ def load_season_frame(season: str) -> pd.DataFrame:
     return df[df["season"] == season].copy()
 
 
-def train_excluding_season(exclude: str) -> tuple[lgb.Booster, list[str]]:
+def train_excluding_season(exclude: str, objective: str = "regression",
+                           **param_overrides) -> tuple[lgb.Booster, list[str]]:
     """Fit a model on every complete season except `exclude`.
 
     Backtesting a season the model trained on would be self-fulfilling, so
@@ -111,10 +103,11 @@ def train_excluding_season(exclude: str) -> tuple[lgb.Booster, list[str]]:
     train_df = df[df["season"].isin(train_seasons)]
     ds = lgb.Dataset(
         train_df[feat],
-        label=train_df["total_points"].astype(float),
+        label=prepare_target(train_df["total_points"].astype(float), objective),
         categorical_feature=["position"],
     )
-    booster = lgb.train(LGB_PARAMS, ds, num_boost_round=400)
+    booster = lgb.train(params_for(objective, **param_overrides), ds,
+                        num_boost_round=400)
     return booster, feat
 
 
@@ -151,13 +144,43 @@ def project_gameweek(
 
 
 def load_actuals(frame: pd.DataFrame) -> dict[tuple[int, int], tuple[int, int]]:
-    """{(element, gw): (actual_points, minutes)} — the ground truth we score against."""
+    """{(element, gw): (actual_points, minutes)} — the ground truth we score against.
+
+    Summed across fixtures, because a gameweek is not always one match. This
+    used to assign rather than accumulate, so when the data gained its second
+    double-gameweek row the first was overwritten and a player who returned
+    twice was scored once. Minutes are summed too, so a player who featured in
+    only one leg of a double is not auto-subbed out.
+    """
     actuals: dict[tuple[int, int], tuple[int, int]] = {}
     for r in frame.itertuples():
         pts = 0 if pd.isna(r.total_points) else int(r.total_points)
         mins = 0 if pd.isna(r.minutes) else int(r.minutes)
-        actuals[(int(r.element), int(r.gw))] = (pts, mins)
+        key = (int(r.element), int(r.gw))
+        have = actuals.get(key, (0, 0))
+        actuals[key] = (have[0] + pts, have[1] + mins)
     return actuals
+
+
+def combine_doubles(projections: list[PlayerProjection]) -> list[PlayerProjection]:
+    """One entry per player per gameweek, summing a double's two fixtures.
+
+    Projectors work per row, and a row is a fixture. Two fixtures in one
+    gameweek therefore produce two entries for the same player, which the
+    optimizer would treat as two separate signings. Summing is the right
+    merge: a double gameweek really is worth both matches.
+    """
+    merged: dict[int, PlayerProjection] = {}
+    for p in projections:
+        seen = merged.get(p.player_id)
+        if seen is None:
+            merged[p.player_id] = p
+        else:
+            merged[p.player_id] = replace(
+                seen,
+                projected_points=round(seen.projected_points + p.projected_points, 3),
+            )
+    return list(merged.values())
 
 
 # --------------------------------------------------------------------------
@@ -300,7 +323,7 @@ def run_set_and_forget(
         projector = MLProjector(*train_excluding_season(season))
     actuals = load_actuals(frame)
 
-    opening = projector(frame, start_gw)
+    opening = combine_doubles(projector(frame, start_gw))
     if not opening:
         raise RuntimeError(f"no projections available for {season} GW{start_gw}")
 
@@ -312,7 +335,7 @@ def run_set_and_forget(
 
     scores: list[GameweekScore] = []
     for gw in range(start_gw, end_gw + 1):
-        gw_proj = {p.player_id: p for p in projector(frame, gw)}
+        gw_proj = {p.player_id: p for p in combine_doubles(projector(frame, gw))}
         # A squad member with no row this gameweek (missing data, or out of the
         # league) still has to be selectable, so fall back to a zero projection.
         pool = [
@@ -419,7 +442,7 @@ def run_with_transfers(
     transfers: list[TransferLog] = []
 
     for gw in range(start_gw, end_gw + 1):
-        gw_proj = {p.player_id: p for p in projector(frame, gw)}
+        gw_proj = {p.player_id: p for p in combine_doubles(projector(frame, gw))}
 
         def as_projection(pid: int) -> PlayerProjection:
             """Squad members with no row this gameweek (blank, or gone from the
@@ -611,7 +634,7 @@ def train_two_stage_excluding_season(
 
     started = train_df[train_df["minutes"] >= START_MINUTES]
     reg = lgb.train(
-        LGB_PARAMS,
+        params_for("regression"),
         lgb.Dataset(
             started[feat],
             label=started["total_points"].astype(float),
