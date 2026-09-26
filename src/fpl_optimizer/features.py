@@ -190,11 +190,38 @@ def feature_columns() -> list[str]:
     return cols
 
 
-def build_predict_frame(current_season: str, target_gw: int) -> pd.DataFrame:
+def fixture_slots(target_gw: int) -> int:
+    """How many matches the busiest team plays in this gameweek.
+
+    Normally 1. In a double gameweek some team plays twice, and a player's
+    projection is the sum over their fixtures — so the caller builds one frame
+    per slot rather than one row per fixture. Extra rows would break the
+    rolling features: the cumulative ones use cumsum, and a single NaN
+    poisons every value after it.
+    """
+    with connect() as conn:
+        row = conn.execute(
+            "SELECT MAX(n) AS n FROM ("
+            "  SELECT COUNT(*) AS n FROM ("
+            "    SELECT team_h AS t FROM fixtures WHERE event = ?"
+            "    UNION ALL SELECT team_a FROM fixtures WHERE event = ?"
+            "  ) GROUP BY t)", (target_gw, target_gw),
+        ).fetchone()
+    return int(row["n"] or 0) if row else 0
+
+
+def build_predict_frame(current_season: str, target_gw: int,
+                        fixture_slot: int = 0) -> pd.DataFrame:
     """One row per active player for the given target GW.
 
     Uses the player's current-season history for rolling features, and the
     staged fixtures/teams tables for the target-GW fixture context.
+
+    `fixture_slot` picks which of a team's fixtures to use. Slot 0 is the only
+    one that exists in a normal gameweek; slot 1 is the second leg of a double.
+    A player with fewer fixtures than the requested slot gets no opponent,
+    which downstream reads as a blank and scores zero — correct, since that
+    player has no second match to contribute one.
     """
     with connect() as conn:
         history = pd.read_sql_query(
@@ -222,17 +249,14 @@ def build_predict_frame(current_season: str, target_gw: int) -> pd.DataFrame:
 
     synthetic_rows: list[dict] = []
     for _, p in stub.iterrows():
-        home_fixture = fixtures[fixtures["team_h"] == p["team_id"]]
-        away_fixture = fixtures[fixtures["team_a"] == p["team_id"]]
-        if not home_fixture.empty:
-            opp = int(home_fixture.iloc[0]["team_a"])
-            was_home = 1
-        elif not away_fixture.empty:
-            opp = int(away_fixture.iloc[0]["team_h"])
-            was_home = 0
-        else:
-            opp = None
-            was_home = None
+        own = [
+            (int(f["team_a"]), 1) for _, f in
+            fixtures[fixtures["team_h"] == p["team_id"]].iterrows()
+        ] + [
+            (int(f["team_h"]), 0) for _, f in
+            fixtures[fixtures["team_a"] == p["team_id"]].iterrows()
+        ]
+        opp, was_home = own[fixture_slot] if fixture_slot < len(own) else (None, None)
         synthetic_rows.append({
             "season": current_season,
             "element": int(p["element"]),

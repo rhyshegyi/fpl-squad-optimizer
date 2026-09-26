@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from .db import connect
-from .features import build_predict_frame
+from .features import build_predict_frame, fixture_slots
 from .live_history import _current_season
 from .model import load_model
 from .projections import PlayerProjection
@@ -35,6 +35,20 @@ def project_ml() -> list[PlayerProjection]:
         raise RuntimeError("no players in predict frame — did staging run?")
 
     yhat = booster.predict(df[feat_cols])
+
+    # A double gameweek is worth both matches. Each extra slot is a separate
+    # frame with that fixture's opponent and home/away, predicted and added;
+    # players without a second fixture have no opponent there and contribute
+    # nothing, which is what `opponent_team` being null already means.
+    for slot in range(1, fixture_slots(gw)):
+        extra = build_predict_frame(season, gw, fixture_slot=slot)
+        played = extra["opponent_team"].notna().to_numpy()
+        yhat = yhat + booster.predict(extra[feat_cols]) * played
+        df = df.assign(
+            fixtures=df.get("fixtures", 1) + played.astype(int),
+            opponent_team=df["opponent_team"].fillna(extra["opponent_team"]),
+        )
+
     df = df.assign(projected_points=yhat)
 
     out: list[PlayerProjection] = []

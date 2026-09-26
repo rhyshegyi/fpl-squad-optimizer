@@ -25,7 +25,7 @@ import pandas as pd
 from .db import connect
 from .features import (
     POSITION_CATEGORIES, STRENGTH_FEATURES, STRENGTH_KINDS, build_predict_frame,
-    season_team_strength_ranks,
+    fixture_slots, season_team_strength_ranks,
 )
 from .model import load_model
 from .projections import PlayerProjection
@@ -89,8 +89,9 @@ def _team_strengths(season: str) -> dict[int, dict]:
     }
 
 
-def _fixture_context(conn, season: str, gws: list[int]) -> dict[tuple[int, int], dict]:
-    """{(team_id, gw): resolved strength ranks + is_home}.
+def _fixture_context(conn, season: str,
+                     gws: list[int]) -> dict[tuple[int, int], list[dict]]:
+    """{(team_id, gw): [resolved strength ranks + is_home, one per fixture]}.
 
     Mirrors how `features._add_team_strengths` resolves home/away: your own
     side uses its home figure when at home, and the opponent uses its *away*
@@ -113,10 +114,10 @@ def _fixture_context(conn, season: str, gws: list[int]) -> dict[tuple[int, int],
             own_s, opp_s = strengths.get(team), strengths.get(opp)
             if own_s is None or opp_s is None:
                 continue
-            # A double gameweek would overwrite here; the first fixture is
-            # kept, which understates DGW players. Flagged, not yet handled.
+            # A double gameweek appends rather than overwrites: the horizon
+            # sums a team's fixtures for that week, so both legs count.
             side, opp_side = ("home", "away") if at_home else ("away", "home")
-            out.setdefault((team, gw), {
+            out.setdefault((team, gw), []).append({
                 "is_home": int(at_home),
                 **{f"own_strength_{k}_rank": own_s[f"{k}_{side}"]
                    for k in STRENGTH_KINDS},
@@ -124,6 +125,14 @@ def _fixture_context(conn, season: str, gws: list[int]) -> dict[tuple[int, int],
                    for k in STRENGTH_KINDS},
             })
     return out
+
+
+def _slot(fixtures: dict, team, gw: int, slot: int) -> dict:
+    """One fixture's context, or an empty dict when the team has no such match."""
+    if pd.isna(team):
+        return {}
+    matches = fixtures.get((int(team), gw), [])
+    return matches[slot] if slot < len(matches) else {}
 
 
 def _season_quality(conn, season: str, upto_gw: int) -> tuple[dict[int, tuple[float, int]], dict]:
@@ -175,29 +184,43 @@ def project_target(
     base["position"] = pd.Categorical(base["position"], categories=POSITION_CATEGORIES)
 
     # --- horizon: freeze form, advance the fixtures -------------------------
+    # The opening week is itself a gameweek and can be a double, so it is
+    # summed across slots like any other.
     total = booster.predict(base[feat_cols]).astype(float)
+    for slot in range(1, fixture_slots(gw)):
+        extra = build_predict_frame(season, gw, fixture_slot=slot)
+        extra["position"] = pd.Categorical(
+            extra["position"], categories=POSITION_CATEGORIES)
+        played = extra["opponent_team"].notna().to_numpy()
+        total = total + booster.predict(extra[feat_cols]).astype(float) * played
+
     weight_sum = 1.0
     teams = base["team_id"].tolist()
 
     for step, target_gw in enumerate(future_gws, start=1):
-        shifted = base.copy()
-        for col in FIXTURE_COLUMNS:
-            if col not in shifted.columns:
-                continue
-            shifted[col] = [
-                fixtures.get((int(t), target_gw), {}).get(col)
-                if pd.notna(t) else None
-                for t in teams
-            ]
-            shifted[col] = pd.to_numeric(shifted[col], errors="coerce")
+        # A blank contributes nothing; a double contributes both legs.
+        slots = max(
+            (len(v) for (t, g), v in fixtures.items() if g == target_gw),
+            default=0,
+        )
+        week = [0.0] * len(base)
+        for slot in range(slots):
+            shifted = base.copy()
+            for col in FIXTURE_COLUMNS:
+                if col not in shifted.columns:
+                    continue
+                shifted[col] = [
+                    _slot(fixtures, t, target_gw, slot).get(col) for t in teams
+                ]
+                shifted[col] = pd.to_numeric(shifted[col], errors="coerce")
 
-        # Blank gameweek contributes nothing — the reason to look ahead at all
-        has_fixture = shifted["opp_strength_overall_rank"].notna().to_numpy()
-        preds = booster.predict(shifted[feat_cols]).astype(float)
-        preds = [p if ok else 0.0 for p, ok in zip(preds, has_fixture)]
+            has_fixture = shifted["opp_strength_overall_rank"].notna().to_numpy()
+            preds = booster.predict(shifted[feat_cols]).astype(float)
+            week = [w_ + (p if ok else 0.0)
+                    for w_, p, ok in zip(week, preds, has_fixture)]
 
         w = DECAY ** step
-        total = [t + w * p for t, p in zip(total, preds)]
+        total = [t + w * p for t, p in zip(total, week)]
         weight_sum += w
 
     horizon_pts = [t / weight_sum for t in total]
