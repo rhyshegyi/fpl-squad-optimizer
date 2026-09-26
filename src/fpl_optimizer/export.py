@@ -74,6 +74,29 @@ def _parse(ts: str | None) -> datetime | None:
     return parsed if parsed.tzinfo else parsed.replace(tzinfo=timezone.utc)
 
 
+def average_squad_value(conn) -> int | None:
+    """What the average FPL manager's fifteen are worth today, in tenths.
+
+    There is no endpoint for this, and none is needed. Every manager owns
+    exactly fifteen players, so by linearity of expectation the ownership-
+    weighted sum of prices *is* the mean squad value — not a sample estimate.
+    The scaling term corrects for ownership percentages that sum to slightly
+    under 1500% through rounding.
+
+    It is market value, not sale value: FPL lets you keep only half of any
+    price rise, so a real manager's spending power is a little lower than this
+    plus their bank. Close early in a season, drifting apart later.
+    """
+    row = conn.execute(
+        "SELECT SUM(selected_by_percent) AS own, "
+        "       SUM(selected_by_percent * now_cost) AS value "
+        "FROM players WHERE selected_by_percent IS NOT NULL"
+    ).fetchone()
+    if not row or not row["own"]:
+        return None
+    return round(float(row["value"]) / float(row["own"]) * 15)
+
+
 def _data_health(conn, season: str) -> dict:
     """Is this snapshot internally consistent, and does it cover every result?
 
@@ -220,8 +243,10 @@ def _pipeline_state() -> dict:
             _data_health(conn, f"{year}-{str(year + 1)[2:]}")
             if year else {}
         )
+        avg_value = average_squad_value(conn)
     return {
         "last_fetch": ts,
+        "average_squad_value": avg_value,
         "current_gw": {"id": current["id"], "name": current["name"]} if current else None,
         "next_gw": {
             "id": nxt["id"], "name": nxt["name"], "deadline_time": nxt["deadline_time"],
@@ -340,8 +365,12 @@ def _export_target() -> Path | None:
             DEFAULT_HORIZON, DEFAULT_QUALITY_WEIGHT, project_target,
         )
 
+        from .db import connect as _connect
+
+        with _connect() as conn:
+            budget = average_squad_value(conn) or 1000
         projections = project_target()
-        squad = optimize(projections, budget=1000)
+        squad = optimize(projections, budget=budget)
     except Exception as e:  # noqa: BLE001 - a missing target must not break the run
         print(f"  warning: target squad export skipped ({e})")
         return None
@@ -351,6 +380,7 @@ def _export_target() -> Path | None:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "horizon": DEFAULT_HORIZON,
         "quality_weight": DEFAULT_QUALITY_WEIGHT,
+        "budget_tenths": budget,
         "pipeline_state": _pipeline_state(),
         "squad": _squad_to_dict(squad),
         "projections": [asdict(p) for p in projections],

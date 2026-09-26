@@ -72,6 +72,10 @@ export interface GameweekProgress {
 
 export interface PipelineState {
   last_fetch: string | null;
+  /** What the average FPL squad is worth today, in tenths of £m. Drifts all
+   *  season as prices move, so the Squad page tracks it rather than assuming
+   *  the £100m everyone started with. */
+  average_squad_value?: number | null;
   data_health?: DataHealth;
   current_gw: { id: number; name: string } | null;
   next_gw: { id: number; name: string; deadline_time: string } | null;

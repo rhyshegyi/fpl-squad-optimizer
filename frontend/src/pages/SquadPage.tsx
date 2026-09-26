@@ -6,14 +6,20 @@ import { Pitch } from "../components/Pitch";
 import { StatusBar } from "../components/StatusBar";
 import type { PipelineState, Squad, TargetSquadResponse } from "../types";
 
-const DEFAULT_BUDGET_TENTHS = 1000;
+// Only used until the artifact reports the real figure. The budget that
+// matters is what the average manager's squad is actually worth, which drifts
+// all season as prices move — a fixed £100m silently goes stale.
+const FALLBACK_BUDGET_TENTHS = 1000;
 const MIN_BUDGET = 850;
 const MAX_BUDGET = 1150;
-const STEP = 5;
+// £0.1m, matching how FPL prices actually move. A coarser step cannot
+// represent the average squad value and silently snaps away from it.
+const STEP = 1;
 const DEBOUNCE_MS = 250;
 
 export function SquadPage() {
-  const [budget, setBudget] = useState<number>(DEFAULT_BUDGET_TENTHS);
+  const [budget, setBudget] = useState<number>(FALLBACK_BUDGET_TENTHS);
+  const [average, setAverage] = useState<number | null>(null);
   const [squad, setSquad] = useState<Squad | null>(null);
   const [pipeline, setPipeline] = useState<PipelineState | null>(null);
   const [meta, setMeta] = useState<{ generatedAt: string | null; horizon: number }>({
@@ -31,6 +37,9 @@ export function SquadPage() {
         setSquad(data.squad);
         setPipeline(data.pipeline_state);
         setMeta({ generatedAt: data.generated_at, horizon: data.horizon });
+        setAverage(data.pipeline_state.average_squad_value ?? null);
+        // Start the slider where most people actually are, not at £100m.
+        setBudget(data.budget_tenths);
       })
       .catch((e) => setErr(String(e)))
       .finally(() => setLoading(false));
@@ -92,6 +101,20 @@ export function SquadPage() {
             <span>
               Budget{" "}
               <span className="text-slate-500">(drag · £{budgetM}m)</span>
+              {average != null && (
+                <span
+                  className="ml-1 text-slate-500"
+                  title={
+                    "The average FPL squad is worth this at today's prices, " +
+                    "from ownership-weighted prices across every player. It is " +
+                    "market value — FPL lets you keep only half of any price " +
+                    "rise, so your own spending power is a little lower than " +
+                    "your squad value plus bank."
+                  }
+                >
+                  · avg £{(average / 10).toFixed(1)}m
+                </span>
+              )}
             </span>
             <span>
               £{cost.toFixed(1)}m spent
@@ -118,7 +141,7 @@ export function SquadPage() {
           </div>
           <div className="mt-1 flex justify-between text-[10px] text-slate-500">
             <span>£{(MIN_BUDGET / 10).toFixed(0)}m</span>
-            <span>£{(DEFAULT_BUDGET_TENTHS / 10).toFixed(0)}m</span>
+            <span>£{((average ?? FALLBACK_BUDGET_TENTHS) / 10).toFixed(0)}m</span>
             <span>£{(MAX_BUDGET / 10).toFixed(0)}m</span>
           </div>
         </div>

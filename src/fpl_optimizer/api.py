@@ -188,7 +188,8 @@ def get_target_squad(
     multi-fixture horizon so it stays stable enough to actually aim at.
 
     Passing `budget_tenths` re-solves the LP; omitting it returns the
-    precomputed £100m squad.
+    precomputed squad, solved at whatever the average FPL squad was worth
+    when the pipeline last ran rather than at a fixed £100m.
     """
     data = _load_json(TARGET_JSON)
     if budget_tenths is None:
@@ -197,7 +198,7 @@ def get_target_squad(
             "horizon": data["horizon"],
             "quality_weight": data["quality_weight"],
             "pipeline_state": data["pipeline_state"],
-            "budget_tenths": 1000,
+            "budget_tenths": data.get("budget_tenths", 1000),
             "squad": data["squad"],
         }
 

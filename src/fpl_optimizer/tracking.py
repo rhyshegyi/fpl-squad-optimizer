@@ -156,6 +156,11 @@ def freeze_gameweek(squad: dict, projections: list[dict]) -> Path | None:
     if row is None:
         return None
 
+    from .export import average_squad_value
+
+    with connect() as conn:
+        average_value = average_squad_value(conn)
+
     deadline = _parse(row["deadline_time"])
     if deadline is None or _now() >= deadline:
         return None  # locked; whatever we stored before the deadline stands
@@ -180,6 +185,10 @@ def freeze_gameweek(squad: dict, projections: list[dict]) -> Path | None:
             "trained_on": historical_seasons(season),
             "objective": LGB_PARAMS["objective"],
         },
+        # The average manager's squad value at this deadline. Recorded per
+        # gameweek so the series builds itself rather than needing a backfill
+        # later — prices drift all season and nobody remembers to snapshot it.
+        "average_squad_value": average_value,
         "name": row["name"],
         "deadline": row["deadline_time"],
         "frozen_at": _now().isoformat(),
