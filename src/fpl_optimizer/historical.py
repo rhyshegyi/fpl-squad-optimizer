@@ -237,7 +237,8 @@ def _rows_from_archive(season: str) -> tuple[list[tuple], list[tuple]] | None:
     return team_rows, player_rows
 
 
-def ingest_historical(seasons: list[str] | None = None) -> dict[str, dict[str, int]]:
+def ingest_historical(seasons: list[str] | None = None,
+                      prefer_archive: bool = True) -> dict[str, dict[str, int]]:
     """Pull merged_gw.csv + teams.csv for each season.
 
     A season vaastav has not published is skipped with a note rather than
@@ -248,7 +249,7 @@ def ingest_historical(seasons: list[str] | None = None) -> dict[str, dict[str, i
     counts: dict[str, dict[str, int]] = {}
     with connect() as conn:
         for season in seasons:
-            local = _rows_from_archive(season)
+            local = _rows_from_archive(season) if prefer_archive else None
             if local is not None:
                 team_rows, player_rows = local
                 conn.execute("DELETE FROM season_teams WHERE season = ?", (season,))

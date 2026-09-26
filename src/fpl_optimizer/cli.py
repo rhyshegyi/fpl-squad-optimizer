@@ -87,18 +87,24 @@ def cmd_run(args: argparse.Namespace) -> None:
 def cmd_ingest_history(args: argparse.Namespace) -> None:
     seasons = args.seasons or historical_seasons()
     print(f"ingesting historical seasons: {seasons}")
-    counts = ingest_historical(seasons)
+    counts = ingest_historical(seasons, prefer_archive=not args.from_source)
     print(counts)
 
 
 def cmd_archive(args: argparse.Namespace) -> None:
     from .archive import archive_season
+    from .historical import detect_current_season, historical_seasons
 
-    result = archive_season(args.season)
-    print(f"archived {result['season']}: "
-          f"wrote {result['written'] or 'nothing new'}, "
-          f"already had {len(result['already_archived'])} gameweeks, "
-          f"{result['teams']} teams")
+    if args.all:
+        seasons = historical_seasons() + [detect_current_season()]
+    else:
+        seasons = args.season or [None]
+    for season in seasons:
+        result = archive_season(season)
+        print(f"archived {result['season']}: "
+              f"wrote {len(result['written'])} gameweek(s), "
+              f"already had {len(result['already_archived'])}, "
+              f"{result['teams']} teams")
 
 
 def cmd_ingest_live_history(_: argparse.Namespace) -> None:
@@ -284,6 +290,8 @@ def main() -> None:
 
     hist = sub.add_parser("ingest-history", help="pull vaastav historical CSVs")
     hist.add_argument("--seasons", nargs="+", help="e.g. --seasons 2022-23 2023-24 2024-25")
+    hist.add_argument("--from-source", action="store_true",
+                      help="ignore the local archive and refetch from vaastav")
     hist.set_defaults(func=cmd_ingest_history)
 
     lh = sub.add_parser("ingest-live-history", help="pull current-season per-player history")
@@ -317,7 +325,9 @@ def main() -> None:
         "archive",
         help="write completed gameweeks to data/history/ so we keep our own copy",
     )
-    ar.add_argument("--season", help="defaults to the season being played")
+    ar.add_argument("--season", nargs="+", help="defaults to the season being played")
+    ar.add_argument("--all", action="store_true",
+                    help="mirror every season we hold, not just the live one")
     ar.set_defaults(func=cmd_archive)
 
     sub.add_parser(

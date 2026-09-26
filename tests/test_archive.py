@@ -20,6 +20,7 @@ from fpl_optimizer import archive
 @pytest.fixture
 def archive_dir(tmp_path, monkeypatch):
     monkeypatch.setattr(archive, "ARCHIVE_DIR", tmp_path / "history")
+    monkeypatch.setattr(archive, "detect_current_season", lambda: "2026-27")
     return tmp_path / "history"
 
 
@@ -35,13 +36,15 @@ class Cur:
 
 
 def fake_connect(confirmed=(1, 2), rows_by_gw=None, teams=None):
-    """Stand-in for the three queries archive_season runs."""
+    """Stand-in for the queries archive_season runs."""
     rows_by_gw = rows_by_gw or {}
 
     class Conn:
         def execute(self, sql, params=()):
             if "FROM gameweeks" in sql:
                 return Cur([{"id": gw} for gw in confirmed])
+            if "DISTINCT gw" in sql:                       # a finished season
+                return Cur([{"gw": gw} for gw in sorted(rows_by_gw)])
             if "historical_player_gw" in sql:
                 return Cur(rows_by_gw.get(params[1], []))
             return Cur(teams or [])
@@ -104,6 +107,47 @@ class TestConfirmationGate:
 
         with archive.teams_path("2026-27").open(newline="", encoding="utf-8") as fh:
             assert next(csv.DictReader(fh))["strength"] == "5"
+
+
+class TestFinishedSeasons:
+    """A season that has ended is final; only the live one needs the flag.
+
+    The `gameweeks` table holds the live season and nothing else, so testing
+    `data_checked` against a past season's gameweek numbers would mirror
+    whichever rounds happen to be confirmed right now — GW1-5, not all 38.
+    """
+
+    def test_a_past_season_archives_every_gameweek_it_holds(
+        self, archive_dir, monkeypatch
+    ):
+        monkeypatch.setattr(archive, "connect", fake_connect(
+            confirmed=(1, 2),                       # live season is only 2 in
+            rows_by_gw={g: [PLAYER_ROW] for g in range(1, 39)},
+            teams=[TEAM_ROW]))
+        result = archive.archive_season("2024-25")
+        assert result["written"] == list(range(1, 39))
+
+    def test_the_live_season_still_waits_for_confirmation(
+        self, archive_dir, monkeypatch
+    ):
+        monkeypatch.setattr(archive, "connect", fake_connect(
+            confirmed=(1, 2),
+            rows_by_gw={g: [PLAYER_ROW] for g in range(1, 39)},
+            teams=[TEAM_ROW]))
+        result = archive.archive_season("2026-27")
+        assert result["written"] == [1, 2]
+
+    def test_a_cancelled_round_leaves_a_gap_rather_than_a_renumber(
+        self, archive_dir, monkeypatch
+    ):
+        """2022-23 has no GW7 — the round FPL cancelled. The gap is real data."""
+        held = {g: [PLAYER_ROW] for g in range(1, 39) if g != 7}
+        monkeypatch.setattr(archive, "connect", fake_connect(
+            confirmed=(), rows_by_gw=held, teams=[TEAM_ROW]))
+        result = archive.archive_season("2022-23")
+        assert 7 not in result["written"]
+        assert len(result["written"]) == 37
+        assert not archive.gameweek_path("2022-23", 7).exists()
 
 
 class TestRoundTrip:

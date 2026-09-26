@@ -46,8 +46,23 @@ def teams_path(season: str) -> Path:
     return season_dir(season) / "teams.csv"
 
 
-def _confirmed_gameweeks(conn, season: str) -> list[int]:
-    """Gameweeks FPL has confirmed and that we actually hold rows for."""
+def _confirmed_gameweeks(conn, season: str, is_current: bool) -> list[int]:
+    """Gameweeks safe to freeze: confirmed by FPL, and held by us.
+
+    Only the live season gets the `data_checked` test, because the
+    `gameweeks` table holds the live season and nothing else — staging
+    replaces it wholesale each run. Applying it to a finished season would
+    read this season's flags against that season's gameweek numbers, and
+    archive whichever rounds happen to be confirmed right now. A season that
+    has already ended is final by definition.
+    """
+    if not is_current:
+        return [
+            r["gw"] for r in conn.execute(
+                "SELECT DISTINCT gw FROM historical_player_gw "
+                "WHERE season = ? ORDER BY gw", (season,),
+            )
+        ]
     return [
         r["id"] for r in conn.execute(
             "SELECT g.id FROM gameweeks g "
@@ -73,12 +88,13 @@ def _write_csv(path: Path, header: list[str], rows) -> int:
 
 def archive_season(season: str | None = None) -> dict[str, object]:
     """Write any confirmed gameweek we have not archived yet, plus teams.csv."""
-    season = season or detect_current_season()
+    current = detect_current_season()
+    season = season or current
     written: list[int] = []
     skipped: list[int] = []
 
     with connect() as conn:
-        for gw in _confirmed_gameweeks(conn, season):
+        for gw in _confirmed_gameweeks(conn, season, season == current):
             path = gameweek_path(season, gw)
             if path.exists():
                 skipped.append(gw)
