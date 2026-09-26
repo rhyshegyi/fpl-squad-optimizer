@@ -209,6 +209,34 @@ def _fetch_season(season: str, team_name_to_id: dict[str, int]) -> list[tuple]:
     return rows
 
 
+_PLAYER_TYPES = {"season": str, "gw": int, **dict(COLUMNS)}
+_TEAM_TYPES = {"season": str, **dict(TEAM_COLUMNS)}
+
+
+def _rows_from_archive(season: str) -> tuple[list[tuple], list[tuple]] | None:
+    """Our own committed copy of a season, if we lived through it.
+
+    Preferred over the network: these files were written from the FPL API at
+    the time, so they do not depend on anyone else still publishing.
+    """
+    from .archive import load_archived_gameweeks, load_archived_teams
+
+    players = load_archived_gameweeks(season)
+    teams = load_archived_teams(season)
+    if not players or not teams:
+        return None
+
+    team_rows = [
+        tuple(_coerce(r.get(c), _TEAM_TYPES[c]) for c in TEAMS_INSERT_COLS)
+        for r in teams
+    ]
+    player_rows = [
+        tuple(_coerce(r.get(c), _PLAYER_TYPES[c]) for c in INSERT_COLS)
+        for r in players
+    ]
+    return team_rows, player_rows
+
+
 def ingest_historical(seasons: list[str] | None = None) -> dict[str, dict[str, int]]:
     """Pull merged_gw.csv + teams.csv for each season.
 
@@ -220,6 +248,18 @@ def ingest_historical(seasons: list[str] | None = None) -> dict[str, dict[str, i
     counts: dict[str, dict[str, int]] = {}
     with connect() as conn:
         for season in seasons:
+            local = _rows_from_archive(season)
+            if local is not None:
+                team_rows, player_rows = local
+                conn.execute("DELETE FROM season_teams WHERE season = ?", (season,))
+                conn.executemany(TEAMS_INSERT_SQL, team_rows)
+                conn.execute(
+                    "DELETE FROM historical_player_gw WHERE season = ?", (season,))
+                conn.executemany(INSERT_SQL, player_rows)
+                counts[season] = {"teams": len(team_rows),
+                                  "player_gws": len(player_rows), "source": "archive"}
+                continue
+
             try:
                 team_rows = _fetch_teams(season)
             except requests.HTTPError as e:
@@ -236,5 +276,6 @@ def ingest_historical(seasons: list[str] | None = None) -> dict[str, dict[str, i
             player_rows = _fetch_season(season, team_name_to_id)
             conn.execute("DELETE FROM historical_player_gw WHERE season = ?", (season,))
             conn.executemany(INSERT_SQL, player_rows)
-            counts[season] = {"teams": len(team_rows), "player_gws": len(player_rows)}
+            counts[season] = {"teams": len(team_rows),
+                              "player_gws": len(player_rows), "source": "vaastav"}
     return counts

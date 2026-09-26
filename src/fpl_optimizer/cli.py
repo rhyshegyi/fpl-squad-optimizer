@@ -91,6 +91,16 @@ def cmd_ingest_history(args: argparse.Namespace) -> None:
     print(counts)
 
 
+def cmd_archive(args: argparse.Namespace) -> None:
+    from .archive import archive_season
+
+    result = archive_season(args.season)
+    print(f"archived {result['season']}: "
+          f"wrote {result['written'] or 'nothing new'}, "
+          f"already had {len(result['already_archived'])} gameweeks, "
+          f"{result['teams']} teams")
+
+
 def cmd_ingest_live_history(_: argparse.Namespace) -> None:
     print("ingesting current-season per-player history (may take a minute)...")
     print(ingest_live_history())
@@ -302,6 +312,13 @@ def main() -> None:
     bt.add_argument("--end-gw", type=int, default=38)
     bt.add_argument("--by-gameweek", action="store_true", help="print every gameweek")
     bt.set_defaults(func=cmd_backtest)
+
+    ar = sub.add_parser(
+        "archive",
+        help="write completed gameweeks to data/history/ so we keep our own copy",
+    )
+    ar.add_argument("--season", help="defaults to the season being played")
+    ar.set_defaults(func=cmd_archive)
 
     sub.add_parser(
         "validate",

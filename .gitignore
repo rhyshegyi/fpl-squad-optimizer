@@ -9,9 +9,13 @@ __pycache__/
 # uv
 .uv/
 
-# Data — everything except the artifacts we publish for the backend
+# Data — everything except what we publish or keep on purpose.
+# The SQLite database and the trained model are rebuilt every run; the
+# artifacts are what the site serves, and data/history/ is our own copy of
+# each completed gameweek, which is the whole point of archiving it.
 data/*
 !data/artifacts/
+!data/history/
 
 # IDE
 .vscode/

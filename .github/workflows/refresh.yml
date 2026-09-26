@@ -71,6 +71,13 @@ jobs:
       - name: Ingest current-season per-player history
         run: uv run fpl ingest-live-history
 
+      # Keep our own copy of each confirmed gameweek. Without it the live
+      # season exists only in this runner's database, which is discarded --
+      # and next July's training run would have to ask vaastav for a season
+      # we lived through. Their 2026-27 folder stopped at GW1 on 28 August.
+      - name: Archive completed gameweeks
+        run: uv run fpl archive
+
       - name: Train ML predictor
         run: uv run fpl train
 
@@ -93,15 +100,22 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/artifacts
+          git add data/artifacts data/history
           if git diff --staged --quiet; then
-            echo "No artifact changes — nothing to commit."
+            echo "Nothing changed — no commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          # Deploy only when what the site *serves* changed. A run that merely
+          # archives a newly confirmed gameweek is worth committing but not
+          # worth restarting the machine for.
+          if git diff --staged --quiet -- data/artifacts; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
-            git commit -m "weekly: refresh projections + squad for $(date -u +%Y-%m-%d)"
-            git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+          git commit -m "data: refresh for $(date -u +%Y-%m-%d)"
+          git push
 
       # GitHub deliberately does not trigger workflows from commits authored by
       # the default GITHUB_TOKEN, so the push above will NOT fire fly-deploy.yml.
