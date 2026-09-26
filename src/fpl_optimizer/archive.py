@@ -120,6 +120,36 @@ def archive_season(season: str | None = None) -> dict[str, object]:
     }
 
 
+# A finished season has 38 gameweeks, give or take a round FPL cancels
+# outright (2022-23 has no GW7). An archive holding fewer than this is not a
+# season, it is a partial capture, and must not be trusted as training data.
+MIN_COMPLETE_SEASON = 30
+
+
+def archived_gameweeks(season: str) -> list[int]:
+    return sorted(
+        int(p.stem[2:]) for p in season_dir(season).glob("gw*.csv")
+    ) if season_dir(season).exists() else []
+
+
+def archive_gaps(season: str | None = None) -> list[int]:
+    """Gameweeks FPL has confirmed that we have not archived.
+
+    After `fpl archive` this must be empty, and `fpl validate` enforces it.
+    The window to fix a gap is not open forever: `element-summary` carries
+    per-gameweek rows only for the live season — past seasons survive there as
+    a single aggregate row each. Once FPL publishes the next season, anything
+    we failed to capture is gone from the API for good, and recoverable only
+    from a scrape that has already stopped once.
+    """
+    current = detect_current_season()
+    season = season or current
+    with connect() as conn:
+        confirmed = _confirmed_gameweeks(conn, season, season == current)
+    have = set(archived_gameweeks(season))
+    return [gw for gw in confirmed if gw not in have]
+
+
 def archived_seasons() -> list[str]:
     if not ARCHIVE_DIR.exists():
         return []

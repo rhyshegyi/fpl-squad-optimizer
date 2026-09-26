@@ -219,7 +219,19 @@ def _rows_from_archive(season: str) -> tuple[list[tuple], list[tuple]] | None:
     Preferred over the network: these files were written from the FPL API at
     the time, so they do not depend on anyone else still publishing.
     """
-    from .archive import load_archived_gameweeks, load_archived_teams
+    from .archive import (
+        MIN_COMPLETE_SEASON, archived_gameweeks, load_archived_gameweeks,
+        load_archived_teams,
+    )
+
+    held = archived_gameweeks(season)
+    if held and len(held) < MIN_COMPLETE_SEASON:
+        # A partial capture is worse than no capture: it would train the model
+        # on a third of a season while looking like a whole one. Fall back to
+        # the network and let that fail loudly if it must.
+        print(f"  {season}: archive has only {len(held)} gameweeks, "
+              f"refetching from source")
+        return None
 
     players = load_archived_gameweeks(season)
     teams = load_archived_teams(season)

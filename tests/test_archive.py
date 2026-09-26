@@ -151,6 +151,13 @@ class TestFinishedSeasons:
 
 
 class TestRoundTrip:
+    """Fidelity only. These deliberately lower the completeness bar so a
+    one-gameweek fixture is readable; TestCompleteness covers the bar itself."""
+
+    @pytest.fixture(autouse=True)
+    def _ignore_completeness(self, monkeypatch):
+        monkeypatch.setattr(archive, "MIN_COMPLETE_SEASON", 1)
+
     def test_what_comes_back_is_what_went_in(self, archive_dir, monkeypatch):
         monkeypatch.setattr(archive, "connect", fake_connect(
             confirmed=(1,), rows_by_gw={1: [PLAYER_ROW]}, teams=[TEAM_ROW]))
@@ -186,3 +193,68 @@ class TestDiscovery:
             confirmed=(1,), rows_by_gw={1: [PLAYER_ROW]}, teams=[TEAM_ROW]))
         archive.archive_season("2026-27")
         assert archive.archived_seasons() == ["2026-27"]
+
+
+class TestCompleteness:
+    """The window to fix a gap closes when FPL publishes the next season.
+
+    `element-summary` carries per-gameweek rows only for the live season —
+    past seasons survive there as one aggregate row each. Anything not
+    captured in time is gone from the API for good.
+    """
+
+    def test_a_confirmed_but_unarchived_gameweek_is_reported(
+        self, archive_dir, monkeypatch
+    ):
+        monkeypatch.setattr(archive, "connect", fake_connect(
+            confirmed=(1, 2, 3), rows_by_gw={g: [PLAYER_ROW] for g in (1, 2, 3)},
+            teams=[TEAM_ROW]))
+        archive.archive_season("2026-27")
+        archive.gameweek_path("2026-27", 2).unlink()
+        assert archive.archive_gaps("2026-27") == [2]
+
+    def test_a_complete_archive_has_no_gaps(self, archive_dir, monkeypatch):
+        monkeypatch.setattr(archive, "connect", fake_connect(
+            confirmed=(1, 2), rows_by_gw={1: [PLAYER_ROW], 2: [PLAYER_ROW]},
+            teams=[TEAM_ROW]))
+        archive.archive_season("2026-27")
+        assert archive.archive_gaps("2026-27") == []
+
+    def test_an_unconfirmed_gameweek_is_not_a_gap(self, archive_dir, monkeypatch):
+        """Waiting on FPL is the design, not a failure."""
+        monkeypatch.setattr(archive, "connect", fake_connect(
+            confirmed=(1,), rows_by_gw={1: [PLAYER_ROW], 2: [PLAYER_ROW]},
+            teams=[TEAM_ROW]))
+        archive.archive_season("2026-27")
+        assert archive.archive_gaps("2026-27") == []
+
+    def test_a_partial_season_is_not_used_as_training_data(
+        self, archive_dir, monkeypatch
+    ):
+        """A third of a season that looks like a whole one is worse than none."""
+        monkeypatch.setattr(archive, "connect", fake_connect(
+            confirmed=(), rows_by_gw={g: [PLAYER_ROW] for g in range(1, 6)},
+            teams=[TEAM_ROW]))
+        archive.archive_season("2024-25")
+        from fpl_optimizer.historical import _rows_from_archive
+        assert _rows_from_archive("2024-25") is None
+
+    def test_a_full_season_is_used(self, archive_dir, monkeypatch):
+        monkeypatch.setattr(archive, "connect", fake_connect(
+            confirmed=(), rows_by_gw={g: [PLAYER_ROW] for g in range(1, 39)},
+            teams=[TEAM_ROW]))
+        archive.archive_season("2024-25")
+        from fpl_optimizer.historical import _rows_from_archive
+        assert _rows_from_archive("2024-25") is not None
+
+    def test_a_cancelled_round_does_not_count_as_partial(
+        self, archive_dir, monkeypatch
+    ):
+        """2022-23's 37 gameweeks are a complete season, not a broken capture."""
+        monkeypatch.setattr(archive, "connect", fake_connect(
+            confirmed=(),
+            rows_by_gw={g: [PLAYER_ROW] for g in range(1, 39) if g != 7},
+            teams=[TEAM_ROW]))
+        archive.archive_season("2022-23")
+        from fpl_optimizer.historical import _rows_from_archive
+        assert _rows_from_archive("2022-23") is not None

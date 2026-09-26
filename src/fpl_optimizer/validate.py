@@ -142,5 +142,30 @@ def check_bootstrap_freshness() -> list[Finding]:
         f"their per-gameweek rows — the snapshot was taken mid-gameweek")]
 
 
+def check_archive_complete() -> list[Finding]:
+    """Every confirmed gameweek must be on disk before we lose the chance.
+
+    FPL serves per-gameweek detail only for the season being played. When the
+    next season is published, whatever this one failed to capture cannot be
+    fetched again — so a gap here is not a tidiness problem, it is training
+    data for next season quietly going missing.
+    """
+    try:
+        from .archive import archive_gaps
+
+        gaps = archive_gaps()
+    except Exception as e:  # noqa: BLE001 - a check that cannot run is a warning
+        return [Finding("warn", "archive", f"could not be checked ({e})")]
+    if not gaps:
+        return []
+    return [Finding(
+        "error", "archive",
+        f"gameweek(s) {gaps} are confirmed by FPL but missing from "
+        f"data/history/ — run `fpl archive`. FPL only serves per-gameweek "
+        f"detail for the live season, so this data is unrecoverable once the "
+        f"next season is published.")]
+
+
 def run_checks() -> list[Finding]:
-    return check_feature_ranges() + check_bootstrap_freshness()
+    return (check_feature_ranges() + check_bootstrap_freshness()
+            + check_archive_complete())

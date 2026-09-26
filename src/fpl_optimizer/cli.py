@@ -252,9 +252,9 @@ def cmd_validate(_: argparse.Namespace) -> None:
     if errors:
         print()
         raise SystemExit(
-            f"{len(errors)} feature(s) are dead at predict time. Refusing to "
-            "publish projections built on them — the previously deployed "
-            "artifacts stay live, which is the safer failure."
+            f"{len(errors)} blocking problem(s) above. Refusing to publish: "
+            "the previously deployed artifacts stay live, which is the safer "
+            "failure."
         )
 
 
