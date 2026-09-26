@@ -58,6 +58,15 @@ def _players_without_fixture() -> set[int]:
     }
 
 
+def _target_points_by_player() -> dict[int, float | None]:
+    data = _load_json(PROJECTIONS_JSON)
+    return {r["player_id"]: r.get("target_points") for r in data["projections"]}
+
+
+def _with_target(p: PlayerProjection, targets: dict[int, float | None]) -> dict:
+    return {**asdict(p), "target_points": targets.get(p.player_id)}
+
+
 def _projections_from_artifact() -> list[PlayerProjection]:
     """Rebuild PlayerProjection list from the cached JSON — the deployed
     API never touches SQLite or LightGBM at runtime; the LP just runs off
@@ -294,6 +303,7 @@ class TransferRequest(BaseModel):
 @app.post("/api/transfers")
 def post_transfers(req: TransferRequest) -> dict:
     projections = _projections_from_artifact()
+    targets = _target_points_by_player()
     try:
         plan = optimize_transfers(
             projections=projections,
@@ -327,8 +337,12 @@ def post_transfers(req: TransferRequest) -> dict:
         "projected_points": plan.projected_points,
         "bank_before": plan.bank_before,
         "bank_after": plan.bank_after,
-        "transfers_in": [asdict(p) for p in plan.transfers_in],
-        "transfers_out": [asdict(p) for p in plan.transfers_out],
+        # The LP ranks on next-gameweek value, which is what it optimises and
+        # what you can check against Saturday. The six-week figure rides along
+        # so a transfer that is good this week but poor beyond it is visible
+        # rather than implied — the median signing is held four gameweeks.
+        "transfers_in": [_with_target(p, targets) for p in plan.transfers_in],
+        "transfers_out": [_with_target(p, targets) for p in plan.transfers_out],
         "new_squad": {
             "total_cost": plan.new_squad.total_cost,
             "projected_points": plan.new_squad.projected_points,

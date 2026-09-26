@@ -465,7 +465,7 @@ function TransferPlanView({
                         <span className="text-slate-300">{p.web_name}</span>
                         <span className="text-xs text-slate-500">
                           {p.team_short} · £{(p.now_cost / 10).toFixed(1)}m ·{" "}
-                          {p.projected_points.toFixed(2)}
+                          <PlayerValue p={p} />
                         </span>
                       </li>
                     ))}
@@ -481,7 +481,7 @@ function TransferPlanView({
                         <span className="text-slate-100 font-medium">{p.web_name}</span>
                         <span className="text-xs text-slate-500">
                           {p.team_short} · £{(p.now_cost / 10).toFixed(1)}m ·{" "}
-                          {p.projected_points.toFixed(2)}
+                          <PlayerValue p={p} />
                         </span>
                       </li>
                     ))}
@@ -611,6 +611,34 @@ function TargetDistance({
 }
 
 
+/** The two numbers a transfer is worth, side by side.
+ *
+ *  The LP ranks on next-GW value: that is what it optimises, and it is the one
+ *  you can check against Saturday. But the median signing is held four
+ *  gameweeks, so a player who is good this week and poor after it is a bad
+ *  buy the one-week number cannot show. Valuing transfers on the horizon
+ *  instead scored no better across 148 gameweeks (t=-0.10), so the ranking
+ *  stays where it is and the second figure is shown rather than substituted.
+ */
+function PlayerValue({ p }: { p: Player }) {
+  return (
+    <>
+      <span title="Projected points, next gameweek — what this recommendation ranks on">
+        {p.projected_points.toFixed(2)}
+      </span>
+      {p.target_points != null && (
+        <span
+          className="text-sky-300/70"
+          title="Projected points per gameweek over the next 6 — the span you are likely to hold him"
+        >
+          {" "}· {p.target_points.toFixed(2)}/gw
+        </span>
+      )}
+    </>
+  );
+}
+
+
 function SwapRow({ out, in_ }: { out: Player; in_: Player }) {
   const delta = in_.projected_points - out.projected_points;
   const costDelta = (in_.now_cost - out.now_cost) / 10;
@@ -620,7 +648,7 @@ function SwapRow({ out, in_ }: { out: Player; in_: Player }) {
         <div className="font-medium text-slate-200">{out.web_name}</div>
         <div className="text-xs">
           {out.team_short} · £{(out.now_cost / 10).toFixed(1)}m ·{" "}
-          {out.projected_points.toFixed(2)} pts
+          <PlayerValue p={out} />
         </div>
       </div>
       <div className="text-emerald-400">→</div>
@@ -628,7 +656,7 @@ function SwapRow({ out, in_ }: { out: Player; in_: Player }) {
         <div className="font-medium">{in_.web_name}</div>
         <div className="text-xs text-slate-400">
           {in_.team_short} · £{(in_.now_cost / 10).toFixed(1)}m ·{" "}
-          {in_.projected_points.toFixed(2)} pts
+          <PlayerValue p={in_} />
         </div>
       </div>
       <div className="text-right text-xs">
