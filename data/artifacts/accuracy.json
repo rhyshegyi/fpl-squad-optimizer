@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T19:24:58.473338+00:00",
+  "generated_at": "2026-09-26T11:39:01.322155+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 2,
@@ -348,7 +348,7 @@
       "bonus": 9,
       "ppg": 9.4,
       "value": 8.1,
-      "selected_by": 28.4,
+      "selected_by": 28.5,
       "in_target_squad": true
     },
     {
@@ -420,7 +420,7 @@
       "bonus": 9,
       "ppg": 7.8,
       "value": 2.5,
-      "selected_by": 73.7,
+      "selected_by": 73.8,
       "in_target_squad": true
     },
     {
@@ -429,7 +429,7 @@
       "web_name": "De Cuyper",
       "team_short": "BHA",
       "position": "DEF",
-      "now_cost": 49,
+      "now_cost": 50,
       "points": 38,
       "games": 5,
       "minutes": 423,
@@ -437,7 +437,7 @@
       "assists": 3,
       "bonus": 5,
       "ppg": 7.6,
-      "value": 7.76,
+      "value": 7.6,
       "selected_by": 27.6,
       "in_target_squad": true
     },
@@ -510,7 +510,7 @@
       "bonus": 7,
       "ppg": 6.6,
       "value": 4.29,
-      "selected_by": 65.4,
+      "selected_by": 65.3,
       "in_target_squad": false
     },
     {
@@ -546,7 +546,7 @@
       "bonus": 2,
       "ppg": 6.6,
       "value": 3.93,
-      "selected_by": 15.5,
+      "selected_by": 15.4,
       "in_target_squad": false
     },
     {
@@ -654,7 +654,7 @@
       "bonus": 6,
       "ppg": 6.2,
       "value": 5.85,
-      "selected_by": 17.1,
+      "selected_by": 17.2,
       "in_target_squad": false
     },
     {
@@ -690,7 +690,7 @@
       "bonus": 5,
       "ppg": 6.0,
       "value": 4.92,
-      "selected_by": 5.7,
+      "selected_by": 5.8,
       "in_target_squad": false
     },
     {
@@ -726,7 +726,7 @@
       "bonus": 4,
       "ppg": 6.0,
       "value": 5.0,
-      "selected_by": 18.3,
+      "selected_by": 18.2,
       "in_target_squad": false
     },
     {
@@ -798,7 +798,7 @@
       "bonus": 3,
       "ppg": 5.6,
       "value": 5.0,
-      "selected_by": 3.8,
+      "selected_by": 3.9,
       "in_target_squad": false
     },
     {
@@ -816,7 +816,7 @@
       "bonus": 3,
       "ppg": 5.6,
       "value": 2.89,
-      "selected_by": 25.9,
+      "selected_by": 25.8,
       "in_target_squad": false
     },
     {

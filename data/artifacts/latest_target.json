@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-25T19:24:58.443151+00:00",
+  "generated_at": "2026-09-26T11:39:01.292591+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "pipeline_state": {
-    "last_fetch": "2026-09-25T19:20:26.106358+00:00",
+    "last_fetch": "2026-09-26T11:34:40.656960+00:00",
     "current_gw": {
       "id": 5,
       "name": "Gameweek 5"
@@ -23,7 +23,7 @@
     }
   },
   "squad": {
-    "total_cost": 999,
+    "total_cost": 1000,
     "projected_points": 58.41,
     "formation": "3-4-3",
     "picks": [
@@ -81,7 +81,7 @@
         "team_id": 5,
         "team_short": "BHA",
         "position": "DEF",
-        "now_cost": 49,
+        "now_cost": 50,
         "projected_points": 4.16,
         "is_starter": true,
         "is_captain": false,
@@ -333,7 +333,7 @@
       "team_id": 1,
       "team_short": "ARS",
       "position": "MID",
-      "now_cost": 63,
+      "now_cost": 62,
       "projected_points": 1.282
     },
     {
@@ -1242,7 +1242,7 @@
       "team_id": 5,
       "team_short": "BHA",
       "position": "DEF",
-      "now_cost": 49,
+      "now_cost": 50,
       "projected_points": 4.16
     },
     {
@@ -1422,7 +1422,7 @@
       "team_id": 5,
       "team_short": "BHA",
       "position": "MID",
-      "now_cost": 49,
+      "now_cost": 48,
       "projected_points": 0.0
     },
     {
@@ -1630,7 +1630,7 @@
       "team_short": "CHE",
       "position": "MID",
       "now_cost": 58,
-      "projected_points": 0.129
+      "projected_points": 0.097
     },
     {
       "player_id": 159,
@@ -4996,7 +4996,7 @@
       "team_short": "SUN",
       "position": "DEF",
       "now_cost": 49,
-      "projected_points": 2.73
+      "projected_points": 2.047
     },
     {
       "player_id": 533,
@@ -5562,7 +5562,7 @@
       "team_id": 8,
       "team_short": "CRY",
       "position": "MID",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected_points": 0.37
     },
     {
