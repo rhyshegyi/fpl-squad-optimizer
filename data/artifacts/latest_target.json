@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-27T19:05:56.816523+00:00",
+  "generated_at": "2026-09-27T22:27:07.094019+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "budget_tenths": 993,
   "pipeline_state": {
-    "last_fetch": "2026-09-27T19:03:19.049809+00:00",
+    "last_fetch": "2026-09-27T22:22:46.522620+00:00",
     "average_squad_value": 993,
     "current_gw": {
       "id": 5,
@@ -3513,7 +3513,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 72,
-      "projected_points": 4.15
+      "projected_points": 3.113
     },
     {
       "player_id": 368,
@@ -3945,7 +3945,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 58,
-      "projected_points": 2.2
+      "projected_points": 1.65
     },
     {
       "player_id": 416,

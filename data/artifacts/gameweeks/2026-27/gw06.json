@@ -13,7 +13,7 @@
   "average_squad_value": 993,
   "name": "Gameweek 6",
   "deadline": "2026-10-10T10:00:00Z",
-  "frozen_at": "2026-09-27T19:05:56.832444+00:00",
+  "frozen_at": "2026-09-27T22:27:07.113349+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 999,
@@ -3137,7 +3137,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 72,
-      "projected": 3.448
+      "projected": 2.586
     },
     {
       "player_id": 368,
@@ -3521,7 +3521,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 58,
-      "projected": 2.207
+      "projected": 1.655
     },
     {
       "player_id": 416,
