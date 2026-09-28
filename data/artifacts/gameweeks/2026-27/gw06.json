@@ -13,10 +13,10 @@
   "average_squad_value": 993,
   "name": "Gameweek 6",
   "deadline": "2026-10-10T10:00:00Z",
-  "frozen_at": "2026-09-27T22:27:07.113349+00:00",
+  "frozen_at": "2026-09-28T14:15:57.391228+00:00",
   "scored_at": null,
   "squad": {
-    "total_cost": 999,
+    "total_cost": 1000,
     "projected_points": 59.83,
     "formation": "3-5-2",
     "picks": [
@@ -74,7 +74,7 @@
         "team_id": 9,
         "team_short": "EVE",
         "position": "FWD",
-        "now_cost": 56,
+        "now_cost": 57,
         "projected_points": 3.575,
         "is_starter": true,
         "is_captain": false,
@@ -1560,7 +1560,7 @@
       "web_name": "Emegha",
       "team_short": "CHE",
       "position": "FWD",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected": 0.0
     },
     {
@@ -2192,7 +2192,7 @@
       "web_name": "Barry",
       "team_short": "EVE",
       "position": "FWD",
-      "now_cost": 56,
+      "now_cost": 57,
       "projected": 3.575
     },
     {

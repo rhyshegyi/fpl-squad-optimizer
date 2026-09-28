@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-27T22:26:36.454834+00:00",
+  "generated_at": "2026-09-28T14:15:25.477536+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-09-27T22:22:46.522620+00:00",
+    "last_fetch": "2026-09-28T14:11:27.265643+00:00",
     "average_squad_value": 993,
     "current_gw": {
       "id": 5,
@@ -23,7 +23,7 @@
     }
   },
   "squad": {
-    "total_cost": 999,
+    "total_cost": 1000,
     "projected_points": 59.83,
     "formation": "3-5-2",
     "picks": [
@@ -81,7 +81,7 @@
         "team_id": 9,
         "team_short": "EVE",
         "position": "FWD",
-        "now_cost": 56,
+        "now_cost": 57,
         "projected_points": 3.575,
         "is_starter": true,
         "is_captain": false,
