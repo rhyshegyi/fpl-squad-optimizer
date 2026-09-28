@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-28T14:15:57.371704+00:00",
+  "generated_at": "2026-09-28T21:19:58.328022+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "budget_tenths": 993,
   "pipeline_state": {
-    "last_fetch": "2026-09-28T14:11:27.265643+00:00",
+    "last_fetch": "2026-09-28T21:16:50.534722+00:00",
     "average_squad_value": 993,
     "current_gw": {
       "id": 5,
