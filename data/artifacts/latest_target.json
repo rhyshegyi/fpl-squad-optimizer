@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-28T21:19:58.328022+00:00",
+  "generated_at": "2026-09-29T13:09:44.325546+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "budget_tenths": 993,
   "pipeline_state": {
-    "last_fetch": "2026-09-28T21:16:50.534722+00:00",
+    "last_fetch": "2026-09-29T13:07:15.407611+00:00",
     "average_squad_value": 993,
     "current_gw": {
       "id": 5,
@@ -398,7 +398,7 @@
       "team_id": 9,
       "team_short": "EVE",
       "position": "MID",
-      "now_cost": 49,
+      "now_cost": 48,
       "projected_points": 0.0
     },
     {
@@ -4988,8 +4988,8 @@
       "team_id": 20,
       "team_short": "SUN",
       "position": "GK",
-      "now_cost": 45,
-      "projected_points": 0.1
+      "now_cost": 44,
+      "projected_points": 0.103
     },
     {
       "player_id": 532,
@@ -5096,7 +5096,7 @@
       "team_id": 20,
       "team_short": "SUN",
       "position": "MID",
-      "now_cost": 54,
+      "now_cost": 53,
       "projected_points": 0.0
     },
     {
@@ -5276,7 +5276,7 @@
       "team_id": 11,
       "team_short": "HUL",
       "position": "MID",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected_points": 0.0
     },
     {
