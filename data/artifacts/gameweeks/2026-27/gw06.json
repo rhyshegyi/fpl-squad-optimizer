@@ -13,7 +13,7 @@
   "average_squad_value": 993,
   "name": "Gameweek 6",
   "deadline": "2026-10-10T10:00:00Z",
-  "frozen_at": "2026-09-29T20:06:58.349176+00:00",
+  "frozen_at": "2026-09-30T12:50:51.366365+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -472,7 +472,7 @@
       "web_name": "Pau",
       "team_short": "AVL",
       "position": "DEF",
-      "now_cost": 45,
+      "now_cost": 44,
       "projected": 0.0
     },
     {
@@ -1744,7 +1744,7 @@
       "web_name": "Wright",
       "team_short": "COV",
       "position": "FWD",
-      "now_cost": 54,
+      "now_cost": 53,
       "projected": 0.0
     },
     {
@@ -3064,8 +3064,8 @@
       "web_name": "Kerkez",
       "team_short": "LIV",
       "position": "DEF",
-      "now_cost": 54,
-      "projected": 2.125
+      "now_cost": 53,
+      "projected": 2.032
     },
     {
       "player_id": 359,

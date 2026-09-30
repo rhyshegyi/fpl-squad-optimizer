@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-29T20:06:58.330055+00:00",
+  "generated_at": "2026-09-30T12:50:51.346249+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "budget_tenths": 993,
   "pipeline_state": {
-    "last_fetch": "2026-09-29T20:02:30.210404+00:00",
+    "last_fetch": "2026-09-30T12:47:27.952166+00:00",
     "average_squad_value": 993,
     "current_gw": {
       "id": 5,
@@ -515,7 +515,7 @@
       "team_id": 2,
       "team_short": "AVL",
       "position": "DEF",
-      "now_cost": 45,
+      "now_cost": 44,
       "projected_points": 0.0
     },
     {
@@ -1946,7 +1946,7 @@
       "team_id": 7,
       "team_short": "COV",
       "position": "FWD",
-      "now_cost": 54,
+      "now_cost": 53,
       "projected_points": 0.0
     },
     {
@@ -3431,8 +3431,8 @@
       "team_id": 14,
       "team_short": "LIV",
       "position": "DEF",
-      "now_cost": 54,
-      "projected_points": 2.553
+      "now_cost": 53,
+      "projected_points": 2.431
     },
     {
       "player_id": 359,
