@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T20:10:53.556339+00:00",
+  "generated_at": "2026-10-01T13:36:31.413353+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-09-30T20:07:55.066514+00:00",
+    "last_fetch": "2026-10-01T13:32:37.644629+00:00",
     "average_squad_value": 993,
     "current_gw": {
       "id": 5,
@@ -445,8 +445,8 @@
       "team_id": 1,
       "team_short": "ARS",
       "position": "MID",
-      "now_cost": 58,
-      "projected_points": 1.362,
+      "now_cost": 57,
+      "projected_points": 1.32,
       "form": 0.8,
       "season_ppg": 0.8,
       "season_points": 4,
@@ -463,7 +463,7 @@
       "opp_short": "LEE",
       "is_home": true,
       "fdr": 3,
-      "target_points": 1.343
+      "target_points": 1.275
     },
     {
       "player_id": 18,
@@ -3597,7 +3597,7 @@
       "season_ppg": 5.6,
       "season_points": 28,
       "season_minutes": 353,
-      "selected_by": 4.1,
+      "selected_by": 4.2,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 5,
@@ -5255,8 +5255,8 @@
       "team_id": 8,
       "team_short": "CRY",
       "position": "DEF",
-      "now_cost": 50,
-      "projected_points": 2.294,
+      "now_cost": 49,
+      "projected_points": 2.285,
       "form": 2.8,
       "season_ppg": 2.8,
       "season_points": 14,
@@ -5273,7 +5273,7 @@
       "opp_short": "NFO",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.699
+      "target_points": 2.701
     },
     {
       "player_id": 203,
@@ -5957,7 +5957,7 @@
       "team_id": 9,
       "team_short": "EVE",
       "position": "DEF",
-      "now_cost": 61,
+      "now_cost": 62,
       "projected_points": 3.412,
       "form": 8.6,
       "season_ppg": 8.6,
@@ -10949,7 +10949,7 @@
       "team_id": 16,
       "team_short": "MUN",
       "position": "DEF",
-      "now_cost": 44,
+      "now_cost": 43,
       "projected_points": 0.268,
       "form": 0.2,
       "season_ppg": 0.2,

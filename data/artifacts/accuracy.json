@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T20:11:16.924082+00:00",
+  "generated_at": "2026-10-01T13:37:03.067995+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 2,
@@ -357,7 +357,7 @@
       "web_name": "Tarkowski",
       "team_short": "EVE",
       "position": "DEF",
-      "now_cost": 61,
+      "now_cost": 62,
       "points": 43,
       "games": 5,
       "minutes": 450,
@@ -365,7 +365,7 @@
       "assists": 1,
       "bonus": 7,
       "ppg": 8.6,
-      "value": 7.05,
+      "value": 6.94,
       "selected_by": 16.5,
       "in_target_squad": false
     },
@@ -798,7 +798,7 @@
       "bonus": 3,
       "ppg": 5.6,
       "value": 5.0,
-      "selected_by": 4.1,
+      "selected_by": 4.2,
       "in_target_squad": false
     },
     {

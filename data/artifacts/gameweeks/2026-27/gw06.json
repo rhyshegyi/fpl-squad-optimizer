@@ -13,7 +13,7 @@
   "average_squad_value": 993,
   "name": "Gameweek 6",
   "deadline": "2026-10-10T10:00:00Z",
-  "frozen_at": "2026-09-30T20:11:16.912372+00:00",
+  "frozen_at": "2026-10-01T13:37:03.056711+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -336,8 +336,8 @@
       "web_name": "Merino",
       "team_short": "ARS",
       "position": "MID",
-      "now_cost": 58,
-      "projected": 1.362
+      "now_cost": 57,
+      "projected": 1.32
     },
     {
       "player_id": 18,
@@ -1816,8 +1816,8 @@
       "web_name": "Richards",
       "team_short": "CRY",
       "position": "DEF",
-      "now_cost": 50,
-      "projected": 2.294
+      "now_cost": 49,
+      "projected": 2.285
     },
     {
       "player_id": 203,
@@ -2032,7 +2032,7 @@
       "web_name": "Tarkowski",
       "team_short": "EVE",
       "position": "DEF",
-      "now_cost": 61,
+      "now_cost": 62,
       "projected": 3.412
     },
     {
@@ -3568,7 +3568,7 @@
       "web_name": "Heaven",
       "team_short": "MUN",
       "position": "DEF",
-      "now_cost": 44,
+      "now_cost": 43,
       "projected": 0.268
     },
     {
