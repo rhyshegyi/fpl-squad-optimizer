@@ -13,7 +13,7 @@
   "average_squad_value": 993,
   "name": "Gameweek 6",
   "deadline": "2026-10-10T10:00:00Z",
-  "frozen_at": "2026-10-01T13:37:03.056711+00:00",
+  "frozen_at": "2026-10-01T20:27:48.240454+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -2065,7 +2065,7 @@
       "team_short": "EVE",
       "position": "DEF",
       "now_cost": 46,
-      "projected": 3.219
+      "projected": 2.414
     },
     {
       "player_id": 234,
@@ -3297,7 +3297,7 @@
       "team_short": "MCI",
       "position": "DEF",
       "now_cost": 63,
-      "projected": 1.073
+      "projected": 0.805
     },
     {
       "player_id": 388,
@@ -3873,7 +3873,7 @@
       "team_short": "NEW",
       "position": "MID",
       "now_cost": 55,
-      "projected": 2.383
+      "projected": 1.787
     },
     {
       "player_id": 460,

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-01T13:37:03.036907+00:00",
+  "generated_at": "2026-10-01T20:27:48.221559+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "budget_tenths": 993,
   "pipeline_state": {
-    "last_fetch": "2026-10-01T13:32:37.644629+00:00",
+    "last_fetch": "2026-10-01T20:23:24.746178+00:00",
     "average_squad_value": 993,
     "current_gw": {
       "id": 5,
@@ -2307,7 +2307,7 @@
       "team_short": "EVE",
       "position": "DEF",
       "now_cost": 46,
-      "projected_points": 3.251
+      "projected_points": 2.438
     },
     {
       "player_id": 234,
@@ -3693,7 +3693,7 @@
       "team_short": "MCI",
       "position": "DEF",
       "now_cost": 63,
-      "projected_points": 1.605
+      "projected_points": 1.204
     },
     {
       "player_id": 388,
@@ -4341,7 +4341,7 @@
       "team_short": "NEW",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.665
+      "projected_points": 1.999
     },
     {
       "player_id": 460,
