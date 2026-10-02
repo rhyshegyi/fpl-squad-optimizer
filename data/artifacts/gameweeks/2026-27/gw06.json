@@ -13,7 +13,7 @@
   "average_squad_value": 993,
   "name": "Gameweek 6",
   "deadline": "2026-10-10T10:00:00Z",
-  "frozen_at": "2026-10-02T12:55:43.627127+00:00",
+  "frozen_at": "2026-10-02T20:02:07.143033+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -4657,7 +4657,7 @@
       "team_short": "ARS",
       "position": "MID",
       "now_cost": 63,
-      "projected": 2.836
+      "projected": 2.127
     },
     {
       "player_id": 558,
