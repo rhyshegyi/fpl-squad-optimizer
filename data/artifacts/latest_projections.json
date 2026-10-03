@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-02T20:01:47.284834+00:00",
+  "generated_at": "2026-10-03T11:53:45.173536+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-02T19:59:09.918408+00:00",
-    "average_squad_value": 993,
+    "last_fetch": "2026-10-03T11:49:50.410159+00:00",
+    "average_squad_value": 992,
     "current_gw": {
       "id": 5,
       "name": "Gameweek 5"
@@ -321,7 +321,7 @@
       "season_ppg": 6.4,
       "season_points": 32,
       "season_minutes": 416,
-      "selected_by": 13.7,
+      "selected_by": 13.8,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 5,
@@ -2453,7 +2453,7 @@
       "season_ppg": 7.8,
       "season_points": 39,
       "season_minutes": 447,
-      "selected_by": 11.6,
+      "selected_by": 11.7,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 5,
@@ -5151,7 +5151,7 @@
       "team_id": 8,
       "team_short": "CRY",
       "position": "GK",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected_points": 0.0,
       "form": 1.0,
       "season_ppg": 1.0,
@@ -7263,7 +7263,7 @@
       "season_ppg": 5.4,
       "season_points": 27,
       "season_minutes": 423,
-      "selected_by": 14.0,
+      "selected_by": 13.9,
       "status": "a",
       "chance_next_round": 100,
       "gws_played": 5,
@@ -8589,7 +8589,7 @@
       "season_ppg": 8.4,
       "season_points": 42,
       "season_minutes": 365,
-      "selected_by": 7.2,
+      "selected_by": 7.3,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 5,
@@ -8817,8 +8817,8 @@
       "team_id": 13,
       "team_short": "LEE",
       "position": "MID",
-      "now_cost": 49,
-      "projected_points": 0.376,
+      "now_cost": 48,
+      "projected_points": 0.347,
       "form": 0.4,
       "season_ppg": 0.4,
       "season_points": 2,
@@ -8835,7 +8835,7 @@
       "opp_short": "ARS",
       "is_home": false,
       "fdr": 5,
-      "target_points": 0.402
+      "target_points": 0.369
     },
     {
       "player_id": 340,
@@ -9129,8 +9129,8 @@
       "team_id": 14,
       "team_short": "LIV",
       "position": "GK",
-      "now_cost": 49,
-      "projected_points": 0.121,
+      "now_cost": 48,
+      "projected_points": 0.129,
       "form": 0.0,
       "season_ppg": 0.0,
       "season_points": 0,
@@ -9147,7 +9147,7 @@
       "opp_short": "MCI",
       "is_home": true,
       "fdr": 4,
-      "target_points": 0.118
+      "target_points": 0.136
     },
     {
       "player_id": 352,
@@ -9571,8 +9571,8 @@
       "team_id": 14,
       "team_short": "LIV",
       "position": "MID",
-      "now_cost": 70,
-      "projected_points": 3.841,
+      "now_cost": 69,
+      "projected_points": 3.676,
       "form": 4.0,
       "season_ppg": 4.0,
       "season_points": 20,
@@ -9589,7 +9589,7 @@
       "opp_short": "MCI",
       "is_home": true,
       "fdr": 4,
-      "target_points": 3.935
+      "target_points": 3.855
     },
     {
       "player_id": 369,
@@ -10195,7 +10195,7 @@
       "team_id": 15,
       "team_short": "MCI",
       "position": "DEF",
-      "now_cost": 53,
+      "now_cost": 52,
       "projected_points": 0.154,
       "form": 0.0,
       "season_ppg": 0.0,
@@ -11163,7 +11163,7 @@
       "season_ppg": 2.0,
       "season_points": 10,
       "season_minutes": 351,
-      "selected_by": 1.5,
+      "selected_by": 1.4,
       "status": "d",
       "chance_next_round": 75,
       "gws_played": 5,
@@ -12691,8 +12691,8 @@
       "team_id": 18,
       "team_short": "NFO",
       "position": "MID",
-      "now_cost": 49,
-      "projected_points": 0.857,
+      "now_cost": 48,
+      "projected_points": 0.819,
       "form": 0.8,
       "season_ppg": 0.8,
       "season_points": 4,
@@ -12709,7 +12709,7 @@
       "opp_short": "CRY",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.064
+      "target_points": 1.033
     },
     {
       "player_id": 489,
@@ -12905,7 +12905,7 @@
       "season_ppg": 3.6,
       "season_points": 18,
       "season_minutes": 450,
-      "selected_by": 17.3,
+      "selected_by": 17.2,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 5,

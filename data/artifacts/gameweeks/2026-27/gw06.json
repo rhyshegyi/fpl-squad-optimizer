@@ -10,10 +10,10 @@
     ],
     "objective": "poisson"
   },
-  "average_squad_value": 993,
+  "average_squad_value": 992,
   "name": "Gameweek 6",
   "deadline": "2026-10-10T10:00:00Z",
-  "frozen_at": "2026-10-02T20:02:07.143033+00:00",
+  "frozen_at": "2026-10-03T11:54:16.773231+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -1784,7 +1784,7 @@
       "web_name": "Henderson",
       "team_short": "CRY",
       "position": "GK",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected": 0.0
     },
     {
@@ -2912,8 +2912,8 @@
       "web_name": "Longstaff",
       "team_short": "LEE",
       "position": "MID",
-      "now_cost": 49,
-      "projected": 0.376
+      "now_cost": 48,
+      "projected": 0.347
     },
     {
       "player_id": 340,
@@ -3008,8 +3008,8 @@
       "web_name": "Mamardashvili",
       "team_short": "LIV",
       "position": "GK",
-      "now_cost": 49,
-      "projected": 0.121
+      "now_cost": 48,
+      "projected": 0.129
     },
     {
       "player_id": 352,
@@ -3144,8 +3144,8 @@
       "web_name": "Szoboszlai",
       "team_short": "LIV",
       "position": "MID",
-      "now_cost": 70,
-      "projected": 3.841
+      "now_cost": 69,
+      "projected": 3.676
     },
     {
       "player_id": 369,
@@ -3336,7 +3336,7 @@
       "web_name": "A\u00eft-Nouri",
       "team_short": "MCI",
       "position": "DEF",
-      "now_cost": 53,
+      "now_cost": 52,
       "projected": 0.154
     },
     {
@@ -4104,8 +4104,8 @@
       "web_name": "I.Sangar\u00e9",
       "team_short": "NFO",
       "position": "MID",
-      "now_cost": 49,
-      "projected": 0.857
+      "now_cost": 48,
+      "projected": 0.819
     },
     {
       "player_id": 489,
