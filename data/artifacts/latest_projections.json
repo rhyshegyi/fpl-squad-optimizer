@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-04T18:42:50.641408+00:00",
+  "generated_at": "2026-10-04T22:26:13.264192+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-04T18:40:20.808692+00:00",
-    "average_squad_value": 993,
+    "last_fetch": "2026-10-04T22:22:28.252034+00:00",
+    "average_squad_value": 992,
     "current_gw": {
       "id": 5,
       "name": "Gameweek 5"
@@ -10976,14 +10976,14 @@
       "team_short": "MUN",
       "position": "DEF",
       "now_cost": 44,
-      "projected_points": 0.477,
+      "projected_points": 0.358,
       "form": 0.6,
       "season_ppg": 0.6,
       "season_points": 3,
       "season_minutes": 97,
       "selected_by": 0.5,
-      "status": "a",
-      "chance_next_round": null,
+      "status": "d",
+      "chance_next_round": 75,
       "gws_played": 5,
       "minutes_avg": 19.4,
       "points_avg": 0.6,
@@ -10993,7 +10993,7 @@
       "opp_short": "TOT",
       "is_home": true,
       "fdr": 2,
-      "target_points": 0.747
+      "target_points": 0.56
     },
     {
       "player_id": 423,
@@ -11085,7 +11085,7 @@
       "season_ppg": 6.2,
       "season_points": 31,
       "season_minutes": 450,
-      "selected_by": 38.5,
+      "selected_by": 38.4,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 5,
@@ -15063,7 +15063,7 @@
       "season_ppg": 4.4,
       "season_points": 22,
       "season_minutes": 284,
-      "selected_by": 3.0,
+      "selected_by": 3.1,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 5,
@@ -15292,14 +15292,14 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 2.61,
+      "projected_points": 1.957,
       "form": 3.8,
       "season_ppg": 3.8,
       "season_points": 19,
       "season_minutes": 379,
       "selected_by": 0.3,
-      "status": "a",
-      "chance_next_round": null,
+      "status": "d",
+      "chance_next_round": 75,
       "gws_played": 5,
       "minutes_avg": 75.8,
       "points_avg": 3.8,
@@ -15309,7 +15309,7 @@
       "opp_short": "NFO",
       "is_home": true,
       "fdr": 3,
-      "target_points": 3.109
+      "target_points": 2.332
     },
     {
       "player_id": 589,

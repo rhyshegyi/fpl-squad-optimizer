@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T18:43:10.573061+00:00",
+  "generated_at": "2026-10-04T22:26:43.592401+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 2,
@@ -457,7 +457,7 @@
       "ppg": 7.4,
       "value": 6.49,
       "selected_by": 26.9,
-      "in_target_squad": true
+      "in_target_squad": false
     },
     {
       "rank": 8,
@@ -493,7 +493,7 @@
       "ppg": 6.8,
       "value": 7.23,
       "selected_by": 12.8,
-      "in_target_squad": false
+      "in_target_squad": true
     },
     {
       "rank": 10,
@@ -655,7 +655,7 @@
       "ppg": 6.2,
       "value": 5.85,
       "selected_by": 17.4,
-      "in_target_squad": false
+      "in_target_squad": true
     },
     {
       "rank": 19,
@@ -672,7 +672,7 @@
       "bonus": 3,
       "ppg": 6.2,
       "value": 2.61,
-      "selected_by": 38.5,
+      "selected_by": 38.4,
       "in_target_squad": true
     },
     {
