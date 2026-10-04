@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-03T18:47:53.590226+00:00",
+  "generated_at": "2026-10-04T12:38:27.127401+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
-  "budget_tenths": 992,
+  "budget_tenths": 993,
   "pipeline_state": {
-    "last_fetch": "2026-10-03T18:43:37.326231+00:00",
-    "average_squad_value": 992,
+    "last_fetch": "2026-10-04T12:34:12.137325+00:00",
+    "average_squad_value": 993,
     "current_gw": {
       "id": 5,
       "name": "Gameweek 5"
@@ -25,7 +25,7 @@
     }
   },
   "squad": {
-    "total_cost": 992,
+    "total_cost": 993,
     "projected_points": 57.49,
     "formation": "3-5-2",
     "picks": [
@@ -95,7 +95,7 @@
         "team_id": 5,
         "team_short": "BHA",
         "position": "MID",
-        "now_cost": 58,
+        "now_cost": 59,
         "projected_points": 4.76,
         "is_starter": true,
         "is_captain": false,
@@ -1074,7 +1074,7 @@
       "team_short": "BRE",
       "position": "MID",
       "now_cost": 54,
-      "projected_points": 2.881
+      "projected_points": 2.161
     },
     {
       "player_id": 97,
@@ -1325,7 +1325,7 @@
       "team_id": 5,
       "team_short": "BHA",
       "position": "MID",
-      "now_cost": 58,
+      "now_cost": 59,
       "projected_points": 4.76
     },
     {
@@ -1487,8 +1487,8 @@
       "team_id": 6,
       "team_short": "CHE",
       "position": "DEF",
-      "now_cost": 54,
-      "projected_points": 1.696
+      "now_cost": 53,
+      "projected_points": 1.602
     },
     {
       "player_id": 143,
@@ -1829,7 +1829,7 @@
       "team_id": 7,
       "team_short": "COV",
       "position": "DEF",
-      "now_cost": 40,
+      "now_cost": 39,
       "projected_points": 0.0
     },
     {
@@ -2378,8 +2378,8 @@
       "team_id": 8,
       "team_short": "CRY",
       "position": "MID",
-      "now_cost": 54,
-      "projected_points": 0.661
+      "now_cost": 53,
+      "projected_points": 0.647
     },
     {
       "player_id": 242,
@@ -2801,7 +2801,7 @@
       "team_id": 11,
       "team_short": "HUL",
       "position": "MID",
-      "now_cost": 45,
+      "now_cost": 44,
       "projected_points": 0.05
     },
     {
@@ -3863,8 +3863,8 @@
       "team_id": 15,
       "team_short": "MCI",
       "position": "MID",
-      "now_cost": 54,
-      "projected_points": 0.333
+      "now_cost": 53,
+      "projected_points": 0.311
     },
     {
       "player_id": 407,
@@ -3980,8 +3980,8 @@
       "team_id": 16,
       "team_short": "MUN",
       "position": "DEF",
-      "now_cost": 50,
-      "projected_points": 2.562
+      "now_cost": 49,
+      "projected_points": 2.527
     },
     {
       "player_id": 420,

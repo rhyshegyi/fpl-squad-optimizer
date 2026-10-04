@@ -10,10 +10,10 @@
     ],
     "objective": "poisson"
   },
-  "average_squad_value": 992,
+  "average_squad_value": 993,
   "name": "Gameweek 6",
   "deadline": "2026-10-10T10:00:00Z",
-  "frozen_at": "2026-10-03T18:47:53.609577+00:00",
+  "frozen_at": "2026-10-04T12:38:27.146290+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -969,7 +969,7 @@
       "team_short": "BRE",
       "position": "MID",
       "now_cost": 54,
-      "projected": 2.299
+      "projected": 1.724
     },
     {
       "player_id": 97,
@@ -1192,7 +1192,7 @@
       "web_name": "Gro\u00df",
       "team_short": "BHA",
       "position": "MID",
-      "now_cost": 58,
+      "now_cost": 59,
       "projected": 4.08
     },
     {
@@ -1336,8 +1336,8 @@
       "web_name": "James",
       "team_short": "CHE",
       "position": "DEF",
-      "now_cost": 54,
-      "projected": 1.714
+      "now_cost": 53,
+      "projected": 1.569
     },
     {
       "player_id": 143,
@@ -1640,7 +1640,7 @@
       "web_name": "Woolfenden",
       "team_short": "COV",
       "position": "DEF",
-      "now_cost": 40,
+      "now_cost": 39,
       "projected": 0.0
     },
     {
@@ -2128,8 +2128,8 @@
       "web_name": "McNeil",
       "team_short": "CRY",
       "position": "MID",
-      "now_cost": 54,
-      "projected": 0.296
+      "now_cost": 53,
+      "projected": 0.285
     },
     {
       "player_id": 242,
@@ -2504,7 +2504,7 @@
       "web_name": "Dowell",
       "team_short": "HUL",
       "position": "MID",
-      "now_cost": 45,
+      "now_cost": 44,
       "projected": 0.048
     },
     {
@@ -3448,8 +3448,8 @@
       "web_name": "Kova\u010di\u0107",
       "team_short": "MCI",
       "position": "MID",
-      "now_cost": 54,
-      "projected": 0.3
+      "now_cost": 53,
+      "projected": 0.281
     },
     {
       "player_id": 407,
@@ -3552,8 +3552,8 @@
       "web_name": "Martinez",
       "team_short": "MUN",
       "position": "DEF",
-      "now_cost": 50,
-      "projected": 2.789
+      "now_cost": 49,
+      "projected": 2.71
     },
     {
       "player_id": 420,
