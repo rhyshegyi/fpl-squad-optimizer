@@ -10,10 +10,10 @@
     ],
     "objective": "poisson"
   },
-  "average_squad_value": 992,
+  "average_squad_value": 993,
   "name": "Gameweek 6",
   "deadline": "2026-10-10T10:00:00Z",
-  "frozen_at": "2026-10-04T22:26:43.581483+00:00",
+  "frozen_at": "2026-10-05T15:03:08.616604+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -449,7 +449,7 @@
       "team_short": "ARS",
       "position": "DEF",
       "now_cost": 46,
-      "projected": 2.696
+      "projected": 2.022
     },
     {
       "player_id": 32,
@@ -753,7 +753,7 @@
       "team_short": "BOU",
       "position": "MID",
       "now_cost": 61,
-      "projected": 2.48
+      "projected": 1.24
     },
     {
       "player_id": 70,
@@ -1968,7 +1968,7 @@
       "web_name": "Drakes-Thomas",
       "team_short": "CRY",
       "position": "MID",
-      "now_cost": 45,
+      "now_cost": 44,
       "projected": 0.048
     },
     {
@@ -3528,7 +3528,7 @@
       "web_name": "De Ligt",
       "team_short": "MUN",
       "position": "DEF",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected": 0.0
     },
     {

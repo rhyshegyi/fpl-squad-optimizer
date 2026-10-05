@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T22:26:43.592401+00:00",
+  "generated_at": "2026-10-05T15:03:08.627669+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 2,
@@ -348,7 +348,7 @@
       "bonus": 9,
       "ppg": 9.4,
       "value": 7.97,
-      "selected_by": 29.3,
+      "selected_by": 29.4,
       "in_target_squad": true
     },
     {
@@ -402,7 +402,7 @@
       "bonus": 6,
       "ppg": 7.8,
       "value": 6.29,
-      "selected_by": 11.8,
+      "selected_by": 11.9,
       "in_target_squad": true
     },
     {
@@ -457,7 +457,7 @@
       "ppg": 7.4,
       "value": 6.49,
       "selected_by": 26.9,
-      "in_target_squad": false
+      "in_target_squad": true
     },
     {
       "rank": 8,
@@ -493,7 +493,7 @@
       "ppg": 6.8,
       "value": 7.23,
       "selected_by": 12.8,
-      "in_target_squad": true
+      "in_target_squad": false
     },
     {
       "rank": 10,
@@ -564,7 +564,7 @@
       "bonus": 5,
       "ppg": 6.4,
       "value": 4.44,
-      "selected_by": 12.3,
+      "selected_by": 12.2,
       "in_target_squad": false
     },
     {
@@ -582,7 +582,7 @@
       "bonus": 4,
       "ppg": 6.4,
       "value": 3.37,
-      "selected_by": 13.9,
+      "selected_by": 14.0,
       "in_target_squad": true
     },
     {
@@ -600,7 +600,7 @@
       "bonus": 2,
       "ppg": 6.4,
       "value": 6.4,
-      "selected_by": 3.7,
+      "selected_by": 3.8,
       "in_target_squad": false
     },
     {
@@ -654,8 +654,8 @@
       "bonus": 6,
       "ppg": 6.2,
       "value": 5.85,
-      "selected_by": 17.4,
-      "in_target_squad": true
+      "selected_by": 17.5,
+      "in_target_squad": false
     },
     {
       "rank": 19,
@@ -690,7 +690,7 @@
       "bonus": 5,
       "ppg": 6.0,
       "value": 4.92,
-      "selected_by": 5.8,
+      "selected_by": 5.7,
       "in_target_squad": false
     },
     {
@@ -870,7 +870,7 @@
       "bonus": 3,
       "ppg": 5.6,
       "value": 4.59,
-      "selected_by": 5.8,
+      "selected_by": 5.9,
       "in_target_squad": false
     }
   ],
