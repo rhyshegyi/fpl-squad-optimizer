@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-05T22:09:02.989853+00:00",
+  "generated_at": "2026-10-06T13:29:22.670394+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "budget_tenths": 993,
   "pipeline_state": {
-    "last_fetch": "2026-10-05T22:04:35.109553+00:00",
+    "last_fetch": "2026-10-06T13:26:34.402197+00:00",
     "average_squad_value": 993,
     "current_gw": {
       "id": 5,
@@ -26,7 +26,7 @@
   },
   "squad": {
     "total_cost": 993,
-    "projected_points": 57.49,
+    "projected_points": 57.32,
     "formation": "3-5-2",
     "picks": [
       {
@@ -35,7 +35,7 @@
         "team_id": 1,
         "team_short": "ARS",
         "position": "MID",
-        "now_cost": 95,
+        "now_cost": 96,
         "projected_points": 5.475,
         "is_starter": true,
         "is_captain": false,
@@ -73,7 +73,7 @@
         "position": "GK",
         "now_cost": 45,
         "projected_points": 3.412,
-        "is_starter": true,
+        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
@@ -102,18 +102,6 @@
         "is_vice": false
       },
       {
-        "player_id": 173,
-        "web_name": "Thomas",
-        "team_id": 7,
-        "team_short": "COV",
-        "position": "DEF",
-        "now_cost": 40,
-        "projected_points": 2.778,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
         "player_id": 249,
         "web_name": "Barry",
         "team_id": 9,
@@ -126,13 +114,13 @@
         "is_vice": false
       },
       {
-        "player_id": 250,
-        "web_name": "Leno",
-        "team_id": 10,
-        "team_short": "FUL",
-        "position": "GK",
-        "now_cost": 45,
-        "projected_points": 3.315,
+        "player_id": 277,
+        "web_name": "Egan",
+        "team_id": 11,
+        "team_short": "HUL",
+        "position": "DEF",
+        "now_cost": 41,
+        "projected_points": 2.937,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -174,18 +162,6 @@
         "is_vice": false
       },
       {
-        "player_id": 391,
-        "web_name": "Gvardiol",
-        "team_id": 15,
-        "team_short": "MCI",
-        "position": "DEF",
-        "now_cost": 57,
-        "projected_points": 4.106,
-        "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
         "player_id": 411,
         "web_name": "Haaland",
         "team_id": 15,
@@ -208,6 +184,30 @@
         "is_starter": true,
         "is_captain": false,
         "is_vice": true
+      },
+      {
+        "player_id": 449,
+        "web_name": "Hall",
+        "team_id": 17,
+        "team_short": "NEW",
+        "position": "DEF",
+        "now_cost": 53,
+        "projected_points": 3.84,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 572,
+        "web_name": "Tzolakis",
+        "team_id": 11,
+        "team_short": "HUL",
+        "position": "GK",
+        "now_cost": 47,
+        "projected_points": 3.5,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
       }
     ]
   },
@@ -281,7 +281,7 @@
       "team_id": 1,
       "team_short": "ARS",
       "position": "DEF",
-      "now_cost": 58,
+      "now_cost": 59,
       "projected_points": 3.612
     },
     {
@@ -317,7 +317,7 @@
       "team_id": 1,
       "team_short": "ARS",
       "position": "MID",
-      "now_cost": 95,
+      "now_cost": 96,
       "projected_points": 5.475
     },
     {
@@ -3468,7 +3468,7 @@
       "team_short": "LIV",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 3.05
+      "projected_points": 2.287
     },
     {
       "player_id": 363,
@@ -4313,7 +4313,7 @@
       "team_id": 17,
       "team_short": "NEW",
       "position": "MID",
-      "now_cost": 49,
+      "now_cost": 48,
       "projected_points": 0.0
     },
     {

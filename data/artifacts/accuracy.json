@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T22:09:03.020271+00:00",
+  "generated_at": "2026-10-06T13:29:22.695179+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 2,
@@ -348,7 +348,7 @@
       "bonus": 9,
       "ppg": 9.4,
       "value": 7.97,
-      "selected_by": 29.5,
+      "selected_by": 29.6,
       "in_target_squad": true
     },
     {
@@ -366,7 +366,7 @@
       "bonus": 7,
       "ppg": 8.6,
       "value": 6.94,
-      "selected_by": 16.7,
+      "selected_by": 16.8,
       "in_target_squad": false
     },
     {
@@ -402,7 +402,7 @@
       "bonus": 6,
       "ppg": 7.8,
       "value": 6.29,
-      "selected_by": 11.9,
+      "selected_by": 12.0,
       "in_target_squad": true
     },
     {
@@ -457,7 +457,7 @@
       "ppg": 7.4,
       "value": 6.49,
       "selected_by": 26.9,
-      "in_target_squad": true
+      "in_target_squad": false
     },
     {
       "rank": 8,
@@ -493,7 +493,7 @@
       "ppg": 6.8,
       "value": 7.23,
       "selected_by": 12.8,
-      "in_target_squad": false
+      "in_target_squad": true
     },
     {
       "rank": 10,
@@ -510,7 +510,7 @@
       "bonus": 7,
       "ppg": 6.6,
       "value": 4.29,
-      "selected_by": 64.9,
+      "selected_by": 64.8,
       "in_target_squad": false
     },
     {
@@ -528,7 +528,7 @@
       "bonus": 8,
       "ppg": 6.6,
       "value": 3.63,
-      "selected_by": 22.2,
+      "selected_by": 22.1,
       "in_target_squad": false
     },
     {
@@ -546,7 +546,7 @@
       "bonus": 2,
       "ppg": 6.6,
       "value": 3.93,
-      "selected_by": 15.2,
+      "selected_by": 15.1,
       "in_target_squad": false
     },
     {
@@ -573,7 +573,7 @@
       "web_name": "Saka",
       "team_short": "ARS",
       "position": "MID",
-      "now_cost": 95,
+      "now_cost": 96,
       "points": 32,
       "games": 5,
       "minutes": 416,
@@ -581,8 +581,8 @@
       "assists": 0,
       "bonus": 4,
       "ppg": 6.4,
-      "value": 3.37,
-      "selected_by": 14.0,
+      "value": 3.33,
+      "selected_by": 14.1,
       "in_target_squad": true
     },
     {
@@ -618,7 +618,7 @@
       "bonus": 2,
       "ppg": 6.2,
       "value": 6.08,
-      "selected_by": 5.2,
+      "selected_by": 5.3,
       "in_target_squad": false
     },
     {
@@ -654,8 +654,8 @@
       "bonus": 6,
       "ppg": 6.2,
       "value": 5.85,
-      "selected_by": 17.5,
-      "in_target_squad": false
+      "selected_by": 17.6,
+      "in_target_squad": true
     },
     {
       "rank": 19,
@@ -753,7 +753,7 @@
       "web_name": "Calafiori",
       "team_short": "ARS",
       "position": "DEF",
-      "now_cost": 58,
+      "now_cost": 59,
       "points": 29,
       "games": 5,
       "minutes": 416,
@@ -761,7 +761,7 @@
       "assists": 2,
       "bonus": 2,
       "ppg": 5.8,
-      "value": 5.0,
+      "value": 4.92,
       "selected_by": 50.5,
       "in_target_squad": false
     },
@@ -798,7 +798,7 @@
       "bonus": 3,
       "ppg": 5.6,
       "value": 5.0,
-      "selected_by": 4.5,
+      "selected_by": 4.6,
       "in_target_squad": false
     },
     {

@@ -13,7 +13,7 @@
   "average_squad_value": 993,
   "name": "Gameweek 6",
   "deadline": "2026-10-10T10:00:00Z",
-  "frozen_at": "2026-10-05T22:09:03.009072+00:00",
+  "frozen_at": "2026-10-06T13:29:22.686204+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -38,7 +38,7 @@
         "team_id": 1,
         "team_short": "ARS",
         "position": "MID",
-        "now_cost": 95,
+        "now_cost": 96,
         "projected_points": 6.349,
         "is_starter": true,
         "is_captain": false,
@@ -69,6 +69,18 @@
         "is_vice": false
       },
       {
+        "player_id": 176,
+        "web_name": "Dasilva",
+        "team_id": 7,
+        "team_short": "COV",
+        "position": "DEF",
+        "now_cost": 40,
+        "projected_points": 2.283,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
         "player_id": 249,
         "web_name": "Barry",
         "team_id": 9,
@@ -88,18 +100,6 @@
         "position": "GK",
         "now_cost": 45,
         "projected_points": 3.561,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 277,
-        "web_name": "Egan",
-        "team_id": 11,
-        "team_short": "HUL",
-        "position": "DEF",
-        "now_cost": 41,
-        "projected_points": 2.326,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -264,7 +264,7 @@
       "web_name": "Calafiori",
       "team_short": "ARS",
       "position": "DEF",
-      "now_cost": 58,
+      "now_cost": 59,
       "projected": 3.212
     },
     {
@@ -296,7 +296,7 @@
       "web_name": "Saka",
       "team_short": "ARS",
       "position": "MID",
-      "now_cost": 95,
+      "now_cost": 96,
       "projected": 6.349
     },
     {
@@ -3097,7 +3097,7 @@
       "team_short": "LIV",
       "position": "DEF",
       "now_cost": 50,
-      "projected": 2.286
+      "projected": 1.715
     },
     {
       "player_id": 363,
@@ -3848,7 +3848,7 @@
       "web_name": "J.Ramsey",
       "team_short": "NEW",
       "position": "MID",
-      "now_cost": 49,
+      "now_cost": 48,
       "projected": 0.0
     },
     {
