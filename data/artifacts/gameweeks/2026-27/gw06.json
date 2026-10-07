@@ -10,13 +10,13 @@
     ],
     "objective": "poisson"
   },
-  "average_squad_value": 993,
+  "average_squad_value": 994,
   "name": "Gameweek 6",
   "deadline": "2026-10-10T10:00:00Z",
-  "frozen_at": "2026-10-06T20:27:45.893427+00:00",
+  "frozen_at": "2026-10-07T13:41:08.154436+00:00",
   "scored_at": null,
   "squad": {
-    "total_cost": 1000,
+    "total_cost": 997,
     "projected_points": 59.83,
     "formation": "3-5-2",
     "picks": [
@@ -62,20 +62,20 @@
         "team_id": 6,
         "team_short": "CHE",
         "position": "MID",
-        "now_cost": 77,
+        "now_cost": 78,
         "projected_points": 5.965,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
       },
       {
-        "player_id": 176,
-        "web_name": "Dasilva",
+        "player_id": 194,
+        "web_name": "Thomas-Asante",
         "team_id": 7,
         "team_short": "COV",
-        "position": "DEF",
-        "now_cost": 40,
-        "projected_points": 2.283,
+        "position": "FWD",
+        "now_cost": 50,
+        "projected_points": 2.192,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -105,13 +105,13 @@
         "is_vice": false
       },
       {
-        "player_id": 295,
-        "web_name": "McBurnie",
+        "player_id": 277,
+        "web_name": "Egan",
         "team_id": 11,
         "team_short": "HUL",
-        "position": "FWD",
-        "now_cost": 55,
-        "projected_points": 3.393,
+        "position": "DEF",
+        "now_cost": 41,
+        "projected_points": 2.326,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -520,7 +520,7 @@
       "web_name": "Rogers",
       "team_short": "CHE",
       "position": "MID",
-      "now_cost": 77,
+      "now_cost": 78,
       "projected": 5.965
     },
     {
@@ -2344,7 +2344,7 @@
       "web_name": "King",
       "team_short": "FUL",
       "position": "MID",
-      "now_cost": 55,
+      "now_cost": 56,
       "projected": 3.282
     },
     {

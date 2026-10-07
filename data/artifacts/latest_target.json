@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-06T20:27:45.874504+00:00",
+  "generated_at": "2026-10-07T13:41:08.134987+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
-  "budget_tenths": 993,
+  "budget_tenths": 994,
   "pipeline_state": {
-    "last_fetch": "2026-10-06T20:23:23.538753+00:00",
-    "average_squad_value": 993,
+    "last_fetch": "2026-10-07T13:37:17.717791+00:00",
+    "average_squad_value": 994,
     "current_gw": {
       "id": 5,
       "name": "Gameweek 5"
@@ -25,7 +25,7 @@
     }
   },
   "squad": {
-    "total_cost": 993,
+    "total_cost": 994,
     "projected_points": 57.32,
     "formation": "3-5-2",
     "picks": [
@@ -47,7 +47,7 @@
         "team_id": 6,
         "team_short": "CHE",
         "position": "MID",
-        "now_cost": 77,
+        "now_cost": 78,
         "projected_points": 5.1,
         "is_starter": true,
         "is_captain": false,
@@ -569,7 +569,7 @@
       "team_id": 6,
       "team_short": "CHE",
       "position": "MID",
-      "now_cost": 77,
+      "now_cost": 78,
       "projected_points": 5.1
     },
     {
@@ -2621,7 +2621,7 @@
       "team_id": 10,
       "team_short": "FUL",
       "position": "MID",
-      "now_cost": 55,
+      "now_cost": 56,
       "projected_points": 3.73
     },
     {
