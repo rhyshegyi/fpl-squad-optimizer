@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-08T13:46:09.411902+00:00",
+  "generated_at": "2026-10-08T20:45:53.819370+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "budget_tenths": 993,
   "pipeline_state": {
-    "last_fetch": "2026-10-08T13:43:36.563901+00:00",
+    "last_fetch": "2026-10-08T20:43:18.393094+00:00",
     "average_squad_value": 993,
     "current_gw": {
       "id": 5,
@@ -831,7 +831,7 @@
       "team_short": "BOU",
       "position": "MID",
       "now_cost": 61,
-      "projected_points": 1.873
+      "projected_points": 0.0
     },
     {
       "player_id": 70,
@@ -1803,7 +1803,7 @@
       "team_short": "COV",
       "position": "DEF",
       "now_cost": 39,
-      "projected_points": 0.0
+      "projected_points": 0.031
     },
     {
       "player_id": 178,
@@ -2550,7 +2550,7 @@
       "team_short": "LEE",
       "position": "MID",
       "now_cost": 62,
-      "projected_points": 0.0
+      "projected_points": 0.921
     },
     {
       "player_id": 261,
@@ -3297,7 +3297,7 @@
       "team_short": "LEE",
       "position": "MID",
       "now_cost": 49,
-      "projected_points": 0.98
+      "projected_points": 0.0
     },
     {
       "player_id": 344,
@@ -4260,7 +4260,7 @@
       "team_short": "NEW",
       "position": "DEF",
       "now_cost": 49,
-      "projected_points": 1.024
+      "projected_points": 0.683
     },
     {
       "player_id": 451,
@@ -4332,7 +4332,7 @@
       "team_short": "NEW",
       "position": "MID",
       "now_cost": 54,
-      "projected_points": 0.0
+      "projected_points": 0.061
     },
     {
       "player_id": 459,
@@ -4395,7 +4395,7 @@
       "team_short": "NEW",
       "position": "FWD",
       "now_cost": 58,
-      "projected_points": 0.0
+      "projected_points": 0.29
     },
     {
       "player_id": 466,
@@ -4998,7 +4998,7 @@
       "team_short": "SUN",
       "position": "DEF",
       "now_cost": 49,
-      "projected_points": 2.107
+      "projected_points": 0.0
     },
     {
       "player_id": 533,
@@ -5178,7 +5178,7 @@
       "team_short": "SUN",
       "position": "FWD",
       "now_cost": 57,
-      "projected_points": 2.946
+      "projected_points": 0.0
     },
     {
       "player_id": 553,
@@ -5547,7 +5547,7 @@
       "team_short": "NEW",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 0.0
+      "projected_points": 1.018
     },
     {
       "player_id": 594,
@@ -6042,7 +6042,7 @@
       "team_short": "LEE",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 0.42
+      "projected_points": 0.315
     },
     {
       "player_id": 649,
