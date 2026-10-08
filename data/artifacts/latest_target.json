@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-07T20:42:00.477419+00:00",
+  "generated_at": "2026-10-08T13:46:09.411902+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
-  "budget_tenths": 994,
+  "budget_tenths": 993,
   "pipeline_state": {
-    "last_fetch": "2026-10-07T20:40:14.272334+00:00",
-    "average_squad_value": 994,
+    "last_fetch": "2026-10-08T13:43:36.563901+00:00",
+    "average_squad_value": 993,
     "current_gw": {
       "id": 5,
       "name": "Gameweek 5"
@@ -25,7 +25,7 @@
     }
   },
   "squad": {
-    "total_cost": 994,
+    "total_cost": 993,
     "projected_points": 57.32,
     "formation": "3-5-2",
     "picks": [
@@ -102,6 +102,18 @@
         "is_vice": false
       },
       {
+        "player_id": 173,
+        "web_name": "Thomas",
+        "team_id": 7,
+        "team_short": "COV",
+        "position": "DEF",
+        "now_cost": 40,
+        "projected_points": 2.778,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
         "player_id": 249,
         "web_name": "Barry",
         "team_id": 9,
@@ -110,18 +122,6 @@
         "now_cost": 57,
         "projected_points": 3.799,
         "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 277,
-        "web_name": "Egan",
-        "team_id": 11,
-        "team_short": "HUL",
-        "position": "DEF",
-        "now_cost": 41,
-        "projected_points": 2.937,
-        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
@@ -2963,7 +2963,7 @@
       "team_id": 12,
       "team_short": "IPS",
       "position": "DEF",
-      "now_cost": 40,
+      "now_cost": 39,
       "projected_points": 1.468
     },
     {
@@ -5798,7 +5798,7 @@
       "team_id": 15,
       "team_short": "MCI",
       "position": "MID",
-      "now_cost": 45,
+      "now_cost": 44,
       "projected_points": 0.358
     },
     {

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-07T20:41:48.886492+00:00",
+  "generated_at": "2026-10-08T13:45:51.777308+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-07T20:40:14.272334+00:00",
-    "average_squad_value": 994,
+    "last_fetch": "2026-10-08T13:43:36.563901+00:00",
+    "average_squad_value": 993,
     "current_gw": {
       "id": 5,
       "name": "Gameweek 5"
@@ -23,7 +23,7 @@
     }
   },
   "squad": {
-    "total_cost": 997,
+    "total_cost": 1000,
     "projected_points": 59.83,
     "formation": "3-5-2",
     "picks": [
@@ -76,18 +76,6 @@
         "is_vice": false
       },
       {
-        "player_id": 194,
-        "web_name": "Thomas-Asante",
-        "team_id": 7,
-        "team_short": "COV",
-        "position": "FWD",
-        "now_cost": 50,
-        "projected_points": 2.192,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
         "player_id": 249,
         "web_name": "Barry",
         "team_id": 9,
@@ -112,13 +100,13 @@
         "is_vice": false
       },
       {
-        "player_id": 277,
-        "web_name": "Egan",
+        "player_id": 295,
+        "web_name": "McBurnie",
         "team_id": 11,
         "team_short": "HUL",
-        "position": "DEF",
-        "now_cost": 41,
-        "projected_points": 2.326,
+        "position": "FWD",
+        "now_cost": 55,
+        "projected_points": 3.393,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -131,6 +119,18 @@
         "position": "DEF",
         "now_cost": 40,
         "projected_points": 2.727,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 306,
+        "web_name": "Greaves",
+        "team_id": 12,
+        "team_short": "IPS",
+        "position": "DEF",
+        "now_cost": 39,
+        "projected_points": 1.184,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
