@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-10T19:24:04.132156+00:00",
+  "generated_at": "2026-10-11T13:10:14.510038+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-10T19:21:52.815441+00:00",
+    "last_fetch": "2026-10-11T13:06:27.346176+00:00",
     "average_squad_value": 993,
     "current_gw": {
       "id": 6,
@@ -15,21 +15,21 @@
     },
     "data_health": {
       "players_tracked": 667,
-      "players_disagreeing": 0,
+      "players_disagreeing": 44,
       "latest_gw_on_file": 6,
       "latest_result": "2026-10-10T16:30:00+00:00",
       "gameweek_in_progress": {
         "id": 6,
         "name": "Gameweek 6",
         "matches_played": 6,
-        "matches_started": 6,
+        "matches_started": 8,
         "matches_total": 10
       },
       "bonus_pending": null
     }
   },
   "squad": {
-    "total_cost": 1000,
+    "total_cost": 999,
     "projected_points": 57.55,
     "formation": "3-5-2",
     "picks": [
@@ -52,19 +52,7 @@
         "team_short": "BOU",
         "position": "GK",
         "now_cost": 45,
-        "projected_points": 3.24,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 113,
-        "web_name": "F.Kad\u0131o\u011flu",
-        "team_id": 5,
-        "team_short": "BHA",
-        "position": "DEF",
-        "now_cost": 44,
-        "projected_points": 2.691,
+        "projected_points": 3.436,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -87,7 +75,7 @@
         "team_id": 5,
         "team_short": "BHA",
         "position": "MID",
-        "now_cost": 59,
+        "now_cost": 60,
         "projected_points": 4.432,
         "is_starter": true,
         "is_captain": false,
@@ -130,6 +118,18 @@
         "is_vice": false
       },
       {
+        "player_id": 277,
+        "web_name": "Egan",
+        "team_id": 11,
+        "team_short": "HUL",
+        "position": "DEF",
+        "now_cost": 41,
+        "projected_points": 2.053,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
         "player_id": 282,
         "web_name": "Giles",
         "team_id": 11,
@@ -147,7 +147,7 @@
         "team_id": 15,
         "team_short": "MCI",
         "position": "DEF",
-        "now_cost": 57,
+        "now_cost": 58,
         "projected_points": 4.038,
         "is_starter": true,
         "is_captain": false,
