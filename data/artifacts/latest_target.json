@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-11T19:40:25.139187+00:00",
+  "generated_at": "2026-10-11T23:00:45.635326+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
-  "budget_tenths": 993,
+  "budget_tenths": 992,
   "pipeline_state": {
-    "last_fetch": "2026-10-11T19:36:09.396436+00:00",
-    "average_squad_value": 993,
+    "last_fetch": "2026-10-11T22:58:58.995211+00:00",
+    "average_squad_value": 992,
     "current_gw": {
       "id": 6,
       "name": "Gameweek 6"
@@ -31,8 +31,8 @@
     }
   },
   "squad": {
-    "total_cost": 993,
-    "projected_points": 57.58,
+    "total_cost": 991,
+    "projected_points": 57.54,
     "formation": "3-4-3",
     "picks": [
       {
@@ -120,13 +120,25 @@
         "is_vice": false
       },
       {
-        "player_id": 173,
-        "web_name": "Thomas",
-        "team_id": 7,
-        "team_short": "COV",
+        "player_id": 249,
+        "web_name": "Barry",
+        "team_id": 9,
+        "team_short": "EVE",
+        "position": "FWD",
+        "now_cost": 57,
+        "projected_points": 3.817,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 277,
+        "web_name": "Egan",
+        "team_id": 11,
+        "team_short": "HUL",
         "position": "DEF",
-        "now_cost": 40,
-        "projected_points": 2.687,
+        "now_cost": 41,
+        "projected_points": 2.919,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -163,18 +175,6 @@
         "position": "DEF",
         "now_cost": 46,
         "projected_points": 3.632,
-        "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 346,
-        "web_name": "Calvert-Lewin",
-        "team_id": 13,
-        "team_short": "LEE",
-        "position": "FWD",
-        "now_cost": 60,
-        "projected_points": 3.857,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false

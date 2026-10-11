@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T19:40:25.171739+00:00",
+  "generated_at": "2026-10-11T23:00:45.656404+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 2,
@@ -353,7 +353,7 @@
       "bonus": 8,
       "ppg": 8.83,
       "value": 10.6,
-      "selected_by": 33.4,
+      "selected_by": 33.6,
       "in_target_squad": true
     },
     {
@@ -371,7 +371,7 @@
       "bonus": 9,
       "ppg": 8.83,
       "value": 8.83,
-      "selected_by": 37.7,
+      "selected_by": 37.8,
       "in_target_squad": true
     },
     {
@@ -407,7 +407,7 @@
       "bonus": 9,
       "ppg": 7.5,
       "value": 5.84,
-      "selected_by": 68.2,
+      "selected_by": 68.3,
       "in_target_squad": true
     },
     {
@@ -443,7 +443,7 @@
       "bonus": 7,
       "ppg": 7.33,
       "value": 5.64,
-      "selected_by": 29.5,
+      "selected_by": 29.8,
       "in_target_squad": true
     },
     {
@@ -497,7 +497,7 @@
       "bonus": 6,
       "ppg": 6.67,
       "value": 6.45,
-      "selected_by": 15.7,
+      "selected_by": 15.6,
       "in_target_squad": false
     },
     {
@@ -515,7 +515,7 @@
       "bonus": 2,
       "ppg": 6.67,
       "value": 8.0,
-      "selected_by": 4.3,
+      "selected_by": 4.4,
       "in_target_squad": false
     },
     {
@@ -551,7 +551,7 @@
       "bonus": 2,
       "ppg": 6.33,
       "value": 4.87,
-      "selected_by": 43.9,
+      "selected_by": 44.1,
       "in_target_squad": true
     },
     {
@@ -569,7 +569,7 @@
       "bonus": 2,
       "ppg": 6.17,
       "value": 7.25,
-      "selected_by": 6.5,
+      "selected_by": 6.6,
       "in_target_squad": false
     },
     {
@@ -587,7 +587,7 @@
       "bonus": 7,
       "ppg": 6.0,
       "value": 4.56,
-      "selected_by": 6.2,
+      "selected_by": 6.3,
       "in_target_squad": false
     },
     {
@@ -605,7 +605,7 @@
       "bonus": 3,
       "ppg": 6.0,
       "value": 3.71,
-      "selected_by": 24.8,
+      "selected_by": 24.9,
       "in_target_squad": true
     },
     {
@@ -677,7 +677,7 @@
       "bonus": 4,
       "ppg": 5.67,
       "value": 3.54,
-      "selected_by": 17.0,
+      "selected_by": 16.9,
       "in_target_squad": false
     },
     {
@@ -695,7 +695,7 @@
       "bonus": 8,
       "ppg": 5.5,
       "value": 3.67,
-      "selected_by": 15.5,
+      "selected_by": 15.4,
       "in_target_squad": false
     },
     {
@@ -767,7 +767,7 @@
       "bonus": 5,
       "ppg": 5.33,
       "value": 4.44,
-      "selected_by": 8.5,
+      "selected_by": 8.4,
       "in_target_squad": false
     },
     {
@@ -821,7 +821,7 @@
       "bonus": 2,
       "ppg": 5.33,
       "value": 7.11,
-      "selected_by": 21.5,
+      "selected_by": 21.6,
       "in_target_squad": true
     },
     {
@@ -839,7 +839,7 @@
       "bonus": 3,
       "ppg": 5.33,
       "value": 2.69,
-      "selected_by": 36.1,
+      "selected_by": 35.9,
       "in_target_squad": false
     },
     {
