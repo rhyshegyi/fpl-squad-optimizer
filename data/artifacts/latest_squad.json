@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-12T15:49:17.692624+00:00",
+  "generated_at": "2026-10-12T22:35:03.807756+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-12T15:45:21.003323+00:00",
+    "last_fetch": "2026-10-12T22:31:12.537536+00:00",
     "average_squad_value": 994,
     "current_gw": {
       "id": 6,
@@ -17,20 +17,17 @@
       "players_tracked": 667,
       "players_disagreeing": 0,
       "latest_gw_on_file": 6,
-      "latest_result": "2026-10-11T15:30:00+00:00",
-      "gameweek_in_progress": {
+      "latest_result": "2026-10-12T19:00:00+00:00",
+      "gameweek_in_progress": null,
+      "bonus_pending": {
         "id": 6,
-        "name": "Gameweek 6",
-        "matches_played": 9,
-        "matches_started": 9,
-        "matches_total": 10
-      },
-      "bonus_pending": null
+        "name": "Gameweek 6"
+      }
     }
   },
   "squad": {
     "total_cost": 1000,
-    "projected_points": 58.43,
+    "projected_points": 58.36,
     "formation": "3-5-2",
     "picks": [
       {
@@ -100,7 +97,7 @@
         "team_short": "COV",
         "position": "DEF",
         "now_cost": 40,
-        "projected_points": 1.846,
+        "projected_points": 1.807,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -112,7 +109,7 @@
         "team_short": "COV",
         "position": "FWD",
         "now_cost": 50,
-        "projected_points": 2.565,
+        "projected_points": 2.387,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -196,7 +193,7 @@
         "team_short": "NEW",
         "position": "DEF",
         "now_cost": 53,
-        "projected_points": 3.306,
+        "projected_points": 3.238,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false

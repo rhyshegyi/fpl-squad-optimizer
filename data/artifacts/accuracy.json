@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-12T15:49:49.034877+00:00",
+  "generated_at": "2026-10-12T22:35:36.264884+00:00",
   "season": "2026-27",
   "totals": {
-    "gameweeks_scored": 2,
-    "total_points": 114,
-    "mean_points": 57.0,
+    "gameweeks_scored": 3,
+    "total_points": 161,
+    "mean_points": 53.7,
     "mean_fpl_average": 58.5,
     "weeks_beating_average": 1,
     "weeks_rated": 2,
-    "mean_mae": 2.082,
+    "mean_mae": 2.006,
     "mean_spearman": 0.3798
   },
   "gameweeks": [
@@ -309,14 +309,158 @@
           "minutes": 90
         }
       ]
+    },
+    {
+      "season": "2026-27",
+      "gw": 6,
+      "name": "Gameweek 6",
+      "deadline": "2026-10-10T10:00:00Z",
+      "frozen_at": "2026-10-09T20:13:28.103389+00:00",
+      "points": 47,
+      "fpl_average": 55,
+      "beat_average": -8,
+      "captain_points": 1,
+      "captain_blanked": false,
+      "points_left_on_bench": 8,
+      "scores_final": false,
+      "mae": 1.855,
+      "spearman": 0.3798,
+      "players_appeared": 315,
+      "hits": [
+        {
+          "web_name": "Henderson",
+          "team_short": "CHE",
+          "position": "MID",
+          "projected": 1.255,
+          "actual": 18,
+          "minutes": 90
+        },
+        {
+          "web_name": "De Cuyper",
+          "team_short": "BHA",
+          "position": "DEF",
+          "projected": 2.899,
+          "actual": 15,
+          "minutes": 67
+        },
+        {
+          "web_name": "Cherif",
+          "team_short": "COV",
+          "position": "FWD",
+          "projected": 0.789,
+          "actual": 12,
+          "minutes": 77
+        },
+        {
+          "web_name": "Doku",
+          "team_short": "MCI",
+          "position": "MID",
+          "projected": 0.941,
+          "actual": 12,
+          "minutes": 34
+        },
+        {
+          "web_name": "O'Shea",
+          "team_short": "IPS",
+          "position": "DEF",
+          "projected": 1.919,
+          "actual": 11,
+          "minutes": 90
+        },
+        {
+          "web_name": "Dewsbury-Hall",
+          "team_short": "EVE",
+          "position": "MID",
+          "projected": 4.258,
+          "actual": 13,
+          "minutes": 90
+        },
+        {
+          "web_name": "Ouattara",
+          "team_short": "IPS",
+          "position": "DEF",
+          "projected": 1.277,
+          "actual": 10,
+          "minutes": 90
+        },
+        {
+          "web_name": "Gelhardt",
+          "team_short": "HUL",
+          "position": "MID",
+          "projected": 0.525,
+          "actual": 8,
+          "minutes": 64
+        }
+      ],
+      "misses": [
+        {
+          "web_name": "B.Fernandes",
+          "team_short": "MUN",
+          "position": "MID",
+          "projected": 7.438,
+          "actual": 1,
+          "minutes": 90
+        },
+        {
+          "web_name": "Saka",
+          "team_short": "ARS",
+          "position": "MID",
+          "projected": 6.349,
+          "actual": 2,
+          "minutes": 90
+        },
+        {
+          "web_name": "Bentancur",
+          "team_short": "TOT",
+          "position": "MID",
+          "projected": 1.883,
+          "actual": -2,
+          "minutes": 11
+        },
+        {
+          "web_name": "Hall",
+          "team_short": "NEW",
+          "position": "DEF",
+          "projected": 3.427,
+          "actual": 0,
+          "minutes": 90
+        },
+        {
+          "web_name": "Truffert",
+          "team_short": "BOU",
+          "position": "DEF",
+          "projected": 2.297,
+          "actual": -1,
+          "minutes": 83
+        },
+        {
+          "web_name": "Struijk",
+          "team_short": "BHA",
+          "position": "DEF",
+          "projected": 1.267,
+          "actual": -2,
+          "minutes": 56
+        },
+        {
+          "web_name": "Horn\u00ed\u010dek",
+          "team_short": "NEW",
+          "position": "GK",
+          "projected": 3.079,
+          "actual": 0,
+          "minutes": 90
+        },
+        {
+          "web_name": "\u00d8degaard",
+          "team_short": "ARS",
+          "position": "MID",
+          "projected": 3.994,
+          "actual": 1,
+          "minutes": 89
+        }
+      ]
     }
   ],
   "pending": [
-    {
-      "gw": 6,
-      "name": "Gameweek 6",
-      "deadline": "2026-10-10T10:00:00Z"
-    },
     {
       "gw": 7,
       "name": "Gameweek 7",
@@ -327,13 +471,13 @@
     {
       "season": "2026-27",
       "current": true,
-      "gameweeks_scored": 2,
-      "total_points": 114,
-      "mean_points": 57.0,
+      "gameweeks_scored": 3,
+      "total_points": 161,
+      "mean_points": 53.7,
       "mean_fpl_average": 58.5,
       "weeks_beating_average": 1,
       "weeks_rated": 2,
-      "mean_mae": 2.082,
+      "mean_mae": 2.006,
       "mean_spearman": 0.3798
     }
   ],
@@ -353,7 +497,7 @@
       "bonus": 8,
       "ppg": 8.83,
       "value": 10.39,
-      "selected_by": 34.1,
+      "selected_by": 34.4,
       "in_target_squad": true
     },
     {
@@ -371,7 +515,7 @@
       "bonus": 9,
       "ppg": 8.83,
       "value": 8.83,
-      "selected_by": 38.3,
+      "selected_by": 38.6,
       "in_target_squad": true
     },
     {
@@ -407,7 +551,7 @@
       "bonus": 9,
       "ppg": 7.5,
       "value": 5.77,
-      "selected_by": 68.7,
+      "selected_by": 69.0,
       "in_target_squad": true
     },
     {
@@ -425,7 +569,7 @@
       "bonus": 9,
       "ppg": 7.5,
       "value": 2.88,
-      "selected_by": 74.9,
+      "selected_by": 75.0,
       "in_target_squad": true
     },
     {
@@ -443,7 +587,7 @@
       "bonus": 7,
       "ppg": 7.33,
       "value": 5.64,
-      "selected_by": 30.3,
+      "selected_by": 30.7,
       "in_target_squad": true
     },
     {
@@ -461,7 +605,7 @@
       "bonus": 6,
       "ppg": 7.17,
       "value": 9.15,
-      "selected_by": 8.7,
+      "selected_by": 8.8,
       "in_target_squad": true
     },
     {
@@ -479,7 +623,7 @@
       "bonus": 6,
       "ppg": 6.83,
       "value": 7.07,
-      "selected_by": 27.8,
+      "selected_by": 27.9,
       "in_target_squad": false
     },
     {
@@ -497,7 +641,7 @@
       "bonus": 6,
       "ppg": 6.67,
       "value": 6.45,
-      "selected_by": 15.5,
+      "selected_by": 15.4,
       "in_target_squad": false
     },
     {
@@ -515,7 +659,7 @@
       "bonus": 2,
       "ppg": 6.67,
       "value": 8.0,
-      "selected_by": 4.4,
+      "selected_by": 4.5,
       "in_target_squad": false
     },
     {
@@ -551,7 +695,7 @@
       "bonus": 2,
       "ppg": 6.33,
       "value": 4.81,
-      "selected_by": 44.4,
+      "selected_by": 44.5,
       "in_target_squad": true
     },
     {
@@ -569,7 +713,7 @@
       "bonus": 2,
       "ppg": 6.17,
       "value": 7.12,
-      "selected_by": 6.8,
+      "selected_by": 6.9,
       "in_target_squad": false
     },
     {
@@ -605,7 +749,7 @@
       "bonus": 3,
       "ppg": 6.0,
       "value": 3.71,
-      "selected_by": 25.0,
+      "selected_by": 25.1,
       "in_target_squad": true
     },
     {
@@ -659,7 +803,7 @@
       "bonus": 6,
       "ppg": 6.0,
       "value": 7.66,
-      "selected_by": 13.4,
+      "selected_by": 13.5,
       "in_target_squad": false
     },
     {
@@ -677,7 +821,7 @@
       "bonus": 4,
       "ppg": 5.67,
       "value": 3.54,
-      "selected_by": 16.9,
+      "selected_by": 16.8,
       "in_target_squad": false
     },
     {
@@ -695,7 +839,7 @@
       "bonus": 8,
       "ppg": 5.5,
       "value": 3.67,
-      "selected_by": 15.1,
+      "selected_by": 14.9,
       "in_target_squad": false
     },
     {
@@ -731,7 +875,7 @@
       "bonus": 6,
       "ppg": 5.5,
       "value": 5.0,
-      "selected_by": 5.6,
+      "selected_by": 5.7,
       "in_target_squad": false
     },
     {
@@ -767,7 +911,7 @@
       "bonus": 5,
       "ppg": 5.33,
       "value": 4.51,
-      "selected_by": 8.2,
+      "selected_by": 8.1,
       "in_target_squad": false
     },
     {
@@ -803,7 +947,7 @@
       "bonus": 4,
       "ppg": 5.33,
       "value": 7.11,
-      "selected_by": 1.5,
+      "selected_by": 1.6,
       "in_target_squad": false
     },
     {
@@ -821,7 +965,7 @@
       "bonus": 2,
       "ppg": 5.33,
       "value": 7.11,
-      "selected_by": 21.6,
+      "selected_by": 21.7,
       "in_target_squad": true
     },
     {
@@ -839,7 +983,7 @@
       "bonus": 3,
       "ppg": 5.33,
       "value": 2.69,
-      "selected_by": 35.5,
+      "selected_by": 35.3,
       "in_target_squad": false
     },
     {
@@ -850,14 +994,14 @@
       "position": "DEF",
       "now_cost": 53,
       "points": 31,
-      "games": 5,
-      "minutes": 449,
+      "games": 6,
+      "minutes": 539,
       "goals": 1,
       "assists": 1,
       "bonus": 6,
-      "ppg": 6.2,
+      "ppg": 5.17,
       "value": 5.85,
-      "selected_by": 21.0,
+      "selected_by": 20.9,
       "in_target_squad": false
     },
     {
