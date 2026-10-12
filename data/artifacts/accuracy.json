@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T23:00:45.656404+00:00",
+  "generated_at": "2026-10-12T15:49:49.034877+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 2,
@@ -344,7 +344,7 @@
       "web_name": "De Cuyper",
       "team_short": "BHA",
       "position": "DEF",
-      "now_cost": 50,
+      "now_cost": 51,
       "points": 53,
       "games": 6,
       "minutes": 490,
@@ -352,8 +352,8 @@
       "assists": 3,
       "bonus": 8,
       "ppg": 8.83,
-      "value": 10.6,
-      "selected_by": 33.6,
+      "value": 10.39,
+      "selected_by": 34.1,
       "in_target_squad": true
     },
     {
@@ -371,7 +371,7 @@
       "bonus": 9,
       "ppg": 8.83,
       "value": 8.83,
-      "selected_by": 37.8,
+      "selected_by": 38.3,
       "in_target_squad": true
     },
     {
@@ -398,7 +398,7 @@
       "web_name": "Jo\u00e3o Pedro",
       "team_short": "CHE",
       "position": "FWD",
-      "now_cost": 77,
+      "now_cost": 78,
       "points": 45,
       "games": 6,
       "minutes": 431,
@@ -406,8 +406,8 @@
       "assists": 3,
       "bonus": 9,
       "ppg": 7.5,
-      "value": 5.84,
-      "selected_by": 68.3,
+      "value": 5.77,
+      "selected_by": 68.7,
       "in_target_squad": true
     },
     {
@@ -425,7 +425,7 @@
       "bonus": 9,
       "ppg": 7.5,
       "value": 2.88,
-      "selected_by": 74.8,
+      "selected_by": 74.9,
       "in_target_squad": true
     },
     {
@@ -443,7 +443,7 @@
       "bonus": 7,
       "ppg": 7.33,
       "value": 5.64,
-      "selected_by": 29.8,
+      "selected_by": 30.3,
       "in_target_squad": true
     },
     {
@@ -452,7 +452,7 @@
       "web_name": "Bogle",
       "team_short": "LEE",
       "position": "DEF",
-      "now_cost": 46,
+      "now_cost": 47,
       "points": 43,
       "games": 6,
       "minutes": 450,
@@ -460,8 +460,8 @@
       "assists": 0,
       "bonus": 6,
       "ppg": 7.17,
-      "value": 9.35,
-      "selected_by": 8.6,
+      "value": 9.15,
+      "selected_by": 8.7,
       "in_target_squad": true
     },
     {
@@ -479,7 +479,7 @@
       "bonus": 6,
       "ppg": 6.83,
       "value": 7.07,
-      "selected_by": 27.7,
+      "selected_by": 27.8,
       "in_target_squad": false
     },
     {
@@ -497,7 +497,7 @@
       "bonus": 6,
       "ppg": 6.67,
       "value": 6.45,
-      "selected_by": 15.6,
+      "selected_by": 15.5,
       "in_target_squad": false
     },
     {
@@ -533,7 +533,7 @@
       "bonus": 3,
       "ppg": 6.33,
       "value": 6.44,
-      "selected_by": 51.9,
+      "selected_by": 52.1,
       "in_target_squad": false
     },
     {
@@ -542,7 +542,7 @@
       "web_name": "Rogers",
       "team_short": "CHE",
       "position": "MID",
-      "now_cost": 78,
+      "now_cost": 79,
       "points": 38,
       "games": 6,
       "minutes": 520,
@@ -550,8 +550,8 @@
       "assists": 1,
       "bonus": 2,
       "ppg": 6.33,
-      "value": 4.87,
-      "selected_by": 44.1,
+      "value": 4.81,
+      "selected_by": 44.4,
       "in_target_squad": true
     },
     {
@@ -560,7 +560,7 @@
       "web_name": "Belloumi",
       "team_short": "HUL",
       "position": "MID",
-      "now_cost": 51,
+      "now_cost": 52,
       "points": 37,
       "games": 6,
       "minutes": 420,
@@ -568,8 +568,8 @@
       "assists": 2,
       "bonus": 2,
       "ppg": 6.17,
-      "value": 7.25,
-      "selected_by": 6.6,
+      "value": 7.12,
+      "selected_by": 6.8,
       "in_target_squad": false
     },
     {
@@ -605,7 +605,7 @@
       "bonus": 3,
       "ppg": 6.0,
       "value": 3.71,
-      "selected_by": 24.9,
+      "selected_by": 25.0,
       "in_target_squad": true
     },
     {
@@ -632,7 +632,7 @@
       "web_name": "Semenyo",
       "team_short": "MCI",
       "position": "MID",
-      "now_cost": 84,
+      "now_cost": 83,
       "points": 36,
       "games": 6,
       "minutes": 540,
@@ -640,8 +640,8 @@
       "assists": 3,
       "bonus": 2,
       "ppg": 6.0,
-      "value": 4.29,
-      "selected_by": 13.5,
+      "value": 4.34,
+      "selected_by": 13.6,
       "in_target_squad": false
     },
     {
@@ -695,7 +695,7 @@
       "bonus": 8,
       "ppg": 5.5,
       "value": 3.67,
-      "selected_by": 15.4,
+      "selected_by": 15.1,
       "in_target_squad": false
     },
     {
@@ -713,7 +713,7 @@
       "bonus": 3,
       "ppg": 5.5,
       "value": 5.41,
-      "selected_by": 43.7,
+      "selected_by": 43.8,
       "in_target_squad": true
     },
     {
@@ -731,7 +731,7 @@
       "bonus": 6,
       "ppg": 5.5,
       "value": 5.0,
-      "selected_by": 5.5,
+      "selected_by": 5.6,
       "in_target_squad": false
     },
     {
@@ -758,7 +758,7 @@
       "web_name": "Gakpo",
       "team_short": "LIV",
       "position": "MID",
-      "now_cost": 72,
+      "now_cost": 71,
       "points": 32,
       "games": 6,
       "minutes": 370,
@@ -766,8 +766,8 @@
       "assists": 3,
       "bonus": 5,
       "ppg": 5.33,
-      "value": 4.44,
-      "selected_by": 8.4,
+      "value": 4.51,
+      "selected_by": 8.2,
       "in_target_squad": false
     },
     {
@@ -839,7 +839,7 @@
       "bonus": 3,
       "ppg": 5.33,
       "value": 2.69,
-      "selected_by": 35.9,
+      "selected_by": 35.5,
       "in_target_squad": false
     },
     {
@@ -857,7 +857,7 @@
       "bonus": 6,
       "ppg": 6.2,
       "value": 5.85,
-      "selected_by": 20.9,
+      "selected_by": 21.0,
       "in_target_squad": false
     },
     {

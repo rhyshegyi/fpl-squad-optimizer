@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-11T23:00:34.482330+00:00",
+  "generated_at": "2026-10-12T15:49:17.692624+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-11T22:58:58.995211+00:00",
-    "average_squad_value": 992,
+    "last_fetch": "2026-10-12T15:45:21.003323+00:00",
+    "average_squad_value": 994,
     "current_gw": {
       "id": 6,
       "name": "Gameweek 6"
@@ -30,7 +30,7 @@
   },
   "squad": {
     "total_cost": 1000,
-    "projected_points": 58.26,
+    "projected_points": 58.43,
     "formation": "3-5-2",
     "picks": [
       {
@@ -75,8 +75,8 @@
         "team_id": 5,
         "team_short": "BHA",
         "position": "DEF",
-        "now_cost": 50,
-        "projected_points": 3.209,
+        "now_cost": 51,
+        "projected_points": 3.206,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -135,8 +135,8 @@
         "team_id": 15,
         "team_short": "MCI",
         "position": "MID",
-        "now_cost": 84,
-        "projected_points": 5.261,
+        "now_cost": 83,
+        "projected_points": 5.593,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -148,7 +148,7 @@
         "team_short": "MCI",
         "position": "MID",
         "now_cost": 78,
-        "projected_points": 5.473,
+        "projected_points": 5.316,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
