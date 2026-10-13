@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-12T22:35:03.807756+00:00",
+  "generated_at": "2026-10-13T14:27:44.168897+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-12T22:31:12.537536+00:00",
+    "last_fetch": "2026-10-13T14:23:59.132116+00:00",
     "average_squad_value": 994,
     "current_gw": {
       "id": 6,
@@ -27,7 +27,7 @@
   },
   "squad": {
     "total_cost": 1000,
-    "projected_points": 58.36,
+    "projected_points": 59.88,
     "formation": "3-5-2",
     "picks": [
       {
@@ -37,7 +37,7 @@
         "team_short": "BOU",
         "position": "GK",
         "now_cost": 45,
-        "projected_points": 3.436,
+        "projected_points": 3.492,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -49,7 +49,7 @@
         "team_short": "BOU",
         "position": "DEF",
         "now_cost": 54,
-        "projected_points": 3.269,
+        "projected_points": 3.443,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -61,7 +61,7 @@
         "team_short": "BHA",
         "position": "GK",
         "now_cost": 45,
-        "projected_points": 3.244,
+        "projected_points": 3.266,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -73,7 +73,7 @@
         "team_short": "BHA",
         "position": "DEF",
         "now_cost": 51,
-        "projected_points": 3.206,
+        "projected_points": 3.488,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -85,20 +85,8 @@
         "team_short": "BHA",
         "position": "MID",
         "now_cost": 60,
-        "projected_points": 4.432,
+        "projected_points": 4.785,
         "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 176,
-        "web_name": "Dasilva",
-        "team_id": 7,
-        "team_short": "COV",
-        "position": "DEF",
-        "now_cost": 40,
-        "projected_points": 1.807,
-        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
@@ -109,7 +97,7 @@
         "team_short": "COV",
         "position": "FWD",
         "now_cost": 50,
-        "projected_points": 2.387,
+        "projected_points": 2.348,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -121,7 +109,7 @@
         "team_short": "EVE",
         "position": "FWD",
         "now_cost": 57,
-        "projected_points": 3.809,
+        "projected_points": 4.227,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -133,7 +121,7 @@
         "team_short": "MCI",
         "position": "MID",
         "now_cost": 83,
-        "projected_points": 5.593,
+        "projected_points": 5.657,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -145,7 +133,7 @@
         "team_short": "MCI",
         "position": "MID",
         "now_cost": 78,
-        "projected_points": 5.316,
+        "projected_points": 5.232,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -157,7 +145,7 @@
         "team_short": "TOT",
         "position": "MID",
         "now_cost": 65,
-        "projected_points": 4.306,
+        "projected_points": 4.55,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -169,7 +157,7 @@
         "team_short": "MCI",
         "position": "FWD",
         "now_cost": 156,
-        "projected_points": 8.053,
+        "projected_points": 7.965,
         "is_starter": true,
         "is_captain": true,
         "is_vice": false
@@ -181,7 +169,7 @@
         "team_short": "MUN",
         "position": "MID",
         "now_cost": 119,
-        "projected_points": 5.649,
+        "projected_points": 5.722,
         "is_starter": true,
         "is_captain": false,
         "is_vice": true
@@ -193,7 +181,7 @@
         "team_short": "NEW",
         "position": "DEF",
         "now_cost": 53,
-        "projected_points": 3.238,
+        "projected_points": 3.357,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -206,6 +194,18 @@
         "position": "DEF",
         "now_cost": 44,
         "projected_points": 2.54,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 656,
+        "web_name": "Mfuni",
+        "team_id": 7,
+        "team_short": "COV",
+        "position": "DEF",
+        "now_cost": 40,
+        "projected_points": 1.975,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
