@@ -13,7 +13,7 @@
   "average_squad_value": 994,
   "name": "Gameweek 7",
   "deadline": "2026-10-17T10:00:00Z",
-  "frozen_at": "2026-10-13T14:28:14.047355+00:00",
+  "frozen_at": "2026-10-13T20:48:28.019982+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -3529,7 +3529,7 @@
       "team_short": "MUN",
       "position": "DEF",
       "now_cost": 49,
-      "projected": 0.079
+      "projected": 0.105
     },
     {
       "player_id": 417,
@@ -4969,7 +4969,7 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 45,
-      "projected": 0.336
+      "projected": 0.0
     },
     {
       "player_id": 597,

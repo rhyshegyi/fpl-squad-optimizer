@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-13T14:27:44.168897+00:00",
+  "generated_at": "2026-10-13T20:47:57.359522+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-13T14:23:59.132116+00:00",
+    "last_fetch": "2026-10-13T20:44:01.364623+00:00",
     "average_squad_value": 994,
     "current_gw": {
       "id": 6,
@@ -19,10 +19,7 @@
       "latest_gw_on_file": 6,
       "latest_result": "2026-10-12T19:00:00+00:00",
       "gameweek_in_progress": null,
-      "bonus_pending": {
-        "id": 6,
-        "name": "Gameweek 6"
-      }
+      "bonus_pending": null
     }
   },
   "squad": {
