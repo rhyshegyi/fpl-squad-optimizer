@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-13T20:47:57.359522+00:00",
+  "generated_at": "2026-10-14T12:10:57.240061+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-13T20:44:01.364623+00:00",
+    "last_fetch": "2026-10-14T12:07:31.106990+00:00",
     "average_squad_value": 994,
     "current_gw": {
       "id": 6,
@@ -23,7 +23,7 @@
     }
   },
   "squad": {
-    "total_cost": 1000,
+    "total_cost": 999,
     "projected_points": 59.88,
     "formation": "3-5-2",
     "picks": [
@@ -57,7 +57,7 @@
         "team_id": 5,
         "team_short": "BHA",
         "position": "GK",
-        "now_cost": 45,
+        "now_cost": 46,
         "projected_points": 3.266,
         "is_starter": false,
         "is_captain": false,
@@ -112,6 +112,18 @@
         "is_vice": false
       },
       {
+        "player_id": 277,
+        "web_name": "Egan",
+        "team_id": 11,
+        "team_short": "HUL",
+        "position": "DEF",
+        "now_cost": 41,
+        "projected_points": 2.071,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
         "player_id": 397,
         "web_name": "Semenyo",
         "team_id": 15,
@@ -129,7 +141,7 @@
         "team_id": 15,
         "team_short": "MCI",
         "position": "MID",
-        "now_cost": 78,
+        "now_cost": 79,
         "projected_points": 5.232,
         "is_starter": true,
         "is_captain": false,
@@ -180,18 +192,6 @@
         "now_cost": 53,
         "projected_points": 3.357,
         "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 502,
-        "web_name": "Robertson",
-        "team_id": 19,
-        "team_short": "TOT",
-        "position": "DEF",
-        "now_cost": 44,
-        "projected_points": 2.54,
-        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
