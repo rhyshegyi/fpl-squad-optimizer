@@ -13,7 +13,7 @@
   "average_squad_value": 994,
   "name": "Gameweek 7",
   "deadline": "2026-10-17T10:00:00Z",
-  "frozen_at": "2026-10-15T11:47:13.492419+00:00",
+  "frozen_at": "2026-10-15T19:24:26.466827+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 999,
@@ -761,7 +761,7 @@
       "team_short": "BOU",
       "position": "MID",
       "now_cost": 59,
-      "projected": 1.06
+      "projected": 1.413
     },
     {
       "player_id": 71,
@@ -817,7 +817,7 @@
       "team_short": "BOU",
       "position": "MID",
       "now_cost": 48,
-      "projected": 0.067
+      "projected": 0.09
     },
     {
       "player_id": 78,
@@ -1185,7 +1185,7 @@
       "team_short": "BHA",
       "position": "MID",
       "now_cost": 59,
-      "projected": 0.254
+      "projected": 0.338
     },
     {
       "player_id": 124,
@@ -4545,7 +4545,7 @@
       "team_short": "SUN",
       "position": "MID",
       "now_cost": 53,
-      "projected": 0.0
+      "projected": 0.441
     },
     {
       "player_id": 544,
@@ -4617,7 +4617,7 @@
       "team_short": "SUN",
       "position": "FWD",
       "now_cost": 57,
-      "projected": 0.0
+      "projected": 2.999
     },
     {
       "player_id": 553,
@@ -4625,7 +4625,7 @@
       "team_short": "SUN",
       "position": "FWD",
       "now_cost": 55,
-      "projected": 1.862
+      "projected": 0.931
     },
     {
       "player_id": 554,
