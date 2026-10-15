@@ -13,7 +13,7 @@
   "average_squad_value": 994,
   "name": "Gameweek 7",
   "deadline": "2026-10-17T10:00:00Z",
-  "frozen_at": "2026-10-14T19:32:00.407382+00:00",
+  "frozen_at": "2026-10-15T11:47:13.492419+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 999,
@@ -1024,7 +1024,7 @@
       "web_name": "Dasilva",
       "team_short": "BRE",
       "position": "MID",
-      "now_cost": 49,
+      "now_cost": 48,
       "projected": 0.0
     },
     {
@@ -1185,7 +1185,7 @@
       "team_short": "BHA",
       "position": "MID",
       "now_cost": 59,
-      "projected": 0.169
+      "projected": 0.254
     },
     {
       "player_id": 124,
@@ -1808,8 +1808,8 @@
       "web_name": "Mu\u00f1oz",
       "team_short": "NFO",
       "position": "DEF",
-      "now_cost": 54,
-      "projected": 2.11
+      "now_cost": 53,
+      "projected": 1.777
     },
     {
       "player_id": 202,
@@ -3576,7 +3576,7 @@
       "web_name": "Mazraoui",
       "team_short": "MUN",
       "position": "DEF",
-      "now_cost": 44,
+      "now_cost": 43,
       "projected": 0.216
     },
     {
@@ -4184,15 +4184,15 @@
       "web_name": "Senesi",
       "team_short": "TOT",
       "position": "DEF",
-      "now_cost": 58,
-      "projected": 1.523
+      "now_cost": 57,
+      "projected": 1.549
     },
     {
       "player_id": 499,
       "web_name": "Pedro Porro",
       "team_short": "TOT",
       "position": "DEF",
-      "now_cost": 54,
+      "now_cost": 53,
       "projected": 0.0
     },
     {
