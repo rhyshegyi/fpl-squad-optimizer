@@ -13,7 +13,7 @@
   "average_squad_value": 994,
   "name": "Gameweek 7",
   "deadline": "2026-10-17T10:00:00Z",
-  "frozen_at": "2026-10-15T19:24:26.466827+00:00",
+  "frozen_at": "2026-10-16T11:39:35.556478+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 999,
@@ -1337,7 +1337,7 @@
       "team_short": "CHE",
       "position": "DEF",
       "now_cost": 53,
-      "projected": 0.906
+      "projected": 0.0
     },
     {
       "player_id": 143,
@@ -1617,7 +1617,7 @@
       "team_short": "COV",
       "position": "DEF",
       "now_cost": 39,
-      "projected": 0.031
+      "projected": 0.046
     },
     {
       "player_id": 178,
@@ -3137,7 +3137,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 71,
-      "projected": 0.0
+      "projected": 0.66
     },
     {
       "player_id": 368,
@@ -3145,7 +3145,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 69,
-      "projected": 1.885
+      "projected": 0.628
     },
     {
       "player_id": 369,
@@ -3233,7 +3233,7 @@
       "team_short": "LIV",
       "position": "FWD",
       "now_cost": 90,
-      "projected": 0.0
+      "projected": 0.843
     },
     {
       "player_id": 380,
@@ -3712,7 +3712,7 @@
       "web_name": "\u0160e\u0161ko",
       "team_short": "MUN",
       "position": "FWD",
-      "now_cost": 70,
+      "now_cost": 69,
       "projected": 0.0
     },
     {
@@ -4128,7 +4128,7 @@
       "web_name": "Igor Jesus",
       "team_short": "NFO",
       "position": "FWD",
-      "now_cost": 58,
+      "now_cost": 57,
       "projected": 0.0
     },
     {
@@ -4656,7 +4656,7 @@
       "web_name": "Tzolis",
       "team_short": "ARS",
       "position": "MID",
-      "now_cost": 63,
+      "now_cost": 62,
       "projected": 0.0
     },
     {
@@ -5345,7 +5345,7 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 44,
-      "projected": 0.678
+      "projected": 0.0
     },
     {
       "player_id": 644,

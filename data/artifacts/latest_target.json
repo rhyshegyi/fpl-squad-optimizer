@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-15T19:24:26.446495+00:00",
+  "generated_at": "2026-10-16T11:39:35.542536+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "budget_tenths": 994,
   "pipeline_state": {
-    "last_fetch": "2026-10-15T19:20:05.056232+00:00",
+    "last_fetch": "2026-10-16T11:37:43.595040+00:00",
     "average_squad_value": 994,
     "current_gw": {
       "id": 6,
@@ -1488,7 +1488,7 @@
       "team_short": "CHE",
       "position": "DEF",
       "now_cost": 53,
-      "projected_points": 1.16
+      "projected_points": 0.0
     },
     {
       "player_id": 143,
@@ -1803,7 +1803,7 @@
       "team_short": "COV",
       "position": "DEF",
       "now_cost": 39,
-      "projected_points": 0.032
+      "projected_points": 0.047
     },
     {
       "player_id": 178,
@@ -3513,7 +3513,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 71,
-      "projected_points": 0.0
+      "projected_points": 0.911
     },
     {
       "player_id": 368,
@@ -3522,7 +3522,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 69,
-      "projected_points": 2.324
+      "projected_points": 0.775
     },
     {
       "player_id": 369,
@@ -3621,7 +3621,7 @@
       "team_short": "LIV",
       "position": "FWD",
       "now_cost": 90,
-      "projected_points": 0.0
+      "projected_points": 1.047
     },
     {
       "player_id": 380,
@@ -4160,7 +4160,7 @@
       "team_id": 16,
       "team_short": "MUN",
       "position": "FWD",
-      "now_cost": 70,
+      "now_cost": 69,
       "projected_points": 0.0
     },
     {
@@ -4628,7 +4628,7 @@
       "team_id": 18,
       "team_short": "NFO",
       "position": "FWD",
-      "now_cost": 58,
+      "now_cost": 57,
       "projected_points": 0.0
     },
     {
@@ -5222,7 +5222,7 @@
       "team_id": 1,
       "team_short": "ARS",
       "position": "MID",
-      "now_cost": 63,
+      "now_cost": 62,
       "projected_points": 0.0
     },
     {
@@ -5997,7 +5997,7 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 44,
-      "projected_points": 0.656
+      "projected_points": 0.0
     },
     {
       "player_id": 644,
