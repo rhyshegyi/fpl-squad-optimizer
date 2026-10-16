@@ -13,7 +13,7 @@
   "average_squad_value": 994,
   "name": "Gameweek 7",
   "deadline": "2026-10-17T10:00:00Z",
-  "frozen_at": "2026-10-16T11:39:35.556478+00:00",
+  "frozen_at": "2026-10-16T18:55:43.176768+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 999,
@@ -569,7 +569,7 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 50,
-      "projected": 1.045
+      "projected": 0.783
     },
     {
       "player_id": 47,
@@ -873,7 +873,7 @@
       "team_short": "BRE",
       "position": "DEF",
       "now_cost": 54,
-      "projected": 0.0
+      "projected": 0.24
     },
     {
       "player_id": 85,
@@ -2041,7 +2041,7 @@
       "team_short": "EVE",
       "position": "DEF",
       "now_cost": 55,
-      "projected": 3.163
+      "projected": 2.373
     },
     {
       "player_id": 231,
@@ -2065,7 +2065,7 @@
       "team_short": "EVE",
       "position": "DEF",
       "now_cost": 46,
-      "projected": 1.601
+      "projected": 1.067
     },
     {
       "player_id": 234,
@@ -2329,7 +2329,7 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 49,
-      "projected": 0.0
+      "projected": 0.077
     },
     {
       "player_id": 267,
@@ -2825,7 +2825,7 @@
       "team_short": "BHA",
       "position": "DEF",
       "now_cost": 49,
-      "projected": 1.742
+      "projected": 1.307
     },
     {
       "player_id": 329,
@@ -2945,7 +2945,7 @@
       "team_short": "LEE",
       "position": "MID",
       "now_cost": 49,
-      "projected": 0.0
+      "projected": 0.495
     },
     {
       "player_id": 344,
@@ -3577,7 +3577,7 @@
       "team_short": "MUN",
       "position": "DEF",
       "now_cost": 43,
-      "projected": 0.216
+      "projected": 0.072
     },
     {
       "player_id": 423,
@@ -3801,7 +3801,7 @@
       "team_short": "NEW",
       "position": "DEF",
       "now_cost": 49,
-      "projected": 0.686
+      "projected": 0.0
     },
     {
       "player_id": 451,
@@ -3969,7 +3969,7 @@
       "team_short": "NFO",
       "position": "DEF",
       "now_cost": 54,
-      "projected": 0.0
+      "projected": 0.341
     },
     {
       "player_id": 472,
@@ -4041,7 +4041,7 @@
       "team_short": "NFO",
       "position": "MID",
       "now_cost": 80,
-      "projected": 4.183
+      "projected": 3.137
     },
     {
       "player_id": 481,
@@ -4889,7 +4889,7 @@
       "team_short": "HUL",
       "position": "DEF",
       "now_cost": 41,
-      "projected": 1.505
+      "projected": 0.0
     },
     {
       "player_id": 587,
@@ -4913,7 +4913,7 @@
       "team_short": "HUL",
       "position": "MID",
       "now_cost": 49,
-      "projected": 0.68
+      "projected": 0.0
     },
     {
       "player_id": 590,
@@ -5137,7 +5137,7 @@
       "team_short": "HUL",
       "position": "MID",
       "now_cost": 50,
-      "projected": 1.924
+      "projected": 0.0
     },
     {
       "player_id": 618,
@@ -5281,7 +5281,7 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 50,
-      "projected": 1.333
+      "projected": 0.333
     },
     {
       "player_id": 636,
