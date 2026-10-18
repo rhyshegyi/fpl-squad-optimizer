@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T17:56:51.856972+00:00",
+  "generated_at": "2026-10-18T11:27:45.323054+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 3,
@@ -502,7 +502,7 @@
       "bonus": 12,
       "ppg": 8.29,
       "value": 3.69,
-      "selected_by": 76.4,
+      "selected_by": 76.5,
       "in_target_squad": true
     },
     {
@@ -520,7 +520,7 @@
       "bonus": 8,
       "ppg": 8.83,
       "value": 10.19,
-      "selected_by": 39.9,
+      "selected_by": 40.0,
       "in_target_squad": true
     },
     {
@@ -538,7 +538,7 @@
       "bonus": 9,
       "ppg": 8.83,
       "value": 8.69,
-      "selected_by": 44.1,
+      "selected_by": 44.3,
       "in_target_squad": true
     },
     {
@@ -556,7 +556,7 @@
       "bonus": 9,
       "ppg": 6.71,
       "value": 6.03,
-      "selected_by": 72.3,
+      "selected_by": 72.4,
       "in_target_squad": true
     },
     {
@@ -583,7 +583,7 @@
       "web_name": "Cherki",
       "team_short": "MCI",
       "position": "MID",
-      "now_cost": 79,
+      "now_cost": 80,
       "points": 44,
       "games": 7,
       "minutes": 392,
@@ -591,8 +591,8 @@
       "assists": 2,
       "bonus": 7,
       "ppg": 6.29,
-      "value": 5.57,
-      "selected_by": 36.9,
+      "value": 5.5,
+      "selected_by": 37.0,
       "in_target_squad": false
     },
     {
@@ -610,7 +610,7 @@
       "bonus": 6,
       "ppg": 7.17,
       "value": 9.15,
-      "selected_by": 9.6,
+      "selected_by": 9.7,
       "in_target_squad": true
     },
     {
@@ -628,7 +628,7 @@
       "bonus": 11,
       "ppg": 6.0,
       "value": 4.67,
-      "selected_by": 12.1,
+      "selected_by": 12.3,
       "in_target_squad": false
     },
     {
@@ -646,7 +646,7 @@
       "bonus": 6,
       "ppg": 5.86,
       "value": 7.07,
-      "selected_by": 28.9,
+      "selected_by": 28.8,
       "in_target_squad": false
     },
     {
@@ -682,7 +682,7 @@
       "bonus": 6,
       "ppg": 5.71,
       "value": 6.45,
-      "selected_by": 13.6,
+      "selected_by": 13.7,
       "in_target_squad": false
     },
     {
@@ -700,7 +700,7 @@
       "bonus": 2,
       "ppg": 5.71,
       "value": 5.06,
-      "selected_by": 47.2,
+      "selected_by": 47.3,
       "in_target_squad": true
     },
     {
@@ -745,7 +745,7 @@
       "web_name": "Calafiori",
       "team_short": "ARS",
       "position": "DEF",
-      "now_cost": 59,
+      "now_cost": 60,
       "points": 38,
       "games": 6,
       "minutes": 497,
@@ -753,7 +753,7 @@
       "assists": 2,
       "bonus": 3,
       "ppg": 6.33,
-      "value": 6.44,
+      "value": 6.33,
       "selected_by": 53.3,
       "in_target_squad": true
     },
@@ -790,7 +790,7 @@
       "bonus": 2,
       "ppg": 5.29,
       "value": 4.46,
-      "selected_by": 14.6,
+      "selected_by": 14.4,
       "in_target_squad": false
     },
     {
@@ -808,7 +808,7 @@
       "bonus": 4,
       "ppg": 5.29,
       "value": 6.17,
-      "selected_by": 18.0,
+      "selected_by": 17.9,
       "in_target_squad": false
     },
     {
@@ -831,6 +831,24 @@
     },
     {
       "rank": 20,
+      "player_id": 449,
+      "web_name": "Hall",
+      "team_short": "NEW",
+      "position": "DEF",
+      "now_cost": 53,
+      "points": 35,
+      "games": 7,
+      "minutes": 629,
+      "goals": 1,
+      "assists": 1,
+      "bonus": 6,
+      "ppg": 5.0,
+      "value": 6.6,
+      "selected_by": 20.4,
+      "in_target_squad": false
+    },
+    {
+      "rank": 21,
       "player_id": 236,
       "web_name": "Dewsbury-Hall",
       "team_short": "EVE",
@@ -848,7 +866,7 @@
       "in_target_squad": false
     },
     {
-      "rank": 21,
+      "rank": 22,
       "player_id": 156,
       "web_name": "Neto",
       "team_short": "CHE",
@@ -862,11 +880,11 @@
       "bonus": 3,
       "ppg": 4.86,
       "value": 5.23,
-      "selected_by": 1.5,
+      "selected_by": 1.7,
       "in_target_squad": false
     },
     {
-      "rank": 22,
+      "rank": 23,
       "player_id": 12,
       "web_name": "Saka",
       "team_short": "ARS",
@@ -884,7 +902,7 @@
       "in_target_squad": false
     },
     {
-      "rank": 23,
+      "rank": 24,
       "player_id": 1,
       "web_name": "Raya",
       "team_short": "ARS",
@@ -902,7 +920,7 @@
       "in_target_squad": true
     },
     {
-      "rank": 24,
+      "rank": 25,
       "player_id": 427,
       "web_name": "Mbeumo",
       "team_short": "MUN",
@@ -920,7 +938,7 @@
       "in_target_squad": true
     },
     {
-      "rank": 25,
+      "rank": 26,
       "player_id": 86,
       "web_name": "Lewis-Potter",
       "team_short": "BRE",
@@ -934,11 +952,11 @@
       "bonus": 5,
       "ppg": 4.71,
       "value": 6.0,
-      "selected_by": 1.5,
+      "selected_by": 1.6,
       "in_target_squad": false
     },
     {
-      "rank": 26,
+      "rank": 27,
       "player_id": 367,
       "web_name": "Gakpo",
       "team_short": "LIV",
@@ -956,7 +974,7 @@
       "in_target_squad": false
     },
     {
-      "rank": 27,
+      "rank": 28,
       "player_id": 68,
       "web_name": "Tavernier",
       "team_short": "BOU",
@@ -974,7 +992,7 @@
       "in_target_squad": false
     },
     {
-      "rank": 28,
+      "rank": 29,
       "player_id": 332,
       "web_name": "Justin",
       "team_short": "LEE",
@@ -992,7 +1010,7 @@
       "in_target_squad": false
     },
     {
-      "rank": 29,
+      "rank": 30,
       "player_id": 109,
       "web_name": "Verbruggen",
       "team_short": "BHA",
@@ -1007,24 +1025,6 @@
       "ppg": 5.33,
       "value": 6.96,
       "selected_by": 22.4,
-      "in_target_squad": false
-    },
-    {
-      "rank": 30,
-      "player_id": 426,
-      "web_name": "B.Fernandes",
-      "team_short": "MUN",
-      "position": "MID",
-      "now_cost": 118,
-      "points": 32,
-      "games": 6,
-      "minutes": 540,
-      "goals": 3,
-      "assists": 1,
-      "bonus": 3,
-      "ppg": 5.33,
-      "value": 2.71,
-      "selected_by": 30.8,
       "in_target_squad": false
     }
   ],

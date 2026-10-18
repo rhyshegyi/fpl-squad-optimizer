@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-17T17:56:21.579426+00:00",
+  "generated_at": "2026-10-18T11:27:19.130616+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-17T17:52:32.709358+00:00",
-    "average_squad_value": 994,
+    "last_fetch": "2026-10-18T11:23:42.431323+00:00",
+    "average_squad_value": 995,
     "current_gw": {
       "id": 7,
       "name": "Gameweek 7"
@@ -15,13 +15,13 @@
     },
     "data_health": {
       "players_tracked": 667,
-      "players_disagreeing": 24,
+      "players_disagreeing": 0,
       "latest_gw_on_file": 7,
-      "latest_result": "2026-10-17T14:00:00+00:00",
+      "latest_result": "2026-10-17T16:30:00+00:00",
       "gameweek_in_progress": {
         "id": 7,
         "name": "Gameweek 7",
-        "matches_played": 4,
+        "matches_played": 5,
         "matches_started": 5,
         "matches_total": 10
       },
@@ -30,7 +30,7 @@
   },
   "squad": {
     "total_cost": 1000,
-    "projected_points": 61.91,
+    "projected_points": 61.71,
     "formation": "3-5-2",
     "picks": [
       {
@@ -88,7 +88,7 @@
         "team_short": "BRE",
         "position": "FWD",
         "now_cost": 78,
-        "projected_points": 4.641,
+        "projected_points": 4.594,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -118,6 +118,18 @@
         "is_vice": false
       },
       {
+        "player_id": 194,
+        "web_name": "Thomas-Asante",
+        "team_id": 7,
+        "team_short": "COV",
+        "position": "FWD",
+        "now_cost": 50,
+        "projected_points": 2.297,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
         "player_id": 250,
         "web_name": "Leno",
         "team_id": 10,
@@ -130,37 +142,25 @@
         "is_vice": false
       },
       {
-        "player_id": 272,
-        "web_name": "Kusi-Asare",
-        "team_id": 10,
-        "team_short": "FUL",
-        "position": "FWD",
-        "now_cost": 44,
-        "projected_points": 0.045,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 305,
-        "web_name": "Davis",
+        "player_id": 259,
+        "web_name": "Diop",
         "team_id": 12,
         "team_short": "IPS",
         "position": "DEF",
-        "now_cost": 40,
-        "projected_points": 2.386,
+        "now_cost": 39,
+        "projected_points": 2.112,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
       {
-        "player_id": 388,
-        "web_name": "Gu\u00e9hi",
+        "player_id": 390,
+        "web_name": "R\u00faben",
         "team_id": 15,
         "team_short": "MCI",
         "position": "DEF",
-        "now_cost": 60,
-        "projected_points": 3.654,
+        "now_cost": 55,
+        "projected_points": 3.501,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
