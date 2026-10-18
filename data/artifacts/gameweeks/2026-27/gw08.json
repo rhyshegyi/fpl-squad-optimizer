@@ -13,7 +13,7 @@
   "average_squad_value": 995,
   "name": "Gameweek 8",
   "deadline": "2026-10-23T17:30:00Z",
-  "frozen_at": "2026-10-18T18:16:44.841041+00:00",
+  "frozen_at": "2026-10-18T21:40:21.720567+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -761,7 +761,7 @@
       "team_short": "BOU",
       "position": "MID",
       "now_cost": 59,
-      "projected": 1.41
+      "projected": 1.405
     },
     {
       "player_id": 71,
@@ -1113,7 +1113,7 @@
       "team_short": "BHA",
       "position": "DEF",
       "now_cost": 45,
-      "projected": 1.809
+      "projected": 1.81
     },
     {
       "player_id": 115,
@@ -1233,7 +1233,7 @@
       "team_short": "BHA",
       "position": "MID",
       "now_cost": 54,
-      "projected": 2.254
+      "projected": 2.27
     },
     {
       "player_id": 130,
@@ -4233,7 +4233,7 @@
       "team_short": "BHA",
       "position": "DEF",
       "now_cost": 51,
-      "projected": 1.873
+      "projected": 1.851
     },
     {
       "player_id": 505,
@@ -5538,6 +5538,14 @@
       "position": "GK",
       "now_cost": 40,
       "projected": 0.044
+    },
+    {
+      "player_id": 668,
+      "web_name": "Tutierov",
+      "team_short": "SUN",
+      "position": "MID",
+      "now_cost": 50,
+      "projected": 2.337
     }
   ]
 }

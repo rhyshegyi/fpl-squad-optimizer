@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-18T18:16:14.686043+00:00",
+  "generated_at": "2026-10-18T21:39:50.328429+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-18T18:12:32.707850+00:00",
+    "last_fetch": "2026-10-18T21:35:57.706718+00:00",
     "average_squad_value": 995,
     "current_gw": {
       "id": 7,
@@ -14,8 +14,8 @@
       "deadline_time": "2026-10-23T17:30:00Z"
     },
     "data_health": {
-      "players_tracked": 667,
-      "players_disagreeing": 1,
+      "players_tracked": 668,
+      "players_disagreeing": 0,
       "latest_gw_on_file": 7,
       "latest_result": "2026-10-18T15:30:00+00:00",
       "gameweek_in_progress": {

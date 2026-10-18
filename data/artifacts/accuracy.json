@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T18:16:44.855890+00:00",
+  "generated_at": "2026-10-18T21:40:21.736278+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 3,
@@ -502,7 +502,7 @@
       "bonus": 8,
       "ppg": 8.43,
       "value": 11.35,
-      "selected_by": 40.3,
+      "selected_by": 40.4,
       "in_target_squad": true
     },
     {
@@ -520,7 +520,7 @@
       "bonus": 9,
       "ppg": 8.29,
       "value": 9.51,
-      "selected_by": 44.6,
+      "selected_by": 44.7,
       "in_target_squad": true
     },
     {
@@ -538,7 +538,7 @@
       "bonus": 12,
       "ppg": 8.29,
       "value": 3.69,
-      "selected_by": 76.6,
+      "selected_by": 76.7,
       "in_target_squad": true
     },
     {
@@ -556,7 +556,7 @@
       "bonus": 2,
       "ppg": 7.29,
       "value": 10.0,
-      "selected_by": 5.2,
+      "selected_by": 5.3,
       "in_target_squad": false
     },
     {
@@ -628,7 +628,7 @@
       "bonus": 7,
       "ppg": 6.29,
       "value": 5.5,
-      "selected_by": 37.1,
+      "selected_by": 37.2,
       "in_target_squad": false
     },
     {
@@ -646,7 +646,7 @@
       "bonus": 3,
       "ppg": 6.29,
       "value": 7.33,
-      "selected_by": 53.4,
+      "selected_by": 53.5,
       "in_target_squad": true
     },
     {
@@ -664,7 +664,7 @@
       "bonus": 11,
       "ppg": 6.0,
       "value": 4.67,
-      "selected_by": 12.5,
+      "selected_by": 12.6,
       "in_target_squad": false
     },
     {
@@ -682,7 +682,7 @@
       "bonus": 10,
       "ppg": 6.0,
       "value": 6.89,
-      "selected_by": 8.2,
+      "selected_by": 8.4,
       "in_target_squad": false
     },
     {
@@ -718,7 +718,7 @@
       "bonus": 6,
       "ppg": 5.86,
       "value": 7.19,
-      "selected_by": 9.3,
+      "selected_by": 9.4,
       "in_target_squad": false
     },
     {
@@ -736,7 +736,7 @@
       "bonus": 6,
       "ppg": 5.86,
       "value": 7.07,
-      "selected_by": 28.7,
+      "selected_by": 28.6,
       "in_target_squad": false
     },
     {
@@ -754,7 +754,7 @@
       "bonus": 5,
       "ppg": 5.86,
       "value": 5.26,
-      "selected_by": 19.7,
+      "selected_by": 19.8,
       "in_target_squad": true
     },
     {
@@ -790,7 +790,7 @@
       "bonus": 2,
       "ppg": 5.71,
       "value": 5.06,
-      "selected_by": 47.5,
+      "selected_by": 47.6,
       "in_target_squad": true
     },
     {
@@ -808,7 +808,7 @@
       "bonus": 2,
       "ppg": 5.57,
       "value": 7.5,
-      "selected_by": 9.0,
+      "selected_by": 9.1,
       "in_target_squad": false
     },
     {
@@ -844,7 +844,7 @@
       "bonus": 3,
       "ppg": 5.43,
       "value": 3.92,
-      "selected_by": 26.1,
+      "selected_by": 26.2,
       "in_target_squad": true
     },
     {
@@ -898,7 +898,7 @@
       "bonus": 2,
       "ppg": 5.29,
       "value": 4.46,
-      "selected_by": 14.2,
+      "selected_by": 14.1,
       "in_target_squad": false
     },
     {
@@ -916,7 +916,7 @@
       "bonus": 4,
       "ppg": 5.29,
       "value": 6.07,
-      "selected_by": 4.0,
+      "selected_by": 4.1,
       "in_target_squad": true
     },
     {
@@ -975,24 +975,6 @@
     },
     {
       "rank": 28,
-      "player_id": 114,
-      "web_name": "Boscagli",
-      "team_short": "BHA",
-      "position": "DEF",
-      "now_cost": 45,
-      "points": 35,
-      "games": 7,
-      "minutes": 584,
-      "goals": 0,
-      "assists": 1,
-      "bonus": 2,
-      "ppg": 5.0,
-      "value": 7.78,
-      "selected_by": 0.4,
-      "in_target_squad": false
-    },
-    {
-      "rank": 29,
       "player_id": 449,
       "web_name": "Hall",
       "team_short": "NEW",
@@ -1010,7 +992,7 @@
       "in_target_squad": false
     },
     {
-      "rank": 30,
+      "rank": 29,
       "player_id": 4,
       "web_name": "Gabriel",
       "team_short": "ARS",
@@ -1025,6 +1007,24 @@
       "ppg": 5.0,
       "value": 4.43,
       "selected_by": 21.1,
+      "in_target_squad": false
+    },
+    {
+      "rank": 30,
+      "player_id": 236,
+      "web_name": "Dewsbury-Hall",
+      "team_short": "EVE",
+      "position": "MID",
+      "now_cost": 66,
+      "points": 35,
+      "games": 7,
+      "minutes": 630,
+      "goals": 2,
+      "assists": 1,
+      "bonus": 6,
+      "ppg": 5.0,
+      "value": 5.3,
+      "selected_by": 6.1,
       "in_target_squad": false
     }
   ],
