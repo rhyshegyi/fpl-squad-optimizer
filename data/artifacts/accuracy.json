@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T21:40:21.736278+00:00",
+  "generated_at": "2026-10-19T13:42:35.862211+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 3,
@@ -502,7 +502,7 @@
       "bonus": 8,
       "ppg": 8.43,
       "value": 11.35,
-      "selected_by": 40.4,
+      "selected_by": 40.6,
       "in_target_squad": true
     },
     {
@@ -520,7 +520,7 @@
       "bonus": 9,
       "ppg": 8.29,
       "value": 9.51,
-      "selected_by": 44.7,
+      "selected_by": 45.0,
       "in_target_squad": true
     },
     {
@@ -538,8 +538,8 @@
       "bonus": 12,
       "ppg": 8.29,
       "value": 3.69,
-      "selected_by": 76.7,
-      "in_target_squad": true
+      "selected_by": 76.8,
+      "in_target_squad": false
     },
     {
       "rank": 4,
@@ -556,7 +556,7 @@
       "bonus": 2,
       "ppg": 7.29,
       "value": 10.0,
-      "selected_by": 5.3,
+      "selected_by": 5.4,
       "in_target_squad": false
     },
     {
@@ -565,7 +565,7 @@
       "web_name": "Jo\u00e3o Pedro",
       "team_short": "CHE",
       "position": "FWD",
-      "now_cost": 78,
+      "now_cost": 79,
       "points": 47,
       "games": 7,
       "minutes": 521,
@@ -573,8 +573,8 @@
       "assists": 3,
       "bonus": 9,
       "ppg": 6.71,
-      "value": 6.03,
-      "selected_by": 72.5,
+      "value": 5.95,
+      "selected_by": 72.6,
       "in_target_squad": true
     },
     {
@@ -610,7 +610,7 @@
       "bonus": 6,
       "ppg": 6.43,
       "value": 9.57,
-      "selected_by": 9.8,
+      "selected_by": 9.9,
       "in_target_squad": true
     },
     {
@@ -628,7 +628,7 @@
       "bonus": 7,
       "ppg": 6.29,
       "value": 5.5,
-      "selected_by": 37.2,
+      "selected_by": 37.3,
       "in_target_squad": false
     },
     {
@@ -646,7 +646,7 @@
       "bonus": 3,
       "ppg": 6.29,
       "value": 7.33,
-      "selected_by": 53.5,
+      "selected_by": 53.6,
       "in_target_squad": true
     },
     {
@@ -664,7 +664,7 @@
       "bonus": 11,
       "ppg": 6.0,
       "value": 4.67,
-      "selected_by": 12.6,
+      "selected_by": 12.7,
       "in_target_squad": false
     },
     {
@@ -673,7 +673,7 @@
       "web_name": "Tavernier",
       "team_short": "BOU",
       "position": "MID",
-      "now_cost": 61,
+      "now_cost": 62,
       "points": 42,
       "games": 7,
       "minutes": 574,
@@ -681,8 +681,8 @@
       "assists": 0,
       "bonus": 10,
       "ppg": 6.0,
-      "value": 6.89,
-      "selected_by": 8.4,
+      "value": 6.77,
+      "selected_by": 8.7,
       "in_target_squad": false
     },
     {
@@ -700,8 +700,8 @@
       "bonus": 6,
       "ppg": 6.0,
       "value": 6.89,
-      "selected_by": 43.9,
-      "in_target_squad": false
+      "selected_by": 44.0,
+      "in_target_squad": true
     },
     {
       "rank": 13,
@@ -718,7 +718,7 @@
       "bonus": 6,
       "ppg": 5.86,
       "value": 7.19,
-      "selected_by": 9.4,
+      "selected_by": 9.5,
       "in_target_squad": false
     },
     {
@@ -736,7 +736,7 @@
       "bonus": 6,
       "ppg": 5.86,
       "value": 7.07,
-      "selected_by": 28.6,
+      "selected_by": 28.5,
       "in_target_squad": false
     },
     {
@@ -754,7 +754,7 @@
       "bonus": 5,
       "ppg": 5.86,
       "value": 5.26,
-      "selected_by": 19.8,
+      "selected_by": 20.0,
       "in_target_squad": true
     },
     {
@@ -772,7 +772,7 @@
       "bonus": 6,
       "ppg": 5.71,
       "value": 6.45,
-      "selected_by": 13.8,
+      "selected_by": 13.9,
       "in_target_squad": false
     },
     {
@@ -790,7 +790,7 @@
       "bonus": 2,
       "ppg": 5.71,
       "value": 5.06,
-      "selected_by": 47.6,
+      "selected_by": 47.7,
       "in_target_squad": true
     },
     {
@@ -827,7 +827,7 @@
       "ppg": 5.57,
       "value": 8.3,
       "selected_by": 14.0,
-      "in_target_squad": true
+      "in_target_squad": false
     },
     {
       "rank": 20,
@@ -898,7 +898,7 @@
       "bonus": 2,
       "ppg": 5.29,
       "value": 4.46,
-      "selected_by": 14.1,
+      "selected_by": 13.7,
       "in_target_squad": false
     },
     {
@@ -916,7 +916,7 @@
       "bonus": 4,
       "ppg": 5.29,
       "value": 6.07,
-      "selected_by": 4.1,
+      "selected_by": 4.2,
       "in_target_squad": true
     },
     {
@@ -934,7 +934,7 @@
       "bonus": 4,
       "ppg": 5.29,
       "value": 3.85,
-      "selected_by": 16.9,
+      "selected_by": 16.8,
       "in_target_squad": false
     },
     {
@@ -952,7 +952,7 @@
       "bonus": 0,
       "ppg": 5.29,
       "value": 7.4,
-      "selected_by": 3.7,
+      "selected_by": 3.8,
       "in_target_squad": false
     },
     {
@@ -970,11 +970,29 @@
       "bonus": 4,
       "ppg": 5.29,
       "value": 6.17,
-      "selected_by": 17.9,
+      "selected_by": 17.8,
       "in_target_squad": false
     },
     {
       "rank": 28,
+      "player_id": 13,
+      "web_name": "Rice",
+      "team_short": "ARS",
+      "position": "MID",
+      "now_cost": 73,
+      "points": 36,
+      "games": 7,
+      "minutes": 591,
+      "goals": 0,
+      "assists": 4,
+      "bonus": 5,
+      "ppg": 5.14,
+      "value": 4.93,
+      "selected_by": 11.0,
+      "in_target_squad": false
+    },
+    {
+      "rank": 29,
       "player_id": 449,
       "web_name": "Hall",
       "team_short": "NEW",
@@ -989,10 +1007,10 @@
       "ppg": 5.0,
       "value": 6.6,
       "selected_by": 20.4,
-      "in_target_squad": false
+      "in_target_squad": true
     },
     {
-      "rank": 29,
+      "rank": 30,
       "player_id": 4,
       "web_name": "Gabriel",
       "team_short": "ARS",
@@ -1008,25 +1026,7 @@
       "value": 4.43,
       "selected_by": 21.1,
       "in_target_squad": false
-    },
-    {
-      "rank": 30,
-      "player_id": 236,
-      "web_name": "Dewsbury-Hall",
-      "team_short": "EVE",
-      "position": "MID",
-      "now_cost": 66,
-      "points": 35,
-      "games": 7,
-      "minutes": 630,
-      "goals": 2,
-      "assists": 1,
-      "bonus": 6,
-      "ppg": 5.0,
-      "value": 5.3,
-      "selected_by": 6.1,
-      "in_target_squad": false
     }
   ],
-  "leaders_in_target_top10": 6
+  "leaders_in_target_top10": 5
 }

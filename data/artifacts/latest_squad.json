@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-18T21:39:50.328429+00:00",
+  "generated_at": "2026-10-19T13:42:24.473738+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-18T21:35:57.706718+00:00",
+    "last_fetch": "2026-10-19T13:40:47.746746+00:00",
     "average_squad_value": 995,
     "current_gw": {
       "id": 7,
@@ -30,7 +30,7 @@
   },
   "squad": {
     "total_cost": 1000,
-    "projected_points": 58.02,
+    "projected_points": 57.81,
     "formation": "3-5-2",
     "picks": [
       {
@@ -111,9 +111,21 @@
         "team_id": 6,
         "team_short": "CHE",
         "position": "FWD",
-        "now_cost": 78,
+        "now_cost": 79,
         "projected_points": 4.182,
         "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 167,
+        "web_name": "Delap",
+        "team_id": 18,
+        "team_short": "NFO",
+        "position": "FWD",
+        "now_cost": 55,
+        "projected_points": 3.153,
+        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
@@ -125,18 +137,6 @@
         "position": "DEF",
         "now_cost": 40,
         "projected_points": 2.447,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 195,
-        "web_name": "Simms",
-        "team_id": 7,
-        "team_short": "COV",
-        "position": "FWD",
-        "now_cost": 49,
-        "projected_points": 1.405,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -162,18 +162,6 @@
         "now_cost": 39,
         "projected_points": 2.112,
         "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 388,
-        "web_name": "Gu\u00e9hi",
-        "team_id": 15,
-        "team_short": "MCI",
-        "position": "DEF",
-        "now_cost": 60,
-        "projected_points": 3.654,
-        "is_starter": true,
         "is_captain": false,
         "is_vice": false
       },
@@ -209,6 +197,18 @@
         "position": "MID",
         "now_cost": 78,
         "projected_points": 5.542,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 449,
+        "web_name": "Hall",
+        "team_id": 17,
+        "team_short": "NEW",
+        "position": "DEF",
+        "now_cost": 53,
+        "projected_points": 3.453,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
