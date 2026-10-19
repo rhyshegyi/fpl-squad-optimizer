@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-19T13:42:24.473738+00:00",
+  "generated_at": "2026-10-19T20:39:39.195571+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-19T13:40:47.746746+00:00",
+    "last_fetch": "2026-10-19T20:38:00.461407+00:00",
     "average_squad_value": 995,
     "current_gw": {
       "id": 7,
@@ -15,14 +15,14 @@
     },
     "data_health": {
       "players_tracked": 668,
-      "players_disagreeing": 0,
+      "players_disagreeing": 25,
       "latest_gw_on_file": 7,
       "latest_result": "2026-10-18T15:30:00+00:00",
       "gameweek_in_progress": {
         "id": 7,
         "name": "Gameweek 7",
         "matches_played": 9,
-        "matches_started": 9,
+        "matches_started": 10,
         "matches_total": 10
       },
       "bonus_pending": null

@@ -13,7 +13,7 @@
   "average_squad_value": 995,
   "name": "Gameweek 8",
   "deadline": "2026-10-23T17:30:00Z",
-  "frozen_at": "2026-10-19T13:42:35.852588+00:00",
+  "frozen_at": "2026-10-19T20:39:50.316302+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -1617,7 +1617,7 @@
       "team_short": "COV",
       "position": "DEF",
       "now_cost": 39,
-      "projected": 0.046
+      "projected": 0.062
     },
     {
       "player_id": 178,
@@ -2097,7 +2097,7 @@
       "team_short": "MCI",
       "position": "MID",
       "now_cost": 58,
-      "projected": 2.667
+      "projected": 2.614
     },
     {
       "player_id": 238,
@@ -2337,7 +2337,7 @@
       "team_short": "IPS",
       "position": "MID",
       "now_cost": 49,
-      "projected": 1.831
+      "projected": 1.374
     },
     {
       "player_id": 268,
@@ -2601,7 +2601,7 @@
       "team_short": "IPS",
       "position": "GK",
       "now_cost": 44,
-      "projected": 2.688
+      "projected": 2.647
     },
     {
       "player_id": 301,
@@ -2649,7 +2649,7 @@
       "team_short": "IPS",
       "position": "DEF",
       "now_cost": 39,
-      "projected": 0.57
+      "projected": 0.592
     },
     {
       "player_id": 307,
@@ -2729,7 +2729,7 @@
       "team_short": "IPS",
       "position": "FWD",
       "now_cost": 56,
-      "projected": 2.673
+      "projected": 2.707
     },
     {
       "player_id": 317,
@@ -3297,7 +3297,7 @@
       "team_short": "MCI",
       "position": "DEF",
       "now_cost": 63,
-      "projected": 1.806
+      "projected": 1.354
     },
     {
       "player_id": 388,
@@ -3305,7 +3305,7 @@
       "team_short": "MCI",
       "position": "DEF",
       "now_cost": 60,
-      "projected": 3.654
+      "projected": 3.664
     },
     {
       "player_id": 389,
@@ -3313,7 +3313,7 @@
       "team_short": "MCI",
       "position": "DEF",
       "now_cost": 59,
-      "projected": 3.086
+      "projected": 2.315
     },
     {
       "player_id": 390,
@@ -3449,7 +3449,7 @@
       "team_short": "MCI",
       "position": "MID",
       "now_cost": 53,
-      "projected": 1.328
+      "projected": 0.996
     },
     {
       "player_id": 407,
@@ -3489,7 +3489,7 @@
       "team_short": "MCI",
       "position": "FWD",
       "now_cost": 157,
-      "projected": 4.674
+      "projected": 4.788
     },
     {
       "player_id": 412,
@@ -4369,7 +4369,7 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 65,
-      "projected": 0.064
+      "projected": 0.086
     },
     {
       "player_id": 522,
