@@ -36,6 +36,15 @@ export interface Pick extends Player {
   is_starter: boolean;
   is_captain: boolean;
   is_vice: boolean;
+  // Present once a recorded gameweek has been played.
+  actual_points?: number;
+  minutes?: number;
+  /** A starter who did not play and was replaced from the bench. */
+  subbed_off?: boolean;
+  /** A bench player who came in for one. */
+  subbed_on?: boolean;
+  /** Whose points were doubled — the vice, if the captain did not play. */
+  counted_as_captain?: boolean;
 }
 
 export interface Squad {
@@ -180,6 +189,8 @@ export interface TrackedGameweek {
   players_appeared: number;
   hits: PlayerOutcome[];
   misses: PlayerOutcome[];
+  /** The fifteen recommended before the deadline, with what each scored. */
+  squad?: Pick[];
 }
 
 export interface PlayerOutcome {
@@ -243,7 +254,7 @@ export interface AccuracyResponse {
     mean_spearman?: number | null;
   };
   gameweeks: TrackedGameweek[];
-  pending: { gw: number; name: string | null; deadline: string | null }[];
+  pending: { gw: number; name: string | null; deadline: string | null; squad?: Pick[] }[];
   leaders?: SeasonLeader[];
   leaders_in_target_top10?: number;
 }

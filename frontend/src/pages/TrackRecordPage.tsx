@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { api } from "../api";
+import { Pitch } from "../components/Pitch";
 import { teamColor } from "../teamColors";
 import type {
   AccuracyResponse,
+  Pick,
   PlayerOutcome,
   SeasonLeader,
   TrackedGameweek,
@@ -248,6 +250,100 @@ function SeasonLeaders({
   );
 }
 
+interface WeekOption {
+  gw: number;
+  label: string;
+  squad: Pick[];
+  played: TrackedGameweek | null;
+  frozenAt: string | null;
+}
+
+/** The team the model recommended each week, as it lined up.
+ *
+ *  Played weeks show what each player actually scored, with the projection
+ *  he was picked on beneath it, auto-subs and the armband applied exactly as
+ *  the squad total counts them. Weeks still waiting on results show the
+ *  squad as frozen at the deadline.
+ */
+function WeekSquads({ data }: { data: AccuracyResponse }) {
+  const options: WeekOption[] = [
+    ...data.gameweeks
+      .filter((w) => w.squad?.length)
+      .map((w) => ({ gw: w.gw, label: `GW${w.gw}`, squad: w.squad!,
+                     played: w, frozenAt: w.frozen_at })),
+    ...data.pending
+      .filter((p) => p.squad?.length)
+      .map((p) => ({ gw: p.gw, label: `GW${p.gw}`, squad: p.squad!,
+                     played: null, frozenAt: null })),
+  ].sort((a, b) => a.gw - b.gw);
+
+  // Open on the most recent week that has actually been played.
+  const lastPlayed = [...options].reverse().find((o) => o.played);
+  const [gw, setGw] = useState<number | null>(lastPlayed?.gw ?? options.at(-1)?.gw ?? null);
+  const week = options.find((o) => o.gw === gw);
+  if (!options.length || !week) return null;
+
+  const w = week.played;
+  const captain = week.squad.find((p) => p.counted_as_captain);
+  return (
+    <div className="space-y-3">
+      <div className="flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <h2 className="text-xl font-semibold">Week by week</h2>
+          <p className="text-slate-400 text-sm mt-1">
+            The fifteen the model recommended before each deadline.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-1 rounded-lg bg-slate-900 border border-white/10 p-1"
+             role="tablist" aria-label="Gameweek">
+          {options.map((o) => (
+            <button
+              key={o.gw}
+              role="tab"
+              aria-selected={o.gw === gw}
+              onClick={() => setGw(o.gw)}
+              className={
+                "px-3 py-1 text-sm rounded-md transition " +
+                (o.gw === gw
+                  ? "bg-emerald-500 text-slate-950 font-semibold"
+                  : o.played ? "text-slate-300 hover:text-white"
+                             : "text-slate-500 hover:text-slate-300")
+              }
+              title={o.played ? undefined : "Frozen, waiting on results"}
+            >
+              {o.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="text-sm text-slate-400">
+        {w ? (
+          <>
+            <span className="text-slate-100 font-semibold">{w.points} pts</span>
+            {w.fpl_average != null && (
+              <> · FPL average {w.fpl_average}
+                {w.beat_average != null && (
+                  <span className={w.beat_average > 0 ? "text-emerald-400" : w.beat_average < 0 ? "text-red-400" : ""}>
+                    {" "}({w.beat_average > 0 ? "+" : ""}{w.beat_average}{!w.scores_final && " so far"})
+                  </span>
+                )}
+              </>
+            )}
+            {captain && <> · captain {captain.web_name}</>}
+            {w.points_left_on_bench > 0 && <> · {w.points_left_on_bench} left on the bench</>}
+          </>
+        ) : (
+          <>Frozen at the deadline — waiting on results.</>
+        )}
+      </div>
+
+      <Pitch picks={week.squad} metric="next GW" />
+    </div>
+  );
+}
+
+
 export function TrackRecordPage() {
   const [data, setData] = useState<AccuracyResponse | null>(null);
   const [err, setErr] = useState<string | null>(null);
@@ -340,6 +436,10 @@ export function TrackRecordPage() {
               much. The per-player accuracy numbers settle faster.
             </p>
           )}
+
+          {/* Above the per-week cards, which grow by one every gameweek and
+              would otherwise push this further down the page each week. */}
+          <WeekSquads data={data} />
 
           <div className="space-y-4">
             {[...weeks].reverse().map((w) => (

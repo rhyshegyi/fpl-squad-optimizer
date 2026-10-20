@@ -224,11 +224,19 @@ def _round_is_complete(conn, gw: int) -> bool:
 
 
 def _actuals(conn, season: str, gw: int) -> dict[int, tuple[int, int]]:
+    """{element: (points, minutes)} for one gameweek, summed across fixtures.
+
+    Summed in SQL rather than built with a dict comprehension, which kept only
+    the last row per player — so in a double gameweek the second fixture would
+    have overwritten the first, the same bug fixed in the backtest's
+    `load_actuals`. No double had happened yet when this was caught.
+    """
     return {
-        r["element"]: (int(r["total_points"] or 0), int(r["minutes"] or 0))
+        r["element"]: (int(r["pts"] or 0), int(r["mins"] or 0))
         for r in conn.execute(
-            "SELECT element, total_points, minutes FROM historical_player_gw "
-            "WHERE season = ? AND gw = ?", (season, gw),
+            "SELECT element, SUM(total_points) AS pts, SUM(minutes) AS mins "
+            "FROM historical_player_gw WHERE season = ? AND gw = ? "
+            "GROUP BY element", (season, gw),
         )
     }
 
@@ -427,6 +435,50 @@ def _target_squad_ids() -> set[int]:
     return {p["player_id"] for p in data.get("squad", {}).get("picks", [])}
 
 
+def _squad_view(s: Snapshot, actuals: dict[int, tuple[int, int]] | None) -> list[dict]:
+    """The fifteen recommended for a gameweek, and — once played — what each did.
+
+    Computed when the summary is built rather than stored in the snapshot.
+    Settled snapshots are never rewritten, so storing it would only cover
+    weeks scored from now on; reading results back from the per-gameweek
+    table covers every week on file, and keeps the frozen prediction untouched.
+    """
+    result = s.data.get("result") or {}
+    subs = [tuple(x) for x in result.get("autosubs") or []]
+    off = {o for o, _ in subs}
+    on = {i for _, i in subs}
+    captain = result.get("captain_id")
+    out = []
+    for p in s.data["squad"]["picks"]:
+        pid = p["player_id"]
+        # .get throughout: one oddly-shaped old snapshot must not take the
+        # whole Record page down with it.
+        row = {
+            "player_id": pid,
+            "web_name": p.get("web_name", str(pid)),
+            "team_id": p.get("team_id"),
+            "team_short": p.get("team_short", ""),
+            "position": p.get("position", "MID"),
+            "now_cost": p.get("now_cost", 0),
+            "projected_points": p.get("projected_points", 0.0),
+            "is_starter": p.get("is_starter", False),
+            "is_captain": p.get("is_captain", False),
+            "is_vice": p.get("is_vice", False),
+        }
+        if actuals is not None:
+            pts, mins = actuals.get(pid, (0, 0))
+            row.update({
+                "actual_points": pts,
+                "minutes": mins,
+                "subbed_off": pid in off,
+                "subbed_on": pid in on,
+                # The armband falls to the vice if the captain does not play.
+                "counted_as_captain": pid == captain,
+            })
+        out.append(row)
+    return out
+
+
 def _week_row(s: Snapshot) -> dict:
     r, a = s.data["result"], s.data["accuracy"]
     return {
@@ -492,9 +544,23 @@ def build_summary(season: str | None = None) -> dict:
 
     snaps = load_snapshots()
     this_season = [s for s in snaps if s.season == season]
-    weeks = [_week_row(s) for s in this_season if s.scored]
+
+    try:
+        with connect() as conn:
+            results = {s.gw: _actuals(conn, season, s.gw)
+                       for s in this_season if s.scored}
+    except Exception as e:  # noqa: BLE001 - squads are a view, not the record
+        print(f"  warning: per-player results omitted ({e})")
+        results = {}
+
+    weeks = []
+    for s in this_season:
+        if s.scored:
+            weeks.append({**_week_row(s),
+                          "squad": _squad_view(s, results.get(s.gw))})
     pending = [
-        {"gw": s.gw, "name": s.data.get("name"), "deadline": s.data.get("deadline")}
+        {"gw": s.gw, "name": s.data.get("name"), "deadline": s.data.get("deadline"),
+         "squad": _squad_view(s, None)}
         for s in this_season if not s.scored
     ]
 

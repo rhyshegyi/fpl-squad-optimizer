@@ -27,21 +27,21 @@ def snapdir(tmp_path, monkeypatch):
 SQUAD = {
     "formation": "3-5-2",
     "picks": [
-        {"player_id": 1, "position": "GK", "is_starter": True, "is_captain": False, "is_vice": False},
-        {"player_id": 2, "position": "DEF", "is_starter": True, "is_captain": False, "is_vice": False},
-        {"player_id": 3, "position": "DEF", "is_starter": True, "is_captain": False, "is_vice": False},
-        {"player_id": 4, "position": "DEF", "is_starter": True, "is_captain": False, "is_vice": False},
-        {"player_id": 5, "position": "MID", "is_starter": True, "is_captain": True, "is_vice": False},
-        {"player_id": 6, "position": "MID", "is_starter": True, "is_captain": False, "is_vice": True},
-        {"player_id": 7, "position": "MID", "is_starter": True, "is_captain": False, "is_vice": False},
-        {"player_id": 8, "position": "MID", "is_starter": True, "is_captain": False, "is_vice": False},
-        {"player_id": 9, "position": "MID", "is_starter": True, "is_captain": False, "is_vice": False},
-        {"player_id": 10, "position": "FWD", "is_starter": True, "is_captain": False, "is_vice": False},
-        {"player_id": 11, "position": "FWD", "is_starter": True, "is_captain": False, "is_vice": False},
-        {"player_id": 12, "position": "GK", "is_starter": False, "is_captain": False, "is_vice": False},
-        {"player_id": 13, "position": "DEF", "is_starter": False, "is_captain": False, "is_vice": False},
-        {"player_id": 14, "position": "MID", "is_starter": False, "is_captain": False, "is_vice": False},
-        {"player_id": 15, "position": "FWD", "is_starter": False, "is_captain": False, "is_vice": False},
+        {"player_id": 1, "web_name": "P1", "team_short": "ARS", "now_cost": 50, "projected_points": 4.0, "position": "GK", "is_starter": True, "is_captain": False, "is_vice": False},
+        {"player_id": 2, "web_name": "P2", "team_short": "ARS", "now_cost": 50, "projected_points": 4.0, "position": "DEF", "is_starter": True, "is_captain": False, "is_vice": False},
+        {"player_id": 3, "web_name": "P3", "team_short": "ARS", "now_cost": 50, "projected_points": 4.0, "position": "DEF", "is_starter": True, "is_captain": False, "is_vice": False},
+        {"player_id": 4, "web_name": "P4", "team_short": "ARS", "now_cost": 50, "projected_points": 4.0, "position": "DEF", "is_starter": True, "is_captain": False, "is_vice": False},
+        {"player_id": 5, "web_name": "P5", "team_short": "ARS", "now_cost": 50, "projected_points": 4.0, "position": "MID", "is_starter": True, "is_captain": True, "is_vice": False},
+        {"player_id": 6, "web_name": "P6", "team_short": "ARS", "now_cost": 50, "projected_points": 4.0, "position": "MID", "is_starter": True, "is_captain": False, "is_vice": True},
+        {"player_id": 7, "web_name": "P7", "team_short": "ARS", "now_cost": 50, "projected_points": 4.0, "position": "MID", "is_starter": True, "is_captain": False, "is_vice": False},
+        {"player_id": 8, "web_name": "P8", "team_short": "ARS", "now_cost": 50, "projected_points": 4.0, "position": "MID", "is_starter": True, "is_captain": False, "is_vice": False},
+        {"player_id": 9, "web_name": "P9", "team_short": "ARS", "now_cost": 50, "projected_points": 4.0, "position": "MID", "is_starter": True, "is_captain": False, "is_vice": False},
+        {"player_id": 10, "web_name": "P10", "team_short": "ARS", "now_cost": 50, "projected_points": 4.0, "position": "FWD", "is_starter": True, "is_captain": False, "is_vice": False},
+        {"player_id": 11, "web_name": "P11", "team_short": "ARS", "now_cost": 50, "projected_points": 4.0, "position": "FWD", "is_starter": True, "is_captain": False, "is_vice": False},
+        {"player_id": 12, "web_name": "P12", "team_short": "ARS", "now_cost": 50, "projected_points": 4.0, "position": "GK", "is_starter": False, "is_captain": False, "is_vice": False},
+        {"player_id": 13, "web_name": "P13", "team_short": "ARS", "now_cost": 50, "projected_points": 4.0, "position": "DEF", "is_starter": False, "is_captain": False, "is_vice": False},
+        {"player_id": 14, "web_name": "P14", "team_short": "ARS", "now_cost": 50, "projected_points": 4.0, "position": "MID", "is_starter": False, "is_captain": False, "is_vice": False},
+        {"player_id": 15, "web_name": "P15", "team_short": "ARS", "now_cost": 50, "projected_points": 4.0, "position": "FWD", "is_starter": False, "is_captain": False, "is_vice": False},
     ],
 }
 
@@ -351,7 +351,8 @@ def _fake_connect(next_gw, deadline, played=0, total=10, actuals=None, average=N
             if "FROM fixtures WHERE event" in sql:
                 return Cur([{"total": total, "played": played}])
             if "historical_player_gw" in sql:
-                return Cur([{"element": k, "total_points": v[0], "minutes": v[1]}
+                return Cur([{"element": k, "total_points": v[0], "minutes": v[1],
+                             "pts": v[0], "mins": v[1]}
                             for k, v in (actuals or {}).items()])
             if "average_entry_score" in sql:
                 return Cur([{"average_entry_score": average,
@@ -365,3 +366,44 @@ def _fake_connect(next_gw, deadline, played=0, total=10, actuals=None, average=N
             return False
 
     return lambda: Conn()
+
+
+class TestWeekSquads:
+    """Each week's recommended fifteen, viewable on the Record page."""
+
+    def test_a_scored_week_carries_each_players_result(self, snapdir, monkeypatch):
+        actuals = {i: (2, 90) for i in range(1, 16)}
+        actuals[5] = (12, 90)
+        actuals[3] = (0, 0)
+        monkeypatch.setattr(tracking, "connect", _fake_connect(
+            4, None, played=10, total=10, actuals=actuals, average=50))
+        tracking.score_snapshot(write_snapshot(snapdir, gw=4))
+
+        week = tracking.build_summary("2026-27")["gameweeks"][0]
+        by_id = {p["player_id"]: p for p in week["squad"]}
+        assert len(week["squad"]) == 15
+        assert by_id[5]["actual_points"] == 12
+        assert by_id[5]["counted_as_captain"] is True
+        assert by_id[3]["minutes"] == 0
+        assert by_id[3]["subbed_off"] is True          # a starter who did not play
+
+    def test_a_pending_week_shows_the_squad_without_results(self, snapdir, monkeypatch):
+        monkeypatch.setattr(tracking, "connect", _fake_connect(None, None))
+        write_snapshot(snapdir, gw=8)
+        pending = tracking.build_summary("2026-27")["pending"][0]
+        assert len(pending["squad"]) == 15
+        assert "actual_points" not in pending["squad"][0]
+
+    def test_a_double_gameweek_sums_both_fixtures(self):
+        """The dict comprehension this replaced kept only the last row."""
+        import sqlite3
+        conn = sqlite3.connect(":memory:")
+        conn.row_factory = sqlite3.Row
+        conn.execute("CREATE TABLE historical_player_gw "
+                     "(season TEXT, element INT, gw INT, total_points INT, minutes INT)")
+        conn.executemany("INSERT INTO historical_player_gw VALUES (?,?,?,?,?)", [
+            ("2026-27", 1, 30, 6, 90), ("2026-27", 1, 30, 9, 85),
+            ("2026-27", 2, 30, 2, 90),
+        ])
+        got = tracking._actuals(conn, "2026-27", 30)
+        assert got[1] == (15, 175) and got[2] == (2, 90)
