@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-19T20:39:39.195571+00:00",
+  "generated_at": "2026-10-20T11:55:19.721115+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-19T20:38:00.461407+00:00",
-    "average_squad_value": 995,
+    "last_fetch": "2026-10-20T11:51:30.224087+00:00",
+    "average_squad_value": 996,
     "current_gw": {
       "id": 7,
       "name": "Gameweek 7"
@@ -15,24 +15,33 @@
     },
     "data_health": {
       "players_tracked": 668,
-      "players_disagreeing": 25,
+      "players_disagreeing": 0,
       "latest_gw_on_file": 7,
-      "latest_result": "2026-10-18T15:30:00+00:00",
-      "gameweek_in_progress": {
+      "latest_result": "2026-10-19T19:00:00+00:00",
+      "gameweek_in_progress": null,
+      "bonus_pending": {
         "id": 7,
-        "name": "Gameweek 7",
-        "matches_played": 9,
-        "matches_started": 10,
-        "matches_total": 10
-      },
-      "bonus_pending": null
+        "name": "Gameweek 7"
+      }
     }
   },
   "squad": {
-    "total_cost": 1000,
-    "projected_points": 57.81,
+    "total_cost": 997,
+    "projected_points": 60.47,
     "formation": "3-5-2",
     "picks": [
+      {
+        "player_id": 4,
+        "web_name": "Gabriel",
+        "team_id": 1,
+        "team_short": "ARS",
+        "position": "DEF",
+        "now_cost": 79,
+        "projected_points": 5.216,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
       {
         "player_id": 8,
         "web_name": "Calafiori",
@@ -40,43 +49,31 @@
         "team_short": "ARS",
         "position": "DEF",
         "now_cost": 60,
-        "projected_points": 4.017,
+        "projected_points": 4.068,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
       },
       {
-        "player_id": 12,
-        "web_name": "Saka",
+        "player_id": 13,
+        "web_name": "Rice",
         "team_id": 1,
         "team_short": "ARS",
         "position": "MID",
-        "now_cost": 96,
-        "projected_points": 5.672,
-        "is_starter": true,
-        "is_captain": false,
-        "is_vice": true
-      },
-      {
-        "player_id": 15,
-        "web_name": "\u00d8degaard",
-        "team_id": 1,
-        "team_short": "ARS",
-        "position": "MID",
-        "now_cost": 68,
-        "projected_points": 4.844,
+        "now_cost": 73,
+        "projected_points": 5.62,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
       },
       {
-        "player_id": 87,
-        "web_name": "Ajer",
-        "team_id": 4,
-        "team_short": "BRE",
-        "position": "DEF",
-        "now_cost": 45,
-        "projected_points": 3.337,
+        "player_id": 40,
+        "web_name": "Rogers",
+        "team_id": 6,
+        "team_short": "CHE",
+        "position": "MID",
+        "now_cost": 80,
+        "projected_points": 5.331,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -88,7 +85,7 @@
         "team_short": "BRE",
         "position": "FWD",
         "now_cost": 78,
-        "projected_points": 4.594,
+        "projected_points": 4.803,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -100,22 +97,10 @@
         "team_short": "CHE",
         "position": "MID",
         "now_cost": 97,
-        "projected_points": 5.493,
+        "projected_points": 5.941,
         "is_starter": true,
         "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 165,
-        "web_name": "Jo\u00e3o Pedro",
-        "team_id": 6,
-        "team_short": "CHE",
-        "position": "FWD",
-        "now_cost": 79,
-        "projected_points": 4.182,
-        "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
+        "is_vice": true
       },
       {
         "player_id": 167,
@@ -124,8 +109,8 @@
         "team_short": "NFO",
         "position": "FWD",
         "now_cost": 55,
-        "projected_points": 3.153,
-        "is_starter": false,
+        "projected_points": 3.485,
+        "is_starter": true,
         "is_captain": false,
         "is_vice": false
       },
@@ -136,7 +121,19 @@
         "team_short": "COV",
         "position": "DEF",
         "now_cost": 40,
-        "projected_points": 2.447,
+        "projected_points": 2.42,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 194,
+        "web_name": "Thomas-Asante",
+        "team_id": 7,
+        "team_short": "COV",
+        "position": "FWD",
+        "now_cost": 50,
+        "projected_points": 2.668,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -148,19 +145,19 @@
         "team_short": "FUL",
         "position": "GK",
         "now_cost": 45,
-        "projected_points": 3.663,
+        "projected_points": 3.585,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
       {
-        "player_id": 259,
-        "web_name": "Diop",
+        "player_id": 305,
+        "web_name": "Davis",
         "team_id": 12,
         "team_short": "IPS",
         "position": "DEF",
-        "now_cost": 39,
-        "projected_points": 2.112,
+        "now_cost": 40,
+        "projected_points": 2.554,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -184,7 +181,7 @@
         "team_short": "MUN",
         "position": "MID",
         "now_cost": 118,
-        "projected_points": 6.468,
+        "projected_points": 6.605,
         "is_starter": true,
         "is_captain": true,
         "is_vice": false
@@ -196,19 +193,19 @@
         "team_short": "MUN",
         "position": "MID",
         "now_cost": 78,
-        "projected_points": 5.542,
+        "projected_points": 5.384,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
       },
       {
-        "player_id": 449,
-        "web_name": "Hall",
-        "team_id": 17,
-        "team_short": "NEW",
+        "player_id": 472,
+        "web_name": "Murillo",
+        "team_id": 18,
+        "team_short": "NFO",
         "position": "DEF",
-        "now_cost": 53,
-        "projected_points": 3.453,
+        "now_cost": 55,
+        "projected_points": 3.663,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false

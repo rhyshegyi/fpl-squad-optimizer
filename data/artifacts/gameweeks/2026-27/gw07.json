@@ -14,7 +14,7 @@
   "name": "Gameweek 7",
   "deadline": "2026-10-17T10:00:00Z",
   "frozen_at": "2026-10-16T18:55:43.176768+00:00",
-  "scored_at": null,
+  "scored_at": "2026-10-20T11:55:50.544922+00:00",
   "squad": {
     "total_cost": 999,
     "projected_points": 59.88,
@@ -5538,6 +5538,166 @@
       "position": "GK",
       "now_cost": 40,
       "projected": 0.052
+    }
+  ],
+  "result": {
+    "points": 66,
+    "starter_points": 53,
+    "captain_id": 411,
+    "captain_points": 13,
+    "captain_blanked": false,
+    "autosubs": [
+      [
+        399,
+        194
+      ],
+      [
+        403,
+        277
+      ]
+    ],
+    "points_left_on_bench": 6,
+    "fpl_average": 59,
+    "fpl_highest": 122,
+    "scores_final": false
+  },
+  "accuracy": {
+    "players_appeared": 304,
+    "mae": 1.946,
+    "rmse": 2.854,
+    "bias": 0.788,
+    "spearman": 0.3883
+  },
+  "misses": [
+    {
+      "web_name": "Danso",
+      "team_short": "SUN",
+      "position": "DEF",
+      "projected": 2.342,
+      "actual": -3,
+      "minutes": 16
+    },
+    {
+      "web_name": "B.Fernandes",
+      "team_short": "MUN",
+      "position": "MID",
+      "projected": 5.722,
+      "actual": 1,
+      "minutes": 90
+    },
+    {
+      "web_name": "Semenyo",
+      "team_short": "MCI",
+      "position": "MID",
+      "projected": 5.657,
+      "actual": 1,
+      "minutes": 13
+    },
+    {
+      "web_name": "Yarmoliuk",
+      "team_short": "BRE",
+      "position": "MID",
+      "projected": 2.184,
+      "actual": -2,
+      "minutes": 52
+    },
+    {
+      "web_name": "Janelt",
+      "team_short": "BRE",
+      "position": "MID",
+      "projected": 3.045,
+      "actual": -1,
+      "minutes": 90
+    },
+    {
+      "web_name": "Canvot",
+      "team_short": "CRY",
+      "position": "DEF",
+      "projected": 1.771,
+      "actual": -2,
+      "minutes": 90
+    },
+    {
+      "web_name": "Sessegnon",
+      "team_short": "FUL",
+      "position": "DEF",
+      "projected": 1.73,
+      "actual": -2,
+      "minutes": 12
+    },
+    {
+      "web_name": "Gvardiol",
+      "team_short": "MCI",
+      "position": "DEF",
+      "projected": 3.524,
+      "actual": 0,
+      "minutes": 29
+    }
+  ],
+  "hits": [
+    {
+      "web_name": "Neto",
+      "team_short": "CHE",
+      "position": "MID",
+      "projected": 3.728,
+      "actual": 15,
+      "minutes": 90
+    },
+    {
+      "web_name": "Hato",
+      "team_short": "CHE",
+      "position": "DEF",
+      "projected": 0.769,
+      "actual": 11,
+      "minutes": 90
+    },
+    {
+      "web_name": "Ayari",
+      "team_short": "BHA",
+      "position": "MID",
+      "projected": 2.825,
+      "actual": 13,
+      "minutes": 80
+    },
+    {
+      "web_name": "Kostoulas",
+      "team_short": "BHA",
+      "position": "FWD",
+      "projected": 3.541,
+      "actual": 12,
+      "minutes": 70
+    },
+    {
+      "web_name": "Manzambi",
+      "team_short": "AVL",
+      "position": "MID",
+      "projected": 2.702,
+      "actual": 11,
+      "minutes": 71
+    },
+    {
+      "web_name": "Evanilson",
+      "team_short": "BOU",
+      "position": "FWD",
+      "projected": 3.826,
+      "actual": 12,
+      "minutes": 78
+    },
+    {
+      "web_name": "Isak",
+      "team_short": "LIV",
+      "position": "FWD",
+      "projected": 0.843,
+      "actual": 9,
+      "minutes": 78
+    },
+    {
+      "web_name": "Vuskovic",
+      "team_short": "BHA",
+      "position": "DEF",
+      "projected": 3.169,
+      "actual": 11,
+      "minutes": 90
     }
   ]
 }
