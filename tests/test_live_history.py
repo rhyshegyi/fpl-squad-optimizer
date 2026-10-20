@@ -70,3 +70,65 @@ class TestKickoffFallback:
 
     def test_an_unparseable_kickoff_is_dropped(self):
         assert _is_played(entry(kickoff="not a date"), set()) is False
+
+
+class TestFetchRetries:
+    """A failed fetch used to be counted and skipped. The archive writes each
+    confirmed gameweek once, so a player missing on that one run would be
+    missing from the file for good. One did fail locally in October and
+    fetched fine seconds later."""
+
+    class Resp:
+        def __init__(self, status, history=None):
+            self.status_code = status
+            self._history = history or []
+
+        def raise_for_status(self):
+            import requests
+            if self.status_code >= 400:
+                raise requests.HTTPError(f"{self.status_code}")
+
+        def json(self):
+            return {"history": self._history}
+
+    def _patch(self, monkeypatch, responses):
+        import fpl_optimizer.live_history as L
+        calls = iter(responses)
+
+        def fake_get(*a, **k):
+            r = next(calls)
+            if isinstance(r, Exception):
+                raise r
+            return r
+
+        monkeypatch.setattr(L.requests, "get", fake_get)
+        monkeypatch.setattr(L, "BACKOFF_SECONDS", 0)
+        return L
+
+    def test_a_transient_failure_is_retried(self, monkeypatch):
+        import requests
+        L = self._patch(monkeypatch, [
+            requests.ConnectionError("blip"),
+            self.Resp(200, [{"round": 1}]),
+        ])
+        assert L._fetch_history(80) == [{"round": 1}]
+
+    def test_a_server_error_is_retried(self, monkeypatch):
+        L = self._patch(monkeypatch, [self.Resp(503), self.Resp(200, [{"round": 2}])])
+        assert L._fetch_history(80) == [{"round": 2}]
+
+    def test_persistent_failure_raises_after_retries(self, monkeypatch):
+        import pytest, requests
+        L = self._patch(monkeypatch, [requests.Timeout("t")] * L_retries())
+        with pytest.raises(requests.Timeout):
+            L._fetch_history(80)
+
+    def test_a_removed_player_is_empty_not_a_failure(self, monkeypatch):
+        """A 404 would otherwise fail every run forever."""
+        L = self._patch(monkeypatch, [self.Resp(404)])
+        assert L._fetch_history(999) == []
+
+
+def L_retries():
+    from fpl_optimizer.live_history import RETRIES
+    return RETRIES

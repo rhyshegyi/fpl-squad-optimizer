@@ -109,7 +109,18 @@ def cmd_archive(args: argparse.Namespace) -> None:
 
 def cmd_ingest_live_history(_: argparse.Namespace) -> None:
     print("ingesting current-season per-player history (may take a minute)...")
-    print(ingest_live_history())
+    result = ingest_live_history()
+    print(result)
+    if result["failed"]:
+        # Stop the pipeline here rather than let `fpl archive` run on a
+        # database missing players: archived gameweeks are written once, so a
+        # short file would be permanent. The previous artifacts keep serving
+        # and the next scheduled run tries again.
+        raise SystemExit(
+            f"{result['failed']} player(s) could not be fetched after retries "
+            f"({result['failed_ids']}). Refusing to continue: archiving now "
+            "would freeze an incomplete gameweek."
+        )
 
 
 def _print_transfer_plan(plan: TransferPlan) -> None:

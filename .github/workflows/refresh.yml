@@ -40,7 +40,15 @@ jobs:
     permissions:
       contents: write   # needed to push the artifact commit back
     steps:
+      # Check out the tip of main, not the commit the run was queued against.
+      # On 19 October GitHub released two scheduled runs 20 seconds apart; the
+      # concurrency group correctly made the second wait for the first, but a
+      # queued run checks out the SHA from when it was *queued*, so it started
+      # from a snapshot taken before the first one pushed, worked for five
+      # minutes on that stale base, and had its push rejected.
       - uses: actions/checkout@v7
+        with:
+          ref: main
 
       # Pinned to an exact patch on purpose: astral-sh/setup-uv publishes
       # v10.0.0 / v10.0.1 but no floating `v10` major tag, so `@v10` fails
@@ -115,7 +123,18 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
           git commit -m "data: refresh for $(date -u +%Y-%m-%d)"
-          git push
+          # Something can still land on main during a ~5 minute run (a code
+          # push, say). Rebase onto it and keep this run's data where the two
+          # touch the same files: it was generated later, from fresher data.
+          # During a rebase "theirs" is the commit being replayed — ours.
+          for attempt in 1 2 3; do
+            git pull --rebase -X theirs origin main && git push && exit 0
+            git rebase --abort 2>/dev/null || true   # never retry from mid-rebase
+            echo "push attempt $attempt failed; retrying"
+            sleep $((attempt * 5))
+          done
+          echo "could not push after 3 attempts" >&2
+          exit 1
 
       # GitHub deliberately does not trigger workflows from commits authored by
       # the default GITHUB_TOKEN, so the push above will NOT fire fly-deploy.yml.

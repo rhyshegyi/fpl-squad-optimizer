@@ -7,6 +7,7 @@ features at predict time the same way we build them at train time.
 from __future__ import annotations
 
 import json
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 
@@ -87,10 +88,35 @@ def _is_played(entry: dict, played: set[int]) -> bool:
     return datetime.now(timezone.utc) - started > MATCH_DURATION
 
 
+RETRIES = 3
+BACKOFF_SECONDS = 1.5
+
+
 def _fetch_history(pid: int) -> list[dict]:
-    r = requests.get(ELEMENT_SUMMARY_URL.format(pid=pid), timeout=30)
-    r.raise_for_status()
-    return r.json().get("history", [])
+    """One player's per-gameweek history, retried through transient failures.
+
+    A failure here used to be counted and skipped. That is quietly dangerous
+    now: the archive writes each confirmed gameweek once and never again, so a
+    player whose fetch timed out on the run that first archives a round would
+    be missing from that file permanently. One did fail on a local run in
+    October — Enes Ünal, element 80 — and fetched fine seconds later.
+
+    A 404 is not transient: the player has been removed from the game, and has
+    no history to fetch. That returns empty rather than failing, or a single
+    departed player would fail every run forever.
+    """
+    last: Exception | None = None
+    for attempt in range(RETRIES):
+        try:
+            r = requests.get(ELEMENT_SUMMARY_URL.format(pid=pid), timeout=30)
+            if r.status_code == 404:
+                return []
+            r.raise_for_status()
+            return r.json().get("history", [])
+        except requests.RequestException as e:
+            last = e
+            time.sleep(BACKOFF_SECONDS * (2 ** attempt))
+    raise last  # type: ignore[misc]
 
 
 def _coerce_history_row(
@@ -163,6 +189,7 @@ def ingest_live_history() -> dict[str, object]:
             "season": season,
             "players": len(players),
             "failed": len(failed),
+            "failed_ids": sorted(failed),
             "rows": len(all_rows),
             "skipped_unplayed": skipped,
         }
