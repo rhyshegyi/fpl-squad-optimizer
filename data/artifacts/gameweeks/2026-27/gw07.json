@@ -14,7 +14,7 @@
   "name": "Gameweek 7",
   "deadline": "2026-10-17T10:00:00Z",
   "frozen_at": "2026-10-16T18:55:43.176768+00:00",
-  "scored_at": "2026-10-20T11:55:50.544922+00:00",
+  "scored_at": "2026-10-20T19:27:36.795848+00:00",
   "squad": {
     "total_cost": 999,
     "projected_points": 59.88,
@@ -5559,7 +5559,7 @@
     "points_left_on_bench": 6,
     "fpl_average": 59,
     "fpl_highest": 122,
-    "scores_final": false
+    "scores_final": true
   },
   "accuracy": {
     "players_appeared": 304,
@@ -5699,5 +5699,6 @@
       "actual": 11,
       "minutes": 90
     }
-  ]
+  ],
+  "settled_at": "2026-10-20T19:27:36.795848+00:00"
 }

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-20T11:55:50.514825+00:00",
+  "generated_at": "2026-10-20T19:27:36.766334+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "budget_tenths": 996,
   "pipeline_state": {
-    "last_fetch": "2026-10-20T11:51:30.224087+00:00",
+    "last_fetch": "2026-10-20T19:23:17.739077+00:00",
     "average_squad_value": 996,
     "current_gw": {
       "id": 7,
@@ -21,15 +21,12 @@
       "latest_gw_on_file": 7,
       "latest_result": "2026-10-19T19:00:00+00:00",
       "gameweek_in_progress": null,
-      "bonus_pending": {
-        "id": 7,
-        "name": "Gameweek 7"
-      }
+      "bonus_pending": null
     }
   },
   "squad": {
     "total_cost": 996,
-    "projected_points": 54.8,
+    "projected_points": 58.15,
     "formation": "3-5-2",
     "picks": [
       {
@@ -45,13 +42,13 @@
         "is_vice": false
       },
       {
-        "player_id": 4,
-        "web_name": "Gabriel",
+        "player_id": 8,
+        "web_name": "Calafiori",
         "team_id": 1,
         "team_short": "ARS",
         "position": "DEF",
-        "now_cost": 79,
-        "projected_points": 4.35,
+        "now_cost": 60,
+        "projected_points": 4.117,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -81,18 +78,6 @@
         "is_vice": true
       },
       {
-        "player_id": 79,
-        "web_name": "Evanilson",
-        "team_id": 3,
-        "team_short": "BOU",
-        "position": "FWD",
-        "now_cost": 61,
-        "projected_points": 4.08,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
         "player_id": 115,
         "web_name": "De Cuyper",
         "team_id": 5,
@@ -117,15 +102,15 @@
         "is_vice": false
       },
       {
-        "player_id": 154,
-        "web_name": "Palmer",
+        "player_id": 156,
+        "web_name": "Neto",
         "team_id": 6,
         "team_short": "CHE",
         "position": "MID",
-        "now_cost": 97,
-        "projected_points": 5.089,
+        "now_cost": 65,
+        "projected_points": 4.385,
         "is_starter": true,
-        "is_captain": true,
+        "is_captain": false,
         "is_vice": false
       },
       {
@@ -141,13 +126,25 @@
         "is_vice": false
       },
       {
-        "player_id": 250,
-        "web_name": "Leno",
-        "team_id": 10,
-        "team_short": "FUL",
-        "position": "GK",
-        "now_cost": 45,
-        "projected_points": 3.32,
+        "player_id": 173,
+        "web_name": "Thomas",
+        "team_id": 7,
+        "team_short": "COV",
+        "position": "DEF",
+        "now_cost": 40,
+        "projected_points": 2.823,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 194,
+        "web_name": "Thomas-Asante",
+        "team_id": 7,
+        "team_short": "COV",
+        "position": "FWD",
+        "now_cost": 50,
+        "projected_points": 3.04,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -165,27 +162,15 @@
         "is_vice": false
       },
       {
-        "player_id": 330,
-        "web_name": "Bogle",
-        "team_id": 13,
-        "team_short": "LEE",
-        "position": "DEF",
-        "now_cost": 47,
-        "projected_points": 3.855,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 379,
-        "web_name": "Isak",
-        "team_id": 14,
-        "team_short": "LIV",
+        "player_id": 411,
+        "web_name": "Haaland",
+        "team_id": 15,
+        "team_short": "MCI",
         "position": "FWD",
-        "now_cost": 90,
-        "projected_points": 4.442,
+        "now_cost": 157,
+        "projected_points": 6.909,
         "is_starter": true,
-        "is_captain": false,
+        "is_captain": true,
         "is_vice": false
       },
       {
@@ -209,6 +194,18 @@
         "now_cost": 51,
         "projected_points": 3.967,
         "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 572,
+        "web_name": "Tzolakis",
+        "team_id": 11,
+        "team_short": "HUL",
+        "position": "GK",
+        "now_cost": 47,
+        "projected_points": 3.54,
+        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       }
@@ -537,7 +534,7 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 44,
-      "projected_points": 0.0
+      "projected_points": 0.839
     },
     {
       "player_id": 37,
@@ -3606,7 +3603,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 65,
-      "projected_points": 3.2
+      "projected_points": 2.4
     },
     {
       "player_id": 378,
@@ -3912,7 +3909,7 @@
       "team_short": "MCI",
       "position": "FWD",
       "now_cost": 157,
-      "projected_points": 5.182
+      "projected_points": 6.909
     },
     {
       "player_id": 412,
@@ -5712,7 +5709,7 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 1.429
+      "projected_points": 0.0
     },
     {
       "player_id": 612,
