@@ -13,7 +13,7 @@
   "average_squad_value": 996,
   "name": "Gameweek 8",
   "deadline": "2026-10-23T17:30:00Z",
-  "frozen_at": "2026-10-21T12:07:30.201084+00:00",
+  "frozen_at": "2026-10-21T19:24:26.765801+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 997,
@@ -489,7 +489,7 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 44,
-      "projected": 0.27
+      "projected": 0.36
     },
     {
       "player_id": 37,
@@ -505,7 +505,7 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 40,
-      "projected": 0.034
+      "projected": 0.0
     },
     {
       "player_id": 39,
@@ -609,7 +609,7 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 45,
-      "projected": 0.403
+      "projected": 0.538
     },
     {
       "player_id": 52,
@@ -825,7 +825,7 @@
       "team_short": "BOU",
       "position": "MID",
       "now_cost": 73,
-      "projected": 0.0
+      "projected": 0.03
     },
     {
       "player_id": 79,
@@ -3513,7 +3513,7 @@
       "team_short": "MUN",
       "position": "GK",
       "now_cost": 40,
-      "projected": 0.0
+      "projected": 0.034
     },
     {
       "player_id": 415,
@@ -4041,7 +4041,7 @@
       "team_short": "NFO",
       "position": "MID",
       "now_cost": 79,
-      "projected": 3.197
+      "projected": 4.263
     },
     {
       "player_id": 481,
