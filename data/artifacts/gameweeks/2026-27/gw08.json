@@ -13,7 +13,7 @@
   "average_squad_value": 996,
   "name": "Gameweek 8",
   "deadline": "2026-10-23T17:30:00Z",
-  "frozen_at": "2026-10-20T19:27:36.787534+00:00",
+  "frozen_at": "2026-10-21T12:07:30.201084+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 997,
@@ -273,7 +273,7 @@
       "team_short": "ARS",
       "position": "DEF",
       "now_cost": 52,
-      "projected": 0.0
+      "projected": 0.529
     },
     {
       "player_id": 10,
@@ -400,8 +400,8 @@
       "web_name": "Gy\u00f6keres",
       "team_short": "ARS",
       "position": "FWD",
-      "now_cost": 71,
-      "projected": 2.636
+      "now_cost": 70,
+      "projected": 2.549
     },
     {
       "player_id": 26,
@@ -1896,7 +1896,7 @@
       "web_name": "Hughes",
       "team_short": "CRY",
       "position": "MID",
-      "now_cost": 44,
+      "now_cost": 43,
       "projected": 0.385
     },
     {
@@ -2368,8 +2368,8 @@
       "web_name": "Muniz",
       "team_short": "FUL",
       "position": "FWD",
-      "now_cost": 54,
-      "projected": 0.955
+      "now_cost": 53,
+      "projected": 0.911
     },
     {
       "player_id": 272,
@@ -2976,7 +2976,7 @@
       "web_name": "Nmecha",
       "team_short": "LEE",
       "position": "FWD",
-      "now_cost": 54,
+      "now_cost": 53,
       "projected": 1.501
     },
     {
@@ -3096,8 +3096,8 @@
       "web_name": "Jacquet",
       "team_short": "LIV",
       "position": "DEF",
-      "now_cost": 50,
-      "projected": 2.837
+      "now_cost": 51,
+      "projected": 2.852
     },
     {
       "player_id": 363,
@@ -3192,8 +3192,8 @@
       "web_name": "Endo",
       "team_short": "LIV",
       "position": "MID",
-      "now_cost": 49,
-      "projected": 0.054
+      "now_cost": 48,
+      "projected": 0.08
     },
     {
       "player_id": 375,
@@ -3569,7 +3569,7 @@
       "team_short": "MUN",
       "position": "DEF",
       "now_cost": 43,
-      "projected": 0.469
+      "projected": 0.352
     },
     {
       "player_id": 422,
@@ -3585,7 +3585,7 @@
       "team_short": "MUN",
       "position": "DEF",
       "now_cost": 43,
-      "projected": 1.418
+      "projected": 0.0
     },
     {
       "player_id": 424,
@@ -3633,7 +3633,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 69,
-      "projected": 2.488
+      "projected": 1.866
     },
     {
       "player_id": 430,
@@ -3657,7 +3657,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 55,
-      "projected": 1.902
+      "projected": 0.0
     },
     {
       "player_id": 433,
@@ -4056,8 +4056,8 @@
       "web_name": "Hudson-Odoi",
       "team_short": "NFO",
       "position": "MID",
-      "now_cost": 58,
-      "projected": 1.123
+      "now_cost": 57,
+      "projected": 1.115
     },
     {
       "player_id": 483,
@@ -4913,7 +4913,7 @@
       "team_short": "HUL",
       "position": "MID",
       "now_cost": 49,
-      "projected": 0.0
+      "projected": 0.334
     },
     {
       "player_id": 590,
@@ -4968,7 +4968,7 @@
       "web_name": "Ruggeri",
       "team_short": "AVL",
       "position": "DEF",
-      "now_cost": 45,
+      "now_cost": 44,
       "projected": 0.0
     },
     {
@@ -5137,7 +5137,7 @@
       "team_short": "HUL",
       "position": "MID",
       "now_cost": 50,
-      "projected": 0.0
+      "projected": 0.758
     },
     {
       "player_id": 618,
@@ -5297,7 +5297,7 @@
       "team_short": "HUL",
       "position": "FWD",
       "now_cost": 50,
-      "projected": 0.733
+      "projected": 1.1
     },
     {
       "player_id": 638,
