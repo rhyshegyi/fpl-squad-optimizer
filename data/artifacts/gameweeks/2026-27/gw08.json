@@ -13,7 +13,7 @@
   "average_squad_value": 996,
   "name": "Gameweek 8",
   "deadline": "2026-10-23T17:30:00Z",
-  "frozen_at": "2026-10-21T19:24:26.765801+00:00",
+  "frozen_at": "2026-10-22T12:10:43.280423+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 997,
@@ -297,7 +297,7 @@
       "team_short": "ARS",
       "position": "MID",
       "now_cost": 96,
-      "projected": 5.618
+      "projected": 2.809
     },
     {
       "player_id": 13,
@@ -2968,7 +2968,7 @@
       "web_name": "Calvert-Lewin",
       "team_short": "LEE",
       "position": "FWD",
-      "now_cost": 60,
+      "now_cost": 61,
       "projected": 3.531
     },
     {
@@ -4760,7 +4760,7 @@
       "web_name": "Palacios",
       "team_short": "FUL",
       "position": "MID",
-      "now_cost": 54,
+      "now_cost": 53,
       "projected": 1.406
     },
     {
@@ -5345,7 +5345,7 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 44,
-      "projected": 0.0
+      "projected": 0.322
     },
     {
       "player_id": 644,
@@ -5353,7 +5353,7 @@
       "team_short": "CRY",
       "position": "MID",
       "now_cost": 50,
-      "projected": 2.328
+      "projected": 1.746
     },
     {
       "player_id": 645,
