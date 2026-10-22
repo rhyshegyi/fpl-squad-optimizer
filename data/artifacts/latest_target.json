@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-22T12:10:43.260157+00:00",
+  "generated_at": "2026-10-22T19:18:45.566052+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "budget_tenths": 996,
   "pipeline_state": {
-    "last_fetch": "2026-10-22T12:06:18.781671+00:00",
+    "last_fetch": "2026-10-22T19:16:51.517442+00:00",
     "average_squad_value": 996,
     "current_gw": {
       "id": 7,
@@ -2613,7 +2613,7 @@
       "team_short": "IPS",
       "position": "MID",
       "now_cost": 49,
-      "projected_points": 1.73
+      "projected_points": 0.0
     },
     {
       "player_id": 268,
