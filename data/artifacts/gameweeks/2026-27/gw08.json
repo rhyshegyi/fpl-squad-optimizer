@@ -13,11 +13,11 @@
   "average_squad_value": 996,
   "name": "Gameweek 8",
   "deadline": "2026-10-23T17:30:00Z",
-  "frozen_at": "2026-10-22T19:18:45.581199+00:00",
+  "frozen_at": "2026-10-23T11:55:03.341195+00:00",
   "scored_at": null,
   "squad": {
-    "total_cost": 997,
-    "projected_points": 60.47,
+    "total_cost": 999,
+    "projected_points": 60.54,
     "formation": "3-5-2",
     "picks": [
       {
@@ -86,8 +86,8 @@
         "team_id": 6,
         "team_short": "CHE",
         "position": "MID",
-        "now_cost": 97,
-        "projected_points": 5.941,
+        "now_cost": 98,
+        "projected_points": 6.018,
         "is_starter": true,
         "is_captain": false,
         "is_vice": true
@@ -182,7 +182,7 @@
         "team_id": 16,
         "team_short": "MUN",
         "position": "MID",
-        "now_cost": 78,
+        "now_cost": 79,
         "projected_points": 5.384,
         "is_starter": true,
         "is_captain": false,
@@ -809,7 +809,7 @@
       "team_short": "BOU",
       "position": "MID",
       "now_cost": 49,
-      "projected": 0.363
+      "projected": 0.0
     },
     {
       "player_id": 77,
@@ -825,7 +825,7 @@
       "team_short": "BOU",
       "position": "MID",
       "now_cost": 73,
-      "projected": 0.03
+      "projected": 0.044
     },
     {
       "player_id": 79,
@@ -1432,8 +1432,8 @@
       "web_name": "Palmer",
       "team_short": "CHE",
       "position": "MID",
-      "now_cost": 97,
-      "projected": 5.941
+      "now_cost": 98,
+      "projected": 6.018
     },
     {
       "player_id": 155,
@@ -2297,7 +2297,7 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 53,
-      "projected": 0.452
+      "projected": 0.339
     },
     {
       "player_id": 263,
@@ -2904,8 +2904,8 @@
       "web_name": "Ampadu",
       "team_short": "LEE",
       "position": "MID",
-      "now_cost": 54,
-      "projected": 2.597
+      "now_cost": 53,
+      "projected": 2.422
     },
     {
       "player_id": 339,
@@ -3544,7 +3544,7 @@
       "web_name": "Maguire",
       "team_short": "MUN",
       "position": "DEF",
-      "now_cost": 48,
+      "now_cost": 47,
       "projected": 3.114
     },
     {
@@ -3616,7 +3616,7 @@
       "web_name": "Mbeumo",
       "team_short": "MUN",
       "position": "MID",
-      "now_cost": 78,
+      "now_cost": 79,
       "projected": 5.384
     },
     {
@@ -5281,7 +5281,7 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 50,
-      "projected": 0.235
+      "projected": 0.941
     },
     {
       "player_id": 636,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T19:18:45.595875+00:00",
+  "generated_at": "2026-10-23T11:55:03.364245+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 4,
@@ -1709,8 +1709,8 @@
           "team_id": 6,
           "team_short": "CHE",
           "position": "MID",
-          "now_cost": 97,
-          "projected_points": 5.941,
+          "now_cost": 98,
+          "projected_points": 6.018,
           "is_starter": true,
           "is_captain": false,
           "is_vice": true
@@ -1805,7 +1805,7 @@
           "team_id": 16,
           "team_short": "MUN",
           "position": "MID",
-          "now_cost": 78,
+          "now_cost": 79,
           "projected_points": 5.384,
           "is_starter": true,
           "is_captain": false,
@@ -1856,7 +1856,7 @@
       "bonus": 8,
       "ppg": 8.43,
       "value": 11.13,
-      "selected_by": 41.4,
+      "selected_by": 41.7,
       "in_target_squad": true
     },
     {
@@ -1874,7 +1874,7 @@
       "bonus": 9,
       "ppg": 8.29,
       "value": 9.35,
-      "selected_by": 45.6,
+      "selected_by": 45.9,
       "in_target_squad": true
     },
     {
@@ -1892,7 +1892,7 @@
       "bonus": 12,
       "ppg": 8.29,
       "value": 3.69,
-      "selected_by": 77.0,
+      "selected_by": 77.1,
       "in_target_squad": true
     },
     {
@@ -1910,7 +1910,7 @@
       "bonus": 2,
       "ppg": 7.29,
       "value": 10.0,
-      "selected_by": 5.9,
+      "selected_by": 6.0,
       "in_target_squad": true
     },
     {
@@ -1928,7 +1928,7 @@
       "bonus": 9,
       "ppg": 6.71,
       "value": 5.95,
-      "selected_by": 73.0,
+      "selected_by": 73.3,
       "in_target_squad": true
     },
     {
@@ -1946,7 +1946,7 @@
       "bonus": 7,
       "ppg": 6.57,
       "value": 7.42,
-      "selected_by": 18.3,
+      "selected_by": 18.2,
       "in_target_squad": false
     },
     {
@@ -1964,7 +1964,7 @@
       "bonus": 6,
       "ppg": 6.43,
       "value": 9.57,
-      "selected_by": 10.3,
+      "selected_by": 10.5,
       "in_target_squad": false
     },
     {
@@ -1982,7 +1982,7 @@
       "bonus": 7,
       "ppg": 6.29,
       "value": 5.5,
-      "selected_by": 38.3,
+      "selected_by": 38.6,
       "in_target_squad": false
     },
     {
@@ -2000,7 +2000,7 @@
       "bonus": 3,
       "ppg": 6.29,
       "value": 7.33,
-      "selected_by": 54.1,
+      "selected_by": 54.4,
       "in_target_squad": true
     },
     {
@@ -2018,7 +2018,7 @@
       "bonus": 11,
       "ppg": 6.0,
       "value": 4.67,
-      "selected_by": 13.2,
+      "selected_by": 13.5,
       "in_target_squad": false
     },
     {
@@ -2036,7 +2036,7 @@
       "bonus": 10,
       "ppg": 6.0,
       "value": 6.77,
-      "selected_by": 10.2,
+      "selected_by": 11.4,
       "in_target_squad": false
     },
     {
@@ -2054,7 +2054,7 @@
       "bonus": 6,
       "ppg": 6.0,
       "value": 6.89,
-      "selected_by": 44.6,
+      "selected_by": 45.0,
       "in_target_squad": true
     },
     {
@@ -2072,7 +2072,7 @@
       "bonus": 6,
       "ppg": 5.86,
       "value": 7.19,
-      "selected_by": 9.9,
+      "selected_by": 10.0,
       "in_target_squad": false
     },
     {
@@ -2090,7 +2090,7 @@
       "bonus": 6,
       "ppg": 5.86,
       "value": 7.07,
-      "selected_by": 28.1,
+      "selected_by": 27.8,
       "in_target_squad": false
     },
     {
@@ -2099,7 +2099,7 @@
       "web_name": "Mbeumo",
       "team_short": "MUN",
       "position": "MID",
-      "now_cost": 78,
+      "now_cost": 79,
       "points": 41,
       "games": 7,
       "minutes": 630,
@@ -2107,8 +2107,8 @@
       "assists": 1,
       "bonus": 5,
       "ppg": 5.86,
-      "value": 5.26,
-      "selected_by": 20.8,
+      "value": 5.19,
+      "selected_by": 21.2,
       "in_target_squad": true
     },
     {
@@ -2126,7 +2126,7 @@
       "bonus": 6,
       "ppg": 5.71,
       "value": 6.45,
-      "selected_by": 14.2,
+      "selected_by": 14.5,
       "in_target_squad": false
     },
     {
@@ -2144,7 +2144,7 @@
       "bonus": 2,
       "ppg": 5.71,
       "value": 5.0,
-      "selected_by": 48.4,
+      "selected_by": 48.9,
       "in_target_squad": true
     },
     {
@@ -2162,7 +2162,7 @@
       "bonus": 2,
       "ppg": 5.57,
       "value": 7.5,
-      "selected_by": 9.1,
+      "selected_by": 9.2,
       "in_target_squad": false
     },
     {
@@ -2181,7 +2181,7 @@
       "ppg": 5.57,
       "value": 8.3,
       "selected_by": 14.1,
-      "in_target_squad": true
+      "in_target_squad": false
     },
     {
       "rank": 20,
@@ -2189,7 +2189,7 @@
       "web_name": "Palmer",
       "team_short": "CHE",
       "position": "MID",
-      "now_cost": 97,
+      "now_cost": 98,
       "points": 38,
       "games": 7,
       "minutes": 619,
@@ -2197,8 +2197,8 @@
       "assists": 4,
       "bonus": 3,
       "ppg": 5.43,
-      "value": 3.92,
-      "selected_by": 26.9,
+      "value": 3.88,
+      "selected_by": 27.6,
       "in_target_squad": false
     },
     {
@@ -2234,7 +2234,7 @@
       "bonus": 7,
       "ppg": 5.29,
       "value": 4.68,
-      "selected_by": 6.6,
+      "selected_by": 6.5,
       "in_target_squad": false
     },
     {
@@ -2252,7 +2252,7 @@
       "bonus": 2,
       "ppg": 5.29,
       "value": 4.46,
-      "selected_by": 11.3,
+      "selected_by": 10.3,
       "in_target_squad": false
     },
     {
@@ -2270,7 +2270,7 @@
       "bonus": 4,
       "ppg": 5.29,
       "value": 6.07,
-      "selected_by": 4.7,
+      "selected_by": 5.1,
       "in_target_squad": false
     },
     {
@@ -2288,7 +2288,7 @@
       "bonus": 4,
       "ppg": 5.29,
       "value": 3.85,
-      "selected_by": 15.3,
+      "selected_by": 13.5,
       "in_target_squad": false
     },
     {
@@ -2342,7 +2342,7 @@
       "bonus": 5,
       "ppg": 5.14,
       "value": 4.93,
-      "selected_by": 11.4,
+      "selected_by": 11.7,
       "in_target_squad": true
     },
     {

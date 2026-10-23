@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-22T19:18:45.566052+00:00",
+  "generated_at": "2026-10-23T11:55:03.319169+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "budget_tenths": 996,
   "pipeline_state": {
-    "last_fetch": "2026-10-22T19:16:51.517442+00:00",
+    "last_fetch": "2026-10-23T11:50:36.113034+00:00",
     "average_squad_value": 996,
     "current_gw": {
       "id": 7,
@@ -126,18 +126,6 @@
         "is_vice": false
       },
       {
-        "player_id": 173,
-        "web_name": "Thomas",
-        "team_id": 7,
-        "team_short": "COV",
-        "position": "DEF",
-        "now_cost": 40,
-        "projected_points": 2.823,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
         "player_id": 194,
         "web_name": "Thomas-Asante",
         "team_id": 7,
@@ -145,6 +133,30 @@
         "position": "FWD",
         "now_cost": 50,
         "projected_points": 3.04,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 250,
+        "web_name": "Leno",
+        "team_id": 10,
+        "team_short": "FUL",
+        "position": "GK",
+        "now_cost": 45,
+        "projected_points": 3.32,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 277,
+        "web_name": "Egan",
+        "team_id": 11,
+        "team_short": "HUL",
+        "position": "DEF",
+        "now_cost": 41,
+        "projected_points": 2.908,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -179,7 +191,7 @@
         "team_id": 16,
         "team_short": "MUN",
         "position": "MID",
-        "now_cost": 78,
+        "now_cost": 79,
         "projected_points": 4.699,
         "is_starter": true,
         "is_captain": false,
@@ -194,18 +206,6 @@
         "now_cost": 51,
         "projected_points": 3.967,
         "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 572,
-        "web_name": "Tzolakis",
-        "team_id": 11,
-        "team_short": "HUL",
-        "position": "GK",
-        "now_cost": 47,
-        "projected_points": 3.54,
-        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       }
@@ -894,7 +894,7 @@
       "team_short": "BOU",
       "position": "MID",
       "now_cost": 49,
-      "projected_points": 0.416
+      "projected_points": 0.0
     },
     {
       "player_id": 77,
@@ -912,7 +912,7 @@
       "team_short": "BOU",
       "position": "MID",
       "now_cost": 73,
-      "projected_points": 0.031
+      "projected_points": 0.046
     },
     {
       "player_id": 79,
@@ -1595,8 +1595,8 @@
       "team_id": 6,
       "team_short": "CHE",
       "position": "MID",
-      "now_cost": 97,
-      "projected_points": 5.089
+      "now_cost": 98,
+      "projected_points": 5.132
     },
     {
       "player_id": 155,
@@ -2568,7 +2568,7 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 53,
-      "projected_points": 0.396
+      "projected_points": 0.297
     },
     {
       "player_id": 263,
@@ -3251,8 +3251,8 @@
       "team_id": 13,
       "team_short": "LEE",
       "position": "MID",
-      "now_cost": 54,
-      "projected_points": 2.967
+      "now_cost": 53,
+      "projected_points": 2.862
     },
     {
       "player_id": 339,
@@ -3971,8 +3971,8 @@
       "team_id": 16,
       "team_short": "MUN",
       "position": "DEF",
-      "now_cost": 48,
-      "projected_points": 2.724
+      "now_cost": 47,
+      "projected_points": 2.718
     },
     {
       "player_id": 419,
@@ -4052,7 +4052,7 @@
       "team_id": 16,
       "team_short": "MUN",
       "position": "MID",
-      "now_cost": 78,
+      "now_cost": 79,
       "projected_points": 4.699
     },
     {
@@ -5925,7 +5925,7 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 0.214
+      "projected_points": 0.858
     },
     {
       "player_id": 636,

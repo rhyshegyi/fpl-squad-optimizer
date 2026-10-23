@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-22T19:18:33.261136+00:00",
+  "generated_at": "2026-10-23T11:54:31.784512+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-22T19:16:51.517442+00:00",
+    "last_fetch": "2026-10-23T11:50:36.113034+00:00",
     "average_squad_value": 996,
     "current_gw": {
       "id": 7,
@@ -23,8 +23,8 @@
     }
   },
   "squad": {
-    "total_cost": 997,
-    "projected_points": 60.47,
+    "total_cost": 999,
+    "projected_points": 60.54,
     "formation": "3-5-2",
     "picks": [
       {
@@ -93,8 +93,8 @@
         "team_id": 6,
         "team_short": "CHE",
         "position": "MID",
-        "now_cost": 97,
-        "projected_points": 5.941,
+        "now_cost": 98,
+        "projected_points": 6.018,
         "is_starter": true,
         "is_captain": false,
         "is_vice": true
@@ -189,7 +189,7 @@
         "team_id": 16,
         "team_short": "MUN",
         "position": "MID",
-        "now_cost": 78,
+        "now_cost": 79,
         "projected_points": 5.384,
         "is_starter": true,
         "is_captain": false,
