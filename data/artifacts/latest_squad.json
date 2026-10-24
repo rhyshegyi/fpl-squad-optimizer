@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-24T11:21:11.629775+00:00",
+  "generated_at": "2026-10-24T18:17:22.563859+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-24T11:17:21.574500+00:00",
+    "last_fetch": "2026-10-24T18:14:20.117615+00:00",
     "average_squad_value": 995,
     "current_gw": {
       "id": 8,
@@ -15,22 +15,22 @@
     },
     "data_health": {
       "players_tracked": 668,
-      "players_disagreeing": 0,
+      "players_disagreeing": 25,
       "latest_gw_on_file": 8,
-      "latest_result": "2026-10-23T19:00:00+00:00",
+      "latest_result": "2026-10-24T14:00:00+00:00",
       "gameweek_in_progress": {
         "id": 8,
         "name": "Gameweek 8",
-        "matches_played": 1,
-        "matches_started": 1,
+        "matches_played": 4,
+        "matches_started": 5,
         "matches_total": 10
       },
       "bonus_pending": null
     }
   },
   "squad": {
-    "total_cost": 1000,
-    "projected_points": 56.5,
+    "total_cost": 999,
+    "projected_points": 55.38,
     "formation": "3-4-3",
     "picks": [
       {
@@ -53,7 +53,7 @@
         "position": "GK",
         "now_cost": 45,
         "projected_points": 3.485,
-        "is_starter": true,
+        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
@@ -112,7 +112,7 @@
         "team_short": "AVL",
         "position": "FWD",
         "now_cost": 66,
-        "projected_points": 4.55,
+        "projected_points": 4.255,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -124,7 +124,7 @@
         "team_short": "COV",
         "position": "MID",
         "now_cost": 49,
-        "projected_points": 3.455,
+        "projected_points": 3.573,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -142,13 +142,13 @@
         "is_vice": false
       },
       {
-        "player_id": 388,
-        "web_name": "Gu\u00e9hi",
+        "player_id": 384,
+        "web_name": "Donnarumma",
         "team_id": 15,
         "team_short": "MCI",
-        "position": "DEF",
-        "now_cost": 60,
-        "projected_points": 3.41,
+        "position": "GK",
+        "now_cost": 55,
+        "projected_points": 3.535,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -160,7 +160,7 @@
         "team_short": "MCI",
         "position": "DEF",
         "now_cost": 55,
-        "projected_points": 3.277,
+        "projected_points": 3.257,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -172,20 +172,20 @@
         "team_short": "MCI",
         "position": "FWD",
         "now_cost": 157,
-        "projected_points": 7.417,
+        "projected_points": 7.08,
         "is_starter": true,
         "is_captain": true,
         "is_vice": false
       },
       {
-        "player_id": 529,
-        "web_name": "Roefs",
-        "team_id": 20,
-        "team_short": "SUN",
-        "position": "GK",
-        "now_cost": 49,
-        "projected_points": 3.288,
-        "is_starter": false,
+        "player_id": 449,
+        "web_name": "Hall",
+        "team_id": 17,
+        "team_short": "NEW",
+        "position": "DEF",
+        "now_cost": 53,
+        "projected_points": 3.231,
+        "is_starter": true,
         "is_captain": false,
         "is_vice": false
       },
