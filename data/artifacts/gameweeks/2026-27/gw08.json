@@ -14,7 +14,7 @@
   "name": "Gameweek 8",
   "deadline": "2026-10-23T17:30:00Z",
   "frozen_at": "2026-10-23T11:55:03.341195+00:00",
-  "scored_at": "2026-10-25T18:30:15.669844+00:00",
+  "scored_at": "2026-10-25T21:59:38.713728+00:00",
   "squad": {
     "total_cost": 999,
     "projected_points": 60.54,
@@ -5568,9 +5568,9 @@
   "accuracy": {
     "players_appeared": 303,
     "mae": 2.016,
-    "rmse": 2.981,
+    "rmse": 2.985,
     "bias": 0.933,
-    "spearman": 0.2796
+    "spearman": 0.2791
   },
   "misses": [
     {
@@ -5664,20 +5664,20 @@
       "minutes": 88
     },
     {
+      "web_name": "Dedi\u0107",
+      "team_short": "NEW",
+      "position": "DEF",
+      "projected": 0.915,
+      "actual": 11,
+      "minutes": 90
+    },
+    {
       "web_name": "N.Jackson",
       "team_short": "AVL",
       "position": "FWD",
       "projected": 3.701,
       "actual": 13,
       "minutes": 81
-    },
-    {
-      "web_name": "Dedi\u0107",
-      "team_short": "NEW",
-      "position": "DEF",
-      "projected": 0.915,
-      "actual": 10,
-      "minutes": 90
     },
     {
       "web_name": "Hill",
