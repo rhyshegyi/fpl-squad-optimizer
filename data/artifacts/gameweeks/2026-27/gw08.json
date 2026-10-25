@@ -14,7 +14,7 @@
   "name": "Gameweek 8",
   "deadline": "2026-10-23T17:30:00Z",
   "frozen_at": "2026-10-23T11:55:03.341195+00:00",
-  "scored_at": null,
+  "scored_at": "2026-10-25T18:30:15.669844+00:00",
   "squad": {
     "total_cost": 999,
     "projected_points": 60.54,
@@ -5546,6 +5546,162 @@
       "position": "MID",
       "now_cost": 50,
       "projected": 1.943
+    }
+  ],
+  "result": {
+    "points": 33,
+    "starter_points": 34,
+    "captain_id": 154,
+    "captain_points": -1,
+    "captain_blanked": true,
+    "autosubs": [
+      [
+        426,
+        176
+      ]
+    ],
+    "points_left_on_bench": 12,
+    "fpl_average": 27,
+    "fpl_highest": 102,
+    "scores_final": false
+  },
+  "accuracy": {
+    "players_appeared": 303,
+    "mae": 2.016,
+    "rmse": 2.981,
+    "bias": 0.933,
+    "spearman": 0.2796
+  },
+  "misses": [
+    {
+      "web_name": "Palmer",
+      "team_short": "CHE",
+      "position": "MID",
+      "projected": 6.018,
+      "actual": -1,
+      "minutes": 79
+    },
+    {
+      "web_name": "Rogers",
+      "team_short": "CHE",
+      "position": "MID",
+      "projected": 5.331,
+      "actual": 1,
+      "minutes": 90
+    },
+    {
+      "web_name": "Gu\u00e9hi",
+      "team_short": "MCI",
+      "position": "DEF",
+      "projected": 3.653,
+      "actual": 0,
+      "minutes": 45
+    },
+    {
+      "web_name": "Tielemans",
+      "team_short": "MUN",
+      "position": "MID",
+      "projected": 3.389,
+      "actual": 0,
+      "minutes": 45
+    },
+    {
+      "web_name": "Mbeumo",
+      "team_short": "MUN",
+      "position": "MID",
+      "projected": 5.384,
+      "actual": 2,
+      "minutes": 90
+    },
+    {
+      "web_name": "Cherki",
+      "team_short": "MCI",
+      "position": "MID",
+      "projected": 3.359,
+      "actual": 0,
+      "minutes": 45
+    },
+    {
+      "web_name": "Havertz",
+      "team_short": "ARS",
+      "position": "FWD",
+      "projected": 4.275,
+      "actual": 1,
+      "minutes": 22
+    },
+    {
+      "web_name": "Maguire",
+      "team_short": "MUN",
+      "position": "DEF",
+      "projected": 3.114,
+      "actual": 0,
+      "minutes": 90
+    }
+  ],
+  "hits": [
+    {
+      "web_name": "Gabriel",
+      "team_short": "ARS",
+      "position": "DEF",
+      "projected": 5.216,
+      "actual": 17,
+      "minutes": 90
+    },
+    {
+      "web_name": "Konsa",
+      "team_short": "ARS",
+      "position": "DEF",
+      "projected": 3.216,
+      "actual": 14,
+      "minutes": 90
+    },
+    {
+      "web_name": "Tel",
+      "team_short": "TOT",
+      "position": "MID",
+      "projected": 0.777,
+      "actual": 11,
+      "minutes": 88
+    },
+    {
+      "web_name": "N.Jackson",
+      "team_short": "AVL",
+      "position": "FWD",
+      "projected": 3.701,
+      "actual": 13,
+      "minutes": 81
+    },
+    {
+      "web_name": "Dedi\u0107",
+      "team_short": "NEW",
+      "position": "DEF",
+      "projected": 0.915,
+      "actual": 10,
+      "minutes": 90
+    },
+    {
+      "web_name": "Hill",
+      "team_short": "BOU",
+      "position": "DEF",
+      "projected": 2.071,
+      "actual": 11,
+      "minutes": 90
+    },
+    {
+      "web_name": "O.Dango",
+      "team_short": "BRE",
+      "position": "MID",
+      "projected": 1.739,
+      "actual": 10,
+      "minutes": 77
+    },
+    {
+      "web_name": "O'Nien",
+      "team_short": "SUN",
+      "position": "DEF",
+      "projected": 0.775,
+      "actual": 9,
+      "minutes": 90
     }
   ]
 }
