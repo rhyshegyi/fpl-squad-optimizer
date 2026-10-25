@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T18:17:46.015284+00:00",
+  "generated_at": "2026-10-25T11:51:06.018258+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 4,
@@ -1837,7 +1837,7 @@
           "team_short": "CHE",
           "position": "MID",
           "now_cost": 80,
-          "projected_points": 4.826,
+          "projected_points": 4.451,
           "is_starter": true,
           "is_captain": false,
           "is_vice": false
@@ -1885,7 +1885,7 @@
           "team_short": "CHE",
           "position": "MID",
           "now_cost": 98,
-          "projected_points": 5.33,
+          "projected_points": 5.121,
           "is_starter": true,
           "is_captain": false,
           "is_vice": true
@@ -1897,7 +1897,7 @@
           "team_short": "CHE",
           "position": "MID",
           "now_cost": 66,
-          "projected_points": 4.387,
+          "projected_points": 4.306,
           "is_starter": true,
           "is_captain": false,
           "is_vice": false
@@ -1908,7 +1908,7 @@
           "team_id": 2,
           "team_short": "AVL",
           "position": "FWD",
-          "now_cost": 66,
+          "now_cost": 67,
           "projected_points": 4.255,
           "is_starter": true,
           "is_captain": false,
@@ -1921,7 +1921,7 @@
           "team_short": "COV",
           "position": "MID",
           "now_cost": 49,
-          "projected_points": 3.573,
+          "projected_points": 3.661,
           "is_starter": false,
           "is_captain": false,
           "is_vice": false
@@ -2043,7 +2043,7 @@
       "bonus": 14,
       "ppg": 8.25,
       "value": 4.2,
-      "selected_by": 77.6,
+      "selected_by": 77.7,
       "in_target_squad": true
     },
     {
@@ -2061,7 +2061,7 @@
       "bonus": 8,
       "ppg": 8.43,
       "value": 11.13,
-      "selected_by": 42.3,
+      "selected_by": 42.4,
       "in_target_squad": true
     },
     {
@@ -2079,11 +2079,29 @@
       "bonus": 9,
       "ppg": 8.29,
       "value": 9.35,
-      "selected_by": 46.5,
+      "selected_by": 46.6,
       "in_target_squad": true
     },
     {
       "rank": 4,
+      "player_id": 4,
+      "web_name": "Gabriel",
+      "team_short": "ARS",
+      "position": "DEF",
+      "now_cost": 79,
+      "points": 52,
+      "games": 8,
+      "minutes": 720,
+      "goals": 1,
+      "assists": 0,
+      "bonus": 5,
+      "ppg": 6.5,
+      "value": 6.58,
+      "selected_by": 21.4,
+      "in_target_squad": false
+    },
+    {
+      "rank": 5,
       "player_id": 504,
       "web_name": "Vuskovic",
       "team_short": "BHA",
@@ -2097,26 +2115,8 @@
       "bonus": 2,
       "ppg": 7.29,
       "value": 10.0,
-      "selected_by": 6.3,
+      "selected_by": 6.4,
       "in_target_squad": true
-    },
-    {
-      "rank": 5,
-      "player_id": 4,
-      "web_name": "Gabriel",
-      "team_short": "ARS",
-      "position": "DEF",
-      "now_cost": 79,
-      "points": 51,
-      "games": 8,
-      "minutes": 720,
-      "goals": 1,
-      "assists": 0,
-      "bonus": 4,
-      "ppg": 6.38,
-      "value": 6.46,
-      "selected_by": 21.2,
-      "in_target_squad": false
     },
     {
       "rank": 6,
@@ -2133,7 +2133,7 @@
       "bonus": 6,
       "ppg": 6.12,
       "value": 7.9,
-      "selected_by": 45.5,
+      "selected_by": 45.6,
       "in_target_squad": true
     },
     {
@@ -2151,7 +2151,7 @@
       "bonus": 7,
       "ppg": 6.0,
       "value": 7.74,
-      "selected_by": 18.2,
+      "selected_by": 18.3,
       "in_target_squad": false
     },
     {
@@ -2162,14 +2162,14 @@
       "position": "FWD",
       "now_cost": 79,
       "points": 47,
-      "games": 7,
+      "games": 8,
       "minutes": 521,
       "goals": 5,
       "assists": 3,
       "bonus": 9,
-      "ppg": 6.71,
+      "ppg": 5.88,
       "value": 5.95,
-      "selected_by": 73.7,
+      "selected_by": 73.1,
       "in_target_squad": false
     },
     {
@@ -2205,7 +2205,7 @@
       "bonus": 3,
       "ppg": 5.62,
       "value": 7.5,
-      "selected_by": 54.7,
+      "selected_by": 54.2,
       "in_target_squad": false
     },
     {
@@ -2223,7 +2223,7 @@
       "bonus": 7,
       "ppg": 5.5,
       "value": 5.5,
-      "selected_by": 39.2,
+      "selected_by": 39.1,
       "in_target_squad": false
     },
     {
@@ -2241,7 +2241,7 @@
       "bonus": 11,
       "ppg": 6.0,
       "value": 4.67,
-      "selected_by": 14.0,
+      "selected_by": 14.1,
       "in_target_squad": false
     },
     {
@@ -2259,7 +2259,7 @@
       "bonus": 4,
       "ppg": 5.25,
       "value": 7.78,
-      "selected_by": 4.3,
+      "selected_by": 4.4,
       "in_target_squad": false
     },
     {
@@ -2277,7 +2277,7 @@
       "bonus": 10,
       "ppg": 6.0,
       "value": 6.67,
-      "selected_by": 14.0,
+      "selected_by": 14.4,
       "in_target_squad": false
     },
     {
@@ -2295,7 +2295,7 @@
       "bonus": 6,
       "ppg": 5.25,
       "value": 7.24,
-      "selected_by": 27.5,
+      "selected_by": 27.4,
       "in_target_squad": false
     },
     {
@@ -2331,11 +2331,29 @@
       "bonus": 5,
       "ppg": 5.86,
       "value": 5.19,
-      "selected_by": 21.9,
-      "in_target_squad": false
+      "selected_by": 22.0,
+      "in_target_squad": true
     },
     {
       "rank": 18,
+      "player_id": 40,
+      "web_name": "Rogers",
+      "team_short": "CHE",
+      "position": "MID",
+      "now_cost": 80,
+      "points": 41,
+      "games": 8,
+      "minutes": 700,
+      "goals": 4,
+      "assists": 1,
+      "bonus": 2,
+      "ppg": 5.12,
+      "value": 5.12,
+      "selected_by": 49.9,
+      "in_target_squad": false
+    },
+    {
+      "rank": 19,
       "player_id": 94,
       "web_name": "Schade",
       "team_short": "BRE",
@@ -2349,47 +2367,11 @@
       "bonus": 6,
       "ppg": 5.71,
       "value": 6.45,
-      "selected_by": 15.1,
+      "selected_by": 15.2,
       "in_target_squad": false
     },
     {
-      "rank": 19,
-      "player_id": 31,
-      "web_name": "Konsa",
-      "team_short": "ARS",
-      "position": "DEF",
-      "now_cost": 46,
-      "points": 40,
-      "games": 8,
-      "minutes": 551,
-      "goals": 1,
-      "assists": 0,
-      "bonus": 6,
-      "ppg": 5.0,
-      "value": 8.7,
-      "selected_by": 18.9,
-      "in_target_squad": true
-    },
-    {
       "rank": 20,
-      "player_id": 40,
-      "web_name": "Rogers",
-      "team_short": "CHE",
-      "position": "MID",
-      "now_cost": 80,
-      "points": 40,
-      "games": 7,
-      "minutes": 610,
-      "goals": 4,
-      "assists": 1,
-      "bonus": 2,
-      "ppg": 5.71,
-      "value": 5.0,
-      "selected_by": 49.9,
-      "in_target_squad": true
-    },
-    {
-      "rank": 21,
       "player_id": 286,
       "web_name": "Belloumi",
       "team_short": "HUL",
@@ -2405,6 +2387,24 @@
       "value": 7.5,
       "selected_by": 9.3,
       "in_target_squad": false
+    },
+    {
+      "rank": 21,
+      "player_id": 31,
+      "web_name": "Konsa",
+      "team_short": "ARS",
+      "position": "DEF",
+      "now_cost": 46,
+      "points": 39,
+      "games": 8,
+      "minutes": 551,
+      "goals": 1,
+      "assists": 0,
+      "bonus": 5,
+      "ppg": 4.88,
+      "value": 8.48,
+      "selected_by": 19.2,
+      "in_target_squad": true
     },
     {
       "rank": 22,
@@ -2430,7 +2430,7 @@
       "web_name": "Rice",
       "team_short": "ARS",
       "position": "MID",
-      "now_cost": 73,
+      "now_cost": 74,
       "points": 39,
       "games": 8,
       "minutes": 670,
@@ -2438,30 +2438,12 @@
       "assists": 4,
       "bonus": 5,
       "ppg": 4.88,
-      "value": 5.34,
-      "selected_by": 12.2,
+      "value": 5.27,
+      "selected_by": 12.3,
       "in_target_squad": false
     },
     {
       "rank": 24,
-      "player_id": 154,
-      "web_name": "Palmer",
-      "team_short": "CHE",
-      "position": "MID",
-      "now_cost": 98,
-      "points": 38,
-      "games": 7,
-      "minutes": 619,
-      "goals": 2,
-      "assists": 4,
-      "bonus": 3,
-      "ppg": 5.43,
-      "value": 3.88,
-      "selected_by": 28.7,
-      "in_target_squad": true
-    },
-    {
-      "rank": 25,
       "player_id": 109,
       "web_name": "Verbruggen",
       "team_short": "BHA",
@@ -2475,7 +2457,25 @@
       "bonus": 2,
       "ppg": 5.43,
       "value": 8.26,
-      "selected_by": 22.7,
+      "selected_by": 22.6,
+      "in_target_squad": false
+    },
+    {
+      "rank": 25,
+      "player_id": 112,
+      "web_name": "Van Hecke",
+      "team_short": "TOT",
+      "position": "DEF",
+      "now_cost": 49,
+      "points": 38,
+      "games": 8,
+      "minutes": 720,
+      "goals": 1,
+      "assists": 0,
+      "bonus": 3,
+      "ppg": 4.75,
+      "value": 7.76,
+      "selected_by": 6.9,
       "in_target_squad": false
     },
     {
@@ -2511,11 +2511,29 @@
       "bonus": 2,
       "ppg": 4.62,
       "value": 4.51,
-      "selected_by": 8.5,
+      "selected_by": 8.3,
       "in_target_squad": false
     },
     {
       "rank": 28,
+      "player_id": 156,
+      "web_name": "Neto",
+      "team_short": "CHE",
+      "position": "MID",
+      "now_cost": 66,
+      "points": 37,
+      "games": 8,
+      "minutes": 591,
+      "goals": 3,
+      "assists": 1,
+      "bonus": 3,
+      "ppg": 4.62,
+      "value": 5.61,
+      "selected_by": 3.7,
+      "in_target_squad": true
+    },
+    {
+      "rank": 29,
       "player_id": 79,
       "web_name": "Evanilson",
       "team_short": "BOU",
@@ -2529,11 +2547,11 @@
       "bonus": 4,
       "ppg": 5.29,
       "value": 5.97,
-      "selected_by": 6.1,
+      "selected_by": 6.3,
       "in_target_squad": true
     },
     {
-      "rank": 29,
+      "rank": 30,
       "player_id": 12,
       "web_name": "Saka",
       "team_short": "ARS",
@@ -2547,25 +2565,7 @@
       "bonus": 4,
       "ppg": 4.62,
       "value": 3.89,
-      "selected_by": 9.8,
-      "in_target_squad": false
-    },
-    {
-      "rank": 30,
-      "player_id": 127,
-      "web_name": "Gomez",
-      "team_short": "BHA",
-      "position": "MID",
-      "now_cost": 50,
-      "points": 37,
-      "games": 7,
-      "minutes": 610,
-      "goals": 1,
-      "assists": 3,
-      "bonus": 0,
-      "ppg": 5.29,
-      "value": 7.4,
-      "selected_by": 4.0,
+      "selected_by": 9.6,
       "in_target_squad": false
     }
   ],

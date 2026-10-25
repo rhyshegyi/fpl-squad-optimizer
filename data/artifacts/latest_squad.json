@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-24T18:17:22.563859+00:00",
+  "generated_at": "2026-10-25T11:50:34.865816+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-24T18:14:20.117615+00:00",
+    "last_fetch": "2026-10-25T11:46:48.688694+00:00",
     "average_squad_value": 995,
     "current_gw": {
       "id": 8,
@@ -14,14 +14,14 @@
       "deadline_time": "2026-10-31T11:00:00Z"
     },
     "data_health": {
-      "players_tracked": 668,
-      "players_disagreeing": 25,
+      "players_tracked": 669,
+      "players_disagreeing": 0,
       "latest_gw_on_file": 8,
-      "latest_result": "2026-10-24T14:00:00+00:00",
+      "latest_result": "2026-10-24T16:30:00+00:00",
       "gameweek_in_progress": {
         "id": 8,
         "name": "Gameweek 8",
-        "matches_played": 4,
+        "matches_played": 5,
         "matches_started": 5,
         "matches_total": 10
       },
@@ -29,8 +29,8 @@
     }
   },
   "squad": {
-    "total_cost": 999,
-    "projected_points": 55.38,
+    "total_cost": 1000,
+    "projected_points": 54.72,
     "formation": "3-4-3",
     "picks": [
       {
@@ -40,7 +40,7 @@
         "team_short": "CHE",
         "position": "MID",
         "now_cost": 80,
-        "projected_points": 4.826,
+        "projected_points": 4.451,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -88,7 +88,7 @@
         "team_short": "CHE",
         "position": "MID",
         "now_cost": 98,
-        "projected_points": 5.33,
+        "projected_points": 5.121,
         "is_starter": true,
         "is_captain": false,
         "is_vice": true
@@ -100,7 +100,7 @@
         "team_short": "CHE",
         "position": "MID",
         "now_cost": 66,
-        "projected_points": 4.387,
+        "projected_points": 4.306,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -111,7 +111,7 @@
         "team_id": 2,
         "team_short": "AVL",
         "position": "FWD",
-        "now_cost": 66,
+        "now_cost": 67,
         "projected_points": 4.255,
         "is_starter": true,
         "is_captain": false,
@@ -124,7 +124,7 @@
         "team_short": "COV",
         "position": "MID",
         "now_cost": 49,
-        "projected_points": 3.573,
+        "projected_points": 3.661,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
