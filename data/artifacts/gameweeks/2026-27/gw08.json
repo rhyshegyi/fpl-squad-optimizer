@@ -14,7 +14,7 @@
   "name": "Gameweek 8",
   "deadline": "2026-10-23T17:30:00Z",
   "frozen_at": "2026-10-23T11:55:03.341195+00:00",
-  "scored_at": "2026-10-25T21:59:38.713728+00:00",
+  "scored_at": "2026-10-26T13:21:54.573013+00:00",
   "squad": {
     "total_cost": 999,
     "projected_points": 60.54,
@@ -5561,16 +5561,16 @@
       ]
     ],
     "points_left_on_bench": 12,
-    "fpl_average": 27,
-    "fpl_highest": 102,
+    "fpl_average": 45,
+    "fpl_highest": 120,
     "scores_final": false
   },
   "accuracy": {
     "players_appeared": 303,
-    "mae": 2.016,
-    "rmse": 2.985,
-    "bias": 0.933,
-    "spearman": 0.2791
+    "mae": 2.036,
+    "rmse": 3.012,
+    "bias": 0.952,
+    "spearman": 0.2758
   },
   "misses": [
     {
