@@ -13,7 +13,7 @@
   "average_squad_value": 994,
   "name": "Gameweek 9",
   "deadline": "2026-10-31T11:00:00Z",
-  "frozen_at": "2026-10-27T12:30:08.612116+00:00",
+  "frozen_at": "2026-10-27T20:12:36.167809+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 999,
@@ -913,7 +913,7 @@
       "team_short": "BRE",
       "position": "DEF",
       "now_cost": 44,
-      "projected": 0.079
+      "projected": 0.0
     },
     {
       "player_id": 90,
@@ -1177,7 +1177,7 @@
       "team_short": "BHA",
       "position": "MID",
       "now_cost": 58,
-      "projected": 0.027
+      "projected": 0.041
     },
     {
       "player_id": 123,
@@ -1241,7 +1241,7 @@
       "team_short": "BHA",
       "position": "DEF",
       "now_cost": 48,
-      "projected": 0.059
+      "projected": 0.178
     },
     {
       "player_id": 131,
@@ -1521,7 +1521,7 @@
       "team_short": "CHE",
       "position": "FWD",
       "now_cost": 79,
-      "projected": 2.577
+      "projected": 0.0
     },
     {
       "player_id": 166,
@@ -1561,7 +1561,7 @@
       "team_short": "CHE",
       "position": "FWD",
       "now_cost": 49,
-      "projected": 0.0
+      "projected": 0.053
     },
     {
       "player_id": 171,
@@ -1785,7 +1785,7 @@
       "team_short": "CRY",
       "position": "GK",
       "now_cost": 49,
-      "projected": 0.119
+      "projected": 0.179
     },
     {
       "player_id": 199,
@@ -2825,7 +2825,7 @@
       "team_short": "BHA",
       "position": "DEF",
       "now_cost": 49,
-      "projected": 0.565
+      "projected": 0.376
     },
     {
       "player_id": 329,
@@ -3873,7 +3873,7 @@
       "team_short": "NEW",
       "position": "MID",
       "now_cost": 55,
-      "projected": 2.033
+      "projected": 1.525
     },
     {
       "player_id": 460,
