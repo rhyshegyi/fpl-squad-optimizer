@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T20:39:34.449084+00:00",
+  "generated_at": "2026-10-27T12:30:08.631297+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 5,
@@ -2187,8 +2187,8 @@
           "team_id": 13,
           "team_short": "LEE",
           "position": "DEF",
-          "now_cost": 47,
-          "projected_points": 3.381,
+          "now_cost": 48,
+          "projected_points": 3.427,
           "is_starter": true,
           "is_captain": false,
           "is_vice": false
@@ -2307,7 +2307,7 @@
       "web_name": "Tavernier",
       "team_short": "BOU",
       "position": "MID",
-      "now_cost": 63,
+      "now_cost": 64,
       "points": 52,
       "games": 8,
       "minutes": 660,
@@ -2315,8 +2315,8 @@
       "assists": 0,
       "bonus": 12,
       "ppg": 6.5,
-      "value": 8.25,
-      "selected_by": 17.5,
+      "value": 8.12,
+      "selected_by": 18.0,
       "in_target_squad": true
     },
     {
@@ -2334,7 +2334,7 @@
       "bonus": 2,
       "ppg": 6.5,
       "value": 10.2,
-      "selected_by": 6.5,
+      "selected_by": 6.6,
       "in_target_squad": false
     },
     {
@@ -2352,7 +2352,7 @@
       "bonus": 5,
       "ppg": 6.5,
       "value": 6.58,
-      "selected_by": 22.3,
+      "selected_by": 22.4,
       "in_target_squad": true
     },
     {
@@ -2370,7 +2370,7 @@
       "bonus": 14,
       "ppg": 6.38,
       "value": 5.67,
-      "selected_by": 15.3,
+      "selected_by": 15.5,
       "in_target_squad": false
     },
     {
@@ -2379,7 +2379,7 @@
       "web_name": "Bogle",
       "team_short": "LEE",
       "position": "DEF",
-      "now_cost": 47,
+      "now_cost": 48,
       "points": 50,
       "games": 8,
       "minutes": 630,
@@ -2387,7 +2387,7 @@
       "assists": 0,
       "bonus": 6,
       "ppg": 6.25,
-      "value": 10.64,
+      "value": 10.42,
       "selected_by": 11.1,
       "in_target_squad": true
     },
@@ -2442,7 +2442,7 @@
       "bonus": 9,
       "ppg": 5.88,
       "value": 5.95,
-      "selected_by": 71.0,
+      "selected_by": 70.7,
       "in_target_squad": false
     },
     {
@@ -2460,7 +2460,7 @@
       "bonus": 3,
       "ppg": 5.62,
       "value": 7.5,
-      "selected_by": 52.6,
+      "selected_by": 52.3,
       "in_target_squad": false
     },
     {
@@ -2478,7 +2478,7 @@
       "bonus": 7,
       "ppg": 5.5,
       "value": 5.5,
-      "selected_by": 38.7,
+      "selected_by": 38.6,
       "in_target_squad": false
     },
     {
@@ -2496,7 +2496,7 @@
       "bonus": 6,
       "ppg": 5.38,
       "value": 7.41,
-      "selected_by": 10.3,
+      "selected_by": 10.2,
       "in_target_squad": false
     },
     {
@@ -2514,7 +2514,7 @@
       "bonus": 2,
       "ppg": 5.38,
       "value": 8.27,
-      "selected_by": 9.5,
+      "selected_by": 9.6,
       "in_target_squad": false
     },
     {
@@ -2532,7 +2532,7 @@
       "bonus": 4,
       "ppg": 5.38,
       "value": 6.94,
-      "selected_by": 7.2,
+      "selected_by": 7.4,
       "in_target_squad": true
     },
     {
@@ -2568,7 +2568,7 @@
       "bonus": 5,
       "ppg": 5.38,
       "value": 5.44,
-      "selected_by": 21.7,
+      "selected_by": 21.6,
       "in_target_squad": false
     },
     {
@@ -2595,7 +2595,7 @@
       "web_name": "Gvardiol",
       "team_short": "MCI",
       "position": "DEF",
-      "now_cost": 58,
+      "now_cost": 57,
       "points": 42,
       "games": 8,
       "minutes": 577,
@@ -2603,7 +2603,7 @@
       "assists": 4,
       "bonus": 6,
       "ppg": 5.25,
-      "value": 7.24,
+      "value": 7.37,
       "selected_by": 27.0,
       "in_target_squad": false
     },
@@ -2622,7 +2622,7 @@
       "bonus": 6,
       "ppg": 5.25,
       "value": 6.77,
-      "selected_by": 15.1,
+      "selected_by": 15.0,
       "in_target_squad": false
     },
     {
@@ -2676,7 +2676,7 @@
       "bonus": 2,
       "ppg": 5.12,
       "value": 5.12,
-      "selected_by": 50.0,
+      "selected_by": 50.1,
       "in_target_squad": false
     },
     {
@@ -2712,8 +2712,8 @@
       "bonus": 4,
       "ppg": 5.0,
       "value": 8.89,
-      "selected_by": 2.2,
-      "in_target_squad": true
+      "selected_by": 2.3,
+      "in_target_squad": false
     },
     {
       "rank": 27,
@@ -2749,7 +2749,7 @@
       "ppg": 5.0,
       "value": 8.7,
       "selected_by": 22.5,
-      "in_target_squad": false
+      "in_target_squad": true
     },
     {
       "rank": 29,
