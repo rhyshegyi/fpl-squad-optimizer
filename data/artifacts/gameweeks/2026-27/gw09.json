@@ -13,11 +13,11 @@
   "average_squad_value": 994,
   "name": "Gameweek 9",
   "deadline": "2026-10-31T11:00:00Z",
-  "frozen_at": "2026-10-27T20:12:36.167809+00:00",
+  "frozen_at": "2026-10-28T13:18:32.843830+00:00",
   "scored_at": null,
   "squad": {
-    "total_cost": 999,
-    "projected_points": 57.55,
+    "total_cost": 1000,
+    "projected_points": 57.5,
     "formation": "3-4-3",
     "picks": [
       {
@@ -64,6 +64,18 @@
         "position": "MID",
         "now_cost": 63,
         "projected_points": 4.14,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 82,
+        "web_name": "Kelleher",
+        "team_id": 4,
+        "team_short": "BRE",
+        "position": "GK",
+        "now_cost": 50,
+        "projected_points": 3.478,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -122,7 +134,7 @@
         "team_id": 2,
         "team_short": "AVL",
         "position": "FWD",
-        "now_cost": 67,
+        "now_cost": 68,
         "projected_points": 4.637,
         "is_starter": true,
         "is_captain": false,
@@ -141,13 +153,13 @@
         "is_vice": false
       },
       {
-        "player_id": 277,
-        "web_name": "Egan",
-        "team_id": 11,
-        "team_short": "HUL",
+        "player_id": 204,
+        "web_name": "Mitchell",
+        "team_id": 8,
+        "team_short": "CRY",
         "position": "DEF",
-        "now_cost": 41,
-        "projected_points": 2.762,
+        "now_cost": 45,
+        "projected_points": 3.008,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -165,24 +177,12 @@
         "is_vice": false
       },
       {
-        "player_id": 384,
-        "web_name": "Donnarumma",
-        "team_id": 15,
-        "team_short": "MCI",
-        "position": "GK",
-        "now_cost": 55,
-        "projected_points": 3.535,
-        "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
         "player_id": 411,
         "web_name": "Haaland",
         "team_id": 15,
         "team_short": "MCI",
         "position": "FWD",
-        "now_cost": 157,
+        "now_cost": 158,
         "projected_points": 7.503,
         "is_starter": true,
         "is_captain": true,
@@ -305,7 +305,7 @@
       "team_short": "ARS",
       "position": "MID",
       "now_cost": 74,
-      "projected": 3.265
+      "projected": 2.449
     },
     {
       "player_id": 14,
@@ -329,7 +329,7 @@
       "team_short": "ARS",
       "position": "MID",
       "now_cost": 62,
-      "projected": 2.047
+      "projected": 1.535
     },
     {
       "player_id": 17,
@@ -361,7 +361,7 @@
       "team_short": "ARS",
       "position": "MID",
       "now_cost": 53,
-      "projected": 0.434
+      "projected": 0.0
     },
     {
       "player_id": 21,
@@ -1520,7 +1520,7 @@
       "web_name": "Jo\u00e3o Pedro",
       "team_short": "CHE",
       "position": "FWD",
-      "now_cost": 79,
+      "now_cost": 78,
       "projected": 0.0
     },
     {
@@ -1528,7 +1528,7 @@
       "web_name": "N.Jackson",
       "team_short": "AVL",
       "position": "FWD",
-      "now_cost": 67,
+      "now_cost": 68,
       "projected": 4.637
     },
     {
@@ -3232,7 +3232,7 @@
       "web_name": "Isak",
       "team_short": "LIV",
       "position": "FWD",
-      "now_cost": 90,
+      "now_cost": 91,
       "projected": 3.212
     },
     {
@@ -3488,7 +3488,7 @@
       "web_name": "Haaland",
       "team_short": "MCI",
       "position": "FWD",
-      "now_cost": 157,
+      "now_cost": 158,
       "projected": 7.503
     },
     {
@@ -3624,7 +3624,7 @@
       "web_name": "Cunha",
       "team_short": "MUN",
       "position": "MID",
-      "now_cost": 79,
+      "now_cost": 78,
       "projected": 2.409
     },
     {
@@ -3632,7 +3632,7 @@
       "web_name": "Rashford",
       "team_short": "MUN",
       "position": "MID",
-      "now_cost": 69,
+      "now_cost": 68,
       "projected": 0.804
     },
     {
@@ -4232,7 +4232,7 @@
       "web_name": "Vuskovic",
       "team_short": "BHA",
       "position": "DEF",
-      "now_cost": 51,
+      "now_cost": 52,
       "projected": 2.205
     },
     {
@@ -4848,8 +4848,8 @@
       "web_name": "Diomande",
       "team_short": "NFO",
       "position": "DEF",
-      "now_cost": 54,
-      "projected": 1.85
+      "now_cost": 53,
+      "projected": 1.663
     },
     {
       "player_id": 582,

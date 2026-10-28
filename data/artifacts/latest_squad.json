@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-27T20:12:04.774206+00:00",
+  "generated_at": "2026-10-28T13:18:01.508408+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-27T20:08:12.097958+00:00",
+    "last_fetch": "2026-10-28T13:14:09.642602+00:00",
     "average_squad_value": 994,
     "current_gw": {
       "id": 8,
@@ -23,8 +23,8 @@
     }
   },
   "squad": {
-    "total_cost": 999,
-    "projected_points": 57.55,
+    "total_cost": 1000,
+    "projected_points": 57.5,
     "formation": "3-4-3",
     "picks": [
       {
@@ -71,6 +71,18 @@
         "position": "MID",
         "now_cost": 63,
         "projected_points": 4.14,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 82,
+        "web_name": "Kelleher",
+        "team_id": 4,
+        "team_short": "BRE",
+        "position": "GK",
+        "now_cost": 50,
+        "projected_points": 3.478,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -129,7 +141,7 @@
         "team_id": 2,
         "team_short": "AVL",
         "position": "FWD",
-        "now_cost": 67,
+        "now_cost": 68,
         "projected_points": 4.637,
         "is_starter": true,
         "is_captain": false,
@@ -148,13 +160,13 @@
         "is_vice": false
       },
       {
-        "player_id": 277,
-        "web_name": "Egan",
-        "team_id": 11,
-        "team_short": "HUL",
+        "player_id": 204,
+        "web_name": "Mitchell",
+        "team_id": 8,
+        "team_short": "CRY",
         "position": "DEF",
-        "now_cost": 41,
-        "projected_points": 2.762,
+        "now_cost": 45,
+        "projected_points": 3.008,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -172,24 +184,12 @@
         "is_vice": false
       },
       {
-        "player_id": 384,
-        "web_name": "Donnarumma",
-        "team_id": 15,
-        "team_short": "MCI",
-        "position": "GK",
-        "now_cost": 55,
-        "projected_points": 3.535,
-        "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
         "player_id": 411,
         "web_name": "Haaland",
         "team_id": 15,
         "team_short": "MCI",
         "position": "FWD",
-        "now_cost": 157,
+        "now_cost": 158,
         "projected_points": 7.503,
         "is_starter": true,
         "is_captain": true,

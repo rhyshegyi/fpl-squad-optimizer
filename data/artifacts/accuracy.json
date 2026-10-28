@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T20:12:36.190222+00:00",
+  "generated_at": "2026-10-28T13:18:32.868005+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 5,
@@ -2098,6 +2098,18 @@
           "is_vice": false
         },
         {
+          "player_id": 82,
+          "web_name": "Kelleher",
+          "team_id": 4,
+          "team_short": "BRE",
+          "position": "GK",
+          "now_cost": 50,
+          "projected_points": 3.478,
+          "is_starter": true,
+          "is_captain": false,
+          "is_vice": false
+        },
+        {
           "player_id": 87,
           "web_name": "Ajer",
           "team_id": 4,
@@ -2151,7 +2163,7 @@
           "team_id": 2,
           "team_short": "AVL",
           "position": "FWD",
-          "now_cost": 67,
+          "now_cost": 68,
           "projected_points": 4.637,
           "is_starter": true,
           "is_captain": false,
@@ -2170,13 +2182,13 @@
           "is_vice": false
         },
         {
-          "player_id": 277,
-          "web_name": "Egan",
-          "team_id": 11,
-          "team_short": "HUL",
+          "player_id": 204,
+          "web_name": "Mitchell",
+          "team_id": 8,
+          "team_short": "CRY",
           "position": "DEF",
-          "now_cost": 41,
-          "projected_points": 2.762,
+          "now_cost": 45,
+          "projected_points": 3.008,
           "is_starter": false,
           "is_captain": false,
           "is_vice": false
@@ -2194,24 +2206,12 @@
           "is_vice": false
         },
         {
-          "player_id": 384,
-          "web_name": "Donnarumma",
-          "team_id": 15,
-          "team_short": "MCI",
-          "position": "GK",
-          "now_cost": 55,
-          "projected_points": 3.535,
-          "is_starter": true,
-          "is_captain": false,
-          "is_vice": false
-        },
-        {
           "player_id": 411,
           "web_name": "Haaland",
           "team_id": 15,
           "team_short": "MCI",
           "position": "FWD",
-          "now_cost": 157,
+          "now_cost": 158,
           "projected_points": 7.503,
           "is_starter": true,
           "is_captain": true,
@@ -2253,7 +2253,7 @@
       "web_name": "Haaland",
       "team_short": "MCI",
       "position": "FWD",
-      "now_cost": 157,
+      "now_cost": 158,
       "points": 66,
       "games": 8,
       "minutes": 709,
@@ -2261,8 +2261,8 @@
       "assists": 0,
       "bonus": 14,
       "ppg": 8.25,
-      "value": 4.2,
-      "selected_by": 78.1,
+      "value": 4.18,
+      "selected_by": 78.2,
       "in_target_squad": true
     },
     {
@@ -2316,7 +2316,7 @@
       "bonus": 12,
       "ppg": 6.5,
       "value": 8.12,
-      "selected_by": 18.6,
+      "selected_by": 19.3,
       "in_target_squad": true
     },
     {
@@ -2325,7 +2325,7 @@
       "web_name": "Vuskovic",
       "team_short": "BHA",
       "position": "DEF",
-      "now_cost": 51,
+      "now_cost": 52,
       "points": 52,
       "games": 8,
       "minutes": 707,
@@ -2333,7 +2333,7 @@
       "assists": 1,
       "bonus": 2,
       "ppg": 6.5,
-      "value": 10.2,
+      "value": 10.0,
       "selected_by": 6.6,
       "in_target_squad": false
     },
@@ -2352,7 +2352,7 @@
       "bonus": 5,
       "ppg": 6.5,
       "value": 6.58,
-      "selected_by": 22.6,
+      "selected_by": 22.7,
       "in_target_squad": true
     },
     {
@@ -2361,7 +2361,7 @@
       "web_name": "Isak",
       "team_short": "LIV",
       "position": "FWD",
-      "now_cost": 90,
+      "now_cost": 91,
       "points": 51,
       "games": 8,
       "minutes": 567,
@@ -2369,8 +2369,8 @@
       "assists": 0,
       "bonus": 14,
       "ppg": 6.38,
-      "value": 5.67,
-      "selected_by": 16.2,
+      "value": 5.6,
+      "selected_by": 16.8,
       "in_target_squad": false
     },
     {
@@ -2388,7 +2388,7 @@
       "bonus": 6,
       "ppg": 6.25,
       "value": 10.42,
-      "selected_by": 11.1,
+      "selected_by": 11.2,
       "in_target_squad": true
     },
     {
@@ -2424,7 +2424,7 @@
       "bonus": 7,
       "ppg": 6.0,
       "value": 7.74,
-      "selected_by": 18.4,
+      "selected_by": 18.5,
       "in_target_squad": false
     },
     {
@@ -2433,7 +2433,7 @@
       "web_name": "Jo\u00e3o Pedro",
       "team_short": "CHE",
       "position": "FWD",
-      "now_cost": 79,
+      "now_cost": 78,
       "points": 47,
       "games": 8,
       "minutes": 521,
@@ -2441,8 +2441,8 @@
       "assists": 3,
       "bonus": 9,
       "ppg": 5.88,
-      "value": 5.95,
-      "selected_by": 67.7,
+      "value": 6.03,
+      "selected_by": 64.8,
       "in_target_squad": false
     },
     {
@@ -2460,7 +2460,7 @@
       "bonus": 3,
       "ppg": 5.62,
       "value": 7.5,
-      "selected_by": 51.9,
+      "selected_by": 51.5,
       "in_target_squad": false
     },
     {
@@ -2478,7 +2478,7 @@
       "bonus": 7,
       "ppg": 5.5,
       "value": 5.5,
-      "selected_by": 38.5,
+      "selected_by": 38.3,
       "in_target_squad": false
     },
     {
@@ -2514,7 +2514,7 @@
       "bonus": 2,
       "ppg": 5.38,
       "value": 8.27,
-      "selected_by": 9.6,
+      "selected_by": 9.7,
       "in_target_squad": false
     },
     {
@@ -2532,7 +2532,7 @@
       "bonus": 4,
       "ppg": 5.38,
       "value": 6.94,
-      "selected_by": 8.0,
+      "selected_by": 8.7,
       "in_target_squad": true
     },
     {
@@ -2586,7 +2586,7 @@
       "bonus": 4,
       "ppg": 5.25,
       "value": 7.78,
-      "selected_by": 4.5,
+      "selected_by": 4.6,
       "in_target_squad": false
     },
     {
@@ -2604,7 +2604,7 @@
       "bonus": 6,
       "ppg": 5.25,
       "value": 7.37,
-      "selected_by": 26.9,
+      "selected_by": 26.8,
       "in_target_squad": false
     },
     {
@@ -2694,7 +2694,7 @@
       "bonus": 3,
       "ppg": 5.0,
       "value": 6.56,
-      "selected_by": 7.5,
+      "selected_by": 7.6,
       "in_target_squad": false
     },
     {
@@ -2748,8 +2748,8 @@
       "bonus": 2,
       "ppg": 5.0,
       "value": 8.7,
-      "selected_by": 22.5,
-      "in_target_squad": true
+      "selected_by": 22.4,
+      "in_target_squad": false
     },
     {
       "rank": 29,
@@ -2766,7 +2766,7 @@
       "bonus": 5,
       "ppg": 4.88,
       "value": 8.3,
-      "selected_by": 20.2,
+      "selected_by": 20.3,
       "in_target_squad": false
     },
     {
@@ -2784,7 +2784,7 @@
       "bonus": 5,
       "ppg": 4.88,
       "value": 5.27,
-      "selected_by": 12.6,
+      "selected_by": 12.5,
       "in_target_squad": false
     }
   ],
