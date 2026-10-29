@@ -13,7 +13,7 @@
   "average_squad_value": 994,
   "name": "Gameweek 9",
   "deadline": "2026-10-31T11:00:00Z",
-  "frozen_at": "2026-10-28T20:27:16.041102+00:00",
+  "frozen_at": "2026-10-29T13:22:47.073867+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -624,7 +624,7 @@
       "web_name": "Manzambi",
       "team_short": "AVL",
       "position": "MID",
-      "now_cost": 60,
+      "now_cost": 61,
       "projected": 3.446
     },
     {
@@ -1801,7 +1801,7 @@
       "team_short": "CHE",
       "position": "DEF",
       "now_cost": 59,
-      "projected": 3.092
+      "projected": 2.319
     },
     {
       "player_id": 201,
@@ -4720,8 +4720,8 @@
       "web_name": "M.Sangar\u00e9",
       "team_short": "BRE",
       "position": "MID",
-      "now_cost": 55,
-      "projected": 2.644
+      "now_cost": 54,
+      "projected": 2.637
     },
     {
       "player_id": 566,
@@ -5401,7 +5401,7 @@
       "team_short": "FUL",
       "position": "DEF",
       "now_cost": 45,
-      "projected": 2.343
+      "projected": 1.757
     },
     {
       "player_id": 651,
