@@ -13,7 +13,7 @@
   "average_squad_value": 993,
   "name": "Gameweek 9",
   "deadline": "2026-10-31T11:00:00Z",
-  "frozen_at": "2026-10-29T20:26:30.081840+00:00",
+  "frozen_at": "2026-10-30T13:14:16.249588+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -264,7 +264,7 @@
       "web_name": "Calafiori",
       "team_short": "ARS",
       "position": "DEF",
-      "now_cost": 60,
+      "now_cost": 59,
       "projected": 1.599
     },
     {
@@ -408,7 +408,7 @@
       "web_name": "Havertz",
       "team_short": "ARS",
       "position": "FWD",
-      "now_cost": 75,
+      "now_cost": 74,
       "projected": 1.779
     },
     {
@@ -832,7 +832,7 @@
       "web_name": "Evanilson",
       "team_short": "BOU",
       "position": "FWD",
-      "now_cost": 62,
+      "now_cost": 63,
       "projected": 4.11
     },
     {
@@ -1353,7 +1353,7 @@
       "team_short": "CHE",
       "position": "DEF",
       "now_cost": 48,
-      "projected": 0.544
+      "projected": 0.408
     },
     {
       "player_id": 145,
@@ -1385,7 +1385,7 @@
       "team_short": "CHE",
       "position": "DEF",
       "now_cost": 45,
-      "projected": 1.632
+      "projected": 1.224
     },
     {
       "player_id": 149,
@@ -1473,7 +1473,7 @@
       "team_short": "CHE",
       "position": "MID",
       "now_cost": 53,
-      "projected": 2.481
+      "projected": 1.861
     },
     {
       "player_id": 160,
@@ -1801,7 +1801,7 @@
       "team_short": "CHE",
       "position": "DEF",
       "now_cost": 59,
-      "projected": 2.319
+      "projected": 1.546
     },
     {
       "player_id": 201,
@@ -2297,7 +2297,7 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 53,
-      "projected": 0.303
+      "projected": 0.405
     },
     {
       "player_id": 263,
@@ -3921,7 +3921,7 @@
       "team_short": "NEW",
       "position": "FWD",
       "now_cost": 58,
-      "projected": 2.229
+      "projected": 1.672
     },
     {
       "player_id": 466,
@@ -4656,7 +4656,7 @@
       "web_name": "Tzolis",
       "team_short": "ARS",
       "position": "MID",
-      "now_cost": 62,
+      "now_cost": 61,
       "projected": 0.0
     },
     {
@@ -4816,7 +4816,7 @@
       "web_name": "Tomiyasu",
       "team_short": "CRY",
       "position": "DEF",
-      "now_cost": 44,
+      "now_cost": 43,
       "projected": 0.0
     },
     {
@@ -5401,7 +5401,7 @@
       "team_short": "FUL",
       "position": "DEF",
       "now_cost": 45,
-      "projected": 1.757
+      "projected": 2.343
     },
     {
       "player_id": 651,

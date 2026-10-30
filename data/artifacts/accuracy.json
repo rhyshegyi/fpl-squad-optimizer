@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T20:26:30.108442+00:00",
+  "generated_at": "2026-10-30T13:14:16.263035+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 5,
@@ -2262,7 +2262,7 @@
       "bonus": 14,
       "ppg": 8.25,
       "value": 4.18,
-      "selected_by": 78.4,
+      "selected_by": 78.5,
       "in_target_squad": true
     },
     {
@@ -2298,7 +2298,7 @@
       "bonus": 9,
       "ppg": 7.25,
       "value": 9.35,
-      "selected_by": 46.1,
+      "selected_by": 45.9,
       "in_target_squad": true
     },
     {
@@ -2316,7 +2316,7 @@
       "bonus": 12,
       "ppg": 6.5,
       "value": 8.12,
-      "selected_by": 20.7,
+      "selected_by": 22.0,
       "in_target_squad": true
     },
     {
@@ -2352,7 +2352,7 @@
       "bonus": 5,
       "ppg": 6.5,
       "value": 6.58,
-      "selected_by": 23.1,
+      "selected_by": 23.4,
       "in_target_squad": true
     },
     {
@@ -2370,7 +2370,7 @@
       "bonus": 14,
       "ppg": 6.38,
       "value": 5.6,
-      "selected_by": 17.6,
+      "selected_by": 18.2,
       "in_target_squad": false
     },
     {
@@ -2388,7 +2388,7 @@
       "bonus": 6,
       "ppg": 6.25,
       "value": 10.42,
-      "selected_by": 11.2,
+      "selected_by": 11.3,
       "in_target_squad": true
     },
     {
@@ -2406,7 +2406,7 @@
       "bonus": 6,
       "ppg": 6.12,
       "value": 7.9,
-      "selected_by": 45.7,
+      "selected_by": 45.6,
       "in_target_squad": true
     },
     {
@@ -2424,7 +2424,7 @@
       "bonus": 7,
       "ppg": 6.0,
       "value": 7.74,
-      "selected_by": 18.6,
+      "selected_by": 18.7,
       "in_target_squad": false
     },
     {
@@ -2442,7 +2442,7 @@
       "bonus": 9,
       "ppg": 5.88,
       "value": 6.03,
-      "selected_by": 60.6,
+      "selected_by": 57.0,
       "in_target_squad": false
     },
     {
@@ -2451,7 +2451,7 @@
       "web_name": "Calafiori",
       "team_short": "ARS",
       "position": "DEF",
-      "now_cost": 60,
+      "now_cost": 59,
       "points": 45,
       "games": 8,
       "minutes": 609,
@@ -2459,8 +2459,8 @@
       "assists": 2,
       "bonus": 3,
       "ppg": 5.62,
-      "value": 7.5,
-      "selected_by": 50.4,
+      "value": 7.63,
+      "selected_by": 49.5,
       "in_target_squad": false
     },
     {
@@ -2478,7 +2478,7 @@
       "bonus": 7,
       "ppg": 5.5,
       "value": 5.5,
-      "selected_by": 38.0,
+      "selected_by": 37.8,
       "in_target_squad": false
     },
     {
@@ -2496,7 +2496,7 @@
       "bonus": 6,
       "ppg": 5.38,
       "value": 7.41,
-      "selected_by": 10.2,
+      "selected_by": 10.1,
       "in_target_squad": false
     },
     {
@@ -2514,7 +2514,7 @@
       "bonus": 2,
       "ppg": 5.38,
       "value": 8.27,
-      "selected_by": 9.8,
+      "selected_by": 10.0,
       "in_target_squad": false
     },
     {
@@ -2523,7 +2523,7 @@
       "web_name": "Evanilson",
       "team_short": "BOU",
       "position": "FWD",
-      "now_cost": 62,
+      "now_cost": 63,
       "points": 43,
       "games": 8,
       "minutes": 678,
@@ -2531,8 +2531,8 @@
       "assists": 4,
       "bonus": 4,
       "ppg": 5.38,
-      "value": 6.94,
-      "selected_by": 10.0,
+      "value": 6.83,
+      "selected_by": 11.1,
       "in_target_squad": true
     },
     {
@@ -2568,7 +2568,7 @@
       "bonus": 5,
       "ppg": 5.38,
       "value": 5.44,
-      "selected_by": 21.4,
+      "selected_by": 21.3,
       "in_target_squad": false
     },
     {
@@ -2586,7 +2586,7 @@
       "bonus": 4,
       "ppg": 5.25,
       "value": 7.78,
-      "selected_by": 4.6,
+      "selected_by": 4.7,
       "in_target_squad": false
     },
     {
@@ -2604,7 +2604,7 @@
       "bonus": 6,
       "ppg": 5.25,
       "value": 7.37,
-      "selected_by": 26.7,
+      "selected_by": 26.6,
       "in_target_squad": false
     },
     {
@@ -2676,8 +2676,8 @@
       "bonus": 2,
       "ppg": 5.12,
       "value": 5.12,
-      "selected_by": 50.3,
-      "in_target_squad": false
+      "selected_by": 50.4,
+      "in_target_squad": true
     },
     {
       "rank": 25,
@@ -2713,7 +2713,7 @@
       "ppg": 5.0,
       "value": 8.89,
       "selected_by": 2.3,
-      "in_target_squad": false
+      "in_target_squad": true
     },
     {
       "rank": 27,
@@ -2748,8 +2748,8 @@
       "bonus": 2,
       "ppg": 5.0,
       "value": 8.7,
-      "selected_by": 22.3,
-      "in_target_squad": false
+      "selected_by": 22.2,
+      "in_target_squad": true
     },
     {
       "rank": 29,
@@ -2766,8 +2766,8 @@
       "bonus": 5,
       "ppg": 4.88,
       "value": 8.3,
-      "selected_by": 20.5,
-      "in_target_squad": false
+      "selected_by": 20.7,
+      "in_target_squad": true
     },
     {
       "rank": 30,
@@ -2784,7 +2784,7 @@
       "bonus": 5,
       "ppg": 4.88,
       "value": 5.27,
-      "selected_by": 12.3,
+      "selected_by": 12.2,
       "in_target_squad": false
     }
   ],
