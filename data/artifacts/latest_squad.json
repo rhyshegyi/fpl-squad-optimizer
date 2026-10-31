@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-31T12:50:32.273082+00:00",
+  "generated_at": "2026-10-31T19:25:26.877254+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-31T12:48:51.984054+00:00",
-    "average_squad_value": 993,
+    "last_fetch": "2026-10-31T19:22:26.979587+00:00",
+    "average_squad_value": 992,
     "current_gw": {
       "id": 9,
       "name": "Gameweek 9"
@@ -15,23 +15,23 @@
     },
     "data_health": {
       "players_tracked": 669,
-      "players_disagreeing": 22,
-      "latest_gw_on_file": 8,
-      "latest_result": "2026-10-25T16:30:00+00:00",
+      "players_disagreeing": 31,
+      "latest_gw_on_file": 9,
+      "latest_result": "2026-10-31T15:00:00+00:00",
       "gameweek_in_progress": {
         "id": 9,
         "name": "Gameweek 9",
-        "matches_played": 0,
-        "matches_started": 1,
+        "matches_played": 6,
+        "matches_started": 7,
         "matches_total": 10
       },
       "bonus_pending": null
     }
   },
   "squad": {
-    "total_cost": 996,
-    "projected_points": 59.22,
-    "formation": "3-4-3",
+    "total_cost": 998,
+    "projected_points": 58.01,
+    "formation": "3-5-2",
     "picks": [
       {
         "player_id": 4,
@@ -76,19 +76,31 @@
         "team_short": "BOU",
         "position": "DEF",
         "now_cost": 55,
-        "projected_points": 3.483,
+        "projected_points": 3.49,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
       {
-        "player_id": 79,
-        "web_name": "Evanilson",
+        "player_id": 61,
+        "web_name": "Truffert",
         "team_id": 3,
         "team_short": "BOU",
-        "position": "FWD",
-        "now_cost": 63,
-        "projected_points": 4.311,
+        "position": "DEF",
+        "now_cost": 54,
+        "projected_points": 3.572,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 68,
+        "web_name": "Tavernier",
+        "team_id": 3,
+        "team_short": "BOU",
+        "position": "MID",
+        "now_cost": 65,
+        "projected_points": 4.273,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -100,19 +112,7 @@
         "team_short": "BHA",
         "position": "DEF",
         "now_cost": 53,
-        "projected_points": 3.727,
-        "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 124,
-        "web_name": "Gro\u00df",
-        "team_id": 5,
-        "team_short": "BHA",
-        "position": "MID",
-        "now_cost": 62,
-        "projected_points": 4.606,
+        "projected_points": 3.936,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -125,7 +125,7 @@
         "position": "GK",
         "now_cost": 55,
         "projected_points": 3.823,
-        "is_starter": true,
+        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
@@ -161,6 +161,18 @@
         "position": "MID",
         "now_cost": 54,
         "projected_points": 4.158,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 346,
+        "web_name": "Calvert-Lewin",
+        "team_id": 13,
+        "team_short": "LEE",
+        "position": "FWD",
+        "now_cost": 61,
+        "projected_points": 3.825,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -172,7 +184,7 @@
         "team_short": "MCI",
         "position": "FWD",
         "now_cost": 158,
-        "projected_points": 6.885,
+        "projected_points": 6.46,
         "is_starter": true,
         "is_captain": true,
         "is_vice": false
@@ -184,8 +196,8 @@
         "team_short": "MUN",
         "position": "GK",
         "now_cost": 48,
-        "projected_points": 3.659,
-        "is_starter": false,
+        "projected_points": 3.884,
+        "is_starter": true,
         "is_captain": false,
         "is_vice": false
       },
@@ -196,20 +208,8 @@
         "team_short": "MUN",
         "position": "MID",
         "now_cost": 79,
-        "projected_points": 5.472,
+        "projected_points": 5.329,
         "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 449,
-        "web_name": "Hall",
-        "team_id": 17,
-        "team_short": "NEW",
-        "position": "DEF",
-        "now_cost": 53,
-        "projected_points": 3.489,
-        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       }
