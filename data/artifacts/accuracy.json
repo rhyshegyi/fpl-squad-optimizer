@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T20:01:41.445481+00:00",
+  "generated_at": "2026-10-31T12:50:44.907501+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 5,
@@ -2230,6 +2230,193 @@
           "is_vice": false
         }
       ]
+    },
+    {
+      "gw": 10,
+      "name": "Gameweek 10",
+      "deadline": "2026-11-06T18:30:00Z",
+      "squad": [
+        {
+          "player_id": 4,
+          "web_name": "Gabriel",
+          "team_id": 1,
+          "team_short": "ARS",
+          "position": "DEF",
+          "now_cost": 80,
+          "projected_points": 4.624,
+          "is_starter": true,
+          "is_captain": false,
+          "is_vice": false
+        },
+        {
+          "player_id": 15,
+          "web_name": "\u00d8degaard",
+          "team_id": 1,
+          "team_short": "ARS",
+          "position": "MID",
+          "now_cost": 67,
+          "projected_points": 6.025,
+          "is_starter": true,
+          "is_captain": false,
+          "is_vice": true
+        },
+        {
+          "player_id": 31,
+          "web_name": "Konsa",
+          "team_id": 1,
+          "team_short": "ARS",
+          "position": "DEF",
+          "now_cost": 47,
+          "projected_points": 3.72,
+          "is_starter": true,
+          "is_captain": false,
+          "is_vice": false
+        },
+        {
+          "player_id": 60,
+          "web_name": "Hill",
+          "team_id": 3,
+          "team_short": "BOU",
+          "position": "DEF",
+          "now_cost": 55,
+          "projected_points": 3.483,
+          "is_starter": false,
+          "is_captain": false,
+          "is_vice": false
+        },
+        {
+          "player_id": 79,
+          "web_name": "Evanilson",
+          "team_id": 3,
+          "team_short": "BOU",
+          "position": "FWD",
+          "now_cost": 63,
+          "projected_points": 4.311,
+          "is_starter": true,
+          "is_captain": false,
+          "is_vice": false
+        },
+        {
+          "player_id": 115,
+          "web_name": "De Cuyper",
+          "team_id": 5,
+          "team_short": "BHA",
+          "position": "DEF",
+          "now_cost": 53,
+          "projected_points": 3.727,
+          "is_starter": true,
+          "is_captain": false,
+          "is_vice": false
+        },
+        {
+          "player_id": 124,
+          "web_name": "Gro\u00df",
+          "team_id": 5,
+          "team_short": "BHA",
+          "position": "MID",
+          "now_cost": 62,
+          "projected_points": 4.606,
+          "is_starter": true,
+          "is_captain": false,
+          "is_vice": false
+        },
+        {
+          "player_id": 226,
+          "web_name": "Pickford",
+          "team_id": 9,
+          "team_short": "EVE",
+          "position": "GK",
+          "now_cost": 55,
+          "projected_points": 3.823,
+          "is_starter": true,
+          "is_captain": false,
+          "is_vice": false
+        },
+        {
+          "player_id": 236,
+          "web_name": "Dewsbury-Hall",
+          "team_id": 9,
+          "team_short": "EVE",
+          "position": "MID",
+          "now_cost": 66,
+          "projected_points": 4.852,
+          "is_starter": true,
+          "is_captain": false,
+          "is_vice": false
+        },
+        {
+          "player_id": 249,
+          "web_name": "Barry",
+          "team_id": 9,
+          "team_short": "EVE",
+          "position": "FWD",
+          "now_cost": 56,
+          "projected_points": 4.286,
+          "is_starter": true,
+          "is_captain": false,
+          "is_vice": false
+        },
+        {
+          "player_id": 261,
+          "web_name": "Iwobi",
+          "team_id": 10,
+          "team_short": "FUL",
+          "position": "MID",
+          "now_cost": 54,
+          "projected_points": 4.158,
+          "is_starter": false,
+          "is_captain": false,
+          "is_vice": false
+        },
+        {
+          "player_id": 411,
+          "web_name": "Haaland",
+          "team_id": 15,
+          "team_short": "MCI",
+          "position": "FWD",
+          "now_cost": 158,
+          "projected_points": 6.885,
+          "is_starter": true,
+          "is_captain": true,
+          "is_vice": false
+        },
+        {
+          "player_id": 412,
+          "web_name": "Lammens",
+          "team_id": 16,
+          "team_short": "MUN",
+          "position": "GK",
+          "now_cost": 48,
+          "projected_points": 3.659,
+          "is_starter": false,
+          "is_captain": false,
+          "is_vice": false
+        },
+        {
+          "player_id": 427,
+          "web_name": "Mbeumo",
+          "team_id": 16,
+          "team_short": "MUN",
+          "position": "MID",
+          "now_cost": 79,
+          "projected_points": 5.472,
+          "is_starter": true,
+          "is_captain": false,
+          "is_vice": false
+        },
+        {
+          "player_id": 449,
+          "web_name": "Hall",
+          "team_id": 17,
+          "team_short": "NEW",
+          "position": "DEF",
+          "now_cost": 53,
+          "projected_points": 3.489,
+          "is_starter": false,
+          "is_captain": false,
+          "is_vice": false
+        }
+      ]
     }
   ],
   "seasons": [
@@ -2262,7 +2449,7 @@
       "bonus": 14,
       "ppg": 8.25,
       "value": 4.18,
-      "selected_by": 78.6,
+      "selected_by": 78.9,
       "in_target_squad": true
     },
     {
@@ -2280,7 +2467,7 @@
       "bonus": 8,
       "ppg": 7.5,
       "value": 11.32,
-      "selected_by": 42.5,
+      "selected_by": 43.6,
       "in_target_squad": true
     },
     {
@@ -2298,7 +2485,7 @@
       "bonus": 9,
       "ppg": 7.25,
       "value": 9.35,
-      "selected_by": 45.8,
+      "selected_by": 46.7,
       "in_target_squad": true
     },
     {
@@ -2307,7 +2494,7 @@
       "web_name": "Tavernier",
       "team_short": "BOU",
       "position": "MID",
-      "now_cost": 64,
+      "now_cost": 65,
       "points": 52,
       "games": 8,
       "minutes": 660,
@@ -2315,8 +2502,8 @@
       "assists": 0,
       "bonus": 12,
       "ppg": 6.5,
-      "value": 8.12,
-      "selected_by": 23.3,
+      "value": 8.0,
+      "selected_by": 25.3,
       "in_target_squad": true
     },
     {
@@ -2334,7 +2521,7 @@
       "bonus": 2,
       "ppg": 6.5,
       "value": 10.0,
-      "selected_by": 6.7,
+      "selected_by": 6.9,
       "in_target_squad": false
     },
     {
@@ -2343,7 +2530,7 @@
       "web_name": "Gabriel",
       "team_short": "ARS",
       "position": "DEF",
-      "now_cost": 79,
+      "now_cost": 80,
       "points": 52,
       "games": 8,
       "minutes": 720,
@@ -2351,8 +2538,8 @@
       "assists": 0,
       "bonus": 5,
       "ppg": 6.5,
-      "value": 6.58,
-      "selected_by": 23.7,
+      "value": 6.5,
+      "selected_by": 23.8,
       "in_target_squad": true
     },
     {
@@ -2370,7 +2557,7 @@
       "bonus": 14,
       "ppg": 6.38,
       "value": 5.6,
-      "selected_by": 18.8,
+      "selected_by": 20.0,
       "in_target_squad": false
     },
     {
@@ -2388,7 +2575,7 @@
       "bonus": 6,
       "ppg": 6.25,
       "value": 10.42,
-      "selected_by": 11.3,
+      "selected_by": 11.5,
       "in_target_squad": true
     },
     {
@@ -2406,7 +2593,7 @@
       "bonus": 6,
       "ppg": 6.12,
       "value": 7.9,
-      "selected_by": 45.6,
+      "selected_by": 46.2,
       "in_target_squad": true
     },
     {
@@ -2424,7 +2611,7 @@
       "bonus": 7,
       "ppg": 6.0,
       "value": 7.74,
-      "selected_by": 18.8,
+      "selected_by": 18.9,
       "in_target_squad": false
     },
     {
@@ -2442,7 +2629,7 @@
       "bonus": 9,
       "ppg": 5.88,
       "value": 6.03,
-      "selected_by": 53.3,
+      "selected_by": 46.3,
       "in_target_squad": false
     },
     {
@@ -2460,7 +2647,7 @@
       "bonus": 3,
       "ppg": 5.62,
       "value": 7.63,
-      "selected_by": 48.5,
+      "selected_by": 48.3,
       "in_target_squad": false
     },
     {
@@ -2478,7 +2665,7 @@
       "bonus": 7,
       "ppg": 5.5,
       "value": 5.5,
-      "selected_by": 37.5,
+      "selected_by": 37.4,
       "in_target_squad": false
     },
     {
@@ -2496,8 +2683,8 @@
       "bonus": 6,
       "ppg": 5.38,
       "value": 7.41,
-      "selected_by": 10.1,
-      "in_target_squad": false
+      "selected_by": 10.3,
+      "in_target_squad": true
     },
     {
       "rank": 15,
@@ -2532,7 +2719,7 @@
       "bonus": 4,
       "ppg": 5.38,
       "value": 6.83,
-      "selected_by": 12.3,
+      "selected_by": 14.3,
       "in_target_squad": true
     },
     {
@@ -2550,7 +2737,7 @@
       "bonus": 1,
       "ppg": 5.38,
       "value": 8.43,
-      "selected_by": 6.0,
+      "selected_by": 6.1,
       "in_target_squad": false
     },
     {
@@ -2569,7 +2756,7 @@
       "ppg": 5.38,
       "value": 5.44,
       "selected_by": 21.2,
-      "in_target_squad": false
+      "in_target_squad": true
     },
     {
       "rank": 19,
@@ -2586,7 +2773,7 @@
       "bonus": 4,
       "ppg": 5.25,
       "value": 7.78,
-      "selected_by": 4.7,
+      "selected_by": 4.8,
       "in_target_squad": false
     },
     {
@@ -2604,7 +2791,7 @@
       "bonus": 6,
       "ppg": 5.25,
       "value": 7.37,
-      "selected_by": 26.5,
+      "selected_by": 26.6,
       "in_target_squad": false
     },
     {
@@ -2622,7 +2809,7 @@
       "bonus": 6,
       "ppg": 5.25,
       "value": 6.77,
-      "selected_by": 14.9,
+      "selected_by": 14.8,
       "in_target_squad": false
     },
     {
@@ -2640,7 +2827,7 @@
       "bonus": 8,
       "ppg": 5.25,
       "value": 8.4,
-      "selected_by": 6.2,
+      "selected_by": 6.3,
       "in_target_squad": false
     },
     {
@@ -2658,8 +2845,8 @@
       "bonus": 6,
       "ppg": 5.25,
       "value": 8.94,
-      "selected_by": 14.4,
-      "in_target_squad": false
+      "selected_by": 14.2,
+      "in_target_squad": true
     },
     {
       "rank": 24,
@@ -2667,7 +2854,7 @@
       "web_name": "Rogers",
       "team_short": "CHE",
       "position": "MID",
-      "now_cost": 80,
+      "now_cost": 81,
       "points": 41,
       "games": 8,
       "minutes": 700,
@@ -2675,8 +2862,8 @@
       "assists": 1,
       "bonus": 2,
       "ppg": 5.12,
-      "value": 5.12,
-      "selected_by": 50.6,
+      "value": 5.06,
+      "selected_by": 51.0,
       "in_target_squad": true
     },
     {
@@ -2712,8 +2899,8 @@
       "bonus": 4,
       "ppg": 5.0,
       "value": 8.89,
-      "selected_by": 2.3,
-      "in_target_squad": true
+      "selected_by": 2.4,
+      "in_target_squad": false
     },
     {
       "rank": 27,
@@ -2730,7 +2917,7 @@
       "bonus": 6,
       "ppg": 5.0,
       "value": 7.55,
-      "selected_by": 20.5,
+      "selected_by": 20.4,
       "in_target_squad": false
     },
     {
@@ -2748,8 +2935,8 @@
       "bonus": 2,
       "ppg": 5.0,
       "value": 8.7,
-      "selected_by": 22.1,
-      "in_target_squad": true
+      "selected_by": 22.4,
+      "in_target_squad": false
     },
     {
       "rank": 29,
@@ -2766,7 +2953,7 @@
       "bonus": 5,
       "ppg": 4.88,
       "value": 8.3,
-      "selected_by": 20.9,
+      "selected_by": 21.7,
       "in_target_squad": true
     },
     {
@@ -2784,7 +2971,7 @@
       "bonus": 5,
       "ppg": 4.88,
       "value": 5.27,
-      "selected_by": 12.1,
+      "selected_by": 11.9,
       "in_target_squad": false
     }
   ],
