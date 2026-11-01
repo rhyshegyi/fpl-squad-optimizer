@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-31T19:25:26.877254+00:00",
+  "generated_at": "2026-11-01T13:41:36.494890+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-31T19:22:26.979587+00:00",
-    "average_squad_value": 992,
+    "last_fetch": "2026-11-01T13:37:45.577022+00:00",
+    "average_squad_value": 993,
     "current_gw": {
       "id": 9,
       "name": "Gameweek 9"
@@ -14,23 +14,23 @@
       "deadline_time": "2026-11-06T18:30:00Z"
     },
     "data_health": {
-      "players_tracked": 669,
-      "players_disagreeing": 31,
+      "players_tracked": 670,
+      "players_disagreeing": 0,
       "latest_gw_on_file": 9,
-      "latest_result": "2026-10-31T15:00:00+00:00",
+      "latest_result": "2026-10-31T20:00:00+00:00",
       "gameweek_in_progress": {
         "id": 9,
         "name": "Gameweek 9",
-        "matches_played": 6,
-        "matches_started": 7,
+        "matches_played": 8,
+        "matches_started": 8,
         "matches_total": 10
       },
       "bonus_pending": null
     }
   },
   "squad": {
-    "total_cost": 998,
-    "projected_points": 58.01,
+    "total_cost": 1000,
+    "projected_points": 57.9,
     "formation": "3-5-2",
     "picks": [
       {
@@ -99,8 +99,8 @@
         "team_id": 3,
         "team_short": "BOU",
         "position": "MID",
-        "now_cost": 65,
-        "projected_points": 4.273,
+        "now_cost": 66,
+        "projected_points": 4.419,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -111,9 +111,21 @@
         "team_id": 5,
         "team_short": "BHA",
         "position": "DEF",
-        "now_cost": 53,
-        "projected_points": 3.936,
+        "now_cost": 54,
+        "projected_points": 3.946,
         "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 138,
+        "web_name": "Kostoulas",
+        "team_id": 5,
+        "team_short": "BHA",
+        "position": "FWD",
+        "now_cost": 58,
+        "projected_points": 3.824,
+        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
@@ -154,37 +166,13 @@
         "is_vice": false
       },
       {
-        "player_id": 261,
-        "web_name": "Iwobi",
-        "team_id": 10,
-        "team_short": "FUL",
-        "position": "MID",
-        "now_cost": 54,
-        "projected_points": 4.158,
-        "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 346,
-        "web_name": "Calvert-Lewin",
-        "team_id": 13,
-        "team_short": "LEE",
-        "position": "FWD",
-        "now_cost": 61,
-        "projected_points": 3.825,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
         "player_id": 411,
         "web_name": "Haaland",
         "team_id": 15,
         "team_short": "MCI",
         "position": "FWD",
         "now_cost": 158,
-        "projected_points": 6.46,
+        "projected_points": 6.35,
         "is_starter": true,
         "is_captain": true,
         "is_vice": false
@@ -209,6 +197,18 @@
         "position": "MID",
         "now_cost": 79,
         "projected_points": 5.329,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 542,
+        "web_name": "E.Le F\u00e9e",
+        "team_id": 20,
+        "team_short": "SUN",
+        "position": "MID",
+        "now_cost": 57,
+        "projected_points": 4.11,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false

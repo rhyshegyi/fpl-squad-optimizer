@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-31T19:25:26.877254+00:00",
+  "generated_at": "2026-11-01T13:41:36.494890+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-10-31T19:22:26.979587+00:00",
-    "average_squad_value": 992,
+    "last_fetch": "2026-11-01T13:37:45.577022+00:00",
+    "average_squad_value": 993,
     "current_gw": {
       "id": 9,
       "name": "Gameweek 9"
@@ -14,15 +14,15 @@
       "deadline_time": "2026-11-06T18:30:00Z"
     },
     "data_health": {
-      "players_tracked": 669,
-      "players_disagreeing": 31,
+      "players_tracked": 670,
+      "players_disagreeing": 0,
       "latest_gw_on_file": 9,
-      "latest_result": "2026-10-31T15:00:00+00:00",
+      "latest_result": "2026-10-31T20:00:00+00:00",
       "gameweek_in_progress": {
         "id": 9,
         "name": "Gameweek 9",
-        "matches_played": 6,
-        "matches_started": 7,
+        "matches_played": 8,
+        "matches_started": 8,
         "matches_total": 10
       },
       "bonus_pending": null
@@ -53,7 +53,7 @@
       "opp_short": "HUL",
       "is_home": true,
       "fdr": 2,
-      "target_points": 4.276
+      "target_points": 4.274
     },
     {
       "player_id": 2,
@@ -119,7 +119,7 @@
       "season_ppg": 6.5,
       "season_points": 52,
       "season_minutes": 720,
-      "selected_by": 23.9,
+      "selected_by": 24.1,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 8,
@@ -131,7 +131,7 @@
       "opp_short": "HUL",
       "is_home": true,
       "fdr": 2,
-      "target_points": 4.682
+      "target_points": 4.683
     },
     {
       "player_id": 5,
@@ -209,7 +209,7 @@
       "opp_short": "HUL",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.181
+      "target_points": 2.177
     },
     {
       "player_id": 8,
@@ -223,7 +223,7 @@
       "season_ppg": 5.62,
       "season_points": 45,
       "season_minutes": 609,
-      "selected_by": 48.1,
+      "selected_by": 47.8,
       "status": "d",
       "chance_next_round": 75,
       "gws_played": 8,
@@ -235,7 +235,7 @@
       "opp_short": "HUL",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.934
+      "target_points": 2.935
     },
     {
       "player_id": 9,
@@ -287,7 +287,7 @@
       "opp_short": "HUL",
       "is_home": true,
       "fdr": 2,
-      "target_points": 3.799
+      "target_points": 3.8
     },
     {
       "player_id": 11,
@@ -313,7 +313,7 @@
       "opp_short": "HUL",
       "is_home": true,
       "fdr": 2,
-      "target_points": 1.029
+      "target_points": 1.03
     },
     {
       "player_id": 12,
@@ -327,7 +327,7 @@
       "season_ppg": 4.62,
       "season_points": 37,
       "season_minutes": 596,
-      "selected_by": 6.7,
+      "selected_by": 6.6,
       "status": "i",
       "chance_next_round": 0,
       "gws_played": 8,
@@ -365,7 +365,7 @@
       "opp_short": "HUL",
       "is_home": true,
       "fdr": 2,
-      "target_points": 3.557
+      "target_points": 3.554
     },
     {
       "player_id": 14,
@@ -391,7 +391,7 @@
       "opp_short": "HUL",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.038
+      "target_points": 2.036
     },
     {
       "player_id": 15,
@@ -417,7 +417,7 @@
       "opp_short": "HUL",
       "is_home": true,
       "fdr": 2,
-      "target_points": 4.433
+      "target_points": 4.43
     },
     {
       "player_id": 16,
@@ -443,7 +443,7 @@
       "opp_short": "HUL",
       "is_home": true,
       "fdr": 2,
-      "target_points": 1.479
+      "target_points": 1.478
     },
     {
       "player_id": 17,
@@ -469,7 +469,7 @@
       "opp_short": "HUL",
       "is_home": true,
       "fdr": 2,
-      "target_points": 1.817
+      "target_points": 1.815
     },
     {
       "player_id": 18,
@@ -677,7 +677,7 @@
       "opp_short": "HUL",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.857
+      "target_points": 2.856
     },
     {
       "player_id": 26,
@@ -703,7 +703,7 @@
       "opp_short": "HUL",
       "is_home": true,
       "fdr": 2,
-      "target_points": 3.02
+      "target_points": 3.018
     },
     {
       "player_id": 27,
@@ -766,22 +766,22 @@
       "now_cost": 45,
       "projected_points": 0.159,
       "form": 0.0,
-      "season_ppg": 0.12,
+      "season_ppg": 0.11,
       "season_points": 1,
       "season_minutes": 90,
       "selected_by": 0.1,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 11.2,
-      "points_avg": 0.12,
+      "gws_played": 9,
+      "minutes_avg": 10.0,
+      "points_avg": 0.11,
       "xg_recent": 0.0,
       "xa_recent": 0.0,
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 0.468
+      "target_points": 0.469
     },
     {
       "player_id": 30,
@@ -798,7 +798,7 @@
       "selected_by": 0.0,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -821,7 +821,7 @@
       "season_ppg": 4.88,
       "season_points": 39,
       "season_minutes": 551,
-      "selected_by": 21.8,
+      "selected_by": 21.9,
       "status": "a",
       "chance_next_round": 100,
       "gws_played": 8,
@@ -833,7 +833,7 @@
       "opp_short": "HUL",
       "is_home": true,
       "fdr": 2,
-      "target_points": 3.989
+      "target_points": 3.99
     },
     {
       "player_id": 32,
@@ -842,24 +842,24 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 43,
-      "projected_points": 1.619,
-      "form": 3.7,
-      "season_ppg": 2.12,
-      "season_points": 17,
-      "season_minutes": 566,
-      "selected_by": 4.3,
-      "status": "a",
-      "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 70.8,
-      "points_avg": 2.12,
+      "projected_points": 0.0,
+      "form": 3.0,
+      "season_ppg": 2.0,
+      "season_points": 18,
+      "season_minutes": 656,
+      "selected_by": 4.2,
+      "status": "s",
+      "chance_next_round": 0,
+      "gws_played": 9,
+      "minutes_avg": 72.9,
+      "points_avg": 2.0,
       "xg_recent": 0.21,
-      "xa_recent": 0.06,
+      "xa_recent": 0.22,
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 2.669
+      "target_points": 0.0
     },
     {
       "player_id": 33,
@@ -868,24 +868,24 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 1.31,
-      "form": 2.7,
-      "season_ppg": 2.25,
+      "projected_points": 0.861,
+      "form": 2.0,
+      "season_ppg": 2.0,
       "season_points": 18,
       "season_minutes": 441,
       "selected_by": 0.4,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 55.1,
-      "points_avg": 2.25,
+      "gws_played": 9,
+      "minutes_avg": 49.0,
+      "points_avg": 2.0,
       "xg_recent": 0.2,
       "xa_recent": 0.03,
       "bonus_recent": 1,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 2.28
+      "target_points": 1.858
     },
     {
       "player_id": 34,
@@ -894,24 +894,24 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 44,
-      "projected_points": 1.003,
-      "form": 1.0,
-      "season_ppg": 0.75,
-      "season_points": 6,
-      "season_minutes": 290,
+      "projected_points": 1.402,
+      "form": 1.2,
+      "season_ppg": 0.89,
+      "season_points": 8,
+      "season_minutes": 380,
       "selected_by": 0.3,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 36.2,
-      "points_avg": 0.75,
-      "xg_recent": 0.0,
-      "xa_recent": 0.01,
+      "gws_played": 9,
+      "minutes_avg": 42.2,
+      "points_avg": 0.89,
+      "xg_recent": 0.26,
+      "xa_recent": 0.02,
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 1.611
+      "target_points": 2.027
     },
     {
       "player_id": 35,
@@ -922,15 +922,15 @@
       "now_cost": 49,
       "projected_points": 0.111,
       "form": 0.0,
-      "season_ppg": 0.12,
+      "season_ppg": 0.11,
       "season_points": 1,
       "season_minutes": 16,
       "selected_by": 0.1,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 2.0,
-      "points_avg": 0.12,
+      "gws_played": 9,
+      "minutes_avg": 1.8,
+      "points_avg": 0.11,
       "xg_recent": 0.0,
       "xa_recent": 0.0,
       "bonus_recent": 0,
@@ -946,24 +946,24 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 44,
-      "projected_points": 0.89,
-      "form": 0.7,
-      "season_ppg": 1.38,
-      "season_points": 11,
-      "season_minutes": 425,
+      "projected_points": 1.465,
+      "form": 1.0,
+      "season_ppg": 1.44,
+      "season_points": 13,
+      "season_minutes": 515,
       "selected_by": 0.4,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 53.1,
-      "points_avg": 1.38,
-      "xg_recent": 0.35,
-      "xa_recent": 0.48,
+      "gws_played": 9,
+      "minutes_avg": 57.2,
+      "points_avg": 1.44,
+      "xg_recent": 0.4,
+      "xa_recent": 0.5,
       "bonus_recent": 1,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 1.694
+      "target_points": 2.221
     },
     {
       "player_id": 37,
@@ -972,24 +972,24 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 1.64,
-      "form": 4.7,
-      "season_ppg": 2.75,
-      "season_points": 22,
-      "season_minutes": 720,
+      "projected_points": 1.662,
+      "form": 4.0,
+      "season_ppg": 2.67,
+      "season_points": 24,
+      "season_minutes": 810,
       "selected_by": 0.6,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 90.0,
-      "points_avg": 2.75,
+      "points_avg": 2.67,
       "xg_recent": 0.44,
-      "xa_recent": 0.17,
+      "xa_recent": 0.18,
       "bonus_recent": 1,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 2.808
+      "target_points": 2.811
     },
     {
       "player_id": 38,
@@ -1006,7 +1006,7 @@
       "selected_by": 1.2,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -1032,7 +1032,7 @@
       "selected_by": 0.1,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -1055,7 +1055,7 @@
       "season_ppg": 5.56,
       "season_points": 50,
       "season_minutes": 790,
-      "selected_by": 51.3,
+      "selected_by": 51.6,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -1067,7 +1067,7 @@
       "opp_short": "SUN",
       "is_home": false,
       "fdr": 3,
-      "target_points": 4.131
+      "target_points": 4.128
     },
     {
       "player_id": 41,
@@ -1076,24 +1076,24 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 59,
-      "projected_points": 1.896,
-      "form": 2.3,
-      "season_ppg": 3.5,
-      "season_points": 28,
-      "season_minutes": 559,
+      "projected_points": 1.577,
+      "form": 2.0,
+      "season_ppg": 3.22,
+      "season_points": 29,
+      "season_minutes": 583,
       "selected_by": 1.2,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 69.9,
-      "points_avg": 3.5,
-      "xg_recent": 1.55,
-      "xa_recent": 0.35,
+      "gws_played": 9,
+      "minutes_avg": 64.8,
+      "points_avg": 3.22,
+      "xg_recent": 1.59,
+      "xa_recent": 0.47,
       "bonus_recent": 3,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 2.901
+      "target_points": 2.646
     },
     {
       "player_id": 42,
@@ -1104,15 +1104,15 @@
       "now_cost": 54,
       "projected_points": 0.124,
       "form": 0.0,
-      "season_ppg": 0.25,
+      "season_ppg": 0.22,
       "season_points": 2,
       "season_minutes": 54,
       "selected_by": 0.0,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 6.8,
-      "points_avg": 0.25,
+      "gws_played": 9,
+      "minutes_avg": 6.0,
+      "points_avg": 0.22,
       "xg_recent": 0.03,
       "xa_recent": 0.03,
       "bonus_recent": 0,
@@ -1145,7 +1145,7 @@
       "opp_short": "AVL",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.63
+      "target_points": 2.626
     },
     {
       "player_id": 44,
@@ -1162,7 +1162,7 @@
       "selected_by": 0.0,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -1180,24 +1180,24 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 54,
-      "projected_points": 2.406,
-      "form": 5.7,
-      "season_ppg": 4.25,
+      "projected_points": 2.206,
+      "form": 4.2,
+      "season_ppg": 3.78,
       "season_points": 34,
-      "season_minutes": 634,
+      "season_minutes": 720,
       "selected_by": 3.4,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 79.2,
-      "points_avg": 4.25,
-      "xg_recent": 1.64,
-      "xa_recent": 0.54,
+      "gws_played": 9,
+      "minutes_avg": 80.0,
+      "points_avg": 3.78,
+      "xg_recent": 2.43,
+      "xa_recent": 0.64,
       "bonus_recent": 5,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 3.654
+      "target_points": 3.337
     },
     {
       "player_id": 46,
@@ -1206,24 +1206,24 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 1.461,
+      "projected_points": 1.373,
       "form": 1.0,
-      "season_ppg": 1.62,
-      "season_points": 13,
-      "season_minutes": 354,
+      "season_ppg": 1.56,
+      "season_points": 14,
+      "season_minutes": 365,
       "selected_by": 0.2,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 44.2,
-      "points_avg": 1.62,
-      "xg_recent": 0.5,
+      "gws_played": 9,
+      "minutes_avg": 40.6,
+      "points_avg": 1.56,
+      "xg_recent": 0.52,
       "xa_recent": 0.18,
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 2.096
+      "target_points": 2.047
     },
     {
       "player_id": 47,
@@ -1232,24 +1232,24 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 1.941,
-      "form": 4.3,
-      "season_ppg": 3.5,
-      "season_points": 28,
-      "season_minutes": 713,
+      "projected_points": 1.872,
+      "form": 3.8,
+      "season_ppg": 3.33,
+      "season_points": 30,
+      "season_minutes": 791,
       "selected_by": 0.4,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 89.1,
-      "points_avg": 3.5,
+      "gws_played": 9,
+      "minutes_avg": 87.9,
+      "points_avg": 3.33,
       "xg_recent": 0.17,
-      "xa_recent": 0.25,
+      "xa_recent": 0.26,
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 2.997
+      "target_points": 2.925
     },
     {
       "player_id": 48,
@@ -1266,7 +1266,7 @@
       "selected_by": 0.0,
       "status": "i",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -1292,7 +1292,7 @@
       "selected_by": 0.0,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -1310,7 +1310,7 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 44,
-      "projected_points": 0.044,
+      "projected_points": 0.043,
       "form": 0.0,
       "season_ppg": 0.0,
       "season_points": 0,
@@ -1318,7 +1318,7 @@
       "selected_by": 0.5,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -1336,24 +1336,24 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 44,
-      "projected_points": 0.31,
+      "projected_points": 0.299,
       "form": 0.0,
-      "season_ppg": 1.12,
+      "season_ppg": 1.0,
       "season_points": 9,
       "season_minutes": 297,
       "selected_by": 0.7,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 37.1,
-      "points_avg": 1.12,
+      "gws_played": 9,
+      "minutes_avg": 33.0,
+      "points_avg": 1.0,
       "xg_recent": 0.07,
       "xa_recent": 0.16,
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 1.036
+      "target_points": 1.025
     },
     {
       "player_id": 52,
@@ -1362,24 +1362,24 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 49,
-      "projected_points": 1.049,
-      "form": 0.7,
-      "season_ppg": 1.25,
-      "season_points": 10,
-      "season_minutes": 194,
+      "projected_points": 1.465,
+      "form": 1.0,
+      "season_ppg": 1.33,
+      "season_points": 12,
+      "season_minutes": 259,
       "selected_by": 0.1,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 24.2,
-      "points_avg": 1.25,
-      "xg_recent": 0.16,
+      "gws_played": 9,
+      "minutes_avg": 28.8,
+      "points_avg": 1.33,
+      "xg_recent": 0.2,
       "xa_recent": 0.02,
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 1.183
+      "target_points": 1.806
     },
     {
       "player_id": 53,
@@ -1388,24 +1388,24 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 61,
-      "projected_points": 2.481,
-      "form": 5.7,
-      "season_ppg": 3.88,
-      "season_points": 31,
-      "season_minutes": 319,
-      "selected_by": 6.2,
+      "projected_points": 2.551,
+      "form": 6.0,
+      "season_ppg": 4.22,
+      "season_points": 38,
+      "season_minutes": 384,
+      "selected_by": 6.5,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 39.9,
-      "points_avg": 3.88,
-      "xg_recent": 1.5,
-      "xa_recent": 0.57,
-      "bonus_recent": 5,
+      "gws_played": 9,
+      "minutes_avg": 42.7,
+      "points_avg": 4.22,
+      "xg_recent": 1.6,
+      "xa_recent": 0.58,
+      "bonus_recent": 7,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 3.759
+      "target_points": 4.042
     },
     {
       "player_id": 54,
@@ -1414,24 +1414,24 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 1.88,
-      "form": 3.0,
-      "season_ppg": 1.38,
-      "season_points": 11,
-      "season_minutes": 366,
+      "projected_points": 1.869,
+      "form": 2.5,
+      "season_ppg": 1.33,
+      "season_points": 12,
+      "season_minutes": 390,
       "selected_by": 0.1,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 45.8,
-      "points_avg": 1.38,
+      "gws_played": 9,
+      "minutes_avg": 43.3,
+      "points_avg": 1.33,
       "xg_recent": 0.0,
-      "xa_recent": 0.28,
+      "xa_recent": 0.29,
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 2.665
+      "target_points": 2.664
     },
     {
       "player_id": 55,
@@ -1448,7 +1448,7 @@
       "selected_by": 2.2,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -1466,24 +1466,24 @@
       "team_short": "AVL",
       "position": "FWD",
       "now_cost": 55,
-      "projected_points": 0.325,
+      "projected_points": 0.29,
       "form": 0.0,
-      "season_ppg": 0.5,
+      "season_ppg": 0.44,
       "season_points": 4,
       "season_minutes": 71,
       "selected_by": 0.2,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 8.9,
-      "points_avg": 0.5,
+      "gws_played": 9,
+      "minutes_avg": 7.9,
+      "points_avg": 0.44,
       "xg_recent": 0.0,
       "xa_recent": 0.0,
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 0.376
+      "target_points": 0.334
     },
     {
       "player_id": 57,
@@ -1509,7 +1509,7 @@
       "opp_short": "IPS",
       "is_home": false,
       "fdr": 2,
-      "target_points": 3.271
+      "target_points": 3.269
     },
     {
       "player_id": 58,
@@ -1575,7 +1575,7 @@
       "season_ppg": 4.22,
       "season_points": 38,
       "season_minutes": 810,
-      "selected_by": 2.3,
+      "selected_by": 2.4,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -1587,7 +1587,7 @@
       "opp_short": "IPS",
       "is_home": false,
       "fdr": 2,
-      "target_points": 3.614
+      "target_points": 3.615
     },
     {
       "player_id": 61,
@@ -1613,7 +1613,7 @@
       "opp_short": "IPS",
       "is_home": false,
       "fdr": 2,
-      "target_points": 3.443
+      "target_points": 3.445
     },
     {
       "player_id": 62,
@@ -1691,7 +1691,7 @@
       "opp_short": "IPS",
       "is_home": false,
       "fdr": 2,
-      "target_points": 2.923
+      "target_points": 2.925
     },
     {
       "player_id": 65,
@@ -1769,7 +1769,7 @@
       "opp_short": "IPS",
       "is_home": false,
       "fdr": 2,
-      "target_points": 3.555
+      "target_points": 3.552
     },
     {
       "player_id": 68,
@@ -1777,25 +1777,25 @@
       "team_id": 3,
       "team_short": "BOU",
       "position": "MID",
-      "now_cost": 65,
-      "projected_points": 4.273,
+      "now_cost": 66,
+      "projected_points": 4.419,
       "form": 6.0,
       "season_ppg": 6.11,
       "season_points": 55,
       "season_minutes": 750,
-      "selected_by": 25.7,
+      "selected_by": 26.3,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
       "minutes_avg": 83.3,
       "points_avg": 6.11,
       "xg_recent": 3.71,
-      "xa_recent": 1.37,
+      "xa_recent": 1.36,
       "bonus_recent": 12,
       "opp_short": "IPS",
       "is_home": false,
       "fdr": 2,
-      "target_points": 4.737
+      "target_points": 4.823
     },
     {
       "player_id": 69,
@@ -1809,7 +1809,7 @@
       "season_ppg": 3.33,
       "season_points": 30,
       "season_minutes": 446,
-      "selected_by": 2.3,
+      "selected_by": 2.2,
       "status": "i",
       "chance_next_round": 0,
       "gws_played": 9,
@@ -1847,7 +1847,7 @@
       "opp_short": "IPS",
       "is_home": false,
       "fdr": 2,
-      "target_points": 3.163
+      "target_points": 3.159
     },
     {
       "player_id": 71,
@@ -1873,7 +1873,7 @@
       "opp_short": "IPS",
       "is_home": false,
       "fdr": 2,
-      "target_points": 2.419
+      "target_points": 2.415
     },
     {
       "player_id": 72,
@@ -1925,7 +1925,7 @@
       "opp_short": "IPS",
       "is_home": false,
       "fdr": 2,
-      "target_points": 2.734
+      "target_points": 2.731
     },
     {
       "player_id": 74,
@@ -1971,13 +1971,13 @@
       "gws_played": 9,
       "minutes_avg": 38.4,
       "points_avg": 1.67,
-      "xg_recent": 0.88,
+      "xg_recent": 0.9,
       "xa_recent": 0.77,
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
       "fdr": 2,
-      "target_points": 2.584
+      "target_points": 2.58
     },
     {
       "player_id": 76,
@@ -2038,7 +2038,7 @@
       "team_short": "BOU",
       "position": "MID",
       "now_cost": 73,
-      "projected_points": 1.673,
+      "projected_points": 2.001,
       "form": 1.2,
       "season_ppg": 0.56,
       "season_points": 5,
@@ -2050,12 +2050,12 @@
       "minutes_avg": 2.8,
       "points_avg": 0.56,
       "xg_recent": 0.0,
-      "xa_recent": 0.06,
+      "xa_recent": 0.28,
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
       "fdr": 2,
-      "target_points": 1.668
+      "target_points": 1.988
     },
     {
       "player_id": 79,
@@ -2063,13 +2063,13 @@
       "team_id": 3,
       "team_short": "BOU",
       "position": "FWD",
-      "now_cost": 63,
-      "projected_points": 3.788,
+      "now_cost": 64,
+      "projected_points": 3.928,
       "form": 8.5,
       "season_ppg": 5.78,
       "season_points": 52,
       "season_minutes": 753,
-      "selected_by": 15.1,
+      "selected_by": 15.9,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -2081,7 +2081,7 @@
       "opp_short": "IPS",
       "is_home": false,
       "fdr": 2,
-      "target_points": 4.478
+      "target_points": 4.64
     },
     {
       "player_id": 80,
@@ -2116,7 +2116,7 @@
       "team_short": "BOU",
       "position": "FWD",
       "now_cost": 60,
-      "projected_points": 1.33,
+      "projected_points": 1.405,
       "form": 0.8,
       "season_ppg": 0.56,
       "season_points": 5,
@@ -2127,13 +2127,13 @@
       "gws_played": 9,
       "minutes_avg": 5.9,
       "points_avg": 0.56,
-      "xg_recent": 0.08,
+      "xg_recent": 0.11,
       "xa_recent": 0.04,
       "bonus_recent": 0,
       "opp_short": "IPS",
       "is_home": false,
       "fdr": 2,
-      "target_points": 1.312
+      "target_points": 1.393
     },
     {
       "player_id": 82,
@@ -2147,7 +2147,7 @@
       "season_ppg": 3.67,
       "season_points": 33,
       "season_minutes": 810,
-      "selected_by": 6.2,
+      "selected_by": 6.1,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -2159,7 +2159,7 @@
       "opp_short": "BHA",
       "is_home": false,
       "fdr": 4,
-      "target_points": 3.182
+      "target_points": 3.18
     },
     {
       "player_id": 83,
@@ -2211,7 +2211,7 @@
       "opp_short": "BHA",
       "is_home": false,
       "fdr": 4,
-      "target_points": 0.894
+      "target_points": 0.895
     },
     {
       "player_id": 85,
@@ -2237,7 +2237,7 @@
       "opp_short": "BHA",
       "is_home": false,
       "fdr": 4,
-      "target_points": 2.575
+      "target_points": 2.576
     },
     {
       "player_id": 86,
@@ -2251,7 +2251,7 @@
       "season_ppg": 4.22,
       "season_points": 38,
       "season_minutes": 715,
-      "selected_by": 2.0,
+      "selected_by": 1.9,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -2263,7 +2263,7 @@
       "opp_short": "BHA",
       "is_home": false,
       "fdr": 4,
-      "target_points": 3.335
+      "target_points": 3.331
     },
     {
       "player_id": 87,
@@ -2289,7 +2289,7 @@
       "opp_short": "BHA",
       "is_home": false,
       "fdr": 4,
-      "target_points": 3.162
+      "target_points": 3.163
     },
     {
       "player_id": 88,
@@ -2315,7 +2315,7 @@
       "opp_short": "BHA",
       "is_home": false,
       "fdr": 4,
-      "target_points": 3.03
+      "target_points": 3.033
     },
     {
       "player_id": 89,
@@ -2350,7 +2350,7 @@
       "team_short": "BRE",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 1.248,
+      "projected_points": 1.253,
       "form": 1.0,
       "season_ppg": 1.0,
       "season_points": 9,
@@ -2367,7 +2367,7 @@
       "opp_short": "BHA",
       "is_home": false,
       "fdr": 4,
-      "target_points": 1.544
+      "target_points": 1.547
     },
     {
       "player_id": 91,
@@ -2393,7 +2393,7 @@
       "opp_short": "EVE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.643
+      "target_points": 2.644
     },
     {
       "player_id": 92,
@@ -2445,7 +2445,7 @@
       "opp_short": "BHA",
       "is_home": false,
       "fdr": 4,
-      "target_points": 1.429
+      "target_points": 1.43
     },
     {
       "player_id": 94,
@@ -2459,7 +2459,7 @@
       "season_ppg": 5.0,
       "season_points": 45,
       "season_minutes": 687,
-      "selected_by": 14.7,
+      "selected_by": 14.6,
       "status": "a",
       "chance_next_round": 100,
       "gws_played": 9,
@@ -2471,7 +2471,7 @@
       "opp_short": "BHA",
       "is_home": false,
       "fdr": 4,
-      "target_points": 3.585
+      "target_points": 3.582
     },
     {
       "player_id": 95,
@@ -2497,7 +2497,7 @@
       "opp_short": "BHA",
       "is_home": false,
       "fdr": 4,
-      "target_points": 3.041
+      "target_points": 3.038
     },
     {
       "player_id": 96,
@@ -2523,7 +2523,7 @@
       "opp_short": "BHA",
       "is_home": false,
       "fdr": 4,
-      "target_points": 2.246
+      "target_points": 2.243
     },
     {
       "player_id": 97,
@@ -2549,7 +2549,7 @@
       "opp_short": "BHA",
       "is_home": false,
       "fdr": 4,
-      "target_points": 2.279
+      "target_points": 2.275
     },
     {
       "player_id": 98,
@@ -2575,7 +2575,7 @@
       "opp_short": "BHA",
       "is_home": false,
       "fdr": 4,
-      "target_points": 2.67
+      "target_points": 2.667
     },
     {
       "player_id": 99,
@@ -2653,7 +2653,7 @@
       "opp_short": "SUN",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.327
+      "target_points": 2.325
     },
     {
       "player_id": 102,
@@ -2679,7 +2679,7 @@
       "opp_short": "BHA",
       "is_home": false,
       "fdr": 4,
-      "target_points": 1.263
+      "target_points": 1.26
     },
     {
       "player_id": 103,
@@ -2731,7 +2731,7 @@
       "opp_short": "EVE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.699
+      "target_points": 1.696
     },
     {
       "player_id": 105,
@@ -2757,7 +2757,7 @@
       "opp_short": "BHA",
       "is_home": false,
       "fdr": 4,
-      "target_points": 2.972
+      "target_points": 2.969
     },
     {
       "player_id": 106,
@@ -2783,7 +2783,7 @@
       "opp_short": "BHA",
       "is_home": false,
       "fdr": 4,
-      "target_points": 3.681
+      "target_points": 3.679
     },
     {
       "player_id": 107,
@@ -2791,7 +2791,7 @@
       "team_id": 4,
       "team_short": "BRE",
       "position": "FWD",
-      "now_cost": 45,
+      "now_cost": 44,
       "projected_points": 0.0,
       "form": 0.0,
       "season_ppg": 0.0,
@@ -2849,7 +2849,7 @@
       "season_ppg": 5.67,
       "season_points": 51,
       "season_minutes": 810,
-      "selected_by": 22.5,
+      "selected_by": 22.7,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -2861,7 +2861,7 @@
       "opp_short": "BRE",
       "is_home": true,
       "fdr": 3,
-      "target_points": 4.191
+      "target_points": 4.189
     },
     {
       "player_id": 110,
@@ -2887,7 +2887,7 @@
       "opp_short": "EVE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.669
+      "target_points": 2.667
     },
     {
       "player_id": 111,
@@ -2921,25 +2921,25 @@
       "team_id": 19,
       "team_short": "TOT",
       "position": "DEF",
-      "now_cost": 49,
-      "projected_points": 2.828,
-      "form": 4.7,
-      "season_ppg": 4.75,
-      "season_points": 38,
-      "season_minutes": 720,
-      "selected_by": 9.4,
+      "now_cost": 50,
+      "projected_points": 2.798,
+      "form": 7.2,
+      "season_ppg": 5.89,
+      "season_points": 53,
+      "season_minutes": 810,
+      "selected_by": 10.0,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 90.0,
-      "points_avg": 4.75,
-      "xg_recent": 0.69,
-      "xa_recent": 0.51,
-      "bonus_recent": 3,
+      "points_avg": 5.89,
+      "xg_recent": 1.63,
+      "xa_recent": 0.69,
+      "bonus_recent": 6,
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.396
+      "target_points": 3.78
     },
     {
       "player_id": 113,
@@ -2965,7 +2965,7 @@
       "opp_short": "BRE",
       "is_home": true,
       "fdr": 3,
-      "target_points": 1.615
+      "target_points": 1.616
     },
     {
       "player_id": 114,
@@ -2991,7 +2991,7 @@
       "opp_short": "BRE",
       "is_home": true,
       "fdr": 3,
-      "target_points": 3.243
+      "target_points": 3.244
     },
     {
       "player_id": 115,
@@ -2999,13 +2999,13 @@
       "team_id": 5,
       "team_short": "BHA",
       "position": "DEF",
-      "now_cost": 53,
-      "projected_points": 3.936,
+      "now_cost": 54,
+      "projected_points": 3.946,
       "form": 7.8,
       "season_ppg": 7.67,
       "season_points": 69,
       "season_minutes": 741,
-      "selected_by": 43.8,
+      "selected_by": 44.2,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -3017,7 +3017,7 @@
       "opp_short": "BRE",
       "is_home": true,
       "fdr": 3,
-      "target_points": 4.767
+      "target_points": 4.79
     },
     {
       "player_id": 116,
@@ -3043,7 +3043,7 @@
       "opp_short": "BRE",
       "is_home": true,
       "fdr": 3,
-      "target_points": 3.231
+      "target_points": 3.232
     },
     {
       "player_id": 117,
@@ -3121,7 +3121,7 @@
       "opp_short": "BRE",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.187
+      "target_points": 2.188
     },
     {
       "player_id": 120,
@@ -3225,7 +3225,7 @@
       "opp_short": "BRE",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.712
+      "target_points": 2.71
     },
     {
       "player_id": 124,
@@ -3239,7 +3239,7 @@
       "season_ppg": 6.67,
       "season_points": 60,
       "season_minutes": 790,
-      "selected_by": 46.7,
+      "selected_by": 46.8,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -3251,7 +3251,7 @@
       "opp_short": "BRE",
       "is_home": true,
       "fdr": 3,
-      "target_points": 4.559
+      "target_points": 4.555
     },
     {
       "player_id": 125,
@@ -3277,7 +3277,7 @@
       "opp_short": "BRE",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.028
+      "target_points": 2.026
     },
     {
       "player_id": 126,
@@ -3324,12 +3324,12 @@
       "minutes_avg": 87.0,
       "points_avg": 4.67,
       "xg_recent": 1.22,
-      "xa_recent": 1.09,
+      "xa_recent": 1.1,
       "bonus_recent": 0,
       "opp_short": "BRE",
       "is_home": true,
       "fdr": 3,
-      "target_points": 3.681
+      "target_points": 3.678
     },
     {
       "player_id": 128,
@@ -3369,7 +3369,7 @@
       "season_ppg": 4.78,
       "season_points": 43,
       "season_minutes": 664,
-      "selected_by": 0.9,
+      "selected_by": 1.0,
       "status": "a",
       "chance_next_round": 100,
       "gws_played": 9,
@@ -3381,7 +3381,7 @@
       "opp_short": "BRE",
       "is_home": true,
       "fdr": 3,
-      "target_points": 3.7
+      "target_points": 3.697
     },
     {
       "player_id": 130,
@@ -3407,7 +3407,7 @@
       "opp_short": "BRE",
       "is_home": true,
       "fdr": 3,
-      "target_points": 1.388
+      "target_points": 1.389
     },
     {
       "player_id": 131,
@@ -3433,7 +3433,7 @@
       "opp_short": "AVL",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.112
+      "target_points": 2.11
     },
     {
       "player_id": 132,
@@ -3563,7 +3563,7 @@
       "opp_short": "SUN",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.524
+      "target_points": 1.523
     },
     {
       "player_id": 137,
@@ -3603,7 +3603,7 @@
       "season_ppg": 5.0,
       "season_points": 45,
       "season_minutes": 643,
-      "selected_by": 10.3,
+      "selected_by": 10.2,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -3615,7 +3615,7 @@
       "opp_short": "BRE",
       "is_home": true,
       "fdr": 3,
-      "target_points": 4.339
+      "target_points": 4.336
     },
     {
       "player_id": 139,
@@ -3771,7 +3771,7 @@
       "opp_short": "SUN",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.303
+      "target_points": 1.304
     },
     {
       "player_id": 145,
@@ -3797,7 +3797,7 @@
       "opp_short": "SUN",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.39
+      "target_points": 2.392
     },
     {
       "player_id": 146,
@@ -3833,16 +3833,16 @@
       "position": "DEF",
       "now_cost": 43,
       "projected_points": 0.0,
-      "form": 0.7,
-      "season_ppg": 0.38,
+      "form": 0.5,
+      "season_ppg": 0.33,
       "season_points": 3,
       "season_minutes": 75,
       "selected_by": 0.1,
       "status": "i",
       "chance_next_round": 0,
-      "gws_played": 8,
-      "minutes_avg": 9.4,
-      "points_avg": 0.38,
+      "gws_played": 9,
+      "minutes_avg": 8.3,
+      "points_avg": 0.33,
       "xg_recent": 0.0,
       "xa_recent": 0.02,
       "bonus_recent": 0,
@@ -3901,7 +3901,7 @@
       "opp_short": "SUN",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.814
+      "target_points": 2.815
     },
     {
       "player_id": 150,
@@ -3953,7 +3953,7 @@
       "opp_short": "SUN",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.028
+      "target_points": 3.029
     },
     {
       "player_id": 152,
@@ -3988,24 +3988,24 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 44,
-      "projected_points": 1.399,
-      "form": 1.0,
-      "season_ppg": 0.5,
-      "season_points": 4,
-      "season_minutes": 229,
+      "projected_points": 1.817,
+      "form": 1.5,
+      "season_ppg": 0.78,
+      "season_points": 7,
+      "season_minutes": 319,
       "selected_by": 0.1,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 28.6,
-      "points_avg": 0.5,
+      "gws_played": 9,
+      "minutes_avg": 35.4,
+      "points_avg": 0.78,
       "xg_recent": 0.32,
       "xa_recent": 0.04,
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 1.84
+      "target_points": 2.213
     },
     {
       "player_id": 154,
@@ -4019,7 +4019,7 @@
       "season_ppg": 5.0,
       "season_points": 45,
       "season_minutes": 788,
-      "selected_by": 27.5,
+      "selected_by": 27.7,
       "status": "a",
       "chance_next_round": 100,
       "gws_played": 9,
@@ -4031,7 +4031,7 @@
       "opp_short": "SUN",
       "is_home": false,
       "fdr": 3,
-      "target_points": 4.553
+      "target_points": 4.549
     },
     {
       "player_id": 155,
@@ -4051,13 +4051,13 @@
       "gws_played": 9,
       "minutes_avg": 60.3,
       "points_avg": 2.33,
-      "xg_recent": 0.99,
-      "xa_recent": 1.36,
+      "xg_recent": 0.98,
+      "xa_recent": 1.35,
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.318
+      "target_points": 3.314
     },
     {
       "player_id": 156,
@@ -4083,7 +4083,7 @@
       "opp_short": "SUN",
       "is_home": false,
       "fdr": 3,
-      "target_points": 4.264
+      "target_points": 4.261
     },
     {
       "player_id": 157,
@@ -4109,7 +4109,7 @@
       "opp_short": "SUN",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.604
+      "target_points": 2.602
     },
     {
       "player_id": 158,
@@ -4161,7 +4161,7 @@
       "opp_short": "SUN",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.404
+      "target_points": 2.401
     },
     {
       "player_id": 160,
@@ -4170,24 +4170,24 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 57,
-      "projected_points": 0.165,
-      "form": 0.0,
-      "season_ppg": 0.38,
-      "season_points": 3,
-      "season_minutes": 31,
+      "projected_points": 0.596,
+      "form": 0.2,
+      "season_ppg": 0.44,
+      "season_points": 4,
+      "season_minutes": 34,
       "selected_by": 0.3,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 3.9,
-      "points_avg": 0.38,
-      "xg_recent": 0.0,
-      "xa_recent": 0.0,
+      "gws_played": 9,
+      "minutes_avg": 3.8,
+      "points_avg": 0.44,
+      "xg_recent": 0.09,
+      "xa_recent": 0.05,
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 0.205
+      "target_points": 0.693
     },
     {
       "player_id": 161,
@@ -4213,7 +4213,7 @@
       "opp_short": "SUN",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.322
+      "target_points": 2.318
     },
     {
       "player_id": 162,
@@ -4239,7 +4239,7 @@
       "opp_short": "AVL",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.503
+      "target_points": 2.5
     },
     {
       "player_id": 163,
@@ -4291,7 +4291,7 @@
       "opp_short": "SUN",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.576
+      "target_points": 1.574
     },
     {
       "player_id": 165,
@@ -4299,13 +4299,13 @@
       "team_id": 6,
       "team_short": "CHE",
       "position": "FWD",
-      "now_cost": 78,
+      "now_cost": 77,
       "projected_points": 0.0,
       "form": 3.5,
       "season_ppg": 5.22,
       "season_points": 47,
       "season_minutes": 521,
-      "selected_by": 44.8,
+      "selected_by": 43.3,
       "status": "i",
       "chance_next_round": 0,
       "gws_played": 9,
@@ -4325,25 +4325,25 @@
       "team_id": 2,
       "team_short": "AVL",
       "position": "FWD",
-      "now_cost": 69,
-      "projected_points": 3.112,
-      "form": 8.0,
-      "season_ppg": 4.25,
-      "season_points": 34,
-      "season_minutes": 547,
-      "selected_by": 23.4,
+      "now_cost": 70,
+      "projected_points": 3.268,
+      "form": 8.2,
+      "season_ppg": 4.78,
+      "season_points": 43,
+      "season_minutes": 637,
+      "selected_by": 24.3,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 68.4,
-      "points_avg": 4.25,
-      "xg_recent": 1.83,
-      "xa_recent": 0.87,
-      "bonus_recent": 7,
+      "gws_played": 9,
+      "minutes_avg": 70.8,
+      "points_avg": 4.78,
+      "xg_recent": 2.16,
+      "xa_recent": 0.88,
+      "bonus_recent": 10,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 4.483
+      "target_points": 4.73
     },
     {
       "player_id": 167,
@@ -4363,13 +4363,13 @@
       "gws_played": 9,
       "minutes_avg": 65.8,
       "points_avg": 1.89,
-      "xg_recent": 2.7,
+      "xg_recent": 2.71,
       "xa_recent": 0.51,
       "bonus_recent": 0,
       "opp_short": "MCI",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.874
+      "target_points": 2.872
     },
     {
       "player_id": 168,
@@ -4513,7 +4513,7 @@
       "season_ppg": 3.56,
       "season_points": 32,
       "season_minutes": 676,
-      "selected_by": 8.5,
+      "selected_by": 8.4,
       "status": "d",
       "chance_next_round": 50,
       "gws_played": 9,
@@ -4577,7 +4577,7 @@
       "opp_short": "EVE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.094
+      "target_points": 2.095
     },
     {
       "player_id": 176,
@@ -4586,7 +4586,7 @@
       "team_short": "COV",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 1.374,
+      "projected_points": 1.35,
       "form": 2.2,
       "season_ppg": 3.22,
       "season_points": 29,
@@ -4603,7 +4603,7 @@
       "opp_short": "EVE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.446
+      "target_points": 2.43
     },
     {
       "player_id": 177,
@@ -4779,13 +4779,13 @@
       "gws_played": 9,
       "minutes_avg": 71.7,
       "points_avg": 4.11,
-      "xg_recent": 2.1,
+      "xg_recent": 2.11,
       "xa_recent": 1.42,
       "bonus_recent": 2,
       "opp_short": "EVE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.406
+      "target_points": 3.404
     },
     {
       "player_id": 184,
@@ -4811,7 +4811,7 @@
       "opp_short": "EVE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.111
+      "target_points": 2.108
     },
     {
       "player_id": 185,
@@ -4831,13 +4831,13 @@
       "gws_played": 9,
       "minutes_avg": 34.7,
       "points_avg": 1.33,
-      "xg_recent": 0.31,
+      "xg_recent": 0.29,
       "xa_recent": 0.06,
       "bonus_recent": 0,
       "opp_short": "EVE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.34
+      "target_points": 2.336
     },
     {
       "player_id": 186,
@@ -4863,7 +4863,7 @@
       "opp_short": "EVE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.659
+      "target_points": 1.657
     },
     {
       "player_id": 187,
@@ -4915,7 +4915,7 @@
       "opp_short": "EVE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.688
+      "target_points": 1.686
     },
     {
       "player_id": 189,
@@ -4967,7 +4967,7 @@
       "opp_short": "EVE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 0.685
+      "target_points": 0.683
     },
     {
       "player_id": 191,
@@ -5071,7 +5071,7 @@
       "opp_short": "EVE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.556
+      "target_points": 2.553
     },
     {
       "player_id": 195,
@@ -5097,7 +5097,7 @@
       "opp_short": "EVE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 0.767
+      "target_points": 0.766
     },
     {
       "player_id": 196,
@@ -5158,24 +5158,24 @@
       "team_short": "CRY",
       "position": "GK",
       "now_cost": 49,
-      "projected_points": 0.204,
-      "form": 0.0,
-      "season_ppg": 0.62,
-      "season_points": 5,
-      "season_minutes": 270,
+      "projected_points": 1.243,
+      "form": 0.8,
+      "season_ppg": 0.89,
+      "season_points": 8,
+      "season_minutes": 360,
       "selected_by": 1.0,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 33.8,
-      "points_avg": 0.62,
+      "gws_played": 9,
+      "minutes_avg": 40.0,
+      "points_avg": 0.89,
       "xg_recent": 0.0,
       "xa_recent": 0.0,
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 0.856
+      "target_points": 1.806
     },
     {
       "player_id": 199,
@@ -5184,24 +5184,24 @@
       "team_short": "CRY",
       "position": "GK",
       "now_cost": 45,
-      "projected_points": 2.71,
-      "form": 1.7,
-      "season_ppg": 1.62,
+      "projected_points": 1.602,
+      "form": 1.2,
+      "season_ppg": 1.44,
       "season_points": 13,
       "season_minutes": 450,
       "selected_by": 0.1,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 56.2,
-      "points_avg": 1.62,
+      "gws_played": 9,
+      "minutes_avg": 50.0,
+      "points_avg": 1.44,
       "xg_recent": 0.0,
       "xa_recent": 0.0,
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.879
+      "target_points": 2.167
     },
     {
       "player_id": 200,
@@ -5215,7 +5215,7 @@
       "season_ppg": 2.67,
       "season_points": 24,
       "season_minutes": 634,
-      "selected_by": 5.5,
+      "selected_by": 5.4,
       "status": "i",
       "chance_next_round": 0,
       "gws_played": 9,
@@ -5253,7 +5253,7 @@
       "opp_short": "MCI",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.535
+      "target_points": 2.536
     },
     {
       "player_id": 202,
@@ -5262,24 +5262,24 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 49,
-      "projected_points": 2.552,
+      "projected_points": 2.345,
       "form": 3.0,
-      "season_ppg": 2.88,
-      "season_points": 23,
-      "season_minutes": 720,
+      "season_ppg": 2.89,
+      "season_points": 26,
+      "season_minutes": 810,
       "selected_by": 0.6,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 90.0,
-      "points_avg": 2.88,
+      "points_avg": 2.89,
       "xg_recent": 0.16,
       "xa_recent": 0.11,
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.868
+      "target_points": 2.792
     },
     {
       "player_id": 203,
@@ -5288,24 +5288,24 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 48,
-      "projected_points": 2.027,
-      "form": 0.7,
-      "season_ppg": 1.5,
-      "season_points": 12,
-      "season_minutes": 630,
+      "projected_points": 2.129,
+      "form": 1.2,
+      "season_ppg": 1.67,
+      "season_points": 15,
+      "season_minutes": 720,
       "selected_by": 0.2,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 78.8,
-      "points_avg": 1.5,
+      "gws_played": 9,
+      "minutes_avg": 80.0,
+      "points_avg": 1.67,
       "xg_recent": 0.05,
-      "xa_recent": 0.16,
+      "xa_recent": 0.17,
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.274
+      "target_points": 2.359
     },
     {
       "player_id": 204,
@@ -5314,24 +5314,24 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.354,
-      "form": 1.7,
-      "season_ppg": 3.62,
-      "season_points": 29,
-      "season_minutes": 689,
-      "selected_by": 5.1,
+      "projected_points": 2.255,
+      "form": 2.0,
+      "season_ppg": 3.56,
+      "season_points": 32,
+      "season_minutes": 779,
+      "selected_by": 5.0,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 86.1,
-      "points_avg": 3.62,
+      "gws_played": 9,
+      "minutes_avg": 86.6,
+      "points_avg": 3.56,
       "xg_recent": 0.79,
-      "xa_recent": 0.31,
+      "xa_recent": 0.32,
       "bonus_recent": 3,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.985
+      "target_points": 2.947
     },
     {
       "player_id": 205,
@@ -5348,7 +5348,7 @@
       "selected_by": 0.0,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -5368,15 +5368,15 @@
       "now_cost": 43,
       "projected_points": 0.0,
       "form": 0.0,
-      "season_ppg": 0.12,
+      "season_ppg": 0.11,
       "season_points": 1,
       "season_minutes": 72,
       "selected_by": 0.0,
       "status": "i",
       "chance_next_round": 0,
-      "gws_played": 8,
-      "minutes_avg": 9.0,
-      "points_avg": 0.12,
+      "gws_played": 9,
+      "minutes_avg": 8.0,
+      "points_avg": 0.11,
       "xg_recent": 0.0,
       "xa_recent": 0.01,
       "bonus_recent": 0,
@@ -5392,24 +5392,24 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 43,
-      "projected_points": 0.112,
+      "projected_points": 0.51,
       "form": 0.0,
-      "season_ppg": 0.25,
+      "season_ppg": 0.22,
       "season_points": 2,
-      "season_minutes": 16,
+      "season_minutes": 75,
       "selected_by": 0.0,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 2.0,
-      "points_avg": 0.25,
+      "gws_played": 9,
+      "minutes_avg": 8.3,
+      "points_avg": 0.22,
       "xg_recent": 0.0,
       "xa_recent": 0.0,
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 0.129
+      "target_points": 0.615
     },
     {
       "player_id": 208,
@@ -5419,16 +5419,16 @@
       "position": "MID",
       "now_cost": 62,
       "projected_points": 0.0,
-      "form": 0.3,
-      "season_ppg": 0.25,
+      "form": 0.2,
+      "season_ppg": 0.22,
       "season_points": 2,
       "season_minutes": 15,
       "selected_by": 0.6,
       "status": "i",
       "chance_next_round": 0,
-      "gws_played": 8,
-      "minutes_avg": 1.9,
-      "points_avg": 0.25,
+      "gws_played": 9,
+      "minutes_avg": 1.7,
+      "points_avg": 0.22,
       "xg_recent": 0.0,
       "xa_recent": 0.01,
       "bonus_recent": 0,
@@ -5461,7 +5461,7 @@
       "opp_short": "COV",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.267
+      "target_points": 2.263
     },
     {
       "player_id": 210,
@@ -5470,24 +5470,24 @@
       "team_short": "CRY",
       "position": "MID",
       "now_cost": 54,
-      "projected_points": 3.095,
-      "form": 3.7,
-      "season_ppg": 2.88,
-      "season_points": 23,
-      "season_minutes": 706,
+      "projected_points": 2.834,
+      "form": 3.8,
+      "season_ppg": 3.0,
+      "season_points": 27,
+      "season_minutes": 793,
       "selected_by": 0.6,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 88.2,
-      "points_avg": 2.88,
+      "gws_played": 9,
+      "minutes_avg": 88.1,
+      "points_avg": 3.0,
       "xg_recent": 0.18,
       "xa_recent": 1.22,
       "bonus_recent": 2,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 3.163
+      "target_points": 3.02
     },
     {
       "player_id": 211,
@@ -5496,24 +5496,24 @@
       "team_short": "CRY",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.767,
-      "form": 4.0,
-      "season_ppg": 3.25,
-      "season_points": 26,
-      "season_minutes": 539,
+      "projected_points": 2.576,
+      "form": 3.2,
+      "season_ppg": 3.0,
+      "season_points": 27,
+      "season_minutes": 598,
       "selected_by": 0.3,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 67.4,
-      "points_avg": 3.25,
+      "gws_played": 9,
+      "minutes_avg": 66.4,
+      "points_avg": 3.0,
       "xg_recent": 0.99,
       "xa_recent": 0.95,
       "bonus_recent": 3,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 3.217
+      "target_points": 3.084
     },
     {
       "player_id": 212,
@@ -5522,24 +5522,24 @@
       "team_short": "CRY",
       "position": "MID",
       "now_cost": 43,
-      "projected_points": 0.372,
-      "form": 0.3,
-      "season_ppg": 0.38,
-      "season_points": 3,
-      "season_minutes": 38,
+      "projected_points": 0.535,
+      "form": 0.5,
+      "season_ppg": 0.44,
+      "season_points": 4,
+      "season_minutes": 40,
       "selected_by": 5.8,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 4.8,
-      "points_avg": 0.38,
+      "gws_played": 9,
+      "minutes_avg": 4.4,
+      "points_avg": 0.44,
       "xg_recent": 0.0,
       "xa_recent": 0.04,
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 0.39
+      "target_points": 0.574
     },
     {
       "player_id": 213,
@@ -5548,24 +5548,24 @@
       "team_short": "CRY",
       "position": "MID",
       "now_cost": 48,
-      "projected_points": 1.726,
-      "form": 3.0,
-      "season_ppg": 1.25,
-      "season_points": 10,
-      "season_minutes": 159,
+      "projected_points": 1.325,
+      "form": 2.5,
+      "season_ppg": 1.22,
+      "season_points": 11,
+      "season_minutes": 161,
       "selected_by": 0.1,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 19.9,
-      "points_avg": 1.25,
+      "gws_played": 9,
+      "minutes_avg": 17.9,
+      "points_avg": 1.22,
       "xg_recent": 0.94,
       "xa_recent": 0.01,
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.188
+      "target_points": 1.771
     },
     {
       "player_id": 214,
@@ -5574,24 +5574,24 @@
       "team_short": "CRY",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 2.732,
-      "form": 3.7,
-      "season_ppg": 4.0,
-      "season_points": 32,
-      "season_minutes": 700,
+      "projected_points": 2.324,
+      "form": 3.2,
+      "season_ppg": 3.78,
+      "season_points": 34,
+      "season_minutes": 787,
       "selected_by": 0.7,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 87.5,
-      "points_avg": 4.0,
-      "xg_recent": 0.9,
-      "xa_recent": 0.45,
+      "gws_played": 9,
+      "minutes_avg": 87.4,
+      "points_avg": 3.78,
+      "xg_recent": 0.94,
+      "xa_recent": 0.6,
       "bonus_recent": 1,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 3.279
+      "target_points": 3.069
     },
     {
       "player_id": 215,
@@ -5608,7 +5608,7 @@
       "selected_by": 0.0,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -5634,7 +5634,7 @@
       "selected_by": 0.0,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -5660,7 +5660,7 @@
       "selected_by": 0.0,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -5678,7 +5678,7 @@
       "team_short": "CRY",
       "position": "MID",
       "now_cost": 48,
-      "projected_points": 0.07,
+      "projected_points": 0.069,
       "form": 0.0,
       "season_ppg": 0.0,
       "season_points": 0,
@@ -5686,7 +5686,7 @@
       "selected_by": 0.0,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -5695,7 +5695,7 @@
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 0.079
+      "target_points": 0.078
     },
     {
       "player_id": 219,
@@ -5712,7 +5712,7 @@
       "selected_by": 0.0,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -5738,7 +5738,7 @@
       "selected_by": 0.0,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -5756,7 +5756,7 @@
       "team_short": "CRY",
       "position": "MID",
       "now_cost": 44,
-      "projected_points": 0.042,
+      "projected_points": 0.041,
       "form": 0.0,
       "season_ppg": 0.0,
       "season_points": 0,
@@ -5764,7 +5764,7 @@
       "selected_by": 0.1,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -5782,24 +5782,24 @@
       "team_short": "CRY",
       "position": "FWD",
       "now_cost": 60,
-      "projected_points": 1.463,
-      "form": 2.3,
-      "season_ppg": 2.62,
+      "projected_points": 0.881,
+      "form": 1.8,
+      "season_ppg": 2.33,
       "season_points": 21,
       "season_minutes": 440,
       "selected_by": 0.5,
       "status": "d",
       "chance_next_round": 75,
-      "gws_played": 8,
-      "minutes_avg": 55.0,
-      "points_avg": 2.62,
+      "gws_played": 9,
+      "minutes_avg": 48.9,
+      "points_avg": 2.33,
       "xg_recent": 1.41,
       "xa_recent": 0.53,
       "bonus_recent": 2,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 1.986
+      "target_points": 1.595
     },
     {
       "player_id": 223,
@@ -5809,18 +5809,18 @@
       "position": "FWD",
       "now_cost": 63,
       "projected_points": 0.0,
-      "form": 1.0,
-      "season_ppg": 0.62,
-      "season_points": 5,
-      "season_minutes": 152,
+      "form": 0.2,
+      "season_ppg": 0.33,
+      "season_points": 3,
+      "season_minutes": 164,
       "selected_by": 1.2,
       "status": "s",
       "chance_next_round": 0,
-      "gws_played": 8,
-      "minutes_avg": 19.0,
-      "points_avg": 0.62,
+      "gws_played": 9,
+      "minutes_avg": 18.2,
+      "points_avg": 0.33,
       "xg_recent": 1.96,
-      "xa_recent": 0.03,
+      "xa_recent": 0.04,
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
@@ -5834,24 +5834,24 @@
       "team_short": "CRY",
       "position": "FWD",
       "now_cost": 54,
-      "projected_points": 1.614,
+      "projected_points": 1.616,
       "form": 1.0,
-      "season_ppg": 1.38,
-      "season_points": 11,
-      "season_minutes": 239,
+      "season_ppg": 1.33,
+      "season_points": 12,
+      "season_minutes": 269,
       "selected_by": 0.4,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 29.9,
-      "points_avg": 1.38,
+      "points_avg": 1.33,
       "xg_recent": 1.13,
       "xa_recent": 0.63,
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.079
+      "target_points": 2.017
     },
     {
       "player_id": 225,
@@ -5868,7 +5868,7 @@
       "selected_by": 0.0,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -5903,7 +5903,7 @@
       "opp_short": "COV",
       "is_home": true,
       "fdr": 2,
-      "target_points": 3.556
+      "target_points": 3.554
     },
     {
       "player_id": 227,
@@ -5981,7 +5981,7 @@
       "opp_short": "COV",
       "is_home": true,
       "fdr": 2,
-      "target_points": 3.95
+      "target_points": 3.951
     },
     {
       "player_id": 230,
@@ -6007,7 +6007,7 @@
       "opp_short": "COV",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.316
+      "target_points": 2.317
     },
     {
       "player_id": 231,
@@ -6033,7 +6033,7 @@
       "opp_short": "COV",
       "is_home": true,
       "fdr": 2,
-      "target_points": 1.299
+      "target_points": 1.3
     },
     {
       "player_id": 232,
@@ -6059,7 +6059,7 @@
       "opp_short": "COV",
       "is_home": true,
       "fdr": 2,
-      "target_points": 1.88
+      "target_points": 1.881
     },
     {
       "player_id": 233,
@@ -6085,7 +6085,7 @@
       "opp_short": "COV",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.523
+      "target_points": 2.524
     },
     {
       "player_id": 234,
@@ -6163,7 +6163,7 @@
       "opp_short": "COV",
       "is_home": true,
       "fdr": 2,
-      "target_points": 4.279
+      "target_points": 4.275
     },
     {
       "player_id": 237,
@@ -6183,13 +6183,13 @@
       "gws_played": 9,
       "minutes_avg": 75.1,
       "points_avg": 3.89,
-      "xg_recent": 1.87,
+      "xg_recent": 1.74,
       "xa_recent": 1.05,
       "bonus_recent": 1,
       "opp_short": "NFO",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.569
+      "target_points": 3.572
     },
     {
       "player_id": 238,
@@ -6215,7 +6215,7 @@
       "opp_short": "COV",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.75
+      "target_points": 2.747
     },
     {
       "player_id": 239,
@@ -6241,7 +6241,7 @@
       "opp_short": "COV",
       "is_home": true,
       "fdr": 2,
-      "target_points": 3.128
+      "target_points": 3.125
     },
     {
       "player_id": 240,
@@ -6261,13 +6261,13 @@
       "gws_played": 9,
       "minutes_avg": 31.9,
       "points_avg": 2.33,
-      "xg_recent": 0.32,
+      "xg_recent": 0.43,
       "xa_recent": 0.15,
       "bonus_recent": 3,
       "opp_short": "ARS",
       "is_home": false,
       "fdr": 5,
-      "target_points": 2.524
+      "target_points": 2.521
     },
     {
       "player_id": 241,
@@ -6276,24 +6276,24 @@
       "team_short": "CRY",
       "position": "MID",
       "now_cost": 53,
-      "projected_points": 1.368,
-      "form": 1.3,
-      "season_ppg": 0.88,
-      "season_points": 7,
-      "season_minutes": 192,
+      "projected_points": 1.683,
+      "form": 1.5,
+      "season_ppg": 1.0,
+      "season_points": 9,
+      "season_minutes": 268,
       "selected_by": 0.1,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 24.0,
-      "points_avg": 0.88,
-      "xg_recent": 0.09,
+      "gws_played": 9,
+      "minutes_avg": 29.8,
+      "points_avg": 1.0,
+      "xg_recent": 0.2,
       "xa_recent": 0.26,
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 1.817
+      "target_points": 2.061
     },
     {
       "player_id": 242,
@@ -6319,7 +6319,7 @@
       "opp_short": "COV",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.744
+      "target_points": 2.741
     },
     {
       "player_id": 243,
@@ -6371,7 +6371,7 @@
       "opp_short": "COV",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.851
+      "target_points": 2.848
     },
     {
       "player_id": 245,
@@ -6423,7 +6423,7 @@
       "opp_short": "COV",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.215
+      "target_points": 2.211
     },
     {
       "player_id": 247,
@@ -6449,7 +6449,7 @@
       "opp_short": "COV",
       "is_home": true,
       "fdr": 2,
-      "target_points": 1.516
+      "target_points": 1.514
     },
     {
       "player_id": 248,
@@ -6501,7 +6501,7 @@
       "opp_short": "COV",
       "is_home": true,
       "fdr": 2,
-      "target_points": 3.996
+      "target_points": 3.994
     },
     {
       "player_id": 250,
@@ -6510,24 +6510,24 @@
       "team_short": "FUL",
       "position": "GK",
       "now_cost": 45,
-      "projected_points": 2.78,
-      "form": 5.3,
-      "season_ppg": 4.25,
-      "season_points": 34,
-      "season_minutes": 720,
-      "selected_by": 4.5,
+      "projected_points": 2.727,
+      "form": 4.5,
+      "season_ppg": 4.0,
+      "season_points": 36,
+      "season_minutes": 810,
+      "selected_by": 4.4,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 90.0,
-      "points_avg": 4.25,
+      "points_avg": 4.0,
       "xg_recent": 0.0,
       "xa_recent": 0.0,
       "bonus_recent": 4,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 3.256
+      "target_points": 3.205
     },
     {
       "player_id": 251,
@@ -6536,7 +6536,7 @@
       "team_short": "FUL",
       "position": "GK",
       "now_cost": 40,
-      "projected_points": 0.035,
+      "projected_points": 0.034,
       "form": 0.0,
       "season_ppg": 0.0,
       "season_points": 0,
@@ -6544,7 +6544,7 @@
       "selected_by": 1.1,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -6553,7 +6553,7 @@
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 0.035
+      "target_points": 0.034
     },
     {
       "player_id": 252,
@@ -6570,7 +6570,7 @@
       "selected_by": 0.1,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -6588,24 +6588,24 @@
       "team_short": "FUL",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 0.306,
+      "projected_points": 0.322,
       "form": 0.0,
-      "season_ppg": 0.38,
+      "season_ppg": 0.33,
       "season_points": 3,
       "season_minutes": 190,
       "selected_by": 0.2,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 23.8,
-      "points_avg": 0.38,
+      "gws_played": 9,
+      "minutes_avg": 21.1,
+      "points_avg": 0.33,
       "xg_recent": 0.0,
       "xa_recent": 0.1,
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 0.783
+      "target_points": 0.795
     },
     {
       "player_id": 254,
@@ -6614,24 +6614,24 @@
       "team_short": "FUL",
       "position": "DEF",
       "now_cost": 44,
-      "projected_points": 2.223,
-      "form": 4.7,
-      "season_ppg": 3.25,
-      "season_points": 26,
-      "season_minutes": 609,
+      "projected_points": 2.413,
+      "form": 4.5,
+      "season_ppg": 3.33,
+      "season_points": 30,
+      "season_minutes": 699,
       "selected_by": 1.3,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 76.1,
-      "points_avg": 3.25,
-      "xg_recent": 0.26,
-      "xa_recent": 0.34,
+      "gws_played": 9,
+      "minutes_avg": 77.7,
+      "points_avg": 3.33,
+      "xg_recent": 0.41,
+      "xa_recent": 0.52,
       "bonus_recent": 1,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.7
+      "target_points": 2.884
     },
     {
       "player_id": 255,
@@ -6640,24 +6640,24 @@
       "team_short": "FUL",
       "position": "DEF",
       "now_cost": 44,
-      "projected_points": 0.182,
+      "projected_points": 0.184,
       "form": 0.0,
-      "season_ppg": 0.38,
+      "season_ppg": 0.33,
       "season_points": 3,
       "season_minutes": 90,
       "selected_by": 0.0,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 11.2,
-      "points_avg": 0.38,
+      "gws_played": 9,
+      "minutes_avg": 10.0,
+      "points_avg": 0.33,
       "xg_recent": 0.0,
       "xa_recent": 0.03,
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 0.527
+      "target_points": 0.529
     },
     {
       "player_id": 256,
@@ -6666,24 +6666,24 @@
       "team_short": "FUL",
       "position": "DEF",
       "now_cost": 44,
-      "projected_points": 1.142,
-      "form": 0.7,
-      "season_ppg": 0.25,
-      "season_points": 2,
-      "season_minutes": 126,
+      "projected_points": 0.719,
+      "form": 0.8,
+      "season_ppg": 0.33,
+      "season_points": 3,
+      "season_minutes": 137,
       "selected_by": 0.2,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 15.8,
-      "points_avg": 0.25,
+      "gws_played": 9,
+      "minutes_avg": 15.2,
+      "points_avg": 0.33,
       "xg_recent": 0.0,
       "xa_recent": 0.22,
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 1.346
+      "target_points": 0.98
     },
     {
       "player_id": 257,
@@ -6692,24 +6692,24 @@
       "team_short": "FUL",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.409,
-      "form": 6.0,
-      "season_ppg": 4.12,
-      "season_points": 33,
-      "season_minutes": 720,
+      "projected_points": 2.396,
+      "form": 4.8,
+      "season_ppg": 3.78,
+      "season_points": 34,
+      "season_minutes": 810,
       "selected_by": 1.3,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 90.0,
-      "points_avg": 4.12,
-      "xg_recent": 0.31,
-      "xa_recent": 0.13,
+      "points_avg": 3.78,
+      "xg_recent": 0.4,
+      "xa_recent": 0.14,
       "bonus_recent": 1,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.991
+      "target_points": 2.93
     },
     {
       "player_id": 258,
@@ -6718,24 +6718,24 @@
       "team_short": "FUL",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.28,
-      "form": 5.0,
-      "season_ppg": 4.38,
-      "season_points": 35,
-      "season_minutes": 588,
+      "projected_points": 2.427,
+      "form": 4.2,
+      "season_ppg": 4.11,
+      "season_points": 37,
+      "season_minutes": 674,
       "selected_by": 1.2,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 73.5,
-      "points_avg": 4.38,
+      "gws_played": 9,
+      "minutes_avg": 74.9,
+      "points_avg": 4.11,
       "xg_recent": 0.72,
-      "xa_recent": 0.52,
+      "xa_recent": 0.97,
       "bonus_recent": 3,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 3.026
+      "target_points": 3.11
     },
     {
       "player_id": 259,
@@ -6761,7 +6761,7 @@
       "opp_short": "BOU",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.249
+      "target_points": 2.25
     },
     {
       "player_id": 260,
@@ -6781,13 +6781,13 @@
       "gws_played": 9,
       "minutes_avg": 34.7,
       "points_avg": 1.22,
-      "xg_recent": 0.12,
-      "xa_recent": 0.29,
+      "xg_recent": 0.14,
+      "xa_recent": 0.31,
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.106
+      "target_points": 2.102
     },
     {
       "player_id": 261,
@@ -6796,24 +6796,24 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 54,
-      "projected_points": 4.158,
+      "projected_points": 3.833,
       "form": 6.0,
-      "season_ppg": 4.0,
-      "season_points": 32,
-      "season_minutes": 657,
+      "season_ppg": 4.22,
+      "season_points": 38,
+      "season_minutes": 731,
       "selected_by": 1.4,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 82.1,
-      "points_avg": 4.0,
-      "xg_recent": 0.72,
-      "xa_recent": 2.6,
-      "bonus_recent": 6,
+      "gws_played": 9,
+      "minutes_avg": 81.2,
+      "points_avg": 4.22,
+      "xg_recent": 1.35,
+      "xa_recent": 2.76,
+      "bonus_recent": 7,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 3.855
+      "target_points": 3.773
     },
     {
       "player_id": 262,
@@ -6822,24 +6822,24 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 52,
-      "projected_points": 0.313,
+      "projected_points": 0.172,
       "form": 0.0,
-      "season_ppg": 0.38,
+      "season_ppg": 0.33,
       "season_points": 3,
       "season_minutes": 41,
       "selected_by": 0.2,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 5.1,
-      "points_avg": 0.38,
+      "gws_played": 9,
+      "minutes_avg": 4.6,
+      "points_avg": 0.33,
       "xg_recent": 0.06,
       "xa_recent": 0.02,
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 0.344
+      "target_points": 0.184
     },
     {
       "player_id": 263,
@@ -6848,24 +6848,24 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 52,
-      "projected_points": 0.746,
-      "form": 0.3,
-      "season_ppg": 0.62,
+      "projected_points": 0.356,
+      "form": 0.2,
+      "season_ppg": 0.56,
       "season_points": 5,
       "season_minutes": 75,
       "selected_by": 0.0,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 9.4,
-      "points_avg": 0.62,
+      "gws_played": 9,
+      "minutes_avg": 8.3,
+      "points_avg": 0.56,
       "xg_recent": 0.22,
       "xa_recent": 0.12,
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 0.765
+      "target_points": 0.396
     },
     {
       "player_id": 264,
@@ -6874,24 +6874,24 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 3.426,
-      "form": 5.7,
-      "season_ppg": 3.75,
-      "season_points": 30,
-      "season_minutes": 575,
+      "projected_points": 3.196,
+      "form": 4.8,
+      "season_ppg": 3.56,
+      "season_points": 32,
+      "season_minutes": 653,
       "selected_by": 0.5,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 71.9,
-      "points_avg": 3.75,
-      "xg_recent": 1.34,
-      "xa_recent": 1.52,
+      "gws_played": 9,
+      "minutes_avg": 72.6,
+      "points_avg": 3.56,
+      "xg_recent": 1.74,
+      "xa_recent": 1.67,
       "bonus_recent": 3,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 3.413
+      "target_points": 3.292
     },
     {
       "player_id": 265,
@@ -6900,24 +6900,24 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 49,
-      "projected_points": 2.124,
-      "form": 2.7,
-      "season_ppg": 2.38,
-      "season_points": 19,
-      "season_minutes": 556,
+      "projected_points": 2.145,
+      "form": 2.5,
+      "season_ppg": 2.33,
+      "season_points": 21,
+      "season_minutes": 646,
       "selected_by": 0.3,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 69.5,
-      "points_avg": 2.38,
+      "gws_played": 9,
+      "minutes_avg": 71.8,
+      "points_avg": 2.33,
       "xg_recent": 0.29,
-      "xa_recent": 0.5,
+      "xa_recent": 0.52,
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.525
+      "target_points": 2.498
     },
     {
       "player_id": 266,
@@ -6926,24 +6926,24 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 49,
-      "projected_points": 0.883,
-      "form": 0.7,
-      "season_ppg": 0.25,
+      "projected_points": 1.043,
+      "form": 0.5,
+      "season_ppg": 0.22,
       "season_points": 2,
-      "season_minutes": 21,
+      "season_minutes": 36,
       "selected_by": 0.0,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 2.6,
-      "points_avg": 0.25,
+      "gws_played": 9,
+      "minutes_avg": 4.0,
+      "points_avg": 0.22,
       "xg_recent": 0.03,
-      "xa_recent": 0.0,
+      "xa_recent": 0.07,
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 0.851
+      "target_points": 0.997
     },
     {
       "player_id": 267,
@@ -6969,7 +6969,7 @@
       "opp_short": "BOU",
       "is_home": true,
       "fdr": 3,
-      "target_points": 1.013
+      "target_points": 1.011
     },
     {
       "player_id": 268,
@@ -6977,20 +6977,20 @@
       "team_id": 10,
       "team_short": "FUL",
       "position": "MID",
-      "now_cost": 56,
-      "projected_points": 3.805,
-      "form": 3.3,
-      "season_ppg": 4.25,
-      "season_points": 34,
-      "season_minutes": 657,
-      "selected_by": 3.8,
+      "now_cost": 55,
+      "projected_points": 3.946,
+      "form": 3.0,
+      "season_ppg": 4.0,
+      "season_points": 36,
+      "season_minutes": 735,
+      "selected_by": 3.7,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 82.1,
-      "points_avg": 4.25,
+      "gws_played": 9,
+      "minutes_avg": 81.7,
+      "points_avg": 4.0,
       "xg_recent": 1.86,
-      "xa_recent": 1.14,
+      "xa_recent": 1.34,
       "bonus_recent": 3,
       "opp_short": "NEW",
       "is_home": true,
@@ -7004,24 +7004,24 @@
       "team_short": "FUL",
       "position": "DEF",
       "now_cost": 43,
-      "projected_points": 0.0,
-      "form": 1.7,
-      "season_ppg": 1.0,
+      "projected_points": 0.525,
+      "form": 1.2,
+      "season_ppg": 0.89,
       "season_points": 8,
       "season_minutes": 152,
       "selected_by": 0.2,
-      "status": "s",
-      "chance_next_round": 0,
-      "gws_played": 8,
-      "minutes_avg": 19.0,
-      "points_avg": 1.0,
+      "status": "a",
+      "chance_next_round": 100,
+      "gws_played": 9,
+      "minutes_avg": 16.9,
+      "points_avg": 0.89,
       "xg_recent": 0.26,
       "xa_recent": 0.46,
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 0.0
+      "target_points": 0.921
     },
     {
       "player_id": 270,
@@ -7030,7 +7030,7 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 43,
-      "projected_points": 0.042,
+      "projected_points": 0.041,
       "form": 0.0,
       "season_ppg": 0.0,
       "season_points": 0,
@@ -7038,7 +7038,7 @@
       "selected_by": 1.0,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -7047,7 +7047,7 @@
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 0.043
+      "target_points": 0.042
     },
     {
       "player_id": 271,
@@ -7056,24 +7056,24 @@
       "team_short": "FUL",
       "position": "FWD",
       "now_cost": 53,
-      "projected_points": 1.001,
-      "form": 0.7,
-      "season_ppg": 0.62,
-      "season_points": 5,
-      "season_minutes": 68,
-      "selected_by": 0.4,
+      "projected_points": 0.87,
+      "form": 0.8,
+      "season_ppg": 0.67,
+      "season_points": 6,
+      "season_minutes": 71,
+      "selected_by": 0.3,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 8.5,
-      "points_avg": 0.62,
+      "gws_played": 9,
+      "minutes_avg": 7.9,
+      "points_avg": 0.67,
       "xg_recent": 0.46,
       "xa_recent": 0.0,
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 0.979
+      "target_points": 0.865
     },
     {
       "player_id": 272,
@@ -7082,7 +7082,7 @@
       "team_short": "FUL",
       "position": "FWD",
       "now_cost": 44,
-      "projected_points": 0.042,
+      "projected_points": 0.041,
       "form": 0.0,
       "season_ppg": 0.0,
       "season_points": 0,
@@ -7090,7 +7090,7 @@
       "selected_by": 4.5,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -7099,7 +7099,7 @@
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 0.043
+      "target_points": 0.042
     },
     {
       "player_id": 273,
@@ -7217,19 +7217,19 @@
       "season_ppg": 4.0,
       "season_points": 36,
       "season_minutes": 752,
-      "selected_by": 7.3,
+      "selected_by": 7.2,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
       "minutes_avg": 83.6,
       "points_avg": 4.0,
-      "xg_recent": 0.28,
+      "xg_recent": 0.26,
       "xa_recent": 0.16,
       "bonus_recent": 1,
       "opp_short": "ARS",
       "is_home": false,
       "fdr": 5,
-      "target_points": 2.621
+      "target_points": 2.619
     },
     {
       "player_id": 278,
@@ -7269,7 +7269,7 @@
       "season_ppg": 4.0,
       "season_points": 36,
       "season_minutes": 783,
-      "selected_by": 12.8,
+      "selected_by": 12.7,
       "status": "a",
       "chance_next_round": 100,
       "gws_played": 9,
@@ -7281,7 +7281,7 @@
       "opp_short": "ARS",
       "is_home": false,
       "fdr": 5,
-      "target_points": 2.662
+      "target_points": 2.664
     },
     {
       "player_id": 280,
@@ -7290,7 +7290,7 @@
       "team_short": "HUL",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 1.121,
+      "projected_points": 1.114,
       "form": 1.5,
       "season_ppg": 2.22,
       "season_points": 20,
@@ -7301,13 +7301,13 @@
       "gws_played": 9,
       "minutes_avg": 74.2,
       "points_avg": 2.22,
-      "xg_recent": 0.21,
+      "xg_recent": 0.24,
       "xa_recent": 0.09,
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
       "fdr": 5,
-      "target_points": 2.03
+      "target_points": 2.024
     },
     {
       "player_id": 281,
@@ -7342,7 +7342,7 @@
       "team_short": "HUL",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 0.939,
+      "projected_points": 0.929,
       "form": 1.5,
       "season_ppg": 3.33,
       "season_points": 30,
@@ -7354,12 +7354,12 @@
       "minutes_avg": 75.9,
       "points_avg": 3.33,
       "xg_recent": 0.02,
-      "xa_recent": 0.54,
+      "xa_recent": 0.48,
       "bonus_recent": 2,
       "opp_short": "ARS",
       "is_home": false,
       "fdr": 5,
-      "target_points": 2.231
+      "target_points": 2.222
     },
     {
       "player_id": 283,
@@ -7445,7 +7445,7 @@
       "team_id": 11,
       "team_short": "HUL",
       "position": "MID",
-      "now_cost": 52,
+      "now_cost": 53,
       "projected_points": 2.237,
       "form": 4.2,
       "season_ppg": 5.33,
@@ -7457,13 +7457,13 @@
       "gws_played": 9,
       "minutes_avg": 76.1,
       "points_avg": 5.33,
-      "xg_recent": 1.3,
-      "xa_recent": 0.92,
+      "xg_recent": 1.29,
+      "xa_recent": 0.9,
       "bonus_recent": 2,
       "opp_short": "ARS",
       "is_home": false,
       "fdr": 5,
-      "target_points": 3.229
+      "target_points": 3.274
     },
     {
       "player_id": 287,
@@ -7561,8 +7561,8 @@
       "gws_played": 9,
       "minutes_avg": 84.9,
       "points_avg": 2.44,
-      "xg_recent": 0.32,
-      "xa_recent": 0.8,
+      "xg_recent": 0.31,
+      "xa_recent": 0.77,
       "bonus_recent": 0,
       "opp_short": "ARS",
       "is_home": false,
@@ -7691,13 +7691,13 @@
       "gws_played": 9,
       "minutes_avg": 88.4,
       "points_avg": 4.0,
-      "xg_recent": 2.21,
+      "xg_recent": 2.22,
       "xa_recent": 0.24,
       "bonus_recent": 5,
       "opp_short": "ARS",
       "is_home": false,
       "fdr": 5,
-      "target_points": 3.554
+      "target_points": 3.552
     },
     {
       "player_id": 296,
@@ -7827,7 +7827,7 @@
       "opp_short": "BOU",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.587
+      "target_points": 2.585
     },
     {
       "player_id": 301,
@@ -7931,7 +7931,7 @@
       "opp_short": "BOU",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.531
+      "target_points": 2.532
     },
     {
       "player_id": 305,
@@ -7945,7 +7945,7 @@
       "season_ppg": 3.22,
       "season_points": 29,
       "season_minutes": 810,
-      "selected_by": 7.1,
+      "selected_by": 7.0,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -7957,7 +7957,7 @@
       "opp_short": "BOU",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.586
+      "target_points": 2.587
     },
     {
       "player_id": 306,
@@ -7983,7 +7983,7 @@
       "opp_short": "BOU",
       "is_home": true,
       "fdr": 3,
-      "target_points": 1.225
+      "target_points": 1.226
     },
     {
       "player_id": 307,
@@ -8061,7 +8061,7 @@
       "opp_short": "BOU",
       "is_home": true,
       "fdr": 3,
-      "target_points": 0.798
+      "target_points": 0.795
     },
     {
       "player_id": 310,
@@ -8152,12 +8152,12 @@
       "form": 1.8,
       "season_ppg": 2.0,
       "season_points": 18,
-      "season_minutes": 247,
-      "selected_by": 0.2,
+      "season_minutes": 248,
+      "selected_by": 0.1,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
-      "minutes_avg": 27.4,
+      "minutes_avg": 27.6,
       "points_avg": 2.0,
       "xg_recent": 0.39,
       "xa_recent": 0.41,
@@ -8165,7 +8165,7 @@
       "opp_short": "BOU",
       "is_home": true,
       "fdr": 3,
-      "target_points": 1.848
+      "target_points": 1.847
     },
     {
       "player_id": 314,
@@ -8200,7 +8200,7 @@
       "team_short": "IPS",
       "position": "MID",
       "now_cost": 54,
-      "projected_points": 2.14,
+      "projected_points": 2.096,
       "form": 2.0,
       "season_ppg": 1.78,
       "season_points": 16,
@@ -8211,13 +8211,13 @@
       "gws_played": 9,
       "minutes_avg": 56.9,
       "points_avg": 1.78,
-      "xg_recent": 0.44,
+      "xg_recent": 0.36,
       "xa_recent": 1.16,
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.244
+      "target_points": 2.214
     },
     {
       "player_id": 316,
@@ -8243,7 +8243,7 @@
       "opp_short": "BOU",
       "is_home": true,
       "fdr": 3,
-      "target_points": 3.418
+      "target_points": 3.416
     },
     {
       "player_id": 317,
@@ -8282,12 +8282,12 @@
       "form": 1.5,
       "season_ppg": 0.89,
       "season_points": 8,
-      "season_minutes": 243,
+      "season_minutes": 242,
       "selected_by": 0.1,
       "status": "a",
       "chance_next_round": 100,
       "gws_played": 9,
-      "minutes_avg": 27.0,
+      "minutes_avg": 26.9,
       "points_avg": 0.89,
       "xg_recent": 0.21,
       "xa_recent": 0.05,
@@ -8295,7 +8295,7 @@
       "opp_short": "BOU",
       "is_home": true,
       "fdr": 3,
-      "target_points": 1.954
+      "target_points": 1.946
     },
     {
       "player_id": 319,
@@ -8361,7 +8361,7 @@
       "season_ppg": 0.22,
       "season_points": 2,
       "season_minutes": 19,
-      "selected_by": 2.9,
+      "selected_by": 2.8,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -8529,7 +8529,7 @@
       "opp_short": "TOT",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.105
+      "target_points": 2.106
     },
     {
       "player_id": 328,
@@ -8607,7 +8607,7 @@
       "opp_short": "TOT",
       "is_home": true,
       "fdr": 2,
-      "target_points": 3.669
+      "target_points": 3.67
     },
     {
       "player_id": 331,
@@ -8633,7 +8633,7 @@
       "opp_short": "TOT",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.838
+      "target_points": 2.839
     },
     {
       "player_id": 332,
@@ -8659,7 +8659,7 @@
       "opp_short": "TOT",
       "is_home": true,
       "fdr": 2,
-      "target_points": 3.347
+      "target_points": 3.348
     },
     {
       "player_id": 333,
@@ -8711,7 +8711,7 @@
       "opp_short": "TOT",
       "is_home": true,
       "fdr": 2,
-      "target_points": 3.565
+      "target_points": 3.566
     },
     {
       "player_id": 335,
@@ -8720,7 +8720,7 @@
       "team_short": "LEE",
       "position": "MID",
       "now_cost": 60,
-      "projected_points": 2.442,
+      "projected_points": 2.439,
       "form": 1.5,
       "season_ppg": 3.67,
       "season_points": 33,
@@ -8731,13 +8731,13 @@
       "gws_played": 9,
       "minutes_avg": 75.1,
       "points_avg": 3.67,
-      "xg_recent": 1.47,
+      "xg_recent": 1.5,
       "xa_recent": 0.53,
       "bonus_recent": 3,
       "opp_short": "TOT",
       "is_home": true,
       "fdr": 2,
-      "target_points": 3.054
+      "target_points": 3.049
     },
     {
       "player_id": 336,
@@ -8746,14 +8746,14 @@
       "team_short": "LEE",
       "position": "MID",
       "now_cost": 58,
-      "projected_points": 1.845,
+      "projected_points": 1.384,
       "form": 1.2,
       "season_ppg": 2.56,
       "season_points": 23,
       "season_minutes": 467,
       "selected_by": 0.3,
-      "status": "a",
-      "chance_next_round": 100,
+      "status": "d",
+      "chance_next_round": 75,
       "gws_played": 9,
       "minutes_avg": 51.9,
       "points_avg": 2.56,
@@ -8763,7 +8763,7 @@
       "opp_short": "TOT",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.437
+      "target_points": 1.825
     },
     {
       "player_id": 337,
@@ -8789,7 +8789,7 @@
       "opp_short": "TOT",
       "is_home": true,
       "fdr": 2,
-      "target_points": 1.706
+      "target_points": 1.704
     },
     {
       "player_id": 338,
@@ -8815,7 +8815,7 @@
       "opp_short": "TOT",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.79
+      "target_points": 2.787
     },
     {
       "player_id": 339,
@@ -8835,7 +8835,7 @@
       "gws_played": 9,
       "minutes_avg": 5.0,
       "points_avg": 0.56,
-      "xg_recent": 0.34,
+      "xg_recent": 0.35,
       "xa_recent": 0.01,
       "bonus_recent": 0,
       "opp_short": "TOT",
@@ -8867,7 +8867,7 @@
       "opp_short": "ARS",
       "is_home": false,
       "fdr": 5,
-      "target_points": 1.559
+      "target_points": 1.557
     },
     {
       "player_id": 341,
@@ -8945,7 +8945,7 @@
       "opp_short": "TOT",
       "is_home": true,
       "fdr": 2,
-      "target_points": 1.148
+      "target_points": 1.146
     },
     {
       "player_id": 344,
@@ -8997,7 +8997,7 @@
       "opp_short": "TOT",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.517
+      "target_points": 2.514
     },
     {
       "player_id": 346,
@@ -9011,7 +9011,7 @@
       "season_ppg": 4.11,
       "season_points": 37,
       "season_minutes": 773,
-      "selected_by": 21.3,
+      "selected_by": 21.2,
       "status": "a",
       "chance_next_round": 100,
       "gws_played": 9,
@@ -9023,7 +9023,7 @@
       "opp_short": "TOT",
       "is_home": true,
       "fdr": 2,
-      "target_points": 3.652
+      "target_points": 3.649
     },
     {
       "player_id": 347,
@@ -9127,7 +9127,7 @@
       "opp_short": "CRY",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.621
+      "target_points": 3.619
     },
     {
       "player_id": 351,
@@ -9283,7 +9283,7 @@
       "opp_short": "CRY",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.624
+      "target_points": 3.625
     },
     {
       "player_id": 357,
@@ -9335,7 +9335,7 @@
       "opp_short": "CRY",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.883
+      "target_points": 2.884
     },
     {
       "player_id": 359,
@@ -9439,7 +9439,7 @@
       "opp_short": "CRY",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.477
+      "target_points": 3.478
     },
     {
       "player_id": 363,
@@ -9543,7 +9543,7 @@
       "opp_short": "CRY",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.904
+      "target_points": 3.9
     },
     {
       "player_id": 367,
@@ -9569,7 +9569,7 @@
       "opp_short": "CRY",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.353
+      "target_points": 3.35
     },
     {
       "player_id": 368,
@@ -9583,7 +9583,7 @@
       "season_ppg": 2.62,
       "season_points": 21,
       "season_minutes": 471,
-      "selected_by": 13.6,
+      "selected_by": 13.5,
       "status": "d",
       "chance_next_round": 50,
       "gws_played": 8,
@@ -9595,7 +9595,7 @@
       "opp_short": "CRY",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.156
+      "target_points": 1.154
     },
     {
       "player_id": 369,
@@ -9621,7 +9621,7 @@
       "opp_short": "CRY",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.652
+      "target_points": 1.65
     },
     {
       "player_id": 370,
@@ -9673,7 +9673,7 @@
       "opp_short": "CRY",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.162
+      "target_points": 2.158
     },
     {
       "player_id": 372,
@@ -9699,7 +9699,7 @@
       "opp_short": "CRY",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.019
+      "target_points": 3.015
     },
     {
       "player_id": 373,
@@ -9829,7 +9829,7 @@
       "opp_short": "CRY",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.559
+      "target_points": 1.557
     },
     {
       "player_id": 378,
@@ -9863,13 +9863,13 @@
       "team_id": 14,
       "team_short": "LIV",
       "position": "FWD",
-      "now_cost": 91,
+      "now_cost": 92,
       "projected_points": 3.384,
       "form": 6.0,
       "season_ppg": 6.38,
       "season_points": 51,
       "season_minutes": 567,
-      "selected_by": 20.5,
+      "selected_by": 20.9,
       "status": "a",
       "chance_next_round": 100,
       "gws_played": 8,
@@ -9881,7 +9881,7 @@
       "opp_short": "CRY",
       "is_home": false,
       "fdr": 3,
-      "target_points": 4.437
+      "target_points": 4.472
     },
     {
       "player_id": 380,
@@ -9933,7 +9933,7 @@
       "opp_short": "CRY",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.668
+      "target_points": 1.666
     },
     {
       "player_id": 382,
@@ -10011,7 +10011,7 @@
       "opp_short": "NFO",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.442
+      "target_points": 3.44
     },
     {
       "player_id": 385,
@@ -10037,7 +10037,7 @@
       "opp_short": "TOT",
       "is_home": true,
       "fdr": 2,
-      "target_points": 3.733
+      "target_points": 3.731
     },
     {
       "player_id": 386,
@@ -10072,7 +10072,7 @@
       "team_short": "MCI",
       "position": "DEF",
       "now_cost": 62,
-      "projected_points": 2.472,
+      "projected_points": 2.156,
       "form": 2.0,
       "season_ppg": 1.56,
       "season_points": 14,
@@ -10083,13 +10083,13 @@
       "gws_played": 9,
       "minutes_avg": 34.9,
       "points_avg": 1.56,
-      "xg_recent": 1.26,
-      "xa_recent": 0.86,
+      "xg_recent": 1.23,
+      "xa_recent": 0.59,
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.69
+      "target_points": 2.447
     },
     {
       "player_id": 388,
@@ -10103,7 +10103,7 @@
       "season_ppg": 4.11,
       "season_points": 37,
       "season_minutes": 675,
-      "selected_by": 16.5,
+      "selected_by": 16.4,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -10115,7 +10115,7 @@
       "opp_short": "NFO",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.745
+      "target_points": 2.746
     },
     {
       "player_id": 389,
@@ -10124,7 +10124,7 @@
       "team_short": "MCI",
       "position": "DEF",
       "now_cost": 59,
-      "projected_points": 2.035,
+      "projected_points": 2.039,
       "form": 2.5,
       "season_ppg": 2.33,
       "season_points": 21,
@@ -10135,13 +10135,13 @@
       "gws_played": 9,
       "minutes_avg": 52.0,
       "points_avg": 2.33,
-      "xg_recent": 0.16,
-      "xa_recent": 0.33,
+      "xg_recent": 0.15,
+      "xa_recent": 0.21,
       "bonus_recent": 1,
       "opp_short": "NFO",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.637
+      "target_points": 2.64
     },
     {
       "player_id": 390,
@@ -10167,7 +10167,7 @@
       "opp_short": "NFO",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.204
+      "target_points": 3.205
     },
     {
       "player_id": 391,
@@ -10181,7 +10181,7 @@
       "season_ppg": 4.89,
       "season_points": 44,
       "season_minutes": 655,
-      "selected_by": 26.5,
+      "selected_by": 26.4,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -10193,7 +10193,7 @@
       "opp_short": "NFO",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.515
+      "target_points": 3.524
     },
     {
       "player_id": 392,
@@ -10229,23 +10229,23 @@
       "position": "DEF",
       "now_cost": 53,
       "projected_points": 1.822,
-      "form": 1.5,
-      "season_ppg": 1.67,
-      "season_points": 15,
+      "form": 2.0,
+      "season_ppg": 1.89,
+      "season_points": 17,
       "season_minutes": 462,
       "selected_by": 1.2,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
       "minutes_avg": 51.3,
-      "points_avg": 1.67,
-      "xg_recent": 0.09,
+      "points_avg": 1.89,
+      "xg_recent": 0.08,
       "xa_recent": 0.14,
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.361
+      "target_points": 2.418
     },
     {
       "player_id": 394,
@@ -10337,7 +10337,7 @@
       "season_ppg": 4.11,
       "season_points": 37,
       "season_minutes": 553,
-      "selected_by": 6.5,
+      "selected_by": 6.4,
       "status": "i",
       "chance_next_round": 0,
       "gws_played": 9,
@@ -10375,7 +10375,7 @@
       "opp_short": "NFO",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.193
+      "target_points": 3.19
     },
     {
       "player_id": 399,
@@ -10383,25 +10383,25 @@
       "team_id": 15,
       "team_short": "MCI",
       "position": "MID",
-      "now_cost": 80,
+      "now_cost": 79,
       "projected_points": 1.633,
       "form": 2.8,
       "season_ppg": 5.0,
       "season_points": 45,
       "season_minutes": 472,
-      "selected_by": 37.0,
+      "selected_by": 36.5,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
       "minutes_avg": 52.4,
       "points_avg": 5.0,
       "xg_recent": 1.76,
-      "xa_recent": 1.84,
+      "xa_recent": 1.81,
       "bonus_recent": 7,
       "opp_short": "NFO",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.849
+      "target_points": 2.845
     },
     {
       "player_id": 400,
@@ -10410,24 +10410,24 @@
       "team_short": "MCI",
       "position": "MID",
       "now_cost": 75,
-      "projected_points": 3.62,
-      "form": 6.0,
-      "season_ppg": 2.78,
-      "season_points": 25,
+      "projected_points": 3.617,
+      "form": 5.5,
+      "season_ppg": 2.56,
+      "season_points": 23,
       "season_minutes": 305,
-      "selected_by": 4.5,
+      "selected_by": 4.6,
       "status": "a",
       "chance_next_round": 100,
       "gws_played": 9,
       "minutes_avg": 33.9,
-      "points_avg": 2.78,
-      "xg_recent": 0.68,
-      "xa_recent": 1.77,
+      "points_avg": 2.56,
+      "xg_recent": 0.7,
+      "xa_recent": 1.64,
       "bonus_recent": 4,
       "opp_short": "NFO",
       "is_home": false,
       "fdr": 3,
-      "target_points": 4.024
+      "target_points": 3.971
     },
     {
       "player_id": 401,
@@ -10436,24 +10436,24 @@
       "team_short": "TOT",
       "position": "FWD",
       "now_cost": 70,
-      "projected_points": 2.386,
-      "form": 4.0,
-      "season_ppg": 2.5,
-      "season_points": 20,
-      "season_minutes": 513,
+      "projected_points": 2.496,
+      "form": 3.5,
+      "season_ppg": 2.44,
+      "season_points": 22,
+      "season_minutes": 589,
       "selected_by": 2.7,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 64.1,
-      "points_avg": 2.5,
-      "xg_recent": 0.74,
-      "xa_recent": 0.18,
+      "gws_played": 9,
+      "minutes_avg": 65.4,
+      "points_avg": 2.44,
+      "xg_recent": 0.88,
+      "xa_recent": 0.33,
       "bonus_recent": 3,
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.987
+      "target_points": 2.984
     },
     {
       "player_id": 402,
@@ -10489,16 +10489,16 @@
       "position": "MID",
       "now_cost": 65,
       "projected_points": 0.0,
-      "form": 0.7,
-      "season_ppg": 1.25,
+      "form": 0.5,
+      "season_ppg": 1.11,
       "season_points": 10,
       "season_minutes": 330,
       "selected_by": 0.4,
       "status": "i",
       "chance_next_round": 0,
-      "gws_played": 8,
-      "minutes_avg": 41.2,
-      "points_avg": 1.25,
+      "gws_played": 9,
+      "minutes_avg": 36.7,
+      "points_avg": 1.11,
       "xg_recent": 0.54,
       "xa_recent": 0.95,
       "bonus_recent": 0,
@@ -10557,7 +10557,7 @@
       "opp_short": "FUL",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.135
+      "target_points": 3.131
     },
     {
       "player_id": 406,
@@ -10696,7 +10696,7 @@
       "team_short": "MCI",
       "position": "FWD",
       "now_cost": 158,
-      "projected_points": 6.46,
+      "projected_points": 6.35,
       "form": 7.2,
       "season_ppg": 7.56,
       "season_points": 68,
@@ -10707,13 +10707,13 @@
       "gws_played": 9,
       "minutes_avg": 88.8,
       "points_avg": 7.56,
-      "xg_recent": 6.65,
-      "xa_recent": 0.93,
+      "xg_recent": 6.56,
+      "xa_recent": 0.85,
       "bonus_recent": 14,
       "opp_short": "NFO",
       "is_home": false,
       "fdr": 3,
-      "target_points": 6.532
+      "target_points": 6.487
     },
     {
       "player_id": 412,
@@ -10727,7 +10727,7 @@
       "season_ppg": 2.22,
       "season_points": 20,
       "season_minutes": 810,
-      "selected_by": 7.7,
+      "selected_by": 7.6,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -10739,7 +10739,7 @@
       "opp_short": "AVL",
       "is_home": true,
       "fdr": 3,
-      "target_points": 3.15
+      "target_points": 3.148
     },
     {
       "player_id": 413,
@@ -10869,7 +10869,7 @@
       "opp_short": "AVL",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.744
+      "target_points": 2.745
     },
     {
       "player_id": 418,
@@ -10895,7 +10895,7 @@
       "opp_short": "AVL",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.607
+      "target_points": 2.609
     },
     {
       "player_id": 419,
@@ -10947,7 +10947,7 @@
       "opp_short": "AVL",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.725
+      "target_points": 2.726
     },
     {
       "player_id": 421,
@@ -10973,7 +10973,7 @@
       "opp_short": "AVL",
       "is_home": true,
       "fdr": 3,
-      "target_points": 1.179
+      "target_points": 1.18
     },
     {
       "player_id": 422,
@@ -10999,7 +10999,7 @@
       "opp_short": "AVL",
       "is_home": true,
       "fdr": 3,
-      "target_points": 1.419
+      "target_points": 1.42
     },
     {
       "player_id": 423,
@@ -11091,7 +11091,7 @@
       "season_ppg": 3.89,
       "season_points": 35,
       "season_minutes": 720,
-      "selected_by": 22.4,
+      "selected_by": 22.2,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -11103,7 +11103,7 @@
       "opp_short": "AVL",
       "is_home": true,
       "fdr": 3,
-      "target_points": 4.043
+      "target_points": 4.039
     },
     {
       "player_id": 427,
@@ -11117,7 +11117,7 @@
       "season_ppg": 4.89,
       "season_points": 44,
       "season_minutes": 810,
-      "selected_by": 21.1,
+      "selected_by": 20.9,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -11129,7 +11129,7 @@
       "opp_short": "AVL",
       "is_home": true,
       "fdr": 3,
-      "target_points": 4.558
+      "target_points": 4.554
     },
     {
       "player_id": 428,
@@ -11155,7 +11155,7 @@
       "opp_short": "AVL",
       "is_home": true,
       "fdr": 3,
-      "target_points": 3.391
+      "target_points": 3.387
     },
     {
       "player_id": 429,
@@ -11181,7 +11181,7 @@
       "opp_short": "AVL",
       "is_home": true,
       "fdr": 3,
-      "target_points": 1.1
+      "target_points": 1.097
     },
     {
       "player_id": 430,
@@ -11207,7 +11207,7 @@
       "opp_short": "AVL",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.269
+      "target_points": 2.267
     },
     {
       "player_id": 431,
@@ -11233,7 +11233,7 @@
       "opp_short": "AVL",
       "is_home": true,
       "fdr": 3,
-      "target_points": 1.94
+      "target_points": 1.938
     },
     {
       "player_id": 432,
@@ -11259,7 +11259,7 @@
       "opp_short": "AVL",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.041
+      "target_points": 2.037
     },
     {
       "player_id": 433,
@@ -11597,7 +11597,7 @@
       "opp_short": "FUL",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.132
+      "target_points": 2.133
     },
     {
       "player_id": 446,
@@ -11623,7 +11623,7 @@
       "opp_short": "FUL",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.713
+      "target_points": 1.714
     },
     {
       "player_id": 447,
@@ -11649,7 +11649,7 @@
       "opp_short": "FUL",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.883
+      "target_points": 2.884
     },
     {
       "player_id": 448,
@@ -11675,7 +11675,7 @@
       "opp_short": "FUL",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.005
+      "target_points": 2.006
     },
     {
       "player_id": 449,
@@ -11689,7 +11689,7 @@
       "season_ppg": 5.0,
       "season_points": 40,
       "season_minutes": 719,
-      "selected_by": 20.4,
+      "selected_by": 20.3,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 8,
@@ -11701,7 +11701,7 @@
       "opp_short": "FUL",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.677
+      "target_points": 3.678
     },
     {
       "player_id": 450,
@@ -11779,7 +11779,7 @@
       "opp_short": "HUL",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.438
+      "target_points": 2.436
     },
     {
       "player_id": 453,
@@ -11805,7 +11805,7 @@
       "opp_short": "FUL",
       "is_home": false,
       "fdr": 3,
-      "target_points": 4.048
+      "target_points": 4.044
     },
     {
       "player_id": 454,
@@ -11819,7 +11819,7 @@
       "season_ppg": 2.38,
       "season_points": 19,
       "season_minutes": 245,
-      "selected_by": 2.4,
+      "selected_by": 2.3,
       "status": "a",
       "chance_next_round": 100,
       "gws_played": 8,
@@ -11831,7 +11831,7 @@
       "opp_short": "FUL",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.156
+      "target_points": 2.153
     },
     {
       "player_id": 455,
@@ -11840,24 +11840,24 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 53,
-      "projected_points": 2.975,
-      "form": 5.3,
-      "season_ppg": 3.75,
-      "season_points": 30,
-      "season_minutes": 697,
+      "projected_points": 2.719,
+      "form": 4.8,
+      "season_ppg": 3.67,
+      "season_points": 33,
+      "season_minutes": 787,
       "selected_by": 2.0,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 87.1,
-      "points_avg": 3.75,
-      "xg_recent": 0.37,
-      "xa_recent": 1.22,
+      "gws_played": 9,
+      "minutes_avg": 87.4,
+      "points_avg": 3.67,
+      "xg_recent": 0.4,
+      "xa_recent": 1.32,
       "bonus_recent": 2,
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.303
+      "target_points": 3.164
     },
     {
       "player_id": 456,
@@ -11909,7 +11909,7 @@
       "opp_short": "FUL",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.449
+      "target_points": 2.446
     },
     {
       "player_id": 458,
@@ -11935,7 +11935,7 @@
       "opp_short": "FUL",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.293
+      "target_points": 2.291
     },
     {
       "player_id": 459,
@@ -11961,7 +11961,7 @@
       "opp_short": "FUL",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.753
+      "target_points": 1.75
     },
     {
       "player_id": 460,
@@ -11987,7 +11987,7 @@
       "opp_short": "FUL",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.765
+      "target_points": 2.762
     },
     {
       "player_id": 461,
@@ -12039,7 +12039,7 @@
       "opp_short": "FUL",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.033
+      "target_points": 1.031
     },
     {
       "player_id": 463,
@@ -12079,7 +12079,7 @@
       "season_ppg": 2.38,
       "season_points": 19,
       "season_minutes": 621,
-      "selected_by": 10.3,
+      "selected_by": 10.2,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 8,
@@ -12091,7 +12091,7 @@
       "opp_short": "FUL",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.816
+      "target_points": 2.813
     },
     {
       "player_id": 465,
@@ -12169,7 +12169,7 @@
       "opp_short": "MCI",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.773
+      "target_points": 2.771
     },
     {
       "player_id": 468,
@@ -12203,13 +12203,13 @@
       "team_id": 18,
       "team_short": "NFO",
       "position": "DEF",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected_points": 2.119,
       "form": 3.2,
       "season_ppg": 3.56,
       "season_points": 32,
       "season_minutes": 803,
-      "selected_by": 5.9,
+      "selected_by": 5.8,
       "status": "a",
       "chance_next_round": 100,
       "gws_played": 9,
@@ -12221,7 +12221,7 @@
       "opp_short": "MCI",
       "is_home": true,
       "fdr": 4,
-      "target_points": 3.094
+      "target_points": 3.095
     },
     {
       "player_id": 470,
@@ -12273,7 +12273,7 @@
       "opp_short": "MCI",
       "is_home": true,
       "fdr": 4,
-      "target_points": 1.851
+      "target_points": 1.852
     },
     {
       "player_id": 472,
@@ -12299,7 +12299,7 @@
       "opp_short": "MCI",
       "is_home": true,
       "fdr": 4,
-      "target_points": 3.248
+      "target_points": 3.249
     },
     {
       "player_id": 473,
@@ -12325,7 +12325,7 @@
       "opp_short": "MCI",
       "is_home": true,
       "fdr": 4,
-      "target_points": 1.326
+      "target_points": 1.327
     },
     {
       "player_id": 474,
@@ -12351,7 +12351,7 @@
       "opp_short": "MCI",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.426
+      "target_points": 2.427
     },
     {
       "player_id": 475,
@@ -12495,19 +12495,19 @@
       "season_ppg": 3.78,
       "season_points": 34,
       "season_minutes": 720,
-      "selected_by": 11.2,
+      "selected_by": 11.1,
       "status": "a",
       "chance_next_round": 100,
       "gws_played": 9,
       "minutes_avg": 80.0,
       "points_avg": 3.78,
       "xg_recent": 2.54,
-      "xa_recent": 2.41,
+      "xa_recent": 2.28,
       "bonus_recent": 6,
       "opp_short": "MCI",
       "is_home": true,
       "fdr": 4,
-      "target_points": 3.644
+      "target_points": 3.64
     },
     {
       "player_id": 481,
@@ -12516,7 +12516,7 @@
       "team_short": "MCI",
       "position": "MID",
       "now_cost": 63,
-      "projected_points": 2.828,
+      "projected_points": 2.768,
       "form": 3.0,
       "season_ppg": 3.0,
       "season_points": 27,
@@ -12528,12 +12528,12 @@
       "minutes_avg": 77.3,
       "points_avg": 3.0,
       "xg_recent": 0.21,
-      "xa_recent": 1.22,
+      "xa_recent": 1.21,
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.089
+      "target_points": 3.05
     },
     {
       "player_id": 482,
@@ -12573,7 +12573,7 @@
       "season_ppg": 3.22,
       "season_points": 29,
       "season_minutes": 591,
-      "selected_by": 0.6,
+      "selected_by": 0.5,
       "status": "a",
       "chance_next_round": 100,
       "gws_played": 9,
@@ -12585,7 +12585,7 @@
       "opp_short": "MCI",
       "is_home": true,
       "fdr": 4,
-      "target_points": 3.035
+      "target_points": 3.031
     },
     {
       "player_id": 484,
@@ -12658,12 +12658,12 @@
       "minutes_avg": 85.6,
       "points_avg": 2.89,
       "xg_recent": 0.71,
-      "xa_recent": 1.58,
+      "xa_recent": 1.59,
       "bonus_recent": 1,
       "opp_short": "MCI",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.997
+      "target_points": 2.993
     },
     {
       "player_id": 487,
@@ -12689,7 +12689,7 @@
       "opp_short": "MCI",
       "is_home": true,
       "fdr": 4,
-      "target_points": 1.013
+      "target_points": 1.011
     },
     {
       "player_id": 488,
@@ -12715,7 +12715,7 @@
       "opp_short": "MCI",
       "is_home": true,
       "fdr": 4,
-      "target_points": 0.947
+      "target_points": 0.945
     },
     {
       "player_id": 489,
@@ -12775,13 +12775,13 @@
       "team_id": 18,
       "team_short": "NFO",
       "position": "FWD",
-      "now_cost": 57,
+      "now_cost": 56,
       "projected_points": 0.0,
       "form": 0.0,
       "season_ppg": 1.33,
       "season_points": 12,
       "season_minutes": 257,
-      "selected_by": 1.2,
+      "selected_by": 1.1,
       "status": "i",
       "chance_next_round": 0,
       "gws_played": 9,
@@ -12819,7 +12819,7 @@
       "opp_short": "EVE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.533
+      "target_points": 2.531
     },
     {
       "player_id": 493,
@@ -12862,7 +12862,7 @@
       "selected_by": 0.1,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -12880,7 +12880,7 @@
       "team_short": "TOT",
       "position": "GK",
       "now_cost": 40,
-      "projected_points": 0.035,
+      "projected_points": 0.034,
       "form": 0.0,
       "season_ppg": 0.0,
       "season_points": 0,
@@ -12888,7 +12888,7 @@
       "selected_by": 1.0,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -12897,7 +12897,7 @@
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 0.035
+      "target_points": 0.034
     },
     {
       "player_id": 496,
@@ -12906,24 +12906,24 @@
       "team_short": "TOT",
       "position": "GK",
       "now_cost": 44,
-      "projected_points": 2.742,
-      "form": 4.7,
-      "season_ppg": 4.0,
-      "season_points": 32,
-      "season_minutes": 720,
+      "projected_points": 2.812,
+      "form": 5.0,
+      "season_ppg": 4.22,
+      "season_points": 38,
+      "season_minutes": 810,
       "selected_by": 15.3,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 90.0,
-      "points_avg": 4.0,
+      "points_avg": 4.22,
       "xg_recent": 0.0,
       "xa_recent": 0.0,
       "bonus_recent": 2,
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.17
+      "target_points": 3.272
     },
     {
       "player_id": 497,
@@ -12932,15 +12932,15 @@
       "team_short": "TOT",
       "position": "GK",
       "now_cost": 40,
-      "projected_points": 0.035,
+      "projected_points": 0.034,
       "form": 0.0,
       "season_ppg": 0.0,
       "season_points": 0,
       "season_minutes": 0,
-      "selected_by": 15.8,
+      "selected_by": 15.7,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -12949,7 +12949,7 @@
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 0.035
+      "target_points": 0.034
     },
     {
       "player_id": 498,
@@ -12958,24 +12958,24 @@
       "team_short": "TOT",
       "position": "DEF",
       "now_cost": 57,
-      "projected_points": 1.339,
-      "form": 0.7,
-      "season_ppg": 0.62,
+      "projected_points": 0.464,
+      "form": 0.5,
+      "season_ppg": 0.56,
       "season_points": 5,
       "season_minutes": 178,
       "selected_by": 3.0,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 22.2,
-      "points_avg": 0.62,
+      "gws_played": 9,
+      "minutes_avg": 19.8,
+      "points_avg": 0.56,
       "xg_recent": 0.0,
       "xa_recent": 0.07,
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.747
+      "target_points": 0.958
     },
     {
       "player_id": 499,
@@ -12984,24 +12984,24 @@
       "team_short": "TOT",
       "position": "DEF",
       "now_cost": 53,
-      "projected_points": 1.203,
-      "form": 0.3,
-      "season_ppg": 1.25,
-      "season_points": 10,
-      "season_minutes": 223,
+      "projected_points": 1.496,
+      "form": 0.5,
+      "season_ppg": 1.22,
+      "season_points": 11,
+      "season_minutes": 268,
       "selected_by": 4.9,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 27.9,
-      "points_avg": 1.25,
-      "xg_recent": 0.43,
-      "xa_recent": 0.17,
+      "gws_played": 9,
+      "minutes_avg": 29.8,
+      "points_avg": 1.22,
+      "xg_recent": 0.56,
+      "xa_recent": 0.29,
       "bonus_recent": 1,
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.654
+      "target_points": 2.001
     },
     {
       "player_id": 500,
@@ -13018,7 +13018,7 @@
       "selected_by": 0.1,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -13053,7 +13053,7 @@
       "opp_short": "CHE",
       "is_home": true,
       "fdr": 4,
-      "target_points": 1.443
+      "target_points": 1.444
     },
     {
       "player_id": 502,
@@ -13062,24 +13062,24 @@
       "team_short": "TOT",
       "position": "DEF",
       "now_cost": 43,
-      "projected_points": 1.567,
-      "form": 3.7,
-      "season_ppg": 3.5,
-      "season_points": 28,
-      "season_minutes": 498,
-      "selected_by": 2.3,
+      "projected_points": 2.148,
+      "form": 4.8,
+      "season_ppg": 4.0,
+      "season_points": 36,
+      "season_minutes": 574,
+      "selected_by": 2.4,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 62.2,
-      "points_avg": 3.5,
-      "xg_recent": 0.17,
-      "xa_recent": 0.55,
-      "bonus_recent": 1,
+      "gws_played": 9,
+      "minutes_avg": 63.8,
+      "points_avg": 4.0,
+      "xg_recent": 0.27,
+      "xa_recent": 1.32,
+      "bonus_recent": 3,
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.546
+      "target_points": 3.09
     },
     {
       "player_id": 503,
@@ -13088,24 +13088,24 @@
       "team_short": "TOT",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 1.741,
-      "form": 2.7,
-      "season_ppg": 3.0,
-      "season_points": 24,
-      "season_minutes": 556,
+      "projected_points": 2.257,
+      "form": 3.5,
+      "season_ppg": 3.33,
+      "season_points": 30,
+      "season_minutes": 646,
       "selected_by": 3.9,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 69.5,
-      "points_avg": 3.0,
+      "gws_played": 9,
+      "minutes_avg": 71.8,
+      "points_avg": 3.33,
       "xg_recent": 0.67,
-      "xa_recent": 0.07,
+      "xa_recent": 0.17,
       "bonus_recent": 3,
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.53
+      "target_points": 2.91
     },
     {
       "player_id": 504,
@@ -13119,7 +13119,7 @@
       "season_ppg": 6.44,
       "season_points": 58,
       "season_minutes": 797,
-      "selected_by": 7.0,
+      "selected_by": 7.1,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -13131,7 +13131,7 @@
       "opp_short": "BRE",
       "is_home": true,
       "fdr": 3,
-      "target_points": 4.085
+      "target_points": 4.087
     },
     {
       "player_id": 505,
@@ -13148,7 +13148,7 @@
       "selected_by": 0.2,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -13166,24 +13166,24 @@
       "team_short": "TOT",
       "position": "DEF",
       "now_cost": 44,
-      "projected_points": 0.898,
-      "form": 0.7,
-      "season_ppg": 1.12,
-      "season_points": 9,
-      "season_minutes": 159,
+      "projected_points": 0.677,
+      "form": 0.8,
+      "season_ppg": 1.11,
+      "season_points": 10,
+      "season_minutes": 172,
       "selected_by": 0.3,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 19.9,
-      "points_avg": 1.12,
+      "gws_played": 9,
+      "minutes_avg": 19.1,
+      "points_avg": 1.11,
       "xg_recent": 0.0,
-      "xa_recent": 0.28,
+      "xa_recent": 0.29,
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.459
+      "target_points": 1.228
     },
     {
       "player_id": 507,
@@ -13200,7 +13200,7 @@
       "selected_by": 0.0,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -13219,16 +13219,16 @@
       "position": "DEF",
       "now_cost": 39,
       "projected_points": 0.944,
-      "form": 2.7,
-      "season_ppg": 1.0,
+      "form": 2.0,
+      "season_ppg": 0.89,
       "season_points": 8,
       "season_minutes": 22,
       "selected_by": 1.0,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 2.8,
-      "points_avg": 1.0,
+      "gws_played": 9,
+      "minutes_avg": 2.4,
+      "points_avg": 0.89,
       "xg_recent": 0.04,
       "xa_recent": 0.0,
       "bonus_recent": 0,
@@ -13244,7 +13244,7 @@
       "team_short": "TOT",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 0.035,
+      "projected_points": 0.034,
       "form": 0.0,
       "season_ppg": 0.0,
       "season_points": 0,
@@ -13252,7 +13252,7 @@
       "selected_by": 0.1,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -13261,7 +13261,7 @@
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 0.035
+      "target_points": 0.034
     },
     {
       "player_id": 510,
@@ -13270,7 +13270,7 @@
       "team_short": "TOT",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 0.035,
+      "projected_points": 0.034,
       "form": 0.0,
       "season_ppg": 0.0,
       "season_points": 0,
@@ -13278,7 +13278,7 @@
       "selected_by": 0.1,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -13287,7 +13287,7 @@
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 0.035
+      "target_points": 0.034
     },
     {
       "player_id": 511,
@@ -13304,7 +13304,7 @@
       "selected_by": 0.1,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -13322,24 +13322,24 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 65,
-      "projected_points": 2.457,
-      "form": 4.0,
-      "season_ppg": 2.38,
-      "season_points": 19,
-      "season_minutes": 362,
-      "selected_by": 1.5,
+      "projected_points": 2.905,
+      "form": 4.8,
+      "season_ppg": 2.89,
+      "season_points": 26,
+      "season_minutes": 452,
+      "selected_by": 1.6,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 45.2,
-      "points_avg": 2.38,
-      "xg_recent": 0.47,
-      "xa_recent": 0.55,
-      "bonus_recent": 1,
+      "gws_played": 9,
+      "minutes_avg": 50.2,
+      "points_avg": 2.89,
+      "xg_recent": 1.23,
+      "xa_recent": 0.82,
+      "bonus_recent": 2,
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.87
+      "target_points": 3.349
     },
     {
       "player_id": 513,
@@ -13356,7 +13356,7 @@
       "selected_by": 0.0,
       "status": "i",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -13374,24 +13374,24 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 56,
-      "projected_points": 1.823,
-      "form": 4.0,
-      "season_ppg": 2.5,
-      "season_points": 20,
-      "season_minutes": 348,
+      "projected_points": 2.281,
+      "form": 3.8,
+      "season_ppg": 2.56,
+      "season_points": 23,
+      "season_minutes": 435,
       "selected_by": 0.5,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 43.5,
-      "points_avg": 2.5,
-      "xg_recent": 0.39,
-      "xa_recent": 0.31,
+      "gws_played": 9,
+      "minutes_avg": 48.3,
+      "points_avg": 2.56,
+      "xg_recent": 0.66,
+      "xa_recent": 0.46,
       "bonus_recent": 3,
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.534
+      "target_points": 2.931
     },
     {
       "player_id": 515,
@@ -13400,24 +13400,24 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 62,
-      "projected_points": 1.796,
-      "form": 3.7,
-      "season_ppg": 1.75,
+      "projected_points": 1.765,
+      "form": 2.8,
+      "season_ppg": 1.56,
       "season_points": 14,
       "season_minutes": 193,
       "selected_by": 0.6,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 24.1,
-      "points_avg": 1.75,
+      "gws_played": 9,
+      "minutes_avg": 21.4,
+      "points_avg": 1.56,
       "xg_recent": 0.16,
       "xa_recent": 0.1,
       "bonus_recent": 2,
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.156
+      "target_points": 2.142
     },
     {
       "player_id": 516,
@@ -13426,24 +13426,24 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 54,
-      "projected_points": 0.0,
-      "form": -0.7,
-      "season_ppg": 1.62,
+      "projected_points": 0.408,
+      "form": -0.5,
+      "season_ppg": 1.44,
       "season_points": 13,
       "season_minutes": 381,
       "selected_by": 0.1,
-      "status": "s",
-      "chance_next_round": 0,
-      "gws_played": 8,
-      "minutes_avg": 47.6,
-      "points_avg": 1.62,
+      "status": "a",
+      "chance_next_round": 100,
+      "gws_played": 9,
+      "minutes_avg": 42.3,
+      "points_avg": 1.44,
       "xg_recent": 0.02,
       "xa_recent": 0.12,
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 0.0
+      "target_points": 1.323
     },
     {
       "player_id": 517,
@@ -13460,7 +13460,7 @@
       "selected_by": 0.0,
       "status": "i",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -13486,7 +13486,7 @@
       "selected_by": 0.1,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -13504,24 +13504,24 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 53,
-      "projected_points": 2.106,
-      "form": 1.3,
-      "season_ppg": 1.62,
-      "season_points": 13,
-      "season_minutes": 267,
+      "projected_points": 1.502,
+      "form": 1.2,
+      "season_ppg": 1.56,
+      "season_points": 14,
+      "season_minutes": 291,
       "selected_by": 0.2,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 33.4,
-      "points_avg": 1.62,
-      "xg_recent": 0.89,
-      "xa_recent": 0.17,
+      "gws_played": 9,
+      "minutes_avg": 32.3,
+      "points_avg": 1.56,
+      "xg_recent": 1.38,
+      "xa_recent": 0.19,
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.508
+      "target_points": 2.142
     },
     {
       "player_id": 520,
@@ -13531,16 +13531,16 @@
       "position": "MID",
       "now_cost": 53,
       "projected_points": 0.0,
-      "form": 1.0,
-      "season_ppg": 0.75,
+      "form": 0.8,
+      "season_ppg": 0.67,
       "season_points": 6,
       "season_minutes": 143,
       "selected_by": 0.1,
       "status": "i",
       "chance_next_round": 0,
-      "gws_played": 8,
-      "minutes_avg": 17.9,
-      "points_avg": 0.75,
+      "gws_played": 9,
+      "minutes_avg": 15.9,
+      "points_avg": 0.67,
       "xg_recent": 0.12,
       "xa_recent": 0.29,
       "bonus_recent": 0,
@@ -13556,24 +13556,24 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 65,
-      "projected_points": 0.734,
-      "form": 0.7,
-      "season_ppg": 0.25,
-      "season_points": 2,
-      "season_minutes": 4,
+      "projected_points": 1.171,
+      "form": 0.8,
+      "season_ppg": 0.33,
+      "season_points": 3,
+      "season_minutes": 17,
       "selected_by": 0.0,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 0.5,
-      "points_avg": 0.25,
-      "xg_recent": 0.02,
-      "xa_recent": 0.0,
+      "gws_played": 9,
+      "minutes_avg": 1.9,
+      "points_avg": 0.33,
+      "xg_recent": 0.05,
+      "xa_recent": 0.01,
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 0.75
+      "target_points": 1.137
     },
     {
       "player_id": 522,
@@ -13582,24 +13582,24 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 49,
-      "projected_points": 2.27,
-      "form": 2.7,
-      "season_ppg": 2.12,
-      "season_points": 17,
-      "season_minutes": 577,
+      "projected_points": 2.048,
+      "form": 3.2,
+      "season_ppg": 2.44,
+      "season_points": 22,
+      "season_minutes": 622,
       "selected_by": 0.2,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 72.1,
-      "points_avg": 2.12,
-      "xg_recent": 0.32,
-      "xa_recent": 0.11,
+      "gws_played": 9,
+      "minutes_avg": 69.1,
+      "points_avg": 2.44,
+      "xg_recent": 0.45,
+      "xa_recent": 0.18,
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.61
+      "target_points": 2.488
     },
     {
       "player_id": 523,
@@ -13610,15 +13610,15 @@
       "now_cost": 50,
       "projected_points": 0.0,
       "form": 0.0,
-      "season_ppg": 0.38,
+      "season_ppg": 0.33,
       "season_points": 3,
       "season_minutes": 89,
       "selected_by": 0.0,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
-      "minutes_avg": 11.1,
-      "points_avg": 0.38,
+      "gws_played": 9,
+      "minutes_avg": 9.9,
+      "points_avg": 0.33,
       "xg_recent": 0.4,
       "xa_recent": 0.02,
       "bonus_recent": 0,
@@ -13634,7 +13634,7 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 44,
-      "projected_points": 0.044,
+      "projected_points": 0.043,
       "form": 0.0,
       "season_ppg": 0.0,
       "season_points": 0,
@@ -13642,7 +13642,7 @@
       "selected_by": 0.8,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -13651,7 +13651,7 @@
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 0.044
+      "target_points": 0.043
     },
     {
       "player_id": 525,
@@ -13660,24 +13660,24 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 56,
-      "projected_points": 1.662,
+      "projected_points": 2.377,
       "form": 3.0,
-      "season_ppg": 2.0,
-      "season_points": 16,
-      "season_minutes": 359,
+      "season_ppg": 2.11,
+      "season_points": 19,
+      "season_minutes": 449,
       "selected_by": 0.7,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 44.9,
-      "points_avg": 2.0,
-      "xg_recent": 0.27,
-      "xa_recent": 0.44,
+      "gws_played": 9,
+      "minutes_avg": 49.9,
+      "points_avg": 2.11,
+      "xg_recent": 0.35,
+      "xa_recent": 0.93,
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.283
+      "target_points": 2.866
     },
     {
       "player_id": 526,
@@ -13686,24 +13686,24 @@
       "team_short": "TOT",
       "position": "FWD",
       "now_cost": 58,
-      "projected_points": 2.759,
-      "form": 4.0,
-      "season_ppg": 2.38,
-      "season_points": 19,
-      "season_minutes": 375,
-      "selected_by": 1.6,
+      "projected_points": 2.27,
+      "form": 3.5,
+      "season_ppg": 2.33,
+      "season_points": 21,
+      "season_minutes": 440,
+      "selected_by": 1.5,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 46.9,
-      "points_avg": 2.38,
-      "xg_recent": 1.54,
-      "xa_recent": 0.11,
+      "gws_played": 9,
+      "minutes_avg": 48.9,
+      "points_avg": 2.33,
+      "xg_recent": 1.9,
+      "xa_recent": 0.14,
       "bonus_recent": 1,
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.144
+      "target_points": 2.865
     },
     {
       "player_id": 527,
@@ -13714,15 +13714,15 @@
       "now_cost": 59,
       "projected_points": 0.0,
       "form": 0.0,
-      "season_ppg": 0.25,
+      "season_ppg": 0.22,
       "season_points": 2,
       "season_minutes": 67,
       "selected_by": 0.5,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
-      "minutes_avg": 8.4,
-      "points_avg": 0.25,
+      "gws_played": 9,
+      "minutes_avg": 7.4,
+      "points_avg": 0.22,
       "xg_recent": 0.0,
       "xa_recent": 0.0,
       "bonus_recent": 0,
@@ -13746,7 +13746,7 @@
       "selected_by": 0.8,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -13781,7 +13781,7 @@
       "opp_short": "CHE",
       "is_home": true,
       "fdr": 4,
-      "target_points": 3.212
+      "target_points": 3.21
     },
     {
       "player_id": 530,
@@ -13841,7 +13841,7 @@
       "team_id": 20,
       "team_short": "SUN",
       "position": "DEF",
-      "now_cost": 48,
+      "now_cost": 47,
       "projected_points": 0.0,
       "form": 0.0,
       "season_ppg": 1.56,
@@ -13885,7 +13885,7 @@
       "opp_short": "CHE",
       "is_home": true,
       "fdr": 4,
-      "target_points": 1.725
+      "target_points": 1.726
     },
     {
       "player_id": 534,
@@ -13894,7 +13894,7 @@
       "team_short": "SUN",
       "position": "DEF",
       "now_cost": 42,
-      "projected_points": 2.326,
+      "projected_points": 2.288,
       "form": 2.8,
       "season_ppg": 2.33,
       "season_points": 21,
@@ -13905,13 +13905,13 @@
       "gws_played": 9,
       "minutes_avg": 61.1,
       "points_avg": 2.33,
-      "xg_recent": 0.24,
+      "xg_recent": 0.28,
       "xa_recent": 0.35,
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.657
+      "target_points": 2.648
     },
     {
       "player_id": 535,
@@ -13931,7 +13931,7 @@
       "gws_played": 9,
       "minutes_avg": 23.2,
       "points_avg": 0.11,
-      "xg_recent": 0.01,
+      "xg_recent": 0.02,
       "xa_recent": 0.02,
       "bonus_recent": 0,
       "opp_short": "CHE",
@@ -13957,13 +13957,13 @@
       "gws_played": 9,
       "minutes_avg": 78.0,
       "points_avg": 1.78,
-      "xg_recent": 0.04,
+      "xg_recent": 0.03,
       "xa_recent": 0.36,
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.231
+      "target_points": 2.232
     },
     {
       "player_id": 537,
@@ -14041,7 +14041,7 @@
       "opp_short": "CHE",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.331
+      "target_points": 2.332
     },
     {
       "player_id": 540,
@@ -14093,7 +14093,7 @@
       "opp_short": "CHE",
       "is_home": true,
       "fdr": 4,
-      "target_points": 1.596
+      "target_points": 1.598
     },
     {
       "player_id": 542,
@@ -14119,7 +14119,7 @@
       "opp_short": "CHE",
       "is_home": true,
       "fdr": 4,
-      "target_points": 3.849
+      "target_points": 3.845
     },
     {
       "player_id": 543,
@@ -14128,14 +14128,14 @@
       "team_short": "SUN",
       "position": "MID",
       "now_cost": 53,
-      "projected_points": 1.168,
+      "projected_points": 0.876,
       "form": 0.5,
       "season_ppg": 0.78,
       "season_points": 7,
       "season_minutes": 70,
       "selected_by": 0.0,
-      "status": "a",
-      "chance_next_round": 100,
+      "status": "d",
+      "chance_next_round": 75,
       "gws_played": 9,
       "minutes_avg": 7.8,
       "points_avg": 0.78,
@@ -14145,7 +14145,7 @@
       "opp_short": "CHE",
       "is_home": true,
       "fdr": 4,
-      "target_points": 1.158
+      "target_points": 0.868
     },
     {
       "player_id": 544,
@@ -14166,12 +14166,12 @@
       "minutes_avg": 90.0,
       "points_avg": 3.56,
       "xg_recent": 0.15,
-      "xa_recent": 1.73,
+      "xa_recent": 1.82,
       "bonus_recent": 5,
       "opp_short": "CHE",
       "is_home": true,
       "fdr": 4,
-      "target_points": 3.308
+      "target_points": 3.305
     },
     {
       "player_id": 545,
@@ -14197,7 +14197,7 @@
       "opp_short": "CHE",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.521
+      "target_points": 2.517
     },
     {
       "player_id": 546,
@@ -14258,7 +14258,7 @@
       "team_short": "SUN",
       "position": "MID",
       "now_cost": 48,
-      "projected_points": 1.841,
+      "projected_points": 1.85,
       "form": 1.2,
       "season_ppg": 0.78,
       "season_points": 7,
@@ -14269,13 +14269,13 @@
       "gws_played": 9,
       "minutes_avg": 25.2,
       "points_avg": 0.78,
-      "xg_recent": 0.2,
+      "xg_recent": 0.24,
       "xa_recent": 0.04,
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.061
+      "target_points": 2.066
     },
     {
       "player_id": 549,
@@ -14284,7 +14284,7 @@
       "team_short": "SUN",
       "position": "MID",
       "now_cost": 52,
-      "projected_points": 1.146,
+      "projected_points": 1.148,
       "form": 0.5,
       "season_ppg": 0.33,
       "season_points": 3,
@@ -14295,13 +14295,13 @@
       "gws_played": 9,
       "minutes_avg": 8.3,
       "points_avg": 0.33,
-      "xg_recent": 0.25,
+      "xg_recent": 0.22,
       "xa_recent": 0.0,
       "bonus_recent": 0,
       "opp_short": "CHE",
       "is_home": true,
       "fdr": 4,
-      "target_points": 1.166
+      "target_points": 1.153
     },
     {
       "player_id": 550,
@@ -14353,7 +14353,7 @@
       "opp_short": "CHE",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.035
+      "target_points": 2.031
     },
     {
       "player_id": 552,
@@ -14367,19 +14367,19 @@
       "season_ppg": 3.11,
       "season_points": 28,
       "season_minutes": 553,
-      "selected_by": 5.3,
+      "selected_by": 5.2,
       "status": "a",
       "chance_next_round": 100,
       "gws_played": 9,
       "minutes_avg": 61.4,
       "points_avg": 3.11,
-      "xg_recent": 3.33,
+      "xg_recent": 3.47,
       "xa_recent": 0.13,
       "bonus_recent": 3,
       "opp_short": "CHE",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.854
+      "target_points": 2.852
     },
     {
       "player_id": 553,
@@ -14388,7 +14388,7 @@
       "team_short": "SUN",
       "position": "FWD",
       "now_cost": 54,
-      "projected_points": 0.987,
+      "projected_points": 0.972,
       "form": 0.8,
       "season_ppg": 2.0,
       "season_points": 18,
@@ -14399,13 +14399,13 @@
       "gws_played": 9,
       "minutes_avg": 26.7,
       "points_avg": 2.0,
-      "xg_recent": 1.7,
+      "xg_recent": 1.69,
       "xa_recent": 0.05,
       "bonus_recent": 3,
       "opp_short": "CHE",
       "is_home": true,
       "fdr": 4,
-      "target_points": 1.256
+      "target_points": 1.238
     },
     {
       "player_id": 554,
@@ -14440,7 +14440,7 @@
       "team_short": "CRY",
       "position": "GK",
       "now_cost": 40,
-      "projected_points": 0.035,
+      "projected_points": 0.034,
       "form": 0.0,
       "season_ppg": 0.0,
       "season_points": 0,
@@ -14448,7 +14448,7 @@
       "selected_by": 1.6,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -14457,7 +14457,7 @@
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 0.035
+      "target_points": 0.034
     },
     {
       "player_id": 556,
@@ -14509,7 +14509,7 @@
       "opp_short": "HUL",
       "is_home": true,
       "fdr": 2,
-      "target_points": 1.224
+      "target_points": 1.221
     },
     {
       "player_id": 558,
@@ -14535,7 +14535,7 @@
       "opp_short": "MCI",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.601
+      "target_points": 2.597
     },
     {
       "player_id": 559,
@@ -14587,7 +14587,7 @@
       "opp_short": "SUN",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.178
+      "target_points": 2.176
     },
     {
       "player_id": 561,
@@ -14633,13 +14633,13 @@
       "gws_played": 9,
       "minutes_avg": 49.6,
       "points_avg": 2.11,
-      "xg_recent": 1.19,
+      "xg_recent": 1.2,
       "xa_recent": 0.04,
       "bonus_recent": 0,
       "opp_short": "BOU",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.303
+      "target_points": 2.3
     },
     {
       "player_id": 563,
@@ -14691,7 +14691,7 @@
       "opp_short": "BOU",
       "is_home": true,
       "fdr": 3,
-      "target_points": 0.945
+      "target_points": 0.943
     },
     {
       "player_id": 565,
@@ -14717,7 +14717,7 @@
       "opp_short": "BHA",
       "is_home": false,
       "fdr": 4,
-      "target_points": 2.907
+      "target_points": 2.903
     },
     {
       "player_id": 566,
@@ -14731,7 +14731,7 @@
       "season_ppg": 4.11,
       "season_points": 37,
       "season_minutes": 810,
-      "selected_by": 2.0,
+      "selected_by": 2.1,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -14743,7 +14743,7 @@
       "opp_short": "IPS",
       "is_home": false,
       "fdr": 2,
-      "target_points": 3.367
+      "target_points": 3.369
     },
     {
       "player_id": 567,
@@ -14769,7 +14769,7 @@
       "opp_short": "FUL",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.059
+      "target_points": 3.057
     },
     {
       "player_id": 568,
@@ -14795,7 +14795,7 @@
       "opp_short": "SUN",
       "is_home": false,
       "fdr": 3,
-      "target_points": 0.987
+      "target_points": 0.985
     },
     {
       "player_id": 569,
@@ -14804,24 +14804,24 @@
       "team_short": "FUL",
       "position": "FWD",
       "now_cost": 60,
-      "projected_points": 2.948,
+      "projected_points": 3.047,
       "form": 2.0,
-      "season_ppg": 2.5,
-      "season_points": 20,
-      "season_minutes": 668,
-      "selected_by": 4.7,
+      "season_ppg": 2.44,
+      "season_points": 22,
+      "season_minutes": 754,
+      "selected_by": 4.6,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 83.5,
-      "points_avg": 2.5,
-      "xg_recent": 3.61,
-      "xa_recent": 0.74,
+      "gws_played": 9,
+      "minutes_avg": 83.8,
+      "points_avg": 2.44,
+      "xg_recent": 3.97,
+      "xa_recent": 0.75,
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.957
+      "target_points": 2.944
     },
     {
       "player_id": 570,
@@ -14830,24 +14830,24 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 53,
-      "projected_points": 1.293,
-      "form": 0.7,
-      "season_ppg": 1.75,
-      "season_points": 14,
-      "season_minutes": 247,
+      "projected_points": 1.461,
+      "form": 0.8,
+      "season_ppg": 1.67,
+      "season_points": 15,
+      "season_minutes": 258,
       "selected_by": 0.1,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 30.9,
-      "points_avg": 1.75,
+      "gws_played": 9,
+      "minutes_avg": 28.7,
+      "points_avg": 1.67,
       "xg_recent": 0.98,
       "xa_recent": 0.04,
       "bonus_recent": 1,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 1.823
+      "target_points": 1.929
     },
     {
       "player_id": 571,
@@ -14856,7 +14856,7 @@
       "team_short": "IPS",
       "position": "MID",
       "now_cost": 48,
-      "projected_points": 1.937,
+      "projected_points": 1.963,
       "form": 4.0,
       "season_ppg": 2.0,
       "season_points": 18,
@@ -14867,13 +14867,13 @@
       "gws_played": 9,
       "minutes_avg": 35.0,
       "points_avg": 2.0,
-      "xg_recent": 0.17,
+      "xg_recent": 0.22,
       "xa_recent": 0.18,
       "bonus_recent": 1,
       "opp_short": "BOU",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.496
+      "target_points": 2.514
     },
     {
       "player_id": 572,
@@ -14887,7 +14887,7 @@
       "season_ppg": 4.78,
       "season_points": 43,
       "season_minutes": 810,
-      "selected_by": 14.2,
+      "selected_by": 14.1,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -14899,7 +14899,7 @@
       "opp_short": "ARS",
       "is_home": false,
       "fdr": 5,
-      "target_points": 3.346
+      "target_points": 3.344
     },
     {
       "player_id": 573,
@@ -14977,7 +14977,7 @@
       "opp_short": "EVE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.165
+      "target_points": 2.161
     },
     {
       "player_id": 576,
@@ -15003,7 +15003,7 @@
       "opp_short": "ARS",
       "is_home": false,
       "fdr": 5,
-      "target_points": 1.911
+      "target_points": 1.908
     },
     {
       "player_id": 577,
@@ -15014,15 +15014,15 @@
       "now_cost": 43,
       "projected_points": 0.0,
       "form": 0.0,
-      "season_ppg": 0.38,
+      "season_ppg": 0.33,
       "season_points": 3,
       "season_minutes": 189,
       "selected_by": 0.2,
       "status": "i",
       "chance_next_round": 0,
-      "gws_played": 8,
-      "minutes_avg": 23.6,
-      "points_avg": 0.38,
+      "gws_played": 9,
+      "minutes_avg": 21.0,
+      "points_avg": 0.33,
       "xg_recent": 0.0,
       "xa_recent": 0.03,
       "bonus_recent": 0,
@@ -15040,15 +15040,15 @@
       "now_cost": 53,
       "projected_points": 0.0,
       "form": 0.0,
-      "season_ppg": 0.12,
+      "season_ppg": 0.11,
       "season_points": 1,
       "season_minutes": 16,
       "selected_by": 0.0,
       "status": "i",
       "chance_next_round": 0,
-      "gws_played": 8,
-      "minutes_avg": 2.0,
-      "points_avg": 0.12,
+      "gws_played": 9,
+      "minutes_avg": 1.8,
+      "points_avg": 0.11,
       "xg_recent": 0.0,
       "xa_recent": 0.0,
       "bonus_recent": 0,
@@ -15081,7 +15081,7 @@
       "opp_short": "CRY",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.278
+      "target_points": 3.279
     },
     {
       "player_id": 580,
@@ -15090,24 +15090,24 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 2.553,
-      "form": 2.7,
-      "season_ppg": 2.62,
-      "season_points": 21,
-      "season_minutes": 553,
+      "projected_points": 2.315,
+      "form": 2.5,
+      "season_ppg": 2.56,
+      "season_points": 23,
+      "season_minutes": 643,
       "selected_by": 0.1,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 69.1,
-      "points_avg": 2.62,
-      "xg_recent": 0.18,
-      "xa_recent": 0.62,
+      "gws_played": 9,
+      "minutes_avg": 71.4,
+      "points_avg": 2.56,
+      "xg_recent": 0.69,
+      "xa_recent": 0.64,
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.79
+      "target_points": 2.687
     },
     {
       "player_id": 581,
@@ -15133,7 +15133,7 @@
       "opp_short": "MCI",
       "is_home": true,
       "fdr": 4,
-      "target_points": 1.684
+      "target_points": 1.685
     },
     {
       "player_id": 582,
@@ -15142,7 +15142,7 @@
       "team_short": "AVL",
       "position": "FWD",
       "now_cost": 54,
-      "projected_points": 0.174,
+      "projected_points": 0.169,
       "form": 0.0,
       "season_ppg": 0.0,
       "season_points": 0,
@@ -15150,8 +15150,8 @@
       "selected_by": 0.2,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 1.0,
+      "gws_played": 9,
+      "minutes_avg": 0.9,
       "points_avg": 0.0,
       "xg_recent": 0.0,
       "xa_recent": 0.0,
@@ -15159,7 +15159,7 @@
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 0.183
+      "target_points": 0.179
     },
     {
       "player_id": 583,
@@ -15185,7 +15185,7 @@
       "opp_short": "SUN",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.325
+      "target_points": 1.326
     },
     {
       "player_id": 584,
@@ -15237,7 +15237,7 @@
       "opp_short": "ARS",
       "is_home": false,
       "fdr": 5,
-      "target_points": 1.382
+      "target_points": 1.383
     },
     {
       "player_id": 586,
@@ -15246,7 +15246,7 @@
       "team_short": "HUL",
       "position": "DEF",
       "now_cost": 41,
-      "projected_points": 0.821,
+      "projected_points": 0.826,
       "form": 1.5,
       "season_ppg": 3.44,
       "season_points": 31,
@@ -15263,7 +15263,7 @@
       "opp_short": "ARS",
       "is_home": false,
       "fdr": 5,
-      "target_points": 2.198
+      "target_points": 2.201
     },
     {
       "player_id": 587,
@@ -15298,24 +15298,24 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 50,
-      "projected_points": 2.669,
-      "form": 0.7,
-      "season_ppg": 2.62,
-      "season_points": 21,
-      "season_minutes": 649,
+      "projected_points": 1.874,
+      "form": 0.8,
+      "season_ppg": 2.44,
+      "season_points": 22,
+      "season_minutes": 679,
       "selected_by": 0.3,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 8,
-      "minutes_avg": 81.1,
-      "points_avg": 2.62,
+      "gws_played": 9,
+      "minutes_avg": 75.4,
+      "points_avg": 2.44,
       "xg_recent": 1.24,
       "xa_recent": 0.65,
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 2.889
+      "target_points": 2.419
     },
     {
       "player_id": 589,
@@ -15341,7 +15341,7 @@
       "opp_short": "ARS",
       "is_home": false,
       "fdr": 5,
-      "target_points": 0.471
+      "target_points": 0.469
     },
     {
       "player_id": 590,
@@ -15387,13 +15387,13 @@
       "gws_played": 9,
       "minutes_avg": 81.7,
       "points_avg": 4.11,
-      "xg_recent": 1.88,
-      "xa_recent": 2.32,
+      "xg_recent": 1.92,
+      "xa_recent": 2.1,
       "bonus_recent": 5,
       "opp_short": "BOU",
       "is_home": true,
       "fdr": 3,
-      "target_points": 3.639
+      "target_points": 3.636
     },
     {
       "player_id": 592,
@@ -15402,7 +15402,7 @@
       "team_short": "IPS",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 2.286,
+      "projected_points": 2.296,
       "form": 4.8,
       "season_ppg": 2.78,
       "season_points": 25,
@@ -15414,12 +15414,12 @@
       "minutes_avg": 54.6,
       "points_avg": 2.78,
       "xg_recent": 0.19,
-      "xa_recent": 0.41,
+      "xa_recent": 0.47,
       "bonus_recent": 2,
       "opp_short": "BOU",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.668
+      "target_points": 2.673
     },
     {
       "player_id": 593,
@@ -15445,7 +15445,7 @@
       "opp_short": "FUL",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.476
+      "target_points": 2.477
     },
     {
       "player_id": 594,
@@ -15480,24 +15480,24 @@
       "team_short": "CRY",
       "position": "MID",
       "now_cost": 49,
-      "projected_points": 0.191,
+      "projected_points": 0.114,
       "form": 0.0,
-      "season_ppg": 0.25,
+      "season_ppg": 0.22,
       "season_points": 2,
       "season_minutes": 28,
       "selected_by": 0.0,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 3.5,
-      "points_avg": 0.25,
+      "gws_played": 9,
+      "minutes_avg": 3.1,
+      "points_avg": 0.22,
       "xg_recent": 0.0,
       "xa_recent": 0.0,
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 0.212
+      "target_points": 0.125
     },
     {
       "player_id": 596,
@@ -15507,16 +15507,16 @@
       "position": "DEF",
       "now_cost": 44,
       "projected_points": 0.0,
-      "form": 0.3,
-      "season_ppg": 0.75,
+      "form": 0.2,
+      "season_ppg": 0.67,
       "season_points": 6,
       "season_minutes": 158,
       "selected_by": 0.1,
       "status": "i",
       "chance_next_round": 0,
-      "gws_played": 8,
-      "minutes_avg": 19.8,
-      "points_avg": 0.75,
+      "gws_played": 9,
+      "minutes_avg": 17.6,
+      "points_avg": 0.67,
       "xg_recent": 0.03,
       "xa_recent": 0.02,
       "bonus_recent": 0,
@@ -15532,24 +15532,24 @@
       "team_short": "AVL",
       "position": "GK",
       "now_cost": 50,
-      "projected_points": 2.532,
-      "form": 4.7,
-      "season_ppg": 3.75,
-      "season_points": 30,
-      "season_minutes": 630,
+      "projected_points": 2.443,
+      "form": 3.8,
+      "season_ppg": 3.44,
+      "season_points": 31,
+      "season_minutes": 720,
       "selected_by": 3.0,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 78.8,
-      "points_avg": 3.75,
+      "gws_played": 9,
+      "minutes_avg": 80.0,
+      "points_avg": 3.44,
       "xg_recent": 0.0,
       "xa_recent": 0.01,
       "bonus_recent": 5,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 3.481
+      "target_points": 3.436
     },
     {
       "player_id": 598,
@@ -15558,24 +15558,24 @@
       "team_short": "LEE",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 1.94,
-      "form": 0.8,
-      "season_ppg": 1.78,
-      "season_points": 16,
+      "projected_points": 1.969,
+      "form": 1.2,
+      "season_ppg": 2.0,
+      "season_points": 18,
       "season_minutes": 591,
       "selected_by": 0.1,
       "status": "a",
       "chance_next_round": 100,
       "gws_played": 9,
       "minutes_avg": 65.7,
-      "points_avg": 1.78,
+      "points_avg": 2.0,
       "xg_recent": 0.24,
       "xa_recent": 0.6,
       "bonus_recent": 0,
       "opp_short": "TOT",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.229
+      "target_points": 2.375
     },
     {
       "player_id": 599,
@@ -15601,7 +15601,7 @@
       "opp_short": "EVE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 2.023
+      "target_points": 2.021
     },
     {
       "player_id": 600,
@@ -15636,24 +15636,24 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 44,
-      "projected_points": 0.044,
-      "form": 0.0,
-      "season_ppg": 0.0,
-      "season_points": 0,
-      "season_minutes": 0,
+      "projected_points": 0.441,
+      "form": 0.2,
+      "season_ppg": 0.11,
+      "season_points": 1,
+      "season_minutes": 2,
       "selected_by": 0.1,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
-      "minutes_avg": 0.0,
-      "points_avg": 0.0,
+      "gws_played": 9,
+      "minutes_avg": 0.2,
+      "points_avg": 0.11,
       "xg_recent": 0.0,
-      "xa_recent": 0.0,
+      "xa_recent": 0.34,
       "bonus_recent": 0,
       "opp_short": "LEE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 0.044
+      "target_points": 0.456
     },
     {
       "player_id": 602,
@@ -15745,7 +15745,7 @@
       "season_ppg": 2.67,
       "season_points": 24,
       "season_minutes": 321,
-      "selected_by": 3.0,
+      "selected_by": 2.9,
       "status": "a",
       "chance_next_round": null,
       "gws_played": 9,
@@ -15757,7 +15757,7 @@
       "opp_short": "BRE",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.554
+      "target_points": 2.551
     },
     {
       "player_id": 606,
@@ -15766,7 +15766,7 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 0.035,
+      "projected_points": 0.034,
       "form": 0.0,
       "season_ppg": 0.0,
       "season_points": 0,
@@ -15774,7 +15774,7 @@
       "selected_by": 0.2,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -15783,7 +15783,7 @@
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 0.035
+      "target_points": 0.034
     },
     {
       "player_id": 607,
@@ -15800,7 +15800,7 @@
       "selected_by": 0.1,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -15878,7 +15878,7 @@
       "selected_by": 0.1,
       "status": "u",
       "chance_next_round": 0,
-      "gws_played": 8,
+      "gws_played": 9,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -15897,16 +15897,16 @@
       "position": "DEF",
       "now_cost": 45,
       "projected_points": 0.0,
-      "form": 2.3,
-      "season_ppg": 1.86,
+      "form": 1.8,
+      "season_ppg": 1.62,
       "season_points": 13,
       "season_minutes": 273,
       "selected_by": 0.2,
       "status": "i",
       "chance_next_round": 0,
-      "gws_played": 7,
-      "minutes_avg": 39.0,
-      "points_avg": 1.86,
+      "gws_played": 8,
+      "minutes_avg": 34.1,
+      "points_avg": 1.62,
       "xg_recent": 0.0,
       "xa_recent": 0.1,
       "bonus_recent": 0,
@@ -15939,7 +15939,7 @@
       "opp_short": "CHE",
       "is_home": true,
       "fdr": 4,
-      "target_points": 0.583
+      "target_points": 0.584
     },
     {
       "player_id": 613,
@@ -16043,7 +16043,7 @@
       "opp_short": "NFO",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.857
+      "target_points": 1.855
     },
     {
       "player_id": 617,
@@ -16078,24 +16078,24 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 59,
-      "projected_points": 1.036,
-      "form": 0.7,
-      "season_ppg": 0.29,
-      "season_points": 2,
-      "season_minutes": 26,
+      "projected_points": 1.335,
+      "form": 1.0,
+      "season_ppg": 0.5,
+      "season_points": 4,
+      "season_minutes": 91,
       "selected_by": 0.0,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 7,
-      "minutes_avg": 3.7,
-      "points_avg": 0.29,
-      "xg_recent": 0.07,
-      "xa_recent": 0.01,
+      "gws_played": 8,
+      "minutes_avg": 11.4,
+      "points_avg": 0.5,
+      "xg_recent": 0.19,
+      "xa_recent": 0.02,
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 1.239
+      "target_points": 1.88
     },
     {
       "player_id": 619,
@@ -16121,7 +16121,7 @@
       "opp_short": "BOU",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.738
+      "target_points": 2.734
     },
     {
       "player_id": 620,
@@ -16286,7 +16286,7 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 44,
-      "projected_points": 0.043,
+      "projected_points": 0.042,
       "form": 0.0,
       "season_ppg": 0.0,
       "season_points": 0,
@@ -16294,7 +16294,7 @@
       "selected_by": 0.4,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 7,
+      "gws_played": 8,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -16303,7 +16303,7 @@
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 0.044
+      "target_points": 0.043
     },
     {
       "player_id": 627,
@@ -16329,7 +16329,7 @@
       "opp_short": "CRY",
       "is_home": false,
       "fdr": 3,
-      "target_points": 3.619
+      "target_points": 3.615
     },
     {
       "player_id": 628,
@@ -16349,8 +16349,8 @@
       "gws_played": 7,
       "minutes_avg": 3.0,
       "points_avg": 0.29,
-      "xg_recent": 0.05,
-      "xa_recent": 0.02,
+      "xg_recent": 0.02,
+      "xa_recent": 0.03,
       "bonus_recent": 0,
       "opp_short": "NFO",
       "is_home": false,
@@ -16390,7 +16390,7 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 0.095,
+      "projected_points": 0.068,
       "form": 0.0,
       "season_ppg": 0.0,
       "season_points": 0,
@@ -16398,7 +16398,7 @@
       "selected_by": 0.0,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 6,
+      "gws_played": 7,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -16407,7 +16407,7 @@
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 0.102
+      "target_points": 0.073
     },
     {
       "player_id": 631,
@@ -16416,24 +16416,24 @@
       "team_short": "AVL",
       "position": "MID",
       "now_cost": 60,
-      "projected_points": 1.538,
-      "form": 2.0,
-      "season_ppg": 1.33,
-      "season_points": 8,
-      "season_minutes": 108,
+      "projected_points": 1.524,
+      "form": 1.8,
+      "season_ppg": 1.29,
+      "season_points": 9,
+      "season_minutes": 132,
       "selected_by": 0.1,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 6,
-      "minutes_avg": 18.0,
-      "points_avg": 1.33,
+      "gws_played": 7,
+      "minutes_avg": 18.9,
+      "points_avg": 1.29,
       "xg_recent": 0.35,
-      "xa_recent": 0.28,
+      "xa_recent": 0.29,
       "bonus_recent": 0,
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 1.834
+      "target_points": 1.83
     },
     {
       "player_id": 632,
@@ -16468,24 +16468,24 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 0.63,
+      "projected_points": 0.613,
       "form": 0.0,
-      "season_ppg": 0.5,
+      "season_ppg": 0.43,
       "season_points": 3,
       "season_minutes": 160,
       "selected_by": 0.0,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 6,
-      "minutes_avg": 26.7,
-      "points_avg": 0.5,
+      "gws_played": 7,
+      "minutes_avg": 22.9,
+      "points_avg": 0.43,
       "xg_recent": 0.0,
       "xa_recent": 0.01,
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 1.05
+      "target_points": 0.997
     },
     {
       "player_id": 634,
@@ -16511,7 +16511,7 @@
       "opp_short": "FUL",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.644
+      "target_points": 1.642
     },
     {
       "player_id": 635,
@@ -16520,24 +16520,24 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 1.223,
-      "form": 1.3,
-      "season_ppg": 1.17,
-      "season_points": 7,
-      "season_minutes": 102,
+      "projected_points": 1.269,
+      "form": 1.2,
+      "season_ppg": 1.14,
+      "season_points": 8,
+      "season_minutes": 105,
       "selected_by": 0.0,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 6,
-      "minutes_avg": 17.0,
-      "points_avg": 1.17,
+      "gws_played": 7,
+      "minutes_avg": 15.0,
+      "points_avg": 1.14,
       "xg_recent": 0.19,
       "xa_recent": 0.24,
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 1.422
+      "target_points": 1.449
     },
     {
       "player_id": 636,
@@ -16546,7 +16546,7 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 0.39,
+      "projected_points": 0.193,
       "form": 0.0,
       "season_ppg": 0.0,
       "season_points": 0,
@@ -16554,8 +16554,8 @@
       "selected_by": 0.0,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 6,
-      "minutes_avg": 3.2,
+      "gws_played": 7,
+      "minutes_avg": 2.7,
       "points_avg": 0.0,
       "xg_recent": 0.0,
       "xa_recent": 0.0,
@@ -16563,7 +16563,7 @@
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 0.393
+      "target_points": 0.185
     },
     {
       "player_id": 637,
@@ -16603,7 +16603,7 @@
       "season_ppg": 0.71,
       "season_points": 5,
       "season_minutes": 139,
-      "selected_by": 0.3,
+      "selected_by": 0.4,
       "status": "a",
       "chance_next_round": 100,
       "gws_played": 7,
@@ -16615,7 +16615,7 @@
       "opp_short": "ARS",
       "is_home": false,
       "fdr": 5,
-      "target_points": 1.212
+      "target_points": 1.213
     },
     {
       "player_id": 639,
@@ -16641,7 +16641,7 @@
       "opp_short": "BRE",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.789
+      "target_points": 2.786
     },
     {
       "player_id": 640,
@@ -16719,7 +16719,7 @@
       "opp_short": "ARS",
       "is_home": false,
       "fdr": 5,
-      "target_points": 1.615
+      "target_points": 1.612
     },
     {
       "player_id": 643,
@@ -16728,24 +16728,24 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 44,
-      "projected_points": 0.289,
+      "projected_points": 0.167,
       "form": 0.0,
-      "season_ppg": 1.33,
+      "season_ppg": 1.14,
       "season_points": 8,
       "season_minutes": 29,
       "selected_by": 0.3,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 6,
-      "minutes_avg": 4.8,
-      "points_avg": 1.33,
+      "gws_played": 7,
+      "minutes_avg": 4.1,
+      "points_avg": 1.14,
       "xg_recent": 0.27,
       "xa_recent": 0.01,
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 0.312
+      "target_points": 0.183
     },
     {
       "player_id": 644,
@@ -16754,24 +16754,24 @@
       "team_short": "CRY",
       "position": "MID",
       "now_cost": 50,
-      "projected_points": 1.182,
-      "form": 2.7,
-      "season_ppg": 2.83,
+      "projected_points": 0.503,
+      "form": 2.0,
+      "season_ppg": 2.43,
       "season_points": 17,
       "season_minutes": 388,
       "selected_by": 0.0,
       "status": "d",
       "chance_next_round": 75,
-      "gws_played": 6,
-      "minutes_avg": 64.7,
-      "points_avg": 2.83,
+      "gws_played": 7,
+      "minutes_avg": 55.4,
+      "points_avg": 2.43,
       "xg_recent": 0.38,
       "xa_recent": 0.14,
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 1.72
+      "target_points": 1.189
     },
     {
       "player_id": 645,
@@ -16832,24 +16832,24 @@
       "team_short": "CRY",
       "position": "MID",
       "now_cost": 54,
-      "projected_points": 0.986,
-      "form": 0.3,
-      "season_ppg": 0.33,
-      "season_points": 2,
-      "season_minutes": 28,
+      "projected_points": 1.141,
+      "form": 0.5,
+      "season_ppg": 0.43,
+      "season_points": 3,
+      "season_minutes": 41,
       "selected_by": 0.0,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 6,
-      "minutes_avg": 4.7,
-      "points_avg": 0.33,
+      "gws_played": 7,
+      "minutes_avg": 5.9,
+      "points_avg": 0.43,
       "xg_recent": 0.17,
       "xa_recent": 0.1,
       "bonus_recent": 0,
       "opp_short": "LIV",
       "is_home": true,
       "fdr": 4,
-      "target_points": 1.189
+      "target_points": 1.271
     },
     {
       "player_id": 648,
@@ -16869,7 +16869,7 @@
       "gws_played": 7,
       "minutes_avg": 1.6,
       "points_avg": 0.43,
-      "xg_recent": 0.04,
+      "xg_recent": 0.02,
       "xa_recent": 0.03,
       "bonus_recent": 0,
       "opp_short": "TOT",
@@ -16901,7 +16901,7 @@
       "opp_short": "COV",
       "is_home": true,
       "fdr": 2,
-      "target_points": 2.242
+      "target_points": 2.243
     },
     {
       "player_id": 650,
@@ -16910,24 +16910,24 @@
       "team_short": "FUL",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 2.257,
-      "form": 5.0,
-      "season_ppg": 4.5,
-      "season_points": 27,
-      "season_minutes": 450,
+      "projected_points": 2.269,
+      "form": 4.5,
+      "season_ppg": 4.29,
+      "season_points": 30,
+      "season_minutes": 540,
       "selected_by": 0.6,
       "status": "a",
       "chance_next_round": 100,
-      "gws_played": 6,
-      "minutes_avg": 75.0,
-      "points_avg": 4.5,
-      "xg_recent": 0.08,
-      "xa_recent": 0.05,
+      "gws_played": 7,
+      "minutes_avg": 77.1,
+      "points_avg": 4.29,
+      "xg_recent": 0.27,
+      "xa_recent": 0.07,
       "bonus_recent": 0,
       "opp_short": "NEW",
       "is_home": true,
       "fdr": 3,
-      "target_points": 2.965
+      "target_points": 3.0
     },
     {
       "player_id": 651,
@@ -17057,7 +17057,7 @@
       "opp_short": "EVE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.191
+      "target_points": 1.19
     },
     {
       "player_id": 656,
@@ -17066,7 +17066,7 @@
       "team_short": "COV",
       "position": "DEF",
       "now_cost": 40,
-      "projected_points": 1.251,
+      "projected_points": 1.24,
       "form": 3.0,
       "season_ppg": 3.0,
       "season_points": 18,
@@ -17083,7 +17083,7 @@
       "opp_short": "EVE",
       "is_home": false,
       "fdr": 3,
-      "target_points": 1.841
+      "target_points": 1.833
     },
     {
       "player_id": 657,
@@ -17352,7 +17352,7 @@
       "team_short": "AVL",
       "position": "GK",
       "now_cost": 40,
-      "projected_points": 0.041,
+      "projected_points": 0.036,
       "form": 0.0,
       "season_ppg": 0.0,
       "season_points": 0,
@@ -17360,7 +17360,7 @@
       "selected_by": 0.4,
       "status": "a",
       "chance_next_round": null,
-      "gws_played": 4,
+      "gws_played": 5,
       "minutes_avg": 0.0,
       "points_avg": 0.0,
       "xg_recent": 0.0,
@@ -17369,7 +17369,7 @@
       "opp_short": "MUN",
       "is_home": false,
       "fdr": 4,
-      "target_points": 0.041
+      "target_points": 0.036
     },
     {
       "player_id": 668,
@@ -17422,6 +17422,32 @@
       "is_home": false,
       "fdr": 3,
       "target_points": 0.052
+    },
+    {
+      "player_id": 670,
+      "web_name": "Subuloye",
+      "team_id": 6,
+      "team_short": "CHE",
+      "position": "DEF",
+      "now_cost": 40,
+      "projected_points": 0.071,
+      "form": 0.0,
+      "season_ppg": 0.0,
+      "season_points": 0,
+      "season_minutes": 0,
+      "selected_by": 0.0,
+      "status": "a",
+      "chance_next_round": null,
+      "gws_played": 1,
+      "minutes_avg": 0.0,
+      "points_avg": 0.0,
+      "xg_recent": 0.0,
+      "xa_recent": 0.0,
+      "bonus_recent": 0,
+      "opp_short": "SUN",
+      "is_home": false,
+      "fdr": 3,
+      "target_points": 0.07
     }
   ]
 }
