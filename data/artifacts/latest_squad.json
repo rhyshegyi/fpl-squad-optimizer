@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-02T16:20:55.054541+00:00",
+  "generated_at": "2026-11-02T23:12:40.872619+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-11-02T16:17:57.507597+00:00",
+    "last_fetch": "2026-11-02T23:08:40.884558+00:00",
     "average_squad_value": 993,
     "current_gw": {
       "id": 9,
@@ -17,20 +17,17 @@
       "players_tracked": 670,
       "players_disagreeing": 0,
       "latest_gw_on_file": 9,
-      "latest_result": "2026-11-01T16:30:00+00:00",
-      "gameweek_in_progress": {
+      "latest_result": "2026-11-02T20:00:00+00:00",
+      "gameweek_in_progress": null,
+      "bonus_pending": {
         "id": 9,
-        "name": "Gameweek 9",
-        "matches_played": 9,
-        "matches_started": 9,
-        "matches_total": 10
-      },
-      "bonus_pending": null
+        "name": "Gameweek 9"
+      }
     }
   },
   "squad": {
     "total_cost": 999,
-    "projected_points": 57.12,
+    "projected_points": 56.79,
     "formation": "3-5-2",
     "picks": [
       {
@@ -136,7 +133,7 @@
         "team_short": "EVE",
         "position": "MID",
         "now_cost": 66,
-        "projected_points": 4.852,
+        "projected_points": 4.219,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -148,7 +145,7 @@
         "team_short": "EVE",
         "position": "FWD",
         "now_cost": 56,
-        "projected_points": 4.286,
+        "projected_points": 4.589,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
