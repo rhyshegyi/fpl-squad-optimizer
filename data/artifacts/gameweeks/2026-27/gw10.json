@@ -13,7 +13,7 @@
   "average_squad_value": 993,
   "name": "Gameweek 10",
   "deadline": "2026-11-06T18:30:00Z",
-  "frozen_at": "2026-11-01T22:59:41.606506+00:00",
+  "frozen_at": "2026-11-02T16:21:18.673893+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 999,
@@ -256,8 +256,8 @@
       "web_name": "Lewis-Skelly",
       "team_short": "ARS",
       "position": "MID",
-      "now_cost": 54,
-      "projected": 1.504
+      "now_cost": 53,
+      "projected": 1.502
     },
     {
       "player_id": 8,
@@ -265,7 +265,7 @@
       "team_short": "ARS",
       "position": "DEF",
       "now_cost": 59,
-      "projected": 3.578
+      "projected": 3.46
     },
     {
       "player_id": 9,
@@ -273,7 +273,7 @@
       "team_short": "ARS",
       "position": "DEF",
       "now_cost": 52,
-      "projected": 0.664
+      "projected": 0.671
     },
     {
       "player_id": 10,
@@ -329,7 +329,7 @@
       "team_short": "ARS",
       "position": "MID",
       "now_cost": 62,
-      "projected": 3.217
+      "projected": 3.167
     },
     {
       "player_id": 17,
@@ -2480,7 +2480,7 @@
       "web_name": "McNair",
       "team_short": "HUL",
       "position": "DEF",
-      "now_cost": 40,
+      "now_cost": 39,
       "projected": 0.103
     },
     {
@@ -3049,7 +3049,7 @@
       "team_short": "LIV",
       "position": "DEF",
       "now_cost": 64,
-      "projected": 3.371
+      "projected": 3.337
     },
     {
       "player_id": 357,
@@ -3065,7 +3065,7 @@
       "team_short": "LIV",
       "position": "DEF",
       "now_cost": 53,
-      "projected": 3.044
+      "projected": 3.018
     },
     {
       "player_id": 359,
@@ -3088,8 +3088,8 @@
       "web_name": "Lucky",
       "team_short": "LIV",
       "position": "DEF",
-      "now_cost": 40,
-      "projected": 0.034
+      "now_cost": 39,
+      "projected": 0.047
     },
     {
       "player_id": 362,
@@ -3145,7 +3145,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 67,
-      "projected": 2.135
+      "projected": 2.119
     },
     {
       "player_id": 369,
@@ -3177,7 +3177,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 54,
-      "projected": 2.849
+      "projected": 2.836
     },
     {
       "player_id": 373,
@@ -3217,7 +3217,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 65,
-      "projected": 2.14
+      "projected": 2.195
     },
     {
       "player_id": 378,
@@ -4833,7 +4833,7 @@
       "team_short": "LIV",
       "position": "DEF",
       "now_cost": 54,
-      "projected": 2.741
+      "projected": 2.767
     },
     {
       "player_id": 580,
