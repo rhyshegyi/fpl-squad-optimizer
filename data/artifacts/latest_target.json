@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-03T14:31:53.575309+00:00",
+  "generated_at": "2026-11-03T21:07:46.954801+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "budget_tenths": 993,
   "pipeline_state": {
-    "last_fetch": "2026-11-03T14:28:27.328979+00:00",
+    "last_fetch": "2026-11-03T21:06:02.517251+00:00",
     "average_squad_value": 993,
     "current_gw": {
       "id": 9,
@@ -21,10 +21,7 @@
       "latest_gw_on_file": 9,
       "latest_result": "2026-11-02T20:00:00+00:00",
       "gameweek_in_progress": null,
-      "bonus_pending": {
-        "id": 9,
-        "name": "Gameweek 9"
-      }
+      "bonus_pending": null
     }
   },
   "squad": {
@@ -267,7 +264,7 @@
       "team_short": "ARS",
       "position": "DEF",
       "now_cost": 59,
-      "projected_points": 0.0
+      "projected_points": 0.056
     },
     {
       "player_id": 7,
@@ -3552,7 +3549,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 58,
-      "projected_points": 2.042
+      "projected_points": 1.531
     },
     {
       "player_id": 372,
@@ -4092,7 +4089,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 57,
-      "projected_points": 1.896
+      "projected_points": 2.528
     },
     {
       "player_id": 432,

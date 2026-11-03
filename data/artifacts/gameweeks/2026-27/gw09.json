@@ -14,7 +14,7 @@
   "name": "Gameweek 9",
   "deadline": "2026-10-31T11:00:00Z",
   "frozen_at": "2026-10-30T20:01:41.420775+00:00",
-  "scored_at": "2026-11-03T14:31:53.607398+00:00",
+  "scored_at": "2026-11-03T21:07:46.976150+00:00",
   "squad": {
     "total_cost": 1000,
     "projected_points": 57.5,
@@ -5566,7 +5566,7 @@
     "points_left_on_bench": 26,
     "fpl_average": 47,
     "fpl_highest": 122,
-    "scores_final": false
+    "scores_final": true
   },
   "accuracy": {
     "players_appeared": 310,
@@ -5706,5 +5706,6 @@
       "actual": 9,
       "minutes": 81
     }
-  ]
+  ],
+  "settled_at": "2026-11-03T21:07:46.976150+00:00"
 }

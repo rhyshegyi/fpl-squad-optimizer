@@ -13,7 +13,7 @@
   "average_squad_value": 993,
   "name": "Gameweek 10",
   "deadline": "2026-11-06T18:30:00Z",
-  "frozen_at": "2026-11-03T14:31:53.597997+00:00",
+  "frozen_at": "2026-11-03T21:07:46.969226+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -249,7 +249,7 @@
       "team_short": "ARS",
       "position": "DEF",
       "now_cost": 59,
-      "projected": 0.0
+      "projected": 0.053
     },
     {
       "player_id": 7,
@@ -3169,7 +3169,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 58,
-      "projected": 1.743
+      "projected": 1.307
     },
     {
       "player_id": 372,
@@ -3649,7 +3649,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 57,
-      "projected": 1.815
+      "projected": 2.42
     },
     {
       "player_id": 432,
