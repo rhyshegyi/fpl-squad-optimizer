@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-02T23:12:40.872619+00:00",
+  "generated_at": "2026-11-03T14:31:29.535303+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-11-02T23:08:40.884558+00:00",
+    "last_fetch": "2026-11-03T14:28:27.328979+00:00",
     "average_squad_value": 993,
     "current_gw": {
       "id": 9,
@@ -26,8 +26,8 @@
     }
   },
   "squad": {
-    "total_cost": 999,
-    "projected_points": 56.79,
+    "total_cost": 1000,
+    "projected_points": 58.52,
     "formation": "3-5-2",
     "picks": [
       {
@@ -37,7 +37,7 @@
         "team_short": "ARS",
         "position": "DEF",
         "now_cost": 80,
-        "projected_points": 4.507,
+        "projected_points": 4.701,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -49,10 +49,10 @@
         "team_short": "ARS",
         "position": "MID",
         "now_cost": 74,
-        "projected_points": 5.149,
+        "projected_points": 5.523,
         "is_starter": true,
         "is_captain": false,
-        "is_vice": false
+        "is_vice": true
       },
       {
         "player_id": 15,
@@ -61,7 +61,7 @@
         "team_short": "ARS",
         "position": "MID",
         "now_cost": 67,
-        "projected_points": 4.472,
+        "projected_points": 4.769,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -73,31 +73,7 @@
         "team_short": "BOU",
         "position": "DEF",
         "now_cost": 54,
-        "projected_points": 3.572,
-        "is_starter": true,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 64,
-        "web_name": "Smith",
-        "team_id": 3,
-        "team_short": "BOU",
-        "position": "DEF",
-        "now_cost": 45,
-        "projected_points": 3.148,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 68,
-        "web_name": "Tavernier",
-        "team_id": 3,
-        "team_short": "BOU",
-        "position": "MID",
-        "now_cost": 66,
-        "projected_points": 4.419,
+        "projected_points": 3.589,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -109,7 +85,7 @@
         "team_short": "BHA",
         "position": "GK",
         "now_cost": 46,
-        "projected_points": 3.644,
+        "projected_points": 3.528,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -121,7 +97,31 @@
         "team_short": "BHA",
         "position": "DEF",
         "now_cost": 54,
-        "projected_points": 3.946,
+        "projected_points": 4.196,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 194,
+        "web_name": "Thomas-Asante",
+        "team_id": 7,
+        "team_short": "COV",
+        "position": "FWD",
+        "now_cost": 50,
+        "projected_points": 1.95,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 226,
+        "web_name": "Pickford",
+        "team_id": 9,
+        "team_short": "EVE",
+        "position": "GK",
+        "now_cost": 55,
+        "projected_points": 3.953,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -133,7 +133,7 @@
         "team_short": "EVE",
         "position": "MID",
         "now_cost": 66,
-        "projected_points": 4.219,
+        "projected_points": 4.455,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -145,31 +145,19 @@
         "team_short": "EVE",
         "position": "FWD",
         "now_cost": 56,
-        "projected_points": 4.589,
+        "projected_points": 4.309,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
       },
       {
-        "player_id": 332,
-        "web_name": "Justin",
-        "team_id": 13,
-        "team_short": "LEE",
+        "player_id": 304,
+        "web_name": "O'Shea",
+        "team_id": 12,
+        "team_short": "IPS",
         "position": "DEF",
-        "now_cost": 45,
-        "projected_points": 3.088,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 346,
-        "web_name": "Calvert-Lewin",
-        "team_id": 13,
-        "team_short": "LEE",
-        "position": "FWD",
-        "now_cost": 61,
-        "projected_points": 3.825,
+        "now_cost": 40,
+        "projected_points": 2.156,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -181,21 +169,9 @@
         "team_short": "MCI",
         "position": "FWD",
         "now_cost": 158,
-        "projected_points": 6.35,
+        "projected_points": 6.586,
         "is_starter": true,
         "is_captain": true,
-        "is_vice": false
-      },
-      {
-        "player_id": 412,
-        "web_name": "Lammens",
-        "team_id": 16,
-        "team_short": "MUN",
-        "position": "GK",
-        "now_cost": 48,
-        "projected_points": 3.884,
-        "is_starter": true,
-        "is_captain": false,
         "is_vice": false
       },
       {
@@ -205,10 +181,34 @@
         "team_short": "MUN",
         "position": "MID",
         "now_cost": 79,
-        "projected_points": 5.329,
+        "projected_points": 5.076,
         "is_starter": true,
         "is_captain": false,
-        "is_vice": true
+        "is_vice": false
+      },
+      {
+        "player_id": 592,
+        "web_name": "Ouattara",
+        "team_id": 12,
+        "team_short": "IPS",
+        "position": "DEF",
+        "now_cost": 40,
+        "projected_points": 2.239,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 627,
+        "web_name": "Barcola",
+        "team_id": 14,
+        "team_short": "LIV",
+        "position": "MID",
+        "now_cost": 81,
+        "projected_points": 4.778,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
       }
     ]
   }
