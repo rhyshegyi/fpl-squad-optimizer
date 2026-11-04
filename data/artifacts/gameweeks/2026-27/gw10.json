@@ -13,7 +13,7 @@
   "average_squad_value": 994,
   "name": "Gameweek 10",
   "deadline": "2026-11-06T18:30:00Z",
-  "frozen_at": "2026-11-04T14:44:40.171930+00:00",
+  "frozen_at": "2026-11-04T21:24:35.580331+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -249,7 +249,7 @@
       "team_short": "ARS",
       "position": "DEF",
       "now_cost": 59,
-      "projected": 0.053
+      "projected": 0.071
     },
     {
       "player_id": 7,
