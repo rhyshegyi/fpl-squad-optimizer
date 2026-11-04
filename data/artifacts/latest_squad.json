@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-03T21:07:35.720489+00:00",
+  "generated_at": "2026-11-04T14:44:27.635881+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-11-03T21:06:02.517251+00:00",
-    "average_squad_value": 993,
+    "last_fetch": "2026-11-04T14:42:44.338458+00:00",
+    "average_squad_value": 994,
     "current_gw": {
       "id": 9,
       "name": "Gameweek 9"

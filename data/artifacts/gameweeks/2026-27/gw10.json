@@ -10,10 +10,10 @@
     ],
     "objective": "poisson"
   },
-  "average_squad_value": 993,
+  "average_squad_value": 994,
   "name": "Gameweek 10",
   "deadline": "2026-11-06T18:30:00Z",
-  "frozen_at": "2026-11-03T21:07:46.969226+00:00",
+  "frozen_at": "2026-11-04T14:44:40.171930+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -448,8 +448,8 @@
       "web_name": "Konsa",
       "team_short": "ARS",
       "position": "DEF",
-      "now_cost": 47,
-      "projected": 3.55
+      "now_cost": 48,
+      "projected": 3.574
     },
     {
       "player_id": 32,
@@ -520,7 +520,7 @@
       "web_name": "Rogers",
       "team_short": "CHE",
       "position": "MID",
-      "now_cost": 81,
+      "now_cost": 82,
       "projected": 4.063
     },
     {
@@ -536,8 +536,8 @@
       "web_name": "Guessand",
       "team_short": "CRY",
       "position": "MID",
-      "now_cost": 54,
-      "projected": 0.124
+      "now_cost": 53,
+      "projected": 0.121
     },
     {
       "player_id": 43,
@@ -904,7 +904,7 @@
       "web_name": "Kayode",
       "team_short": "BRE",
       "position": "DEF",
-      "now_cost": 46,
+      "now_cost": 45,
       "projected": 1.798
     },
     {
@@ -1249,7 +1249,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 49,
-      "projected": 1.828
+      "projected": 0.914
     },
     {
       "player_id": 132,
@@ -2536,8 +2536,8 @@
       "web_name": "\u00d6m\u00fcr",
       "team_short": "HUL",
       "position": "MID",
-      "now_cost": 49,
-      "projected": 0.052
+      "now_cost": 48,
+      "projected": 0.065
     },
     {
       "player_id": 293,
@@ -2784,7 +2784,7 @@
       "web_name": "McAteer",
       "team_short": "IPS",
       "position": "MID",
-      "now_cost": 44,
+      "now_cost": 43,
       "projected": 0.112
     },
     {
@@ -3424,7 +3424,7 @@
       "web_name": "S\u00e1vio",
       "team_short": "TOT",
       "position": "MID",
-      "now_cost": 65,
+      "now_cost": 64,
       "projected": 0.0
     },
     {
@@ -3760,8 +3760,8 @@
       "web_name": "Thiaw",
       "team_short": "NEW",
       "position": "DEF",
-      "now_cost": 50,
-      "projected": 1.193
+      "now_cost": 49,
+      "projected": 1.209
     },
     {
       "player_id": 446,
@@ -3984,8 +3984,8 @@
       "web_name": "Aina",
       "team_short": "NFO",
       "position": "DEF",
-      "now_cost": 43,
-      "projected": 0.718
+      "now_cost": 42,
+      "projected": 0.713
     },
     {
       "player_id": 474,
@@ -4296,8 +4296,8 @@
       "web_name": "Kudus",
       "team_short": "TOT",
       "position": "MID",
-      "now_cost": 65,
-      "projected": 3.465
+      "now_cost": 66,
+      "projected": 3.562
     },
     {
       "player_id": 513,
@@ -4728,8 +4728,8 @@
       "web_name": "Silva",
       "team_short": "BOU",
       "position": "DEF",
-      "now_cost": 50,
-      "projected": 3.158
+      "now_cost": 51,
+      "projected": 3.159
     },
     {
       "player_id": 567,
@@ -5368,8 +5368,8 @@
       "web_name": "Fofana",
       "team_short": "SUN",
       "position": "MID",
-      "now_cost": 55,
-      "projected": 0.893
+      "now_cost": 54,
+      "projected": 0.894
     },
     {
       "player_id": 647,
