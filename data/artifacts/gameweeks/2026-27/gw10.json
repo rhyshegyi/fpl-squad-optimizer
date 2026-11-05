@@ -13,7 +13,7 @@
   "average_squad_value": 994,
   "name": "Gameweek 10",
   "deadline": "2026-11-06T18:30:00Z",
-  "frozen_at": "2026-11-04T21:24:35.580331+00:00",
+  "frozen_at": "2026-11-05T14:49:52.855667+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -1033,7 +1033,7 @@
       "team_short": "COV",
       "position": "MID",
       "now_cost": 48,
-      "projected": 1.061
+      "projected": 0.53
     },
     {
       "player_id": 105,
@@ -2832,8 +2832,8 @@
       "web_name": "Rodon",
       "team_short": "LEE",
       "position": "DEF",
-      "now_cost": 43,
-      "projected": 0.0
+      "now_cost": 42,
+      "projected": 0.2
     },
     {
       "player_id": 330,
@@ -3544,8 +3544,8 @@
       "web_name": "Maguire",
       "team_short": "MUN",
       "position": "DEF",
-      "now_cost": 47,
-      "projected": 2.638
+      "now_cost": 46,
+      "projected": 2.644
     },
     {
       "player_id": 419,
@@ -4040,7 +4040,7 @@
       "web_name": "Gibbs-White",
       "team_short": "NFO",
       "position": "MID",
-      "now_cost": 79,
+      "now_cost": 78,
       "projected": 2.924
     },
     {
@@ -5544,8 +5544,8 @@
       "web_name": "Tutierov",
       "team_short": "SUN",
       "position": "MID",
-      "now_cost": 50,
-      "projected": 1.001
+      "now_cost": 49,
+      "projected": 0.99
     },
     {
       "player_id": 669,
