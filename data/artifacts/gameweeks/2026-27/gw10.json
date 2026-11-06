@@ -13,7 +13,7 @@
   "average_squad_value": 994,
   "name": "Gameweek 10",
   "deadline": "2026-11-06T18:30:00Z",
-  "frozen_at": "2026-11-05T21:31:13.520876+00:00",
+  "frozen_at": "2026-11-06T14:30:24.374297+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -624,7 +624,7 @@
       "web_name": "Manzambi",
       "team_short": "AVL",
       "position": "MID",
-      "now_cost": 61,
+      "now_cost": 62,
       "projected": 3.105
     },
     {
@@ -680,7 +680,7 @@
       "web_name": "Hill",
       "team_short": "BOU",
       "position": "DEF",
-      "now_cost": 55,
+      "now_cost": 56,
       "projected": 3.579
     },
     {
@@ -1249,7 +1249,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 49,
-      "projected": 0.914
+      "projected": 0.0
     },
     {
       "player_id": 132,
@@ -1976,7 +1976,7 @@
       "web_name": "Strand Larsen",
       "team_short": "CRY",
       "position": "FWD",
-      "now_cost": 60,
+      "now_cost": 59,
       "projected": 1.148
     },
     {
@@ -2329,7 +2329,7 @@
       "team_short": "FUL",
       "position": "MID",
       "now_cost": 49,
-      "projected": 1.117
+      "projected": 0.0
     },
     {
       "player_id": 267,
@@ -3521,7 +3521,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 57,
-      "projected": 0.0
+      "projected": 0.371
     },
     {
       "player_id": 416,
@@ -4785,7 +4785,7 @@
       "team_short": "BOU",
       "position": "DEF",
       "now_cost": 44,
-      "projected": 0.259
+      "projected": 0.0
     },
     {
       "player_id": 574,
