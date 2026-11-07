@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-06T21:00:47.917128+00:00",
+  "generated_at": "2026-11-07T13:21:58.109207+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-11-06T20:56:55.391834+00:00",
-    "average_squad_value": 994,
+    "last_fetch": "2026-11-07T13:18:09.500115+00:00",
+    "average_squad_value": 995,
     "current_gw": {
       "id": 10,
       "name": "Gameweek 10"
@@ -15,21 +15,21 @@
     },
     "data_health": {
       "players_tracked": 670,
-      "players_disagreeing": 22,
-      "latest_gw_on_file": 9,
-      "latest_result": "2026-11-02T20:00:00+00:00",
+      "players_disagreeing": 21,
+      "latest_gw_on_file": 10,
+      "latest_result": "2026-11-06T20:00:00+00:00",
       "gameweek_in_progress": {
         "id": 10,
         "name": "Gameweek 10",
-        "matches_played": 0,
-        "matches_started": 1,
+        "matches_played": 1,
+        "matches_started": 2,
         "matches_total": 10
       },
       "bonus_pending": null
     }
   },
   "squad": {
-    "total_cost": 996,
+    "total_cost": 998,
     "projected_points": 60.45,
     "formation": "3-4-3",
     "picks": [
@@ -63,7 +63,7 @@
         "team_id": 3,
         "team_short": "BOU",
         "position": "FWD",
-        "now_cost": 64,
+        "now_cost": 65,
         "projected_points": 5.175,
         "is_starter": true,
         "is_captain": false,
@@ -106,6 +106,18 @@
         "is_vice": false
       },
       {
+        "player_id": 127,
+        "web_name": "Gomez",
+        "team_id": 5,
+        "team_short": "BHA",
+        "position": "MID",
+        "now_cost": 50,
+        "projected_points": 3.331,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
         "player_id": 154,
         "web_name": "Palmer",
         "team_id": 6,
@@ -136,19 +148,7 @@
         "team_short": "COV",
         "position": "DEF",
         "now_cost": 40,
-        "projected_points": 2.339,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 183,
-        "web_name": "Rudoni",
-        "team_id": 7,
-        "team_short": "COV",
-        "position": "MID",
-        "now_cost": 49,
-        "projected_points": 3.486,
+        "projected_points": 2.404,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
