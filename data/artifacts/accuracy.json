@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T19:51:19.383634+00:00",
+  "generated_at": "2026-11-08T23:00:12.072782+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 7,
@@ -8,8 +8,8 @@
     "mean_fpl_average": 54.3,
     "weeks_beating_average": 3,
     "weeks_rated": 6,
-    "mean_mae": 1.954,
-    "mean_spearman": 0.3651
+    "mean_mae": 1.955,
+    "mean_spearman": 0.3649
   },
   "gameweeks": [
     {
@@ -2461,8 +2461,8 @@
       "captain_blanked": false,
       "points_left_on_bench": 12,
       "scores_final": false,
-      "mae": 1.911,
-      "spearman": 0.3806,
+      "mae": 1.92,
+      "spearman": 0.3791,
       "players_appeared": 313,
       "hits": [
         {
@@ -2494,7 +2494,7 @@
           "team_short": "MUN",
           "position": "MID",
           "projected": 0.371,
-          "actual": 10,
+          "actual": 11,
           "minutes": 24
         },
         {
@@ -2588,12 +2588,12 @@
           "minutes": 90
         },
         {
-          "web_name": "Dalot",
-          "team_short": "MUN",
+          "web_name": "Davis",
+          "team_short": "IPS",
           "position": "DEF",
-          "projected": 2.667,
-          "actual": 0,
-          "minutes": 65
+          "projected": 2.001,
+          "actual": -1,
+          "minutes": 90
         }
       ],
       "squad": [
@@ -2964,7 +2964,7 @@
           "team_short": "CHE",
           "position": "MID",
           "now_cost": 66,
-          "projected_points": 4.623,
+          "projected_points": 4.584,
           "is_starter": true,
           "is_captain": false,
           "is_vice": false
@@ -3054,8 +3054,8 @@
       "mean_fpl_average": 54.3,
       "weeks_beating_average": 3,
       "weeks_rated": 6,
-      "mean_mae": 1.954,
-      "mean_spearman": 0.3651
+      "mean_mae": 1.955,
+      "mean_spearman": 0.3649
     }
   ],
   "leaders": [
@@ -3074,7 +3074,7 @@
       "bonus": 9,
       "ppg": 7.5,
       "value": 13.89,
-      "selected_by": 47.2,
+      "selected_by": 47.3,
       "in_target_squad": true
     },
     {
@@ -3092,7 +3092,7 @@
       "bonus": 11,
       "ppg": 7.0,
       "value": 11.11,
-      "selected_by": 47.6,
+      "selected_by": 47.7,
       "in_target_squad": true
     },
     {
@@ -3110,7 +3110,7 @@
       "bonus": 5,
       "ppg": 7.0,
       "value": 13.46,
-      "selected_by": 8.4,
+      "selected_by": 8.5,
       "in_target_squad": true
     },
     {
@@ -3164,7 +3164,7 @@
       "bonus": 16,
       "ppg": 6.1,
       "value": 6.63,
-      "selected_by": 24.6,
+      "selected_by": 24.7,
       "in_target_squad": false
     },
     {
@@ -3182,7 +3182,7 @@
       "bonus": 10,
       "ppg": 6.1,
       "value": 9.38,
-      "selected_by": 22.8,
+      "selected_by": 22.9,
       "in_target_squad": true
     },
     {
@@ -3200,7 +3200,7 @@
       "bonus": 6,
       "ppg": 6.0,
       "value": 9.68,
-      "selected_by": 47.3,
+      "selected_by": 47.4,
       "in_target_squad": true
     },
     {
@@ -3236,7 +3236,7 @@
       "bonus": 12,
       "ppg": 5.8,
       "value": 8.66,
-      "selected_by": 30.9,
+      "selected_by": 31.0,
       "in_target_squad": true
     },
     {
@@ -3254,7 +3254,7 @@
       "bonus": 7,
       "ppg": 5.7,
       "value": 11.88,
-      "selected_by": 24.0,
+      "selected_by": 24.1,
       "in_target_squad": true
     },
     {
@@ -3308,7 +3308,7 @@
       "bonus": 6,
       "ppg": 5.7,
       "value": 11.4,
-      "selected_by": 14.0,
+      "selected_by": 14.1,
       "in_target_squad": false
     },
     {
@@ -3398,7 +3398,7 @@
       "bonus": 12,
       "ppg": 5.4,
       "value": 7.61,
-      "selected_by": 29.6,
+      "selected_by": 29.9,
       "in_target_squad": true
     },
     {
@@ -3578,7 +3578,7 @@
       "bonus": 9,
       "ppg": 4.7,
       "value": 6.1,
-      "selected_by": 33.0,
+      "selected_by": 32.8,
       "in_target_squad": false
     },
     {
@@ -3596,7 +3596,7 @@
       "bonus": 6,
       "ppg": 4.7,
       "value": 8.1,
-      "selected_by": 10.1,
+      "selected_by": 10.0,
       "in_target_squad": false
     }
   ],
