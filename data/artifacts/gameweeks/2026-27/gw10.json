@@ -14,7 +14,7 @@
   "name": "Gameweek 10",
   "deadline": "2026-11-06T18:30:00Z",
   "frozen_at": "2026-11-06T14:30:24.374297+00:00",
-  "scored_at": null,
+  "scored_at": "2026-11-08T19:51:18.126555+00:00",
   "squad": {
     "total_cost": 1000,
     "projected_points": 58.52,
@@ -5562,6 +5562,157 @@
       "position": "DEF",
       "now_cost": 40,
       "projected": 0.069
+    }
+  ],
+  "result": {
+    "points": 69,
+    "starter_points": 67,
+    "captain_id": 411,
+    "captain_points": 2,
+    "captain_blanked": false,
+    "autosubs": [],
+    "points_left_on_bench": 12,
+    "fpl_average": 25,
+    "fpl_highest": 100,
+    "scores_final": false
+  },
+  "accuracy": {
+    "players_appeared": 313,
+    "mae": 1.911,
+    "rmse": 2.878,
+    "bias": 0.734,
+    "spearman": 0.3806
+  },
+  "misses": [
+    {
+      "web_name": "Thiago",
+      "team_short": "BRE",
+      "position": "FWD",
+      "projected": 3.17,
+      "actual": -2,
+      "minutes": 22
+    },
+    {
+      "web_name": "Haaland",
+      "team_short": "MCI",
+      "position": "FWD",
+      "projected": 6.586,
+      "actual": 2,
+      "minutes": 90
+    },
+    {
+      "web_name": "Colwill",
+      "team_short": "CHE",
+      "position": "DEF",
+      "projected": 3.384,
+      "actual": 0,
+      "minutes": 45
+    },
+    {
+      "web_name": "Neto",
+      "team_short": "CHE",
+      "position": "MID",
+      "projected": 4.148,
+      "actual": 1,
+      "minutes": 61
+    },
+    {
+      "web_name": "Mbeumo",
+      "team_short": "MUN",
+      "position": "MID",
+      "projected": 5.076,
+      "actual": 2,
+      "minutes": 82
+    },
+    {
+      "web_name": "Suzuki",
+      "team_short": "AVL",
+      "position": "GK",
+      "projected": 3.044,
+      "actual": 0,
+      "minutes": 90
+    },
+    {
+      "web_name": "Palmer",
+      "team_short": "CHE",
+      "position": "MID",
+      "projected": 5.02,
+      "actual": 2,
+      "minutes": 90
+    },
+    {
+      "web_name": "Dalot",
+      "team_short": "MUN",
+      "position": "DEF",
+      "projected": 2.667,
+      "actual": 0,
+      "minutes": 65
+    }
+  ],
+  "hits": [
+    {
+      "web_name": "Alysson",
+      "team_short": "AVL",
+      "position": "MID",
+      "projected": 1.598,
+      "actual": 16,
+      "minutes": 70
+    },
+    {
+      "web_name": "Barry",
+      "team_short": "EVE",
+      "position": "FWD",
+      "projected": 4.309,
+      "actual": 16,
+      "minutes": 90
+    },
+    {
+      "web_name": "Delap",
+      "team_short": "NFO",
+      "position": "FWD",
+      "projected": 2.244,
+      "actual": 13,
+      "minutes": 86
+    },
+    {
+      "web_name": "Dorgu",
+      "team_short": "MUN",
+      "position": "MID",
+      "projected": 0.371,
+      "actual": 10,
+      "minutes": 24
+    },
+    {
+      "web_name": "Wirtz",
+      "team_short": "LIV",
+      "position": "MID",
+      "projected": 3.886,
+      "actual": 13,
+      "minutes": 90
+    },
+    {
+      "web_name": "Vuskovic",
+      "team_short": "BHA",
+      "position": "DEF",
+      "projected": 3.228,
+      "actual": 12,
+      "minutes": 90
+    },
+    {
+      "web_name": "J.Murphy",
+      "team_short": "NEW",
+      "position": "MID",
+      "projected": 2.182,
+      "actual": 10,
+      "minutes": 90
+    },
+    {
+      "web_name": "Mukiele",
+      "team_short": "SUN",
+      "position": "DEF",
+      "projected": 1.277,
+      "actual": 9,
+      "minutes": 90
     }
   ]
 }
