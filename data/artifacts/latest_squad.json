@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-07T19:32:53.760046+00:00",
+  "generated_at": "2026-11-08T13:43:08.289248+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-11-07T19:29:33.529409+00:00",
+    "last_fetch": "2026-11-08T13:39:13.684770+00:00",
     "average_squad_value": 995,
     "current_gw": {
       "id": 10,
@@ -14,14 +14,14 @@
       "deadline_time": "2026-11-21T11:00:00Z"
     },
     "data_health": {
-      "players_tracked": 670,
-      "players_disagreeing": 26,
+      "players_tracked": 671,
+      "players_disagreeing": 0,
       "latest_gw_on_file": 10,
-      "latest_result": "2026-11-07T15:00:00+00:00",
+      "latest_result": "2026-11-07T17:30:00+00:00",
       "gameweek_in_progress": {
         "id": 10,
         "name": "Gameweek 10",
-        "matches_played": 4,
+        "matches_played": 5,
         "matches_started": 5,
         "matches_total": 10
       },
@@ -30,7 +30,7 @@
   },
   "squad": {
     "total_cost": 1000,
-    "projected_points": 60.16,
+    "projected_points": 59.99,
     "formation": "3-4-3",
     "picks": [
       {
@@ -63,7 +63,7 @@
         "team_id": 3,
         "team_short": "BOU",
         "position": "MID",
-        "now_cost": 66,
+        "now_cost": 67,
         "projected_points": 5.394,
         "is_starter": true,
         "is_captain": false,
@@ -142,26 +142,14 @@
         "is_vice": false
       },
       {
-        "player_id": 183,
-        "web_name": "Rudoni",
-        "team_id": 7,
-        "team_short": "COV",
+        "player_id": 290,
+        "web_name": "Slater",
+        "team_id": 11,
+        "team_short": "HUL",
         "position": "MID",
-        "now_cost": 49,
-        "projected_points": 3.331,
+        "now_cost": 45,
+        "projected_points": 2.484,
         "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 366,
-        "web_name": "Wirtz",
-        "team_id": 14,
-        "team_short": "LIV",
-        "position": "MID",
-        "now_cost": 72,
-        "projected_points": 4.781,
-        "is_starter": true,
         "is_captain": false,
         "is_vice": false
       },
@@ -178,13 +166,25 @@
         "is_vice": false
       },
       {
+        "player_id": 400,
+        "web_name": "Doku",
+        "team_id": 15,
+        "team_short": "MCI",
+        "position": "MID",
+        "now_cost": 75,
+        "projected_points": 5.475,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
         "player_id": 411,
         "web_name": "Haaland",
         "team_id": 15,
         "team_short": "MCI",
         "position": "FWD",
         "now_cost": 158,
-        "projected_points": 7.099,
+        "projected_points": 6.669,
         "is_starter": true,
         "is_captain": true,
         "is_vice": false
