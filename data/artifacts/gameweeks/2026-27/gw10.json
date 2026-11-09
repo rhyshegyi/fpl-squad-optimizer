@@ -14,7 +14,7 @@
   "name": "Gameweek 10",
   "deadline": "2026-11-06T18:30:00Z",
   "frozen_at": "2026-11-06T14:30:24.374297+00:00",
-  "scored_at": "2026-11-08T23:00:11.059857+00:00",
+  "scored_at": "2026-11-09T16:43:11.931582+00:00",
   "squad": {
     "total_cost": 1000,
     "projected_points": 58.52,
@@ -5572,9 +5572,9 @@
     "captain_blanked": false,
     "autosubs": [],
     "points_left_on_bench": 12,
-    "fpl_average": 25,
-    "fpl_highest": 100,
-    "scores_final": false
+    "fpl_average": 55,
+    "fpl_highest": 139,
+    "scores_final": true
   },
   "accuracy": {
     "players_appeared": 313,
@@ -5714,5 +5714,6 @@
       "actual": 9,
       "minutes": 90
     }
-  ]
+  ],
+  "settled_at": "2026-11-09T16:43:11.931582+00:00"
 }
