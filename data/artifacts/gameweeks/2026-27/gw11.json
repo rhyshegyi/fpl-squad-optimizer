@@ -13,7 +13,7 @@
   "average_squad_value": 995,
   "name": "Gameweek 11",
   "deadline": "2026-11-21T11:00:00Z",
-  "frozen_at": "2026-11-09T23:51:01.277824+00:00",
+  "frozen_at": "2026-11-10T15:07:23.519201+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -1880,8 +1880,8 @@
       "web_name": "Wharton",
       "team_short": "CRY",
       "position": "MID",
-      "now_cost": 54,
-      "projected": 2.81
+      "now_cost": 53,
+      "projected": 2.611
     },
     {
       "player_id": 211,
@@ -1944,7 +1944,7 @@
       "web_name": "Doucour\u00e9",
       "team_short": "CRY",
       "position": "MID",
-      "now_cost": 48,
+      "now_cost": 47,
       "projected": 0.071
     },
     {
@@ -2280,7 +2280,7 @@
       "web_name": "Wilson",
       "team_short": "LEE",
       "position": "MID",
-      "now_cost": 62,
+      "now_cost": 61,
       "projected": 1.874
     },
     {
@@ -4048,7 +4048,7 @@
       "web_name": "Anderson",
       "team_short": "MCI",
       "position": "MID",
-      "now_cost": 63,
+      "now_cost": 62,
       "projected": 4.201
     },
     {
@@ -4617,7 +4617,7 @@
       "team_short": "SUN",
       "position": "FWD",
       "now_cost": 57,
-      "projected": 2.836
+      "projected": 2.127
     },
     {
       "player_id": 553,
@@ -4856,8 +4856,8 @@
       "web_name": "Madjo",
       "team_short": "AVL",
       "position": "FWD",
-      "now_cost": 54,
-      "projected": 0.764
+      "now_cost": 53,
+      "projected": 0.713
     },
     {
       "player_id": 583,
