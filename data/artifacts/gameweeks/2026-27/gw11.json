@@ -13,7 +13,7 @@
   "average_squad_value": 995,
   "name": "Gameweek 11",
   "deadline": "2026-11-21T11:00:00Z",
-  "frozen_at": "2026-11-10T15:07:23.519201+00:00",
+  "frozen_at": "2026-11-10T21:25:05.173000+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -2489,7 +2489,7 @@
       "team_short": "HUL",
       "position": "MID",
       "now_cost": 53,
-      "projected": 2.423
+      "projected": 1.817
     },
     {
       "player_id": 287,
