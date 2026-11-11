@@ -13,7 +13,7 @@
   "average_squad_value": 995,
   "name": "Gameweek 11",
   "deadline": "2026-11-21T11:00:00Z",
-  "frozen_at": "2026-11-10T21:25:05.173000+00:00",
+  "frozen_at": "2026-11-11T14:37:25.070771+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -62,7 +62,7 @@
         "team_id": 5,
         "team_short": "BHA",
         "position": "GK",
-        "now_cost": 46,
+        "now_cost": 47,
         "projected_points": 3.811,
         "is_starter": true,
         "is_captain": false,
@@ -112,18 +112,6 @@
         "position": "DEF",
         "now_cost": 39,
         "projected_points": 2.319,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 176,
-        "web_name": "Dasilva",
-        "team_id": 7,
-        "team_short": "COV",
-        "position": "DEF",
-        "now_cost": 40,
-        "projected_points": 2.477,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -197,6 +185,18 @@
         "now_cost": 66,
         "projected_points": 4.886,
         "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 539,
+        "web_name": "O'Nien",
+        "team_id": 20,
+        "team_short": "SUN",
+        "position": "DEF",
+        "now_cost": 39,
+        "projected_points": 2.165,
+        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       }
@@ -1072,7 +1072,7 @@
       "web_name": "Verbruggen",
       "team_short": "BHA",
       "position": "GK",
-      "now_cost": 46,
+      "now_cost": 47,
       "projected": 3.811
     },
     {
@@ -1977,7 +1977,7 @@
       "team_short": "CRY",
       "position": "FWD",
       "now_cost": 59,
-      "projected": 1.393
+      "projected": 1.045
     },
     {
       "player_id": 223,
@@ -2088,7 +2088,7 @@
       "web_name": "Dewsbury-Hall",
       "team_short": "EVE",
       "position": "MID",
-      "now_cost": 66,
+      "now_cost": 67,
       "projected": 3.667
     },
     {
@@ -3545,7 +3545,7 @@
       "team_short": "MUN",
       "position": "DEF",
       "now_cost": 46,
-      "projected": 1.797
+      "projected": 1.347
     },
     {
       "player_id": 419,
@@ -3592,8 +3592,8 @@
       "web_name": "Amass",
       "team_short": "MUN",
       "position": "DEF",
-      "now_cost": 40,
-      "projected": 0.031
+      "now_cost": 39,
+      "projected": 0.039
     },
     {
       "player_id": 425,

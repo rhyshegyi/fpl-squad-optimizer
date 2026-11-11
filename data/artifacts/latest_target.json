@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-10T21:25:05.150953+00:00",
+  "generated_at": "2026-11-11T14:37:25.043557+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "budget_tenths": 995,
   "pipeline_state": {
-    "last_fetch": "2026-11-10T21:20:47.469402+00:00",
+    "last_fetch": "2026-11-11T14:33:44.561405+00:00",
     "average_squad_value": 995,
     "current_gw": {
       "id": 10,
@@ -25,7 +25,7 @@
     }
   },
   "squad": {
-    "total_cost": 994,
+    "total_cost": 995,
     "projected_points": 60.07,
     "formation": "3-4-3",
     "picks": [
@@ -95,8 +95,8 @@
         "team_id": 5,
         "team_short": "BHA",
         "position": "GK",
-        "now_cost": 46,
-        "projected_points": 4.152,
+        "now_cost": 47,
+        "projected_points": 4.149,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -1190,8 +1190,8 @@
       "team_id": 5,
       "team_short": "BHA",
       "position": "GK",
-      "now_cost": 46,
-      "projected_points": 4.152
+      "now_cost": 47,
+      "projected_points": 4.149
     },
     {
       "player_id": 110,
@@ -2208,7 +2208,7 @@
       "team_short": "CRY",
       "position": "FWD",
       "now_cost": 59,
-      "projected_points": 2.279
+      "projected_points": 1.709
     },
     {
       "player_id": 223,
@@ -2333,7 +2333,7 @@
       "team_id": 9,
       "team_short": "EVE",
       "position": "MID",
-      "now_cost": 66,
+      "now_cost": 67,
       "projected_points": 4.16
     },
     {
@@ -3972,7 +3972,7 @@
       "team_short": "MUN",
       "position": "DEF",
       "now_cost": 46,
-      "projected_points": 2.132
+      "projected_points": 1.599
     },
     {
       "player_id": 419,
@@ -4025,8 +4025,8 @@
       "team_id": 16,
       "team_short": "MUN",
       "position": "DEF",
-      "now_cost": 40,
-      "projected_points": 0.031
+      "now_cost": 39,
+      "projected_points": 0.04
     },
     {
       "player_id": 425,

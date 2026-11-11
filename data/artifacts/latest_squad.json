@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-10T21:24:34.884592+00:00",
+  "generated_at": "2026-11-11T14:36:58.701768+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-11-10T21:20:47.469402+00:00",
+    "last_fetch": "2026-11-11T14:33:44.561405+00:00",
     "average_squad_value": 995,
     "current_gw": {
       "id": 10,
@@ -69,7 +69,7 @@
         "team_id": 5,
         "team_short": "BHA",
         "position": "GK",
-        "now_cost": 46,
+        "now_cost": 47,
         "projected_points": 3.811,
         "is_starter": true,
         "is_captain": false,
@@ -119,18 +119,6 @@
         "position": "DEF",
         "now_cost": 39,
         "projected_points": 2.319,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 176,
-        "web_name": "Dasilva",
-        "team_id": 7,
-        "team_short": "COV",
-        "position": "DEF",
-        "now_cost": 40,
-        "projected_points": 2.477,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -204,6 +192,18 @@
         "now_cost": 66,
         "projected_points": 4.886,
         "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 539,
+        "web_name": "O'Nien",
+        "team_id": 20,
+        "team_short": "SUN",
+        "position": "DEF",
+        "now_cost": 39,
+        "projected_points": 2.165,
+        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       }
