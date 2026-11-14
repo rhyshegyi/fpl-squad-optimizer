@@ -13,7 +13,7 @@
   "average_squad_value": 995,
   "name": "Gameweek 11",
   "deadline": "2026-11-21T11:00:00Z",
-  "frozen_at": "2026-11-13T21:31:58.790803+00:00",
+  "frozen_at": "2026-11-14T13:42:54.424132+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -3521,7 +3521,7 @@
       "team_short": "MUN",
       "position": "MID",
       "now_cost": 57,
-      "projected": 1.506
+      "projected": 1.129
     },
     {
       "player_id": 416,
@@ -4432,7 +4432,7 @@
       "web_name": "Roefs",
       "team_short": "SUN",
       "position": "GK",
-      "now_cost": 49,
+      "now_cost": 48,
       "projected": 3.107
     },
     {
