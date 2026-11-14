@@ -13,7 +13,7 @@
   "average_squad_value": 995,
   "name": "Gameweek 11",
   "deadline": "2026-11-21T11:00:00Z",
-  "frozen_at": "2026-11-14T13:42:54.424132+00:00",
+  "frozen_at": "2026-11-14T20:01:02.900665+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -5113,7 +5113,7 @@
       "team_short": "BHA",
       "position": "DEF",
       "now_cost": 45,
-      "projected": 0.945
+      "projected": 0.709
     },
     {
       "player_id": 615,
@@ -5313,7 +5313,7 @@
       "team_short": "BHA",
       "position": "MID",
       "now_cost": 55,
-      "projected": 2.215
+      "projected": 1.661
     },
     {
       "player_id": 640,

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-14T13:42:54.405590+00:00",
+  "generated_at": "2026-11-14T20:01:02.883246+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "budget_tenths": 995,
   "pipeline_state": {
-    "last_fetch": "2026-11-14T13:40:25.063726+00:00",
+    "last_fetch": "2026-11-14T19:58:30.316914+00:00",
     "average_squad_value": 995,
     "current_gw": {
       "id": 10,
@@ -5736,7 +5736,7 @@
       "team_short": "BHA",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 0.896
+      "projected_points": 0.672
     },
     {
       "player_id": 615,
@@ -5961,7 +5961,7 @@
       "team_short": "BHA",
       "position": "MID",
       "now_cost": 55,
-      "projected_points": 2.575
+      "projected_points": 1.931
     },
     {
       "player_id": 640,
