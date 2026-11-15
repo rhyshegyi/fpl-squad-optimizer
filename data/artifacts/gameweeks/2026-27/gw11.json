@@ -13,7 +13,7 @@
   "average_squad_value": 995,
   "name": "Gameweek 11",
   "deadline": "2026-11-21T11:00:00Z",
-  "frozen_at": "2026-11-14T20:01:02.900665+00:00",
+  "frozen_at": "2026-11-15T14:09:07.860898+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -448,7 +448,7 @@
       "web_name": "Konsa",
       "team_short": "ARS",
       "position": "DEF",
-      "now_cost": 48,
+      "now_cost": 49,
       "projected": 3.335
     },
     {
@@ -457,7 +457,7 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 43,
-      "projected": 1.828
+      "projected": 1.371
     },
     {
       "player_id": 33,
@@ -1088,8 +1088,8 @@
       "web_name": "Steele",
       "team_short": "BHA",
       "position": "GK",
-      "now_cost": 40,
-      "projected": 0.031
+      "now_cost": 39,
+      "projected": 0.039
     },
     {
       "player_id": 112,
@@ -3056,7 +3056,7 @@
       "web_name": "Frimpong",
       "team_short": "LIV",
       "position": "DEF",
-      "now_cost": 52,
+      "now_cost": 51,
       "projected": 0.0
     },
     {

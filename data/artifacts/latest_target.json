@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-14T20:01:02.883246+00:00",
+  "generated_at": "2026-11-15T14:09:07.846762+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "budget_tenths": 995,
   "pipeline_state": {
-    "last_fetch": "2026-11-14T19:58:30.316914+00:00",
+    "last_fetch": "2026-11-15T14:07:19.425508+00:00",
     "average_squad_value": 995,
     "current_gw": {
       "id": 10,
@@ -26,7 +26,7 @@
   },
   "squad": {
     "total_cost": 995,
-    "projected_points": 60.07,
+    "projected_points": 60.06,
     "formation": "3-4-3",
     "picks": [
       {
@@ -59,8 +59,8 @@
         "team_id": 1,
         "team_short": "ARS",
         "position": "DEF",
-        "now_cost": 48,
-        "projected_points": 4.174,
+        "now_cost": 49,
+        "projected_points": 4.162,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -162,6 +162,18 @@
         "is_vice": false
       },
       {
+        "player_id": 279,
+        "web_name": "Ajayi",
+        "team_id": 11,
+        "team_short": "HUL",
+        "position": "DEF",
+        "now_cost": 42,
+        "projected_points": 2.961,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
         "player_id": 411,
         "web_name": "Haaland",
         "team_id": 15,
@@ -181,18 +193,6 @@
         "position": "GK",
         "now_cost": 44,
         "projected_points": 3.533,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 502,
-        "web_name": "Robertson",
-        "team_id": 19,
-        "team_short": "TOT",
-        "position": "DEF",
-        "now_cost": 43,
-        "projected_points": 3.628,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
@@ -488,8 +488,8 @@
       "team_id": 1,
       "team_short": "ARS",
       "position": "DEF",
-      "now_cost": 48,
-      "projected_points": 4.174
+      "now_cost": 49,
+      "projected_points": 4.162
     },
     {
       "player_id": 32,
@@ -498,7 +498,7 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 43,
-      "projected_points": 2.41
+      "projected_points": 1.808
     },
     {
       "player_id": 33,
@@ -1208,8 +1208,8 @@
       "team_id": 5,
       "team_short": "BHA",
       "position": "GK",
-      "now_cost": 40,
-      "projected_points": 0.031
+      "now_cost": 39,
+      "projected_points": 0.04
     },
     {
       "player_id": 112,
@@ -3422,7 +3422,7 @@
       "team_id": 14,
       "team_short": "LIV",
       "position": "DEF",
-      "now_cost": 52,
+      "now_cost": 51,
       "projected_points": 0.0
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T20:01:02.921821+00:00",
+  "generated_at": "2026-11-15T14:09:07.878341+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 7,
@@ -3092,7 +3092,7 @@
       "bonus": 11,
       "ppg": 7.0,
       "value": 11.11,
-      "selected_by": 48.1,
+      "selected_by": 48.2,
       "in_target_squad": true
     },
     {
@@ -3110,7 +3110,7 @@
       "bonus": 5,
       "ppg": 7.0,
       "value": 13.21,
-      "selected_by": 9.4,
+      "selected_by": 9.5,
       "in_target_squad": false
     },
     {
@@ -3164,7 +3164,7 @@
       "bonus": 16,
       "ppg": 6.1,
       "value": 6.56,
-      "selected_by": 25.1,
+      "selected_by": 25.2,
       "in_target_squad": false
     },
     {
@@ -3182,7 +3182,7 @@
       "bonus": 10,
       "ppg": 6.1,
       "value": 9.38,
-      "selected_by": 23.9,
+      "selected_by": 24.0,
       "in_target_squad": true
     },
     {
@@ -3245,7 +3245,7 @@
       "web_name": "Konsa",
       "team_short": "ARS",
       "position": "DEF",
-      "now_cost": 48,
+      "now_cost": 49,
       "points": 57,
       "games": 10,
       "minutes": 731,
@@ -3253,7 +3253,7 @@
       "assists": 0,
       "bonus": 7,
       "ppg": 5.7,
-      "value": 11.88,
+      "value": 11.63,
       "selected_by": 24.7,
       "in_target_squad": true
     },
@@ -3344,7 +3344,7 @@
       "bonus": 3,
       "ppg": 5.6,
       "value": 10.98,
-      "selected_by": 6.4,
+      "selected_by": 6.5,
       "in_target_squad": false
     },
     {
@@ -3398,7 +3398,7 @@
       "bonus": 12,
       "ppg": 5.4,
       "value": 7.61,
-      "selected_by": 31.3,
+      "selected_by": 31.4,
       "in_target_squad": true
     },
     {
@@ -3578,7 +3578,7 @@
       "bonus": 9,
       "ppg": 4.7,
       "value": 6.18,
-      "selected_by": 31.6,
+      "selected_by": 31.5,
       "in_target_squad": false
     },
     {
