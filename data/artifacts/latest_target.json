@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-16T16:08:17.509454+00:00",
+  "generated_at": "2026-11-16T23:50:00.606058+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "budget_tenths": 995,
   "pipeline_state": {
-    "last_fetch": "2026-11-16T16:06:28.222650+00:00",
+    "last_fetch": "2026-11-16T23:45:46.630557+00:00",
     "average_squad_value": 995,
     "current_gw": {
       "id": 10,
@@ -381,7 +381,7 @@
       "team_short": "ARS",
       "position": "MID",
       "now_cost": 52,
-      "projected_points": 0.858
+      "projected_points": 0.644
     },
     {
       "player_id": 20,
@@ -966,7 +966,7 @@
       "team_short": "BRE",
       "position": "DEF",
       "now_cost": 54,
-      "projected_points": 1.708
+      "projected_points": 1.281
     },
     {
       "player_id": 85,
@@ -4431,7 +4431,7 @@
       "team_short": "NFO",
       "position": "DEF",
       "now_cost": 49,
-      "projected_points": 2.952
+      "projected_points": 2.214
     },
     {
       "player_id": 470,
@@ -5484,7 +5484,7 @@
       "team_short": "HUL",
       "position": "DEF",
       "now_cost": 41,
-      "projected_points": 2.763
+      "projected_points": 2.072
     },
     {
       "player_id": 587,
