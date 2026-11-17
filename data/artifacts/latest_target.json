@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-16T23:50:00.606058+00:00",
+  "generated_at": "2026-11-17T16:18:46.463384+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "budget_tenths": 995,
   "pipeline_state": {
-    "last_fetch": "2026-11-16T23:45:46.630557+00:00",
+    "last_fetch": "2026-11-17T16:15:18.828291+00:00",
     "average_squad_value": 995,
     "current_gw": {
       "id": 10,
@@ -848,8 +848,8 @@
       "team_id": 3,
       "team_short": "BOU",
       "position": "MID",
-      "now_cost": 50,
-      "projected_points": 2.187
+      "now_cost": 49,
+      "projected_points": 2.19
     },
     {
       "player_id": 72,
@@ -1020,7 +1020,7 @@
       "team_short": "BRE",
       "position": "DEF",
       "now_cost": 45,
-      "projected_points": 1.557
+      "projected_points": 1.168
     },
     {
       "player_id": 91,
@@ -2072,8 +2072,8 @@
       "team_id": 8,
       "team_short": "CRY",
       "position": "DEF",
-      "now_cost": 43,
-      "projected_points": 1.486
+      "now_cost": 42,
+      "projected_points": 1.478
     },
     {
       "player_id": 208,
@@ -4115,8 +4115,8 @@
       "team_id": 16,
       "team_short": "MUN",
       "position": "MID",
-      "now_cost": 49,
-      "projected_points": 0.045
+      "now_cost": 48,
+      "projected_points": 0.052
     },
     {
       "player_id": 435,

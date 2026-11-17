@@ -13,7 +13,7 @@
   "average_squad_value": 995,
   "name": "Gameweek 11",
   "deadline": "2026-11-21T11:00:00Z",
-  "frozen_at": "2026-11-16T23:50:00.627673+00:00",
+  "frozen_at": "2026-11-17T16:18:46.486191+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -768,7 +768,7 @@
       "web_name": "Cook",
       "team_short": "BOU",
       "position": "MID",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected": 1.686
     },
     {
@@ -921,7 +921,7 @@
       "team_short": "BRE",
       "position": "DEF",
       "now_cost": 45,
-      "projected": 1.332
+      "projected": 0.999
     },
     {
       "player_id": 91,
@@ -1856,7 +1856,7 @@
       "web_name": "Mingueza",
       "team_short": "CRY",
       "position": "DEF",
-      "now_cost": 43,
+      "now_cost": 42,
       "projected": 1.246
     },
     {
@@ -3672,8 +3672,8 @@
       "web_name": "J.Fletcher",
       "team_short": "MUN",
       "position": "MID",
-      "now_cost": 49,
-      "projected": 0.044
+      "now_cost": 48,
+      "projected": 0.046
     },
     {
       "player_id": 435,
