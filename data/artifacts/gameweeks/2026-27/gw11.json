@@ -13,7 +13,7 @@
   "average_squad_value": 995,
   "name": "Gameweek 11",
   "deadline": "2026-11-21T11:00:00Z",
-  "frozen_at": "2026-11-17T23:03:35.305702+00:00",
+  "frozen_at": "2026-11-18T15:52:53.015301+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -3824,7 +3824,7 @@
       "web_name": "Barnes",
       "team_short": "NEW",
       "position": "MID",
-      "now_cost": 61,
+      "now_cost": 60,
       "projected": 3.3
     },
     {
