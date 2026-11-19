@@ -13,7 +13,7 @@
   "average_squad_value": 995,
   "name": "Gameweek 11",
   "deadline": "2026-11-21T11:00:00Z",
-  "frozen_at": "2026-11-19T15:56:36.627526+00:00",
+  "frozen_at": "2026-11-19T22:43:55.477454+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -1033,7 +1033,7 @@
       "team_short": "COV",
       "position": "MID",
       "now_cost": 48,
-      "projected": 0.466
+      "projected": 0.7
     },
     {
       "player_id": 105,
@@ -1473,7 +1473,7 @@
       "team_short": "CHE",
       "position": "MID",
       "now_cost": 53,
-      "projected": 2.675
+      "projected": 2.006
     },
     {
       "player_id": 160,
@@ -1689,7 +1689,7 @@
       "team_short": "COV",
       "position": "MID",
       "now_cost": 53,
-      "projected": 1.082
+      "projected": 0.811
     },
     {
       "player_id": 187,
@@ -4801,7 +4801,7 @@
       "team_short": "COV",
       "position": "MID",
       "now_cost": 48,
-      "projected": 2.085
+      "projected": 1.564
     },
     {
       "player_id": 576,
