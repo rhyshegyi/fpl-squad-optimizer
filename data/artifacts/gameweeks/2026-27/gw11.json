@@ -13,7 +13,7 @@
   "average_squad_value": 995,
   "name": "Gameweek 11",
   "deadline": "2026-11-21T11:00:00Z",
-  "frozen_at": "2026-11-18T22:40:30.718054+00:00",
+  "frozen_at": "2026-11-19T15:56:36.627526+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -560,8 +560,8 @@
       "web_name": "McGinn",
       "team_short": "AVL",
       "position": "MID",
-      "now_cost": 54,
-      "projected": 3.672
+      "now_cost": 55,
+      "projected": 3.737
     },
     {
       "player_id": 46,
@@ -1200,7 +1200,7 @@
       "web_name": "Georginio",
       "team_short": "BHA",
       "position": "FWD",
-      "now_cost": 53,
+      "now_cost": 52,
       "projected": 1.875
     },
     {
@@ -1216,8 +1216,8 @@
       "web_name": "Gomez",
       "team_short": "BHA",
       "position": "MID",
-      "now_cost": 50,
-      "projected": 3.798
+      "now_cost": 51,
+      "projected": 3.816
     },
     {
       "player_id": 128,
@@ -1585,7 +1585,7 @@
       "team_short": "COV",
       "position": "DEF",
       "now_cost": 40,
-      "projected": 0.438
+      "projected": 0.657
     },
     {
       "player_id": 174,
@@ -2849,7 +2849,7 @@
       "team_short": "LEE",
       "position": "DEF",
       "now_cost": 45,
-      "projected": 1.078
+      "projected": 1.437
     },
     {
       "player_id": 332,
@@ -2881,7 +2881,7 @@
       "team_short": "LEE",
       "position": "MID",
       "now_cost": 60,
-      "projected": 0.85
+      "projected": 1.701
     },
     {
       "player_id": 336,
@@ -3224,7 +3224,7 @@
       "web_name": "McConnell",
       "team_short": "LIV",
       "position": "MID",
-      "now_cost": 44,
+      "now_cost": 43,
       "projected": 0.037
     },
     {
@@ -4057,7 +4057,7 @@
       "team_short": "NFO",
       "position": "MID",
       "now_cost": 57,
-      "projected": 0.745
+      "projected": 0.0
     },
     {
       "player_id": 483,
@@ -4553,7 +4553,7 @@
       "team_short": "SUN",
       "position": "MID",
       "now_cost": 53,
-      "projected": 1.506
+      "projected": 0.0
     },
     {
       "player_id": 545,
@@ -4617,7 +4617,7 @@
       "team_short": "SUN",
       "position": "FWD",
       "now_cost": 57,
-      "projected": 2.127
+      "projected": 0.0
     },
     {
       "player_id": 553,
@@ -4752,7 +4752,7 @@
       "web_name": "Gonzalo",
       "team_short": "FUL",
       "position": "FWD",
-      "now_cost": 59,
+      "now_cost": 58,
       "projected": 2.272
     },
     {
@@ -4976,8 +4976,8 @@
       "web_name": "Suzuki",
       "team_short": "AVL",
       "position": "GK",
-      "now_cost": 50,
-      "projected": 3.379
+      "now_cost": 51,
+      "projected": 3.38
     },
     {
       "player_id": 598,

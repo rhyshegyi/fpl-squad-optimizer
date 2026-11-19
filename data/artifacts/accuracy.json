@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T22:40:30.741553+00:00",
+  "generated_at": "2026-11-19T15:56:36.651014+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 7,
@@ -3074,7 +3074,7 @@
       "bonus": 9,
       "ppg": 7.5,
       "value": 13.64,
-      "selected_by": 48.2,
+      "selected_by": 48.3,
       "in_target_squad": true
     },
     {
@@ -3092,7 +3092,7 @@
       "bonus": 11,
       "ppg": 7.0,
       "value": 11.11,
-      "selected_by": 48.3,
+      "selected_by": 48.4,
       "in_target_squad": true
     },
     {
@@ -3110,7 +3110,7 @@
       "bonus": 5,
       "ppg": 7.0,
       "value": 13.21,
-      "selected_by": 9.8,
+      "selected_by": 10.0,
       "in_target_squad": false
     },
     {
@@ -3164,7 +3164,7 @@
       "bonus": 16,
       "ppg": 6.1,
       "value": 6.56,
-      "selected_by": 25.3,
+      "selected_by": 25.4,
       "in_target_squad": false
     },
     {
@@ -3182,7 +3182,7 @@
       "bonus": 10,
       "ppg": 6.1,
       "value": 9.38,
-      "selected_by": 24.3,
+      "selected_by": 24.4,
       "in_target_squad": true
     },
     {
@@ -3218,7 +3218,7 @@
       "bonus": 7,
       "ppg": 5.8,
       "value": 12.08,
-      "selected_by": 11.2,
+      "selected_by": 11.3,
       "in_target_squad": false
     },
     {
@@ -3254,7 +3254,7 @@
       "bonus": 7,
       "ppg": 5.7,
       "value": 11.63,
-      "selected_by": 24.9,
+      "selected_by": 25.0,
       "in_target_squad": true
     },
     {
@@ -3290,7 +3290,7 @@
       "bonus": 5,
       "ppg": 5.7,
       "value": 12.13,
-      "selected_by": 24.0,
+      "selected_by": 24.1,
       "in_target_squad": true
     },
     {
@@ -3308,7 +3308,7 @@
       "bonus": 6,
       "ppg": 5.7,
       "value": 11.18,
-      "selected_by": 15.2,
+      "selected_by": 15.5,
       "in_target_squad": false
     },
     {
@@ -3362,7 +3362,7 @@
       "bonus": 8,
       "ppg": 5.5,
       "value": 9.65,
-      "selected_by": 10.9,
+      "selected_by": 11.0,
       "in_target_squad": false
     },
     {
@@ -3398,7 +3398,7 @@
       "bonus": 12,
       "ppg": 5.4,
       "value": 7.61,
-      "selected_by": 32.0,
+      "selected_by": 32.3,
       "in_target_squad": true
     },
     {
@@ -3416,7 +3416,7 @@
       "bonus": 11,
       "ppg": 5.4,
       "value": 10.8,
-      "selected_by": 6.5,
+      "selected_by": 6.6,
       "in_target_squad": false
     },
     {
@@ -3443,7 +3443,7 @@
       "web_name": "Gomez",
       "team_short": "BHA",
       "position": "MID",
-      "now_cost": 50,
+      "now_cost": 51,
       "points": 51,
       "games": 10,
       "minutes": 873,
@@ -3451,7 +3451,7 @@
       "assists": 3,
       "bonus": 1,
       "ppg": 5.1,
-      "value": 10.2,
+      "value": 10.0,
       "selected_by": 4.4,
       "in_target_squad": false
     },
@@ -3560,7 +3560,7 @@
       "bonus": 2,
       "ppg": 4.8,
       "value": 9.06,
-      "selected_by": 9.4,
+      "selected_by": 9.3,
       "in_target_squad": false
     },
     {
@@ -3578,7 +3578,7 @@
       "bonus": 9,
       "ppg": 4.7,
       "value": 6.18,
-      "selected_by": 31.1,
+      "selected_by": 30.9,
       "in_target_squad": false
     },
     {
