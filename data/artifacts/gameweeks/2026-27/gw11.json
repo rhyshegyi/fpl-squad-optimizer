@@ -13,7 +13,7 @@
   "average_squad_value": 995,
   "name": "Gameweek 11",
   "deadline": "2026-11-21T11:00:00Z",
-  "frozen_at": "2026-11-20T15:41:53.334221+00:00",
+  "frozen_at": "2026-11-20T22:20:09.157105+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 1000,
@@ -2801,7 +2801,7 @@
       "team_short": "MUN",
       "position": "GK",
       "now_cost": 45,
-      "projected": 0.055
+      "projected": 0.041
     },
     {
       "player_id": 326,
@@ -3569,7 +3569,7 @@
       "team_short": "MUN",
       "position": "DEF",
       "now_cost": 43,
-      "projected": 0.93
+      "projected": 0.697
     },
     {
       "player_id": 422,
