@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-19T22:43:37.637652+00:00",
+  "generated_at": "2026-11-20T15:41:22.580469+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-11-19T22:41:22.961761+00:00",
+    "last_fetch": "2026-11-20T15:37:30.719584+00:00",
     "average_squad_value": 995,
     "current_gw": {
       "id": 10,
