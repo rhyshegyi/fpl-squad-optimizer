@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-22T14:47:07.695897+00:00",
+  "generated_at": "2026-11-22T21:10:47.282273+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-11-22T14:44:06.930743+00:00",
+    "last_fetch": "2026-11-22T21:06:49.703836+00:00",
     "average_squad_value": 996,
     "current_gw": {
       "id": 11,
@@ -15,24 +15,36 @@
     },
     "data_health": {
       "players_tracked": 674,
-      "players_disagreeing": 21,
+      "players_disagreeing": 0,
       "latest_gw_on_file": 11,
-      "latest_result": "2026-11-21T17:30:00+00:00",
+      "latest_result": "2026-11-22T16:30:00+00:00",
       "gameweek_in_progress": {
         "id": 11,
         "name": "Gameweek 11",
-        "matches_played": 7,
-        "matches_started": 8,
+        "matches_played": 9,
+        "matches_started": 9,
         "matches_total": 10
       },
       "bonus_pending": null
     }
   },
   "squad": {
-    "total_cost": 999,
-    "projected_points": 52.97,
+    "total_cost": 997,
+    "projected_points": 53.63,
     "formation": "3-4-3",
     "picks": [
+      {
+        "player_id": 15,
+        "web_name": "\u00d8degaard",
+        "team_id": 1,
+        "team_short": "ARS",
+        "position": "MID",
+        "now_cost": 67,
+        "projected_points": 4.16,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
       {
         "player_id": 68,
         "web_name": "Tavernier",
@@ -76,7 +88,7 @@
         "team_short": "BHA",
         "position": "DEF",
         "now_cost": 55,
-        "projected_points": 4.72,
+        "projected_points": 4.564,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -88,7 +100,19 @@
         "team_short": "BHA",
         "position": "MID",
         "now_cost": 63,
-        "projected_points": 4.634,
+        "projected_points": 4.681,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 127,
+        "web_name": "Gomez",
+        "team_id": 5,
+        "team_short": "BHA",
+        "position": "MID",
+        "now_cost": 51,
+        "projected_points": 4.186,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -130,6 +154,18 @@
         "is_vice": false
       },
       {
+        "player_id": 334,
+        "web_name": "Muharemovi\u0107",
+        "team_id": 13,
+        "team_short": "LEE",
+        "position": "DEF",
+        "now_cost": 51,
+        "projected_points": 3.402,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
         "player_id": 411,
         "web_name": "Haaland",
         "team_id": 15,
@@ -148,21 +184,9 @@
         "team_short": "MUN",
         "position": "MID",
         "now_cost": 116,
-        "projected_points": 5.137,
+        "projected_points": 5.621,
         "is_starter": true,
         "is_captain": true,
-        "is_vice": false
-      },
-      {
-        "player_id": 427,
-        "web_name": "Mbeumo",
-        "team_id": 16,
-        "team_short": "MUN",
-        "position": "MID",
-        "now_cost": 78,
-        "projected_points": 4.382,
-        "is_starter": true,
-        "is_captain": false,
         "is_vice": false
       },
       {
@@ -178,37 +202,13 @@
         "is_vice": false
       },
       {
-        "player_id": 496,
-        "web_name": "Kinsky",
-        "team_id": 19,
-        "team_short": "TOT",
+        "player_id": 597,
+        "web_name": "Suzuki",
+        "team_id": 2,
+        "team_short": "AVL",
         "position": "GK",
-        "now_cost": 44,
-        "projected_points": 3.474,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 591,
-        "web_name": "Enciso",
-        "team_id": 12,
-        "team_short": "IPS",
-        "position": "MID",
-        "now_cost": 55,
-        "projected_points": 3.847,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 598,
-        "web_name": "Elvedi",
-        "team_id": 13,
-        "team_short": "LEE",
-        "position": "DEF",
-        "now_cost": 45,
-        "projected_points": 3.194,
+        "now_cost": 51,
+        "projected_points": 3.534,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false
