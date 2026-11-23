@@ -13,7 +13,7 @@
   "average_squad_value": 995,
   "name": "Gameweek 12",
   "deadline": "2026-11-27T18:30:00Z",
-  "frozen_at": "2026-11-23T00:23:52.558988+00:00",
+  "frozen_at": "2026-11-23T18:31:48.515970+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 997,
@@ -209,7 +209,7 @@
       "team_short": "ARS",
       "position": "GK",
       "now_cost": 63,
-      "projected": 2.017
+      "projected": 1.345
     },
     {
       "player_id": 2,
@@ -457,7 +457,7 @@
       "team_short": "AVL",
       "position": "DEF",
       "now_cost": 43,
-      "projected": 0.0
+      "projected": 0.786
     },
     {
       "player_id": 33,
@@ -2121,7 +2121,7 @@
       "team_short": "HUL",
       "position": "MID",
       "now_cost": 50,
-      "projected": 1.751
+      "projected": 0.0
     },
     {
       "player_id": 241,
@@ -2921,7 +2921,7 @@
       "team_short": "HUL",
       "position": "MID",
       "now_cost": 50,
-      "projected": 1.401
+      "projected": 0.0
     },
     {
       "player_id": 341,
@@ -3313,7 +3313,7 @@
       "team_short": "MCI",
       "position": "DEF",
       "now_cost": 59,
-      "projected": 0.903
+      "projected": 1.805
     },
     {
       "player_id": 390,
@@ -4193,7 +4193,7 @@
       "team_short": "TOT",
       "position": "DEF",
       "now_cost": 53,
-      "projected": 2.861
+      "projected": 2.85
     },
     {
       "player_id": 500,
@@ -5009,7 +5009,7 @@
       "team_short": "TOT",
       "position": "MID",
       "now_cost": 44,
-      "projected": 1.676
+      "projected": 1.875
     },
     {
       "player_id": 602,
@@ -5041,7 +5041,7 @@
       "team_short": "BHA",
       "position": "MID",
       "now_cost": 44,
-      "projected": 1.545
+      "projected": 0.0
     },
     {
       "player_id": 606,
