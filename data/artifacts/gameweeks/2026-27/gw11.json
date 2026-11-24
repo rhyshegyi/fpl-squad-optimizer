@@ -14,7 +14,7 @@
   "name": "Gameweek 11",
   "deadline": "2026-11-21T11:00:00Z",
   "frozen_at": "2026-11-20T22:20:09.157105+00:00",
-  "scored_at": null,
+  "scored_at": "2026-11-24T02:24:11.090844+00:00",
   "squad": {
     "total_cost": 1000,
     "projected_points": 61.1,
@@ -5578,6 +5578,157 @@
       "position": "DEF",
       "now_cost": 45,
       "projected": 0.196
+    }
+  ],
+  "result": {
+    "points": 44,
+    "starter_points": 42,
+    "captain_id": 411,
+    "captain_points": 2,
+    "captain_blanked": false,
+    "autosubs": [],
+    "points_left_on_bench": 24,
+    "fpl_average": 33,
+    "fpl_highest": 106,
+    "scores_final": false
+  },
+  "accuracy": {
+    "players_appeared": 313,
+    "mae": 2.11,
+    "rmse": 3.166,
+    "bias": 0.843,
+    "spearman": 0.2959
+  },
+  "misses": [
+    {
+      "web_name": "Tarkowski",
+      "team_short": "EVE",
+      "position": "DEF",
+      "projected": 2.807,
+      "actual": -4,
+      "minutes": 39
+    },
+    {
+      "web_name": "Yoro",
+      "team_short": "MUN",
+      "position": "DEF",
+      "projected": 1.763,
+      "actual": -4,
+      "minutes": 7
+    },
+    {
+      "web_name": "Costinha",
+      "team_short": "BHA",
+      "position": "DEF",
+      "projected": 3.143,
+      "actual": -2,
+      "minutes": 88
+    },
+    {
+      "web_name": "Haaland",
+      "team_short": "MCI",
+      "position": "FWD",
+      "projected": 6.867,
+      "actual": 2,
+      "minutes": 90
+    },
+    {
+      "web_name": "Palmer",
+      "team_short": "CHE",
+      "position": "MID",
+      "projected": 5.806,
+      "actual": 2,
+      "minutes": 90
+    },
+    {
+      "web_name": "Neto",
+      "team_short": "CHE",
+      "position": "MID",
+      "projected": 4.695,
+      "actual": 1,
+      "minutes": 26
+    },
+    {
+      "web_name": "Doku",
+      "team_short": "MCI",
+      "position": "MID",
+      "projected": 5.317,
+      "actual": 2,
+      "minutes": 90
+    },
+    {
+      "web_name": "Vuskovic",
+      "team_short": "BHA",
+      "position": "DEF",
+      "projected": 3.227,
+      "actual": 0,
+      "minutes": 90
+    }
+  ],
+  "hits": [
+    {
+      "web_name": "Okafor",
+      "team_short": "LEE",
+      "position": "MID",
+      "projected": 1.713,
+      "actual": 15,
+      "minutes": 72
+    },
+    {
+      "web_name": "Lewis-Potter",
+      "team_short": "BRE",
+      "position": "MID",
+      "projected": 2.726,
+      "actual": 16,
+      "minutes": 73
+    },
+    {
+      "web_name": "Williams-Barnett",
+      "team_short": "TOT",
+      "position": "MID",
+      "projected": 0.771,
+      "actual": 13,
+      "minutes": 63
+    },
+    {
+      "web_name": "Ngumoha",
+      "team_short": "LIV",
+      "position": "MID",
+      "projected": 1.58,
+      "actual": 13,
+      "minutes": 77
+    },
+    {
+      "web_name": "Hill",
+      "team_short": "BOU",
+      "position": "DEF",
+      "projected": 3.625,
+      "actual": 14,
+      "minutes": 90
+    },
+    {
+      "web_name": "Wirtz",
+      "team_short": "LIV",
+      "position": "MID",
+      "projected": 4.461,
+      "actual": 14,
+      "minutes": 90
+    },
+    {
+      "web_name": "McBurnie",
+      "team_short": "HUL",
+      "position": "FWD",
+      "projected": 3.523,
+      "actual": 13,
+      "minutes": 90
+    },
+    {
+      "web_name": "Strand Larsen",
+      "team_short": "CRY",
+      "position": "FWD",
+      "projected": 1.045,
+      "actual": 10,
+      "minutes": 78
     }
   ]
 }

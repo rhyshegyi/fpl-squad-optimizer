@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-23T18:31:48.541113+00:00",
+  "generated_at": "2026-11-24T02:24:12.105187+00:00",
   "season": "2026-27",
   "totals": {
-    "gameweeks_scored": 7,
-    "total_points": 390,
-    "mean_points": 55.7,
+    "gameweeks_scored": 8,
+    "total_points": 434,
+    "mean_points": 54.2,
     "mean_fpl_average": 54.4,
     "weeks_beating_average": 4,
     "weeks_rated": 7,
-    "mean_mae": 1.955,
-    "mean_spearman": 0.3649
+    "mean_mae": 1.975,
+    "mean_spearman": 0.3563
   },
   "gameweeks": [
     {
@@ -2853,13 +2853,155 @@
           "counted_as_captain": false
         }
       ]
-    }
-  ],
-  "pending": [
+    },
     {
+      "season": "2026-27",
       "gw": 11,
       "name": "Gameweek 11",
       "deadline": "2026-11-21T11:00:00Z",
+      "frozen_at": "2026-11-20T22:20:09.157105+00:00",
+      "points": 44,
+      "fpl_average": 33,
+      "beat_average": 11,
+      "captain_points": 2,
+      "captain_blanked": false,
+      "points_left_on_bench": 24,
+      "scores_final": false,
+      "mae": 2.11,
+      "spearman": 0.2959,
+      "players_appeared": 313,
+      "hits": [
+        {
+          "web_name": "Okafor",
+          "team_short": "LEE",
+          "position": "MID",
+          "projected": 1.713,
+          "actual": 15,
+          "minutes": 72
+        },
+        {
+          "web_name": "Lewis-Potter",
+          "team_short": "BRE",
+          "position": "MID",
+          "projected": 2.726,
+          "actual": 16,
+          "minutes": 73
+        },
+        {
+          "web_name": "Williams-Barnett",
+          "team_short": "TOT",
+          "position": "MID",
+          "projected": 0.771,
+          "actual": 13,
+          "minutes": 63
+        },
+        {
+          "web_name": "Ngumoha",
+          "team_short": "LIV",
+          "position": "MID",
+          "projected": 1.58,
+          "actual": 13,
+          "minutes": 77
+        },
+        {
+          "web_name": "Hill",
+          "team_short": "BOU",
+          "position": "DEF",
+          "projected": 3.625,
+          "actual": 14,
+          "minutes": 90
+        },
+        {
+          "web_name": "Wirtz",
+          "team_short": "LIV",
+          "position": "MID",
+          "projected": 4.461,
+          "actual": 14,
+          "minutes": 90
+        },
+        {
+          "web_name": "McBurnie",
+          "team_short": "HUL",
+          "position": "FWD",
+          "projected": 3.523,
+          "actual": 13,
+          "minutes": 90
+        },
+        {
+          "web_name": "Strand Larsen",
+          "team_short": "CRY",
+          "position": "FWD",
+          "projected": 1.045,
+          "actual": 10,
+          "minutes": 78
+        }
+      ],
+      "misses": [
+        {
+          "web_name": "Tarkowski",
+          "team_short": "EVE",
+          "position": "DEF",
+          "projected": 2.807,
+          "actual": -4,
+          "minutes": 39
+        },
+        {
+          "web_name": "Yoro",
+          "team_short": "MUN",
+          "position": "DEF",
+          "projected": 1.763,
+          "actual": -4,
+          "minutes": 7
+        },
+        {
+          "web_name": "Costinha",
+          "team_short": "BHA",
+          "position": "DEF",
+          "projected": 3.143,
+          "actual": -2,
+          "minutes": 88
+        },
+        {
+          "web_name": "Haaland",
+          "team_short": "MCI",
+          "position": "FWD",
+          "projected": 6.867,
+          "actual": 2,
+          "minutes": 90
+        },
+        {
+          "web_name": "Palmer",
+          "team_short": "CHE",
+          "position": "MID",
+          "projected": 5.806,
+          "actual": 2,
+          "minutes": 90
+        },
+        {
+          "web_name": "Neto",
+          "team_short": "CHE",
+          "position": "MID",
+          "projected": 4.695,
+          "actual": 1,
+          "minutes": 26
+        },
+        {
+          "web_name": "Doku",
+          "team_short": "MCI",
+          "position": "MID",
+          "projected": 5.317,
+          "actual": 2,
+          "minutes": 90
+        },
+        {
+          "web_name": "Vuskovic",
+          "team_short": "BHA",
+          "position": "DEF",
+          "projected": 3.227,
+          "actual": 0,
+          "minutes": 90
+        }
+      ],
       "squad": [
         {
           "player_id": 61,
@@ -2871,7 +3013,12 @@
           "projected_points": 3.685,
           "is_starter": true,
           "is_captain": false,
-          "is_vice": false
+          "is_vice": false,
+          "actual_points": 6,
+          "minutes": 90,
+          "subbed_off": false,
+          "subbed_on": false,
+          "counted_as_captain": false
         },
         {
           "player_id": 68,
@@ -2883,7 +3030,12 @@
           "projected_points": 5.182,
           "is_starter": true,
           "is_captain": false,
-          "is_vice": false
+          "is_vice": false,
+          "actual_points": 8,
+          "minutes": 90,
+          "subbed_off": false,
+          "subbed_on": false,
+          "counted_as_captain": false
         },
         {
           "player_id": 79,
@@ -2895,7 +3047,12 @@
           "projected_points": 5.385,
           "is_starter": true,
           "is_captain": false,
-          "is_vice": false
+          "is_vice": false,
+          "actual_points": 6,
+          "minutes": 90,
+          "subbed_off": false,
+          "subbed_on": false,
+          "counted_as_captain": false
         },
         {
           "player_id": 109,
@@ -2907,7 +3064,12 @@
           "projected_points": 3.811,
           "is_starter": true,
           "is_captain": false,
-          "is_vice": false
+          "is_vice": false,
+          "actual_points": 2,
+          "minutes": 90,
+          "subbed_off": false,
+          "subbed_on": false,
+          "counted_as_captain": false
         },
         {
           "player_id": 112,
@@ -2919,7 +3081,12 @@
           "projected_points": 3.723,
           "is_starter": true,
           "is_captain": false,
-          "is_vice": false
+          "is_vice": false,
+          "actual_points": 6,
+          "minutes": 90,
+          "subbed_off": false,
+          "subbed_on": false,
+          "counted_as_captain": false
         },
         {
           "player_id": 115,
@@ -2931,7 +3098,12 @@
           "projected_points": 3.972,
           "is_starter": true,
           "is_captain": false,
-          "is_vice": false
+          "is_vice": false,
+          "actual_points": 1,
+          "minutes": 90,
+          "subbed_off": false,
+          "subbed_on": false,
+          "counted_as_captain": false
         },
         {
           "player_id": 154,
@@ -2943,7 +3115,12 @@
           "projected_points": 5.806,
           "is_starter": true,
           "is_captain": false,
-          "is_vice": true
+          "is_vice": true,
+          "actual_points": 2,
+          "minutes": 90,
+          "subbed_off": false,
+          "subbed_on": false,
+          "counted_as_captain": false
         },
         {
           "player_id": 175,
@@ -2955,7 +3132,12 @@
           "projected_points": 2.319,
           "is_starter": false,
           "is_captain": false,
-          "is_vice": false
+          "is_vice": false,
+          "actual_points": 1,
+          "minutes": 90,
+          "subbed_off": false,
+          "subbed_on": false,
+          "counted_as_captain": false
         },
         {
           "player_id": 183,
@@ -2967,7 +3149,12 @@
           "projected_points": 3.57,
           "is_starter": false,
           "is_captain": false,
-          "is_vice": false
+          "is_vice": false,
+          "actual_points": 10,
+          "minutes": 90,
+          "subbed_off": false,
+          "subbed_on": false,
+          "counted_as_captain": false
         },
         {
           "player_id": 379,
@@ -2979,7 +3166,12 @@
           "projected_points": 5.601,
           "is_starter": true,
           "is_captain": false,
-          "is_vice": false
+          "is_vice": false,
+          "actual_points": 5,
+          "minutes": 84,
+          "subbed_off": false,
+          "subbed_on": false,
+          "counted_as_captain": false
         },
         {
           "player_id": 400,
@@ -2991,7 +3183,12 @@
           "projected_points": 5.317,
           "is_starter": true,
           "is_captain": false,
-          "is_vice": false
+          "is_vice": false,
+          "actual_points": 2,
+          "minutes": 90,
+          "subbed_off": false,
+          "subbed_on": false,
+          "counted_as_captain": false
         },
         {
           "player_id": 411,
@@ -3003,7 +3200,12 @@
           "projected_points": 6.867,
           "is_starter": true,
           "is_captain": true,
-          "is_vice": false
+          "is_vice": false,
+          "actual_points": 2,
+          "minutes": 90,
+          "subbed_off": false,
+          "subbed_on": false,
+          "counted_as_captain": true
         },
         {
           "player_id": 496,
@@ -3015,7 +3217,12 @@
           "projected_points": 3.619,
           "is_starter": false,
           "is_captain": false,
-          "is_vice": false
+          "is_vice": false,
+          "actual_points": 7,
+          "minutes": 90,
+          "subbed_off": false,
+          "subbed_on": false,
+          "counted_as_captain": false
         },
         {
           "player_id": 512,
@@ -3027,7 +3234,12 @@
           "projected_points": 4.886,
           "is_starter": true,
           "is_captain": false,
-          "is_vice": false
+          "is_vice": false,
+          "actual_points": 2,
+          "minutes": 90,
+          "subbed_off": false,
+          "subbed_on": false,
+          "counted_as_captain": false
         },
         {
           "player_id": 539,
@@ -3039,34 +3251,29 @@
           "projected_points": 2.165,
           "is_starter": false,
           "is_captain": false,
-          "is_vice": false
+          "is_vice": false,
+          "actual_points": 6,
+          "minutes": 90,
+          "subbed_off": false,
+          "subbed_on": false,
+          "counted_as_captain": false
         }
       ]
-    },
+    }
+  ],
+  "pending": [
     {
       "gw": 12,
       "name": "Gameweek 12",
       "deadline": "2026-11-27T18:30:00Z",
       "squad": [
         {
-          "player_id": 15,
-          "web_name": "\u00d8degaard",
-          "team_id": 1,
-          "team_short": "ARS",
-          "position": "MID",
-          "now_cost": 67,
-          "projected_points": 4.16,
-          "is_starter": false,
-          "is_captain": false,
-          "is_vice": false
-        },
-        {
           "player_id": 68,
           "web_name": "Tavernier",
           "team_id": 3,
           "team_short": "BOU",
           "position": "MID",
-          "now_cost": 67,
+          "now_cost": 68,
           "projected_points": 4.217,
           "is_starter": true,
           "is_captain": false,
@@ -3133,13 +3340,13 @@
           "is_vice": false
         },
         {
-          "player_id": 249,
-          "web_name": "Barry",
-          "team_id": 9,
-          "team_short": "EVE",
+          "player_id": 166,
+          "web_name": "N.Jackson",
+          "team_id": 2,
+          "team_short": "AVL",
           "position": "FWD",
-          "now_cost": 57,
-          "projected_points": 4.336,
+          "now_cost": 73,
+          "projected_points": 4.231,
           "is_starter": true,
           "is_captain": false,
           "is_vice": false
@@ -3193,6 +3400,18 @@
           "is_vice": true
         },
         {
+          "player_id": 412,
+          "web_name": "Lammens",
+          "team_id": 16,
+          "team_short": "MUN",
+          "position": "GK",
+          "now_cost": 48,
+          "projected_points": 3.498,
+          "is_starter": false,
+          "is_captain": false,
+          "is_vice": false
+        },
+        {
           "player_id": 426,
           "web_name": "B.Fernandes",
           "team_id": 16,
@@ -3217,13 +3436,13 @@
           "is_vice": false
         },
         {
-          "player_id": 597,
-          "web_name": "Suzuki",
-          "team_id": 2,
-          "team_short": "AVL",
-          "position": "GK",
-          "now_cost": 51,
-          "projected_points": 3.534,
+          "player_id": 591,
+          "web_name": "Enciso",
+          "team_id": 12,
+          "team_short": "IPS",
+          "position": "MID",
+          "now_cost": 55,
+          "projected_points": 3.847,
           "is_starter": false,
           "is_captain": false,
           "is_vice": false
@@ -3235,14 +3454,14 @@
     {
       "season": "2026-27",
       "current": true,
-      "gameweeks_scored": 7,
-      "total_points": 390,
-      "mean_points": 55.7,
+      "gameweeks_scored": 8,
+      "total_points": 434,
+      "mean_points": 54.2,
       "mean_fpl_average": 54.4,
       "weeks_beating_average": 4,
       "weeks_rated": 7,
-      "mean_mae": 1.955,
-      "mean_spearman": 0.3649
+      "mean_mae": 1.975,
+      "mean_spearman": 0.3563
     }
   ],
   "leaders": [
@@ -3261,7 +3480,7 @@
       "bonus": 9,
       "ppg": 6.91,
       "value": 13.82,
-      "selected_by": 50.0,
+      "selected_by": 50.1,
       "in_target_squad": true
     },
     {
@@ -3297,7 +3516,7 @@
       "bonus": 14,
       "ppg": 6.55,
       "value": 4.56,
-      "selected_by": 78.0,
+      "selected_by": 77.9,
       "in_target_squad": true
     },
     {
@@ -3315,7 +3534,7 @@
       "bonus": 5,
       "ppg": 6.36,
       "value": 13.21,
-      "selected_by": 11.5,
+      "selected_by": 11.6,
       "in_target_squad": false
     },
     {
@@ -3333,7 +3552,7 @@
       "bonus": 10,
       "ppg": 6.09,
       "value": 10.15,
-      "selected_by": 27.0,
+      "selected_by": 27.2,
       "in_target_squad": true
     },
     {
@@ -3351,7 +3570,7 @@
       "bonus": 5,
       "ppg": 6.09,
       "value": 8.27,
-      "selected_by": 26.7,
+      "selected_by": 26.8,
       "in_target_squad": true
     },
     {
@@ -3369,7 +3588,7 @@
       "bonus": 16,
       "ppg": 6.0,
       "value": 7.1,
-      "selected_by": 26.7,
+      "selected_by": 26.8,
       "in_target_squad": true
     },
     {
@@ -3378,7 +3597,7 @@
       "web_name": "Tavernier",
       "team_short": "BOU",
       "position": "MID",
-      "now_cost": 67,
+      "now_cost": 68,
       "points": 66,
       "games": 11,
       "minutes": 930,
@@ -3386,8 +3605,8 @@
       "assists": 1,
       "bonus": 14,
       "ppg": 6.0,
-      "value": 9.85,
-      "selected_by": 33.3,
+      "value": 9.71,
+      "selected_by": 33.4,
       "in_target_squad": true
     },
     {
@@ -3405,7 +3624,7 @@
       "bonus": 6,
       "ppg": 5.73,
       "value": 12.12,
-      "selected_by": 18.9,
+      "selected_by": 19.1,
       "in_target_squad": false
     },
     {
@@ -3423,7 +3642,7 @@
       "bonus": 7,
       "ppg": 5.64,
       "value": 12.92,
-      "selected_by": 11.7,
+      "selected_by": 11.8,
       "in_target_squad": false
     },
     {
@@ -3441,7 +3660,7 @@
       "bonus": 6,
       "ppg": 5.55,
       "value": 9.68,
-      "selected_by": 46.5,
+      "selected_by": 46.1,
       "in_target_squad": false
     },
     {
@@ -3459,7 +3678,7 @@
       "bonus": 6,
       "ppg": 5.45,
       "value": 8.11,
-      "selected_by": 8.8,
+      "selected_by": 9.3,
       "in_target_squad": true
     },
     {
@@ -3531,7 +3750,7 @@
       "bonus": 3,
       "ppg": 5.27,
       "value": 9.83,
-      "selected_by": 48.4,
+      "selected_by": 48.3,
       "in_target_squad": false
     },
     {
@@ -3549,11 +3768,29 @@
       "bonus": 3,
       "ppg": 5.27,
       "value": 11.37,
-      "selected_by": 7.1,
+      "selected_by": 7.2,
       "in_target_squad": false
     },
     {
       "rank": 18,
+      "player_id": 249,
+      "web_name": "Barry",
+      "team_short": "EVE",
+      "position": "FWD",
+      "now_cost": 57,
+      "points": 57,
+      "games": 11,
+      "minutes": 919,
+      "goals": 6,
+      "assists": 1,
+      "bonus": 8,
+      "ppg": 5.18,
+      "value": 10.0,
+      "selected_by": 11.5,
+      "in_target_squad": false
+    },
+    {
+      "rank": 19,
       "player_id": 40,
       "web_name": "Rogers",
       "team_short": "CHE",
@@ -3571,7 +3808,7 @@
       "in_target_squad": false
     },
     {
-      "rank": 19,
+      "rank": 20,
       "player_id": 166,
       "web_name": "N.Jackson",
       "team_short": "AVL",
@@ -3585,25 +3822,7 @@
       "bonus": 12,
       "ppg": 5.09,
       "value": 7.67,
-      "selected_by": 36.3,
-      "in_target_squad": false
-    },
-    {
-      "rank": 20,
-      "player_id": 229,
-      "web_name": "Tarkowski",
-      "team_short": "EVE",
-      "position": "DEF",
-      "now_cost": 62,
-      "points": 56,
-      "games": 10,
-      "minutes": 900,
-      "goals": 1,
-      "assists": 1,
-      "bonus": 7,
-      "ppg": 5.6,
-      "value": 9.03,
-      "selected_by": 18.7,
+      "selected_by": 36.4,
       "in_target_squad": false
     },
     {
@@ -3621,7 +3840,7 @@
       "bonus": 7,
       "ppg": 5.09,
       "value": 10.0,
-      "selected_by": 4.0,
+      "selected_by": 4.2,
       "in_target_squad": false
     },
     {
@@ -3639,7 +3858,7 @@
       "bonus": 11,
       "ppg": 5.09,
       "value": 10.98,
-      "selected_by": 7.4,
+      "selected_by": 7.6,
       "in_target_squad": false
     },
     {
@@ -3657,7 +3876,7 @@
       "bonus": 9,
       "ppg": 5.0,
       "value": 7.05,
-      "selected_by": 32.3,
+      "selected_by": 32.1,
       "in_target_squad": false
     },
     {
@@ -3680,20 +3899,20 @@
     },
     {
       "rank": 25,
-      "player_id": 249,
-      "web_name": "Barry",
-      "team_short": "EVE",
-      "position": "FWD",
-      "now_cost": 57,
+      "player_id": 86,
+      "web_name": "Lewis-Potter",
+      "team_short": "BRE",
+      "position": "MID",
+      "now_cost": 55,
       "points": 55,
-      "games": 10,
-      "minutes": 851,
-      "goals": 6,
+      "games": 11,
+      "minutes": 846,
+      "goals": 4,
       "assists": 1,
       "bonus": 8,
-      "ppg": 5.5,
-      "value": 9.65,
-      "selected_by": 11.5,
+      "ppg": 5.0,
+      "value": 10.0,
+      "selected_by": 1.8,
       "in_target_squad": false
     },
     {
@@ -3747,7 +3966,7 @@
       "bonus": 1,
       "ppg": 4.91,
       "value": 10.59,
-      "selected_by": 4.7,
+      "selected_by": 4.6,
       "in_target_squad": false
     },
     {
@@ -3770,20 +3989,20 @@
     },
     {
       "rank": 30,
-      "player_id": 114,
-      "web_name": "Boscagli",
-      "team_short": "BHA",
+      "player_id": 229,
+      "web_name": "Tarkowski",
+      "team_short": "EVE",
       "position": "DEF",
-      "now_cost": 45,
-      "points": 51,
+      "now_cost": 62,
+      "points": 52,
       "games": 11,
-      "minutes": 848,
-      "goals": 0,
+      "minutes": 939,
+      "goals": 1,
       "assists": 1,
-      "bonus": 2,
-      "ppg": 4.64,
-      "value": 11.33,
-      "selected_by": 0.8,
+      "bonus": 7,
+      "ppg": 4.73,
+      "value": 8.39,
+      "selected_by": 18.4,
       "in_target_squad": false
     }
   ],
