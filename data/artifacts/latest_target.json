@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-24T18:00:09.892813+00:00",
+  "generated_at": "2026-11-24T23:59:03.489056+00:00",
   "horizon": 6,
   "quality_weight": 0.7,
   "budget_tenths": 995,
   "pipeline_state": {
-    "last_fetch": "2026-11-24T17:57:38.459782+00:00",
+    "last_fetch": "2026-11-24T23:57:09.887805+00:00",
     "average_squad_value": 995,
     "current_gw": {
       "id": 11,
@@ -3990,7 +3990,7 @@
       "team_short": "MUN",
       "position": "DEF",
       "now_cost": 48,
-      "projected_points": 0.0
+      "projected_points": 1.904
     },
     {
       "player_id": 421,
