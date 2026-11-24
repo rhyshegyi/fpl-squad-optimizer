@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-24T02:23:53.088787+00:00",
+  "generated_at": "2026-11-24T17:59:52.700150+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-11-24T02:21:38.090889+00:00",
+    "last_fetch": "2026-11-24T17:57:38.459782+00:00",
     "average_squad_value": 995,
     "current_gw": {
       "id": 11,
@@ -19,17 +19,26 @@
       "latest_gw_on_file": 11,
       "latest_result": "2026-11-23T20:00:00+00:00",
       "gameweek_in_progress": null,
-      "bonus_pending": {
-        "id": 11,
-        "name": "Gameweek 11"
-      }
+      "bonus_pending": null
     }
   },
   "squad": {
     "total_cost": 999,
-    "projected_points": 53.52,
+    "projected_points": 56.72,
     "formation": "3-4-3",
     "picks": [
+      {
+        "player_id": 4,
+        "web_name": "Gabriel",
+        "team_id": 1,
+        "team_short": "ARS",
+        "position": "DEF",
+        "now_cost": 81,
+        "projected_points": 3.838,
+        "is_starter": true,
+        "is_captain": false,
+        "is_vice": false
+      },
       {
         "player_id": 68,
         "web_name": "Tavernier",
@@ -37,7 +46,7 @@
         "team_short": "BOU",
         "position": "MID",
         "now_cost": 68,
-        "projected_points": 4.217,
+        "projected_points": 4.4,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -49,22 +58,10 @@
         "team_short": "BOU",
         "position": "FWD",
         "now_cost": 66,
-        "projected_points": 4.745,
+        "projected_points": 5.238,
         "is_starter": true,
         "is_captain": false,
-        "is_vice": false
-      },
-      {
-        "player_id": 112,
-        "web_name": "Van Hecke",
-        "team_id": 19,
-        "team_short": "TOT",
-        "position": "DEF",
-        "now_cost": 52,
-        "projected_points": 3.398,
-        "is_starter": false,
-        "is_captain": false,
-        "is_vice": false
+        "is_vice": true
       },
       {
         "player_id": 115,
@@ -73,7 +70,7 @@
         "team_short": "BHA",
         "position": "DEF",
         "now_cost": 55,
-        "projected_points": 4.564,
+        "projected_points": 4.866,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -85,7 +82,7 @@
         "team_short": "BHA",
         "position": "MID",
         "now_cost": 63,
-        "projected_points": 4.681,
+        "projected_points": 5.149,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -97,20 +94,32 @@
         "team_short": "BHA",
         "position": "MID",
         "now_cost": 51,
-        "projected_points": 4.186,
+        "projected_points": 4.74,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
       },
       {
-        "player_id": 166,
-        "web_name": "N.Jackson",
-        "team_id": 2,
-        "team_short": "AVL",
-        "position": "FWD",
-        "now_cost": 73,
-        "projected_points": 4.231,
-        "is_starter": true,
+        "player_id": 183,
+        "web_name": "Rudoni",
+        "team_id": 7,
+        "team_short": "COV",
+        "position": "MID",
+        "now_cost": 50,
+        "projected_points": 3.46,
+        "is_starter": false,
+        "is_captain": false,
+        "is_vice": false
+      },
+      {
+        "player_id": 204,
+        "web_name": "Mitchell",
+        "team_id": 8,
+        "team_short": "CRY",
+        "position": "DEF",
+        "now_cost": 44,
+        "projected_points": 2.926,
+        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
@@ -121,7 +130,7 @@
         "team_short": "LEE",
         "position": "DEF",
         "now_cost": 48,
-        "projected_points": 3.592,
+        "projected_points": 3.514,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
@@ -133,20 +142,20 @@
         "team_short": "LEE",
         "position": "DEF",
         "now_cost": 45,
-        "projected_points": 3.51,
-        "is_starter": true,
+        "projected_points": 3.445,
+        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
       {
-        "player_id": 334,
-        "web_name": "Muharemovi\u0107",
+        "player_id": 346,
+        "web_name": "Calvert-Lewin",
         "team_id": 13,
         "team_short": "LEE",
-        "position": "DEF",
-        "now_cost": 51,
-        "projected_points": 3.402,
-        "is_starter": false,
+        "position": "FWD",
+        "now_cost": 60,
+        "projected_points": 4.18,
+        "is_starter": true,
         "is_captain": false,
         "is_vice": false
       },
@@ -157,20 +166,8 @@
         "team_short": "MCI",
         "position": "FWD",
         "now_cost": 158,
-        "projected_points": 4.861,
+        "projected_points": 4.983,
         "is_starter": true,
-        "is_captain": false,
-        "is_vice": true
-      },
-      {
-        "player_id": 412,
-        "web_name": "Lammens",
-        "team_id": 16,
-        "team_short": "MUN",
-        "position": "GK",
-        "now_cost": 48,
-        "projected_points": 3.498,
-        "is_starter": false,
         "is_captain": false,
         "is_vice": false
       },
@@ -181,7 +178,7 @@
         "team_short": "MUN",
         "position": "MID",
         "now_cost": 116,
-        "projected_points": 5.621,
+        "projected_points": 5.935,
         "is_starter": true,
         "is_captain": true,
         "is_vice": false
@@ -193,19 +190,19 @@
         "team_short": "NFO",
         "position": "GK",
         "now_cost": 50,
-        "projected_points": 3.695,
+        "projected_points": 3.939,
         "is_starter": true,
         "is_captain": false,
         "is_vice": false
       },
       {
-        "player_id": 591,
-        "web_name": "Enciso",
-        "team_id": 12,
-        "team_short": "IPS",
-        "position": "MID",
-        "now_cost": 55,
-        "projected_points": 3.847,
+        "player_id": 496,
+        "web_name": "Kinsky",
+        "team_id": 19,
+        "team_short": "TOT",
+        "position": "GK",
+        "now_cost": 44,
+        "projected_points": 3.446,
         "is_starter": false,
         "is_captain": false,
         "is_vice": false

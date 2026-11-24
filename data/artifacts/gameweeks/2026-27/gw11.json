@@ -14,7 +14,7 @@
   "name": "Gameweek 11",
   "deadline": "2026-11-21T11:00:00Z",
   "frozen_at": "2026-11-20T22:20:09.157105+00:00",
-  "scored_at": "2026-11-24T02:24:11.090844+00:00",
+  "scored_at": "2026-11-24T18:00:09.921808+00:00",
   "squad": {
     "total_cost": 1000,
     "projected_points": 61.1,
@@ -5588,9 +5588,9 @@
     "captain_blanked": false,
     "autosubs": [],
     "points_left_on_bench": 24,
-    "fpl_average": 33,
+    "fpl_average": 35,
     "fpl_highest": 106,
-    "scores_final": false
+    "scores_final": true
   },
   "accuracy": {
     "players_appeared": 313,
@@ -5730,5 +5730,6 @@
       "actual": 10,
       "minutes": 78
     }
-  ]
+  ],
+  "settled_at": "2026-11-24T18:00:09.921808+00:00"
 }
