@@ -13,7 +13,7 @@
   "average_squad_value": 995,
   "name": "Gameweek 12",
   "deadline": "2026-11-27T18:30:00Z",
-  "frozen_at": "2026-11-25T17:30:28.446707+00:00",
+  "frozen_at": "2026-11-25T23:44:03.719660+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 999,
@@ -2801,7 +2801,7 @@
       "team_short": "MUN",
       "position": "GK",
       "now_cost": 45,
-      "projected": 0.039
+      "projected": 0.052
     },
     {
       "player_id": 326,
@@ -3585,7 +3585,7 @@
       "team_short": "MUN",
       "position": "DEF",
       "now_cost": 42,
-      "projected": 0.164
+      "projected": 0.219
     },
     {
       "player_id": 424,
@@ -4057,7 +4057,7 @@
       "team_short": "NFO",
       "position": "MID",
       "now_cost": 57,
-      "projected": 0.0
+      "projected": 0.327
     },
     {
       "player_id": 483,
