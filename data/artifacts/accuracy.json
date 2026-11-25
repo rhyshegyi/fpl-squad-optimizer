@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T23:59:03.521994+00:00",
+  "generated_at": "2026-11-25T17:30:28.483755+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 8,
@@ -3498,7 +3498,7 @@
       "bonus": 11,
       "ppg": 6.73,
       "value": 11.75,
-      "selected_by": 49.5,
+      "selected_by": 49.6,
       "in_target_squad": true
     },
     {
@@ -3516,7 +3516,7 @@
       "bonus": 14,
       "ppg": 6.55,
       "value": 4.56,
-      "selected_by": 77.6,
+      "selected_by": 77.4,
       "in_target_squad": true
     },
     {
@@ -3552,7 +3552,7 @@
       "bonus": 10,
       "ppg": 6.09,
       "value": 10.15,
-      "selected_by": 27.4,
+      "selected_by": 27.6,
       "in_target_squad": true
     },
     {
@@ -3588,7 +3588,7 @@
       "bonus": 16,
       "ppg": 6.0,
       "value": 7.1,
-      "selected_by": 27.0,
+      "selected_by": 27.1,
       "in_target_squad": true
     },
     {
@@ -3624,7 +3624,7 @@
       "bonus": 6,
       "ppg": 5.73,
       "value": 12.12,
-      "selected_by": 19.5,
+      "selected_by": 19.6,
       "in_target_squad": false
     },
     {
@@ -3642,7 +3642,7 @@
       "bonus": 7,
       "ppg": 5.64,
       "value": 12.92,
-      "selected_by": 11.9,
+      "selected_by": 12.0,
       "in_target_squad": false
     },
     {
@@ -3660,7 +3660,7 @@
       "bonus": 6,
       "ppg": 5.55,
       "value": 9.68,
-      "selected_by": 45.6,
+      "selected_by": 45.3,
       "in_target_squad": false
     },
     {
@@ -3678,7 +3678,7 @@
       "bonus": 6,
       "ppg": 5.45,
       "value": 8.11,
-      "selected_by": 10.1,
+      "selected_by": 10.4,
       "in_target_squad": true
     },
     {
@@ -3696,7 +3696,7 @@
       "bonus": 5,
       "ppg": 5.36,
       "value": 12.55,
-      "selected_by": 24.7,
+      "selected_by": 24.8,
       "in_target_squad": true
     },
     {
@@ -3714,7 +3714,7 @@
       "bonus": 9,
       "ppg": 5.36,
       "value": 12.55,
-      "selected_by": 13.6,
+      "selected_by": 13.7,
       "in_target_squad": false
     },
     {
@@ -3768,7 +3768,7 @@
       "bonus": 3,
       "ppg": 5.27,
       "value": 11.37,
-      "selected_by": 7.4,
+      "selected_by": 7.5,
       "in_target_squad": false
     },
     {
@@ -3822,7 +3822,7 @@
       "bonus": 12,
       "ppg": 5.09,
       "value": 7.67,
-      "selected_by": 36.5,
+      "selected_by": 36.6,
       "in_target_squad": false
     },
     {
@@ -3831,7 +3831,7 @@
       "web_name": "Hill",
       "team_short": "BOU",
       "position": "DEF",
-      "now_cost": 56,
+      "now_cost": 57,
       "points": 56,
       "games": 11,
       "minutes": 990,
@@ -3839,8 +3839,8 @@
       "assists": 1,
       "bonus": 7,
       "ppg": 5.09,
-      "value": 10.0,
-      "selected_by": 4.5,
+      "value": 9.82,
+      "selected_by": 4.6,
       "in_target_squad": false
     },
     {
@@ -3858,7 +3858,7 @@
       "bonus": 11,
       "ppg": 5.09,
       "value": 10.98,
-      "selected_by": 7.9,
+      "selected_by": 8.0,
       "in_target_squad": false
     },
     {
@@ -3876,7 +3876,7 @@
       "bonus": 9,
       "ppg": 5.0,
       "value": 7.05,
-      "selected_by": 31.7,
+      "selected_by": 31.6,
       "in_target_squad": false
     },
     {
@@ -3948,7 +3948,7 @@
       "bonus": 5,
       "ppg": 5.0,
       "value": 12.22,
-      "selected_by": 2.6,
+      "selected_by": 2.7,
       "in_target_squad": false
     },
     {
@@ -4002,7 +4002,7 @@
       "bonus": 7,
       "ppg": 4.73,
       "value": 8.39,
-      "selected_by": 17.7,
+      "selected_by": 17.5,
       "in_target_squad": false
     }
   ],

@@ -13,7 +13,7 @@
   "average_squad_value": 995,
   "name": "Gameweek 12",
   "deadline": "2026-11-27T18:30:00Z",
-  "frozen_at": "2026-11-24T23:59:03.503076+00:00",
+  "frozen_at": "2026-11-25T17:30:28.446707+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 999,
@@ -336,7 +336,7 @@
       "web_name": "Merino",
       "team_short": "ARS",
       "position": "MID",
-      "now_cost": 57,
+      "now_cost": 56,
       "projected": 1.353
     },
     {
@@ -680,7 +680,7 @@
       "web_name": "Hill",
       "team_short": "BOU",
       "position": "DEF",
-      "now_cost": 56,
+      "now_cost": 57,
       "projected": 3.348
     },
     {
@@ -912,7 +912,7 @@
       "web_name": "Henry",
       "team_short": "BRE",
       "position": "DEF",
-      "now_cost": 44,
+      "now_cost": 43,
       "projected": 0.0
     },
     {
@@ -1113,7 +1113,7 @@
       "team_short": "BHA",
       "position": "DEF",
       "now_cost": 45,
-      "projected": 3.16
+      "projected": 2.37
     },
     {
       "player_id": 115,
@@ -1496,8 +1496,8 @@
       "web_name": "Andrey Santos",
       "team_short": "MUN",
       "position": "MID",
-      "now_cost": 47,
-      "projected": 1.011
+      "now_cost": 46,
+      "projected": 0.992
     },
     {
       "player_id": 163,
@@ -1672,8 +1672,8 @@
       "web_name": "Grimes",
       "team_short": "COV",
       "position": "MID",
-      "now_cost": 48,
-      "projected": 1.103
+      "now_cost": 47,
+      "projected": 1.0
     },
     {
       "player_id": 185,
@@ -3137,7 +3137,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 71,
-      "projected": 1.625
+      "projected": 0.0
     },
     {
       "player_id": 368,
@@ -3169,7 +3169,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 58,
-      "projected": 0.339
+      "projected": 0.0
     },
     {
       "player_id": 372,
@@ -4664,7 +4664,7 @@
       "web_name": "Schlager",
       "team_short": "NFO",
       "position": "MID",
-      "now_cost": 50,
+      "now_cost": 49,
       "projected": 2.414
     },
     {
