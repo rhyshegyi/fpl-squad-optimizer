@@ -13,7 +13,7 @@
   "average_squad_value": 994,
   "name": "Gameweek 12",
   "deadline": "2026-11-27T18:30:00Z",
-  "frozen_at": "2026-11-26T17:10:43.800376+00:00",
+  "frozen_at": "2026-11-26T23:56:15.852462+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 999,
@@ -825,7 +825,7 @@
       "team_short": "BOU",
       "position": "MID",
       "now_cost": 73,
-      "projected": 1.926
+      "projected": 1.445
     },
     {
       "player_id": 79,
@@ -1857,7 +1857,7 @@
       "team_short": "CRY",
       "position": "DEF",
       "now_cost": 42,
-      "projected": 1.117
+      "projected": 1.489
     },
     {
       "player_id": 208,
@@ -5097,7 +5097,7 @@
       "team_short": "SUN",
       "position": "DEF",
       "now_cost": 45,
-      "projected": 0.24
+      "projected": 0.18
     },
     {
       "player_id": 613,

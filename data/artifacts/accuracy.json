@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T17:10:43.831983+00:00",
+  "generated_at": "2026-11-26T23:56:15.873709+00:00",
   "season": "2026-27",
   "totals": {
     "gameweeks_scored": 8,
@@ -3480,7 +3480,7 @@
       "bonus": 9,
       "ppg": 6.91,
       "value": 13.82,
-      "selected_by": 50.4,
+      "selected_by": 50.5,
       "in_target_squad": true
     },
     {
@@ -3516,7 +3516,7 @@
       "bonus": 14,
       "ppg": 6.55,
       "value": 4.56,
-      "selected_by": 76.9,
+      "selected_by": 76.5,
       "in_target_squad": true
     },
     {
@@ -3534,7 +3534,7 @@
       "bonus": 5,
       "ppg": 6.36,
       "value": 13.21,
-      "selected_by": 11.8,
+      "selected_by": 11.9,
       "in_target_squad": false
     },
     {
@@ -3552,7 +3552,7 @@
       "bonus": 10,
       "ppg": 6.09,
       "value": 10.15,
-      "selected_by": 27.8,
+      "selected_by": 27.9,
       "in_target_squad": true
     },
     {
@@ -3588,7 +3588,7 @@
       "bonus": 16,
       "ppg": 6.0,
       "value": 7.02,
-      "selected_by": 27.7,
+      "selected_by": 28.0,
       "in_target_squad": true
     },
     {
@@ -3606,7 +3606,7 @@
       "bonus": 14,
       "ppg": 6.0,
       "value": 9.71,
-      "selected_by": 33.8,
+      "selected_by": 33.9,
       "in_target_squad": true
     },
     {
@@ -3624,7 +3624,7 @@
       "bonus": 6,
       "ppg": 5.73,
       "value": 12.12,
-      "selected_by": 20.0,
+      "selected_by": 20.3,
       "in_target_squad": true
     },
     {
@@ -3642,7 +3642,7 @@
       "bonus": 7,
       "ppg": 5.64,
       "value": 12.92,
-      "selected_by": 12.1,
+      "selected_by": 12.2,
       "in_target_squad": false
     },
     {
@@ -3660,7 +3660,7 @@
       "bonus": 6,
       "ppg": 5.55,
       "value": 9.84,
-      "selected_by": 44.7,
+      "selected_by": 44.2,
       "in_target_squad": false
     },
     {
@@ -3678,7 +3678,7 @@
       "bonus": 6,
       "ppg": 5.45,
       "value": 8.11,
-      "selected_by": 11.7,
+      "selected_by": 12.7,
       "in_target_squad": true
     },
     {
@@ -3696,7 +3696,7 @@
       "bonus": 5,
       "ppg": 5.36,
       "value": 12.55,
-      "selected_by": 24.9,
+      "selected_by": 25.0,
       "in_target_squad": false
     },
     {
@@ -3714,7 +3714,7 @@
       "bonus": 9,
       "ppg": 5.36,
       "value": 12.55,
-      "selected_by": 13.8,
+      "selected_by": 13.9,
       "in_target_squad": false
     },
     {
@@ -3732,7 +3732,7 @@
       "bonus": 7,
       "ppg": 5.27,
       "value": 11.84,
-      "selected_by": 25.2,
+      "selected_by": 25.1,
       "in_target_squad": false
     },
     {
@@ -3750,7 +3750,7 @@
       "bonus": 3,
       "ppg": 5.27,
       "value": 9.83,
-      "selected_by": 48.0,
+      "selected_by": 47.9,
       "in_target_squad": false
     },
     {
@@ -3768,7 +3768,7 @@
       "bonus": 3,
       "ppg": 5.27,
       "value": 11.37,
-      "selected_by": 7.9,
+      "selected_by": 8.2,
       "in_target_squad": false
     },
     {
@@ -3786,7 +3786,7 @@
       "bonus": 8,
       "ppg": 5.18,
       "value": 10.0,
-      "selected_by": 11.3,
+      "selected_by": 11.2,
       "in_target_squad": false
     },
     {
@@ -3804,7 +3804,7 @@
       "bonus": 3,
       "ppg": 5.18,
       "value": 6.87,
-      "selected_by": 54.6,
+      "selected_by": 54.5,
       "in_target_squad": false
     },
     {
@@ -3822,7 +3822,7 @@
       "bonus": 12,
       "ppg": 5.09,
       "value": 7.67,
-      "selected_by": 36.7,
+      "selected_by": 36.8,
       "in_target_squad": false
     },
     {
@@ -3840,7 +3840,7 @@
       "bonus": 7,
       "ppg": 5.09,
       "value": 9.82,
-      "selected_by": 4.8,
+      "selected_by": 4.9,
       "in_target_squad": false
     },
     {
@@ -3858,7 +3858,7 @@
       "bonus": 11,
       "ppg": 5.09,
       "value": 10.98,
-      "selected_by": 8.3,
+      "selected_by": 8.6,
       "in_target_squad": true
     },
     {
@@ -3876,7 +3876,7 @@
       "bonus": 9,
       "ppg": 5.0,
       "value": 7.05,
-      "selected_by": 31.2,
+      "selected_by": 30.8,
       "in_target_squad": false
     },
     {
@@ -3912,7 +3912,7 @@
       "bonus": 8,
       "ppg": 5.0,
       "value": 10.0,
-      "selected_by": 1.9,
+      "selected_by": 2.0,
       "in_target_squad": false
     },
     {
@@ -4002,7 +4002,7 @@
       "bonus": 7,
       "ppg": 4.73,
       "value": 8.39,
-      "selected_by": 17.1,
+      "selected_by": 16.7,
       "in_target_squad": false
     }
   ],
