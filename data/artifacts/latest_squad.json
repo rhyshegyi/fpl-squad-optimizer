@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-25T23:43:43.863071+00:00",
+  "generated_at": "2026-11-26T17:10:12.653838+00:00",
   "projector": "ml",
   "pipeline_state": {
-    "last_fetch": "2026-11-25T23:41:11.159930+00:00",
-    "average_squad_value": 995,
+    "last_fetch": "2026-11-26T17:06:24.025611+00:00",
+    "average_squad_value": 994,
     "current_gw": {
       "id": 11,
       "name": "Gameweek 11"

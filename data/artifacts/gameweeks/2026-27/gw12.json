@@ -10,10 +10,10 @@
     ],
     "objective": "poisson"
   },
-  "average_squad_value": 995,
+  "average_squad_value": 994,
   "name": "Gameweek 12",
   "deadline": "2026-11-27T18:30:00Z",
-  "frozen_at": "2026-11-25T23:44:03.719660+00:00",
+  "frozen_at": "2026-11-26T17:10:43.800376+00:00",
   "scored_at": null,
   "squad": {
     "total_cost": 999,
@@ -208,7 +208,7 @@
       "web_name": "Raya",
       "team_short": "ARS",
       "position": "GK",
-      "now_cost": 63,
+      "now_cost": 62,
       "projected": 1.344
     },
     {
@@ -1473,7 +1473,7 @@
       "team_short": "CHE",
       "position": "MID",
       "now_cost": 53,
-      "projected": 1.26
+      "projected": 1.68
     },
     {
       "player_id": 160,
@@ -1824,8 +1824,8 @@
       "web_name": "Canvot",
       "team_short": "CRY",
       "position": "DEF",
-      "now_cost": 48,
-      "projected": 1.745
+      "now_cost": 47,
+      "projected": 1.631
     },
     {
       "player_id": 204,
@@ -2384,8 +2384,8 @@
       "web_name": "Phillips",
       "team_short": "HUL",
       "position": "GK",
-      "now_cost": 40,
-      "projected": 0.033
+      "now_cost": 39,
+      "projected": 0.04
     },
     {
       "player_id": 274,
@@ -2800,8 +2800,8 @@
       "web_name": "Darlow",
       "team_short": "MUN",
       "position": "GK",
-      "now_cost": 45,
-      "projected": 0.052
+      "now_cost": 44,
+      "projected": 0.054
     },
     {
       "player_id": 326,
@@ -3217,7 +3217,7 @@
       "team_short": "LIV",
       "position": "MID",
       "now_cost": 65,
-      "projected": 1.857
+      "projected": 1.393
     },
     {
       "player_id": 378,
@@ -3232,7 +3232,7 @@
       "web_name": "Isak",
       "team_short": "LIV",
       "position": "FWD",
-      "now_cost": 93,
+      "now_cost": 94,
       "projected": 4.364
     },
     {
@@ -4137,7 +4137,7 @@
       "team_short": "COV",
       "position": "FWD",
       "now_cost": 54,
-      "projected": 1.928
+      "projected": 0.0
     },
     {
       "player_id": 493,
@@ -5344,8 +5344,8 @@
       "web_name": "Chilwell",
       "team_short": "CRY",
       "position": "DEF",
-      "now_cost": 44,
-      "projected": 0.191
+      "now_cost": 43,
+      "projected": 0.197
     },
     {
       "player_id": 644,
